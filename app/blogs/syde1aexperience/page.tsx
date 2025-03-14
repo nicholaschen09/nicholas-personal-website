@@ -639,8 +639,8 @@ export default function BlogPost() {
           {/* Key Takeaways */}
           <h2 className="text-2xl font-bold mt-10 mb-4">Key Takeaways</h2>
           <p>
-            Looking back on my 1A term, these are the most important lessons I
-            learned:
+            Looking back on my 1A term, I learned so much and I couldn't ask for
+            a better start to my university career.
           </p>
         </div>
       </article>
