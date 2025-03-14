@@ -188,6 +188,19 @@ export default function About() {
                 Focusing on interdisciplinary engineering with specialization in
                 software systems and human-centered design.
               </p>
+
+              {/* Relevant Courses */}
+              <div className="mt-3">
+                <h5 className="text-white font-medium mb-2">
+                  Relevant Courses:
+                </h5>
+                <ul className="text-gray-400 text-sm sm:text-base flex flex-wrap gap-x-4 gap-y-1">
+                  <li>Introduction to Design</li>
+                  <li>Digital Computation</li>
+                  <li>Elementary Engineering Math</li>
+                  <li>Visual Communications</li>
+                </ul>
+              </div>
             </div>
           </section>
 
