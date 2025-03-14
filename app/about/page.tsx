@@ -318,7 +318,7 @@ export default function About() {
             </h3>
             <div className="space-y-2">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                <h4 className="text-lg sm:text-xl font-semibold text-white">
+                <h4 className="text-normal sm:text-xl font-semibold text-white">
                   University of Waterloo Alternative Fuels Team
                 </h4>
                 <span className="text-gray-400 text-sm sm:text-base">
@@ -343,7 +343,7 @@ export default function About() {
             <div className="space-y-6">
               <div className="space-y-2">
                 <div className="flex justify-between items-baseline">
-                  <h4 className="text-xl font-semibold text-white">
+                  <h4 className="text-lg font-semibold text-white">
                     Second Place - UTRA Hacks
                   </h4>
                   <span className="text-gray-400">2025</span>
@@ -359,7 +359,7 @@ export default function About() {
 
               <div className="space-y-2">
                 <div className="flex justify-between items-baseline">
-                  <h4 className="text-xl font-semibold text-white">
+                  <h4 className="text-lg font-semibold text-white">
                     Engineering Entrance Scholarship
                   </h4>
                   <span className="text-gray-400">2024</span>
