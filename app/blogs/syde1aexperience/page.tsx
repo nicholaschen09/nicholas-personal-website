@@ -56,7 +56,7 @@ export default function BlogPost() {
         {/* Featured Image */}
         <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden">
           <Image
-            src="/placeholder.svg?height=800&width=1200"
+            src="/syde.png"
             alt="SYDE 1A Experience"
             width={1200}
             height={800}
