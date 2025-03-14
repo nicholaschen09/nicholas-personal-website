@@ -110,6 +110,29 @@ export default function About() {
                   with cross-functional teams to deliver high-quality software
                   solutions.
                 </p>
+                {/* Technical Skills */}
+                <div className="mt-2">
+                  <p className="text-white text-sm font-medium">
+                    Technical Skills:
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      React
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      TypeScript
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      Node.js
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      Ruby on Rails
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      GraphQL
+                    </span>
+                  </div>
+                </div>
               </div>
 
               <div className="space-y-2">
@@ -129,6 +152,29 @@ export default function About() {
                   monthly sign-in volumes, improving resource allocation and
                   reducing support team work times.
                 </p>
+                {/* Technical Skills */}
+                <div className="mt-2">
+                  <p className="text-white text-sm font-medium">
+                    Technical Skills:
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      Python
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      Machine Learning
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      Data Analysis
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      Pandas
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      Scikit-learn
+                    </span>
+                  </div>
+                </div>
               </div>
 
               <div className="space-y-2">
@@ -146,6 +192,29 @@ export default function About() {
                   solutions through designing wireframes, prototypes, and
                   high-fidelity mockups using Figma and Adobe Creative Suite.
                 </p>
+                {/* Technical Skills */}
+                <div className="mt-2">
+                  <p className="text-white text-sm font-medium">
+                    Technical Skills:
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      Figma
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      Adobe XD
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      UI/UX Design
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      Wireframing
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      Prototyping
+                    </span>
+                  </div>
+                </div>
               </div>
 
               <div className="space-y-2">
@@ -163,6 +232,26 @@ export default function About() {
                   taking orders, and serving a variety of ice cream flavors and
                   toppings.
                 </p>
+                {/* Technical Skills */}
+                <div className="mt-2">
+                  <p className="text-white text-sm font-medium">
+                    Technical Skills:
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      Customer Service
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      Point of Sale Systems
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      Food Preparation
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      Team Collaboration
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
