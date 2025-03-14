@@ -21,7 +21,8 @@ export default function BlogPost() {
           </h1>
           <div className="flex flex-wrap items-center gap-4">
             <span className="text-gray-400">
-              March 13, 2025 <span className="text-pink-500">// 3 min read</span>
+              March 13, 2025{' '}
+              <span className="text-pink-500">// 3 min read</span>
             </span>
             <div className="flex flex-wrap gap-2">
               <Badge
@@ -61,7 +62,7 @@ export default function BlogPost() {
         </p>
 
         <div className="prose prose-invert max-w-none">
-          <p className="text-xl leading-relaxed">
+          <p className="text-normal leading-relaxed">
             My first term in Systems Design Engineering (SYDE) at the University
             of Waterloo was extermely exciting and challenging. The first
             academic term, known as 1A, was a whirlwind of new experiences,
