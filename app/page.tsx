@@ -1,16 +1,16 @@
 "use client"
 import Link from "next/link"
 import Image from "next/image"
-import { Github, Linkedin, Mail, ExternalLink, ArrowRight } from "lucide-react"
+import { Github, ExternalLink, ArrowRight } from "lucide-react"
 import { TypeAnimation } from "react-type-animation"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 
 export default function Home() {
   return (
- <main className="flex min-h-screen flex-col items-center p-6 md:p-24">
+    <main className="flex min-h-screen flex-col items-center p-6 md:p-24">
       {/* Hero Section */}
-      <div className="max-w-5xl w-full space-y-6 md:space-y-8 mb-16 md:mb-24 pt-24 md:pt-16">
+      <div className="max-w-6xl w-full space-y-4 md:space-y-6 mb-10 md:mb-16 pt-24 md:pt-16">
         <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold text-white">Nicholas Chen</h1>
 
         <div className="h-auto min-h-[150px] md:min-h-[120px]">
@@ -26,34 +26,37 @@ export default function Home() {
           />
         </div>
 
-  <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
-  <Link href="https://www.linkedin.com/in/nicholas-chen-85886726a/" className="text-white hover:text-gray-300 transition-colors">
-    <div className="w-10 h-10 flex items-center justify-center">
-      <img src="/linkedin.png" alt="LinkedIn" className="max-w-full max-h-full object-contain" />
-    </div>
-    <span className="sr-only">LinkedIn</span>
-  </Link>
-  <Link href="https://github.com/nicholaschen09" className="text-white hover:text-gray-300 transition-colors">
-    <div className="w-10 h-10 flex items-center justify-center">
-      <img src="/github.png" alt="GitHub" className="w-7 h-7 md:w-8 md:h-8" />
-    </div>
-    <span className="sr-only">GitHub</span>
-  </Link>
-  <Link href="mailto:nicholas.chen243@gmail.com" className="text-white hover:text-gray-300 transition-colors">
-    <div className="w-10 h-10 flex items-center justify-center">
-      <img src="/email.png" alt="Email" className="max-w-full max-h-full object-contain" />
-    </div>
-    <span className="sr-only">Email</span>
-  </Link>
-</div>
+        <div className="flex space-x-8 pt-2 justify-center sm:justify-start">
+          <Link
+            href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
+            className="text-white hover:text-gray-300 transition-colors"
+          >
+            <div className="w-10 h-10 flex items-center justify-center">
+              <img src="/linkedin.png" alt="LinkedIn" className="max-w-full max-h-full object-contain" />
+            </div>
+            <span className="sr-only">LinkedIn</span>
+          </Link>
+          <Link href="https://github.com/nicholaschen09" className="text-white hover:text-gray-300 transition-colors">
+            <div className="w-10 h-10 flex items-center justify-center">
+              <img src="/github.png" alt="GitHub" className="w-7 h-7 md:w-8 md:h-8" />
+            </div>
+            <span className="sr-only">GitHub</span>
+          </Link>
+          <Link href="mailto:nicholas.chen243@gmail.com" className="text-white hover:text-gray-300 transition-colors">
+            <div className="w-10 h-10 flex items-center justify-center">
+              <img src="/email.png" alt="Email" className="max-w-full max-h-full object-contain" />
+            </div>
+            <span className="sr-only">Email</span>
+          </Link>
+        </div>
       </div>
-{/* Blog Section */}
-      <div className="w-full max-w-6xl mb-16">
+      {/* Blog Section */}
+      <div className="w-full max-w-6xl mb-10">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 md:mb-10">Blogs</h2>
 
         <div className="space-y-8">
           {/* Blog Post 1 */}
-          <div className="bg-gray-800 border border-gray-700 rounded-lg p-6">
+          <div className="bg-transparent border border-gray-700 rounded-lg p-6">
             <div className="flex flex-col md:flex-row md:items-center justify-between mb-3">
               <h3 className="text-xl font-bold text-white">My SYDE 1A Experience</h3>
               <span className="text-gray-400 text-sm mt-1 md:mt-0">March 13, 2025</span>
@@ -64,18 +67,48 @@ export default function Home() {
               success.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
-              <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+              <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
                 React
               </Badge>
-              <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+              <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
                 Architecture
               </Badge>
-              <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+              <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
                 Best Practices
               </Badge>
             </div>
             <Link
-              href="/blog/building-scalable-react-applications"
+              href="/blog/my-syde-1a-experience"
+              className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
+            >
+              Read more <ArrowRight className="ml-1 w-4 h-4" />
+            </Link>
+          </div>
+
+          {/* Blog Post 2 */}
+          <div className="bg-transparent border border-gray-700 rounded-lg p-6">
+            <div className="flex flex-col md:flex-row md:items-center justify-between mb-3">
+              <h3 className="text-xl font-bold text-white">How Social Media Has Changed My Life</h3>
+              <span className="text-gray-400 text-sm mt-1 md:mt-0">March 24, 2025</span>
+            </div>
+            <p className="text-gray-300 mb-4">
+              In this article, I explore best practices for building React applications that scale well as your project
+              grows. From folder structure to state management solutions, learn how to set up your project for long-term
+              success.
+            </p>
+            <div className="flex flex-wrap gap-2 mb-4">
+              <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
+                React
+              </Badge>
+              <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
+                Architecture
+              </Badge>
+              <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
+                Best Practices
+              </Badge>
+            </div>
+            <Link
+              href="/blog/my-syde-1a-experience"
               className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
             >
               Read more <ArrowRight className="ml-1 w-4 h-4" />
@@ -89,7 +122,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Project 1 */}
-          <Card className="bg-gray-800 border-gray-700 overflow-hidden">
+          <Card className="bg-transparent border border-gray-700 overflow-hidden">
             <div className="relative h-48">
               <Image
                 src="/placeholder.svg?height=400&width=600"
@@ -104,13 +137,13 @@ export default function Home() {
                 A full-stack e-commerce platform with product management, cart functionality, and secure checkout.
               </p>
               <div className="flex flex-wrap gap-2 pt-2">
-                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
                   React
                 </Badge>
-                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
                   Node.js
                 </Badge>
-                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
                   MongoDB
                 </Badge>
               </div>
@@ -131,7 +164,7 @@ export default function Home() {
           </Card>
 
           {/* Project 2 */}
-          <Card className="bg-gray-800 border-gray-700 overflow-hidden">
+          <Card className="bg-transparent border border-gray-700 overflow-hidden">
             <div className="relative h-48">
               <Image
                 src="/placeholder.svg?height=400&width=600"
@@ -146,13 +179,13 @@ export default function Home() {
                 An application that leverages AI to generate blog posts, social media content, and marketing copy.
               </p>
               <div className="flex flex-wrap gap-2 pt-2">
-                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
                   Next.js
                 </Badge>
-                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
                   OpenAI API
                 </Badge>
-                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
                   Tailwind CSS
                 </Badge>
               </div>
@@ -173,7 +206,7 @@ export default function Home() {
           </Card>
 
           {/* Project 3 */}
-          <Card className="bg-gray-800 border-gray-700 overflow-hidden">
+          <Card className="bg-transparent border border-gray-700 overflow-hidden">
             <div className="relative h-48">
               <Image src="/placeholder.svg?height=400&width=600" alt="Fitness Tracker" fill className="object-cover" />
             </div>
@@ -184,13 +217,13 @@ export default function Home() {
                 visualization.
               </p>
               <div className="flex flex-wrap gap-2 pt-2">
-                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
                   React Native
                 </Badge>
-                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
                   Firebase
                 </Badge>
-                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
                   D3.js
                 </Badge>
               </div>
@@ -211,7 +244,7 @@ export default function Home() {
           </Card>
 
           {/* Project 4 */}
-          <Card className="bg-gray-800 border-gray-700 overflow-hidden">
+          <Card className="bg-transparent border border-gray-700 overflow-hidden">
             <div className="relative h-48">
               <Image
                 src="/placeholder.svg?height=400&width=600"
@@ -227,13 +260,13 @@ export default function Home() {
                 data.
               </p>
               <div className="flex flex-wrap gap-2 pt-2">
-                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
                   TypeScript
                 </Badge>
-                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
                   Ethereum
                 </Badge>
-                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
                   Web3.js
                 </Badge>
               </div>
@@ -254,7 +287,7 @@ export default function Home() {
           </Card>
 
           {/* Project 5 */}
-          <Card className="bg-gray-800 border-gray-700 overflow-hidden">
+          <Card className="bg-transparent border border-gray-700 overflow-hidden">
             <div className="relative h-48">
               <Image
                 src="/placeholder.svg?height=400&width=600"
@@ -269,13 +302,13 @@ export default function Home() {
                 An IoT dashboard for monitoring and controlling smart home devices with automation capabilities.
               </p>
               <div className="flex flex-wrap gap-2 pt-2">
-                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
                   Vue.js
                 </Badge>
-                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
                   MQTT
                 </Badge>
-                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
                   Chart.js
                 </Badge>
               </div>
@@ -296,7 +329,7 @@ export default function Home() {
           </Card>
 
           {/* Project 6 */}
-          <Card className="bg-gray-800 border-gray-700 overflow-hidden">
+          <Card className="bg-transparent border border-gray-700 overflow-hidden">
             <div className="relative h-48">
               <Image
                 src="/placeholder.svg?height=400&width=600"
@@ -312,13 +345,13 @@ export default function Home() {
                 functionality.
               </p>
               <div className="flex flex-wrap gap-2 pt-2">
-                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
                   React
                 </Badge>
-                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
                   Socket.io
                 </Badge>
-                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
                   Canvas API
                 </Badge>
               </div>
@@ -339,8 +372,6 @@ export default function Home() {
           </Card>
         </div>
       </div>
-
-      
     </main>
   )
 }

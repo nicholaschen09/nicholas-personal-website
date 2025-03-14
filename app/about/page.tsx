@@ -11,27 +11,37 @@ export default function About() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-10">Hey I'm Nicholas!</h1>
             <div className="text-base sm:text-lg text-gray-300 space-y-3 md:space-y-4">
               <p>
-                Hello! I'm a Systems Design Engineering student at the University of Waterloo. I'm currently working as a software engineering intern at Ownr, where I'm developing full-stack web
-                applications and gaining valuable industry experience. In the past, I've worked at companies like RBC and Meta Hash Capital where
+                Hello! I'm a Systems Design Engineering student at the University of Waterloo. I'm currently working as
+                a software engineering intern at Ownr, where I'm developing full-stack web applications and gaining
+                valuable industry experience. In the past, I've worked at companies like RBC and Meta Hash Capital where
                 I made some pretty cool things.
               </p>
             </div>
 
-          {/* Social Media Links */}
+            {/* Social Media Links */}
             <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
-              <Link href="https://www.linkedin.com/in/nicholas-chen-85886726a/" className="text-white hover:text-gray-300 transition-colors">
+              <Link
+                href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
+                className="text-white hover:text-gray-300 transition-colors"
+              >
                 <div className="w-10 h-10 flex items-center justify-center">
                   <img src="/linkedin.png" alt="LinkedIn" className="max-w-full max-h-full object-contain" />
                 </div>
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="https://github.com/nicholaschen09" className="text-white hover:text-gray-300 transition-colors">
+              <Link
+                href="https://github.com/nicholaschen09"
+                className="text-white hover:text-gray-300 transition-colors"
+              >
                 <div className="w-10 h-10 flex items-center justify-center">
                   <img src="/github.png" alt="GitHub" className="w-7 h-7 md:w-8 md:h-8" />
                 </div>
                 <span className="sr-only">GitHub</span>
               </Link>
-              <Link href="mailto:nicholas.chen243@gmail.com" className="text-white hover:text-gray-300 transition-colors">
+              <Link
+                href="mailto:nicholas.chen243@gmail.com"
+                className="text-white hover:text-gray-300 transition-colors"
+              >
                 <div className="w-10 h-10 flex items-center justify-center">
                   <img src="/email.png" alt="Email" className="max-w-full max-h-full object-contain" />
                 </div>
@@ -42,18 +52,12 @@ export default function About() {
 
           <div className="flex flex-col items-center order-1 md:order-2 mb-4 md:mb-0">
             <div className="relative w-full max-w-[250px] md:max-w-md aspect-square overflow-hidden rounded-lg">
-              <Image
-                src="/me.png"
-                alt="Nicholas Chen"
-                width={400}
-                height={400}
-                className="object-cover rounded-lg"
-              />
+              <Image src="/me.png" alt="Nicholas Chen" width={400} height={400} className="object-cover rounded-lg mb-4" />
+            <p className="text-gray-400 -mt-5 text-center italic text-sm sm:text-base">
+              Throwback to a picture of me in grade twelve reminiscing <br /> about everything on the last day of high
+              school
+              </p>
             </div>
-            <p className="text-gray-400 mt-1 text-center italic text-sm sm:text-base">
-              Throwback to a picture of me in grade twelve reminiscing <br /> about
-              everything on the last day of high school
-            </p>
           </div>
         </div>
 
@@ -86,8 +90,8 @@ export default function About() {
                 </div>
                 <p className="text-gray-300 font-medium">RBC</p>
                 <p className="text-gray-400 text-sm sm:text-base">
-                  Developed a machine learning model using python to predict monthly sign-in volumes, improving resource allocation and reducing
-                  support team work times. 
+                  Developed a machine learning model using python to predict monthly sign-in volumes, improving resource
+                  allocation and reducing support team work times.
                 </p>
               </div>
 
@@ -98,8 +102,8 @@ export default function About() {
                 </div>
                 <p className="text-gray-300 font-medium">Meta Hash Capital</p>
                 <p className="text-gray-400 text-sm sm:text-base">
-                  Worked on blockchain and cryptocurrency projects, developing solutions through designing
-                  wireframes, prototypes, and high-fidelity mockups using Figma and Adobe Creative Suite.
+                  Worked on blockchain and cryptocurrency projects, developing solutions through designing wireframes,
+                  prototypes, and high-fidelity mockups using Figma and Adobe Creative Suite.
                 </p>
               </div>
             </div>
@@ -126,12 +130,14 @@ export default function About() {
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 md:mb-4">Community Involvement</h3>
             <div className="space-y-2">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                <h4 className="text-lg sm:text-xl font-semibold text-white">University of Waterloo Alternative Fuels Team</h4>
+                <h4 className="text-lg sm:text-xl font-semibold text-white">
+                  University of Waterloo Alternative Fuels Team
+                </h4>
                 <span className="text-gray-400 text-sm sm:text-base">2024 - Present</span>
               </div>
               <p className="text-gray-300 font-medium">Electrical and Mechanical Engineer</p>
               <p className="text-gray-400 text-sm sm:text-base">
-                Worked on designing and implementing electrical and mechanical systems for our alternative fuel vehicle. 
+                Worked on designing and implementing electrical and mechanical systems for our alternative fuel vehicle.
               </p>
             </div>
           </section>
@@ -140,7 +146,6 @@ export default function About() {
           <section>
             <h3 className="text-2xl font-bold text-white mb-4">Awards & Achievements</h3>
             <div className="space-y-6">
-
               <div className="space-y-2">
                 <div className="flex justify-between items-baseline">
                   <h4 className="text-xl font-semibold text-white">Second Place - UTRA Hacks</h4>
@@ -148,7 +153,8 @@ export default function About() {
                 </div>
                 <p className="text-gray-300 font-medium">University of Toronto</p>
                 <p className="text-gray-400">
-                  Placed second with a team of four people to develop an innovative solution for helping people with bad posture.
+                  Placed second with a team of four people to develop an innovative solution for helping people with bad
+                  posture.
                 </p>
               </div>
 
