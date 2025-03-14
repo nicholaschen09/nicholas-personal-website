@@ -20,7 +20,9 @@ export default function BlogPost() {
             My SYDE 1A Experience
           </h1>
           <div className="flex flex-wrap items-center gap-4">
-            <span className="text-gray-400">March 13, 2025</span>
+            <span className="text-gray-400">
+              March 13, 2025 <span className="text-pink-500">// 3 min read</span>
+            </span>
             <div className="flex flex-wrap gap-2">
               <Badge
                 variant="outline"
@@ -54,18 +56,21 @@ export default function BlogPost() {
             className="object-cover"
           />
         </div>
+        <p className="text-gray-400 italic text-center mt-2">
+          here's a photo of the entire class after the SYDE 121 final exam in E7
+        </p>
 
         <div className="prose prose-invert max-w-none">
           <p className="text-xl leading-relaxed">
-            Starting my journey in Systems Design Engineering at the University
-            of Waterloo was both exciting and challenging. The first academic
-            term, known as 1A, was a whirlwind of new experiences, rigorous
-            coursework, and valuable lessons.
+            My first term in Systems Design Engineering (SYDE) at the University
+            of Waterloo was extermely exciting and challenging. The first
+            academic term, known as 1A, was a whirlwind of new experiences,
+            rigorous coursework, and valuable lessons.
           </p>
 
           {/* Transition from High School */}
           <h2 className="text-2xl font-bold mt-10 mb-4">
-            Transition from High School
+            The Transition from High School
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div>
