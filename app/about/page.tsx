@@ -76,7 +76,7 @@ export default function About() {
                   <h4 className="text-lg sm:text-xl font-semibold text-white">Software Engineer Intern</h4>
                   <span className="text-gray-400 text-sm sm:text-base">Jan 2025 - Present</span>
                 </div>
-                <p className="text-gray-300 font-medium">Ownr</p>
+                <p className="text-gray-300 font-medium">Ownr - RBCx</p>
                 <p className="text-gray-400 text-sm sm:text-base">
                   Working on full-stack web development, implementing new features, and improving existing
                   functionality. Collaborating with cross-functional teams to deliver high-quality software solutions.
