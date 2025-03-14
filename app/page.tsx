@@ -116,6 +116,37 @@ export default function Home() {
               Read more <ArrowRight className="ml-1 w-4 h-4" />
             </Link>
           </div>
+          {/* Blog Post 3 */}
+          <div className="bg-transparent border border-gray-700 rounded-lg p-6">
+            <div className="flex flex-col md:flex-row md:items-center justify-between mb-3">
+              <h3 className="text-xl font-bold text-white">Thoughts on my first Co-op at Ownr, an RBCx Company </h3>
+              <span className="text-gray-400 text-sm mt-1 md:mt-0">April 20, 2025</span>
+            </div>
+            <p className="text-gray-300 mb-4">
+              In this article, I share my experiences during my first co-op term at
+              Ownr, an RBCx company. I discuss the projects I worked on, the skills I
+              developed, and the challenges I faced. This term provided me with valuable
+              insights into full-stack web development and the importance of teamwork in a
+              professional setting.
+            </p>
+            <div className="flex flex-wrap gap-2 mb-4">
+              <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
+                Communication
+              </Badge>
+              <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
+                Software Engineering
+              </Badge>
+              <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
+                Javascript
+              </Badge>
+            </div>
+            <Link
+              href="/blogs/ownr"
+              className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
+            >
+              Read more <ArrowRight className="ml-1 w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </div>
       {/* Projects Section */}
