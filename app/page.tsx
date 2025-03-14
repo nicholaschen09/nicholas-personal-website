@@ -79,7 +79,7 @@ export default function Home() {
               </Badge>
             </div>
             <Link
-              href="/blog/my-syde-1a-experience"
+              href="/blogs/syde1aexperience"
               className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
             >
               Read more <ArrowRight className="ml-1 w-4 h-4" />
@@ -110,7 +110,7 @@ export default function Home() {
               </Badge>
             </div>
             <Link
-              href="/blog/my-syde-1a-experience"
+              href="/blogs/socialmedia"
               className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
             >
               Read more <ArrowRight className="ml-1 w-4 h-4" />

@@ -7,8 +7,8 @@ export default function BlogPost() {
   return (
     <main className="flex min-h-screen flex-col items-center p-6 md:p-24">
       <article className="max-w-4xl w-full space-y-8 pt-24 md:pt-16">
-        <Link href="/blog" className="inline-flex items-center text-gray-400 hover:text-white transition-colors mb-6">
-          <ArrowLeft className="mr-2 w-4 h-4" /> Back to all posts
+        <Link href="/" className="inline-flex items-center text-gray-400 hover:text-white transition-colors mb-6">
+          <ArrowLeft className="mr-2 w-4 h-4" /> Back to homepage
         </Link>
 
         <div className="space-y-4">
