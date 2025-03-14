@@ -77,6 +77,57 @@ export default function BlogPost() {
             going to be for the next 5 years of my life.
           </p>
 
+          {/* Waterloo Engineering in General */}
+          <h2 className="text-2xl font-bold mt-8 mb-4">
+            Waterloo Engineering in General
+          </h2>
+          <p>
+            Waterloo Engineering is known for its rigorous curriculum and co-op
+            program. The faculty emphasizes a strong foundation in engineering
+            principles, hands-on learning, and real-world problem-solving. The
+            co-op program allows students to gain valuable work experience and
+            apply their knowledge in industry settings. The community is
+            supportive and collaborative, with numerous clubs, design teams, and
+            events that foster innovation and teamwork.
+          </p>
+          <div className="relative w-full overflow-hidden mt-4 mb-6">
+            <Image
+              src="/e7.png"
+              alt="E7 University of Waterloo"
+              width={900}
+              height={300}
+              className="object-cover rounded-xl"
+            />
+            <p className="text-gray-400 italic text-center mt-8">
+              E7, The Engineering Building at the University of Waterloo
+            </p>
+          </div>
+
+          {/* Orientation Week */}
+          <h2 className="text-2xl font-bold mt-8 mb-4">Orientation Week</h2>
+          <p>
+            Orientation Week at the University of Waterloo was an unforgettable
+            experience. It was a week filled with activities, events, and
+            opportunities to meet fellow students and faculty members. From
+            team-building exercises to campus tours and social events,
+            Orientation Week helped me feel welcomed and prepared for the
+            journey ahead. It was a great way to start my university life and
+            make lasting connections.
+          </p>
+
+          <div className="relative w-full overflow-hidden mt-4 mb-6">
+            <Image
+              src="/orientation.png"
+              alt="Orientation Week at the University of Waterloo"
+              width={1200}
+              height={500}
+              className="object-cover rounded-xl"
+            />
+            <p className="text-gray-400 italic text-center mt-8">
+              Orientation Week at the University of Waterloo
+            </p>
+          </div>
+
           {/* Transition from High School */}
           <h2 className="text-2xl font-bold mt-2 mb-4">
             The Transition from High School
@@ -109,7 +160,7 @@ export default function BlogPost() {
                   className="object-cover rounded-xl"
                 />
               </div>
-              <p className="text-gray-400 italic mt-2 text-center mr-20">
+              <p className="text-gray-400 italic mt-8 text-center mr-15">
                 My SYDE 1A schedule. Everyone, including me hated 8:30am classes
               </p>
             </div>
@@ -612,6 +663,66 @@ export default function BlogPost() {
           {/* You can add more articles similarly */}
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="w-full max-w-4xl mt-16 pt-8 border-t border-gray-700">
+        <div className="flex flex-col items-center md:items-start">
+          <p className="text-gray-400 mb-4">
+            © 2025 Nicholas Chen. All rights reserved.
+          </p>
+
+          {/* Social Media Links */}
+          <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
+            <Link
+              href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
+              className="text-white hover:text-gray-300 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="w-10 h-10 flex items-center justify-center">
+                <img
+                  src="/linkedin.png"
+                  alt="LinkedIn"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <span className="sr-only">LinkedIn</span>
+            </Link>
+            <Link
+              href="https://github.com/nicholaschen09"
+              className="text-white hover:text-gray-300 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="w-10 h-10 flex items-center justify-center">
+                <img
+                  src="/github.png"
+                  alt="GitHub"
+                  className="w-7 h-7 md:w-8 md:h-8"
+                />
+              </div>
+              <span className="sr-only">GitHub</span>
+            </Link>
+            <Link
+              href="mailto:nicholas.chen243@gmail.com"
+              className="text-white hover:text-gray-300 transition-colors"
+            >
+              <div className="w-10 h-10 flex items-center justify-center">
+                <img
+                  src="/email.png"
+                  alt="Email"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <span className="sr-only">Email</span>
+            </Link>
+          </div>
+
+          <p className="text-gray-500 text-sm mt-6 text-center md:text-left">
+            Designed and built by Nicholas Chen
+          </p>
+        </div>
+      </footer>
     </main>
   );
 }
