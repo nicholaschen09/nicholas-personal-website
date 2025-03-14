@@ -104,12 +104,12 @@ export default function BlogPost() {
           </div>
 
           {/* Courses Section */}
-          <h2 className="text-2xl font-bold mt-10 mb-4">The Curriculum</h2>
+          <h2 className="text-2xl font-bold mt-10 mb-4">Courses</h2>
           <p>
-            The SYDE 1A curriculum is designed to build a strong foundation in
+            The SYDE curriculum is designed to build a strong foundation in
             engineering principles while introducing the systems thinking
-            approach that makes this program unique. Here's a breakdown of the
-            core courses:
+            approach that makes this program super unique. Here were the courses
+            I had to take in 1A:
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
@@ -207,7 +207,9 @@ export default function BlogPost() {
           </div>
 
           {/* CMH (Conrad Muller Hall) Section */}
-          <h2 className="text-2xl font-bold mt-10 mb-4">Life at CMH</h2>
+          <h2 className="text-2xl font-bold mt-10 mb-4">
+            Living in Claudette Millar Hall (CMH)
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div>
               <p>
