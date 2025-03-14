@@ -100,7 +100,7 @@ export default function BlogPost() {
             </div>
             <div className="relative w-full aspect-square rounded-lg overflow-hidden">
               <Image
-                src="/1Aschedule.png"
+                src="/term.png"
                 alt="High school to university transition"
                 width={380}
                 height={4500}
