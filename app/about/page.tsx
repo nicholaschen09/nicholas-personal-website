@@ -60,7 +60,7 @@ export default function About() {
         {/* Experience, Education, Community, Awards Section */}
         <div className="space-y-8 md:space-y-12">
           <h2 className="text-5xl sm:text-4xl font-bold text-white border-b border-gray-700 pb-2">
-            SOME OF THE COOL THINGS I'VE DONE
+            Some of the Cool Things I've Done
           </h2>
 
           {/* Work Experience */}
