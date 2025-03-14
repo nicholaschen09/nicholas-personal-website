@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function About() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-4 sm:p-8 md:p-24 pt-40 md:pt-52">
+    <main className="flex min-h-screen flex-col items-center p-4 sm:p-8 md:p-24 pt-40 md:pt-32">
       <div className="max-w-6xl w-full space-y-10 md:space-y-16 pt-16 md:pt-20">
         {/* Two-column layout: About text and Image */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
