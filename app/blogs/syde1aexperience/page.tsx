@@ -22,7 +22,7 @@ export default function BlogPost() {
           <div className="flex flex-wrap items-center gap-4">
             <span className="text-gray-400">
               March 13, 2025{' '}
-              <span className="text-pink-500">// 3 min read</span>
+              <span className="text-pink-500">// 10 min read</span>
             </span>
             <div className="flex flex-wrap gap-2">
               <Badge
