@@ -84,7 +84,7 @@ export default function About() {
 
         {/* Experience, Education, Community, Awards Section */}
         <div className="space-y-8 md:space-y-12 mt- md:mt-8">
-          <h2 className="text-5xl sm:text-4xl font-bold text-white border-b border-gray-700 pb-2">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white border-b border-gray-700 pb-2">
             Some of the Cool Things I've Done
           </h2>
 
