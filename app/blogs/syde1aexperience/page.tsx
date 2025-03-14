@@ -102,13 +102,15 @@ export default function BlogPost() {
               <Image
                 src="/1Aschedule.png"
                 alt="High school to university transition"
-                width={400}
-                height={400}
+                width={380}
+                height={4500}
                 className="object-cover rounded-xl"
               />
             </div>
           </div>
-
+          <p className="text-gray-400 italic text-right mt-2 mr-20">
+            My SYDE 1A schedule. I hated 8:30am classes
+          </p>
           {/* Courses Section */}
           <h2 className="text-2xl font-bold mt-10 mb-4">Courses</h2>
           <p>
