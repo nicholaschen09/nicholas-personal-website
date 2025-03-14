@@ -19,19 +19,19 @@ export default function About() {
 
           {/* Social Media Links */}
             <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
-              <Link href="https://linkedin.com" className="text-white hover:text-gray-300 transition-colors">
+              <Link href="https://www.linkedin.com/in/nicholas-chen-85886726a/" className="text-white hover:text-gray-300 transition-colors">
                 <div className="w-10 h-10 flex items-center justify-center">
                   <img src="/linkedin.png" alt="LinkedIn" className="max-w-full max-h-full object-contain" />
                 </div>
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="https://github.com" className="text-white hover:text-gray-300 transition-colors">
+              <Link href="https://github.com/nicholaschen09" className="text-white hover:text-gray-300 transition-colors">
                 <div className="w-10 h-10 flex items-center justify-center">
                   <img src="/github.png" alt="GitHub" className="w-7 h-7 md:w-8 md:h-8" />
                 </div>
                 <span className="sr-only">GitHub</span>
               </Link>
-              <Link href="mailto:nicholas@example.com" className="text-white hover:text-gray-300 transition-colors">
+              <Link href="mailto:nicholas.chen243@gmail.com" className="text-white hover:text-gray-300 transition-colors">
                 <div className="w-10 h-10 flex items-center justify-center">
                   <img src="/email.png" alt="Email" className="max-w-full max-h-full object-contain" />
                 </div>
