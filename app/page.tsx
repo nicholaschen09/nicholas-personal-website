@@ -62,9 +62,10 @@ export default function Home() {
               <span className="text-gray-400 text-sm mt-1 md:mt-0">March 13, 2025</span>
             </div>
             <p className="text-gray-300 mb-4">
-              In this article, I explore best practices for building React applications that scale well as your project
-              grows. From folder structure to state management solutions, learn how to set up your project for long-term
-              success.
+              In this blog post, I reflect on my first semester in the Systems Design
+              Engineering program at the University of Waterloo. I discuss the challenges I
+              faced, the projects I worked on, and the valuable lessons I learned. This experience
+              has shaped my approach to problem-solving and teamwork.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
@@ -92,9 +93,10 @@ export default function Home() {
               <span className="text-gray-400 text-sm mt-1 md:mt-0">March 24, 2025</span>
             </div>
             <p className="text-gray-300 mb-4">
-              In this article, I explore best practices for building React applications that scale well as your project
-              grows. From folder structure to state management solutions, learn how to set up your project for long-term
-              success.
+              In this article, I share my personal journey and experiences with social media,
+              discussing both the positive and negative impacts it has had on my life.
+              From connecting with friends and family to dealing with online distractions,
+              I explore how social media has shaped my daily routine and overall well-being.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
