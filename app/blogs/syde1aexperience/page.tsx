@@ -100,11 +100,11 @@ export default function BlogPost() {
             </div>
             <div className="relative w-full aspect-square rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                src="/1Aschedule.png"
                 alt="High school to university transition"
                 width={400}
                 height={400}
-                className="object-cover"
+                className="object-cover rounded-xl"
               />
             </div>
           </div>
@@ -636,12 +636,6 @@ export default function BlogPost() {
                 height={64}
                 className="object-cover"
               />
-            </div>
-            <div>
-              <h3 className="font-bold text-lg">Author Name</h3>
-              <p className="text-gray-400">
-                Systems Design Engineering, Class of 2026
-              </p>
             </div>
           </div>
         </div>
