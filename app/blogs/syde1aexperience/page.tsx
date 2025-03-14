@@ -63,10 +63,12 @@ export default function BlogPost() {
 
         <div className="prose prose-invert max-w-none">
           <p className="text-normal leading-relaxed">
-            My first term in Systems Design Engineering (SYDE) at the University
-            of Waterloo was extermely exciting and challenging. The first
-            academic term, known as 1A, was a whirlwind of new experiences,
-            rigorous coursework, and valuable lessons.
+            My first term (1A) in Systems Design Engineering (SYDE) at the
+            University of Waterloo was extermely exciting and challenging. This
+            term was full of unqiue experiences and it feels like just
+            yesterday. I made a lot of new friends and learned a lot about
+            myself and just how rigorous this waterloo engineering thing was
+            going to be for the next 5 years of my life.
           </p>
 
           {/* Transition from High School */}
