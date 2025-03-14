@@ -69,13 +69,13 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
-                React
+                Design
               </Badge>
               <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
-                Architecture
+                Programming
               </Badge>
               <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
-                Best Practices
+                Engineering
               </Badge>
             </div>
             <Link
@@ -100,13 +100,13 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
-                React
+                Creativity
               </Badge>
               <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
-                Architecture
+                Video Editing
               </Badge>
               <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
-                Best Practices
+                Content Creation
               </Badge>
             </div>
             <Link
