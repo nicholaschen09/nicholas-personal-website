@@ -170,7 +170,7 @@ export default function Home() {
           <div className="bg-transparent border border-gray-700 rounded-lg p-6">
             <div className="flex flex-col md:flex-row md:items-center justify-between mb-3">
               <h3 className="text-xl font-bold text-white">
-                Thoughts on my first Co-op at Ownr, an RBCx Company{' '}
+                What I Loved About Being A Software Engineering Intern at Ownr
               </h3>
               <span className="text-gray-400 text-sm mt-1 md:mt-0">
                 April 20, 2025

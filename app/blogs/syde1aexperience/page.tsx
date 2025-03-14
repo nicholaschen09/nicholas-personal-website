@@ -2,10 +2,16 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowLeft } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
 
 export default function BlogPost() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-6 md:p-24">
+    <main className="flex min-h-screen flex-col items-center p-6 md:p-24 bg-zinc-950 text-white">
       <article className="max-w-4xl w-full space-y-8 pt-24 md:pt-16">
         <Link
           href="/"
@@ -50,7 +56,7 @@ export default function BlogPost() {
         {/* Featured Image */}
         <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden">
           <Image
-            src="/syde.png"
+            src="/placeholder.svg?height=800&width=1200"
             alt="SYDE 1A Experience"
             width={1200}
             height={800}
@@ -112,67 +118,269 @@ export default function BlogPost() {
             I had to take in 1A:
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
-            <div className="bg-gray-800/50 p-4 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">SYDE 111</h3>
-              <p className="text-sm">
-                Calculus 1 - Differential and integral calculus with engineering
-                applications.
-              </p>
-            </div>
-            <div className="bg-gray-800/50 p-4 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">SYDE 121</h3>
-              <p className="text-sm">
-                Digital Computation - Learning programming fundamentals using
-                C++, with applications in engineering and problem-solving.
-              </p>
-            </div>
-            <div className="bg-gray-800/50 p-4 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">SYDE 181</h3>
-              <p className="text-sm">
-                Physics: Statics - Covering the principles of mechanics,
-                including forces, moments, and equilibrium, with an engineering
-                perspective.
-              </p>
-            </div>
-            <div className="bg-gray-800/50 p-4 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">SYDE 113</h3>
-              <p className="text-sm">
-                Elementary Engineering Math - Essential mathematical concepts
-                that form the backbone of many engineering applications.
-              </p>
-            </div>
-            <div className="bg-gray-800/50 p-4 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">SYDE 101</h3>
-              <p className="text-sm">
-                CCommunications - Developing effective communication skills for
-                engineers, including technical writing and presentations.
-              </p>
-            </div>
-            <div className="bg-gray-800/50 p-4 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">SYDE 101L</h3>
-              <p className="text-sm">
-                Visual Communications - Developing skills in visual
-                communication, including technical drawing and graphical
-                representation.
-              </p>
-            </div>
-            <div className="bg-gray-800/50 p-4 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">SYDE 161</h3>
-              <p className="text-sm">
-                Introduction to Design - An introduction to the engineering
-                design process, including problem identification, brainstorming,
-                and prototyping.
-              </p>
-            </div>
-            <div className="bg-gray-800/50 p-4 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">GENE 119</h3>
-              <p className="text-sm">
-                Problems Seminar - A seminar course focused on preparing
-                students academically and personally for their first year in
-                engineering.
-              </p>
-            </div>
+          {/* Courses as accordion items in full-width rows */}
+          <div className="my-6">
+            <Accordion type="single" collapsible className="w-full space-y-4">
+              <AccordionItem value="syde-111" className="accordion-item">
+                <AccordionTrigger className="accordion-trigger">
+                  <div className="flex items-center justify-between w-full">
+                    <div className="flex items-center">
+                      <span className="font-bold text-lg">SYDE 111</span>
+                      <span className="ml-4 text-gray-400">Calculus 1</span>
+                    </div>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="accordion-content">
+                  <p>
+                    Differential and integral calculus with engineering
+                    applications. This course covers limits, derivatives,
+                    applications of derivatives, integrals, and applications of
+                    integrals. The material is presented with an emphasis on
+                    engineering problems and applications.
+                  </p>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    <Badge variant="secondary" className="bg-gray-700">
+                      Calculus
+                    </Badge>
+                    <Badge variant="secondary" className="bg-gray-700">
+                      Mathematics
+                    </Badge>
+                    <Badge variant="secondary" className="bg-gray-700">
+                      Engineering Applications
+                    </Badge>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="syde-121" className="accordion-item">
+                <AccordionTrigger className="accordion-trigger">
+                  <div className="flex items-center justify-between w-full">
+                    <div className="flex items-center">
+                      <span className="font-bold text-lg">SYDE 121</span>
+                      <span className="ml-4 text-gray-400">
+                        Digital Computation
+                      </span>
+                    </div>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="accordion-content">
+                  <p>
+                    Learning programming fundamentals using C++, with
+                    applications in engineering and problem-solving. The course
+                    covers basic programming concepts, data types, control
+                    structures, functions, arrays, and an introduction to
+                    object-oriented programming.
+                  </p>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    <Badge variant="secondary" className="bg-gray-700">
+                      C++
+                    </Badge>
+                    <Badge variant="secondary" className="bg-gray-700">
+                      Programming
+                    </Badge>
+                    <Badge variant="secondary" className="bg-gray-700">
+                      Problem Solving
+                    </Badge>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="syde-181" className="accordion-item">
+                <AccordionTrigger className="accordion-trigger">
+                  <div className="flex items-center justify-between w-full">
+                    <div className="flex items-center">
+                      <span className="font-bold text-lg">SYDE 181</span>
+                      <span className="ml-4 text-gray-400">
+                        Physics: Statics
+                      </span>
+                    </div>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="accordion-content">
+                  <p>
+                    Covering the principles of mechanics, including forces,
+                    moments, and equilibrium, with an engineering perspective.
+                    The course teaches how to analyze stationary systems,
+                    calculate moments of force, and determine conditions for
+                    equilibrium in various mechanical systems.
+                  </p>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    <Badge variant="secondary" className="bg-gray-700">
+                      Mechanics
+                    </Badge>
+                    <Badge variant="secondary" className="bg-gray-700">
+                      Forces
+                    </Badge>
+                    <Badge variant="secondary" className="bg-gray-700">
+                      Equilibrium
+                    </Badge>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="syde-113" className="accordion-item">
+                <AccordionTrigger className="accordion-trigger">
+                  <div className="flex items-center justify-between w-full">
+                    <div className="flex items-center">
+                      <span className="font-bold text-lg">SYDE 113</span>
+                      <span className="ml-4 text-gray-400">
+                        Elementary Engineering Math
+                      </span>
+                    </div>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="accordion-content">
+                  <p>
+                    Essential mathematical concepts that form the backbone of
+                    many engineering applications. This course covers linear
+                    algebra, matrices, vectors, complex numbers, and
+                    differential equations with a focus on their applications in
+                    engineering problems.
+                  </p>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    <Badge variant="secondary" className="bg-gray-700">
+                      Linear Algebra
+                    </Badge>
+                    <Badge variant="secondary" className="bg-gray-700">
+                      Matrices
+                    </Badge>
+                    <Badge variant="secondary" className="bg-gray-700">
+                      Differential Equations
+                    </Badge>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="syde-101" className="accordion-item">
+                <AccordionTrigger className="accordion-trigger">
+                  <div className="flex items-center justify-between w-full">
+                    <div className="flex items-center">
+                      <span className="font-bold text-lg">SYDE 101</span>
+                      <span className="ml-4 text-gray-400">Communications</span>
+                    </div>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="accordion-content">
+                  <p>
+                    Developing effective communication skills for engineers,
+                    including technical writing and presentations. The course
+                    focuses on creating clear, concise, and effective technical
+                    documents and delivering compelling presentations on
+                    engineering topics.
+                  </p>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    <Badge variant="secondary" className="bg-gray-700">
+                      Technical Writing
+                    </Badge>
+                    <Badge variant="secondary" className="bg-gray-700">
+                      Presentations
+                    </Badge>
+                    <Badge variant="secondary" className="bg-gray-700">
+                      Professional Communication
+                    </Badge>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="syde-101l" className="accordion-item">
+                <AccordionTrigger className="accordion-trigger">
+                  <div className="flex items-center justify-between w-full">
+                    <div className="flex items-center">
+                      <span className="font-bold text-lg">SYDE 101L</span>
+                      <span className="ml-4 text-gray-400">
+                        Visual Communications
+                      </span>
+                    </div>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="accordion-content">
+                  <p>
+                    Developing skills in visual communication, including
+                    technical drawing and graphical representation. Students
+                    learn to create and interpret engineering drawings, use CAD
+                    software, and effectively communicate design concepts
+                    through visual means.
+                  </p>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    <Badge variant="secondary" className="bg-gray-700">
+                      Technical Drawing
+                    </Badge>
+                    <Badge variant="secondary" className="bg-gray-700">
+                      CAD
+                    </Badge>
+                    <Badge variant="secondary" className="bg-gray-700">
+                      Visual Design
+                    </Badge>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="syde-161" className="accordion-item">
+                <AccordionTrigger className="accordion-trigger">
+                  <div className="flex items-center justify-between w-full">
+                    <div className="flex items-center">
+                      <span className="font-bold text-lg">SYDE 161</span>
+                      <span className="ml-4 text-gray-400">
+                        Introduction to Design
+                      </span>
+                    </div>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="accordion-content">
+                  <p>
+                    An introduction to the engineering design process, including
+                    problem identification, brainstorming, and prototyping. This
+                    course teaches systematic approaches to design,
+                    user-centered design principles, and methods for evaluating
+                    and iterating on design solutions.
+                  </p>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    <Badge variant="secondary" className="bg-gray-700">
+                      Design Process
+                    </Badge>
+                    <Badge variant="secondary" className="bg-gray-700">
+                      Prototyping
+                    </Badge>
+                    <Badge variant="secondary" className="bg-gray-700">
+                      User-Centered Design
+                    </Badge>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="gene-119" className="accordion-item">
+                <AccordionTrigger className="accordion-trigger">
+                  <div className="flex items-center justify-between w-full">
+                    <div className="flex items-center">
+                      <span className="font-bold text-lg">GENE 119</span>
+                      <span className="ml-4 text-gray-400">
+                        Problems Seminar
+                      </span>
+                    </div>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="accordion-content">
+                  <p>
+                    A seminar course focused on preparing students academically
+                    and personally for their first year in engineering. The
+                    course addresses study skills, time management, stress
+                    management, and introduces students to resources available
+                    on campus to support their academic success.
+                  </p>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    <Badge variant="secondary" className="bg-gray-700">
+                      Academic Skills
+                    </Badge>
+                    <Badge variant="secondary" className="bg-gray-700">
+                      Time Management
+                    </Badge>
+                    <Badge variant="secondary" className="bg-gray-700">
+                      Student Support
+                    </Badge>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
 
           {/* Schedule Section */}
@@ -428,6 +636,12 @@ export default function BlogPost() {
                 height={64}
                 className="object-cover"
               />
+            </div>
+            <div>
+              <h3 className="font-bold text-lg">Author Name</h3>
+              <p className="text-gray-400">
+                Systems Design Engineering, Class of 2026
+              </p>
             </div>
           </div>
         </div>
