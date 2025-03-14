@@ -1,0 +1,347 @@
+"use client"
+import Link from "next/link"
+import Image from "next/image"
+import { Github, Linkedin, Mail, ExternalLink, ArrowRight } from "lucide-react"
+import { TypeAnimation } from "react-type-animation"
+import { Badge } from "@/components/ui/badge"
+import { Card, CardContent, CardFooter } from "@/components/ui/card"
+
+export default function Home() {
+  return (
+    <main className="flex min-h-screen flex-col items-center p-6 md:p-24">
+      {/* Hero Section */}
+      <div className="max-w-3xl w-full space-y-6 md:space-y-8 mb-16 md:mb-24 pt-16 md:pt-0">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white">Nicholas Chen</h1>
+
+        <div className="h-auto min-h-[150px] md:min-h-[120px]">
+          <TypeAnimation
+            sequence={[
+              "I am a software engineering intern at Ownr doing full stack web development, and a Systems Design Engineering student at the University of Waterloo. Previously, I've helped create awesome things at RBC and Meta Hash Capital.",
+              1000,
+            ]}
+            wrapper="p"
+            speed={50}
+            className="text-base sm:text-lg md:text-xl text-gray-300"
+            repeat={0}
+          />
+        </div>
+
+<div className="flex space-x-8 pt-4 justify-center sm:justify-start">
+  <Link href="https://linkedin.com" className="text-white hover:text-gray-300 transition-colors">
+    <div className="w-10 h-10 flex items-center justify-center">
+      <img src="/linkedin.png" alt="LinkedIn" className="max-w-full max-h-full object-contain" />
+    </div>
+    <span className="sr-only">LinkedIn</span>
+  </Link>
+  <Link href="https://github.com" className="text-white hover:text-gray-300 transition-colors">
+    <div className="w-10 h-10 flex items-center justify-center">
+      <img src="/github.png" alt="GitHub" className="w-7 h-7 md:w-8 md:h-8" />
+    </div>
+    <span className="sr-only">GitHub</span>
+  </Link>
+  <Link href="mailto:nicholas@example.com" className="text-white hover:text-gray-300 transition-colors">
+    <div className="w-10 h-10 flex items-center justify-center">
+      <img src="/email.png" alt="Email" className="max-w-full max-h-full object-contain" />
+    </div>
+    <span className="sr-only">Email</span>
+  </Link>
+</div>
+      </div>
+
+      {/* Projects Section */}
+      <div className="w-full max-w-6xl mb-20">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 md:mb-10">Projects</h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Project 1 */}
+          <Card className="bg-gray-800 border-gray-700 overflow-hidden">
+            <div className="relative h-48">
+              <Image
+                src="/placeholder.svg?height=400&width=600"
+                alt="E-commerce Platform"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <CardContent className="p-4 space-y-3">
+              <h3 className="text-xl font-bold text-white">E-commerce Platform</h3>
+              <p className="text-gray-300 text-sm">
+                A full-stack e-commerce platform with product management, cart functionality, and secure checkout.
+              </p>
+              <div className="flex flex-wrap gap-2 pt-2">
+                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                  React
+                </Badge>
+                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                  Node.js
+                </Badge>
+                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                  MongoDB
+                </Badge>
+              </div>
+            </CardContent>
+            <CardFooter className="p-4 pt-0 flex justify-between">
+              <Link
+                href="https://github.com"
+                className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+              >
+                <Github className="w-4 h-4" />
+                Code
+              </Link>
+              <Link href="#" className="text-gray-300 hover:text-white flex items-center gap-1 text-sm">
+                <ExternalLink className="w-4 h-4" />
+                Live Demo
+              </Link>
+            </CardFooter>
+          </Card>
+
+          {/* Project 2 */}
+          <Card className="bg-gray-800 border-gray-700 overflow-hidden">
+            <div className="relative h-48">
+              <Image
+                src="/placeholder.svg?height=400&width=600"
+                alt="AI Content Generator"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <CardContent className="p-4 space-y-3">
+              <h3 className="text-xl font-bold text-white">AI Content Generator</h3>
+              <p className="text-gray-300 text-sm">
+                An application that leverages AI to generate blog posts, social media content, and marketing copy.
+              </p>
+              <div className="flex flex-wrap gap-2 pt-2">
+                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                  Next.js
+                </Badge>
+                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                  OpenAI API
+                </Badge>
+                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                  Tailwind CSS
+                </Badge>
+              </div>
+            </CardContent>
+            <CardFooter className="p-4 pt-0 flex justify-between">
+              <Link
+                href="https://github.com"
+                className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+              >
+                <Github className="w-4 h-4" />
+                Code
+              </Link>
+              <Link href="#" className="text-gray-300 hover:text-white flex items-center gap-1 text-sm">
+                <ExternalLink className="w-4 h-4" />
+                Live Demo
+              </Link>
+            </CardFooter>
+          </Card>
+
+          {/* Project 3 */}
+          <Card className="bg-gray-800 border-gray-700 overflow-hidden">
+            <div className="relative h-48">
+              <Image src="/placeholder.svg?height=400&width=600" alt="Fitness Tracker" fill className="object-cover" />
+            </div>
+            <CardContent className="p-4 space-y-3">
+              <h3 className="text-xl font-bold text-white">Fitness Tracker</h3>
+              <p className="text-gray-300 text-sm">
+                A mobile-first application for tracking workouts, nutrition, and fitness progress with data
+                visualization.
+              </p>
+              <div className="flex flex-wrap gap-2 pt-2">
+                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                  React Native
+                </Badge>
+                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                  Firebase
+                </Badge>
+                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                  D3.js
+                </Badge>
+              </div>
+            </CardContent>
+            <CardFooter className="p-4 pt-0 flex justify-between">
+              <Link
+                href="https://github.com"
+                className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+              >
+                <Github className="w-4 h-4" />
+                Code
+              </Link>
+              <Link href="#" className="text-gray-300 hover:text-white flex items-center gap-1 text-sm">
+                <ExternalLink className="w-4 h-4" />
+                Live Demo
+              </Link>
+            </CardFooter>
+          </Card>
+
+          {/* Project 4 */}
+          <Card className="bg-gray-800 border-gray-700 overflow-hidden">
+            <div className="relative h-48">
+              <Image
+                src="/placeholder.svg?height=400&width=600"
+                alt="Blockchain Explorer"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <CardContent className="p-4 space-y-3">
+              <h3 className="text-xl font-bold text-white">Blockchain Explorer</h3>
+              <p className="text-gray-300 text-sm">
+                A web application for exploring blockchain transactions, addresses, and smart contracts with real-time
+                data.
+              </p>
+              <div className="flex flex-wrap gap-2 pt-2">
+                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                  TypeScript
+                </Badge>
+                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                  Ethereum
+                </Badge>
+                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                  Web3.js
+                </Badge>
+              </div>
+            </CardContent>
+            <CardFooter className="p-4 pt-0 flex justify-between">
+              <Link
+                href="https://github.com"
+                className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+              >
+                <Github className="w-4 h-4" />
+                Code
+              </Link>
+              <Link href="#" className="text-gray-300 hover:text-white flex items-center gap-1 text-sm">
+                <ExternalLink className="w-4 h-4" />
+                Live Demo
+              </Link>
+            </CardFooter>
+          </Card>
+
+          {/* Project 5 */}
+          <Card className="bg-gray-800 border-gray-700 overflow-hidden">
+            <div className="relative h-48">
+              <Image
+                src="/placeholder.svg?height=400&width=600"
+                alt="Smart Home Dashboard"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <CardContent className="p-4 space-y-3">
+              <h3 className="text-xl font-bold text-white">Smart Home Dashboard</h3>
+              <p className="text-gray-300 text-sm">
+                An IoT dashboard for monitoring and controlling smart home devices with automation capabilities.
+              </p>
+              <div className="flex flex-wrap gap-2 pt-2">
+                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                  Vue.js
+                </Badge>
+                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                  MQTT
+                </Badge>
+                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                  Chart.js
+                </Badge>
+              </div>
+            </CardContent>
+            <CardFooter className="p-4 pt-0 flex justify-between">
+              <Link
+                href="https://github.com"
+                className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+              >
+                <Github className="w-4 h-4" />
+                Code
+              </Link>
+              <Link href="#" className="text-gray-300 hover:text-white flex items-center gap-1 text-sm">
+                <ExternalLink className="w-4 h-4" />
+                Live Demo
+              </Link>
+            </CardFooter>
+          </Card>
+
+          {/* Project 6 */}
+          <Card className="bg-gray-800 border-gray-700 overflow-hidden">
+            <div className="relative h-48">
+              <Image
+                src="/placeholder.svg?height=400&width=600"
+                alt="Collaborative Whiteboard"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <CardContent className="p-4 space-y-3">
+              <h3 className="text-xl font-bold text-white">Collaborative Whiteboard</h3>
+              <p className="text-gray-300 text-sm">
+                A real-time collaborative whiteboard application for remote teams with drawing tools and chat
+                functionality.
+              </p>
+              <div className="flex flex-wrap gap-2 pt-2">
+                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                  React
+                </Badge>
+                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                  Socket.io
+                </Badge>
+                <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                  Canvas API
+                </Badge>
+              </div>
+            </CardContent>
+            <CardFooter className="p-4 pt-0 flex justify-between">
+              <Link
+                href="https://github.com"
+                className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+              >
+                <Github className="w-4 h-4" />
+                Code
+              </Link>
+              <Link href="#" className="text-gray-300 hover:text-white flex items-center gap-1 text-sm">
+                <ExternalLink className="w-4 h-4" />
+                Live Demo
+              </Link>
+            </CardFooter>
+          </Card>
+        </div>
+      </div>
+
+      {/* Blog Section */}
+      <div className="w-full max-w-6xl mb-16">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 md:mb-10">Blog</h2>
+
+        <div className="space-y-8">
+          {/* Blog Post 1 */}
+          <div className="bg-gray-800 border border-gray-700 rounded-lg p-6">
+            <div className="flex flex-col md:flex-row md:items-center justify-between mb-3">
+              <h3 className="text-xl font-bold text-white">Building Scalable React Applications</h3>
+              <span className="text-gray-400 text-sm mt-1 md:mt-0">March 15, 2023</span>
+            </div>
+            <p className="text-gray-300 mb-4">
+              In this article, I explore best practices for building React applications that scale well as your project
+              grows. From folder structure to state management solutions, learn how to set up your project for long-term
+              success.
+            </p>
+            <div className="flex flex-wrap gap-2 mb-4">
+              <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                React
+              </Badge>
+              <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                Architecture
+              </Badge>
+              <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                Best Practices
+              </Badge>
+            </div>
+            <Link
+              href="/blog/building-scalable-react-applications"
+              className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
+            >
+              Read more <ArrowRight className="ml-1 w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </div>
+    </main>
+  )
+}
+
