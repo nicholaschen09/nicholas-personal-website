@@ -165,19 +165,19 @@ export default function Home() {
               />
             </div>
             <CardContent className="p-4 space-y-3">
-              <h3 className="text-xl font-bold text-white">E-commerce Platform</h3>
+              <h3 className="text-xl font-bold text-white">Fernando</h3>
               <p className="text-gray-300 text-sm">
-                A full-stack e-commerce platform with product management, cart functionality, and secure checkout.
+                A posture correcting robot that helps you maintain a healthy posture while working at your desk by slapping you when you slouch.
               </p>
               <div className="flex flex-wrap gap-2 pt-2">
                 <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
-                  React
+                  NextJS
                 </Badge>
                 <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
-                  Node.js
+                  OpenCV
                 </Badge>
                 <Badge variant="outline" className="bg-transparent text-white border-gray-500 font-medium">
-                  MongoDB
+                  Terraform
                 </Badge>
               </div>
             </CardContent>
