@@ -53,16 +53,16 @@ export default function About() {
           <div className="flex flex-col items-center order-1 md:order-2 mb-4 md:mb-0">
             <div className="relative w-full max-w-[250px] md:max-w-md aspect-square overflow-hidden rounded-lg">
               <Image src="/me.png" alt="Nicholas Chen" width={400} height={400} className="object-cover rounded-lg mb-4" />
-            <p className="text-gray-400 -mt-5 text-center italic text-sm sm:text-base">
-              Throwback to a picture of me in grade twelve reminiscing <br /> about everything on the last day of high
-              school
-              </p>
+          <p className="text-gray-400 text-center italic text-sm sm:text-base">
+        Throwback to a picture of me in grade twelve reminiscing <br />
+        about everything on the last day of high school
+      </p>
             </div>
           </div>
         </div>
 
         {/* Experience, Education, Community, Awards Section */}
-        <div className="space-y-8 md:space-y-12 mt-3 md:mt-8">
+        <div className="space-y-8 md:space-y-12 mt- md:mt-8">
           <h2 className="text-5xl sm:text-4xl font-bold text-white border-b border-gray-700 pb-2">
             Some of the Cool Things I've Done
           </h2>
