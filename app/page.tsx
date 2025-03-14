@@ -8,9 +8,9 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-6 md:p-24">
+ <main className="flex min-h-screen flex-col items-center p-6 md:p-24">
       {/* Hero Section */}
-      <div className="max-w-3xl w-full space-y-6 md:space-y-8 mb-16 md:mb-24 pt-16 md:pt-0">
+      <div className="max-w-5xl w-full space-y-6 md:space-y-8 mb-16 md:mb-24 pt-24 md:pt-16">
         <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold text-white">Nicholas Chen</h1>
 
         <div className="h-auto min-h-[150px] md:min-h-[120px]">

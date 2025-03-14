@@ -1,45 +1,58 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export default function About() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-4 sm:p-8 md:p-24 pt-20 md:pt-24">
-      <div className="max-w-6xl w-full space-y-10 md:space-y-16">
+    <main className="flex min-h-screen flex-col items-center p-4 sm:p-8 md:p-24 pt-40 md:pt-52">
+      <div className="max-w-6xl w-full space-y-10 md:space-y-16 pt-16 md:pt-20">
         {/* Two-column layout: About text and Image */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="space-y-4 order-2 md:order-1">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6">About Me</h1>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-10">Hey I'm Nicholas!</h1>
             <div className="text-base sm:text-lg text-gray-300 space-y-3 md:space-y-4">
               <p>
-                Hello! I'm Nicholas Chen, a Systems Design Engineering student at the University of Waterloo with a
-                passion for building innovative solutions through software engineering.
+                Hello! I'm a Systems Design Engineering student at the University of Waterloo. I'm currently working as a software engineering intern at Ownr, where I'm developing full-stack web
+                applications and gaining valuable industry experience. In the past, I've worked at companies like RBC and Meta Hash Capital where
+                I made some pretty cool things.
               </p>
-              <p>
-                Currently, I'm working as a software engineering intern at Ownr, where I'm developing full-stack web
-                applications and gaining valuable industry experience.
-              </p>
-              <p>
-                My journey in tech has taken me through various roles at companies like RBC and Meta Hash Capital, where
-                I've contributed to projects that have real-world impact.
-              </p>
-              <p>
-                I believe in the power of technology to solve complex problems and am constantly looking to expand my
-                knowledge and skills in this ever-evolving field.
-              </p>
+            </div>
+
+          {/* Social Media Links */}
+            <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
+              <Link href="https://linkedin.com" className="text-white hover:text-gray-300 transition-colors">
+                <div className="w-10 h-10 flex items-center justify-center">
+                  <img src="/linkedin.png" alt="LinkedIn" className="max-w-full max-h-full object-contain" />
+                </div>
+                <span className="sr-only">LinkedIn</span>
+              </Link>
+              <Link href="https://github.com" className="text-white hover:text-gray-300 transition-colors">
+                <div className="w-10 h-10 flex items-center justify-center">
+                  <img src="/github.png" alt="GitHub" className="w-7 h-7 md:w-8 md:h-8" />
+                </div>
+                <span className="sr-only">GitHub</span>
+              </Link>
+              <Link href="mailto:nicholas@example.com" className="text-white hover:text-gray-300 transition-colors">
+                <div className="w-10 h-10 flex items-center justify-center">
+                  <img src="/email.png" alt="Email" className="max-w-full max-h-full object-contain" />
+                </div>
+                <span className="sr-only">Email</span>
+              </Link>
             </div>
           </div>
 
           <div className="flex flex-col items-center order-1 md:order-2 mb-4 md:mb-0">
             <div className="relative w-full max-w-[250px] md:max-w-md aspect-square overflow-hidden rounded-lg">
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                src="/me.png"
                 alt="Nicholas Chen"
                 width={400}
                 height={400}
-                className="object-cover"
+                className="object-cover rounded-lg"
               />
             </div>
-            <p className="text-gray-400 mt-3 text-center italic text-sm sm:text-base">
-              Software Engineering Intern at Ownr
+            <p className="text-gray-400 mt-1 text-center italic text-sm sm:text-base">
+              Throwback to a picture of me in grade twelve reminiscing <br /> about
+              everything on the last day of high school
             </p>
           </div>
         </div>
