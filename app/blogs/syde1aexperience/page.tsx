@@ -78,9 +78,10 @@ export default function BlogPost() {
           </p>
 
           {/* Transition from High School */}
-          <h2 className="text-2xl font-bold mt-10 mb-4">
+          <h2 className="text-2xl font-bold mt-2 mb-4">
             The Transition from High School
           </h2>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div>
               <p>
@@ -103,12 +104,12 @@ export default function BlogPost() {
                 <Image
                   src="/term.png"
                   alt="High school to university transition"
-                  width={380}
-                  height={450}
+                  width={450}
+                  height={550}
                   className="object-cover rounded-xl"
                 />
               </div>
-              <p className="text-gray-400 italic mt-2 text-center mr-10">
+              <p className="text-gray-400 italic mt-2 text-center mr-20">
                 My SYDE 1A schedule. Everyone, including me hated 8:30am classes
               </p>
             </div>
