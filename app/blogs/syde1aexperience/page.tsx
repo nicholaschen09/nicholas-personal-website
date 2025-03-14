@@ -109,8 +109,7 @@ export default function BlogPost() {
                 />
               </div>
               <p className="text-gray-400 italic mt-2 text-center mr-10">
-                My SYDE 1A schedule. Everyone, including me <br /> hated 8:30am
-                classes
+                My SYDE 1A schedule. Everyone, including me hated 8:30am classes
               </p>
             </div>
           </div>
