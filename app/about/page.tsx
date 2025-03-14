@@ -123,16 +123,17 @@ export default function About() {
 
           {/* Community Involvement */}
           <section>
-            <h3 className="text-2xl font-bold text-white mb-4">Community Involvement</h3>
-            <div className="space-y-6">
-              <div className="space-y-2">
-                <h4 className="text-xl font-semibold text-white">University of Waterloo Alternative Fuels Team</h4>
-                <p className="text-gray-300 font-medium">Electrical and Mechanical Engineer</p>
-                <p className="text-gray-400">
-                  Worked on designing and implementing electrical and mechanical systems for our alternative fuel vehicle. 
-                </p>
+            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 md:mb-4">Community Involvement</h3>
+            <div className="space-y-2">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
+                <h4 className="text-lg sm:text-xl font-semibold text-white">University of Waterloo Alternative Fuels Team</h4>
+                <span className="text-gray-400 text-sm sm:text-base">2024 - Present</span>
               </div>
-               </div>
+              <p className="text-gray-300 font-medium">Electrical and Mechanical Engineer</p>
+              <p className="text-gray-400 text-sm sm:text-base">
+                Worked on designing and implementing electrical and mechanical systems for our alternative fuel vehicle. 
+              </p>
+            </div>
           </section>
 
           {/* Awards */}
