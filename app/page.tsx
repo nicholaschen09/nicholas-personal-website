@@ -47,7 +47,42 @@ export default function Home() {
   </Link>
 </div>
       </div>
+{/* Blog Section */}
+      <div className="w-full max-w-6xl mb-16">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 md:mb-10">Blogs</h2>
 
+        <div className="space-y-8">
+          {/* Blog Post 1 */}
+          <div className="bg-gray-800 border border-gray-700 rounded-lg p-6">
+            <div className="flex flex-col md:flex-row md:items-center justify-between mb-3">
+              <h3 className="text-xl font-bold text-white">My SYDE 1A Experience</h3>
+              <span className="text-gray-400 text-sm mt-1 md:mt-0">March 13, 2025</span>
+            </div>
+            <p className="text-gray-300 mb-4">
+              In this article, I explore best practices for building React applications that scale well as your project
+              grows. From folder structure to state management solutions, learn how to set up your project for long-term
+              success.
+            </p>
+            <div className="flex flex-wrap gap-2 mb-4">
+              <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                React
+              </Badge>
+              <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                Architecture
+              </Badge>
+              <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
+                Best Practices
+              </Badge>
+            </div>
+            <Link
+              href="/blog/building-scalable-react-applications"
+              className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
+            >
+              Read more <ArrowRight className="ml-1 w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </div>
       {/* Projects Section */}
       <div className="w-full max-w-6xl mb-20">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 md:mb-10">Projects</h2>
@@ -305,42 +340,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Blog Section */}
-      <div className="w-full max-w-6xl mb-16">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 md:mb-10">Blog</h2>
-
-        <div className="space-y-8">
-          {/* Blog Post 1 */}
-          <div className="bg-gray-800 border border-gray-700 rounded-lg p-6">
-            <div className="flex flex-col md:flex-row md:items-center justify-between mb-3">
-              <h3 className="text-xl font-bold text-white">Building Scalable React Applications</h3>
-              <span className="text-gray-400 text-sm mt-1 md:mt-0">March 15, 2023</span>
-            </div>
-            <p className="text-gray-300 mb-4">
-              In this article, I explore best practices for building React applications that scale well as your project
-              grows. From folder structure to state management solutions, learn how to set up your project for long-term
-              success.
-            </p>
-            <div className="flex flex-wrap gap-2 mb-4">
-              <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
-                React
-              </Badge>
-              <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
-                Architecture
-              </Badge>
-              <Badge variant="outline" className="bg-white text-black border-transparent font-medium">
-                Best Practices
-              </Badge>
-            </div>
-            <Link
-              href="/blog/building-scalable-react-applications"
-              className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
-            >
-              Read more <ArrowRight className="ml-1 w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </div>
+      
     </main>
   )
 }
