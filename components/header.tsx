@@ -19,7 +19,7 @@ export default function Header() {
           <Link href="/about" className="text-white hover:text-gray-300 transition-colors mx-4">
             About
           </Link>
-          <Link href="/resume.pdf" className="text-white hover:text-gray-300 transition-colors mx-40" target="_blank">
+          <Link href="/resumeme.pdf" className="text-white hover:text-gray-300 transition-colors mx-40" target="_blank">
             Resume
           </Link>
         </nav>
@@ -46,7 +46,7 @@ export default function Header() {
               About
             </Link>
             <Link
-              href="/resume.pdf"
+              href="/resumeme.pdf"
               className="text-white hover:text-gray-300 transition-colors py-3 text-center text-lg"
               onClick={() => setIsMenuOpen(false)}
               target="_blank"
