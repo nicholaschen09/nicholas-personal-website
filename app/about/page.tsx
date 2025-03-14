@@ -59,8 +59,8 @@ export default function About() {
 
         {/* Experience, Education, Community, Awards Section */}
         <div className="space-y-8 md:space-y-12">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white border-b border-gray-700 pb-2">
-            Experience & Achievements
+          <h2 className="text-5xl sm:text-4xl font-bold text-white border-b border-gray-700 pb-2">
+            SOME OF THE COOL THINGS I'VE DONE
           </h2>
 
           {/* Work Experience */}
@@ -70,7 +70,7 @@ export default function About() {
               <div className="space-y-2">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
                   <h4 className="text-lg sm:text-xl font-semibold text-white">Software Engineer Intern</h4>
-                  <span className="text-gray-400 text-sm sm:text-base">May 2023 - Present</span>
+                  <span className="text-gray-400 text-sm sm:text-base">Jan 2025 - Present</span>
                 </div>
                 <p className="text-gray-300 font-medium">Ownr</p>
                 <p className="text-gray-400 text-sm sm:text-base">
@@ -81,25 +81,25 @@ export default function About() {
 
               <div className="space-y-2">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                  <h4 className="text-lg sm:text-xl font-semibold text-white">Software Developer Intern</h4>
-                  <span className="text-gray-400 text-sm sm:text-base">Sept 2022 - Dec 2022</span>
+                  <h4 className="text-lg sm:text-xl font-semibold text-white">Innovation Developer Intern</h4>
+                  <span className="text-gray-400 text-sm sm:text-base">Jul 2024 - Aug 2024</span>
                 </div>
                 <p className="text-gray-300 font-medium">RBC</p>
                 <p className="text-gray-400 text-sm sm:text-base">
-                  Contributed to the development of banking software solutions, focusing on user experience and
-                  security. Participated in agile development processes and collaborated with senior developers.
+                  Developed a machine learning model using python to predict monthly sign-in volumes, improving resource allocation and reducing
+                  support team work times. 
                 </p>
               </div>
 
               <div className="space-y-2">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                  <h4 className="text-lg sm:text-xl font-semibold text-white">Engineering Intern</h4>
-                  <span className="text-gray-400 text-sm sm:text-base">Jan 2022 - Apr 2022</span>
+                  <h4 className="text-lg sm:text-xl font-semibold text-white">UX Design Intern</h4>
+                  <span className="text-gray-400 text-sm sm:text-base">Mar 2023 - Aug 2023</span>
                 </div>
                 <p className="text-gray-300 font-medium">Meta Hash Capital</p>
                 <p className="text-gray-400 text-sm sm:text-base">
-                  Worked on blockchain and cryptocurrency projects, developing solutions for decentralized applications.
-                  Gained experience in emerging technologies and financial technology systems.
+                  Worked on blockchain and cryptocurrency projects, developing solutions through designing
+                  wireframes, prototypes, and high-fidelity mockups using Figma and Adobe Creative Suite.
                 </p>
               </div>
             </div>
@@ -111,7 +111,7 @@ export default function About() {
             <div className="space-y-2">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
                 <h4 className="text-lg sm:text-xl font-semibold text-white">Systems Design Engineering</h4>
-                <span className="text-gray-400 text-sm sm:text-base">2020 - 2025 (Expected)</span>
+                <span className="text-gray-400 text-sm sm:text-base">2024 - 2029</span>
               </div>
               <p className="text-gray-300 font-medium">University of Waterloo</p>
               <p className="text-gray-400 text-sm sm:text-base">
@@ -126,10 +126,10 @@ export default function About() {
             <h3 className="text-2xl font-bold text-white mb-4">Community Involvement</h3>
             <div className="space-y-6">
               <div className="space-y-2">
-                <h4 className="text-xl font-semibold text-white">Engineering Student Society</h4>
-                <p className="text-gray-300 font-medium">Technical Director</p>
+                <h4 className="text-xl font-semibold text-white">University of Waterloo Alternative Fuels Team</h4>
+                <p className="text-gray-300 font-medium">Electrical and Mechanical Engineer</p>
                 <p className="text-gray-400">
-                  Led technical initiatives for student events and managed web infrastructure for the society.
+                  Worked on designing and implementing electrical and mechanical systems for our alternative fuel vehicle. 
                 </p>
               </div>
                </div>
