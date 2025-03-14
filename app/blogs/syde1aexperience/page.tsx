@@ -429,14 +429,6 @@ export default function BlogPost() {
                 className="object-cover"
               />
             </div>
-            <div>
-              <h3 className="font-bold">Nicholas Chen</h3>
-              <p className="text-sm text-gray-400">
-                Systems Design Engineering student at the University of
-                Waterloo. Passionate about technology, design, and creating
-                meaningful solutions.
-              </p>
-            </div>
           </div>
         </div>
       </article>
