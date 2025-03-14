@@ -103,7 +103,7 @@ export default function BlogPost() {
                 src="/term.png"
                 alt="High school to university transition"
                 width={380}
-                height={4500}
+                height={450}
                 className="object-cover rounded-xl"
               />
             </div>
