@@ -11,7 +11,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center p-6 md:p-24">
       {/* Hero Section */}
       <div className="max-w-3xl w-full space-y-6 md:space-y-8 mb-16 md:mb-24 pt-16 md:pt-0">
-        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white">Nicholas Chen</h1>
+        <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold text-white">Nicholas Chen</h1>
 
         <div className="h-auto min-h-[150px] md:min-h-[120px]">
           <TypeAnimation
@@ -26,7 +26,7 @@ export default function Home() {
           />
         </div>
 
-<div className="flex space-x-8 pt-4 justify-center sm:justify-start">
+  <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
   <Link href="https://linkedin.com" className="text-white hover:text-gray-300 transition-colors">
     <div className="w-10 h-10 flex items-center justify-center">
       <img src="/linkedin.png" alt="LinkedIn" className="max-w-full max-h-full object-contain" />

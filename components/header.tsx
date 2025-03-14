@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-80 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4 md:p-6">
-        <Link href="/" className="text-xl font-bold text-white hover:text-gray-300 transition-colors">
+        <Link href="/" className="text-lg font-normal text-white hover:text-gray-300 transition-colors">
           Nicholas Chen
         </Link>
 
