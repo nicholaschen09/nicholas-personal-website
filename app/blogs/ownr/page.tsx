@@ -17,7 +17,7 @@ export default function BlogPost() {
         {/* Header */}
         <div className="space-y-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
-            My Co-op Experience at Ownr and RBC
+            What I Loved About Being A Software Engineering Intern at Ownr
           </h1>
           <div className="flex flex-wrap items-center gap-4">
             <span className="text-gray-400">March 13, 2025</span>

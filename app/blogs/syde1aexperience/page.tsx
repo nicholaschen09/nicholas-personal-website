@@ -587,61 +587,27 @@ export default function BlogPost() {
             Looking back on my 1A term, these are the most important lessons I
             learned:
           </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-            <div className="bg-gray-800/50 p-4 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">Embrace the challenge</h3>
-              <p className="text-sm">
-                The workload is intense, but it's designed to build your
-                resilience and problem-solving abilities.
-              </p>
-            </div>
-            <div className="bg-gray-800/50 p-4 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">
-                Collaborate effectively
-              </h3>
-              <p className="text-sm">
-                Learning to work in teams is essential, as many courses involve
-                group projects.
-              </p>
-            </div>
-            <div className="bg-gray-800/50 p-4 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">Seek help early</h3>
-              <p className="text-sm">
-                Don't wait until you're struggling to ask for assistance from
-                professors, TAs, or classmates.
-              </p>
-            </div>
-            <div className="bg-gray-800/50 p-4 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">Balance is key</h3>
-              <p className="text-sm">
-                Make time for activities outside of academics to maintain your
-                well-being.
-              </p>
-            </div>
-          </div>
-
-          <p className="text-xl leading-relaxed mt-8">
-            If you're considering SYDE or about to start your 1A term, I hope
-            this gives you a helpful glimpse into what to expect. The program is
-            challenging, but the skills you'll develop and the community you'll
-            join make it an incredibly rewarding experience.
-          </p>
-
-          {/* Author Bio */}
-          <div className="flex items-center gap-4 mt-12 p-6 bg-gray-800/30 rounded-xl">
-            <div className="relative w-16 h-16 rounded-full overflow-hidden">
-              <Image
-                src="/placeholder.svg?height=64&width=64"
-                alt="Author"
-                width={64}
-                height={64}
-                className="object-cover"
-              />
-            </div>
-          </div>
         </div>
       </article>
+      {/* More Posts Section */}
+      <section className="max-w-4xl w-full mt-16 pt-8 border-t border-gray-700">
+        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+          More Posts
+        </h2>
+        <div className="space-y-4">
+          <article className="p-4 bg-transparent border border-gray-700 rounded-lg hover:bg-gray-800/10 transition-colors">
+            <h3 className="text-2xl font-semibold">
+              <Link href="/blogs/ownr">
+                What I Loved About Being A Software Engineering Intern at Ownr
+              </Link>
+            </h3>
+            <p className="text-gray-400 mt-2">
+              A short description or excerpt from the blog post goes here.
+            </p>
+          </article>
+          {/* You can add more articles similarly */}
+        </div>
+      </section>
     </main>
   );
 }
