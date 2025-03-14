@@ -88,7 +88,7 @@ export default function About() {
                   <h4 className="text-lg sm:text-xl font-semibold text-white">Innovation Developer Intern</h4>
                   <span className="text-gray-400 text-sm sm:text-base">Jul 2024 - Aug 2024</span>
                 </div>
-                <p className="text-gray-300 font-medium">RBC</p>
+                <p className="text-gray-300 font-medium">Royal Bank of Canada</p>
                 <p className="text-gray-400 text-sm sm:text-base">
                   Developed a machine learning model using python to predict monthly sign-in volumes, improving resource
                   allocation and reducing support team work times.
