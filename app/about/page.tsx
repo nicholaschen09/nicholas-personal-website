@@ -105,7 +105,19 @@ export default function About() {
                   prototypes, and high-fidelity mockups using Figma and Adobe Creative Suite.
                 </p>
               </div>
+           
+            <div className="space-y-2">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
+                  <h4 className="text-lg sm:text-xl font-semibold text-white">Crew Member</h4>
+                  <span className="text-gray-400 text-sm sm:text-base">Jun 2022 - Sept 2022</span>
+                </div>
+                <p className="text-gray-300 font-medium">Dairy Queen</p>
+                <p className="text-gray-400 text-sm sm:text-base">
+                As a crew member, I provided excellent customer service by taking orders, and serving a variety of ice cream flavors and toppings.
+                </p>
             </div>
+             </div>
+
           </section>
 
           {/* Education */}
