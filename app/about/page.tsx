@@ -54,8 +54,7 @@ export default function About() {
             <div className="relative w-full max-w-[250px] md:max-w-md aspect-square overflow-hidden rounded-lg">
               <Image src="/me.png" alt="Nicholas Chen" width={400} height={400} className="object-cover rounded-lg mb-4" />
           <p className="text-gray-400 text-center italic text-sm sm:text-base">
-        Throwback to a picture of me in grade twelve reminiscing <br />
-        about everything on the last day of high school
+        Throwback to a picture of me on the last day of highschool
       </p>
             </div>
           </div>
