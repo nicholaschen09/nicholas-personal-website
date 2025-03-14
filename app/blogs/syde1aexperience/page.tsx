@@ -657,7 +657,11 @@ export default function BlogPost() {
               </Link>
             </h3>
             <p className="text-gray-400 mt-2">
-              A short description or excerpt from the blog post goes here.
+              In this article, I share my experiences during my first co-op term
+              at Ownr, an RBCx company. I discuss the projects I worked on, the
+              skills I developed, and the challenges I faced. This term provided
+              me with valuable insights into full-stack web development and the
+              importance of teamwork in a professional setting.
             </p>
           </article>
           {/* You can add more articles similarly */}
