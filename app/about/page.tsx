@@ -126,10 +126,34 @@ export default function About() {
                       Node.js
                     </span>
                     <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
-                      Ruby on Rails
+                      Docker
                     </span>
                     <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
-                      GraphQL
+                      AWS
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      Kubernetes
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      NestJS
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      Redis
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      RabbitMQ
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      Jest
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      REST APIs
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      PostgreSQL
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                      Git
                     </span>
                   </div>
                 </div>
@@ -171,7 +195,7 @@ export default function About() {
                       Pandas
                     </span>
                     <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
-                      Scikit-learn
+                      Numpy
                     </span>
                   </div>
                 </div>
@@ -203,9 +227,6 @@ export default function About() {
                     </span>
                     <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
                       Adobe XD
-                    </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
-                      UI/UX Design
                     </span>
                     <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
                       Wireframing
@@ -242,10 +263,7 @@ export default function About() {
                       Customer Service
                     </span>
                     <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
-                      Point of Sale Systems
-                    </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
-                      Food Preparation
+                      Communication
                     </span>
                     <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
                       Team Collaboration
