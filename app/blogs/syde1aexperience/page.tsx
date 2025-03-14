@@ -98,20 +98,23 @@ export default function BlogPost() {
                 behind were entirely on me.
               </p>
             </div>
-            <div className="relative w-full aspect-square rounded-lg overflow-hidden">
-              <Image
-                src="/term.png"
-                alt="High school to university transition"
-                width={380}
-                height={450}
-                className="object-cover rounded-xl"
-              />
+            <div className="flex flex-col items-center">
+              <div className="relative w-full aspect-square rounded-lg overflow-hidden">
+                <Image
+                  src="/term.png"
+                  alt="High school to university transition"
+                  width={380}
+                  height={450}
+                  className="object-cover rounded-xl"
+                />
+              </div>
+              <p className="text-gray-400 italic mt-2 text-center mr-10">
+                My SYDE 1A schedule. Everyone, including me <br /> hated 8:30am
+                classes
+              </p>
             </div>
           </div>
-          <p className="text-gray-400 italic text-right mt-2 mr-20">
-            My SYDE 1A schedule. Everyone, including me <br></br>hated 8:30am
-            classes
-          </p>
+
           {/* Courses Section */}
           <h2 className="text-2xl font-bold mt-10 mb-4">Courses</h2>
           <p>
