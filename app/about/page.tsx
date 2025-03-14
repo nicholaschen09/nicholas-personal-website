@@ -1,5 +1,5 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function About() {
   return (
@@ -8,13 +8,17 @@ export default function About() {
         {/* Two-column layout: About text and Image */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="space-y-4 order-2 md:order-1">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-10">Hey I'm Nicholas!</h1>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-10">
+              Hey I'm Nicholas!
+            </h1>
             <div className="text-base sm:text-lg text-gray-300 space-y-3 md:space-y-4">
               <p>
-                Hello! I'm a Systems Design Engineering student at the University of Waterloo. I'm currently working as
-                a software engineering intern at Ownr, where I'm developing full-stack web applications and gaining
-                valuable industry experience. In the past, I've worked at companies like RBC and Meta Hash Capital where
-                I made some pretty cool things.
+                Hello! I'm a Systems Design Engineering student at the
+                University of Waterloo. I'm currently working as a software
+                engineering intern at Ownr, where I'm developing full-stack web
+                applications and gaining valuable industry experience. In the
+                past, I've worked at companies like RBC and Meta Hash Capital
+                where I made some pretty cool things.
               </p>
             </div>
 
@@ -25,7 +29,11 @@ export default function About() {
                 className="text-white hover:text-gray-300 transition-colors"
               >
                 <div className="w-10 h-10 flex items-center justify-center">
-                  <img src="/linkedin.png" alt="LinkedIn" className="max-w-full max-h-full object-contain" />
+                  <img
+                    src="/linkedin.png"
+                    alt="LinkedIn"
+                    className="max-w-full max-h-full object-contain"
+                  />
                 </div>
                 <span className="sr-only">LinkedIn</span>
               </Link>
@@ -34,7 +42,11 @@ export default function About() {
                 className="text-white hover:text-gray-300 transition-colors"
               >
                 <div className="w-10 h-10 flex items-center justify-center">
-                  <img src="/github.png" alt="GitHub" className="w-7 h-7 md:w-8 md:h-8" />
+                  <img
+                    src="/github.png"
+                    alt="GitHub"
+                    className="w-7 h-7 md:w-8 md:h-8"
+                  />
                 </div>
                 <span className="sr-only">GitHub</span>
               </Link>
@@ -43,7 +55,11 @@ export default function About() {
                 className="text-white hover:text-gray-300 transition-colors"
               >
                 <div className="w-10 h-10 flex items-center justify-center">
-                  <img src="/email.png" alt="Email" className="max-w-full max-h-full object-contain" />
+                  <img
+                    src="/email.png"
+                    alt="Email"
+                    className="max-w-full max-h-full object-contain"
+                  />
                 </div>
                 <span className="sr-only">Email</span>
               </Link>
@@ -52,10 +68,16 @@ export default function About() {
 
           <div className="flex flex-col items-center order-1 md:order-2 mb-4 md:mb-0">
             <div className="relative w-full max-w-[250px] md:max-w-md aspect-square overflow-hidden rounded-lg">
-              <Image src="/me.png" alt="Nicholas Chen" width={400} height={400} className="object-cover rounded-lg mb-4" />
-          <p className="text-gray-400 text-center italic text-sm sm:text-base">
-        Throwback to a picture of me on the last day of highschool
-      </p>
+              <Image
+                src="/me.png"
+                alt="Nicholas Chen"
+                width={400}
+                height={400}
+                className="object-cover rounded-lg mb-4"
+              />
+              <p className="text-gray-400 text-center italic text-sm sm:text-base">
+                Throwback to a picture of me on the last day of highschool
+              </p>
             </div>
           </div>
         </div>
@@ -68,115 +90,166 @@ export default function About() {
 
           {/* Work Experience */}
           <section>
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 md:mb-4">Work Experience</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 md:mb-4">
+              Work Experience
+            </h3>
             <div className="space-y-5 md:space-y-6">
               <div className="space-y-2">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                  <h4 className="text-lg sm:text-xl font-semibold text-white">Software Engineer Intern</h4>
-                  <span className="text-gray-400 text-sm sm:text-base">Jan 2025 - Present</span>
+                  <h4 className="text-lg sm:text-xl font-semibold text-white">
+                    Software Engineer Intern
+                  </h4>
+                  <span className="text-gray-400 text-sm sm:text-base">
+                    Jan 2025 - Present
+                  </span>
                 </div>
                 <p className="text-gray-300 font-medium">Ownr - RBCx</p>
                 <p className="text-gray-400 text-sm sm:text-base">
-                  Working on full-stack web development, implementing new features, and improving existing
-                  functionality. Collaborating with cross-functional teams to deliver high-quality software solutions.
+                  Working on full-stack web development, implementing new
+                  features, and improving existing functionality. Collaborating
+                  with cross-functional teams to deliver high-quality software
+                  solutions.
                 </p>
               </div>
 
               <div className="space-y-2">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                  <h4 className="text-lg sm:text-xl font-semibold text-white">Innovation Developer Intern</h4>
-                  <span className="text-gray-400 text-sm sm:text-base">Jul 2024 - Aug 2024</span>
+                  <h4 className="text-lg sm:text-xl font-semibold text-white">
+                    Innovation Developer Intern
+                  </h4>
+                  <span className="text-gray-400 text-sm sm:text-base">
+                    Jul 2024 - Aug 2024
+                  </span>
                 </div>
-                <p className="text-gray-300 font-medium">Royal Bank of Canada</p>
+                <p className="text-gray-300 font-medium">
+                  Royal Bank of Canada
+                </p>
                 <p className="text-gray-400 text-sm sm:text-base">
-                  Developed a machine learning model using python to predict monthly sign-in volumes, improving resource
-                  allocation and reducing support team work times.
+                  Developed a machine learning model using python to predict
+                  monthly sign-in volumes, improving resource allocation and
+                  reducing support team work times.
                 </p>
               </div>
 
               <div className="space-y-2">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                  <h4 className="text-lg sm:text-xl font-semibold text-white">UX Design Intern</h4>
-                  <span className="text-gray-400 text-sm sm:text-base">Mar 2023 - Aug 2023</span>
+                  <h4 className="text-lg sm:text-xl font-semibold text-white">
+                    UX Design Intern
+                  </h4>
+                  <span className="text-gray-400 text-sm sm:text-base">
+                    Mar 2023 - Aug 2023
+                  </span>
                 </div>
                 <p className="text-gray-300 font-medium">Meta Hash Capital</p>
                 <p className="text-gray-400 text-sm sm:text-base">
-                  Worked on blockchain and cryptocurrency projects, developing solutions through designing wireframes,
-                  prototypes, and high-fidelity mockups using Figma and Adobe Creative Suite.
+                  Worked on blockchain and cryptocurrency projects, developing
+                  solutions through designing wireframes, prototypes, and
+                  high-fidelity mockups using Figma and Adobe Creative Suite.
                 </p>
               </div>
-           
-            <div className="space-y-2">
+
+              <div className="space-y-2">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                  <h4 className="text-lg sm:text-xl font-semibold text-white">Crew Member</h4>
-                  <span className="text-gray-400 text-sm sm:text-base">Jun 2022 - Sept 2022</span>
+                  <h4 className="text-lg sm:text-xl font-semibold text-white">
+                    Crew Member
+                  </h4>
+                  <span className="text-gray-400 text-sm sm:text-base">
+                    Jun 2022 - Sept 2022
+                  </span>
                 </div>
                 <p className="text-gray-300 font-medium">Dairy Queen</p>
                 <p className="text-gray-400 text-sm sm:text-base">
-                As a crew member, I provided excellent customer service by taking orders, and serving a variety of ice cream flavors and toppings.
+                  As a crew member, I provided excellent customer service by
+                  taking orders, and serving a variety of ice cream flavors and
+                  toppings.
                 </p>
+              </div>
             </div>
-             </div>
-
           </section>
 
           {/* Education */}
           <section>
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 md:mb-4">Education</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 md:mb-4">
+              Education
+            </h3>
             <div className="space-y-2">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                <h4 className="text-lg sm:text-xl font-semibold text-white">Systems Design Engineering</h4>
-                <span className="text-gray-400 text-sm sm:text-base">2024 - 2029</span>
+                <h4 className="text-lg sm:text-xl font-semibold text-white">
+                  Systems Design Engineering
+                </h4>
+                <span className="text-gray-400 text-sm sm:text-base">
+                  2024 - 2029
+                </span>
               </div>
-              <p className="text-gray-300 font-medium">University of Waterloo</p>
+              <p className="text-gray-300 font-medium">
+                University of Waterloo
+              </p>
               <p className="text-gray-400 text-sm sm:text-base">
-                Focusing on interdisciplinary engineering with specialization in software systems and human-centered
-                design.
+                Focusing on interdisciplinary engineering with specialization in
+                software systems and human-centered design.
               </p>
             </div>
           </section>
 
           {/* Community Involvement */}
           <section>
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 md:mb-4">Community Involvement</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 md:mb-4">
+              Community Involvement
+            </h3>
             <div className="space-y-2">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
                 <h4 className="text-lg sm:text-xl font-semibold text-white">
                   University of Waterloo Alternative Fuels Team
                 </h4>
-                <span className="text-gray-400 text-sm sm:text-base">2024 - Present</span>
+                <span className="text-gray-400 text-sm sm:text-base">
+                  2024 - Present
+                </span>
               </div>
-              <p className="text-gray-300 font-medium">Electrical and Mechanical Engineer</p>
+              <p className="text-gray-300 font-medium">
+                Electrical and Mechanical Engineer
+              </p>
               <p className="text-gray-400 text-sm sm:text-base">
-                Worked on designing and implementing electrical and mechanical systems for our alternative fuel vehicle.
+                Worked on designing and implementing electrical and mechanical
+                systems for our alternative fuel vehicle.
               </p>
             </div>
           </section>
 
           {/* Awards */}
           <section>
-            <h3 className="text-2xl font-bold text-white mb-4">Awards & Achievements</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">
+              Awards & Achievements
+            </h3>
             <div className="space-y-6">
               <div className="space-y-2">
                 <div className="flex justify-between items-baseline">
-                  <h4 className="text-xl font-semibold text-white">Second Place - UTRA Hacks</h4>
+                  <h4 className="text-xl font-semibold text-white">
+                    Second Place - UTRA Hacks
+                  </h4>
                   <span className="text-gray-400">2025</span>
                 </div>
-                <p className="text-gray-300 font-medium">University of Toronto</p>
+                <p className="text-gray-300 font-medium">
+                  University of Toronto
+                </p>
                 <p className="text-gray-400">
-                  Placed second with a team of four people to develop an innovative solution for helping people with bad
-                  posture.
+                  Placed second with a team of four people to develop an
+                  innovative solution for helping people with bad posture.
                 </p>
               </div>
 
               <div className="space-y-2">
                 <div className="flex justify-between items-baseline">
-                  <h4 className="text-xl font-semibold text-white">Engineering Entrance Scholarship</h4>
+                  <h4 className="text-xl font-semibold text-white">
+                    Engineering Entrance Scholarship
+                  </h4>
                   <span className="text-gray-400">2024</span>
                 </div>
-                <p className="text-gray-300 font-medium">University of Waterloo</p>
+                <p className="text-gray-300 font-medium">
+                  University of Waterloo
+                </p>
                 <p className="text-gray-400">
-                  Awarded a $5000 merit-based scholarship for academic achievement and leadership potential.
+                  Awarded a $5000 merit-based scholarship for academic
+                  achievement and leadership potential.
                 </p>
               </div>
             </div>
@@ -184,6 +257,5 @@ export default function About() {
         </div>
       </div>
     </main>
-  )
+  );
 }
-
