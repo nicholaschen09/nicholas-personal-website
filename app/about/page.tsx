@@ -69,7 +69,7 @@ export default function About() {
             <div className="space-y-5 md:space-y-6">
               <div className="space-y-2">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                  <h4 className="text-lg sm:text-xl font-semibold text-white">Software Engineering Intern</h4>
+                  <h4 className="text-lg sm:text-xl font-semibold text-white">Software Engineer Intern</h4>
                   <span className="text-gray-400 text-sm sm:text-base">May 2023 - Present</span>
                 </div>
                 <p className="text-gray-300 font-medium">Ownr</p>
@@ -132,51 +132,33 @@ export default function About() {
                   Led technical initiatives for student events and managed web infrastructure for the society.
                 </p>
               </div>
-
-              <div className="space-y-2">
-                <h4 className="text-xl font-semibold text-white">Hackathon Mentor</h4>
-                <p className="text-gray-300 font-medium">Waterloo Hacks</p>
-                <p className="text-gray-400">
-                  Provided technical guidance and mentorship to student teams during 48-hour hackathon events.
-                </p>
-              </div>
-            </div>
+               </div>
           </section>
 
           {/* Awards */}
           <section>
             <h3 className="text-2xl font-bold text-white mb-4">Awards & Achievements</h3>
             <div className="space-y-6">
-              <div className="space-y-2">
-                <div className="flex justify-between items-baseline">
-                  <h4 className="text-xl font-semibold text-white">Dean's Honours List</h4>
-                  <span className="text-gray-400">2021, 2022, 2023</span>
-                </div>
-                <p className="text-gray-300 font-medium">University of Waterloo</p>
-                <p className="text-gray-400">
-                  Recognized for academic excellence with a GPA in the top 10% of the engineering faculty.
-                </p>
-              </div>
 
               <div className="space-y-2">
                 <div className="flex justify-between items-baseline">
-                  <h4 className="text-xl font-semibold text-white">First Place - Engineering Design Competition</h4>
-                  <span className="text-gray-400">2022</span>
+                  <h4 className="text-xl font-semibold text-white">Second Place - UTRA Hacks</h4>
+                  <span className="text-gray-400">2025</span>
                 </div>
-                <p className="text-gray-300 font-medium">Ontario Engineering Competition</p>
+                <p className="text-gray-300 font-medium">University of Toronto</p>
                 <p className="text-gray-400">
-                  Led a team of four to develop an innovative solution for sustainable urban transportation.
+                  Placed second with a team of four people to develop an innovative solution for helping people with bad posture.
                 </p>
               </div>
 
               <div className="space-y-2">
                 <div className="flex justify-between items-baseline">
                   <h4 className="text-xl font-semibold text-white">Engineering Entrance Scholarship</h4>
-                  <span className="text-gray-400">2020</span>
+                  <span className="text-gray-400">2024</span>
                 </div>
                 <p className="text-gray-300 font-medium">University of Waterloo</p>
                 <p className="text-gray-400">
-                  Awarded a merit-based scholarship for academic achievement and leadership potential.
+                  Awarded a $5000 merit-based scholarship for academic achievement and leadership potential.
                 </p>
               </div>
             </div>
