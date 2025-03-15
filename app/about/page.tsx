@@ -486,7 +486,7 @@ export default function About() {
                   <h4 className="text-lg font-semibold text-white">
                     Second Place - UTRA Hacks
                   </h4>
-                  <span className="text-gray-400">2025</span>
+                  <span className="text-gray-400">Feb 2025</span>
                 </div>
                 <p className="text-gray-300 font-medium">
                   University of Toronto
@@ -523,7 +523,7 @@ export default function About() {
                   <h4 className="text-lg font-semibold text-white">
                     Engineering Entrance Scholarship
                   </h4>
-                  <span className="text-gray-400">2024</span>
+                  <span className="text-gray-400">Apr 2024</span>
                 </div>
                 <p className="text-gray-300 font-medium">
                   University of Waterloo
