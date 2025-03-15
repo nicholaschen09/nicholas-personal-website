@@ -76,142 +76,179 @@ export default function Home() {
           Blogs
         </h2>
 
-        <div className="space-y-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Blog Post 1 */}
-          <div className="bg-transparent border border-gray-700 rounded-lg p-6">
-            <div className="flex flex-col md:flex-row md:items-center justify-between mb-3">
-              <h3 className="text-xl font-bold text-white">
-                My SYDE 1A Experience
-              </h3>
-              <span className="text-gray-400 text-sm mt-1 md:mt-0">
-                March 13, 2025
-              </span>
+          <Card className="bg-transparent border border-gray-700 overflow-hidden">
+            <div className="relative h-48">
+              <Image
+                src="/syde.png"
+                alt="SYDE 1A Experience"
+                fill
+                className="object-cover"
+              />
             </div>
-            <p className="text-gray-300 mb-4">
-              In this blog post, I reflect on my first semester in the Systems
-              Design Engineering program at the University of Waterloo. I
-              discuss the challenges I faced, the projects I worked on, and the
-              valuable lessons I learned. This experience has shaped my approach
-              to problem-solving and teamwork.
-            </p>
-            <div className="flex flex-wrap gap-2 mb-4">
-              <Badge
-                variant="outline"
-                className="bg-transparent text-white border-gray-500 font-medium"
+            <CardContent className="p-4 space-y-3">
+              <div className="flex flex-col justify-between mb-2">
+                <h3 className="text-xl font-bold text-white">
+                  My SYDE 1A Experience
+                </h3>
+                <span className="text-gray-400 text-sm mt-1">
+                  March 13, 2025
+                </span>
+              </div>
+              <p className="text-gray-300 text-sm">
+                In this blog post, I reflect on my first semester in the Systems
+                Design Engineering program at the University of Waterloo. I
+                discuss the challenges I faced, the projects I worked on, and
+                the valuable lessons I learned.
+              </p>
+              <div className="flex flex-wrap gap-2 pt-2">
+                <Badge
+                  variant="outline"
+                  className="bg-transparent text-white border-gray-500 font-medium"
+                >
+                  Design
+                </Badge>
+                <Badge
+                  variant="outline"
+                  className="bg-transparent text-white border-gray-500 font-medium"
+                >
+                  Programming
+                </Badge>
+                <Badge
+                  variant="outline"
+                  className="bg-transparent text-white border-gray-500 font-medium"
+                >
+                  Engineering
+                </Badge>
+              </div>
+            </CardContent>
+            <CardFooter className="p-4 pt-0">
+              <Link
+                href="/blogs/syde1aexperience"
+                className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
               >
-                Design
-              </Badge>
-              <Badge
-                variant="outline"
-                className="bg-transparent text-white border-gray-500 font-medium"
-              >
-                Programming
-              </Badge>
-              <Badge
-                variant="outline"
-                className="bg-transparent text-white border-gray-500 font-medium"
-              >
-                Engineering
-              </Badge>
-            </div>
-            <Link
-              href="/blogs/syde1aexperience"
-              className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
-            >
-              Read more <ArrowRight className="ml-1 w-4 h-4" />
-            </Link>
-          </div>
+                Read more <ArrowRight className="ml-1 w-4 h-4" />
+              </Link>
+            </CardFooter>
+          </Card>
 
           {/* Blog Post 2 */}
-          <div className="bg-transparent border border-gray-700 rounded-lg p-6">
-            <div className="flex flex-col md:flex-row md:items-center justify-between mb-3">
-              <h3 className="text-xl font-bold text-white">
-                How Social Media Has Changed My Life
-              </h3>
-              <span className="text-gray-400 text-sm mt-1 md:mt-0">
-                March 24, 2025
-              </span>
+          <Card className="bg-transparent border border-gray-700 overflow-hidden">
+            <div className="relative h-48">
+              <Image
+                src="/placeholder.svg?height=400&width=600"
+                alt="Social Media Impact"
+                fill
+                className="object-cover"
+              />
             </div>
-            <p className="text-gray-300 mb-4">
-              In this article, I share my personal journey and experiences with
-              social media, discussing both the positive and negative impacts it
-              has had on my life. From connecting with friends and family to
-              dealing with online distractions, I explore how social media has
-              shaped my daily routine and overall well-being.
-            </p>
-            <div className="flex flex-wrap gap-2 mb-4">
-              <Badge
-                variant="outline"
-                className="bg-transparent text-white border-gray-500 font-medium"
+            <CardContent className="p-4 space-y-3">
+              <div className="flex flex-col justify-between mb-2">
+                <h3 className="text-xl font-bold text-white">
+                  How Social Media Has Changed My Life
+                </h3>
+                <span className="text-gray-400 text-sm mt-1">
+                  March 24, 2025
+                </span>
+              </div>
+              <p className="text-gray-300 text-sm">
+                In this article, I share my personal journey and experiences
+                with social media, discussing both the positive and negative
+                impacts it has had on my life. From connecting with friends to
+                dealing with online distractions.
+              </p>
+              <div className="flex flex-wrap gap-2 pt-2">
+                <Badge
+                  variant="outline"
+                  className="bg-transparent text-white border-gray-500 font-medium"
+                >
+                  Creativity
+                </Badge>
+                <Badge
+                  variant="outline"
+                  className="bg-transparent text-white border-gray-500 font-medium"
+                >
+                  Video Editing
+                </Badge>
+                <Badge
+                  variant="outline"
+                  className="bg-transparent text-white border-gray-500 font-medium"
+                >
+                  Content Creation
+                </Badge>
+              </div>
+            </CardContent>
+            <CardFooter className="p-4 pt-0">
+              <Link
+                href="/blogs/socialmedia"
+                className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
               >
-                Creativity
-              </Badge>
-              <Badge
-                variant="outline"
-                className="bg-transparent text-white border-gray-500 font-medium"
-              >
-                Video Editing
-              </Badge>
-              <Badge
-                variant="outline"
-                className="bg-transparent text-white border-gray-500 font-medium"
-              >
-                Content Creation
-              </Badge>
-            </div>
-            <Link
-              href="/blogs/socialmedia"
-              className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
-            >
-              Read more <ArrowRight className="ml-1 w-4 h-4" />
-            </Link>
-          </div>
+                Read more <ArrowRight className="ml-1 w-4 h-4" />
+              </Link>
+            </CardFooter>
+          </Card>
+
           {/* Blog Post 3 */}
-          <div className="bg-transparent border border-gray-700 rounded-lg p-6">
-            <div className="flex flex-col md:flex-row md:items-center justify-between mb-3">
-              <h3 className="text-xl font-bold text-white">
-                What I Loved About Being A Software Engineering Intern at Ownr
-              </h3>
-              <span className="text-gray-400 text-sm mt-1 md:mt-0">
-                April 20, 2025
-              </span>
+          <Card className="bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
+            <div className="relative h-48 md:h-64">
+              <Image
+                src="/placeholder.svg?height=400&width=800"
+                alt="Software Engineering Intern at Ownr"
+                fill
+                className="object-cover"
+              />
             </div>
-            <p className="text-gray-300 mb-4">
-              In this article, I share my experiences during my first co-op term
-              at Ownr, an RBCx company. I discuss the projects I worked on, the
-              skills I developed, and the challenges I faced. This term provided
-              me with valuable insights into full-stack web development and the
-              importance of teamwork in a professional setting.
-            </p>
-            <div className="flex flex-wrap gap-2 mb-4">
-              <Badge
-                variant="outline"
-                className="bg-transparent text-white border-gray-500 font-medium"
+            <CardContent className="p-4 space-y-3">
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                <h3 className="text-xl font-bold text-white">
+                  What I Loved About Being A Software Engineering Intern at Ownr
+                </h3>
+                <span className="text-gray-400 text-sm mt-1 md:mt-0">
+                  April 20, 2025
+                </span>
+              </div>
+              <p className="text-gray-300 text-sm">
+                In this article, I share my experiences during my first co-op
+                term at Ownr, an RBCx company. I discuss the projects I worked
+                on, the skills I developed, and the challenges I faced. This
+                term provided me with valuable insights into full-stack web
+                development and the importance of teamwork in a professional
+                setting.
+              </p>
+              <div className="flex flex-wrap gap-2 pt-2">
+                <Badge
+                  variant="outline"
+                  className="bg-transparent text-white border-gray-500 font-medium"
+                >
+                  Communication
+                </Badge>
+                <Badge
+                  variant="outline"
+                  className="bg-transparent text-white border-gray-500 font-medium"
+                >
+                  Software Engineering
+                </Badge>
+                <Badge
+                  variant="outline"
+                  className="bg-transparent text-white border-gray-500 font-medium"
+                >
+                  Javascript
+                </Badge>
+              </div>
+            </CardContent>
+            <CardFooter className="p-4 pt-0">
+              <Link
+                href="/blogs/ownr"
+                className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
               >
-                Communication
-              </Badge>
-              <Badge
-                variant="outline"
-                className="bg-transparent text-white border-gray-500 font-medium"
-              >
-                Software Engineering
-              </Badge>
-              <Badge
-                variant="outline"
-                className="bg-transparent text-white border-gray-500 font-medium"
-              >
-                Javascript
-              </Badge>
-            </div>
-            <Link
-              href="/blogs/ownr"
-              className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
-            >
-              Read more <ArrowRight className="ml-1 w-4 h-4" />
-            </Link>
-          </div>
+                Read more <ArrowRight className="ml-1 w-4 h-4" />
+              </Link>
+            </CardFooter>
+          </Card>
         </div>
       </div>
+
       {/* Projects Section */}
       <div className="w-full max-w-6xl mb-20">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 md:mb-10">
