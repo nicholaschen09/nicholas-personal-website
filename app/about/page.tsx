@@ -1,5 +1,7 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { TypeAnimation } from 'react-type-animation';
 
 export default function About() {
   return (
@@ -11,15 +13,17 @@ export default function About() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-10">
               Hey I'm Nicholas!
             </h1>
-            <div className="text-base sm:text-lg text-gray-300 ">
-              <p>
-                Hello! I'm a Systems Design Engineering student at the
-                University of Waterloo. I'm currently working as a software
-                engineering intern at Ownr, where I'm developing full-stack web
-                applications and gaining valuable industry experience. In the
-                past, I've worked at companies like RBC and Meta Hash Capital
-                where I made some pretty cool things.
-              </p>
+            <div className="text-base sm:text-lg text-gray-300 min-h-[150px] md:min-h-[120px]">
+              <TypeAnimation
+                sequence={[
+                  "Hello! I'm a Systems Design Engineering student at the University of Waterloo. I'm currently working as a software engineering intern at Ownr, where I'm developing full-stack web applications and gaining valuable industry experience. In the past, I've worked at companies like RBC and Meta Hash Capital where I made some pretty cool things.",
+                  1000,
+                ]}
+                wrapper="p"
+                speed={50}
+                className="text-base sm:text-lg text-gray-300"
+                repeat={0}
+              />
             </div>
 
             {/* Social Media Links */}
@@ -375,7 +379,7 @@ export default function About() {
             </div>
           </section>
           {/* Footer */}
-          <footer className="w-full max-w-6xl mt-16 pt-8 border-t border-gray-700">
+          <footer className="w-full max-w-4xl mt-16 pt-8 border-t border-gray-700">
             <div className="flex flex-col items-center md:items-start">
               <p className="text-gray-400 mb-4">
                 © 2025 Nicholas Chen. All rights reserved.
