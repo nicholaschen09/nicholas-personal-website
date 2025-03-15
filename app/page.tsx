@@ -223,8 +223,8 @@ export default function Home() {
           <Card className="bg-transparent border border-gray-700 overflow-hidden">
             <div className="relative h-48">
               <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="E-commerce Platform"
+                src="/fernando.png"
+                alt="Fernando"
                 fill
                 className="object-cover"
               />
