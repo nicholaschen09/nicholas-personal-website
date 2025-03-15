@@ -1184,14 +1184,14 @@ export default function BlogPost() {
             </div>
           </div>
 
-          {/* CMH (Conrad Muller Hall) Section */}
+          {/* CMH Section */}
           <h2 className="text-2xl font-bold mt-10 mb-4">
             Living in Claudette Millar Hall (CMH)
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div>
               <p>
-                Living at Conrad Muller Hall was a significant part of my
+                Living at CMH was a significant part of my
                 first-year experience. The residence provided a supportive
                 community of fellow engineering students facing similar
                 challenges.
