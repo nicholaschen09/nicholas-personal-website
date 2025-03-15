@@ -193,7 +193,7 @@ export default function Home() {
           <Card className="bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
             <div className="relative h-48 md:h-64">
               <Image
-                src="/placeholder.svg?height=400&width=800"
+                src="/office.png"
                 alt="Software Engineering Intern at Ownr"
                 fill
                 className="object-cover"

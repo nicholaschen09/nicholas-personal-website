@@ -53,7 +53,7 @@ export default function BlogPost() {
         {/* Featured Image */}
         <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden">
           <Image
-            src="/placeholder.svg?height=600&width=1200"
+            src="/ownr.png"
             alt="Co-op Experience"
             width={1200}
             height={600}
