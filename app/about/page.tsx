@@ -120,43 +120,43 @@ export default function About() {
                     Technical Skills:
                   </p>
                   <div className="flex flex-wrap gap-2 mt-3">
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       React
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       TypeScript
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Node.js
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Docker
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       AWS
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Kubernetes
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       NestJS
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Redis
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       RabbitMQ
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Jest
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       REST APIs
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       PostgreSQL
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Git
                     </span>
                   </div>

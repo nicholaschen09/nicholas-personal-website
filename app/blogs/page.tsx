@@ -95,7 +95,6 @@ export default function BlogsPage() {
                   <span>{post.date}</span>
                   <span>//</span>
                   <span className="text-pink-500">{post.readTime}</span>
-                  <span>//</span>
                 </div>
                 <h2 className="text-2xl md:text-3xl font-semibold mb-4 group-hover:text-zinc-300 transition-colors">
                   {post.title}
