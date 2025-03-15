@@ -193,7 +193,7 @@ export default function Home() {
           <Card className="bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
             <div className="relative h-40 md:h-58">
               <Image
-                src="/office.png"
+                src="/ownr.png"
                 alt="Software Engineering Intern at Ownr"
                 fill
                 className="object-cover"
@@ -654,7 +654,7 @@ export default function Home() {
               </Link>
             </CardFooter>
           </Card>
-          <hr className="w-[205%] border-t border-gray-700 my-32" />
+          <hr className="w-[205%] border-t border-gray-700 my-8" />
           {/* Art Website */}
           <Card className="w-[101%] bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
             <div className="relative h-32 md:h-48">
@@ -720,7 +720,7 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <footer className="w-full mt-14 pt-8">
+      <footer className="w-full mt-8 pt-8">
         <div className="max-w-6xl mx-auto w-full">
           <hr className="border-t border-gray-700 mb-8" />
           <div className="flex flex-col items-center md:items-start">
