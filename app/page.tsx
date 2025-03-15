@@ -573,8 +573,9 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <footer className="w-full border-t-2 border-gray-600 mt-16 pt-8">
+      <footer className="w-full mt-14 pt-8">
         <div className="max-w-6xl mx-auto w-full">
+          <hr className="border-t border-gray-700 mb-8" />
           <div className="flex flex-col items-center md:items-start">
             <p className="text-gray-400 mb-4">
               © 2025 Nicholas Chen. All rights reserved.
