@@ -4,14 +4,14 @@ import Link from 'next/link';
 export default function About() {
   return (
     <main className="flex min-h-screen flex-col items-center p-4 sm:p-8 md:p-24 pt-40 md:pt-32">
-      <div className="max-w-6xl w-full space-y-10 md:space-y-16 pt-16 md:pt-20">
+      <div className="max-w-6xl w-full pt-16 md:pt-20">
         {/* Two-column layout: About text and Image */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="space-y-4 order-2 md:order-1">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-10">
               Hey I'm Nicholas!
             </h1>
-            <div className="text-base sm:text-lg text-gray-300 space-y-3 md:space-y-4">
+            <div className="text-base sm:text-lg text-gray-300 ">
               <p>
                 Hello! I'm a Systems Design Engineering student at the
                 University of Waterloo. I'm currently working as a software
@@ -66,14 +66,14 @@ export default function About() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center order-1 md:order-2 mb-4 md:mb-0">
+          <div className="flex flex-col items-center order-1 md:order-2 mb-0 md:mb-0">
             <div className="relative w-full max-w-[250px] md:max-w-md aspect-square overflow-hidden rounded-lg">
               <Image
                 src="/me.png"
                 alt="Nicholas Chen"
-                width={400}
-                height={400}
-                className="object-cover rounded-lg mb-4"
+                width={1000}
+                height={1000}
+                className="object-cover rounded-lg mb-6"
               />
               <p className="text-gray-400 text-center italic text-sm sm:text-base">
                 Throwback to a picture of me on the last day of highschool
@@ -83,7 +83,7 @@ export default function About() {
         </div>
 
         {/* Experience, Education, Community, Awards Section */}
-        <div className="space-y-8 md:space-y-12 mt- md:mt-8">
+        <div className="space-y-8 mt-8 md:mt-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-white border-b border-gray-700 pb-2">
             Some of the Cool Things I've Done
           </h2>
@@ -375,64 +375,64 @@ export default function About() {
             </div>
           </section>
           {/* Footer */}
-      <footer className="w-full max-w-4xl mt-16 pt-8 border-t border-gray-700">
-        <div className="flex flex-col items-center md:items-start">
-          <p className="text-gray-400 mb-4">
-            © 2025 Nicholas Chen. All rights reserved.
-          </p>
+          <footer className="w-full max-w-4xl mt-16 pt-8 border-t border-gray-700">
+            <div className="flex flex-col items-center md:items-start">
+              <p className="text-gray-400 mb-4">
+                © 2025 Nicholas Chen. All rights reserved.
+              </p>
 
-          {/* Social Media Links */}
-          <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
-            <Link
-              href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
-              className="text-white hover:text-gray-300 transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="w-10 h-10 flex items-center justify-center">
-                <img
-                  src="/linkedin.png"
-                  alt="LinkedIn"
-                  className="max-w-full max-h-full object-contain"
-                />
+              {/* Social Media Links */}
+              <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
+                <Link
+                  href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
+                  className="text-white hover:text-gray-300 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="w-10 h-10 flex items-center justify-center">
+                    <img
+                      src="/linkedin.png"
+                      alt="LinkedIn"
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
+                  <span className="sr-only">LinkedIn</span>
+                </Link>
+                <Link
+                  href="https://github.com/nicholaschen09"
+                  className="text-white hover:text-gray-300 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="w-10 h-10 flex items-center justify-center">
+                    <img
+                      src="/github.png"
+                      alt="GitHub"
+                      className="w-7 h-7 md:w-8 md:h-8"
+                    />
+                  </div>
+                  <span className="sr-only">GitHub</span>
+                </Link>
+                <Link
+                  href="mailto:nicholas.chen243@gmail.com"
+                  className="text-white hover:text-gray-300 transition-colors"
+                >
+                  <div className="w-10 h-10 flex items-center justify-center">
+                    <img
+                      src="/email.png"
+                      alt="Email"
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
+                  <span className="sr-only">Email</span>
+                </Link>
               </div>
-              <span className="sr-only">LinkedIn</span>
-            </Link>
-            <Link
-              href="https://github.com/nicholaschen09"
-              className="text-white hover:text-gray-300 transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="w-10 h-10 flex items-center justify-center">
-                <img
-                  src="/github.png"
-                  alt="GitHub"
-                  className="w-7 h-7 md:w-8 md:h-8"
-                />
-              </div>
-              <span className="sr-only">GitHub</span>
-            </Link>
-            <Link
-              href="mailto:nicholas.chen243@gmail.com"
-              className="text-white hover:text-gray-300 transition-colors"
-            >
-              <div className="w-10 h-10 flex items-center justify-center">
-                <img
-                  src="/email.png"
-                  alt="Email"
-                  className="max-w-full max-h-full object-contain"
-                />
-              </div>
-              <span className="sr-only">Email</span>
-            </Link>
-          </div>
 
-          <p className="text-gray-500 text-sm mt-6 text-center md:text-left">
-            Designed and built by Nicholas Chen
-          </p>
-        </div>
-      </footer>
+              <p className="text-gray-500 text-sm mt-6 text-center md:text-left">
+                Designed and built by Nicholas Chen
+              </p>
+            </div>
+          </footer>
         </div>
       </div>
     </main>
