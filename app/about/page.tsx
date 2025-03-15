@@ -120,43 +120,43 @@ export default function About() {
                     Technical Skills:
                   </p>
                   <div className="flex flex-wrap gap-2 mt-3">
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       React
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       TypeScript
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       Node.js
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       Docker
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       AWS
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       Kubernetes
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       NestJS
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       Redis
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       RabbitMQ
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       Jest
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       REST APIs
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       PostgreSQL
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       Git
                     </span>
                   </div>
@@ -186,20 +186,29 @@ export default function About() {
                     Technical Skills:
                   </p>
                   <div className="flex flex-wrap gap-2 mt-3">
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       Python
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       Machine Learning
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       Data Analysis
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       Pandas
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       Numpy
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                      Scikit-learn
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                      TensorFlow
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                      Matplotlib
                     </span>
                   </div>
                 </div>
@@ -226,17 +235,29 @@ export default function About() {
                     Technical Skills:
                   </p>
                   <div className="flex flex-wrap gap-2 mt-3">
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       Figma
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       Adobe XD
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       Wireframing
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       Prototyping
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                      User Research
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                      UI/UX Design
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                      Adobe Photoshop
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                      Adobe Illustrator
                     </span>
                   </div>
                 </div>
@@ -257,20 +278,29 @@ export default function About() {
                   taking orders, and serving a variety of ice cream flavors and
                   toppings.
                 </p>
-                {/* Technical Skills */}
+                {/* Skills */}
                 <div className="mt-2">
                   <p className="text-white text-sm font-medium">
-                    Technical Skills:
+                    Skills Developed:
                   </p>
                   <div className="flex flex-wrap gap-2 mt-3">
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       Customer Service
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       Communication
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded text-xs">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
                       Team Collaboration
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                      Time Management
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                      Problem Solving
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                      Cash Handling
                     </span>
                   </div>
                 </div>
@@ -310,6 +340,62 @@ export default function About() {
                   <li>Digital Computation</li>
                   <li>Elementary Engineering Math</li>
                   <li>Visual Communications</li>
+                  <li>Calculus 1</li>
+                  <li>Physics: Statics</li>
+                  <li>Communications</li>
+                  <li>Problems Seminar</li>
+                </ul>
+              </div>
+
+              {/* Academic Skills */}
+              <div className="mt-4">
+                <h5 className="text-white font-medium mb-2">
+                  Academic Skills:
+                </h5>
+                <div className="flex flex-wrap gap-2 mt-2">
+                  <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    Engineering Design
+                  </span>
+                  <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    Systems Thinking
+                  </span>
+                  <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    Mathematical Modeling
+                  </span>
+                  <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    C++ Programming
+                  </span>
+                  <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    Technical Writing
+                  </span>
+                  <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    CAD Software
+                  </span>
+                  <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    Problem Analysis
+                  </span>
+                  <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    Research Methods
+                  </span>
+                </div>
+              </div>
+
+              {/* Academic Projects */}
+              <div className="mt-4">
+                <h5 className="text-white font-medium mb-2">Projects:</h5>
+                <ul className="list-disc pl-5 text-gray-400 text-sm space-y-1 mt-2">
+                  <li>
+                    Designed and built a small-scale autonomous vehicle for
+                    navigation challenges
+                  </li>
+                  <li>
+                    Developed user interfaces for specific accessibility needs
+                    in SYDE 161
+                  </li>
+                  <li>
+                    Created a comprehensive analysis of campus pedestrian
+                    traffic patterns
+                  </li>
                 </ul>
               </div>
             </div>
@@ -320,22 +406,72 @@ export default function About() {
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 md:mb-4">
               Community Involvement
             </h3>
-            <div className="space-y-2">
-              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                <h4 className="text-normal sm:text-xl font-semibold text-white">
-                  University of Waterloo Alternative Fuels Team
-                </h4>
-                <span className="text-gray-400 text-sm sm:text-base">
-                  2024 - Present
-                </span>
+            <div className="space-y-5 md:space-y-6">
+              <div className="space-y-2">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
+                  <h4 className="text-normal sm:text-xl font-semibold text-white">
+                    University of Waterloo Alternative Fuels Team
+                  </h4>
+                  <span className="text-gray-400 text-sm sm:text-base">
+                    2024 - Present
+                  </span>
+                </div>
+                <p className="text-gray-300 font-medium">
+                  Electrical and Mechanical Engineer
+                </p>
+                <p className="text-gray-400 text-sm sm:text-base">
+                  Worked on designing and implementing electrical and mechanical
+                  systems for our alternative fuel vehicle.
+                </p>
+
+                {/* Technical Skills */}
+                <div className="mt-2">
+                  <p className="text-white text-sm font-medium">
+                    Technical Skills:
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                      Circuit Design
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                      PCB Layout
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                      Microcontroller Programming
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                      CAD Modeling
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                      3D Printing
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                      Mechanical Assembly
+                    </span>
+                  </div>
+                </div>
+
+                {/* Contributions */}
+                <div className="mt-4">
+                  <p className="text-white text-sm font-medium">
+                    Key Contributions:
+                  </p>
+                  <ul className="list-disc pl-5 text-gray-400 text-sm space-y-1 mt-2">
+                    <li>
+                      Designed power distribution system for the vehicle's
+                      electrical components
+                    </li>
+                    <li>
+                      Developed sensor integration for real-time data collection
+                      during test runs
+                    </li>
+                    <li>
+                      Collaborated with interdisciplinary team to optimize
+                      vehicle performance
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <p className="text-gray-300 font-medium">
-                Electrical and Mechanical Engineer
-              </p>
-              <p className="text-gray-400 text-sm sm:text-base">
-                Worked on designing and implementing electrical and mechanical
-                systems for our alternative fuel vehicle.
-              </p>
             </div>
           </section>
 
@@ -359,6 +495,27 @@ export default function About() {
                   Placed second with a team of four people to develop an
                   innovative solution for helping people with bad posture.
                 </p>
+
+                {/* Project Details */}
+                <div className="mt-2">
+                  <p className="text-white text-sm font-medium">
+                    Project: Fernando - Posture Correction Robot
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                      Computer Vision
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                      Machine Learning
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                      Hardware Integration
+                    </span>
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                      Rapid Prototyping
+                    </span>
+                  </div>
+                </div>
               </div>
 
               <div className="space-y-2">
@@ -375,11 +532,23 @@ export default function About() {
                   Awarded a $5000 merit-based scholarship for academic
                   achievement and leadership potential.
                 </p>
+                {/* Qualification Details */}
+                <div className="mt-2">
+                  <p className="text-white text-sm font-medium">
+                    Qualification Criteria:
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                      95%+ High School Average
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
+
           {/* Footer */}
-          <footer className="w-full max-w-4xl mt-16 pt-8 border-t border-gray-700">
+          <footer className="w-full max-w-6xl mt-16 pt-8 border-t border-gray-700">
             <div className="flex flex-col items-center md:items-start">
               <p className="text-gray-400 mb-4">
                 © 2025 Nicholas Chen. All rights reserved.
