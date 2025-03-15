@@ -79,7 +79,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Blog Post 1 */}
           <Card className="bg-transparent border border-gray-700 overflow-hidden">
-            <div className="relative h-48">
+            <div className="relative h-40 md:h-58">
               <Image
                 src="/syde.png"
                 alt="SYDE 1A Experience"
@@ -135,7 +135,7 @@ export default function Home() {
 
           {/* Blog Post 2 */}
           <Card className="bg-transparent border border-gray-700 overflow-hidden">
-            <div className="relative h-48">
+            <div className="relative h-40 md:h-58">
               <Image
                 src="/placeholder.svg?height=400&width=600"
                 alt="Social Media Impact"
@@ -191,7 +191,7 @@ export default function Home() {
 
           {/* Blog Post 3 */}
           <Card className="bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
-            <div className="relative h-48 md:h-64">
+            <div className="relative h-40 md:h-58">
               <Image
                 src="/office.png"
                 alt="Software Engineering Intern at Ownr"
@@ -651,6 +651,68 @@ export default function Home() {
                 className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
               >
                 Read more <ArrowRight className="ml-1 w-4 h-4" />
+              </Link>
+            </CardFooter>
+          </Card>
+          <hr className="w-[205%] border-t border-gray-700 my-32" />
+          {/* Art Website */}
+          <Card className="w-[101%] bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
+            <div className="relative h-32 md:h-48">
+              <Image
+                src="/art1.png"
+                alt="art website"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <CardContent className="p-4 space-y-3">
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                <h3 className="text-xl font-bold text-white">
+                  My Art Portfolio Website
+                </h3>
+                <span className="text-gray-400 text-sm mt-1 md:mt-0">
+                  April 20, 2024
+                </span>
+              </div>
+              <p className="text-gray-300 text-sm">
+                In this website, I share the process of creating my art
+                portfolio website. I discuss the design choices, the
+                technologies used, and the challenges faced during development.
+              </p>
+              <div className="flex flex-wrap gap-2 pt-2">
+                <Badge
+                  variant="outline"
+                  className="bg-transparent text-white border-gray-500 font-medium"
+                >
+                  Creativity
+                </Badge>
+                <Badge
+                  variant="outline"
+                  className="bg-transparent text-white border-gray-500 font-medium"
+                >
+                  Design
+                </Badge>
+                <Badge
+                  variant="outline"
+                  className="bg-transparent text-white border-gray-500 font-medium"
+                >
+                  Visual Arts
+                </Badge>
+              </div>
+            </CardContent>
+            <CardFooter className="p-4 pt-0">
+              <Link
+                href="https://nicholaschen243.wixsite.com/nicholas-chen"
+                className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
+              >
+                <span className="hover:text-gray-300 transition-colors">
+                  Link to Website
+                </span>
+                <img
+                  src="/link1.png"
+                  alt="Link"
+                  className="ml-2 w-5 h-5 hover:opacity-75 transition-opacity"
+                />
               </Link>
             </CardFooter>
           </Card>
