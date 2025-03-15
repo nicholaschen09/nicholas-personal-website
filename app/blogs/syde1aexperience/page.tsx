@@ -11,7 +11,7 @@ import {
 
 export default function BlogPost() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-6 md:p-24 bg-zinc-950 text-white">
+    <main className="flex min-h-screen flex-col items-center p-6 md:p-24 bg-zinc-990 text-white bg-dotted-pattern">
       <article className="max-w-4xl w-full space-y-8 pt-24 md:pt-16">
         <Link
           href="/"
@@ -1191,10 +1191,9 @@ export default function BlogPost() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div>
               <p>
-                Living in CMH was a significant part of my
-                first-year experience. The residence provided a supportive
-                community of fellow engineering students facing similar
-                challenges.
+                Living in CMH was a significant part of my first-year
+                experience. The residence provided a supportive community of
+                fellow engineering students facing similar challenges.
               </p>
               <p>
                 The suite-style rooms offered a good balance of privacy and
@@ -1409,7 +1408,6 @@ export default function BlogPost() {
           </div>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="w-full max-w-4xl mt-16 pt-8 border-t border-gray-700">
         <div className="flex flex-col items-center md:items-start">
