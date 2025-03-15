@@ -558,7 +558,7 @@ export default function Home() {
             </CardFooter>
           </Card>
           {/* Footer */}
-          <footer className="w-full max-w-4xl mt-16 pt-8 border-t border-gray-700">
+          <footer className="w-full max-w-6xl mt-16 pt-8 border-t border-gray-700">
             <div className="flex flex-col items-center md:items-start">
               <p className="text-gray-400 mb-4">
                 © 2025 Nicholas Chen. All rights reserved.
