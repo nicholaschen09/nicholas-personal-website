@@ -6,16 +6,14 @@ import { ArrowUpRight } from 'lucide-react';
 const blogPosts = [
   {
     id: '1',
-    title: 'The Future of Web Development',
+    title: 'My SYDE 1A Experience',
     excerpt:
-      'Exploring the latest trends and technologies shaping the future of web development in 2025 and beyond.',
+      'Reflecting on my first semester in the Systems Design Engineering program at the University of Waterloo, discussing challenges, projects, and lessons learned.',
     date: 'March 12, 2025',
     readTime: '8 min read',
-    category: 'Technology',
+    category: 'University',
     slug: 'future-of-web-development',
-    image:
-      'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop',
-    featured: true,
+    image: '/syde.png',
   },
   {
     id: '2',
@@ -41,35 +39,8 @@ const blogPosts = [
     image:
       'https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1000&auto=format&fit=crop',
   },
-  {
-    id: '4',
-    title: 'Building Accessible Web Applications',
-    excerpt:
-      'Best practices and techniques for ensuring your web applications are accessible to all users.',
-    date: 'January 30, 2025',
-    readTime: '9 min read',
-    category: 'Accessibility',
-    slug: 'building-accessible-web-apps',
-    image:
-      'https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1000&auto=format&fit=crop',
-  },
-  {
-    id: '5',
-    title: 'The Role of AI in Modern Software Development',
-    excerpt:
-      'How artificial intelligence is transforming the way we write, test, and deploy software.',
-    date: 'January 15, 2025',
-    readTime: '11 min read',
-    category: 'AI',
-    slug: 'ai-in-software-development',
-    image:
-      'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000&auto=format&fit=crop',
-  },
 ];
-
-// Separate featured post from regular posts
-const featuredPost = blogPosts.find((post) => post.featured);
-const regularPosts = blogPosts.filter((post) => !post.featured);
+const regularPosts = blogPosts;
 
 export default function BlogsPage() {
   return (
