@@ -1,18 +1,29 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  // Close mobile menu when changing routes
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-80 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4 md:p-6">
         <Link
           href="/"
-          className="text-lg font-normal text-white hover:text-gray-300 transition-colors"
+          className={`text-lg font-normal text-white transition-colors ${
+            pathname === '/'
+              ? 'underline decoration-2 underline-offset-4'
+              : 'hover:underline hover:underline-offset-4'
+          }`}
         >
           Nicholas Chen
         </Link>
@@ -21,13 +32,17 @@ export default function Header() {
         <nav className="hidden md:flex space-x-6">
           <Link
             href="/about"
-            className="text-white hover:text-gray-300 transition-colors mx-4"
+            className={`text-white transition-colors mx-4 ${
+              pathname === '/about'
+                ? 'underline decoration-2 underline-offset-4'
+                : 'hover:underline hover:underline-offset-4'
+            }`}
           >
             About
           </Link>
           <Link
             href="/resumeme.pdf"
-            className="text-white hover:text-gray-300 transition-colors mx-40"
+            className="text-white hover:underline hover:underline-offset-4 transition-colors mx-40"
             target="_blank"
           >
             Resume
@@ -50,14 +65,18 @@ export default function Header() {
           <nav className="flex flex-col p-4">
             <Link
               href="/about"
-              className="text-white hover:text-gray-300 transition-colors py-3 text-center text-lg"
+              className={`text-white transition-colors py-3 text-center text-lg ${
+                pathname === '/about'
+                  ? 'underline decoration-2 underline-offset-4'
+                  : 'hover:underline hover:underline-offset-4'
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </Link>
             <Link
               href="/resumeme.pdf"
-              className="text-white hover:text-gray-300 transition-colors py-3 text-center text-lg"
+              className="text-white hover:underline hover:underline-offset-4 transition-colors py-3 text-center text-lg"
               onClick={() => setIsMenuOpen(false)}
               target="_blank"
             >
