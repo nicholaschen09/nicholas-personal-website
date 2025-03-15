@@ -19,7 +19,10 @@ export default function BlogPost() {
             The Impact of Social Media on Modern Society
           </h1>
           <div className="flex flex-wrap items-center gap-4">
-            <span className="text-gray-400">March 5, 2025</span>
+            <span className="text-gray-400">
+              March 24, 2025{' '}
+              <span className="text-pink-500">// 10 min read</span>
+            </span>
             <div className="flex flex-wrap gap-2">
               <Badge
                 variant="outline"

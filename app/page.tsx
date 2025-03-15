@@ -105,19 +105,19 @@ export default function Home() {
               <div className="flex flex-wrap gap-2 pt-2">
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   Design
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   Programming
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   Engineering
                 </Badge>
@@ -161,19 +161,19 @@ export default function Home() {
               <div className="flex flex-wrap gap-2 pt-2">
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   Creativity
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   Video Editing
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   Content Creation
                 </Badge>
@@ -219,19 +219,19 @@ export default function Home() {
               <div className="flex flex-wrap gap-2 pt-2">
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   Communication
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   Software Engineering
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   Javascript
                 </Badge>
