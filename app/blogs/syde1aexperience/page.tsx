@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import {
   Accordion,
@@ -649,22 +649,51 @@ export default function BlogPost() {
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
           More Posts
         </h2>
-        <div className="space-y-4">
-          <article className="p-4 bg-transparent border border-gray-700 rounded-lg hover:bg-gray-800/10 transition-colors">
-            <h3 className="text-2xl font-semibold">
-              <Link href="/blogs/ownr">
-                What I Loved About Being A Software Engineering Intern at Ownr
-              </Link>
-            </h3>
-            <p className="text-gray-400 mt-2">
-              In this article, I share my experiences during my first co-op term
-              at Ownr, an RBCx company. I discuss the projects I worked on, the
-              skills I developed, and the challenges I faced. This term provided
-              me with valuable insights into full-stack web development and the
-              importance of teamwork in a professional setting.
+        <div className="space-y-8">
+          {/* Blog Post 1 */}
+          <div className="bg-transparent border border-gray-700 rounded-lg p-6">
+            <div className="flex flex-col md:flex-row md:items-center justify-between mb-3">
+              <h3 className="text-xl font-bold text-white">
+                My SYDE 1A Experience
+              </h3>
+              <span className="text-gray-400 text-sm mt-1 md:mt-0">
+                March 13, 2025
+              </span>
+            </div>
+            <p className="text-gray-300 mb-4">
+              In this blog post, I reflect on my first semester in the Systems
+              Design Engineering program at the University of Waterloo. I
+              discuss the challenges I faced, the projects I worked on, and the
+              valuable lessons I learned. This experience has shaped my approach
+              to problem-solving and teamwork.
             </p>
-          </article>
-          {/* You can add more articles similarly */}
+            <div className="flex flex-wrap gap-2 mb-4">
+              <Badge
+                variant="outline"
+                className="bg-transparent text-white border-gray-500 font-medium"
+              >
+                Design
+              </Badge>
+              <Badge
+                variant="outline"
+                className="bg-transparent text-white border-gray-500 font-medium"
+              >
+                Programming
+              </Badge>
+              <Badge
+                variant="outline"
+                className="bg-transparent text-white border-gray-500 font-medium"
+              >
+                Engineering
+              </Badge>
+            </div>
+            <Link
+              href="/blogs/syde1aexperience"
+              className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
+            >
+              Read more <ArrowRight className="ml-1 w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </section>
 
