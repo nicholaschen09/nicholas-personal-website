@@ -29,7 +29,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-6">
+        <nav className="hidden md:flex items-center">
           <Link
             href="/about"
             className={`text-white transition-colors mx-4 ${
@@ -41,8 +41,20 @@ export default function Header() {
             About
           </Link>
           <Link
-            href="/resumeme.pdf"
-            className="text-white hover:underline hover:underline-offset-4 transition-colors mx-40"
+            href="/blogs"
+            className={`text-white transition-colors mx-4 ${
+              pathname === '/blogs'
+                ? 'underline decoration-2 underline-offset-4'
+                : 'hover:underline hover:underline-offset-4'
+            }`}
+          >
+            Blogs
+          </Link>
+          {/* Spacer div between Blogs and Resume */}
+          <div className="w-4"></div>
+          <Link
+            href="/resume.pdf"
+            className="text-white hover:underline hover:underline-offset-4 transition-colors"
             target="_blank"
           >
             Resume
@@ -75,7 +87,18 @@ export default function Header() {
               About
             </Link>
             <Link
-              href="/resumeme.pdf"
+              href="/blogs"
+              className={`text-white transition-colors py-3 text-center text-lg ${
+                pathname === '/blogs'
+                  ? 'underline decoration-2 underline-offset-4'
+                  : 'hover:underline hover:underline-offset-4'
+              }`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Blogs
+            </Link>
+            <Link
+              href="/resume.pdf"
               className="text-white hover:underline hover:underline-offset-4 transition-colors py-3 text-center text-lg"
               onClick={() => setIsMenuOpen(false)}
               target="_blank"
