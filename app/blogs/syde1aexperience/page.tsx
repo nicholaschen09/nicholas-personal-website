@@ -1191,7 +1191,7 @@ export default function BlogPost() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div>
               <p>
-                Living at CMH was a significant part of my
+                Living in CMH was a significant part of my
                 first-year experience. The residence provided a supportive
                 community of fellow engineering students facing similar
                 challenges.
