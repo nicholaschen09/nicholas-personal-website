@@ -622,7 +622,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="w-full mt-14 pt-8">
-        <div className="max-w-4xl mx-auto w-full">
+        <div className="max-w-6xl mx-auto w-full">
           <hr className="border-t border-gray-700 mb-8" />
           <div className="flex flex-col items-center md:items-start">
             <p className="text-gray-400 mb-4">
