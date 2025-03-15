@@ -93,9 +93,9 @@ export default function BlogsPage() {
               <div className="flex-1">
                 <div className="flex items-center gap-3 text-sm text-zinc-500 mb-3">
                   <span>{post.date}</span>
-                  <span>•</span>
-                  <span>{post.readTime}</span>
-                  <span>•</span>
+                  <span>//</span>
+                  <span className="text-pink-500">{post.readTime}</span>
+                  <span>//</span>
                   <span className="px-2 py-1 rounded-full bg-zinc-800/50 text-zinc-300">
                     {post.category}
                   </span>
