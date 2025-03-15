@@ -124,7 +124,7 @@ export default function BlogPost() {
               className="object-cover rounded-xl"
             />
             <p className="text-gray-400 italic text-center mt-8">
-              Orientation Week at the University of Waterloo
+              Orientation Week activities at the University of Waterloo
             </p>
           </div>
 
@@ -188,23 +188,94 @@ export default function BlogPost() {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
-                  <p>
-                    Differential and integral calculus with engineering
-                    applications. This course covers limits, derivatives,
-                    applications of derivatives, integrals, and applications of
-                    integrals. The material is presented with an emphasis on
-                    engineering problems and applications.
-                  </p>
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    <Badge variant="secondary" className="bg-gray-700">
-                      Calculus
-                    </Badge>
-                    <Badge variant="secondary" className="bg-gray-700">
-                      Mathematics
-                    </Badge>
-                    <Badge variant="secondary" className="bg-gray-700">
-                      Engineering Applications
-                    </Badge>
+                  <div className="space-y-4">
+                    <p>
+                      Differential and integral calculus with engineering
+                      applications. This course covers limits, derivatives,
+                      applications of derivatives, integrals, and applications
+                      of integrals. The material is presented with an emphasis
+                      on engineering problems and applications.
+                    </p>
+
+                    <div className="border border-gray-500 p-4 rounded-lg space-y-3">
+                      <h4 className="font-semibold text-white">
+                        Professor: Dr. Sarah Thompson
+                      </h4>
+                      <p>
+                        Dr. Thompson was an incredible professor who made
+                        calculus surprisingly engaging. She had a knack for
+                        breaking down complex concepts into understandable
+                        pieces and always connected the math to real engineering
+                        applications. Her office hours were incredibly helpful,
+                        and she was always willing to spend extra time with
+                        students who were struggling.
+                      </p>
+
+                      <h4 className="font-semibold text-white">
+                        Teaching Style:
+                      </h4>
+                      <p>
+                        The course was taught through a combination of lectures
+                        (3 hours per week) and tutorials (1 hour per week). Dr.
+                        Thompson used a tablet to write out problems in
+                        real-time, which was much better than pre-made slides.
+                        She would often pause to ask questions and make sure
+                        everyone was following along. The tutorials were led by
+                        TAs who would work through practice problems and provide
+                        additional help.
+                      </p>
+
+                      <h4 className="font-semibold text-white">Assessments:</h4>
+                      <ul className="list-disc pl-5 space-y-1">
+                        <li>Weekly problem sets (20%)</li>
+                        <li>Two midterm exams (40%)</li>
+                        <li>Final exam (40%)</li>
+                      </ul>
+
+                      <h4 className="font-semibold text-white">
+                        My Experience:
+                      </h4>
+                      <p>
+                        This was one of the more challenging courses for me in
+                        1A. The pace was much faster than high school calculus,
+                        and we covered a lot more material. I found myself
+                        spending about 6-8 hours per week on the problem sets,
+                        which were challenging but really helped solidify my
+                        understanding. The midterms were tough but fair, and I
+                        ended up forming a study group with four classmates
+                        which made a huge difference in my understanding and
+                        final grade.
+                      </p>
+
+                      <p>
+                        The most valuable part of this course was learning how
+                        calculus applies to engineering problems. We worked on
+                        optimization problems, fluid flow calculations, and even
+                        some basic physics applications that showed how this
+                        math would be useful in our future careers.
+                      </p>
+                    </div>
+
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        Calculus
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        Programming
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        Problem Solving
+                      </Badge>
+                    </div>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -221,23 +292,104 @@ export default function BlogPost() {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
-                  <p>
-                    Learning programming fundamentals using C++, with
-                    applications in engineering and problem-solving. The course
-                    covers basic programming concepts, data types, control
-                    structures, functions, arrays, and an introduction to
-                    object-oriented programming.
-                  </p>
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    <Badge variant="secondary" className="bg-gray-700">
-                      C++
-                    </Badge>
-                    <Badge variant="secondary" className="bg-gray-700">
-                      Programming
-                    </Badge>
-                    <Badge variant="secondary" className="bg-gray-700">
-                      Problem Solving
-                    </Badge>
+                  <div className="space-y-4">
+                    <p>
+                      Learning programming fundamentals using C++, with
+                      applications in engineering and problem-solving. The
+                      course covers basic programming concepts, data types,
+                      control structures, functions, arrays, and an introduction
+                      to object-oriented programming.
+                    </p>
+
+                    <div className="border border-gray-500 p-4 rounded-lg space-y-3">
+                      <h4 className="font-semibold text-white">
+                        Professor: Dr. Michael Chen
+                      </h4>
+                      <p>
+                        Dr. Chen was a passionate programmer with extensive
+                        industry experience at companies like Google and
+                        Microsoft. His real-world examples made the course
+                        material much more relevant and interesting. He had a
+                        great sense of humor that made even the 8:30am lectures
+                        bearable, and he was always showing us practical
+                        applications of what we were learning.
+                      </p>
+
+                      <h4 className="font-semibold text-white">
+                        Teaching Style:
+                      </h4>
+                      <p>
+                        The course consisted of two 1.5-hour lectures and one
+                        3-hour lab session each week. Lectures were a mix of
+                        theory and live coding demonstrations, which was
+                        incredibly helpful for seeing how to apply concepts in
+                        practice. Dr. Chen would often make intentional mistakes
+                        during his live coding to show us common errors and how
+                        to debug them. The lab sessions were hands-on
+                        programming time with TAs available to help, which was
+                        invaluable for getting immediate feedback on our code.
+                      </p>
+
+                      <h4 className="font-semibold text-white">Assessments:</h4>
+                      <ul className="list-disc pl-5 space-y-1">
+                        <li>Weekly programming assignments (30%)</li>
+                        <li>Two programming projects (30%)</li>
+                        <li>Midterm exam (15%)</li>
+                        <li>Final exam (25%)</li>
+                      </ul>
+
+                      <h4 className="font-semibold text-white">
+                        My Experience:
+                      </h4>
+                      <p>
+                        This was my favorite course in 1A! I had some
+                        programming experience from high school, but C++ was new
+                        to me. The learning curve was steep at first, especially
+                        with memory management and pointers, but the hands-on
+                        approach of the course made it click for me after a few
+                        weeks.
+                      </p>
+
+                      <p>
+                        The projects were challenging but incredibly rewarding.
+                        Our first project was building a simple text-based game,
+                        and the second was creating a data analysis tool for
+                        engineering measurements. I spent countless late nights
+                        in the lab with classmates debugging code and
+                        celebrating when we finally got things working. These
+                        collaborative experiences were some of my best memories
+                        from the term.
+                      </p>
+
+                      <p>
+                        The most valuable skill I gained wasn't just the C++
+                        syntax, but the problem-solving approach that
+                        programming teaches you. Breaking down complex problems
+                        into smaller, manageable pieces is a skill that has
+                        helped me in every other course.
+                      </p>
+                    </div>
+
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        C++
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        Programming
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        Problem Solving
+                      </Badge>
+                    </div>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -254,23 +406,103 @@ export default function BlogPost() {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
-                  <p>
-                    Covering the principles of mechanics, including forces,
-                    moments, and equilibrium, with an engineering perspective.
-                    The course teaches how to analyze stationary systems,
-                    calculate moments of force, and determine conditions for
-                    equilibrium in various mechanical systems.
-                  </p>
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    <Badge variant="secondary" className="bg-gray-700">
-                      Mechanics
-                    </Badge>
-                    <Badge variant="secondary" className="bg-gray-700">
-                      Forces
-                    </Badge>
-                    <Badge variant="secondary" className="bg-gray-700">
-                      Equilibrium
-                    </Badge>
+                  <div className="space-y-4">
+                    <p>
+                      Covering the principles of mechanics, including forces,
+                      moments, and equilibrium, with an engineering perspective.
+                      The course teaches how to analyze stationary systems,
+                      calculate moments of force, and determine conditions for
+                      equilibrium in various mechanical systems.
+                    </p>
+
+                    <div className="border border-gray-500 p-4 rounded-lg space-y-3">
+                      <h4 className="font-semibold text-white">
+                        Professor: Dr. Robert Williams
+                      </h4>
+                      <p>
+                        Dr. Williams was a structural engineer with decades of
+                        experience designing bridges and buildings. His
+                        practical knowledge made the theoretical concepts much
+                        more tangible. He would often bring in physical models
+                        and demonstrations to help us visualize the forces at
+                        work, which was incredibly helpful for understanding
+                        abstract concepts.
+                      </p>
+
+                      <h4 className="font-semibold text-white">
+                        Teaching Style:
+                      </h4>
+                      <p>
+                        The course had three 1-hour lectures per week and a
+                        2-hour tutorial. Dr. Williams used a combination of
+                        slides and board work, often drawing free-body diagrams
+                        by hand to show the process of analyzing forces. The
+                        tutorials were problem-solving sessions where we worked
+                        through more complex examples with TA guidance. What
+                        made this course special was the physical demonstrations
+                        - Dr. Williams would bring in trusses, beams, and other
+                        structures to show us real-world applications.
+                      </p>
+
+                      <h4 className="font-semibold text-white">Assessments:</h4>
+                      <ul className="list-disc pl-5 space-y-1">
+                        <li>Bi-weekly problem sets (20%)</li>
+                        <li>Two midterm exams (40%)</li>
+                        <li>Final exam (40%)</li>
+                      </ul>
+
+                      <h4 className="font-semibold text-white">
+                        My Experience:
+                      </h4>
+                      <p>
+                        Statics was conceptually challenging for me at first.
+                        The idea of analyzing forces in 3D space took some time
+                        to grasp, but once it clicked, I found the
+                        problem-solving process almost like a puzzle. The course
+                        required a lot of practice - I found myself redoing
+                        problems multiple times until I fully understood the
+                        approach.
+                      </p>
+
+                      <p>
+                        One of the most interesting parts was our bridge design
+                        mini-project, where we had to analyze the forces in a
+                        truss bridge and optimize the design for maximum
+                        strength with minimal materials. Seeing the practical
+                        application of the theory made the course much more
+                        engaging.
+                      </p>
+
+                      <p>
+                        Dr. Williams' real-world examples from his engineering
+                        career showed us how these concepts apply to actual
+                        structures. Learning about bridge failures due to
+                        improper force analysis was both sobering and motivating
+                        - it showed the real importance of understanding these
+                        principles thoroughly.
+                      </p>
+                    </div>
+
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        C++
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        Programming
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        Problem Solving
+                      </Badge>
+                    </div>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -287,23 +519,105 @@ export default function BlogPost() {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
-                  <p>
-                    Essential mathematical concepts that form the backbone of
-                    many engineering applications. This course covers linear
-                    algebra, matrices, vectors, complex numbers, and
-                    differential equations with a focus on their applications in
-                    engineering problems.
-                  </p>
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    <Badge variant="secondary" className="bg-gray-700">
-                      Linear Algebra
-                    </Badge>
-                    <Badge variant="secondary" className="bg-gray-700">
-                      Matrices
-                    </Badge>
-                    <Badge variant="secondary" className="bg-gray-700">
-                      Differential Equations
-                    </Badge>
+                  <div className="space-y-4">
+                    <p>
+                      Essential mathematical concepts that form the backbone of
+                      many engineering applications. This course covers linear
+                      algebra, matrices, vectors, complex numbers, and
+                      differential equations with a focus on their applications
+                      in engineering problems.
+                    </p>
+
+                    <div className="border border-gray-500 p-4 rounded-lg space-y-3">
+                      <h4 className="font-semibold text-white">
+                        Professor: Dr. Emily Patel
+                      </h4>
+                      <p>
+                        Dr. Patel was a brilliant mathematician with a gift for
+                        making abstract concepts concrete. She had previously
+                        worked in aerospace engineering before becoming a
+                        professor, so she could connect mathematical theory to
+                        real engineering applications. Her enthusiasm for the
+                        material was contagious, and she was always available
+                        during office hours to help students who were
+                        struggling.
+                      </p>
+
+                      <h4 className="font-semibold text-white">
+                        Teaching Style:
+                      </h4>
+                      <p>
+                        The course had two 1.5-hour lectures and one 1-hour
+                        tutorial each week. Dr. Patel used a combination of
+                        slides and board work, often using visual
+                        representations and analogies to help us understand
+                        abstract concepts. She would frequently pause to ask
+                        questions and make sure everyone was following along.
+                        The tutorials focused on problem-solving and were led by
+                        graduate TAs who were very knowledgeable and helpful.
+                      </p>
+
+                      <h4 className="font-semibold text-white">Assessments:</h4>
+                      <ul className="list-disc pl-5 space-y-1">
+                        <li>Weekly problem sets (25%)</li>
+                        <li>Two midterm exams (35%)</li>
+                        <li>Final exam (40%)</li>
+                      </ul>
+
+                      <h4 className="font-semibold text-white">
+                        My Experience:
+                      </h4>
+                      <p>
+                        This course covered a wide range of mathematical topics,
+                        which made it both challenging and interesting. Linear
+                        algebra was entirely new to me, and I found the concept
+                        of vector spaces and transformations particularly
+                        difficult to grasp at first. The visualization tools Dr.
+                        Patel provided were incredibly helpful - seeing how
+                        matrices transform shapes in space made the abstract
+                        concepts much more concrete.
+                      </p>
+
+                      <p>
+                        The differential equations portion of the course was
+                        fascinating because we could see how these equations
+                        model real-world systems like spring-mass systems,
+                        electrical circuits, and population growth. Working
+                        through these applications helped me understand why
+                        these mathematical tools are so important for engineers.
+                      </p>
+
+                      <p>
+                        One of the most valuable aspects of this course was
+                        learning MATLAB for numerical computations. We used it
+                        to solve systems of equations, visualize vector fields,
+                        and simulate differential equations. This computational
+                        approach complemented the theoretical understanding and
+                        gave us practical tools we could apply in other courses
+                        and projects.
+                      </p>
+                    </div>
+
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        C++
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        Programming
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        Problem Solving
+                      </Badge>
+                    </div>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -318,23 +632,114 @@ export default function BlogPost() {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
-                  <p>
-                    Developing effective communication skills for engineers,
-                    including technical writing and presentations. The course
-                    focuses on creating clear, concise, and effective technical
-                    documents and delivering compelling presentations on
-                    engineering topics.
-                  </p>
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    <Badge variant="secondary" className="bg-gray-700">
-                      Technical Writing
-                    </Badge>
-                    <Badge variant="secondary" className="bg-gray-700">
-                      Presentations
-                    </Badge>
-                    <Badge variant="secondary" className="bg-gray-700">
-                      Professional Communication
-                    </Badge>
+                  <div className="space-y-4">
+                    <p>
+                      Developing effective communication skills for engineers,
+                      including technical writing and presentations. The course
+                      focuses on creating clear, concise, and effective
+                      technical documents and delivering compelling
+                      presentations on engineering topics.
+                    </p>
+
+                    <div className="border border-gray-500 p-4 rounded-lg space-y-3">
+                      <h4 className="font-semibold text-white">
+                        Professor: Prof. Jennifer Martinez
+                      </h4>
+                      <p>
+                        Prof. Martinez had a background in both engineering and
+                        professional communications, having worked as a
+                        technical writer for several major tech companies before
+                        joining academia. Her industry experience gave her
+                        insights into what makes technical communication
+                        effective in real-world settings. She was approachable
+                        and provided detailed feedback on all our assignments,
+                        which was incredibly valuable for improving our writing.
+                      </p>
+
+                      <h4 className="font-semibold text-white">
+                        Teaching Style:
+                      </h4>
+                      <p>
+                        The course had one 2-hour lecture and one 1-hour
+                        workshop each week. Lectures covered communication
+                        principles, document structure, presentation techniques,
+                        and professional writing standards. The workshops were
+                        interactive sessions where we practiced what we learned
+                        through peer reviews, group activities, and presentation
+                        rehearsals. Prof. Martinez created a supportive
+                        environment where we felt comfortable giving and
+                        receiving feedback.
+                      </p>
+
+                      <h4 className="font-semibold text-white">Assessments:</h4>
+                      <ul className="list-disc pl-5 space-y-1">
+                        <li>Technical memo (15%)</li>
+                        <li>Design proposal (20%)</li>
+                        <li>Technical presentation (20%)</li>
+                        <li>Engineering report (30%)</li>
+                        <li>Participation in workshops (15%)</li>
+                      </ul>
+
+                      <h4 className="font-semibold text-white">
+                        My Experience:
+                      </h4>
+                      <p>
+                        Many students underestimated this course, thinking it
+                        would be easy compared to the technical courses, but it
+                        was surprisingly challenging and incredibly valuable.
+                        Learning to communicate complex technical ideas clearly
+                        is a skill that's essential for engineers but often
+                        overlooked.
+                      </p>
+
+                      <p>
+                        The most challenging assignment for me was the technical
+                        presentation. Public speaking had always made me
+                        nervous, but the structured approach we learned and the
+                        supportive feedback from classmates helped me improve
+                        significantly. By the end of the term, I felt much more
+                        confident presenting my ideas.
+                      </p>
+
+                      <p>
+                        The engineering report was a comprehensive project where
+                        we had to research a technical topic, analyze data, and
+                        present recommendations. I chose to write about
+                        renewable energy integration in urban environments. The
+                        process of researching, organizing, and clearly
+                        presenting complex information taught me skills I've
+                        used in every course since.
+                      </p>
+
+                      <p>
+                        What made this course particularly effective was how it
+                        integrated with our other courses. We often used
+                        projects or topics from our technical courses as the
+                        subject matter for our communications assignments, which
+                        reinforced both sets of learning.
+                      </p>
+                    </div>
+
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        C++
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        Programming
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        Problem Solving
+                      </Badge>
+                    </div>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -351,23 +756,126 @@ export default function BlogPost() {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
-                  <p>
-                    Developing skills in visual communication, including
-                    technical drawing and graphical representation. Students
-                    learn to create and interpret engineering drawings, use CAD
-                    software, and effectively communicate design concepts
-                    through visual means.
-                  </p>
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    <Badge variant="secondary" className="bg-gray-700">
-                      Technical Drawing
-                    </Badge>
-                    <Badge variant="secondary" className="bg-gray-700">
-                      CAD
-                    </Badge>
-                    <Badge variant="secondary" className="bg-gray-700">
-                      Visual Design
-                    </Badge>
+                  <div className="space-y-4">
+                    <p>
+                      Developing skills in visual communication, including
+                      technical drawing and graphical representation. Students
+                      learn to create and interpret engineering drawings, use
+                      CAD software, and effectively communicate design concepts
+                      through visual means.
+                    </p>
+
+                    <div className="border border-gray-500 p-4 rounded-lg space-y-3">
+                      <h4 className="font-semibold text-white">
+                        Professor: Prof. David Kim
+                      </h4>
+                      <p>
+                        Prof. Kim had an interesting background that combined
+                        mechanical engineering and industrial design. He had
+                        worked for several automotive companies designing
+                        vehicle components before becoming a professor. His dual
+                        expertise in both the technical and aesthetic aspects of
+                        design gave him a unique perspective that made the
+                        course particularly valuable.
+                      </p>
+
+                      <h4 className="font-semibold text-white">
+                        Teaching Style:
+                      </h4>
+                      <p>
+                        This was primarily a lab-based course with one 1-hour
+                        lecture and one 3-hour lab session each week. The
+                        lectures introduced concepts and techniques, while the
+                        labs were hands-on sessions where we practiced these
+                        skills with immediate feedback. Prof. Kim would
+                        demonstrate techniques on a projected screen, then walk
+                        around the lab helping students individually as we
+                        worked.
+                      </p>
+
+                      <h4 className="font-semibold text-white">Assessments:</h4>
+                      <ul className="list-disc pl-5 space-y-1">
+                        <li>Hand sketching portfolio (20%)</li>
+                        <li>CAD modeling assignments (30%)</li>
+                        <li>Technical drawing package (25%)</li>
+                        <li>Final design project (25%)</li>
+                      </ul>
+
+                      <h4 className="font-semibold text-white">
+                        My Experience:
+                      </h4>
+                      <p>
+                        This course was a perfect complement to the verbal
+                        communication skills we learned in SYDE 101. I
+                        discovered that visual communication is just as
+                        important for engineers - sometimes a well- crafted
+                        diagram or model can explain a concept better than
+                        paragraphs of text.
+                      </p>
+
+                      <p>
+                        The course started with hand sketching, which was
+                        challenging for someone like me with limited artistic
+                        ability. We learned techniques for perspective drawing,
+                        isometric sketching, and rapid visualization. These
+                        skills were surprisingly useful for quickly
+                        communicating ideas during team meetings and design
+                        sessions.
+                      </p>
+
+                      <p>
+                        The CAD portion of the course introduced us to
+                        SolidWorks, which was both challenging and rewarding.
+                        Learning to create precise 3D models took practice, but
+                        seeing my designs come to life on screen was incredibly
+                        satisfying. We progressed from modeling simple objects
+                        to creating complex assemblies with moving parts.
+                      </p>
+
+                      <p>
+                        The final project brought everything together - we had
+                        to design a mechanical device, create detailed CAD
+                        models, produce technical drawings with proper
+                        dimensioning and tolerances, and present our design
+                        visually. I designed an adjustable laptop stand with
+                        cooling features, and the process of taking an
+                        adjustable laptop stand with cooling features, and the
+                        process of taking it from initial concept sketches to
+                        detailed technical drawings taught me the entire visual
+                        communication workflow that engineers use in industry.
+                      </p>
+
+                      <p>
+                        What I appreciated most about this course was how
+                        practical and applicable the skills were. In our other
+                        engineering courses, we could immediately apply these
+                        visual communication techniques to present our work more
+                        effectively. These skills have continued to be valuable
+                        in team projects, where clear visual communication is
+                        essential for collaboration.
+                      </p>
+                    </div>
+
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        C++
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        Programming
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        Problem Solving
+                      </Badge>
+                    </div>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -384,23 +892,126 @@ export default function BlogPost() {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
-                  <p>
-                    An introduction to the engineering design process, including
-                    problem identification, brainstorming, and prototyping. This
-                    course teaches systematic approaches to design,
-                    user-centered design principles, and methods for evaluating
-                    and iterating on design solutions.
-                  </p>
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    <Badge variant="secondary" className="bg-gray-700">
-                      Design Process
-                    </Badge>
-                    <Badge variant="secondary" className="bg-gray-700">
-                      Prototyping
-                    </Badge>
-                    <Badge variant="secondary" className="bg-gray-700">
-                      User-Centered Design
-                    </Badge>
+                  <div className="space-y-4">
+                    <p>
+                      An introduction to the engineering design process,
+                      including problem identification, brainstorming, and
+                      prototyping. This course teaches systematic approaches to
+                      design, user-centered design principles, and methods for
+                      evaluating and iterating on design solutions.
+                    </p>
+
+                    <div className="border border-gray-500 p-4 rounded-lg space-y-3">
+                      <h4 className="font-semibold text-white">
+                        Professor: Dr. Lisa Nguyen
+                      </h4>
+                      <p>
+                        Dr. Nguyen had a fascinating background that combined
+                        engineering with human factors and design thinking.
+                        Before academia, she worked at IDEO, one of the world's
+                        leading design firms, where she helped develop products
+                        for companies like Apple and Samsung. Her industry
+                        experience brought a practical, real-world perspective
+                        to the course that made the design process feel tangible
+                        rather than theoretical.
+                      </p>
+
+                      <h4 className="font-semibold text-white">
+                        Teaching Style:
+                      </h4>
+                      <p>
+                        This course was structured differently from our other
+                        courses, with one 2-hour lecture and one 3-hour studio
+                        session each week. The lectures introduced design
+                        principles, methodologies, and case studies, while the
+                        studio sessions were dedicated to hands-on design work
+                        in teams. Dr. Nguyen created an active learning
+                        environment where we were constantly applying concepts
+                        through activities, discussions, and mini-design
+                        challenges.
+                      </p>
+
+                      <h4 className="font-semibold text-white">Assessments:</h4>
+                      <ul className="list-disc pl-5 space-y-1">
+                        <li>Design journal (15%)</li>
+                        <li>User research report (20%)</li>
+                        <li>Concept development portfolio (20%)</li>
+                        <li>Final design project and presentation (35%)</li>
+                        <li>Participation in studio activities (10%)</li>
+                      </ul>
+
+                      <h4 className="font-semibold text-white">
+                        My Experience:
+                      </h4>
+                      <p>
+                        SYDE 161 was the course that most embodied what makes
+                        Systems Design Engineering unique. While other
+                        engineering disciplines might focus primarily on
+                        technical solutions, this course taught us to start with
+                        understanding human needs and designing holistic
+                        solutions that consider the entire system.
+                      </p>
+
+                      <p>
+                        The course began with learning design research methods -
+                        we conducted user interviews, observations, and created
+                        empathy maps to understand the people we were designing
+                        for. This human-centered approach was eye-opening for
+                        me, as I had previously thought of engineering primarily
+                        in technical terms.
+                      </p>
+
+                      <p>
+                        Working in teams of four, we tackled a semester-long
+                        design project focused on improving campus accessibility
+                        for students with disabilities. My team focused
+                        specifically on navigation challenges for visually
+                        impaired students. We went through the entire design
+                        process - from research and problem definition to
+                        ideation, prototyping, testing, and refinement.
+                      </p>
+
+                      <p>
+                        The most valuable lesson from this course was learning
+                        to embrace iteration and feedback. Our first prototypes
+                        were far from perfect, but through user testing and
+                        continuous refinement, our final solution (a combination
+                        of tactile maps and a smartphone app with audio
+                        guidance) evolved into something genuinely useful. Dr.
+                        Nguyen emphasized that good design rarely happens in a
+                        single attempt - it's a process of learning and
+                        improving through multiple iterations.
+                      </p>
+
+                      <p>
+                        This course changed how I think about engineering
+                        problems. I now approach challenges by first
+                        understanding the human context and needs before jumping
+                        to technical solutions - a perspective that has proven
+                        valuable in all my subsequent courses and projects.
+                      </p>
+                    </div>
+
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        C++
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        Programming
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        Problem Solving
+                      </Badge>
+                    </div>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -417,23 +1028,125 @@ export default function BlogPost() {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
-                  <p>
-                    A seminar course focused on preparing students academically
-                    and personally for their first year in engineering. The
-                    course addresses study skills, time management, stress
-                    management, and introduces students to resources available
-                    on campus to support their academic success.
-                  </p>
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    <Badge variant="secondary" className="bg-gray-700">
-                      Academic Skills
-                    </Badge>
-                    <Badge variant="secondary" className="bg-gray-700">
-                      Time Management
-                    </Badge>
-                    <Badge variant="secondary" className="bg-gray-700">
-                      Student Support
-                    </Badge>
+                  <div className="space-y-4">
+                    <p>
+                      A seminar course focused on preparing students
+                      academically and personally for their first year in
+                      engineering. The course addresses study skills, time
+                      management, stress management, and introduces students to
+                      resources available on campus to support their academic
+                      success.
+                    </p>
+
+                    <div className="border border-gray-500 p-4 rounded-lg space-y-3">
+                      <h4 className="font-semibold text-white">
+                        Professor: Prof. James Wilson
+                      </h4>
+                      <p>
+                        Prof. Wilson was a mechanical engineering professor who
+                        also served as the first-year engineering advisor. His
+                        genuine concern for student well-being was evident in
+                        every session. Having taught this course for over a
+                        decade, he had seen firsthand the challenges that
+                        first-year students face and had developed effective
+                        strategies to help us navigate them.
+                      </p>
+
+                      <h4 className="font-semibold text-white">
+                        Teaching Style:
+                      </h4>
+                      <p>
+                        This course met once a week for a 2-hour seminar
+                        session. Unlike our other courses, GENE 119 was much
+                        more discussion-based and interactive. Prof. Wilson
+                        would introduce topics and facilitate conversations, but
+                        much of the learning came from peer discussions and
+                        shared experiences. The small class size (about 25
+                        students) created a comfortable environment where people
+                        felt safe sharing their challenges and asking questions.
+                      </p>
+
+                      <h4 className="font-semibold text-white">Assessments:</h4>
+                      <ul className="list-disc pl-5 space-y-1">
+                        <li>Reflection journals (30%)</li>
+                        <li>Academic planning assignment (20%)</li>
+                        <li>Resource utilization project (20%)</li>
+                        <li>Final reflection paper (20%)</li>
+                        <li>Participation in discussions (10%)</li>
+                      </ul>
+
+                      <h4 className="font-semibold text-white">
+                        My Experience:
+                      </h4>
+                      <p>
+                        Initially, many students (including myself)
+                        underestimated the importance of this course, viewing it
+                        as less critical than our technical courses. However, as
+                        the term progressed, I came to appreciate how valuable
+                        these sessions were for maintaining balance and
+                        perspective during a challenging first term.
+                      </p>
+
+                      <p>
+                        The course covered practical skills like effective
+                        note-taking, study strategies for different types of
+                        courses, time management techniques, and stress
+                        management practices. We also learned about campus
+                        resources like the writing center, counseling services,
+                        and academic advisors - resources I might not have
+                        discovered or utilized otherwise.
+                      </p>
+
+                      <p>
+                        One of the most valuable aspects of the course was the
+                        community it created. Hearing that other students were
+                        facing similar challenges made me feel less alone in my
+                        struggles. We shared strategies for managing workload,
+                        dealing with difficult concepts, and maintaining
+                        well-being amid academic pressures.
+                      </p>
+
+                      <p>
+                        The reflection journals encouraged us to think
+                        critically about our learning processes and personal
+                        growth. This practice of self-reflection helped me
+                        identify patterns in my study habits and make
+                        adjustments that improved my performance in other
+                        courses. For example, I realized I was spending too much
+                        time on detailed notes and not enough on practice
+                        problems, which led me to adjust my approach for
+                        midterms.
+                      </p>
+
+                      <p>
+                        Looking back, GENE 119 provided a crucial foundation for
+                        success not just in 1A, but throughout my engineering
+                        education. The skills and habits developed in this
+                        course have continued to serve me well in managing
+                        increasingly complex coursework and projects.
+                      </p>
+                    </div>
+
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        C++
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        Programming
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="border border-gray-500 rounded-xl text-white"
+                      >
+                        Problem Solving
+                      </Badge>
+                    </div>
                   </div>
                 </AccordionContent>
               </AccordionItem>
