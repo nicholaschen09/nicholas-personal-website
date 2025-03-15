@@ -257,22 +257,30 @@ export default function Home() {
                 </Badge>
               </div>
             </CardContent>
-            <CardFooter className="p-4 pt-0 flex justify-between">
+            <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">
+              <div className="flex gap-4">
+                <Link
+                  href="https://github.com/enxilium/posture-checker-robot"
+                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                >
+                  <div className="w-4 h-4 flex items-center justify-center mr-2">
+                    <img src="/github.png" alt="GitHub" className="w-4 h-4" />
+                  </div>
+                  Code
+                </Link>
+                <Link
+                  href="https://github.com/enxilium/posture-checker-robot"
+                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                >
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  Demo
+                </Link>
+              </div>
               <Link
-                href="https://github.com/enxilium/posture-checker-robot"
+                href="/projects/fernando"
                 className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
               >
-                <div className="w-4 h-4 flex items-center justify-center mr-2">
-                  <img src="/github.png" alt="GitHub" className="w-4 h-4" />
-                </div>
-                Code
-              </Link>
-              <Link
-                href="https://github.com/enxilium/posture-checker-robot"
-                className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
-              >
-                <ExternalLink className="w-4 h-4" />
-                Live Demo
+                Read more <ArrowRight className="ml-1 w-4 h-4" />
               </Link>
             </CardFooter>
           </Card>
@@ -316,22 +324,30 @@ export default function Home() {
                 </Badge>
               </div>
             </CardContent>
-            <CardFooter className="p-4 pt-0 flex justify-between">
+            <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">
+              <div className="flex gap-4">
+                <Link
+                  href="https://github.com"
+                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                >
+                  <div className="w-4 h-4 flex items-center justify-center mr-2">
+                    <img src="/github.png" alt="GitHub" className="w-4 h-4" />
+                  </div>
+                  Code
+                </Link>
+                <Link
+                  href="#"
+                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                >
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  Demo
+                </Link>
+              </div>
               <Link
-                href="https://github.com"
+                href="/projects/ai-content-generator"
                 className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
               >
-                <div className="w-4 h-4 flex items-center justify-center mr-2">
-                  <img src="/github.png" alt="GitHub" className="w-4 h-4" />
-                </div>
-                Code
-              </Link>
-              <Link
-                href="#"
-                className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
-              >
-                <ExternalLink className="w-4 h-4" />
-                Live Demo
+                Read more <ArrowRight className="ml-1 w-4 h-4" />
               </Link>
             </CardFooter>
           </Card>
@@ -373,22 +389,30 @@ export default function Home() {
                 </Badge>
               </div>
             </CardContent>
-            <CardFooter className="p-4 pt-0 flex justify-between">
+            <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">
+              <div className="flex gap-4">
+                <Link
+                  href="https://github.com"
+                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                >
+                  <div className="w-4 h-4 flex items-center justify-center mr-2">
+                    <img src="/github.png" alt="GitHub" className="w-4 h-4" />
+                  </div>
+                  Code
+                </Link>
+                <Link
+                  href="#"
+                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                >
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  Demo
+                </Link>
+              </div>
               <Link
-                href="https://github.com"
+                href="/projects/fitness-tracker"
                 className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
               >
-                <div className="w-4 h-4 flex items-center justify-center mr-2">
-                  <img src="/github.png" alt="GitHub" className="w-4 h-4" />
-                </div>
-                Code
-              </Link>
-              <Link
-                href="#"
-                className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
-              >
-                <ExternalLink className="w-4 h-4" />
-                Live Demo
+                Read more <ArrowRight className="ml-1 w-4 h-4" />
               </Link>
             </CardFooter>
           </Card>
@@ -432,22 +456,30 @@ export default function Home() {
                 </Badge>
               </div>
             </CardContent>
-            <CardFooter className="p-4 pt-0 flex justify-between">
+            <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">
+              <div className="flex gap-4">
+                <Link
+                  href="https://github.com"
+                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                >
+                  <div className="w-4 h-4 flex items-center justify-center mr-2">
+                    <img src="/github.png" alt="GitHub" className="w-4 h-4" />
+                  </div>
+                  Code
+                </Link>
+                <Link
+                  href="#"
+                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                >
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  Demo
+                </Link>
+              </div>
               <Link
-                href="https://github.com"
+                href="/projects/blockchain-explorer"
                 className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
               >
-                <div className="w-4 h-4 flex items-center justify-center mr-2">
-                  <img src="/github.png" alt="GitHub" className="w-4 h-4" />
-                </div>
-                Code
-              </Link>
-              <Link
-                href="#"
-                className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
-              >
-                <ExternalLink className="w-4 h-4" />
-                Live Demo
+                Read more <ArrowRight className="ml-1 w-4 h-4" />
               </Link>
             </CardFooter>
           </Card>
@@ -491,22 +523,30 @@ export default function Home() {
                 </Badge>
               </div>
             </CardContent>
-            <CardFooter className="p-4 pt-0 flex justify-between">
+            <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">
+              <div className="flex gap-4">
+                <Link
+                  href="https://github.com"
+                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                >
+                  <div className="w-4 h-4 flex items-center justify-center mr-2">
+                    <img src="/github.png" alt="GitHub" className="w-4 h-4" />
+                  </div>
+                  Code
+                </Link>
+                <Link
+                  href="#"
+                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                >
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  Demo
+                </Link>
+              </div>
               <Link
-                href="https://github.com"
+                href="/projects/smart-home-dashboard"
                 className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
               >
-                <div className="w-4 h-4 flex items-center justify-center mr-2">
-                  <img src="/github.png" alt="GitHub" className="w-4 h-4" />
-                </div>
-                Code
-              </Link>
-              <Link
-                href="#"
-                className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
-              >
-                <ExternalLink className="w-4 h-4" />
-                Live Demo
+                Read more <ArrowRight className="ml-1 w-4 h-4" />
               </Link>
             </CardFooter>
           </Card>
@@ -550,22 +590,30 @@ export default function Home() {
                 </Badge>
               </div>
             </CardContent>
-            <CardFooter className="p-4 pt-0 flex justify-between">
+            <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">
+              <div className="flex gap-4">
+                <Link
+                  href="https://github.com"
+                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                >
+                  <div className="w-4 h-4 flex items-center justify-center mr-2">
+                    <img src="/github.png" alt="GitHub" className="w-4 h-4" />
+                  </div>
+                  Code
+                </Link>
+                <Link
+                  href="#"
+                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                >
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  Demo
+                </Link>
+              </div>
               <Link
-                href="https://github.com"
+                href="/projects/collaborative-whiteboard"
                 className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
               >
-                <div className="w-4 h-4 flex items-center justify-center mr-2">
-                  <img src="/github.png" alt="GitHub" className="w-4 h-4" />
-                </div>
-                Code
-              </Link>
-              <Link
-                href="#"
-                className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
-              >
-                <ExternalLink className="w-4 h-4" />
-                Live Demo
+                Read more <ArrowRight className="ml-1 w-4 h-4" />
               </Link>
             </CardFooter>
           </Card>
@@ -574,7 +622,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="w-full mt-14 pt-8">
-        <div className="max-w-6xl mx-auto w-full">
+        <div className="max-w-4xl mx-auto w-full">
           <hr className="border-t border-gray-700 mb-8" />
           <div className="flex flex-col items-center md:items-start">
             <p className="text-gray-400 mb-4">
