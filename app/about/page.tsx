@@ -10,7 +10,7 @@ export default function About() {
         {/* Two-column layout: About text and Image */}
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="space-y-4 order-2 md:order-1">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-10">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-10 mt-4">
               Hey I'm Nicholas!
             </h1>
             <div className="text-base sm:text-lg text-gray-300 min-h-[150px] md:min-h-[120px]">
@@ -79,7 +79,7 @@ export default function About() {
                 height={1000}
                 className="object-cover rounded-lg mb-6"
               />
-              <p className="text-gray-400 text-center italic text-sm sm:text-base">
+              <p className="text-gray-400 text-center italic text-sm sm:text-base mb-4">
                 Throwback to a picture of me on the last day of highschool
               </p>
             </div>
@@ -87,7 +87,7 @@ export default function About() {
         </div>
 
         {/* Experience, Education, Community, Awards Section */}
-        <div className="space-y-8 mt-8 md:mt-16">
+        <div className="space-y-8 mt-10 md:mt-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-white border-b border-gray-700 pb-2">
             Some of the Cool Things I've Done
           </h2>
