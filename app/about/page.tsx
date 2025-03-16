@@ -186,28 +186,22 @@ export default function About() {
                     Technical Skills:
                   </p>
                   <div className="flex flex-wrap gap-2 mt-3">
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Python
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Machine Learning
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Data Analysis
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Pandas
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Numpy
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
-                      Scikit-learn
-                    </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
-                      TensorFlow
-                    </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Matplotlib
                     </span>
                   </div>
@@ -235,28 +229,28 @@ export default function About() {
                     Technical Skills:
                   </p>
                   <div className="flex flex-wrap gap-2 mt-3">
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Figma
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Adobe XD
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Wireframing
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Prototyping
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       User Research
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       UI/UX Design
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Adobe Photoshop
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Adobe Illustrator
                     </span>
                   </div>
@@ -284,23 +278,14 @@ export default function About() {
                     Skills Developed:
                   </p>
                   <div className="flex flex-wrap gap-2 mt-3">
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Customer Service
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Communication
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Team Collaboration
-                    </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
-                      Time Management
-                    </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
-                      Problem Solving
-                    </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
-                      Cash Handling
                     </span>
                   </div>
                 </div>
@@ -353,29 +338,29 @@ export default function About() {
                   Academic Skills:
                 </h5>
                 <div className="flex flex-wrap gap-2 mt-2">
-                  <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                  <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                     Engineering Design
                   </span>
-                  <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
-                    Systems Thinking
+                  <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
+                    Calculus
                   </span>
-                  <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
-                    Mathematical Modeling
+                  <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
+                    Engineering Math
                   </span>
-                  <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
-                    C++ Programming
+                  <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
+                    C++
                   </span>
-                  <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                  <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                     Technical Writing
                   </span>
-                  <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
-                    CAD Software
+                  <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
+                    SOLIDWORKS
                   </span>
-                  <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                  <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                     Problem Analysis
                   </span>
-                  <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
-                    Research Methods
+                  <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
+                    Statics
                   </span>
                 </div>
               </div>
@@ -430,22 +415,22 @@ export default function About() {
                     Technical Skills:
                   </p>
                   <div className="flex flex-wrap gap-2 mt-3">
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Circuit Design
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       PCB Layout
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Microcontroller Programming
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       CAD Modeling
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       3D Printing
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Mechanical Assembly
                     </span>
                   </div>
@@ -502,17 +487,23 @@ export default function About() {
                     Project: Fernando - Posture Correction Robot
                   </p>
                   <div className="flex flex-wrap gap-2 mt-3">
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
-                      Computer Vision
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
+                      OpenCV
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Machine Learning
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Hardware Integration
                     </span>
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Rapid Prototyping
+                    </span>
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
+                      Terraform
+                    </span>
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
+                      NextJS
                     </span>
                   </div>
                 </div>
@@ -538,7 +529,7 @@ export default function About() {
                     Qualification Criteria:
                   </p>
                   <div className="flex flex-wrap gap-2 mt-3">
-                    <span className="px-2 py-1 border border-gray-400 text-gray-300 rounded-md text-xs">
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       95%+ High School Average
                     </span>
                   </div>
