@@ -276,19 +276,19 @@ export default function Home() {
               <div className="flex flex-wrap gap-2 pt-2">
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   NextJS
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   OpenCV
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   Terraform
                 </Badge>
@@ -343,21 +343,21 @@ export default function Home() {
               <div className="flex flex-wrap gap-2 pt-2">
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
-                  Next.js
+                  NextJS
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
-                  OpenAI API
+                  OpenCV
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
-                  Tailwind CSS
+                  Terraform
                 </Badge>
               </div>
             </CardContent>
@@ -408,19 +408,19 @@ export default function Home() {
               <div className="flex flex-wrap gap-2 pt-2">
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   React Native
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   Firebase
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   D3.js
                 </Badge>
@@ -475,19 +475,19 @@ export default function Home() {
               <div className="flex flex-wrap gap-2 pt-2">
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   TypeScript
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   Ethereum
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   Web3.js
                 </Badge>
@@ -542,19 +542,19 @@ export default function Home() {
               <div className="flex flex-wrap gap-2 pt-2">
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   Vue.js
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   MQTT
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   Chart.js
                 </Badge>
@@ -609,19 +609,19 @@ export default function Home() {
               <div className="flex flex-wrap gap-2 pt-2">
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   React
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   Socket.io
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   Canvas API
                 </Badge>
@@ -682,19 +682,19 @@ export default function Home() {
               <div className="flex flex-wrap gap-2 pt-2">
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   Creativity
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   Design
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
+                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
                   Visual Arts
                 </Badge>
