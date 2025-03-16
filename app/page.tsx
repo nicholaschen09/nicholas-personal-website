@@ -28,7 +28,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="flex space-x-8 pt-2 justify-center sm:justify-start">
+        <div className="flex space-x-8 pt-1 justify-center sm:justify-start">
           <Link
             href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
             className="text-white hover:text-gray-300 transition-colors"
