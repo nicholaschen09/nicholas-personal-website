@@ -69,7 +69,7 @@ export default function BlogsPage() {
                   {post.title}
                 </h2>
                 <p className="text-zinc-400 mb-5 md:text-lg">{post.excerpt}</p>
-                <span className="px-2 py-1 rounded-full bg-zinc-800/50 text-zinc-300 mr-2">
+                <span className="px-2 py-1 rounded-full bg-zinc-800/50 text-pink-500 mr-2">
                   {post.category}
                 </span>
                 <Link
