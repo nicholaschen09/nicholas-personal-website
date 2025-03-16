@@ -17,27 +17,25 @@ const blogPosts = [
   },
   {
     id: '2',
-    title: 'My Journey as a Software Engineer',
+    title: 'How Social Media Has Changed My Life',
     excerpt:
-      'Personal reflections on my path through the tech industry, lessons learned, and advice for newcomers.',
-    date: 'February 28, 2025',
+      'The positive and negative impacts of social media on my life, from connecting with friends to dealing with distractions.',
+    date: 'March 28, 2025',
     readTime: '12 min read',
-    category: 'Career',
+    category: 'Social Media',
     slug: 'journey-as-software-engineer',
-    image:
-      'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1000&auto=format&fit=crop',
+    image: '/socialmedia.jpg',
   },
   {
     id: '3',
-    title: 'Understanding Modern JavaScript Frameworks',
+    title: 'What I Loved About Being A Software Engineering Intern at Ownr',
     excerpt:
-      'A deep dive into React, Vue, and Angular - comparing their strengths, weaknesses, and ideal use cases.',
-    date: 'February 15, 2025',
+      'My first co-op term at Ownr, including the projects I worked on, skills I developed, and challenges I faced, highlighting insights into full-stack web development and teamwork.',
+    date: 'April 20, 2025',
     readTime: '10 min read',
     category: 'Programming',
-    slug: 'modern-javascript-frameworks',
-    image:
-      'https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1000&auto=format&fit=crop',
+    slug: 'ownr',
+    image: '/ownr.png',
   },
 ];
 const regularPosts = blogPosts;
