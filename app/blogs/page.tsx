@@ -12,7 +12,7 @@ const blogPosts = [
     date: 'March 12, 2025',
     readTime: '8 min read',
     category: 'University',
-    slug: 'future-of-web-development',
+    slug: 'syde1aexperience',
     image: '/syde.png',
   },
   {
@@ -23,7 +23,7 @@ const blogPosts = [
     date: 'March 28, 2025',
     readTime: '12 min read',
     category: 'Social Media',
-    slug: 'journey-as-software-engineer',
+    slug: 'socialmedia',
     image: '/socialmedia.jpg',
   },
   {
