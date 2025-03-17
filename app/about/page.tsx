@@ -328,7 +328,6 @@ export default function About() {
                   <li>Calculus 1</li>
                   <li>Physics: Statics</li>
                   <li>Communications</li>
-                  <li>Problems Seminar</li>
                 </ul>
               </div>
 
