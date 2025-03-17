@@ -369,17 +369,15 @@ export default function About() {
                 <h5 className="text-white font-medium mb-2">Projects:</h5>
                 <ul className="list-disc pl-5 text-gray-400 text-sm space-y-1 mt-2">
                   <li>
-                    Designed and built a small-scale autonomous vehicle for
-                    navigation challenges
+                    Designed and built a small-scale installation to allow
+                    people to see the stars and the different constellations at
+                    different viewpoints while also being eco-friendly and
+                    sustainable.
                   </li>
                   <li>
-                    Developed user interfaces for specific accessibility needs
-                    in SYDE 161
+                    Designed using SOLIDWORKS printed a 3D model of a bear
                   </li>
-                  <li>
-                    Created a comprehensive analysis of campus pedestrian
-                    traffic patterns
-                  </li>
+                  <li>Created a library management system using C++</li>
                 </ul>
               </div>
             </div>
@@ -433,27 +431,6 @@ export default function About() {
                       Mechanical Assembly
                     </span>
                   </div>
-                </div>
-
-                {/* Contributions */}
-                <div className="mt-4">
-                  <p className="text-white text-sm font-medium">
-                    Key Contributions:
-                  </p>
-                  <ul className="list-disc pl-5 text-gray-400 text-sm space-y-1 mt-2">
-                    <li>
-                      Designed power distribution system for the vehicle's
-                      electrical components
-                    </li>
-                    <li>
-                      Developed sensor integration for real-time data collection
-                      during test runs
-                    </li>
-                    <li>
-                      Collaborated with interdisciplinary team to optimize
-                      vehicle performance
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
