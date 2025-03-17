@@ -50,6 +50,16 @@ export default function Header() {
           >
             Blogs
           </Link>
+          <Link
+            href="/projects"
+            className={`text-white transition-colors mx-4 ${
+              pathname === '/projects'
+                ? 'underline decoration-2 underline-offset-4'
+                : 'hover:underline hover:underline-offset-4'
+            }`}
+          >
+            Projects
+          </Link>
           {/* Spacer div between Blogs and Resume */}
           <div className="w-4"></div>
           <Link
@@ -96,6 +106,17 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               Blogs
+            </Link>
+            <Link
+              href="/projects"
+              className={`text-white transition-colors py-3 text-center text-lg ${
+                pathname === '/projects'
+                  ? 'underline decoration-2 underline-offset-4'
+                  : 'hover:underline hover:underline-offset-4'
+              }`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Projects
             </Link>
             <Link
               href="/resume.pdf"

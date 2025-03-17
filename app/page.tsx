@@ -253,7 +253,7 @@ export default function Home() {
       {/* Projects Section */}
       <div className="w-full max-w-6xl mb-20">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 md:mb-10">
-          Projects
+          Featured Projects
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -520,139 +520,6 @@ export default function Home() {
             </CardFooter>
           </Card>
 
-          {/* Project 5 */}
-          <Card className="bg-transparent border border-gray-700 overflow-hidden">
-            <div className="relative h-48">
-              <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="Smart Home Dashboard"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <CardContent className="p-4 space-y-3">
-              <h3 className="text-xl font-bold text-white">
-                Smart Home Dashboard
-              </h3>
-              <p className="text-gray-300 text-sm">
-                An IoT dashboard for monitoring and controlling smart home
-                devices with automation capabilities.
-              </p>
-              <div className="flex flex-wrap gap-2 pt-2">
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Vue.js
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  MQTT
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Chart.js
-                </Badge>
-              </div>
-            </CardContent>
-            <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">
-              <div className="flex gap-4">
-                <Link
-                  href="https://github.com"
-                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
-                >
-                  <div className="w-4 h-4 flex items-center justify-center mr-2">
-                    <img src="/github.png" alt="GitHub" className="w-4 h-4" />
-                  </div>
-                  Code
-                </Link>
-                <Link
-                  href="#"
-                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
-                >
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  Demo
-                </Link>
-              </div>
-              <Link
-                href="/projects/smart-home-dashboard"
-                className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
-              >
-                Read more <ArrowRight className="ml-1 w-4 h-4" />
-              </Link>
-            </CardFooter>
-          </Card>
-
-          {/* Project 6 */}
-          <Card className="bg-transparent border border-gray-700 overflow-hidden">
-            <div className="relative h-48">
-              <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="Collaborative Whiteboard"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <CardContent className="p-4 space-y-3">
-              <h3 className="text-xl font-bold text-white">
-                Collaborative Whiteboard
-              </h3>
-              <p className="text-gray-300 text-sm">
-                A real-time collaborative whiteboard application for remote
-                teams with drawing tools and chat functionality.
-              </p>
-              <div className="flex flex-wrap gap-2 pt-2">
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  React
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Socket.io
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Canvas API
-                </Badge>
-              </div>
-            </CardContent>
-            <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">
-              <div className="flex gap-4">
-                <Link
-                  href="https://github.com"
-                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
-                >
-                  <div className="w-4 h-4 flex items-center justify-center mr-2">
-                    <img src="/github.png" alt="GitHub" className="w-4 h-4" />
-                  </div>
-                  Code
-                </Link>
-                <Link
-                  href="#"
-                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
-                >
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  Demo
-                </Link>
-              </div>
-              <Link
-                href="/projects/collaborative-whiteboard"
-                className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
-              >
-                Read more <ArrowRight className="ml-1 w-4 h-4" />
-              </Link>
-            </CardFooter>
-          </Card>
           <hr className="w-[205%] border-t border-gray-700 my-8" />
           {/* Art Website */}
           <Card className="w-[101%] bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
