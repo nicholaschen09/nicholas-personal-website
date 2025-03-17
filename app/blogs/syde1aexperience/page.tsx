@@ -68,28 +68,25 @@ export default function BlogPost() {
           here's a photo of the entire class after the SYDE 121 final exam in E7
         </p>
 
-        <div className="prose prose-invert max-w-none">
+        <div className="text-gray-300 space-y-6 w-full">
           <p className="text-normal leading-relaxed">
             My first term (1A) in Systems Design Engineering (SYDE) at the
-            University of Waterloo was extermely exciting and challenging. This
-            term was full of unqiue experiences and it feels like just
+            University of Waterloo was extremely exciting and challenging. This
+            term was full of unique experiences and it feels like just
             yesterday. I made a lot of new friends and learned a lot about
             myself and just how rigorous this waterloo engineering thing was
             going to be for the next 5 years of my life.
           </p>
 
           {/* Waterloo Engineering in General */}
-          <h2 className="text-2xl font-bold mt-8 mb-4">
-            Waterloo Engineering in General
-          </h2>
+          <h2 className="text-2xl font-bold mt-8 mb-4">Waterloo Engineering</h2>
           <p>
-            Waterloo Engineering is known for its rigorous curriculum and co-op
-            program. The faculty emphasizes a strong foundation in engineering
-            principles, hands-on learning, and real-world problem-solving. The
-            co-op program allows students to gain valuable work experience and
-            apply their knowledge in industry settings. The community is
-            supportive and collaborative, with numerous clubs, design teams, and
-            events that foster innovation and teamwork.
+            Waterloo Engineering is known for its challenging curriculum and
+            fantastic co-op program. The professors focus on building strong
+            fundamentals through hands-on learning and solving real-world
+            problems, and the co-op lets you gain actual industry experience.
+            Plus, the community is really supportive, with plenty of clubs and
+            design teams to get involved with.
           </p>
           <div className="relative w-full overflow-hidden mt-4 mb-6">
             <Image
@@ -141,14 +138,16 @@ export default function BlogPost() {
                 significant. The pace is faster, the material more complex, and
                 the expectations much higher. In high school, I was used to
                 being guided through most learning processes, but university
-                demanded more independence and self-directed study.
-              </p>
-              <p>
-                Time management became crucial as I juggled multiple deadlines,
+                demanded more independence and self-directed study. Time
+                management became crucial as I juggled multiple deadlines,
                 readings, and projects simultaneously. The freedom was both
-                liberating and challenging – no one was checking if I attended
-                lectures or completed readings, but the consequences of falling
-                behind were entirely on me.
+                liberating and challenging since no one was checking if I
+                attended lectures or completed readings, but the consequences of
+                falling behind were entirely on me. I had to quickly adapt to
+                this new environment, learning to prioritize tasks and manage my
+                time effectively. It was a steep learning curve, but it taught
+                me valuable skills in self-discipline and responsibility that I
+                know will benefit me throughout my career.
               </p>
             </div>
             <div className="flex flex-col items-center">
@@ -161,7 +160,7 @@ export default function BlogPost() {
                   className="object-cover rounded-xl"
                 />
               </div>
-              <p className="text-gray-400 italic mt-8 text-center mr-15">
+              <p className="text-gray-400 italic mt-2 text-center w-full">
                 My SYDE 1A schedule. Everyone, including me hated 8:30am classes
               </p>
             </div>
@@ -1155,33 +1154,15 @@ export default function BlogPost() {
           </div>
 
           {/* Schedule Section */}
-          <h2 className="text-2xl font-bold mt-10 mb-4">My Weekly Schedule</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div className="relative w-full aspect-video rounded-lg overflow-hidden">
-              <Image
-                src="/placeholder.svg?height=300&width=500"
-                alt="Weekly schedule"
-                width={500}
-                height={300}
-                className="object-cover"
-              />
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-6 mb-6">
             <div>
               <p>
                 A typical week in SYDE 1A was packed with activities from
-                morning to evening. My schedule included:
+                morning to evening. Finding balance was challenging but
+                essential for maintaining both academic performance and mental
+                health.
               </p>
-              <ul className="list-disc pl-5 space-y-1 mt-2">
-                <li>25-30 hours of lectures and labs</li>
-                <li>10-15 hours of homework and assignments</li>
-                <li>5-8 hours of group project work</li>
-                <li>Study sessions and office hours</li>
-                <li>Club meetings and social events</li>
-              </ul>
-              <p className="mt-2">
-                Finding balance was challenging but essential for maintaining
-                both academic performance and mental health.
-              </p>
+              <p className="mt-2"></p>
             </div>
           </div>
 
@@ -1192,30 +1173,35 @@ export default function BlogPost() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div>
               <p>
-                Living in CMH was a significant part of my first-year
-                experience. The residence provided a supportive community of
-                fellow engineering students facing similar challenges.
-              </p>
-              <p>
-                The suite-style rooms offered a good balance of privacy and
-                social interaction. Late-night study sessions in common areas,
-                impromptu pizza parties, and the convenience of being close to
-                classes made CMH an ideal home during my first year.
-              </p>
-              <p>
-                The residence advisors organized regular events that helped
-                break the monotony of academic life and fostered connections
-                among residents.
+                Living in CMH was a huge part of my first-year experience. The
+                residence was usually filled with stream 4 engineering students
+                because of the fact that we would have to come back in the
+                summer and needed cooling. There were single and double rooms
+                where there wasn't really a wall between you are your roommate
+                so it was very different going from your own room to having
+                basically no privacy. I spent many late nights in the study
+                rooms or the areas between the rooms with tables doing homework
+                or catching up on assignments whenever it was too cold to go
+                outside. Being so close to classes was another blessing. This
+                meant I could easily swing by for a quick review or a
+                much-needed break. Overall, CMH wasn't just a building—it was a
+                vibrant community that made my first year both memorable and
+                supportive.
               </p>
             </div>
-            <div className="relative w-full aspect-square rounded-lg overflow-hidden">
-              <Image
-                src="/placeholder.svg?height=400&width=400"
-                alt="Conrad Muller Hall"
-                width={400}
-                height={400}
-                className="object-cover"
-              />
+            <div className="flex flex-col items-center">
+              <div className="relative w-full aspect-square rounded-lg overflow-hidden">
+                <Image
+                  src="/cmh.png"
+                  alt="Conrad Muller Hall"
+                  width={400}
+                  height={400}
+                  className="object-cover"
+                />
+              </div>
+              <p className="text-gray-400 italic text-center mt-4 w-full">
+                A picture of CMH at night
+              </p>
             </div>
           </div>
 
@@ -1223,62 +1209,60 @@ export default function BlogPost() {
           <h2 className="text-2xl font-bold mt-10 mb-4">
             Building Friendships
           </h2>
-          <div className="relative w-full aspect-video rounded-lg overflow-hidden mb-6">
-            <Image
-              src="/placeholder.svg?height=400&width=800"
-              alt="Friends in SYDE"
-              width={800}
-              height={400}
-              className="object-cover"
-            />
+          <div className="mb-6">
+            <div className="relative w-full aspect-video rounded-lg overflow-hidden mb-6">
+              <Image
+                src="/placeholder.svg?height=400&width=800"
+                alt="Friends in SYDE"
+                width={800}
+                height={400}
+                className="object-cover"
+              />
+            </div>
+            <p className="mb-4">
+              The cohort-based structure of SYDE meant I spent most of my time
+              with the same group of about 100 students. This created an
+              environment where deep friendships formed naturally. Study groups
+              evolved into friend groups, and collaborative projects led to
+              lasting connections.
+            </p>
+            <p>
+              These friendships were crucial for navigating the challenges of
+              first year. We supported each other through difficult assignments,
+              celebrated successes together, and provided emotional support
+              during stressful periods like midterms and finals.
+            </p>
           </div>
-          <p>
-            The cohort-based structure of SYDE meant I spent most of my time
-            with the same group of about 100 students. This created an
-            environment where deep friendships formed naturally. Study groups
-            evolved into friend groups, and collaborative projects led to
-            lasting connections.
-          </p>
-          <p>
-            These friendships were crucial for navigating the challenges of
-            first year. We supported each other through difficult assignments,
-            celebrated successes together, and provided emotional support during
-            stressful periods like midterms and finals.
-          </p>
 
           {/* Design Teams Section */}
           <h2 className="text-2xl font-bold mt-10 mb-4">
             Design Teams and Projects
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div className="relative w-full aspect-square rounded-lg overflow-hidden">
+          <div className="mb-6">
+            <div className="relative w-full aspect-video rounded-lg overflow-hidden mb-6">
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                src="/placeholder.svg?height=400&width=800"
                 alt="Design team project"
-                width={400}
+                width={800}
                 height={400}
                 className="object-cover"
               />
             </div>
-            <div>
-              <p>
-                One of the highlights of SYDE 1A was participating in design
-                projects that applied theoretical knowledge to practical
-                problems. These projects included:
-              </p>
-              <ul className="list-disc pl-5 space-y-1 mt-2">
-                <li>Designing and building a small-scale autonomous vehicle</li>
-                <li>
-                  Creating user interfaces for specific accessibility needs
-                </li>
-                <li>Developing solutions for community-identified problems</li>
-              </ul>
-              <p className="mt-2">
-                These projects provided valuable experience in teamwork, project
-                management, and the engineering design process. They also
-                offered a refreshing break from theoretical coursework.
-              </p>
-            </div>
+            <p>
+              One of the highlights of SYDE 1A was participating in design
+              projects that applied theoretical knowledge to practical problems.
+              These projects included:
+            </p>
+            <ul className="list-disc pl-5 space-y-1 mt-2 mb-4">
+              <li>Designing and building a small-scale autonomous vehicle</li>
+              <li>Creating user interfaces for specific accessibility needs</li>
+              <li>Developing solutions for community-identified problems</li>
+            </ul>
+            <p>
+              These projects provided valuable experience in teamwork, project
+              management, and the engineering design process. They also offered
+              a refreshing break from theoretical coursework.
+            </p>
           </div>
 
           {/* Campus Section */}
@@ -1317,40 +1301,36 @@ export default function BlogPost() {
 
           {/* Co-op Section */}
           <h2 className="text-2xl font-bold mt-10 mb-4">Preparing for Co-op</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div>
-              <p>
-                Even in 1A, co-op preparation was a significant focus. The
-                Waterloo co-op program is renowned for providing valuable work
-                experience, and preparation began early:
-              </p>
-              <ul className="list-disc pl-5 space-y-1 mt-2">
-                <li>Resume workshops and critiques</li>
-                <li>Mock interviews and feedback sessions</li>
-                <li>Co-op information sessions with upper-year students</li>
-                <li>
-                  Building relevant skills through coursework and projects
-                </li>
-              </ul>
-              <p className="mt-2">
-                While the first co-op term was still months away, the groundwork
-                laid in 1A was essential for future success in the job search
-                process.
-              </p>
-            </div>
-            <div className="relative w-full aspect-square rounded-lg overflow-hidden">
+          <div className="mb-6">
+            <div className="relative w-full aspect-video rounded-lg overflow-hidden mb-6">
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                src="/placeholder.svg?height=400&width=800"
                 alt="Co-op preparation"
-                width={400}
+                width={800}
                 height={400}
                 className="object-cover"
               />
             </div>
+            <p>
+              Even in 1A, co-op preparation was a significant focus. The
+              Waterloo co-op program is renowned for providing valuable work
+              experience, and preparation began early:
+            </p>
+            <ul className="list-disc pl-5 space-y-1 mt-2 mb-4">
+              <li>Resume workshops and critiques</li>
+              <li>Mock interviews and feedback sessions</li>
+              <li>Co-op information sessions with upper-year students</li>
+              <li>Building relevant skills through coursework and projects</li>
+            </ul>
+            <p>
+              While the first co-op term was still months away, the groundwork
+              laid in 1A was essential for future success in the job search
+              process.
+            </p>
           </div>
 
           {/* Key Takeaways */}
-          <h2 className="text-2xl font-bold mt-10 mb-4">Key Takeaways</h2>
+          <h2 className="text-2xl font-bold mt-10 mb-4">Summary</h2>
           <p>
             Looking back on my 1A term, I learned so much and I couldn't ask for
             a better start to my university career.
