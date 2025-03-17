@@ -63,7 +63,7 @@ const projects: Project[] = [
     title: 'TikTok View Predictor',
     description:
       'A machine learning-powered application that predicts the number of views a TikTok video will receive using linear regression.',
-    image: '/placeholder.svg?height=600&width=800',
+    image: '/pandas.png',
     tags: [
       { name: 'Python', color: 'bg-pink-500' },
       { name: 'Pandas', color: 'bg-pink-500' },

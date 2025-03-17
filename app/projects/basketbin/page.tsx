@@ -3,7 +3,7 @@ import { ArrowLeft } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
 
-export default function Project() {
+export default function BasketBinProject() {
   return (
     <main className="flex min-h-screen flex-col items-center p-6 md:p-24">
       <article className="max-w-4xl w-full space-y-8 pt-24 md:pt-16">

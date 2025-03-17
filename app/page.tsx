@@ -392,43 +392,45 @@ export default function Home() {
           <Card className="bg-transparent border border-gray-700 overflow-hidden">
             <div className="relative h-48">
               <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="Fitness Tracker"
+                src="/pandas.png"
+                alt="pandas"
                 fill
                 className="object-cover"
               />
             </div>
             <CardContent className="p-4 space-y-3">
-              <h3 className="text-xl font-bold text-white">Fitness Tracker</h3>
+              <h3 className="text-xl font-bold text-white">
+                TikTok View Predictor
+              </h3>
               <p className="text-gray-300 text-sm">
-                A mobile-first application for tracking workouts, nutrition, and
-                fitness progress with data visualization.
+                A machine learning-powered application that predicts the number
+                of views a TikTok video will receive using linear regression.
               </p>
               <div className="flex flex-wrap gap-2 pt-2">
                 <Badge
                   variant="outline"
                   className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
-                  React Native
+                  Pandas
                 </Badge>
                 <Badge
                   variant="outline"
                   className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
-                  Firebase
+                  Python
                 </Badge>
                 <Badge
                   variant="outline"
                   className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
-                  D3.js
+                  Numpy
                 </Badge>
               </div>
             </CardContent>
             <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">
               <div className="flex gap-4">
                 <Link
-                  href="https://github.com"
+                  href="https://github.com/nicholaschen09/tiktok-view-predictor"
                   className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
                 >
                   <div className="w-4 h-4 flex items-center justify-center mr-2">
@@ -445,7 +447,7 @@ export default function Home() {
                 </Link>
               </div>
               <Link
-                href="/projects/fitness-tracker"
+                href="/projects/tiktokviewpredictor"
                 className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
               >
                 Read more <ArrowRight className="ml-1 w-4 h-4" />
