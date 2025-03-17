@@ -48,9 +48,9 @@ const projects: Project[] = [
       'An automated garbage sorter that leverages computer vision to sort garbage thrown in depending on if it is recylcable or not.',
     image: '/basketbin.jpg',
     tags: [
-      { name: 'Numpy', color: 'bg-pink-500' },
-      { name: 'Pandas', color: 'bg-pink-500' },
+      { name: 'OpenCV', color: 'bg-pink-500' },
       { name: 'Python', color: 'bg-pink-500' },
+      { name: 'Supabase', color: 'bg-pink-500' },
     ],
     links: {
       demo: '#',
@@ -65,9 +65,9 @@ const projects: Project[] = [
       'A machine learning-powered application that predicts the number of views a TikTok video will receive using linear regression.',
     image: '/placeholder.svg?height=600&width=800',
     tags: [
-      { name: 'Vue.js', color: 'bg-pink-500' },
-      { name: 'MQTT', color: 'bg-pink-500' },
-      { name: 'Chart.js', color: 'bg-pink-500' },
+      { name: 'Python', color: 'bg-pink-500' },
+      { name: 'Pandas', color: 'bg-pink-500' },
+      { name: 'Numpy', color: 'bg-pink-500' },
     ],
     links: {
       demo: '#',
