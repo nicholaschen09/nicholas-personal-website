@@ -144,11 +144,11 @@ export default function ProjectsPage() {
   return (
     <>
       <Header />
-      <main className="flex min-h-screen flex-col items-center p-6 md:p-24 bg-zinc-990 text-white pt-24">
+      <main className="flex min-h-screen flex-col items-center p-6 md:p-24 bg-zinc-990 text-white pt-24 mt-10">
         <div className="max-w-6xl w-full space-y-16">
           {/* Page Header */}
           <div className="space-y-4">
-            <h1 className="text-3xl sm:text-3xl md:text-4xl font-bold text-white">
+            <h1 className="text-3xl sm:text-3xl md:text-4xl font-bold text-white mt-10">
               All My Projects
             </h1>
             <p className="text-lg text-gray-300 max-w-3xl">
