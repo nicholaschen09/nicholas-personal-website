@@ -149,7 +149,7 @@ export default function ProjectsPage() {
           {/* Page Header */}
           <div className="space-y-4">
             <h1 className="text-3xl sm:text-3xl md:text-4xl font-bold text-white">
-              Projects
+              All My Projects
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl">
               A collection of my work spanning hardware, software, and design.
@@ -158,7 +158,6 @@ export default function ProjectsPage() {
           </div>
           {/* All Projects Grid */}
           <section className="space-y-8">
-            <h2 className="text-3xl font-bold">All Projects</h2>
             <div className="grid grid-cols-1 gap-6">
               {projects.slice(0, 6).map((project) => (
                 <div
