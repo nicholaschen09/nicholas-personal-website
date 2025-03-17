@@ -515,7 +515,7 @@ export default function Home() {
                 </Link>
               </div>
               <Link
-                href="/projects/blockchain-explorer"
+                href="/projects/engineeringportfolio"
                 className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
               >
                 Read more <ArrowRight className="ml-1 w-4 h-4" />
