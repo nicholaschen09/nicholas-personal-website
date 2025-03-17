@@ -403,8 +403,8 @@ export default function Home() {
                 TikTok View Predictor
               </h3>
               <p className="text-gray-300 text-sm">
-                A machine learning-powered model that predicts the number
-                of views a TikTok video will receive using linear regression.
+                A machine learning-powered model that predicts the number of
+                views a TikTok video will receive using linear regression.
               </p>
               <div className="flex flex-wrap gap-2 pt-2">
                 <Badge
@@ -459,45 +459,46 @@ export default function Home() {
           <Card className="bg-transparent border border-gray-700 overflow-hidden">
             <div className="relative h-48">
               <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="Blockchain Explorer"
+                src="/car.png"
+                alt="engineering portfolio"
                 fill
                 className="object-cover"
               />
             </div>
             <CardContent className="p-4 space-y-3">
               <h3 className="text-xl font-bold text-white">
-                Blockchain Explorer
+                Engineering Portfolio
               </h3>
               <p className="text-gray-300 text-sm">
-                A web application for exploring blockchain transactions,
-                addresses, and smart contracts with real-time data.
+                A showcase of my engineering projects, featuring 3D modeling
+                with SOLIDWORKS, as well as physical and systems design
+                innovations.
               </p>
               <div className="flex flex-wrap gap-2 pt-2">
                 <Badge
                   variant="outline"
                   className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
-                  TypeScript
+                  SOLIDWORKS
                 </Badge>
                 <Badge
                   variant="outline"
                   className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
-                  Ethereum
+                  Engineering
                 </Badge>
                 <Badge
                   variant="outline"
                   className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
-                  Web3.js
+                  Design
                 </Badge>
               </div>
             </CardContent>
             <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">
               <div className="flex gap-4">
                 <Link
-                  href="https://github.com"
+                  href="https://github.com/nicholaschen09/engineering-portfolio"
                   className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
                 >
                   <div className="w-4 h-4 flex items-center justify-center mr-2">
