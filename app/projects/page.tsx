@@ -36,8 +36,8 @@ const projects: Project[] = [
       { name: 'Computer Vision', color: 'bg-pink-500' },
     ],
     links: {
-      demo: '#',
-      github: '#',
+      demo: 'https://youtu.be/EBsmGGOubCk?si=Jpgb_pFdg3EN-EB1',
+      github: 'https://github.com/enxilium/posture-checker-robot',
       details: '/projects/fernando',
     },
   },
@@ -53,9 +53,9 @@ const projects: Project[] = [
       { name: 'Supabase', color: 'bg-pink-500' },
     ],
     links: {
-      demo: '#',
-      github: '#',
-      details: '/projects/ai-content-generator',
+      demo: 'https://youtu.be/6YRTP7_Oet8?si=fFE3LqMQ1A5mmX56',
+      github: 'https://github.com/DerrickHa/ht6',
+      details: '/projects/basketbin',
     },
   },
   {
@@ -71,8 +71,8 @@ const projects: Project[] = [
     ],
     links: {
       demo: '#',
-      github: '#',
-      details: '/projects/smart-home-dashboard',
+      github: 'https://github.com/nicholaschen09/tiktok-view-predictor',
+      details: '/projects/tiktokviewpredictor',
     },
   },
   {
