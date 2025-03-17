@@ -63,7 +63,7 @@ export default function Header() {
           {/* Spacer div between Blogs and Resume */}
           <div className="w-4"></div>
           <Link
-            href="/resume.pdf"
+            href="/resume1.pdf"
             className="text-white hover:underline hover:underline-offset-4 transition-colors"
             target="_blank"
           >
