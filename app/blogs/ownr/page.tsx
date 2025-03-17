@@ -171,29 +171,70 @@ export default function BlogPost() {
             challenging but incredibly rewarding, providing me with skills and
             knowledge that will benefit my future career.
           </p>
-
-          {/* Author Bio */}
-          <div className="flex items-center gap-4 mt-12 p-6 bg-gray-800/30 rounded-xl">
-            <div className="relative w-16 h-16 rounded-full overflow-hidden">
-              <Image
-                src="/placeholder.svg?height=64&width=64"
-                alt="Author"
-                width={64}
-                height={64}
-                className="object-cover"
-              />
-            </div>
-            <div>
-              <h3 className="font-bold">Nicholas Chen</h3>
-              <p className="text-sm text-gray-400">
-                Systems Design Engineering student at the University of
-                Waterloo. Passionate about technology, design, and creating
-                meaningful solutions.
-              </p>
-            </div>
-          </div>
         </div>
       </article>
+      {/* Footer */}
+      <footer className="w-full mt-8 pt-8">
+        <div className="max-w-4xl mx-auto w-full">
+          <hr className="border-t border-gray-700 mb-8" />
+          <div className="flex flex-col items-center md:items-start">
+            <p className="text-gray-400 mb-4">
+              © 2025 Nicholas Chen. All rights reserved.
+            </p>
+
+            {/* Social Media Links */}
+            <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
+              <Link
+                href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
+                className="text-white hover:text-gray-300 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="w-10 h-10 flex items-center justify-center">
+                  <img
+                    src="/linkedin.png"
+                    alt="LinkedIn"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <span className="sr-only">LinkedIn</span>
+              </Link>
+              <Link
+                href="https://github.com/nicholaschen09"
+                className="text-white hover:text-gray-300 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="w-10 h-10 flex items-center justify-center">
+                  <img
+                    src="/github.png"
+                    alt="GitHub"
+                    className="w-7 h-7 md:w-8 md:h-8"
+                  />
+                </div>
+                <span className="sr-only">GitHub</span>
+              </Link>
+              <Link
+                href="mailto:nicholas.chen243@gmail.com"
+                className="text-white hover:text-gray-300 transition-colors"
+              >
+                <div className="w-10 h-10 flex items-center justify-center">
+                  <img
+                    src="/email.png"
+                    alt="Email"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <span className="sr-only">Email</span>
+              </Link>
+            </div>
+
+            <p className="text-gray-500 text-sm mt-6 text-center md:text-left">
+              Designed and built by Nicholas Chen
+            </p>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
