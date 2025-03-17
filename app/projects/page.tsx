@@ -201,7 +201,11 @@ export default function ProjectsPage() {
                             href={project.links.github}
                             className="text-gray-400 hover:text-white"
                           >
-                            <Github className="h-5 w-5" />
+                            <img
+                              src="/github.png"
+                              alt="GitHub"
+                              className="h-5 w-5"
+                            />
                             <span className="sr-only">GitHub</span>
                           </Link>
                         )}
