@@ -119,7 +119,7 @@ export default function Header() {
               Projects
             </Link>
             <Link
-              href="/resume.pdf"
+              href="/resume1.pdf"
               className="text-white hover:underline hover:underline-offset-4 transition-colors py-3 text-center text-lg"
               onClick={() => setIsMenuOpen(false)}
               target="_blank"
