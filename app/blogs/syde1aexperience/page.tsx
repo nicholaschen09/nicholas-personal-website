@@ -1207,7 +1207,7 @@ export default function BlogPost() {
 
           {/* Friends Section */}
           <h2 className="text-2xl font-bold mt-10 mb-4">
-            Building Friendships
+            Making Friends in SYDE
           </h2>
           <div className="mb-6">
             <div className="relative w-full aspect-video rounded-lg overflow-hidden mb-6">
