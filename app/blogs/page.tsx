@@ -24,7 +24,7 @@ const blogPosts = [
     readTime: '12 min read',
     category: 'Social Media',
     slug: 'socialmedia',
-    image: '/socialmedia.jpg',
+    image: '/socialmedia.jpeg',
   },
   {
     id: '3',

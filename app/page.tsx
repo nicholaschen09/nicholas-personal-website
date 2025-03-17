@@ -137,10 +137,11 @@ export default function Home() {
           <Card className="bg-transparent border border-gray-700 overflow-hidden">
             <div className="relative h-40 md:h-58">
               <Image
-                src="/socialmedia.jpg"
+                src="/socialmedia.jpeg"
                 alt="Social Media Impact"
                 fill
                 className="object-cover"
+                style={{ objectPosition: 'center' }}
               />
             </div>
             <CardContent className="p-4 space-y-3">
