@@ -20,7 +20,6 @@ type Project = {
     github?: string;
     details: string;
   };
-  featured: boolean;
 };
 
 // Sample projects data
@@ -32,16 +31,15 @@ const projects: Project[] = [
       'A posture-correcting robot that slaps you when you slouch, using computer vision and a mechanical arm to provide physical feedback.',
     image: '/fernando.png',
     tags: [
-      { name: 'Hardware', color: 'bg-pink-600' },
-      { name: 'Robotics', color: 'bg-blue-600' },
-      { name: 'Computer Vision', color: 'bg-purple-600' },
+      { name: 'Hardware', color: 'bg-pink-500' },
+      { name: 'Robotics', color: 'bg-pink-500' },
+      { name: 'Computer Vision', color: 'bg-pink-500' },
     ],
     links: {
       demo: '#',
       github: '#',
       details: '/projects/fernando',
     },
-    featured: true,
   },
   {
     id: 'basketbin',
@@ -50,16 +48,15 @@ const projects: Project[] = [
       'An automated garbage sorter that leverages computer vision to sort garbage thrown in depending on if it is recylcable or not.',
     image: '/basketbin.jpg',
     tags: [
-      { name: 'Next.js', color: 'bg-gray-700' },
-      { name: 'OpenAI', color: 'bg-gray-700' },
-      { name: 'Tailwind CSS', color: 'bg-gray-700' },
+      { name: 'Next.js', color: 'bg-pink-500' },
+      { name: 'OpenAI', color: 'bg-pink-500' },
+      { name: 'Tailwind CSS', color: 'bg-pink-500' },
     ],
     links: {
       demo: '#',
       github: '#',
       details: '/projects/ai-content-generator',
     },
-    featured: true,
   },
   {
     id: 'smart-home-dashboard',
@@ -68,16 +65,15 @@ const projects: Project[] = [
       'An IoT dashboard for monitoring and controlling smart home devices with automation capabilities and data visualization.',
     image: '/placeholder.svg?height=600&width=800',
     tags: [
-      { name: 'Vue.js', color: 'bg-gray-700' },
-      { name: 'MQTT', color: 'bg-gray-700' },
-      { name: 'Chart.js', color: 'bg-gray-700' },
+      { name: 'Vue.js', color: 'bg-pink-500' },
+      { name: 'MQTT', color: 'bg-pink-500' },
+      { name: 'Chart.js', color: 'bg-pink-500' },
     ],
     links: {
       demo: '#',
       github: '#',
       details: '/projects/smart-home-dashboard',
     },
-    featured: false,
   },
   {
     id: 'blockchain-explorer',
@@ -86,16 +82,15 @@ const projects: Project[] = [
       'A web application for exploring blockchain transactions, addresses, and smart contracts with real-time data updates.',
     image: '/placeholder.svg?height=600&width=800',
     tags: [
-      { name: 'TypeScript', color: 'bg-gray-700' },
-      { name: 'Ethereum', color: 'bg-gray-700' },
-      { name: 'Web3.js', color: 'bg-gray-700' },
+      { name: 'TypeScript', color: 'bg-pink-500' },
+      { name: 'Ethereum', color: 'bg-pink-500' },
+      { name: 'Web3.js', color: 'bg-pink-500' },
     ],
     links: {
       demo: '#',
       github: '#',
       details: '/projects/blockchain-explorer',
     },
-    featured: false,
   },
   {
     id: 'fitness-tracker',
@@ -104,16 +99,15 @@ const projects: Project[] = [
       'A mobile-first application for tracking workouts, nutrition, and fitness progress with data visualization and goal setting.',
     image: '/placeholder.svg?height=600&width=800',
     tags: [
-      { name: 'React Native', color: 'bg-gray-700' },
-      { name: 'Firebase', color: 'bg-gray-700' },
-      { name: 'D3.js', color: 'bg-gray-700' },
+      { name: 'React Native', color: 'bg-pink-500' },
+      { name: 'Firebase', color: 'bg-pink-500' },
+      { name: 'D3.js', color: 'bg-pink-500' },
     ],
     links: {
       demo: '#',
       github: '#',
       details: '/projects/fitness-tracker',
     },
-    featured: false,
   },
   {
     id: 'collaborative-whiteboard',
@@ -122,25 +116,19 @@ const projects: Project[] = [
       'A real-time collaborative whiteboard application for remote teams with drawing tools and chat functionality.',
     image: '/placeholder.svg?height=600&width=800',
     tags: [
-      { name: 'React', color: 'bg-gray-700' },
-      { name: 'Socket.io', color: 'bg-gray-700' },
-      { name: 'Canvas API', color: 'bg-gray-700' },
+      { name: 'React', color: 'bg-pink-500' },
+      { name: 'Socket.io', color: 'bg-pink-500' },
+      { name: 'Canvas API', color: 'bg-pink-500' },
     ],
     links: {
       demo: '#',
       github: '#',
       details: '/projects/collaborative-whiteboard',
     },
-    featured: false,
   },
 ];
 
 export default function ProjectsPage() {
-  // Get featured projects
-  const featuredProjects = projects.filter((project) => project.featured);
-  // Get other projects
-  const otherProjects = projects.filter((project) => !project.featured);
-
   return (
     <>
       <Header />
@@ -182,7 +170,7 @@ export default function ProjectsPage() {
                         <Badge
                           key={index}
                           variant="outline"
-                          className="border-gray-500 text-white"
+                          className="border-pink-500 text-pink-500"
                         >
                           {tag.name}
                         </Badge>
@@ -199,7 +187,7 @@ export default function ProjectsPage() {
                         {project.links.github && (
                           <Link
                             href={project.links.github}
-                            className="text-gray-400 hover:text-white"
+                            className="text-gray-400 hover:text-white mr-2"
                           >
                             <img
                               src="/github.png"
