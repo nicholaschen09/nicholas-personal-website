@@ -306,7 +306,7 @@ export default function Home() {
                   Code
                 </Link>
                 <Link
-                  href="https://github.com/enxilium/posture-checker-robot"
+                  href="https://youtu.be/EBsmGGOubCk?si=1_ksNQak9YQNffQ6"
                   className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
                 >
                   <ExternalLink className="w-4 h-4 mr-2" />
@@ -326,16 +326,14 @@ export default function Home() {
           <Card className="bg-transparent border border-gray-700 overflow-hidden">
             <div className="relative h-48">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/basketbin.jpg"
                 alt="AI Content Generator"
                 fill
                 className="object-cover"
               />
             </div>
             <CardContent className="p-4 space-y-3">
-              <h3 className="text-xl font-bold text-white">
-                AI Content Generator
-              </h3>
+              <h3 className="text-xl font-bold text-white">BasketBin</h3>
               <p className="text-gray-300 text-sm">
                 An application that leverages AI to generate blog posts, social
                 media content, and marketing copy.
@@ -364,7 +362,7 @@ export default function Home() {
             <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">
               <div className="flex gap-4">
                 <Link
-                  href="https://github.com"
+                  href="https://github.com/DerrickHa/ht6"
                   className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
                 >
                   <div className="w-4 h-4 flex items-center justify-center mr-2">
@@ -373,7 +371,7 @@ export default function Home() {
                   Code
                 </Link>
                 <Link
-                  href="#"
+                  href="https://youtu.be/6YRTP7_Oet8?si=nBcCJkoi8awZF-kz"
                   className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
                 >
                   <ExternalLink className="w-4 h-4 mr-2" />
