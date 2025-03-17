@@ -370,14 +370,13 @@ export default function About() {
                 <ul className="list-disc pl-5 text-gray-400 text-sm space-y-1 mt-2">
                   <li>
                     Designed and built a small-scale installation to allow
-                    people to see the stars and the different constellations at
-                    different viewpoints while also being eco-friendly and
-                    sustainable.
+                    people to see the different constellations at different
+                    viewpoints while also being eco-friendly and sustainable.
                   </li>
                   <li>
-                    Designed using SOLIDWORKS printed a 3D model of a bear
+                    Designed using SOLIDWORKS printed a 3D model of a bear.
                   </li>
-                  <li>Created a library management system using C++</li>
+                  <li>Created a library management system using C++.</li>
                 </ul>
               </div>
             </div>
