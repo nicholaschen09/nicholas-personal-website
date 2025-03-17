@@ -403,7 +403,7 @@ export default function Home() {
                 TikTok View Predictor
               </h3>
               <p className="text-gray-300 text-sm">
-                A machine learning-powered application that predicts the number
+                A machine learning-powered model that predicts the number
                 of views a TikTok video will receive using linear regression.
               </p>
               <div className="flex flex-wrap gap-2 pt-2">
