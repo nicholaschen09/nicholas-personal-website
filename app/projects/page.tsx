@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Github, ExternalLink } from 'lucide-react';
+import { Github, ExternalLink, ArrowRight } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/header';
@@ -59,10 +59,10 @@ const projects: Project[] = [
     },
   },
   {
-    id: 'smart-home-dashboard',
-    title: 'Smart Home Dashboard',
+    id: 'Tiktokviewpredictor',
+    title: 'TikTok View Predictor',
     description:
-      'An IoT dashboard for monitoring and controlling smart home devices with automation capabilities and data visualization.',
+      'A machine learning-powered application that predicts the number of views a TikTok video will receive using linear regression.',
     image: '/placeholder.svg?height=600&width=800',
     tags: [
       { name: 'Vue.js', color: 'bg-pink-500' },
@@ -178,10 +178,10 @@ export default function ProjectsPage() {
                     </div>
                     <div className="flex justify-between items-center">
                       <Link
-                        href={project.links.details}
-                        className="text-blue-400 hover:text-blue-300 inline-flex items-center font-medium"
+                        href="/projects/fitness-tracker"
+                        className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
                       >
-                        View project →
+                        Read more <ArrowRight className="ml-1 w-4 h-4" />
                       </Link>
                       <div className="flex space-x-2">
                         {project.links.github && (
