@@ -380,7 +380,7 @@ export default function Home() {
                 </Link>
               </div>
               <Link
-                href="/projects/ai-content-generator"
+                href="/projects/basketbin"
                 className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
               >
                 Read more <ArrowRight className="ml-1 w-4 h-4" />
@@ -521,6 +521,7 @@ export default function Home() {
           </Card>
 
           <hr className="w-[205%] border-t border-gray-700 my-8" />
+
           {/* Art Website */}
           <Card className="w-[101%] bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
             <div className="relative h-32 md:h-48">

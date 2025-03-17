@@ -30,7 +30,7 @@ const projects: Project[] = [
     title: 'Fernando',
     description:
       'A posture-correcting robot that slaps you when you slouch, using computer vision and a mechanical arm to provide physical feedback.',
-    image: '/placeholder.svg?height=600&width=800',
+    image: '/fernando.png',
     tags: [
       { name: 'Hardware', color: 'bg-pink-600' },
       { name: 'Robotics', color: 'bg-blue-600' },
@@ -44,11 +44,11 @@ const projects: Project[] = [
     featured: true,
   },
   {
-    id: 'ai-content-generator',
-    title: 'AI Content Generator',
+    id: 'basketbin',
+    title: 'BasketBin',
     description:
-      'An application that leverages AI to generate blog posts, social media content, and marketing copy for content creators.',
-    image: '/placeholder.svg?height=600&width=800',
+      'An automated garbage sorter that leverages computer vision to sort garbage thrown in depending on if it is recylcable or not.',
+    image: '/basketbin.jpg',
     tags: [
       { name: 'Next.js', color: 'bg-gray-700' },
       { name: 'OpenAI', color: 'bg-gray-700' },
