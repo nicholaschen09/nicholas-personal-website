@@ -178,7 +178,7 @@ export default function ProjectsPage() {
                     </div>
                     <div className="flex justify-between items-center">
                       <Link
-                        href="/projects/fitness-tracker"
+                        href={project.links.details}
                         className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
                       >
                         Read more <ArrowRight className="ml-1 w-4 h-4" />
