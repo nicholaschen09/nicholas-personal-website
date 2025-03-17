@@ -18,7 +18,7 @@ export default function Home() {
         <div className="h-auto min-h-[150px] md:min-h-[120px]">
           <TypeAnimation
             sequence={[
-              "I am a software engineering intern at Ownr doing full stack web development, and a Systems Design Engineering student at the University of Waterloo. Previously, I've helped create awesome things at RBC and Meta Hash Capital.",
+              "I am a software engineer intern at Ownr doing full stack web development, and a Systems Design Engineering student at the University of Waterloo. Previously, I've helped create awesome things at RBC and Meta Hash Capital.",
               1000,
             ]}
             wrapper="p"
@@ -203,7 +203,7 @@ export default function Home() {
             <CardContent className="p-4 space-y-3">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
                 <h3 className="text-xl font-bold text-white">
-                  What I Loved About Being A Software Engineering Intern at Ownr
+                  What I Loved About Being A Software Engineer Intern at Ownr
                 </h3>
                 <span className="text-gray-400 text-sm mt-1 md:mt-0">
                   April 20, 2025
