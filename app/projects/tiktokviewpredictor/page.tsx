@@ -5,7 +5,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
-export default function FernandoProject() {
+export default function TikTokProject() {
   return (
     <main className="flex min-h-screen flex-col items-center p-6 md:p-24 bg-zinc-990 text-white">
       <div className="max-w-5xl w-full space-y-12">
