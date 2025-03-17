@@ -76,20 +76,20 @@ const projects: Project[] = [
     },
   },
   {
-    id: 'blockchain-explorer',
-    title: 'Blockchain Explorer',
+    id: 'engineering',
+    title: 'Engineering Portfolio',
     description:
-      'A web application for exploring blockchain transactions, addresses, and smart contracts with real-time data updates.',
-    image: '/placeholder.svg?height=600&width=800',
+      'A showcase of my engineering projects, featuring 3D modeling with SOLIDWORKS, as well as physical and systems design innovations.',
+    image: '/car.png',
     tags: [
-      { name: 'TypeScript', color: 'bg-pink-500' },
-      { name: 'Ethereum', color: 'bg-pink-500' },
-      { name: 'Web3.js', color: 'bg-pink-500' },
+      { name: 'Engineering', color: 'bg-pink-500' },
+      { name: 'SOLIDWORKS', color: 'bg-pink-500' },
+      { name: 'Design', color: 'bg-pink-500' },
     ],
     links: {
       demo: '#',
-      github: '#',
-      details: '/projects/blockchain-explorer',
+      github: 'https://github.com/nicholaschen09/engineering-portfolio',
+      details: '/projects/engineeringportfolio',
     },
   },
   {
