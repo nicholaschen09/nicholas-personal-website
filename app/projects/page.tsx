@@ -151,7 +151,7 @@ export default function ProjectsPage() {
             <h1 className="text-3xl sm:text-3xl md:text-4xl font-bold text-white">
               All My Projects
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl">
+            <p className="text-lg text-gray-300 max-w-3xl">
               A collection of my work spanning hardware, software, and design.
               Each project represents a unique challenge and solution.
             </p>
