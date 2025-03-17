@@ -48,9 +48,9 @@ const projects: Project[] = [
       'An automated garbage sorter that leverages computer vision to sort garbage thrown in depending on if it is recylcable or not.',
     image: '/basketbin.jpg',
     tags: [
-      { name: 'Next.js', color: 'bg-pink-500' },
-      { name: 'OpenAI', color: 'bg-pink-500' },
-      { name: 'Tailwind CSS', color: 'bg-pink-500' },
+      { name: 'Numpy', color: 'bg-pink-500' },
+      { name: 'Pandas', color: 'bg-pink-500' },
+      { name: 'Python', color: 'bg-pink-500' },
     ],
     links: {
       demo: '#',
