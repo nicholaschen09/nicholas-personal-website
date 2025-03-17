@@ -1194,9 +1194,9 @@ export default function BlogPost() {
                 <Image
                   src="/cmh.png"
                   alt="Conrad Muller Hall"
-                  width={400}
+                  width={450}
                   height={400}
-                  className="object-cover"
+                  className="object-cover rounded xl"
                 />
               </div>
               <p className="text-gray-400 italic text-center mt-4 w-full">
