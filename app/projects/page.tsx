@@ -158,7 +158,7 @@ export default function ProjectsPage() {
           </div>
           {/* All Projects Grid */}
           <section className="space-y-8">
-            <div className="grid grid-cols-1 gap-6">
+            <div className="grid grid-cols-1 gap-10">
               {projects.slice(0, 6).map((project) => (
                 <div
                   key={project.id}
