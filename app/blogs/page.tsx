@@ -10,7 +10,7 @@ const blogPosts = [
     excerpt:
       'Reflecting on my first semester in the Systems Design Engineering program at the University of Waterloo, discussing challenges, projects, and lessons learned.',
     date: 'March 12, 2025',
-    readTime: '8 min read',
+    readTime: '10 min read',
     category: 'University',
     slug: 'syde1aexperience',
     image: '/syde.png',
