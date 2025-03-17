@@ -137,7 +137,7 @@ export default function Home() {
           <Card className="bg-transparent border border-gray-700 overflow-hidden">
             <div className="relative h-40 md:h-58">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/socialmedia.jpg"
                 alt="Social Media Impact"
                 fill
                 className="object-cover"
@@ -335,15 +335,15 @@ export default function Home() {
             <CardContent className="p-4 space-y-3">
               <h3 className="text-xl font-bold text-white">BasketBin</h3>
               <p className="text-gray-300 text-sm">
-                An application that leverages AI to generate blog posts, social
-                media content, and marketing copy.
+                An automated garbage sorter that leverages computer vision to
+                sort garbage thrown in depending on if it is recylcable or not.
               </p>
               <div className="flex flex-wrap gap-2 pt-2">
                 <Badge
                   variant="outline"
                   className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
-                  NextJS
+                  Python
                 </Badge>
                 <Badge
                   variant="outline"
@@ -355,7 +355,7 @@ export default function Home() {
                   variant="outline"
                   className="bg-transparent text-pink-500 border-pink-500 font-medium"
                 >
-                  Terraform
+                  Supabase
                 </Badge>
               </div>
             </CardContent>
