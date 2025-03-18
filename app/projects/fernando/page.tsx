@@ -7,7 +7,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 export default function FernandoProject() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-6 md:p-24 bg-zinc-990 text-white">
+    <main className="flex min-h-screen flex-col items-center p-6 md:p-24 bg-black text-white">
       <div className="max-w-5xl w-full space-y-12">
         {/* Navigation */}
         <Link
@@ -20,17 +20,17 @@ export default function FernandoProject() {
         {/* Hero Section */}
         <div className="space-y-6">
           <div className="flex flex-col md:flex-row gap-4 md:items-center justify-between">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white">
+            <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold text-white">
               Fernando
             </h1>
             <div className="flex flex-wrap gap-2">
-              <Badge className="bg-pink-600 hover:bg-pink-700 text-white px-3 py-1 text-sm">
+              <Badge className="border border-white text-white px-3 py-1 text-sm">
                 Hardware
               </Badge>
-              <Badge className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 text-sm">
+              <Badge className="border border-white text-white px-3 py-1 text-sm">
                 Robotics
               </Badge>
-              <Badge className="bg-purple-600 hover:bg-purple-700 text-white px-3 py-1 text-sm">
+              <Badge className="border border-white text-white px-3 py-1 text-sm">
                 Computer Vision
               </Badge>
             </div>
@@ -44,7 +44,7 @@ export default function FernandoProject() {
         {/* Featured Image */}
         <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden border border-gray-800">
           <Image
-            src="/placeholder.svg?height=800&width=1200"
+            src="/fernando.png"
             alt="Fernando Robot"
             width={1200}
             height={800}
@@ -55,12 +55,15 @@ export default function FernandoProject() {
 
         {/* Project Links */}
         <div className="flex flex-wrap gap-4">
-          <Button className="bg-white text-black hover:bg-gray-200">
+          <Button
+            variant="outline"
+            className="border border-white text-white hover:bg-gray-800"
+          >
             <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
           </Button>
           <Button
             variant="outline"
-            className="border-white text-white hover:bg-gray-800"
+            className="border border-white text-white hover:bg-gray-800"
           >
             <Github className="mr-2 h-4 w-4" /> View Code
           </Button>
@@ -126,25 +129,10 @@ export default function FernandoProject() {
           <h2 className="text-3xl font-bold">Key Features</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="bg-gray-900 border-gray-800">
+            <Card className="bg-transparent border border-gray-800">
               <CardContent className="p-6 space-y-4">
-                <div className="h-12 w-12 rounded-full bg-blue-600 flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="text-white"
-                  >
-                    <circle cx="12" cy="12" r="1"></circle>
-                    <circle cx="12" cy="5" r="1"></circle>
-                    <circle cx="12" cy="19" r="1"></circle>
-                  </svg>
+                <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center">
+                  <span className="text-white font-bold">CV</span>
                 </div>
                 <h3 className="text-xl font-bold">Computer Vision</h3>
                 <p className="text-gray-400">
@@ -155,24 +143,10 @@ export default function FernandoProject() {
               </CardContent>
             </Card>
 
-            <Card className="bg-gray-900 border-gray-800">
+            <Card className="bg-transparent border border-gray-800">
               <CardContent className="p-6 space-y-4">
-                <div className="h-12 w-12 rounded-full bg-pink-600 flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="text-white"
-                  >
-                    <path d="M12 2v20"></path>
-                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                  </svg>
+                <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center">
+                  <span className="text-white font-bold">Arm</span>
                 </div>
                 <h3 className="text-xl font-bold">Mechanical Arm</h3>
                 <p className="text-gray-400">
@@ -183,26 +157,10 @@ export default function FernandoProject() {
               </CardContent>
             </Card>
 
-            <Card className="bg-gray-900 border-gray-800">
+            <Card className="bg-transparent border border-gray-800">
               <CardContent className="p-6 space-y-4">
-                <div className="h-12 w-12 rounded-full bg-purple-600 flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="text-white"
-                  >
-                    <rect width="18" height="18" x="3" y="3" rx="2"></rect>
-                    <path d="M7 7h10"></path>
-                    <path d="M7 12h10"></path>
-                    <path d="M7 17h10"></path>
-                  </svg>
+                <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center">
+                  <span className="text-white font-bold">App</span>
                 </div>
                 <h3 className="text-xl font-bold">Companion App</h3>
                 <p className="text-gray-400">
@@ -231,40 +189,40 @@ export default function FernandoProject() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
             <div className="space-y-2">
-              <div className="h-12 w-12 rounded-full bg-gray-700 flex items-center justify-center mx-auto">
-                <span className="text-xl font-bold">1</span>
+              <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center mx-auto">
+                <span className="text-xl font-bold text-white">1</span>
               </div>
-              <h3 className="font-semibold">Detection</h3>
+              <h3 className="font-semibold text-white">Detection</h3>
               <p className="text-gray-400 text-sm">
                 Camera monitors your posture in real-time
               </p>
             </div>
 
             <div className="space-y-2">
-              <div className="h-12 w-12 rounded-full bg-gray-700 flex items-center justify-center mx-auto">
-                <span className="text-xl font-bold">2</span>
+              <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center mx-auto">
+                <span className="text-xl font-bold text-white">2</span>
               </div>
-              <h3 className="font-semibold">Analysis</h3>
+              <h3 className="font-semibold text-white">Analysis</h3>
               <p className="text-gray-400 text-sm">
                 AI determines if your posture needs correction
               </p>
             </div>
 
             <div className="space-y-2">
-              <div className="h-12 w-12 rounded-full bg-gray-700 flex items-center justify-center mx-auto">
-                <span className="text-xl font-bold">3</span>
+              <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center mx-auto">
+                <span className="text-xl font-bold text-white">3</span>
               </div>
-              <h3 className="font-semibold">Correction</h3>
+              <h3 className="font-semibold text-white">Correction</h3>
               <p className="text-gray-400 text-sm">
                 Mechanical arm delivers a gentle tap
               </p>
             </div>
 
             <div className="space-y-2">
-              <div className="h-12 w-12 rounded-full bg-gray-700 flex items-center justify-center mx-auto">
-                <span className="text-xl font-bold">4</span>
+              <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center mx-auto">
+                <span className="text-xl font-bold text-white">4</span>
               </div>
-              <h3 className="font-semibold">Learning</h3>
+              <h3 className="font-semibold text-white">Learning</h3>
               <p className="text-gray-400 text-sm">
                 System adapts to your habits over time
               </p>
@@ -278,7 +236,9 @@ export default function FernandoProject() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-4">
-              <h3 className="text-xl font-bold">Hardware Components</h3>
+              <h3 className="text-xl font-bold text-white">
+                Hardware Components
+              </h3>
               <ul className="list-disc pl-5 space-y-2 text-gray-300">
                 <li>Raspberry Pi 4 (4GB) for processing</li>
                 <li>HD webcam for posture detection</li>
@@ -291,7 +251,7 @@ export default function FernandoProject() {
             </div>
 
             <div className="space-y-4">
-              <h3 className="text-xl font-bold">Software Stack</h3>
+              <h3 className="text-xl font-bold text-white">Software Stack</h3>
               <ul className="list-disc pl-5 space-y-2 text-gray-300">
                 <li>Python for core processing and control</li>
                 <li>OpenCV and MediaPipe for pose estimation</li>
@@ -312,28 +272,26 @@ export default function FernandoProject() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-gray-900 p-6 rounded-lg text-center">
-                  <span className="text-4xl font-bold text-pink-500">92%</span>
+                <div className="border border-gray-800 p-6 rounded-lg text-center">
+                  <span className="text-4xl font-bold text-white">92%</span>
                   <p className="text-gray-400 mt-2">
                     Improved posture awareness
                   </p>
                 </div>
-                <div className="bg-gray-900 p-6 rounded-lg text-center">
-                  <span className="text-4xl font-bold text-blue-500">78%</span>
+                <div className="border border-gray-800 p-6 rounded-lg text-center">
+                  <span className="text-4xl font-bold text-white">78%</span>
                   <p className="text-gray-400 mt-2">
                     Measurable posture improvement
                   </p>
                 </div>
-                <div className="bg-gray-900 p-6 rounded-lg text-center">
-                  <span className="text-4xl font-bold text-purple-500">
-                    85%
-                  </span>
+                <div className="border border-gray-800 p-6 rounded-lg text-center">
+                  <span className="text-4xl font-bold text-white">85%</span>
                   <p className="text-gray-400 mt-2">
                     Preferred over app notifications
                   </p>
                 </div>
-                <div className="bg-gray-900 p-6 rounded-lg text-center">
-                  <span className="text-4xl font-bold text-green-500">88%</span>
+                <div className="border border-gray-800 p-6 rounded-lg text-center">
+                  <span className="text-4xl font-bold text-white">88%</span>
                   <p className="text-gray-400 mt-2">
                     Rated the feedback as comfortable
                   </p>
@@ -393,19 +351,24 @@ export default function FernandoProject() {
         </section>
 
         {/* Call to Action */}
-        <section className="bg-gradient-to-r from-pink-600 to-purple-600 rounded-xl p-8 text-center space-y-4">
-          <h2 className="text-2xl font-bold">Interested in Fernando?</h2>
-          <p className="text-white/90">
+        <section className="border border-gray-800 rounded-xl p-8 text-center space-y-4">
+          <h2 className="text-2xl font-bold text-white">
+            Interested in Fernando?
+          </h2>
+          <p className="text-gray-400">
             Check out the code repository or contact me for more information
             about this project.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mt-4">
-            <Button className="bg-white text-black hover:bg-gray-200">
+            <Button
+              variant="outline"
+              className="border border-white text-white hover:bg-gray-800"
+            >
               <Github className="mr-2 h-4 w-4" /> View on GitHub
             </Button>
             <Button
               variant="outline"
-              className="border-white text-white hover:bg-white/20"
+              className="border border-white text-white hover:bg-gray-800"
             >
               Contact Me
             </Button>
@@ -415,14 +378,14 @@ export default function FernandoProject() {
         {/* More Projects */}
         <section className="space-y-6">
           <div className="flex items-center justify-between">
-            <h2 className="text-3xl font-bold">More Projects</h2>
+            <h2 className="text-3xl font-bold text-white">More Projects</h2>
             <Link href="/projects" className="text-gray-400 hover:text-white">
               View all →
             </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card className="bg-gray-900 border-gray-800 overflow-hidden">
+            <Card className="bg-transparent border border-gray-800 overflow-hidden">
               <div className="relative h-48">
                 <Image
                   src="/placeholder.svg?height=400&width=600"
@@ -432,26 +395,34 @@ export default function FernandoProject() {
                 />
               </div>
               <CardContent className="p-6 space-y-4">
-                <h3 className="text-xl font-bold">AI Content Generator</h3>
+                <h3 className="text-xl font-bold text-white">
+                  AI Content Generator
+                </h3>
                 <p className="text-gray-400">
                   An application that leverages AI to generate blog posts,
                   social media content, and marketing copy.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Badge className="bg-gray-700 text-white">Next.js</Badge>
-                  <Badge className="bg-gray-700 text-white">OpenAI</Badge>
-                  <Badge className="bg-gray-700 text-white">Tailwind</Badge>
+                  <Badge className="border border-white text-white">
+                    Next.js
+                  </Badge>
+                  <Badge className="border border-white text-white">
+                    OpenAI
+                  </Badge>
+                  <Badge className="border border-white text-white">
+                    Tailwind
+                  </Badge>
                 </div>
                 <Link
                   href="/projects/ai-content-generator"
-                  className="text-blue-400 hover:text-blue-300 inline-flex items-center"
+                  className="text-gray-400 hover:text-white inline-flex items-center"
                 >
                   View project →
                 </Link>
               </CardContent>
             </Card>
 
-            <Card className="bg-gray-900 border-gray-800 overflow-hidden">
+            <Card className="bg-transparent border border-gray-800 overflow-hidden">
               <div className="relative h-48">
                 <Image
                   src="/placeholder.svg?height=400&width=600"
@@ -461,19 +432,25 @@ export default function FernandoProject() {
                 />
               </div>
               <CardContent className="p-6 space-y-4">
-                <h3 className="text-xl font-bold">Smart Home Dashboard</h3>
+                <h3 className="text-xl font-bold text-white">
+                  Smart Home Dashboard
+                </h3>
                 <p className="text-gray-400">
                   An IoT dashboard for monitoring and controlling smart home
                   devices with automation capabilities.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Badge className="bg-gray-700 text-white">Vue.js</Badge>
-                  <Badge className="bg-gray-700 text-white">MQTT</Badge>
-                  <Badge className="bg-gray-700 text-white">Chart.js</Badge>
+                  <Badge className="border border-white text-white">
+                    Vue.js
+                  </Badge>
+                  <Badge className="border border-white text-white">MQTT</Badge>
+                  <Badge className="border border-white text-white">
+                    Chart.js
+                  </Badge>
                 </div>
                 <Link
                   href="/projects/smart-home-dashboard"
-                  className="text-blue-400 hover:text-blue-300 inline-flex items-center"
+                  className="text-gray-400 hover:text-white inline-flex items-center"
                 >
                   View project →
                 </Link>
