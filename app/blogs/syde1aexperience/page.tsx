@@ -1302,15 +1302,6 @@ export default function BlogPost() {
           {/* Co-op Section */}
           <h2 className="text-2xl font-bold mt-10 mb-4">Preparing for Co-op</h2>
           <div className="mb-6">
-            <div className="relative w-full aspect-video rounded-lg overflow-hidden mb-6">
-              <Image
-                src="/placeholder.svg?height=400&width=800"
-                alt="Co-op preparation"
-                width={800}
-                height={400}
-                className="object-cover"
-              />
-            </div>
             <p>
               Even in 1A, co-op preparation was a significant focus. The
               Waterloo co-op program is renowned for providing valuable work
