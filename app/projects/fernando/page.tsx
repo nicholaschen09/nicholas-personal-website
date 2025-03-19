@@ -57,18 +57,17 @@ export default function FernandoProject() {
         <div className="flex flex-wrap gap-4">
           <Button
             variant="outline"
-            className="border border-white text-white hover:bg-gray-800"
+            className="border border-white text-white hover:bg-white hover:text-black transition-colors"
           >
             <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
           </Button>
           <Button
             variant="outline"
-            className="border border-white text-white hover:bg-gray-800"
+            className="border border-white text-white hover:bg-white hover:text-black transition-colors"
           >
             <Github className="mr-2 h-4 w-4" /> View Code
           </Button>
         </div>
-
         {/* Overview Section */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Overview</h2>
@@ -347,31 +346,6 @@ export default function FernandoProject() {
                 className="object-cover"
               />
             </div>
-          </div>
-        </section>
-
-        {/* Call to Action */}
-        <section className="border border-gray-800 rounded-xl p-8 text-center space-y-4">
-          <h2 className="text-2xl font-bold text-white">
-            Interested in Fernando?
-          </h2>
-          <p className="text-gray-400">
-            Check out the code repository or contact me for more information
-            about this project.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center mt-4">
-            <Button
-              variant="outline"
-              className="border border-white text-white hover:bg-gray-800"
-            >
-              <Github className="mr-2 h-4 w-4" /> View on GitHub
-            </Button>
-            <Button
-              variant="outline"
-              className="border border-white text-white hover:bg-gray-800"
-            >
-              Contact Me
-            </Button>
           </div>
         </section>
 

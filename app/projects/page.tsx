@@ -93,11 +93,11 @@ const projects: Project[] = [
     },
   },
   {
-    id: 'fitness-tracker',
-    title: 'Fitness Tracker',
+    id: 'voluntrack',
+    title: 'VolunTrack',
     description:
       'A mobile-first application for tracking workouts, nutrition, and fitness progress with data visualization and goal setting.',
-    image: '/placeholder.svg?height=600&width=800',
+    image: '/voluntrack.jpeg',
     tags: [
       { name: 'React Native', color: 'bg-pink-500' },
       { name: 'Firebase', color: 'bg-pink-500' },
