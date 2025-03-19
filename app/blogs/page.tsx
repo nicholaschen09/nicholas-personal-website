@@ -68,7 +68,9 @@ export default function BlogsPage() {
                 <h2 className="text-2xl md:text-3xl font-semibold mb-4 group-hover:text-zinc-300 transition-colors">
                   {post.title}
                 </h2>
-                <p className="text-zinc-400 mb-5 md:text-lg">{post.excerpt}</p>
+                <p className="text-zinc-400 mb-5 md:text-normal">
+                  {post.excerpt}
+                </p>
                 <span className="px-2 py-1 rounded-full bg-zinc-800/50 text-pink-500 mr-2">
                   {post.category}
                 </span>
