@@ -31,26 +31,7 @@ export default function BlogPost() {
               March 13, 2025{' '}
               <span className="text-pink-500">// 10 min read</span>
             </span>
-            <div className="flex flex-wrap gap-2">
-              <Badge
-                variant="outline"
-                className="bg-transparent text-white border-gray-500 font-medium"
-              >
-                University
-              </Badge>
-              <Badge
-                variant="outline"
-                className="bg-transparent text-white border-gray-500 font-medium"
-              >
-                Engineering
-              </Badge>
-              <Badge
-                variant="outline"
-                className="bg-transparent text-white border-gray-500 font-medium"
-              >
-                Waterloo
-              </Badge>
-            </div>
+            <span className="text-gray-400 ml-auto">Nicholas Chen</span>
           </div>
         </div>
 
@@ -1212,10 +1193,10 @@ export default function BlogPost() {
           <div className="mb-6">
             <div className="relative w-full aspect-video rounded-lg overflow-hidden mb-6">
               <Image
-                src="/placeholder.svg?height=400&width=800"
+                src="/friends.jpeg"
                 alt="Friends in SYDE"
-                width={800}
-                height={400}
+                width={900}
+                height={500}
                 className="object-cover"
               />
             </div>
@@ -1234,86 +1215,27 @@ export default function BlogPost() {
             </p>
           </div>
 
-          {/* Design Teams Section */}
-          <h2 className="text-2xl font-bold mt-10 mb-4">
-            Design Teams and Projects
-          </h2>
-          <div className="mb-6">
-            <div className="relative w-full aspect-video rounded-lg overflow-hidden mb-6">
-              <Image
-                src="/placeholder.svg?height=400&width=800"
-                alt="Design team project"
-                width={800}
-                height={400}
-                className="object-cover"
-              />
-            </div>
-            <p>
-              One of the highlights of SYDE 1A was participating in design
-              projects that applied theoretical knowledge to practical problems.
-              These projects included:
-            </p>
-            <ul className="list-disc pl-5 space-y-1 mt-2 mb-4">
-              <li>Designing and building a small-scale autonomous vehicle</li>
-              <li>Creating user interfaces for specific accessibility needs</li>
-              <li>Developing solutions for community-identified problems</li>
-            </ul>
-            <p>
-              These projects provided valuable experience in teamwork, project
-              management, and the engineering design process. They also offered
-              a refreshing break from theoretical coursework.
-            </p>
-          </div>
-
-          {/* Campus Section */}
-          <h2 className="text-2xl font-bold mt-10 mb-4">Exploring Campus</h2>
-          <div className="relative w-full aspect-video rounded-lg overflow-hidden mb-6">
-            <Image
-              src="/placeholder.svg?height=400&width=800"
-              alt="University of Waterloo campus"
-              width={800}
-              height={400}
-              className="object-cover"
-            />
-          </div>
-          <p>
-            The University of Waterloo campus became my second home during 1A.
-            Beyond the Engineering buildings where most of my classes took
-            place, I discovered many favorite spots:
-          </p>
-          <ul className="list-disc pl-5 space-y-1 mt-2">
-            <li>
-              The Davis Centre Library - perfect for focused study sessions
-            </li>
-            <li>
-              The Student Life Centre - a hub for socializing and club
-              activities
-            </li>
-            <li>
-              The Engineering C&D - where I fueled late-night study sessions
-              with coffee
-            </li>
-            <li>
-              The paths around Laurel Creek - ideal for clearing my mind between
-              classes
-            </li>
-          </ul>
-
           {/* Co-op Section */}
           <h2 className="text-2xl font-bold mt-10 mb-4">Preparing for Co-op</h2>
           <div className="mb-6">
             <p>
               Even in 1A, co-op preparation was a significant focus. The
-              Waterloo co-op program is renowned for providing valuable work
-              experience, and preparation began early:
-            </p>
-            <ul className="list-disc pl-5 space-y-1 mt-2 mb-4">
-              <li>Resume workshops and critiques</li>
-              <li>Mock interviews and feedback sessions</li>
-              <li>Co-op information sessions with upper-year students</li>
-              <li>Building relevant skills through coursework and projects</li>
-            </ul>
-            <p>
+              Waterloo co-op program is renowned for providing valuable work and
+              work on projects that challenged me to grow even further.
+              experience, and preparation began early. After applying to 500
+              jobs, I realized that each rejection was a stepping stone toward
+              growth and refinement. The experience was grueling, but it pushed
+              me to continuously improve my resume, hone my technical skills,
+              and perfect my interview techniques—skills that I had already
+              started developing during co-op preparation through resume
+              workshops, mock interviews, and project work. Ultimately, that
+              persistence paid off. I returned to rbcx to work for ownr as a SWE
+              intern. This role was the culmination of everything I had learned:
+              the resilience from facing countless rejections, the practical
+              skills from co-op preparation, and the drive to excel in a
+              competitive field. At ownr, I was able to contribute meaningfully
+              as a software engineer, collaborate with talented professionals,
+              and work on projects that challenged me to grow even further.
               While the first co-op term was still months away, the groundwork
               laid in 1A was essential for future success in the job search
               process.
@@ -1321,7 +1243,7 @@ export default function BlogPost() {
           </div>
 
           {/* Key Takeaways */}
-          <h2 className="text-2xl font-bold mt-10 mb-4">Summary</h2>
+          <h2 className="text-2xl font-bold mt-10 mb-4">Final Thoughts</h2>
           <p>
             Looking back on my 1A term, I learned so much and I couldn't ask for
             a better start to my university career.
@@ -1336,7 +1258,7 @@ export default function BlogPost() {
         <div className="space-y-8">
           {/* Blog Post 3 */}
           <Card className="bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
-            <div className="relative h-48 md:h-64">
+            <div className="relative h-42 md:h-48">
               <Image
                 src="/office.png"
                 alt="Software Engineering Intern at Ownr"
