@@ -170,14 +170,6 @@ export default function BlogPost() {
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
                   <div className="space-y-4">
-                    <p>
-                      Differential and integral calculus with engineering
-                      applications. This course covers limits, derivatives,
-                      applications of derivatives, integrals, and applications
-                      of integrals. The material is presented with an emphasis
-                      on engineering problems and applications.
-                    </p>
-
                     <div className="border border-gray-500 p-4 rounded-lg space-y-3">
                       <h4 className="font-semibold text-white">
                         Professor: Dr. Sarah Thompson
@@ -236,27 +228,6 @@ export default function BlogPost() {
                         math would be useful in our future careers.
                       </p>
                     </div>
-
-                    <div className="mt-2 flex flex-wrap gap-2">
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        Calculus
-                      </Badge>
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        Programming
-                      </Badge>
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        Problem Solving
-                      </Badge>
-                    </div>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -274,14 +245,6 @@ export default function BlogPost() {
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
                   <div className="space-y-4">
-                    <p>
-                      Learning programming fundamentals using C++, with
-                      applications in engineering and problem-solving. The
-                      course covers basic programming concepts, data types,
-                      control structures, functions, arrays, and an introduction
-                      to object-oriented programming.
-                    </p>
-
                     <div className="border border-gray-500 p-4 rounded-lg space-y-3">
                       <h4 className="font-semibold text-white">
                         Professor: Dr. Michael Chen
@@ -350,27 +313,6 @@ export default function BlogPost() {
                         helped me in every other course.
                       </p>
                     </div>
-
-                    <div className="mt-2 flex flex-wrap gap-2">
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        C++
-                      </Badge>
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        Programming
-                      </Badge>
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        Problem Solving
-                      </Badge>
-                    </div>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -388,14 +330,6 @@ export default function BlogPost() {
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
                   <div className="space-y-4">
-                    <p>
-                      Covering the principles of mechanics, including forces,
-                      moments, and equilibrium, with an engineering perspective.
-                      The course teaches how to analyze stationary systems,
-                      calculate moments of force, and determine conditions for
-                      equilibrium in various mechanical systems.
-                    </p>
-
                     <div className="border border-gray-500 p-4 rounded-lg space-y-3">
                       <h4 className="font-semibold text-white">
                         Professor: Dr. Robert Williams
@@ -463,27 +397,6 @@ export default function BlogPost() {
                         principles thoroughly.
                       </p>
                     </div>
-
-                    <div className="mt-2 flex flex-wrap gap-2">
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        C++
-                      </Badge>
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        Programming
-                      </Badge>
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        Problem Solving
-                      </Badge>
-                    </div>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -501,14 +414,6 @@ export default function BlogPost() {
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
                   <div className="space-y-4">
-                    <p>
-                      Essential mathematical concepts that form the backbone of
-                      many engineering applications. This course covers linear
-                      algebra, matrices, vectors, complex numbers, and
-                      differential equations with a focus on their applications
-                      in engineering problems.
-                    </p>
-
                     <div className="border border-gray-500 p-4 rounded-lg space-y-3">
                       <h4 className="font-semibold text-white">
                         Professor: Dr. Emily Patel
@@ -578,27 +483,6 @@ export default function BlogPost() {
                         and projects.
                       </p>
                     </div>
-
-                    <div className="mt-2 flex flex-wrap gap-2">
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        C++
-                      </Badge>
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        Programming
-                      </Badge>
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        Problem Solving
-                      </Badge>
-                    </div>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -614,14 +498,6 @@ export default function BlogPost() {
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
                   <div className="space-y-4">
-                    <p>
-                      Developing effective communication skills for engineers,
-                      including technical writing and presentations. The course
-                      focuses on creating clear, concise, and effective
-                      technical documents and delivering compelling
-                      presentations on engineering topics.
-                    </p>
-
                     <div className="border border-gray-500 p-4 rounded-lg space-y-3">
                       <h4 className="font-semibold text-white">
                         Professor: Prof. Jennifer Martinez
@@ -700,27 +576,6 @@ export default function BlogPost() {
                         reinforced both sets of learning.
                       </p>
                     </div>
-
-                    <div className="mt-2 flex flex-wrap gap-2">
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        C++
-                      </Badge>
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        Programming
-                      </Badge>
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        Problem Solving
-                      </Badge>
-                    </div>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -738,14 +593,6 @@ export default function BlogPost() {
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
                   <div className="space-y-4">
-                    <p>
-                      Developing skills in visual communication, including
-                      technical drawing and graphical representation. Students
-                      learn to create and interpret engineering drawings, use
-                      CAD software, and effectively communicate design concepts
-                      through visual means.
-                    </p>
-
                     <div className="border border-gray-500 p-4 rounded-lg space-y-3">
                       <h4 className="font-semibold text-white">
                         Professor: Prof. David Kim
@@ -836,27 +683,6 @@ export default function BlogPost() {
                         essential for collaboration.
                       </p>
                     </div>
-
-                    <div className="mt-2 flex flex-wrap gap-2">
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        C++
-                      </Badge>
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        Programming
-                      </Badge>
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        Problem Solving
-                      </Badge>
-                    </div>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -874,14 +700,6 @@ export default function BlogPost() {
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
                   <div className="space-y-4">
-                    <p>
-                      An introduction to the engineering design process,
-                      including problem identification, brainstorming, and
-                      prototyping. This course teaches systematic approaches to
-                      design, user-centered design principles, and methods for
-                      evaluating and iterating on design solutions.
-                    </p>
-
                     <div className="border border-gray-500 p-4 rounded-lg space-y-3">
                       <h4 className="font-semibold text-white">
                         Professor: Dr. Lisa Nguyen
@@ -972,27 +790,6 @@ export default function BlogPost() {
                         valuable in all my subsequent courses and projects.
                       </p>
                     </div>
-
-                    <div className="mt-2 flex flex-wrap gap-2">
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        C++
-                      </Badge>
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        Programming
-                      </Badge>
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        Problem Solving
-                      </Badge>
-                    </div>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -1010,15 +807,6 @@ export default function BlogPost() {
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
                   <div className="space-y-4">
-                    <p>
-                      A seminar course focused on preparing students
-                      academically and personally for their first year in
-                      engineering. The course addresses study skills, time
-                      management, stress management, and introduces students to
-                      resources available on campus to support their academic
-                      success.
-                    </p>
-
                     <div className="border border-gray-500 p-4 rounded-lg space-y-3">
                       <h4 className="font-semibold text-white">
                         Professor: Prof. James Wilson
@@ -1106,27 +894,6 @@ export default function BlogPost() {
                         course have continued to serve me well in managing
                         increasingly complex coursework and projects.
                       </p>
-                    </div>
-
-                    <div className="mt-2 flex flex-wrap gap-2">
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        C++
-                      </Badge>
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        Programming
-                      </Badge>
-                      <Badge
-                        variant="outline"
-                        className="border border-gray-500 rounded-xl text-white"
-                      >
-                        Problem Solving
-                      </Badge>
                     </div>
                   </div>
                 </AccordionContent>

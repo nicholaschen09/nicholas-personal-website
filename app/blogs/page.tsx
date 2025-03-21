@@ -11,7 +11,6 @@ const blogPosts = [
       'Reflecting on my first semester in the Systems Design Engineering program at the University of Waterloo, discussing challenges, projects, and lessons learned.',
     date: 'March 12, 2025',
     readTime: '10 min read',
-    category: 'University',
     slug: 'syde1aexperience',
     image: '/syde.png',
   },
@@ -22,7 +21,6 @@ const blogPosts = [
       'The positive and negative impacts of social media on my life, from connecting with friends to dealing with distractions.',
     date: 'March 28, 2025',
     readTime: '12 min read',
-    category: 'Social Media',
     slug: 'socialmedia',
     image: '/socialmedia.jpeg',
   },
@@ -33,7 +31,6 @@ const blogPosts = [
       'My first co-op term at Ownr, including the projects I worked on, skills I developed, and challenges I faced, highlighting insights into full-stack web development and teamwork.',
     date: 'April 20, 2025',
     readTime: '10 min read',
-    category: 'Programming',
     slug: 'ownr',
     image: '/ownr.png',
   },
@@ -71,19 +68,21 @@ export default function BlogsPage() {
                 <p className="text-zinc-400 mb-5 md:text-normal">
                   {post.excerpt}
                 </p>
-                <span className="px-2 py-1 rounded-full bg-zinc-800/50 text-pink-500 mr-2">
-                  {post.category}
-                </span>
-                <Link
-                  href={`/blogs/${post.slug}`}
-                  className="inline-flex items-center gap-1 text-white hover:text-zinc-300 transition-colors"
-                >
-                  Read more
-                  <ArrowUpRight
-                    size={16}
-                    className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
-                  />
-                </Link>
+                <div className="flex items-center">
+                  <span className="px-2 py-1 rounded-full bg-zinc-800/50 text-pink-500 -mr-4">
+                    {post.category}
+                  </span>
+                  <Link
+                    href={`/blogs/${post.slug}`}
+                    className="inline-flex items-center gap-1 text-white hover:text-zinc-300 transition-colors pl-0"
+                  >
+                    Read more
+                    <ArrowUpRight
+                      size={16}
+                      className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
+                    />
+                  </Link>
+                </div>
               </div>
               <div className="w-full md:w-[280px] h-[180px] relative rounded-lg overflow-hidden">
                 <Image
