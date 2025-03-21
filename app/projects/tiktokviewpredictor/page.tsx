@@ -57,15 +57,22 @@ export default function TikTokProject() {
         <div className="flex flex-wrap gap-4">
           <Button
             variant="outline"
-            className="border border-white text-white hover:bg-white hover:text-black transition-colors"
+            className="border border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors"
           >
             <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
           </Button>
           <Button
             variant="outline"
-            className="border border-white text-white hover:bg-white hover:text-black transition-colors"
+            className="border border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors"
           >
-            <Github className="mr-2 h-4 w-4" /> View Code
+            <Image
+              src="/github.png"
+              alt="GitHub Logo"
+              width={16}
+              height={16}
+              className="mr-2"
+            />
+            View Code
           </Button>
         </div>
         {/* Overview Section */}
