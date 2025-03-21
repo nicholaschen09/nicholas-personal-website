@@ -86,15 +86,6 @@ export default function FernandoProject() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <section className="space-y-4">
             <h2 className="text-2xl font-bold">The Problem</h2>
-            <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-gray-800">
-              <Image
-                src="/placeholder.svg?height=500&width=500"
-                alt="Person with poor posture"
-                width={500}
-                height={500}
-                className="object-cover"
-              />
-            </div>
             <p className="text-gray-300">
               Poor posture during long hours at a desk leads to chronic back
               pain, neck strain, and other health issues. Most existing
@@ -105,15 +96,6 @@ export default function FernandoProject() {
 
           <section className="space-y-4">
             <h2 className="text-2xl font-bold">The Solution</h2>
-            <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-gray-800">
-              <Image
-                src="/placeholder.svg?height=500&width=500"
-                alt="Fernando correcting posture"
-                width={500}
-                height={500}
-                className="object-cover"
-              />
-            </div>
             <p className="text-gray-300">
               Fernando provides immediate physical feedback when your posture
               deteriorates. The gentle slap on your back creates an unmistakable
