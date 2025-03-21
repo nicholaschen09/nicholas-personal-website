@@ -101,7 +101,7 @@ export default function ProjectsPage() {
           {/* Page Header */}
           <div className="space-y-4">
             <h1 className="text-3xl sm:text-3xl md:text-4xl font-bold text-white mt-10">
-              All My Projects
+              Projects
             </h1>
             <p className="text-lg text-gray-300 max-w-3xl">
               A collection of my work spanning hardware, software, and design.

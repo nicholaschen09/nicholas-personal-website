@@ -41,7 +41,7 @@ export default function BlogsPage() {
   return (
     <div className="container mx-auto py-16 px-4 mb-50 md:px-0">
       <div className="mb-16">
-        <h1 className="text-4xl font-bold mb-6 mt-20">All My Blogs</h1>
+        <h1 className="text-4xl font-bold mb-6 mt-20">Blogs</h1>
         <p className="text-lg text-zinc-400 max-w-3xl">
           Thoughts, ideas, and reflections on technology, software development,
           and my personal journey in the tech industry.
