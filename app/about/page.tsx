@@ -256,40 +256,6 @@ export default function About() {
                   </div>
                 </div>
               </div>
-
-              <div className="space-y-2">
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                  <h4 className="text-lg sm:text-xl font-semibold text-white">
-                    Crew Member
-                  </h4>
-                  <span className="text-gray-400 text-sm sm:text-base">
-                    Jun 2022 - Sept 2022
-                  </span>
-                </div>
-                <p className="text-gray-300 font-medium">Dairy Queen</p>
-                <p className="text-gray-400 text-sm sm:text-base">
-                  As a crew member, I provided excellent customer service by
-                  taking orders, and serving a variety of ice cream flavors and
-                  toppings.
-                </p>
-                {/* Skills */}
-                <div className="mt-2">
-                  <p className="text-white text-sm font-medium">
-                    Skills Developed:
-                  </p>
-                  <div className="flex flex-wrap gap-2 mt-3">
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Customer Service
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Communication
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Team Collaboration
-                    </span>
-                  </div>
-                </div>
-              </div>
             </div>
           </section>
 
