@@ -102,26 +102,6 @@ export default function Home() {
                 discuss the challenges I faced, the projects I worked on, and
                 the valuable lessons I learned.
               </p>
-              <div className="flex flex-wrap gap-2 pt-2">
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Design
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Programming
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Engineering
-                </Badge>
-              </div>
             </CardContent>
             <CardFooter className="p-4 pt-0">
               <Link
@@ -159,26 +139,6 @@ export default function Home() {
                 impacts it has had on my life. From connecting with friends to
                 dealing with online distractions.
               </p>
-              <div className="flex flex-wrap gap-2 pt-2">
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Creativity
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Video Editing
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Content Creation
-                </Badge>
-              </div>
             </CardContent>
             <CardFooter className="p-4 pt-0">
               <Link
@@ -217,26 +177,6 @@ export default function Home() {
                 development and the importance of teamwork in a professional
                 setting.
               </p>
-              <div className="flex flex-wrap gap-2 pt-2">
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Communication
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Software Engineering
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Javascript
-                </Badge>
-              </div>
             </CardContent>
             <CardFooter className="p-4 pt-0">
               <Link
@@ -274,26 +214,6 @@ export default function Home() {
                 posture while working at your desk by slapping you when you
                 slouch.
               </p>
-              <div className="flex flex-wrap gap-2 pt-2">
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  NextJS
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  OpenCV
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Terraform
-                </Badge>
-              </div>
             </CardContent>
             <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">
               <div className="flex gap-4">
@@ -339,26 +259,6 @@ export default function Home() {
                 An automated garbage sorter that leverages computer vision to
                 sort garbage thrown in depending on if it is recylcable or not.
               </p>
-              <div className="flex flex-wrap gap-2 pt-2">
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Python
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  OpenCV
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Supabase
-                </Badge>
-              </div>
             </CardContent>
             <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">
               <div className="flex gap-4">
@@ -406,26 +306,6 @@ export default function Home() {
                 A machine learning-powered model that predicts the number of
                 views a TikTok video will receive using linear regression.
               </p>
-              <div className="flex flex-wrap gap-2 pt-2">
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Pandas
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Python
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Numpy
-                </Badge>
-              </div>
             </CardContent>
             <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">
               <div className="flex gap-4">
@@ -474,26 +354,6 @@ export default function Home() {
                 with SOLIDWORKS, as well as physical and systems design
                 innovations.
               </p>
-              <div className="flex flex-wrap gap-2 pt-2">
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  SOLIDWORKS
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Engineering
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Design
-                </Badge>
-              </div>
             </CardContent>
             <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">
               <div className="flex gap-4">
@@ -549,26 +409,6 @@ export default function Home() {
                 portfolio website. I discuss the design choices, the
                 technologies used, and the challenges faced during development.
               </p>
-              <div className="flex flex-wrap gap-2 pt-2">
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Creativity
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Design
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-pink-500 border-pink-500 font-medium"
-                >
-                  Visual Arts
-                </Badge>
-              </div>
             </CardContent>
             <CardFooter className="p-4 pt-0">
               <Link
