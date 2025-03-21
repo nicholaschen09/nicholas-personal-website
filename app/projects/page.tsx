@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Github, ExternalLink, ArrowRight } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
 import Header from '@/components/header';
 
 // Project type definition
@@ -11,10 +9,6 @@ type Project = {
   title: string;
   description: string;
   image: string;
-  tags: {
-    name: string;
-    color: string;
-  }[];
   links: {
     demo?: string;
     github?: string;
@@ -30,11 +24,6 @@ const projects: Project[] = [
     description:
       'A posture-correcting robot that slaps you when you slouch, using computer vision and a mechanical arm to provide physical feedback.',
     image: '/fernando.png',
-    tags: [
-      { name: 'Hardware', color: 'bg-pink-500' },
-      { name: 'Robotics', color: 'bg-pink-500' },
-      { name: 'Computer Vision', color: 'bg-pink-500' },
-    ],
     links: {
       demo: 'https://youtu.be/EBsmGGOubCk?si=Jpgb_pFdg3EN-EB1',
       github: 'https://github.com/enxilium/posture-checker-robot',
@@ -47,11 +36,6 @@ const projects: Project[] = [
     description:
       'An automated garbage sorter that leverages computer vision to sort garbage thrown in depending on if it is recylcable or not.',
     image: '/basketbin.jpg',
-    tags: [
-      { name: 'OpenCV', color: 'bg-pink-500' },
-      { name: 'Python', color: 'bg-pink-500' },
-      { name: 'Supabase', color: 'bg-pink-500' },
-    ],
     links: {
       demo: 'https://youtu.be/6YRTP7_Oet8?si=fFE3LqMQ1A5mmX56',
       github: 'https://github.com/DerrickHa/ht6',
@@ -64,11 +48,6 @@ const projects: Project[] = [
     description:
       'A machine learning-powered model that predicts the number of views a TikTok video will receive using linear regression.',
     image: '/pandas.png',
-    tags: [
-      { name: 'Python', color: 'bg-pink-500' },
-      { name: 'Pandas', color: 'bg-pink-500' },
-      { name: 'Numpy', color: 'bg-pink-500' },
-    ],
     links: {
       demo: '#',
       github: 'https://github.com/nicholaschen09/tiktok-view-predictor',
@@ -81,11 +60,6 @@ const projects: Project[] = [
     description:
       'A showcase of my engineering projects, featuring 3D modeling with SOLIDWORKS, as well as physical and systems design innovations.',
     image: '/car.png',
-    tags: [
-      { name: 'Engineering', color: 'bg-pink-500' },
-      { name: 'SOLIDWORKS', color: 'bg-pink-500' },
-      { name: 'Design', color: 'bg-pink-500' },
-    ],
     links: {
       demo: '#',
       github: 'https://github.com/nicholaschen09/engineering-portfolio',
@@ -98,11 +72,6 @@ const projects: Project[] = [
     description:
       'A mobile-first application for tracking workouts, nutrition, and fitness progress with data visualization and goal setting.',
     image: '/voluntrack.jpeg',
-    tags: [
-      { name: 'React Native', color: 'bg-pink-500' },
-      { name: 'Firebase', color: 'bg-pink-500' },
-      { name: 'D3.js', color: 'bg-pink-500' },
-    ],
     links: {
       demo: '#',
       github: '#',
@@ -115,11 +84,6 @@ const projects: Project[] = [
     description:
       'A real-time collaborative whiteboard application for remote teams with drawing tools and chat functionality.',
     image: '/placeholder.svg?height=600&width=800',
-    tags: [
-      { name: 'React', color: 'bg-pink-500' },
-      { name: 'Socket.io', color: 'bg-pink-500' },
-      { name: 'Canvas API', color: 'bg-pink-500' },
-    ],
     links: {
       demo: '#',
       github: '#',
@@ -165,17 +129,6 @@ export default function ProjectsPage() {
                     <p className="text-gray-300 text-sm mb-4 flex-grow">
                       {project.description}
                     </p>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {project.tags.map((tag, index) => (
-                        <Badge
-                          key={index}
-                          variant="outline"
-                          className="border-pink-500 text-pink-500"
-                        >
-                          {tag.name}
-                        </Badge>
-                      ))}
-                    </div>
                     <div className="flex justify-between items-center">
                       <Link
                         href={project.links.details}
