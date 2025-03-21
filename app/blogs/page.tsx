@@ -69,9 +69,6 @@ export default function BlogsPage() {
                   {post.excerpt}
                 </p>
                 <div className="flex items-center">
-                  <span className="px-2 py-1 rounded-full bg-zinc-800/50 text-pink-500 -mr-4">
-                    {post.category}
-                  </span>
                   <Link
                     href={`/blogs/${post.slug}`}
                     className="inline-flex items-center gap-1 text-white hover:text-zinc-300 transition-colors pl-0"
