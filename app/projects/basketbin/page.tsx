@@ -23,17 +23,6 @@ export default function BasketBinProject() {
             <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold text-white">
               BasketBin
             </h1>
-            <div className="flex flex-wrap gap-2">
-              <Badge className="border border-white text-white px-3 py-1 text-sm">
-                Hardware
-              </Badge>
-              <Badge className="border border-white text-white px-3 py-1 text-sm">
-                Robotics
-              </Badge>
-              <Badge className="border border-white text-white px-3 py-1 text-sm">
-                Computer Vision
-              </Badge>
-            </div>
           </div>
 
           <p className="text-xl text-gray-300">
@@ -52,20 +41,26 @@ export default function BasketBinProject() {
             priority
           />
         </div>
-
         {/* Project Links */}
         <div className="flex flex-wrap gap-4">
           <Button
             variant="outline"
-            className="border border-white text-white hover:bg-white hover:text-black transition-colors"
+            className="border border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors"
           >
             <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
           </Button>
           <Button
             variant="outline"
-            className="border border-white text-white hover:bg-white hover:text-black transition-colors"
+            className="border border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors"
           >
-            <Github className="mr-2 h-4 w-4" /> View Code
+            <Image
+              src="/github.png"
+              alt="GitHub Logo"
+              width={16}
+              height={16}
+              className="mr-2"
+            />
+            View Code
           </Button>
         </div>
         {/* Overview Section */}
@@ -376,17 +371,6 @@ export default function BasketBinProject() {
                   An application that leverages AI to generate blog posts,
                   social media content, and marketing copy.
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  <Badge className="border border-white text-white">
-                    Next.js
-                  </Badge>
-                  <Badge className="border border-white text-white">
-                    OpenAI
-                  </Badge>
-                  <Badge className="border border-white text-white">
-                    Tailwind
-                  </Badge>
-                </div>
                 <Link
                   href="/projects/ai-content-generator"
                   className="text-gray-400 hover:text-white inline-flex items-center"
@@ -413,15 +397,6 @@ export default function BasketBinProject() {
                   An IoT dashboard for monitoring and controlling smart home
                   devices with automation capabilities.
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  <Badge className="border border-white text-white">
-                    Vue.js
-                  </Badge>
-                  <Badge className="border border-white text-white">MQTT</Badge>
-                  <Badge className="border border-white text-white">
-                    Chart.js
-                  </Badge>
-                </div>
                 <Link
                   href="/projects/smart-home-dashboard"
                   className="text-gray-400 hover:text-white inline-flex items-center"
