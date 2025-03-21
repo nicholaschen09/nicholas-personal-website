@@ -23,17 +23,6 @@ export default function FernandoProject() {
             <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold text-white">
               Fernando
             </h1>
-            <div className="flex flex-wrap gap-2">
-              <Badge className="border border-white text-white px-3 py-1 text-sm">
-                Hardware
-              </Badge>
-              <Badge className="border border-white text-white px-3 py-1 text-sm">
-                Robotics
-              </Badge>
-              <Badge className="border border-white text-white px-3 py-1 text-sm">
-                Computer Vision
-              </Badge>
-            </div>
           </div>
 
           <p className="text-xl text-gray-300">
