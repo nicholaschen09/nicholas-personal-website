@@ -150,10 +150,14 @@ export default function BlogPost() {
           {/* Courses Section */}
           <h2 className="text-2xl font-bold mt-10 mb-4">Courses</h2>
           <p>
-            The SYDE curriculum is designed to build a strong foundation in
-            engineering principles while introducing the systems thinking
-            approach that makes this program super unique. Here were the courses
-            I had to take in 1A:
+            The SYDE curriculum very specific and unique. Every single course we
+            take is SYDE specific, meaning only people in Systems Design will
+            take these courses. You will notice that all the course codes start
+            with SYDE whereas other engineering majors will have some that start
+            with MATH or ECE. Overall, Systems Design Engineering is designed to
+            build a strong foundation in engineering principles while
+            introducing the systems thinking approach that makes this program
+            super unique. Here were the courses I had to take in 1A:
           </p>
 
           {/* Courses as accordion items in full-width rows */}
@@ -171,17 +175,14 @@ export default function BlogPost() {
                 <AccordionContent className="accordion-content">
                   <div className="space-y-4">
                     <div className="border border-gray-500 p-4 rounded-lg space-y-3">
-                      <h4 className="font-semibold text-white">
-                        Professor: Dr. Sarah Thompson
-                      </h4>
                       <p>
-                        Dr. Thompson was an incredible professor who made
-                        calculus surprisingly engaging. She had a knack for
-                        breaking down complex concepts into understandable
-                        pieces and always connected the math to real engineering
-                        applications. Her office hours were incredibly helpful,
-                        and she was always willing to spend extra time with
-                        students who were struggling.
+                        ost engineering students r. Thompson was an incredible
+                        professor who made calculus surprisingly engaging. She
+                        had a knack for breaking down complex concepts into
+                        understandable pieces and always connected the math to
+                        real engineering applications. Her office hours were
+                        incredibly helpful, and she was always willing to spend
+                        extra time with students who were struggling.
                       </p>
 
                       <h4 className="font-semibold text-white">
