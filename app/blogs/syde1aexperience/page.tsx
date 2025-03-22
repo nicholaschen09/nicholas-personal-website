@@ -176,36 +176,31 @@ export default function BlogPost() {
                   <div className="space-y-4">
                     <div className="border border-gray-500 p-4 rounded-lg space-y-3">
                       <p>
-                        ost engineering students r. Thompson was an incredible
-                        professor who made calculus surprisingly engaging. She
-                        had a knack for breaking down complex concepts into
-                        understandable pieces and always connected the math to
-                        real engineering applications. Her office hours were
-                        incredibly helpful, and she was always willing to spend
-                        extra time with students who were struggling.
+                        So, usually most engineering students have to take a
+                        Calculus I class that prepares you for the more advanced
+                        material that comes later. For us, our SYDE 111 course
+                        was a bit different. This course covered Calculus I and
+                        a bit of proofs and some of the Calculus II curriculum.
+                        Our cohort was taught by Sean Speziale who ended up
+                        being a great professor who made calculus surprisingly
+                        engaging.
                       </p>
-
-                      <h4 className="font-semibold text-white">
-                        Teaching Style:
-                      </h4>
                       <p>
                         The course was taught through a combination of lectures
-                        (3 hours per week) and tutorials (1 hour per week). Dr.
-                        Thompson used a tablet to write out problems in
-                        real-time, which was much better than pre-made slides.
-                        She would often pause to ask questions and make sure
-                        everyone was following along. The tutorials were led by
-                        TAs who would work through practice problems and provide
-                        additional help.
+                        and tutorials. Most of it was done through pre-made
+                        slides and a note taking app that the professor used to
+                        edit on top of the pdfs/slides. He would often pause to
+                        ask questions and make sure everyone was following
+                        along. The tutorials were led by TAs who would work
+                        through practice problems and provide additional help.
                       </p>
-
                       <h4 className="font-semibold text-white">Assessments:</h4>
                       <ul className="list-disc pl-5 space-y-1">
-                        <li>Weekly problem sets (20%)</li>
-                        <li>Two midterm exams (40%)</li>
-                        <li>Final exam (40%)</li>
+                        <li>Weekly problem sets</li>
+                        <li>Weekly quizzes</li>
+                        <li>One midterm exam </li>
+                        <li>A Final exam </li>
                       </ul>
-
                       <h4 className="font-semibold text-white">
                         My Experience:
                       </h4>
@@ -213,21 +208,31 @@ export default function BlogPost() {
                         This was one of the more challenging courses for me in
                         1A. The pace was much faster than high school calculus,
                         and we covered a lot more material. I found myself
-                        spending about 6-8 hours per week on the problem sets,
-                        which were challenging but really helped solidify my
-                        understanding. The midterms were tough but fair, and I
-                        ended up forming a study group with four classmates
-                        which made a huge difference in my understanding and
-                        final grade.
+                        spending about 6-8 hours per week on the problem sets.
+                        We covered epsilon delta proofs, all of what you learn
+                        in AP Calculus AB and went into series and integrals
+                        with trigonometry. These were challenging but really
+                        helped solidify my understanding. While the midterm was
+                        challenging but fair, the final exam for this course was
+                        so much more harder and a lot of the students in my
+                        class got 60s and 70s.
                       </p>
-
-                      <p>
-                        The most valuable part of this course was learning how
-                        calculus applies to engineering problems. We worked on
-                        optimization problems, fluid flow calculations, and even
-                        some basic physics applications that showed how this
-                        math would be useful in our future careers.
+                      <p className="mb-4">
+                        We also took this course alongside the BMEs so I made
+                        some friends in that program too. I also met some of my
+                        closest friends in this class and we would often study
+                        together in the E7 study rooms.
                       </p>
+                      <div className="mt-4">
+                        <a
+                          href="https://uwflow.com/course/syde111"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-pink-500 hover:underline mt-4 font-bold"
+                        >
+                          SYDE 111
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </AccordionContent>
