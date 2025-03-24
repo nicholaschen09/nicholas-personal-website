@@ -1,4 +1,5 @@
 'use client';
+import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import Image from 'next/image';
 import Link from 'next/link';
 import { TypeAnimation } from 'react-type-animation';
@@ -478,6 +479,36 @@ export default function About() {
               </div>
             </div>
           </section>
+
+          {/* Leetcode */}
+          <Card className="w-[101%] bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
+            <CardContent className="p-4 space-y-3">
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                <h3 className="text-xl font-bold text-white">
+                  Leetcode Profile
+                </h3>
+              </div>
+              <p className="text-gray-300 text-sm">
+                My leetcode profile where I practice coding problems for
+                software engineering technical interviews
+              </p>
+            </CardContent>
+            <CardFooter className="p-4 pt-0">
+              <Link
+                href="https://leetcode.com/u/nic_09/"
+                className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
+              >
+                <span className="hover:text-gray-300 transition-colors">
+                  Link to Profile
+                </span>
+                <img
+                  src="/link1.png"
+                  alt="Link"
+                  className="ml-2 w-5 h-5 hover:opacity-75 transition-opacity"
+                />
+              </Link>
+            </CardFooter>
+          </Card>
 
           {/* Footer */}
           <footer className="w-full max-w-6xl mt-16 pt-8 border-t border-gray-700">
