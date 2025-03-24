@@ -482,32 +482,37 @@ export default function About() {
 
           {/* Leetcode */}
           <Card className="w-[101%] bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
-            <CardContent className="p-4 space-y-3">
-              <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                <h3 className="text-xl font-bold text-white">
-                  Leetcode Profile
-                </h3>
-              </div>
-              <p className="text-gray-300 text-sm">
-                My leetcode profile where I practice coding problems for
-                software engineering technical interviews
-              </p>
-            </CardContent>
-            <CardFooter className="p-4 pt-0">
-              <Link
-                href="https://leetcode.com/u/nic_09/"
-                className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
-              >
-                <span className="hover:text-gray-300 transition-colors">
-                  Link to Profile
-                </span>
+            <div className="flex flex-col md:flex-row">
+              {/* Left Content */}
+              <CardContent className="p-4 space-y-3 flex-1">
+                <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                  <h3 className="text-xl font-bold text-white">
+                    Leetcode Profile
+                  </h3>
+                </div>
+                <p className="text-gray-300 text-sm">
+                  My{' '}
+                  <a
+                    href="https://leetcode.com/u/nic_09/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-pink-500 hover:underline underline underline-offset-4 mt-2"
+                  >
+                    Leetcode Profile
+                  </a>{' '}
+                  where I practice coding problems for software engineering
+                  technical interviews.
+                </p>
+              </CardContent>
+              {/* Right Image - MADE SMALLER */}
+              <div className="relative w-full md:w-1/12 border-gray-700 p-2 flex items-center">
                 <img
-                  src="/link1.png"
-                  alt="Link"
-                  className="ml-2 w-5 h-5 hover:opacity-75 transition-opacity"
+                  src="/lc.jpg"
+                  alt="Leetcode"
+                  className="object-contain w-16 h-16 rounded-md mx-auto"
                 />
-              </Link>
-            </CardFooter>
+              </div>
+            </div>
           </Card>
 
           {/* Footer */}
