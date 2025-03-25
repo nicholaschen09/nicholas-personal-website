@@ -83,7 +83,7 @@ const projects: Project[] = [
     title: 'Eatr',
     description:
       'A real-time collaborative whiteboard application for remote teams with drawing tools and chat functionality.',
-    image: '/placeholder.svg?height=600&width=800',
+    image: '/food.jpg',
     links: {
       demo: '#',
       github: '#',
