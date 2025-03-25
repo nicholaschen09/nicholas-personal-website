@@ -95,7 +95,7 @@ const projects: Project[] = [
     title: 'Words to Beats',
     description:
       'A real-time collaborative whiteboard application for remote teams with drawing tools and chat functionality.',
-    image: '/placeholder.svg?height=600&width=800',
+    image: '/sound.png',
     links: {
       demo: '#',
       github: '#',
@@ -123,7 +123,7 @@ export default function ProjectsPage() {
           {/* All Projects Grid */}
           <section className="space-y-8">
             <div className="grid grid-cols-1 gap-10">
-              {projects.slice(0, 6).map((project) => (
+              {projects.slice(0, 7).map((project) => (
                 <div
                   key={project.id}
                   className="bg-transparent rounded-xl overflow-hidden border border-gray-700 flex flex-col h-full transition-transform hover:translate-y-[-5px] duration-300"
