@@ -11,7 +11,7 @@ export default function EatrProject() {
       <div className="max-w-5xl w-full space-y-12">
         {/* Navigation */}
         <Link
-          href="/"
+          href="/projects"
           className="inline-flex items-center text-gray-400 hover:text-white transition-colors"
         >
           <ArrowLeft className="mr-2 w-4 h-4" /> Back to projects
@@ -33,7 +33,7 @@ export default function EatrProject() {
         {/* Featured Image */}
         <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden border border-gray-800">
           <Image
-            src="/fernando.png"
+            src="/food.jpg"
             alt="Fernando Robot"
             width={1200}
             height={800}

@@ -11,12 +11,11 @@ export default function FernandoProject() {
       <div className="max-w-5xl w-full space-y-12">
         {/* Navigation */}
         <Link
-          href="/"
+          href="/projects"
           className="inline-flex items-center text-gray-400 hover:text-white transition-colors"
         >
           <ArrowLeft className="mr-2 w-4 h-4" /> Back to projects
         </Link>
-
         {/* Hero Section */}
         <div className="space-y-6">
           <div className="flex flex-col md:flex-row gap-4 md:items-center justify-between">

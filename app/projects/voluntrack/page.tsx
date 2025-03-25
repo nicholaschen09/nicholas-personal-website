@@ -11,7 +11,7 @@ export default function VoluntrackProject() {
       <div className="max-w-5xl w-full space-y-12">
         {/* Navigation */}
         <Link
-          href="/"
+          href="/projects"
           className="inline-flex items-center text-gray-400 hover:text-white transition-colors"
         >
           <ArrowLeft className="mr-2 w-4 h-4" /> Back to projects
