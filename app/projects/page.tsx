@@ -75,7 +75,7 @@ const projects: Project[] = [
     links: {
       demo: '#',
       github: '#',
-      details: '/projects/fitness-tracker',
+      details: '/projects/voluntrack',
     },
   },
   {
@@ -87,7 +87,7 @@ const projects: Project[] = [
     links: {
       demo: '#',
       github: '#',
-      details: '/projects/collaborative-whiteboard',
+      details: '/projects/eatr',
     },
   },
   {
@@ -99,7 +99,7 @@ const projects: Project[] = [
     links: {
       demo: '#',
       github: '#',
-      details: '/projects/collaborative-whiteboard',
+      details: '/projects/wordstobeats',
     },
   },
 ];
@@ -233,6 +233,21 @@ export default function ProjectsPage() {
                     />
                   </div>
                   <span className="sr-only">Email</span>
+                </Link>
+                <Link
+                  href="https://x.com/nicholaschen__"
+                  className="text-white hover:text-gray-300 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="w-7 h-8 flex items-center justify-center relative">
+                    <img
+                      src="/twitter.png"
+                      alt="Twitter"
+                      className="max-w-full max-h-full object-contain translate-y-1"
+                    />
+                  </div>
+                  <span className="sr-only">Twitter</span>
                 </Link>
               </div>
 

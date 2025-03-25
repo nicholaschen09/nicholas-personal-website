@@ -68,6 +68,21 @@ export default function About() {
                 </div>
                 <span className="sr-only">Email</span>
               </Link>
+              <Link
+                href="https://x.com/nicholaschen__"
+                className="text-white hover:text-gray-300 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="w-7 h-8 flex items-center justify-center relative">
+                  <img
+                    src="/twitter.png"
+                    alt="Twitter"
+                    className="max-w-full max-h-full object-contain translate-y-1"
+                  />
+                </div>
+                <span className="sr-only">Twitter</span>
+              </Link>
             </div>
           </div>
 
@@ -531,6 +546,21 @@ export default function About() {
                     />
                   </div>
                   <span className="sr-only">Email</span>
+                </Link>
+                <Link
+                  href="https://x.com/nicholaschen__"
+                  className="text-white hover:text-gray-300 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="w-7 h-8 flex items-center justify-center relative">
+                    <img
+                      src="/twitter.png"
+                      alt="Twitter"
+                      className="max-w-full max-h-full object-contain translate-y-1"
+                    />
+                  </div>
+                  <span className="sr-only">Twitter</span>
                 </Link>
               </div>
 

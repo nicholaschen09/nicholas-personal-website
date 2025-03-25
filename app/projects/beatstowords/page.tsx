@@ -5,9 +5,9 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
-export default function TikTokProject() {
+export default function BeatsProject() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-6 md:p-24 bg-zinc-990 text-white">
+    <main className="flex min-h-screen flex-col items-center p-6 md:p-24 bg-black text-white">
       <div className="max-w-5xl w-full space-y-12">
         {/* Navigation */}
         <Link
@@ -20,20 +20,9 @@ export default function TikTokProject() {
         {/* Hero Section */}
         <div className="space-y-6">
           <div className="flex flex-col md:flex-row gap-4 md:items-center justify-between">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white">
-              TikTok View Predictor
+            <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold text-white">
+              Beats to Words
             </h1>
-            <div className="flex flex-wrap gap-2">
-              <Badge className="bg-pink-600 hover:bg-pink-700 text-white px-3 py-1 text-sm">
-                Hardware
-              </Badge>
-              <Badge className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 text-sm">
-                Robotics
-              </Badge>
-              <Badge className="bg-purple-600 hover:bg-purple-700 text-white px-3 py-1 text-sm">
-                Computer Vision
-              </Badge>
-            </div>
           </div>
 
           <p className="text-xl text-gray-300">
@@ -52,7 +41,6 @@ export default function TikTokProject() {
             priority
           />
         </div>
-
         {/* Project Links */}
         <div className="flex flex-wrap gap-4">
           <Button
@@ -383,17 +371,6 @@ export default function TikTokProject() {
                   An application that leverages AI to generate blog posts,
                   social media content, and marketing copy.
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  <Badge className="border border-white text-white">
-                    Next.js
-                  </Badge>
-                  <Badge className="border border-white text-white">
-                    OpenAI
-                  </Badge>
-                  <Badge className="border border-white text-white">
-                    Tailwind
-                  </Badge>
-                </div>
                 <Link
                   href="/projects/ai-content-generator"
                   className="text-gray-400 hover:text-white inline-flex items-center"
@@ -420,15 +397,6 @@ export default function TikTokProject() {
                   An IoT dashboard for monitoring and controlling smart home
                   devices with automation capabilities.
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  <Badge className="border border-white text-white">
-                    Vue.js
-                  </Badge>
-                  <Badge className="border border-white text-white">MQTT</Badge>
-                  <Badge className="border border-white text-white">
-                    Chart.js
-                  </Badge>
-                </div>
                 <Link
                   href="/projects/smart-home-dashboard"
                   className="text-gray-400 hover:text-white inline-flex items-center"
