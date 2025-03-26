@@ -17,7 +17,7 @@ export default function About() {
             <div className="text-base sm:text-lg text-gray-300 min-h-[150px] md:min-h-[120px]">
               <TypeAnimation
                 sequence={[
-                  "Hello! I'm a Systems Design Engineering student at the University of Waterloo. I'm currently working as a software engineering intern at Ownr, where I'm developing full-stack web applications and gaining valuable industry experience. In the past, I've worked at companies like RBC and Meta Hash Capital where I made some pretty cool things.",
+                  "Hello! I'm a Systems Design Engineering student at the University of Waterloo. I'm currently working as a software engineering intern at Ownr. In the past, I've worked at companies like RBC and Meta Hash Capital where I made some pretty cool things.",
                   1000,
                 ]}
                 wrapper="p"
