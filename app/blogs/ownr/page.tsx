@@ -11,7 +11,7 @@ export default function BlogPost() {
           href="/blogs"
           className="inline-flex items-center text-gray-400 hover:text-white transition-colors mb-6"
         >
-          <ArrowLeft className="mr-2 w-4 h-4" /> Back to homepage
+          <ArrowLeft className="mr-2 w-4 h-4" /> Back to blogs
         </Link>
 
         {/* Header */}

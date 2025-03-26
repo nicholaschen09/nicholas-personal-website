@@ -21,7 +21,7 @@ export default function BeatsProject() {
         <div className="space-y-6">
           <div className="flex flex-col md:flex-row gap-4 md:items-center justify-between">
             <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold text-white">
-              Beats to Words
+              Words to Beats
             </h1>
           </div>
 
@@ -31,12 +31,12 @@ export default function BeatsProject() {
         </div>
 
         {/* Featured Image */}
-        <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden border border-gray-800">
+        <div className="relative w-full aspect-[22/4] rounded-xl overflow-hidden border border-gray-800">
           <Image
-            src="/fernando.png"
+            src="/sound.png"
             alt="Fernando Robot"
             width={1200}
-            height={800}
+            height={100}
             className="object-cover"
             priority
           />
