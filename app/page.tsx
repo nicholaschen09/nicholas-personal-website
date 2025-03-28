@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ExternalLink, ArrowRight } from 'lucide-react';
 import { TypeAnimation } from 'react-type-animation';
-import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 
 export default function Home() {
