@@ -135,7 +135,7 @@ export default function ProjectsPage() {
           {/* All Projects Grid */}
           <section className="space-y-8">
             <div className="grid grid-cols-1 gap-10">
-              {projects.slice(0, 7).map((project) => (
+              {projects.slice(0, 8).map((project) => (
                 <div
                   key={project.id}
                   className="bg-transparent rounded-xl overflow-hidden border border-gray-700 flex flex-col h-full transition-transform hover:translate-y-[-5px] duration-300"
