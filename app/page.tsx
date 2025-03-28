@@ -538,11 +538,11 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="w-7 h-8 flex items-center justify-center relative" ml-10>
+                <div className="w-7 h-8 flex items-center justify-center relative">
                   <img
                     src="/twitter.png"
                     alt="Twitter"
-                    className="max-w-full max-h-full object-contain translate-y-1"
+                    className="max-w-full max-h-full object-contain translate-y-1 translate-x-1"
                   />
                 </div>
                 <span className="sr-only">Twitter</span>
