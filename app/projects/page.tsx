@@ -78,6 +78,18 @@ const projects: Project[] = [
       details: '/projects/voluntrack',
     },
   },
+   {
+    id: 'mathcing app',
+    title: 'Match',
+    description:
+      'An app to match users with the right person across the world.',
+    image: '/match.png',
+    links: {
+      demo: '#',
+      github: '#',
+      details: '/projects/match',
+    },
+  },
   {
     id: 'eatr',
     title: 'Eatr',
