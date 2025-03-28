@@ -473,7 +473,7 @@ export default function BasketBinProject() {
                   <img
                     src="/twitter.png"
                     alt="Twitter"
-                    className="max-w-full max-h-full object-contain translate-y-1"
+                    className="max-w-full max-h-full object-contain translate-y-1 translate-x-1"
                   />
                 </div>
                 <span className="sr-only">Twitter</span>
