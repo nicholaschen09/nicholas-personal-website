@@ -538,7 +538,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="w-7 h-8 flex items-center justify-center relative">
+                <div className="w-7 h-8 flex items-center justify-center relative" ml-10>
                   <img
                     src="/twitter.png"
                     alt="Twitter"
