@@ -23,26 +23,7 @@ export default function BlogPost() {
               March 24, 2025{' '}
               <span className="text-pink-500">// 10 min read</span>
             </span>
-            <div className="flex flex-wrap gap-2">
-              <Badge
-                variant="outline"
-                className="bg-transparent text-white border-gray-500 font-medium"
-              >
-                Social Media
-              </Badge>
-              <Badge
-                variant="outline"
-                className="bg-transparent text-white border-gray-500 font-medium"
-              >
-                Technology
-              </Badge>
-              <Badge
-                variant="outline"
-                className="bg-transparent text-white border-gray-500 font-medium"
-              >
-                Digital Culture
-              </Badge>
-            </div>
+            <span className="text-gray-400 ml-auto">Nicholas Chen</span>
           </div>
         </div>
 
