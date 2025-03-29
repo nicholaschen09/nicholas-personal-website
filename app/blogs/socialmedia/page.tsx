@@ -31,7 +31,7 @@ export default function BlogPost() {
           <p>
             Social media has fundamentally transformed how we communicate,
             consume information, and interact with the world around us. From
-            Facebook and Instagram to TikTok and Twitter(X), these platforms
+            Facebook and Instagram to TikTok and Twitter (X), these platforms
             have become integral parts of our daily lives. In this article, I
             explore how posting on social media and creating a platform changed
             my life by opening up new opportunities, finding friends that share
