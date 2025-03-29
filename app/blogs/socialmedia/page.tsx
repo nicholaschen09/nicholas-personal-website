@@ -51,12 +51,11 @@ export default function BlogPost() {
               experience
             </p>
           </div>
-          <p className="text-xs text-gray-500 mt-1 text-center">
-            Caption: A representation of social media platforms on various
-            devices
+          <p className="text-normal text-gray-500 mt-1 text-center italic">
+            My instagram account since I started doing social media in 2022
           </p>
 
-          <h2>The Evolution of Social Media</h2>
+          <h2 className="mt-8">The Evolution of Social Media</h2>
           <p>
             The journey of social media began in the early 2000s with platforms
             like Friendster and MySpace, which allowed users to create profiles
