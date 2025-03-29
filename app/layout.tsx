@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata = {
   title: 'Nicholas Chen | Portfolio',
   description:
-    'Personal portfolio of Nicholas Chen, Systems Design Engineering student',
+    'Personal website of Nicholas Chen, Systems Design Engineering student',
   generator: 'v0.dev',
 };
 
