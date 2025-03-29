@@ -9,10 +9,14 @@ export const metadata = {
   title: 'Nicholas Chen | Portfolio',
   description:
     'Personal portfolio of Nicholas Chen, Systems Design Engineering student',
-  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
   generator: 'v0.dev',
 };
 
+export const generateViewport = () => ({
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+});
 export default function RootLayout({
   children,
 }: {

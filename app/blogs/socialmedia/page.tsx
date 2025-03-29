@@ -41,16 +41,20 @@ export default function BlogPost() {
 
           <div className="my-8 relative aspect-video w-full overflow-hidden rounded-lg">
             <Image
-              src="/placeholder.svg?height=600&width=1200"
+              src="/insta.jpg"
               alt="Social media platforms displayed on various devices"
               fill
-              className="object-cover"
+              className="object-cover object-top"
             />
             <p className="text-sm text-gray-400 mt-2 text-center">
               Social media has become an integral part of our daily digital
               experience
             </p>
           </div>
+          <p className="text-xs text-gray-500 mt-1 text-center">
+            Caption: A representation of social media platforms on various
+            devices
+          </p>
 
           <h2>The Evolution of Social Media</h2>
           <p>
