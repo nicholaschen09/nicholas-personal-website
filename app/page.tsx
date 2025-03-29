@@ -141,7 +141,7 @@ export default function Home() {
             <CardContent className="p-4 space-y-3">
               <div className="flex flex-col justify-between mb-2">
                 <h3 className="text-xl font-bold text-white">
-                  How Social Media Has Changed My Life
+                  How Social Media Changed My Life
                 </h3>
                 <span className="text-gray-400 text-sm mt-1">
                   March 24, 2025
