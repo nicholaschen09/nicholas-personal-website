@@ -15,7 +15,7 @@ export default function BlogPost() {
 
         <div className="space-y-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
-            The Impact of Social Media on Modern Society
+            How Social Media Changed My Life
           </h1>
           <div className="flex flex-wrap items-center gap-4">
             <span className="text-gray-400">
