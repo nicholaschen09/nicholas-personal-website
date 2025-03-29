@@ -39,7 +39,7 @@ export default function BlogPost() {
             sponosorships.
           </p>
 
-          <div className="my-8 relative aspect-video w-full overflow-hidden rounded-lg">
+          <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
             <Image
               src="/insta.jpg"
               alt="Social media platforms displayed on various devices"
@@ -54,7 +54,6 @@ export default function BlogPost() {
           <p className="text-normal text-gray-500 mt-1 text-center italic">
             My instagram account since I started doing social media in 2022
           </p>
-
           <h2 className="mt-8">The Evolution of Social Media</h2>
           <p>
             The journey of social media began in the early 2000s with platforms
