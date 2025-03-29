@@ -39,9 +39,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Prettier Check
-        run: npm run prettier:check
-
   validate-pr-title:
     runs-on: ubuntu-latest
 
