@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
 
 export default function BlogPost() {
@@ -54,7 +53,7 @@ export default function BlogPost() {
           <p className="text-normal text-gray-500 mt-1 text-center italic">
             My instagram account since I started doing social media in 2022
           </p>
-          <h2 className="mt-8">The Evolution of Social Media</h2>
+          <h2 className="mt-8">Social Media</h2>
           <p>
             The journey of social media began in the early 2000s with platforms
             like Friendster and MySpace, which allowed users to create profiles
