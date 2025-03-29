@@ -50,10 +50,12 @@ export default function BlogPost() {
           <p>
             Social media has fundamentally transformed how we communicate,
             consume information, and interact with the world around us. From
-            Facebook and Instagram to TikTok and Twitter, these platforms have
-            become integral parts of our daily lives. In this article, I'll
-            explore the multifaceted impact of social media on modern society,
-            examining both its benefits and challenges.
+            Facebook and Instagram to TikTok and Twitter(X), these platforms
+            have become integral parts of our daily lives. In this article, I
+            explore how posting on social media and creating a platform changed
+            my life by opening up new opportunities, finding friends that share
+            my interests, and making money through brand deals and
+            sponosorships.
           </p>
 
           <div className="my-8 relative aspect-video w-full overflow-hidden rounded-lg">
