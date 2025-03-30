@@ -176,7 +176,7 @@ export default function BlogPost() {
                   <div className="space-y-4">
                     <div className="border border-gray-500 p-4 rounded-lg space-y-3">
                       <h4 className="font-semibold text-white">
-                        About the Course:
+                        About the Course
                       </h4>
                       <p>
                         So, usually most engineering students have to take a
@@ -197,7 +197,7 @@ export default function BlogPost() {
                         along. The tutorials were led by TAs who would work
                         through practice problems and provide additional help.
                       </p>
-                      <h4 className="font-semibold text-white">Assessments:</h4>
+                      <h4 className="font-semibold text-white">Assessments</h4>
                       <ul className="list-disc pl-5 space-y-1">
                         <li>Weekly problem sets</li>
                         <li>Weekly quizzes</li>
@@ -205,7 +205,7 @@ export default function BlogPost() {
                         <li>A Final exam </li>
                       </ul>
                       <h4 className="font-semibold text-white">
-                        My Experience:
+                        My Experience
                       </h4>
                       <p>
                         This was one of the more challenging courses for me in
@@ -256,7 +256,7 @@ export default function BlogPost() {
                   <div className="space-y-4">
                     <div className="border border-gray-500 p-4 rounded-lg space-y-3">
                       <h4 className="font-semibold text-white">
-                        Professor: Dr. Michael Chen
+                        About the Course
                       </h4>
                       <p>
                         Dr. Chen was a passionate programmer with extensive
@@ -269,7 +269,7 @@ export default function BlogPost() {
                       </p>
 
                       <h4 className="font-semibold text-white">
-                        Teaching Style:
+                        Teaching Style
                       </h4>
                       <p>
                         The course consisted of two 1.5-hour lectures and one
@@ -283,7 +283,7 @@ export default function BlogPost() {
                         invaluable for getting immediate feedback on our code.
                       </p>
 
-                      <h4 className="font-semibold text-white">Assessments:</h4>
+                      <h4 className="font-semibold text-white">Assessments</h4>
                       <ul className="list-disc pl-5 space-y-1">
                         <li>Weekly programming assignments (30%)</li>
                         <li>Two programming projects (30%)</li>
@@ -292,7 +292,7 @@ export default function BlogPost() {
                       </ul>
 
                       <h4 className="font-semibold text-white">
-                        My Experience:
+                        My Experience
                       </h4>
                       <p>
                         This was my favorite course in 1A! I had some
