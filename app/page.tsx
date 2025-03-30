@@ -496,7 +496,7 @@ export default function Home() {
                   >
                     Devpost Profile
                   </a>{' '}
-                  all my hackathon projects that I submitted to devpost
+                  for all my hackathon projects that I submitted to devpost
                 </p>
               </CardContent>
               <div className="relative w-full md:w-1/12 border-gray-700 p-2 flex items-center">
