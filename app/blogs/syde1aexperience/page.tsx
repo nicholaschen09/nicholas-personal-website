@@ -175,6 +175,9 @@ export default function BlogPost() {
                 <AccordionContent className="accordion-content">
                   <div className="space-y-4">
                     <div className="border border-gray-500 p-4 rounded-lg space-y-3">
+                      <h4 className="font-semibold text-white">
+                        About the Course:
+                      </h4>
                       <p>
                         So, usually most engineering students have to take a
                         Calculus I class that prepares you for the more advanced
