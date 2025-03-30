@@ -49,6 +49,7 @@ export default function BlogPost() {
           <p className="text-normal text-gray-500 mt-1 text-center italic">
             My instagram account since I started doing social media in 2022
           </p>
+
           <h2 className="mt-8">Discovering a New World</h2>
           <p>
             When I first joined social media, I was curious about the buzz
@@ -71,6 +72,18 @@ export default function BlogPost() {
               interactions could add up to something bigger.
             </li>
           </ul>
+
+          <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
+            <Image
+              src="/insta.jpg"
+              alt="Social media platforms displayed on various devices"
+              fill
+              className="object-cover object-top"
+            />
+          </div>
+          <p className="text-normal text-gray-500 mt-1 text-center italic">
+            My instagram account since I started doing social media in 2022
+          </p>
 
           <h2 className="mt-8">Building My Platform</h2>
           <p>
@@ -106,11 +119,35 @@ export default function BlogPost() {
             </li>
           </ul>
 
+          <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
+            <Image
+              src="/insta.jpg"
+              alt="Social media platforms displayed on various devices"
+              fill
+              className="object-cover object-top"
+            />
+          </div>
+          <p className="text-normal text-gray-500 mt-1 text-center italic">
+            My instagram account since I started doing social media in 2022
+          </p>
+
           <h2 className="mt-8">Opening New Opportunities</h2>
           <p>
             One of the most exciting aspects of my social media journey has been
             the opportunities that have come my way. Here are some of the ways
             it has opened doors for me:
+          </p>
+
+          <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
+            <Image
+              src="/insta.jpg"
+              alt="Social media platforms displayed on various devices"
+              fill
+              className="object-cover object-top"
+            />
+          </div>
+          <p className="text-normal text-gray-500 mt-1 text-center italic">
+            My instagram account since I started doing social media in 2022
           </p>
 
           <h3>Personal Growth and New Friendships</h3>
@@ -152,6 +189,18 @@ export default function BlogPost() {
             </li>
           </ul>
 
+          <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
+            <Image
+              src="/insta.jpg"
+              alt="Social media platforms displayed on various devices"
+              fill
+              className="object-cover object-top"
+            />
+          </div>
+          <p className="text-normal text-gray-500 mt-1 text-center italic">
+            My instagram account since I started doing social media in 2022
+          </p>
+
           <h2 className="mt-8">Reflecting on the Journey</h2>
           <p>
             Looking back, I see how social media has not only redefined how I
@@ -169,6 +218,18 @@ export default function BlogPost() {
             of the journey. Social media isn’t just about the destination; it’s
             about the process of learning, growing, and connecting with others
             along the way.
+          </p>
+
+          <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
+            <Image
+              src="/insta.jpg"
+              alt="Social media platforms displayed on various devices"
+              fill
+              className="object-cover object-top"
+            />
+          </div>
+          <p className="text-normal text-gray-500 mt-1 text-center italic">
+            My instagram account since I started doing social media in 2022
           </p>
 
           <h2 className="mt-8">Final Thoughts</h2>
