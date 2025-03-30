@@ -448,7 +448,6 @@ export default function Home() {
           {/* Leetcode */}
           <Card className="bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
             <div className="flex flex-col md:flex-row">
-              {/* Left Content */}
               <CardContent className="p-4 space-y-3 flex-1">
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
                   <h3 className="text-xl font-bold text-white">
@@ -469,10 +468,40 @@ export default function Home() {
                   technical interviews.
                 </p>
               </CardContent>
-              {/* Right Image - MADE SMALLER */}
               <div className="relative w-full md:w-1/12 border-gray-700 p-2 flex items-center">
                 <img
                   src="/lc.jpg"
+                  alt="Leetcode"
+                  className="object-contain w-16 h-16 rounded-md mx-auto"
+                />
+              </div>
+            </div>
+          </Card>
+          {/* Devpost */}
+          <Card className="bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
+            <div className="flex flex-col md:flex-row">
+              <CardContent className="p-4 space-y-3 flex-1">
+                <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                  <h3 className="text-xl font-bold text-white">
+                    Devpost Profile
+                  </h3>
+                </div>
+                <p className="text-gray-300 text-sm">
+                  My{' '}
+                  <a
+                    href="https://devpost.com/nicholaschen09?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-pink-500 hover:underline underline underline-offset-4 mt-2"
+                  >
+                    Devpost Profile
+                  </a>{' '}
+                  all my hackathon projects that I submitted to devpost
+                </p>
+              </CardContent>
+              <div className="relative w-full md:w-1/12 border-gray-700 p-2 flex items-center">
+                <img
+                  src="/devpost.jpeg"
                   alt="Leetcode"
                   className="object-contain w-16 h-16 rounded-md mx-auto"
                 />
