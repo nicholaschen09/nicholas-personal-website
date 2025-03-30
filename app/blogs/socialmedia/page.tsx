@@ -84,34 +84,45 @@ export default function BlogPost() {
         <h3 className="mt-8 text-2xl font-bold">
           Tips that I Learned Along the Way
         </h3>
-        <ul className="mb-4">
+        <ol className="list-decimal list-inside space-y-4">
           <li>
             Being authentic goes a long way. People can tell when you’re
             genuine. Sharing your true self, your struggles and successes help
-            build trust and create a loyal following.
+            build trust and create a loyal following. Nobody wants to follow
+            someone who just posts about their successes and never their
+            failures. The same goes for someone who just speaks about things
+            that everyone agrees with. If you don't have haters you're doing
+            something wrong. You should never try to please anyone online.
           </li>
-        </ul>
-        <ul className="mb-4">
           <li>
             Engage With Your Audience. Respond to comments, ask questions, and
             create content that invites conversation. This not only grows your
-            audience but also creates a supportive community.
+            audience but also creates a supportive community. It also allows you
+            to build a closer connection between people who follow you which
+            keeps them coming back for more.
           </li>
-        </ul>
-        <ul className="mb-4">
           <li>
-            <strong>Stay Consistent:</strong> Regular posting and interaction
-            keep your platform alive. Over time, you develop a recognizable
-            style and voice that people come back for.
+            Stay Consistent. Regular posting and interaction keep your platform
+            alive. Over time, you develop a recognizable style and voice that
+            people come back for. This is one of the biggest factors to whether
+            or not a content creator stays viral or not in the long run. All the
+            famous people you see on social media have thousands of posts up on
+            all different platforms with their account.
           </li>
-        </ul>
-        <ul className="mb-4">
           <li>
-            <strong>Embrace Change:</strong> Social media is ever-evolving.
-            Adapting to new trends and platforms, like TikTok’s rapid rise,
-            allowed me to reach new audiences and stay relevant.
+            Embrace Change. Social media is ever-evolving. Adapting to new
+            trends and platforms, like TikTok’s rapid rise, allowed me to reach
+            new audiences and stay relevant. You should always be looking for
+            new ways to change up your content and try new things. If you're not
+            growing you're dying.
           </li>
-        </ul>
+        </ol>
+        <h2 className="mt-8 text-3xl font-bold">Opening New Opportunities</h2>
+        <p>
+          One of the most exciting aspects of my social media journey has been
+          the opportunities that have come my way. Here are some of the ways it
+          has opened doors for me:
+        </p>
         <h2 className="mt-8 text-3xl font-bold">Opening New Opportunities</h2>
         <p>
           One of the most exciting aspects of my social media journey has been
