@@ -399,6 +399,10 @@ export default function Home() {
 
           <hr className="w-full border-t border-gray-700 my-8 col-span-1 md:col-span-2" />
 
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 md:mb-6">
+            My Other Links
+          </h2>
+
           {/* Art Website */}
           <Card className="bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
             <div className="relative h-32 md:h-48">
