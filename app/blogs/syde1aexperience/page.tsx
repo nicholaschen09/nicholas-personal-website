@@ -186,16 +186,14 @@ export default function BlogPost() {
                         a bit of proofs and some of the Calculus II curriculum.
                         Our cohort was taught by Sean Speziale who ended up
                         being a great professor who made calculus surprisingly
-                        engaging.
-                      </p>
-                      <p>
-                        The course was taught through a combination of lectures
-                        and tutorials. Most of it was done through pre-made
-                        slides and a note taking app that the professor used to
-                        edit on top of the pdfs/slides. He would often pause to
-                        ask questions and make sure everyone was following
-                        along. The tutorials were led by TAs who would work
-                        through practice problems and provide additional help.
+                        engaging. The course was taught through a combination of
+                        lectures and tutorials. Most of it was done through
+                        pre-made slides and a note taking app that the professor
+                        used to edit on top of the pdfs/slides. He would often
+                        pause to ask questions and make sure everyone was
+                        following along. The tutorials were led by TAs who would
+                        work through practice problems and provide additional
+                        help.
                       </p>
                       <h4 className="font-semibold text-white">Assessments</h4>
                       <ul className="list-disc pl-5 space-y-1">
@@ -283,28 +281,23 @@ export default function BlogPost() {
                         About the Course
                       </h4>
                       <p>
-                        Dr. Chen was a passionate programmer with extensive
-                        industry experience at companies like Google and
-                        Microsoft. His real-world examples made the course
-                        material much more relevant and interesting. He had a
-                        great sense of humor that made even the 8:30am lectures
-                        bearable, and he was always showing us practical
-                        applications of what we were learning.
-                      </p>
-
-                      <h4 className="font-semibold text-white">
-                        Teaching Style
-                      </h4>
-                      <p>
-                        The course consisted of two 1.5-hour lectures and one
-                        3-hour lab session each week. Lectures were a mix of
-                        theory and live coding demonstrations, which was
-                        incredibly helpful for seeing how to apply concepts in
-                        practice. Dr. Chen would often make intentional mistakes
-                        during his live coding to show us common errors and how
-                        to debug them. The lab sessions were hands-on
-                        programming time with TAs available to help, which was
-                        invaluable for getting immediate feedback on our code.
+                        This course was generally just a introduction to
+                        programming in C++ and if you already took computer
+                        science in highschool, the course was pretty chill. Our
+                        professor was pretty good and she taught well. I just
+                        wish her lectures weren't at 8:30am when no one would
+                        wake up. I'm pretty sure no one went to her lectures
+                        after midterms. This course was pretty fun if you enjoy
+                        coding though. The course consisted of two 1.5-hour
+                        lectures and one 3-hour lab session each week. Lectures
+                        were a mix of theory and live coding demonstrations,
+                        which was incredibly helpful for seeing how to apply
+                        concepts in practice. Dr. Chen would often make
+                        intentional mistakes during his live coding to show us
+                        common errors and how to debug them. The lab sessions
+                        were hands-on programming time with TAs available to
+                        help, which was invaluable for getting immediate
+                        feedback on our code.
                       </p>
 
                       <h4 className="font-semibold text-white">Assessments</h4>
