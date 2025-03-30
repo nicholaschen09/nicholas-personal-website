@@ -144,7 +144,9 @@ export default function BlogPost() {
           e7 at uwaterloo for the first time
         </p>
 
-        <h3>Personal Growth and New Friendships</h3>
+        <h3 className="mt-8 text-3xl font-bold">
+          Personal Growth and New Friendships
+        </h3>
         <p>
           Social media isn’t just about numbers—it’s about the people you meet.
           Through my posts, I connected with individuals who shared my interests
@@ -161,19 +163,19 @@ export default function BlogPost() {
           />
         </div>
         <p className="text-normal text-gray-500 mt-1 text-center italic">
-          My instagram account since I started doing social media in 2022
+          Pic of Ian I took when he visited the RBC office lol
         </p>
 
-        <h3>Professional Breakthroughs</h3>
+        <h3 className="mt-8 text-3xl font-bold">Professional Breakthroughs</h3>
         <p>
           Before social media, I never imagined that I could build a career from
-          sharing my passion online. Today, I receive invitations to speak at
-          events, collaborate with influencers, and even work with brands on
-          exciting projects. These opportunities have allowed me to grow both
-          personally and professionally.
+          sharing my passion online. Today, I receive invitations to speak or
+          judge at events, collaborate with influencers, and even work with
+          brands on exciting projects. These opportunities have allowed me to
+          grow both personally and professionally.
         </p>
 
-        <h3>Financial Rewards</h3>
+        <h3 className="mt-8 text-3xl font-bold">Financial Rewards</h3>
         <p>
           As my following grew, so did the interest from brands looking for
           authentic connections with consumers. Through sponsorships and brand
@@ -195,9 +197,9 @@ export default function BlogPost() {
           </li>
         </ul>
 
-        <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
+        <div className="my-8 relative aspect-[16/3] w-full overflow-hidden rounded-lg">
           <Image
-            src="/insta.jpg"
+            src="/money.png"
             alt="Social media platforms displayed on various devices"
             fill
             className="object-cover object-top"
@@ -207,7 +209,7 @@ export default function BlogPost() {
           My instagram account since I started doing social media in 2022
         </p>
 
-        <h2 className="mt-8">Final Thoughts</h2>
+        <h2 className="mt-8 text-3xl font-bold">Final Thoughts</h2>
         <p>
           Social media has transformed my life in unimaginable ways. It has
           allowed me to express myself creatively, connect with people from all
