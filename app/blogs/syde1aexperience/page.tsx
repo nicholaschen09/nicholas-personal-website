@@ -226,6 +226,14 @@ export default function BlogPost() {
                         closest friends in this class and we would often study
                         together in the E7 study rooms.
                       </p>
+                      <div className="my-8 relative aspect-[16/9] w-full overflow-hidden rounded-lg">
+                        <Image
+                          src="/calc.jpg"
+                          alt="SYDE"
+                          fill
+                          className="object-cover object-center"
+                        />
+                      </div>
                       <div className="mt-4">
                         <a
                           href="https://uwflow.com/course/syde111"
