@@ -175,6 +175,9 @@ export default function About() {
                     <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Git
                     </span>
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
+                      Helios
+                    </span>
                   </div>
                 </div>
               </div>
