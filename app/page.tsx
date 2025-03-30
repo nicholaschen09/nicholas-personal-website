@@ -7,7 +7,7 @@ import { Card, CardContent, CardFooter } from '@/components/ui/card';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-6 md:p-24">
+    <main className="flex min-h-screen flex-col items-center p-6 md:p-24 overflow-x-hidden">
       {/* Hero Section */}
       <div className="max-w-6xl w-full space-y-4 md:space-y-6 mb-10 md:mb-16 pt-24 md:pt-16">
         <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold text-white">
@@ -397,10 +397,10 @@ export default function Home() {
             </CardFooter>
           </Card>
 
-          <hr className="w-[205%] border-t border-gray-700 my-8" />
+          <hr className="w-full border-t border-gray-700 my-8 col-span-1 md:col-span-2" />
 
           {/* Art Website */}
-          <Card className="w-[101%] bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
+          <Card className="bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
             <div className="relative h-32 md:h-48">
               <Image
                 src="/art1.png"
@@ -442,7 +442,7 @@ export default function Home() {
           </Card>
 
           {/* Leetcode */}
-          <Card className="w-[101%] bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
+          <Card className="bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
             <div className="flex flex-col md:flex-row">
               {/* Left Content */}
               <CardContent className="p-4 space-y-3 flex-1">
