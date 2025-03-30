@@ -120,26 +120,28 @@ export default function BlogPost() {
         <h2 className="mt-8 text-3xl font-bold">Opening New Opportunities</h2>
         <p>
           One of the most exciting aspects of my social media journey has been
-          the opportunities that have come my way. Here are some of the ways it
-          has opened doors for me:
-        </p>
-        <h2 className="mt-8 text-3xl font-bold">Opening New Opportunities</h2>
-        <p>
-          One of the most exciting aspects of my social media journey has been
-          the opportunities that have come my way. Here are some of the ways it
-          has opened doors for me:
+          the opportunities that have come my way. I've been able to connect
+          with other bigger content creators in engineering and cs which was
+          pretty cool because I used to look up to those people when I was
+          younger. To be able to call them a friend was pretty cool to say. I
+          also leveraged social media to help me land internships at places like
+          Meta Hash Capital and RBC due to it being a unique trait of mine that
+          usually no other candidate had. If you're wondering, yes I did put
+          this on my AIF when I applied to UWaterloo and I am certain it helped
+          me get into the program.
         </p>
 
-        <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
+        <div className="my-8 relative aspect-[3/3] w-full overflow-hidden rounded-lg">
           <Image
-            src="/insta.jpg"
+            src="/uweng.png"
             alt="Social media platforms displayed on various devices"
             fill
             className="object-cover object-top"
           />
         </div>
         <p className="text-normal text-gray-500 mt-1 text-center italic">
-          My instagram account since I started doing social media in 2022
+          Here's a picture of what I first saw when exploring the syde floor in
+          e7 at uwaterloo for the first time
         </p>
 
         <h3>Personal Growth and New Friendships</h3>
@@ -148,6 +150,18 @@ export default function BlogPost() {
           Through my posts, I connected with individuals who shared my interests
           and values. These relationships have grown from online interactions
           into lasting friendships and collaborations.
+        </p>
+
+        <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
+          <Image
+            src="/ian.jpg"
+            alt="Social media platforms displayed on various devices"
+            fill
+            className="object-cover object-bottom"
+          />
+        </div>
+        <p className="text-normal text-gray-500 mt-1 text-center italic">
+          My instagram account since I started doing social media in 2022
         </p>
 
         <h3>Professional Breakthroughs</h3>
@@ -193,37 +207,6 @@ export default function BlogPost() {
           My instagram account since I started doing social media in 2022
         </p>
 
-        <h2 className="mt-8">Reflecting on the Journey</h2>
-        <p>
-          Looking back, I see how social media has not only redefined how I
-          communicate but also how I see the world. It has given me the tools to
-          express myself, share my passions, and create a community that
-          supports me every day. The journey hasn’t been without
-          challenges—navigating online criticism, staying true to my voice, and
-          managing the pressure to constantly create new content. However, these
-          experiences have made me more resilient and resourceful.
-        </p>
-
-        <h3>What I Would Tell My Younger Self</h3>
-        <p>
-          If I could go back in time, I’d tell myself to embrace every moment of
-          the journey. Social media isn’t just about the destination; it’s about
-          the process of learning, growing, and connecting with others along the
-          way.
-        </p>
-
-        <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
-          <Image
-            src="/insta.jpg"
-            alt="Social media platforms displayed on various devices"
-            fill
-            className="object-cover object-top"
-          />
-        </div>
-        <p className="text-normal text-gray-500 mt-1 text-center italic">
-          My instagram account since I started doing social media in 2022
-        </p>
-
         <h2 className="mt-8">Final Thoughts</h2>
         <p>
           Social media has transformed my life in unimaginable ways. It has
@@ -232,11 +215,6 @@ export default function BlogPost() {
           digital landscape continues to evolve, one thing remains constant: the
           power of authentic connection. As I continue this journey, I look
           forward to the new opportunities and experiences that lie ahead.
-        </p>
-        <p>
-          Thank you for joining me on this adventure. I hope my story inspires
-          you to take a leap of faith in your own digital journey—because you
-          never know where it might lead.
         </p>
       </article>
       {/* Footer */}
