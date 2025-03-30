@@ -179,21 +179,16 @@ export default function BlogPost() {
         <p>
           As my following grew, so did the interest from brands looking for
           authentic connections with consumers. Through sponsorships and brand
-          deals, I turned my passion into a viable source of income. Here are a
-          few insights:
+          deals, I turned my passion into a viable source of income.
         </p>
         <ul>
           <li>
-            <strong>Brand Collaborations:</strong> Working with brands taught me
-            how to create content that aligns with both my personal style and
-            the brand’s message. This balance is crucial for maintaining
-            authenticity while providing value to sponsors.
-          </li>
-          <li>
-            <strong>Monetization Strategies:</strong> I experimented with
-            affiliate marketing, sponsored posts, and merchandise. Learning what
-            worked for my audience was key to turning my platform into a revenue
-            stream.
+            Working with brands taught me how to create content that aligns with
+            both my personal style and the brand’s message. This balance is
+            crucial for maintaining authenticity while providing value to
+            sponsors. I experimented with affiliate marketing and sponsored
+            posts. Learning what worked for my audience was key to turning my
+            platform into a revenue stream.
           </li>
         </ul>
 
@@ -206,7 +201,7 @@ export default function BlogPost() {
           />
         </div>
         <p className="text-normal text-gray-500 mt-1 text-center italic">
-          My instagram account since I started doing social media in 2022
+          The first brand deal that actually paid some decent money for my video
         </p>
 
         <h2 className="mt-8 text-3xl font-bold">Final Thoughts</h2>
