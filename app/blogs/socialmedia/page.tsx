@@ -75,29 +75,37 @@ export default function BlogPost() {
         <h2 className="mt-8 text-3xl font-bold">Building My Platform</h2>
         <p>
           Creating and maintaining a social media presence isn’t just about
-          posting content—it’s about building a platform that represents your
+          posting content, it’s about building a platform that represents your
           voice. I began experimenting with different formats: videos, photos,
           and live sessions. I quickly learned that authenticity and consistency
           are the keys to connecting with an audience.
         </p>
 
-        <h3>Tips I Learned Along the Way</h3>
-        <ul>
+        <h3 className="mt-8 text-2xl font-bold">
+          Tips that I Learned Along the Way
+        </h3>
+        <ul className="mb-4">
           <li>
-            <strong>Be Authentic:</strong> People can tell when you’re genuine.
-            Sharing your true self—your struggles and successes—helps build
-            trust and fosters a loyal following.
+            Being authentic goes a long way. People can tell when you’re
+            genuine. Sharing your true self, your struggles and successes help
+            build trust and create a loyal following.
           </li>
+        </ul>
+        <ul className="mb-4">
           <li>
-            <strong>Engage With Your Audience:</strong> Respond to comments, ask
-            questions, and create content that invites conversation. This not
-            only grows your audience but also creates a supportive community.
+            Engage With Your Audience. Respond to comments, ask questions, and
+            create content that invites conversation. This not only grows your
+            audience but also creates a supportive community.
           </li>
+        </ul>
+        <ul className="mb-4">
           <li>
             <strong>Stay Consistent:</strong> Regular posting and interaction
             keep your platform alive. Over time, you develop a recognizable
             style and voice that people come back for.
           </li>
+        </ul>
+        <ul className="mb-4">
           <li>
             <strong>Embrace Change:</strong> Social media is ever-evolving.
             Adapting to new trends and platforms, like TikTok’s rapid rise,
