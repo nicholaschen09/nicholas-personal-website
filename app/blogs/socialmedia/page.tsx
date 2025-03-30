@@ -1,7 +1,9 @@
+'use client';
+
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
+import CarouselContainer from '@/components/carousel/CarouselContainer';
 
 export default function BlogPost() {
   return (
@@ -16,269 +18,201 @@ export default function BlogPost() {
 
         <div className="space-y-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
-            The Impact of Social Media on Modern Society
+            How Social Media Changed My Life
           </h1>
           <div className="flex flex-wrap items-center gap-4">
             <span className="text-gray-400">
               March 24, 2025{' '}
-              <span className="text-pink-500">// 10 min read</span>
+              <span className="text-pink-500">// 7 min read</span>
             </span>
             <span className="text-gray-400 ml-auto">Nicholas Chen</span>
           </div>
         </div>
 
-        <div className="prose prose-invert max-w-none">
-          <p>
-            Social media has fundamentally transformed how we communicate,
-            consume information, and interact with the world around us. From
-            Facebook and Instagram to TikTok and Twitter (X), these platforms
-            have become integral parts of our daily lives. In this article, I
-            explore how posting on social media and creating a platform changed
-            my life by opening up new opportunities, finding friends that share
-            my interests, and making money through brand deals and
-            sponosorships.
-          </p>
+        <p>
+          Social media has fundamentally transformed how we communicate, consume
+          information, and interact with the world around us. From Facebook and
+          Instagram to TikTok and Twitter (X), these platforms have become
+          integral parts of our daily lives. In this article, I explore how
+          posting on social media and creating a platform changed my life by
+          opening up new opportunities, finding friends that share my interests,
+          and making money through brand deals and sponosorships.
+        </p>
 
-          <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
-            <Image
-              src="/insta.jpg"
-              alt="Social media platforms displayed on various devices"
-              fill
-              className="object-cover object-top"
-            />
-            <p className="text-sm text-gray-400 mt-2 text-center">
-              Social media has become an integral part of our daily digital
-              experience
-            </p>
-          </div>
-          <p className="text-normal text-gray-500 mt-1 text-center italic">
-            My instagram account since I started doing social media in 2022
-          </p>
-          <h2 className="mt-8">The Evolution of Social Media</h2>
-          <p>
-            The journey of social media began in the early 2000s with platforms
-            like Friendster and MySpace, which allowed users to create profiles
-            and connect with friends. The landscape dramatically changed with
-            the launch of Facebook in 2004, which eventually grew to become the
-            largest social network in the world. Since then, we've witnessed the
-            rise of numerous platforms, each with its unique features and target
-            audiences:
-          </p>
+        <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
+          <Image
+            src="/insta.jpg"
+            alt="Social media platforms displayed on various devices"
+            fill
+            className="object-cover object-top"
+          />
+        </div>
+        <p className="text-normal text-gray-500 mt-1 text-center italic">
+          My instagram account since I started doing social media in 2022
+        </p>
 
-          <ul>
-            <li>
-              <strong>Instagram (2010)</strong> - Focused on photo and video
-              sharing
-            </li>
-            <li>
-              <strong>Twitter (2006)</strong> - Pioneered short-form content and
-              real-time updates
-            </li>
-            <li>
-              <strong>LinkedIn (2003)</strong> - Specialized in professional
-              networking
-            </li>
-            <li>
-              <strong>TikTok (2016)</strong> - Revolutionized short-form video
-              content
-            </li>
-            <li>
-              <strong>Snapchat (2011)</strong> - Introduced ephemeral content
-            </li>
-          </ul>
+        <h2 className="mt-8 text-3xl font-bold">
+          Discovering the Social Media Internet World
+        </h2>
+        <p>
+          When I first joined social media, I was curious about what everyone
+          was talking about. I started small, posting pictures and thoughts
+          about everyday moments. When I hit 1k followers, I decided to start
+          posting content that I believed would help people. I began posting
+          notes, tips for school and basically anything that was related to
+          academia. I would have never imagined that these simple posts would
+          evolve into a digital diary that not only reflected who I was but also
+          attracted people who shared similar interests.
+        </p>
 
-          <p>
-            Each platform has contributed to reshaping how we communicate and
-            share information, creating a complex digital ecosystem that
-            billions of people navigate daily.
-          </p>
-
-          <h2>The Positive Impact of Social Media</h2>
-
-          <h3>1. Global Connectivity</h3>
-          <p>
-            Perhaps the most significant benefit of social media is its ability
-            to connect people across geographical boundaries. Families separated
-            by oceans can share moments in real-time, and individuals with niche
-            interests can find communities that share their passions. This
-            global connectivity has created a more interconnected world where
-            ideas and information flow freely.
-          </p>
-
-          <h3>2. Information Access and Democratization</h3>
-          <p>
-            Social media has democratized information access, allowing anyone
-            with an internet connection to both consume and create content. News
-            no longer comes exclusively from traditional media outlets; citizen
-            journalists can document events as they unfold, providing
-            perspectives that might otherwise go unheard.
-          </p>
-
-          <h3>3. Business Opportunities</h3>
-          <p>
-            For entrepreneurs and businesses, social media has opened up
-            unprecedented marketing opportunities. Small businesses can reach
-            global audiences without massive advertising budgets, and
-            individuals can build personal brands that translate into career
-            opportunities. The rise of influencer marketing has created entirely
-            new career paths that didn't exist a decade ago.
-          </p>
-
-          <h3>4. Social Movements and Awareness</h3>
-          <p>
-            From #MeToo to #BlackLivesMatter, social media has amplified social
-            movements and raised awareness about important issues. Hashtags can
-            unite millions around a cause, creating pressure for institutional
-            change and giving voice to marginalized communities.
-          </p>
-
-          <div className="my-8 relative aspect-video w-full overflow-hidden rounded-lg">
-            <Image
-              src="/placeholder.svg?height=600&width=1200"
-              alt="People using social media on mobile devices"
-              fill
-              className="object-cover"
-            />
-            <p className="text-sm text-gray-400 mt-2 text-center">
-              Social media has become a powerful tool for social movements and
-              activism
-            </p>
-          </div>
-
-          <h2>The Challenges of Social Media</h2>
-
-          <h3>1. Mental Health Concerns</h3>
-          <p>
-            Research has increasingly linked social media use to mental health
-            issues, particularly among young people. The constant comparison to
-            curated versions of others' lives can lead to feelings of inadequacy
-            and FOMO (fear of missing out). Additionally, the dopamine-driven
-            feedback loops created by likes and comments can lead to addictive
-            behaviors.
-          </p>
-
-          <h3>2. Misinformation and Echo Chambers</h3>
-          <p>
-            While social media has democratized information, it has also created
-            fertile ground for misinformation to spread. The algorithmic nature
-            of content delivery tends to show users information that aligns with
-            their existing beliefs, creating echo chambers that reinforce biases
-            and polarize public discourse.
-          </p>
-
-          <h3>3. Privacy Concerns</h3>
-          <p>
-            The business model of most social media platforms relies on
-            collecting vast amounts of user data to deliver targeted
-            advertising. This has raised significant privacy concerns,
-            especially as users become more aware of how their personal
-            information is being used and monetized.
-          </p>
-
-          <h3>4. Cyberbullying and Online Harassment</h3>
-          <p>
-            The anonymity and distance provided by screens can bring out the
-            worst in human behavior. Cyberbullying and online harassment have
-            become serious issues, particularly for teenagers and public figures
-            who may face relentless criticism and abuse.
-          </p>
-
-          <h2>Finding Balance in the Digital Age</h2>
-          <p>
-            As social media continues to evolve, both individuals and society
-            must find ways to maximize its benefits while mitigating its
-            negative impacts. Here are some strategies for healthier social
-            media use:
-          </p>
-
-          <ol>
-            <li>
-              <strong>Digital Wellness Practices</strong> - Setting time limits,
-              taking regular breaks, and being mindful of how different
-              platforms affect your mood
-            </li>
-            <li>
-              <strong>Critical Media Literacy</strong> - Developing skills to
-              evaluate information sources and recognize misinformation
-            </li>
-            <li>
-              <strong>Curating Your Feed</strong> - Actively shaping your social
-              media experience by following accounts that inspire and inform
-              rather than those that trigger negative emotions
-            </li>
-            <li>
-              <strong>Privacy Management</strong> - Regularly reviewing privacy
-              settings and being intentional about what information you share
-            </li>
-          </ol>
-
-          <h2>The Future of Social Media</h2>
-          <p>
-            Looking ahead, several trends are likely to shape the future of
-            social media:
-          </p>
-
-          <h3>1. Augmented and Virtual Reality</h3>
-          <p>
-            Platforms like Meta (formerly Facebook) are investing heavily in
-            creating immersive social experiences through AR and VR
-            technologies. These developments could fundamentally change how we
-            interact in digital spaces, creating more engaging and lifelike
-            virtual environments.
-          </p>
-
-          <h3>2. Decentralized Social Networks</h3>
-          <p>
-            In response to concerns about data privacy and platform control,
-            we're seeing the emergence of decentralized social networks that
-            give users more ownership over their data and content. These
-            platforms aim to create more equitable digital spaces where users
-            have greater agency.
-          </p>
-
-          <h3>3. Regulation and Accountability</h3>
-          <p>
-            As the societal impact of social media becomes clearer, governments
-            worldwide are implementing regulations to address issues like data
-            privacy, content moderation, and algorithmic transparency. This
-            regulatory landscape will likely continue to evolve as we better
-            understand the long-term effects of these technologies.
-          </p>
-
-          <h3>4. AI and Content Moderation</h3>
-          <p>
-            Artificial intelligence will play an increasingly important role in
-            content moderation, helping platforms identify and remove harmful
-            content more efficiently. However, this raises questions about free
-            speech and the potential for algorithmic bias.
-          </p>
-
-          <h2>Conclusion</h2>
-          <p>
-            Social media has irrevocably changed our world, creating new
-            opportunities for connection, expression, and information sharing.
-            Yet, these benefits come with significant challenges that require
-            thoughtful navigation at both individual and societal levels.
-          </p>
-
-          <p>
-            As we continue to integrate these technologies into our lives, the
-            most important question isn't whether social media is "good" or
-            "bad," but rather how we can harness its potential while minimizing
-            its harms. By approaching social media with intention and awareness,
-            we can work toward a digital landscape that enhances human
-            connection rather than diminishing it.
-          </p>
-
-          <p>
-            The future of social media will be shaped not just by the companies
-            that create these platforms, but by how we as users choose to engage
-            with them. By demanding more ethical design, supporting platforms
-            that prioritize user wellbeing, and being mindful of our own digital
-            habits, we can help create a healthier relationship with social
-            media for generations to come.
+        <div className="my-8 relative w-full overflow-hidden rounded-lg">
+          <CarouselContainer />
+          <p className="text-normal text-gray-500 mt-4 text-center italic">
+            The first TikTok post that went viral and changed my life
           </p>
         </div>
+
+        <h2 className="mt-8 text-3xl font-bold">Building My Platform</h2>
+        <p>
+          Creating and maintaining a social media presence isn’t just about
+          posting content, it’s about building a platform that represents your
+          voice. I began experimenting with different formats: videos, photos,
+          and live sessions. I quickly learned that authenticity and consistency
+          are the keys to connecting with an audience.
+        </p>
+
+        <h3 className="mt-8 text-2xl font-bold">
+          Tips that I Learned Along the Way
+        </h3>
+        <ol className="list-decimal list-inside space-y-4">
+          <li>
+            Being authentic goes a long way. People can tell when you’re
+            genuine. Sharing your true self, your struggles and successes help
+            build trust and create a loyal following. Nobody wants to follow
+            someone who just posts about their successes and never their
+            failures. The same goes for someone who just speaks about things
+            that everyone agrees with. If you don't have haters you're doing
+            something wrong. You should never try to please anyone online.
+          </li>
+          <li>
+            Engage With Your Audience. Respond to comments, ask questions, and
+            create content that invites conversation. This not only grows your
+            audience but also creates a supportive community. It also allows you
+            to build a closer connection between people who follow you which
+            keeps them coming back for more.
+          </li>
+          <li>
+            Stay Consistent. Regular posting and interaction keep your platform
+            alive. Over time, you develop a recognizable style and voice that
+            people come back for. This is one of the biggest factors to whether
+            or not a content creator stays viral or not in the long run. All the
+            famous people you see on social media have thousands of posts up on
+            all different platforms with their account.
+          </li>
+          <li>
+            Embrace Change. Social media is ever-evolving. Adapting to new
+            trends and platforms, like TikTok’s rapid rise, allowed me to reach
+            new audiences and stay relevant. You should always be looking for
+            new ways to change up your content and try new things. If you're not
+            growing you're dying.
+          </li>
+        </ol>
+        <h2 className="mt-8 text-3xl font-bold">Opening New Opportunities</h2>
+        <p>
+          One of the most exciting aspects of my social media journey has been
+          the opportunities that have come my way. I've been able to connect
+          with other bigger content creators in engineering and cs which was
+          pretty cool because I used to look up to those people when I was
+          younger. To be able to call them a friend was pretty cool to say. I
+          also leveraged social media to help me land internships at places like
+          Meta Hash Capital and RBC due to it being a unique trait of mine that
+          usually no other candidate had. If you're wondering, yes I did put
+          this on my AIF when I applied to UWaterloo and I am certain it helped
+          me get into the program.
+        </p>
+
+        <div className="my-8 relative aspect-[3/3] w-full overflow-hidden rounded-lg">
+          <Image
+            src="/uweng.png"
+            alt="Social media platforms displayed on various devices"
+            fill
+            className="object-cover object-top"
+          />
+        </div>
+        <p className="text-normal text-gray-500 mt-1 text-center italic">
+          Here's a picture of what I first saw when exploring the syde floor in
+          e7 at uwaterloo for the first time
+        </p>
+
+        <h3 className="mt-8 text-3xl font-bold">
+          Personal Growth and New Friendships
+        </h3>
+        <p>
+          Social media isn’t just about numbers—it’s about the people you meet.
+          Through my posts, I connected with individuals who shared my interests
+          and values. These relationships have grown from online interactions
+          into lasting friendships and collaborations.
+        </p>
+
+        <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
+          <Image
+            src="/ian.jpg"
+            alt="Social media platforms displayed on various devices"
+            fill
+            className="object-cover object-bottom"
+          />
+        </div>
+        <p className="text-normal text-gray-500 mt-1 text-center italic">
+          Pic of Ian I took when he visited the RBC office lol
+        </p>
+
+        <h3 className="mt-8 text-3xl font-bold">Professional Breakthroughs</h3>
+        <p>
+          Before social media, I never imagined that I could build a career from
+          sharing my passion online. Today, I receive invitations to speak or
+          judge at events, collaborate with influencers, and even work with
+          brands on exciting projects. These opportunities have allowed me to
+          grow both personally and professionally.
+        </p>
+
+        <h3 className="mt-8 text-3xl font-bold">Financial Rewards</h3>
+        <p>
+          As my following grew, so did the interest from brands looking for
+          authentic connections with consumers. Through sponsorships and brand
+          deals, I turned my passion into a viable source of income.
+        </p>
+        <ul>
+          <li>
+            Working with brands taught me how to create content that aligns with
+            both my personal style and the brand’s message. This balance is
+            crucial for maintaining authenticity while providing value to
+            sponsors. I experimented with affiliate marketing and sponsored
+            posts. Learning what worked for my audience was key to turning my
+            platform into a revenue stream.
+          </li>
+        </ul>
+
+        <div className="my-8 relative aspect-[16/3] w-full overflow-hidden rounded-lg">
+          <Image
+            src="/money.png"
+            alt="Social media platforms displayed on various devices"
+            fill
+            className="object-cover object-top"
+          />
+        </div>
+        <p className="text-normal text-gray-500 mt-1 text-center italic">
+          The first brand deal that actually paid some decent money for my video
+        </p>
+
+        <h2 className="mt-8 text-3xl font-bold">Final Thoughts</h2>
+        <p>
+          Social media has transformed my life in unimaginable ways. It has
+          allowed me to express myself creatively, connect with people from all
+          over the world, and even turn my passion into a career. While the
+          digital landscape continues to evolve, one thing remains constant: the
+          power of authentic connection. As I continue this journey, I look
+          forward to the new opportunities and experiences that lie ahead.
+        </p>
       </article>
       {/* Footer */}
       <footer className="w-full mt-8 pt-8">

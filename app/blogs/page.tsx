@@ -16,11 +16,11 @@ const blogPosts = [
   },
   {
     id: '2',
-    title: 'How Social Media Has Changed My Life',
+    title: 'How Social Media Changed My Life',
     excerpt:
       'The positive and negative impacts of social media on my life, from connecting with friends to dealing with distractions.',
     date: 'March 28, 2025',
-    readTime: '12 min read',
+    readTime: '7 min read',
     slug: 'socialmedia',
     image: '/socialmedia.jpeg',
   },
