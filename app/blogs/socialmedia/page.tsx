@@ -45,10 +45,6 @@ export default function BlogPost() {
               fill
               className="object-cover object-top"
             />
-            <p className="text-sm text-gray-400 mt-2 text-center">
-              Social media has become an integral part of our daily digital
-              experience
-            </p>
           </div>
           <p className="text-normal text-gray-500 mt-1 text-center italic">
             My instagram account since I started doing social media in 2022
