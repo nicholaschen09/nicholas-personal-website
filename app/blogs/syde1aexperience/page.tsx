@@ -226,14 +226,30 @@ export default function BlogPost() {
                         closest friends in this class and we would often study
                         together in the E7 study rooms.
                       </p>
-                      <div className="my-8 relative aspect-[16/9] w-full overflow-hidden rounded-lg">
+                      <div className="my-8 relative aspect-[16/13] w-full overflow-hidden rounded-lg">
                         <Image
-                          src="/calc.jpg"
+                          src="/calc.png"
                           alt="SYDE"
                           fill
                           className="object-cover object-center"
                         />
                       </div>
+                      <p className="text-sm text-gray-500 mt-4 text-center italic">
+                        I remember everyone just randomly decide to skip the
+                        last calc quiz LOL
+                      </p>
+                      <div className="my-8 relative aspect-[15/16] w-full overflow-hidden rounded-lg">
+                        <Image
+                          src="/calculus.png"
+                          alt="SYDE"
+                          fill
+                          className="object-cover object-center"
+                        />
+                      </div>
+                      <p className="text-sm text-gray-500 mt-4 text-center italic">
+                        This was the hardest integral I had to ever solve in my
+                        life
+                      </p>
                       <div className="mt-4">
                         <a
                           href="https://uwflow.com/course/syde111"
