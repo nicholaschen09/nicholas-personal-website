@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import Image from 'next/image';
-import CarouselContainer from '@/components/CarouselContainer';
+import CarouselContainer from '@/components/carousel/CarouselContainer';
 
 export default function BlogPost() {
   return (
