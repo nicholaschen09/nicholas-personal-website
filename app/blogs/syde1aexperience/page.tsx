@@ -468,34 +468,27 @@ export default function BlogPost() {
                   <div className="space-y-4">
                     <div className="border border-gray-500 p-4 rounded-lg space-y-3">
                       <h4 className="font-semibold text-white">
-                        Professor: Dr. Emily Patel
+                        About the Course
                       </h4>
                       <p>
-                        Dr. Patel was a brilliant mathematician with a gift for
-                        making abstract concepts concrete. She had previously
-                        worked in aerospace engineering before becoming a
-                        professor, so she could connect mathematical theory to
-                        real engineering applications. Her enthusiasm for the
-                        material was contagious, and she was always available
-                        during office hours to help students who were
-                        struggling.
-                      </p>
-
-                      <h4 className="font-semibold text-white">
-                        Teaching Style:
-                      </h4>
-                      <p>
-                        The course had two 1.5-hour lectures and one 1-hour
-                        tutorial each week. Dr. Patel used a combination of
-                        slides and board work, often using visual
-                        representations and analogies to help us understand
-                        abstract concepts. She would frequently pause to ask
-                        questions and make sure everyone was following along.
+                        This course was similar to our calculus course, but
+                        there was a bit of proofs mixed in and some digital
+                        computation and linear algebra. The course was kind of
+                        similar to the questions you would do on the waterloo
+                        euclid math contest. Our professor was a bit too smart
+                        for us. We had Nehaniv and every lecture with him was a
+                        whirlwind of information. He spoke extremely fast with
+                        no slideshow and notes that he would write on the board
+                        that were not readable. The content was pretty difficult
+                        because most of the students including me haven't seen
+                        this type of math before. The course had two 2.5-hour
+                        lectures at 8:30am and one 1-hour tutorial each week.
                         The tutorials focused on problem-solving and were led by
-                        graduate TAs who were very knowledgeable and helpful.
+                        graduate TAs who were very knowledgeable and sometimes
+                        helpful.
                       </p>
 
-                      <h4 className="font-semibold text-white">Assessments:</h4>
+                      <h4 className="font-semibold text-white">Assessments</h4>
                       <ul className="list-disc pl-5 space-y-1">
                         <li>Weekly problem sets (25%)</li>
                         <li>Two midterm exams (35%)</li>
@@ -503,7 +496,7 @@ export default function BlogPost() {
                       </ul>
 
                       <h4 className="font-semibold text-white">
-                        My Experience:
+                        My Experience
                       </h4>
                       <p>
                         This course covered a wide range of mathematical topics,
@@ -534,6 +527,27 @@ export default function BlogPost() {
                         gave us practical tools we could apply in other courses
                         and projects.
                       </p>
+                      <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
+                        <Image
+                          src="/statics.WEBP"
+                          alt="SYDE"
+                          fill
+                          className="object-cover object-bottom"
+                        />
+                      </div>
+                      <p className="text-sm text-gray-500 mt-4 text-center italic">
+                        my first 100 percent in university on a test/quiz/exam
+                      </p>
+                      <div className="mt-4">
+                        <a
+                          href="https://uwflow.com/course/syde113"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-pink-500 hover:underline mt-4 font-bold"
+                        >
+                          SYDE 113
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </AccordionContent>
