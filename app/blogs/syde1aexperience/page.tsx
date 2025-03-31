@@ -505,29 +505,25 @@ export default function BlogPost() {
                         which made it both challenging and interesting. Linear
                         algebra was entirely new to me, and I found the concept
                         of vector spaces and transformations particularly
-                        difficult to grasp at first. The visualization tools Dr.
-                        Patel provided were incredibly helpful - seeing how
-                        matrices transform shapes in space made the abstract
-                        concepts much more concrete.
+                        difficult to grasp at first.
                       </p>
 
                       <p>
-                        The differential equations portion of the course was
-                        fascinating because we could see how these equations
-                        model real-world systems like spring-mass systems,
-                        electrical circuits, and population growth. Working
-                        through these applications helped me understand why
-                        these mathematical tools are so important for engineers.
+                        The computational and engineering math was pretty useful
+                        when working through problem sets and quizzes because it
+                        helped me understand why these mathematical tools are so
+                        important for engineers and how they are applied to real
+                        world scenarios.
                       </p>
 
                       <p>
                         One of the most valuable aspects of this course was
                         learning MATLAB for numerical computations. We used it
-                        to solve systems of equations, visualize vector fields,
-                        and simulate differential equations. This computational
-                        approach complemented the theoretical understanding and
-                        gave us practical tools we could apply in other courses
-                        and projects.
+                        to solve systems of equations, visualize graphs, and
+                        simulate different scenarios/outcomes. This
+                        computational approach complemented the theoretical
+                        understanding and gave us practical tools we could apply
+                        in other courses and projects.
                       </p>
                       <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
                         <Image
@@ -538,7 +534,8 @@ export default function BlogPost() {
                         />
                       </div>
                       <p className="text-sm text-gray-500 mt-4 text-center italic">
-                        my cheatsheet for the first quiz we had in this course (I used up all the space)
+                        my cheatsheet for the first quiz we had in this course
+                        (I used up all the space)
                       </p>
                       <div className="mt-4">
                         <a
