@@ -1067,7 +1067,7 @@ export default function BlogPost() {
         <div className="space-y-8">
           {/* Blog Post 3 */}
           <Card className="bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
-            <div className="relative h-38 md:h-40">
+            <div className="relative h-32 md:h-36">
               <Image
                 src="/ownr.png"
                 alt="Software Engineering Intern at Ownr"
