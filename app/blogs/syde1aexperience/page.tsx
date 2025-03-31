@@ -377,22 +377,20 @@ export default function BlogPost() {
                         About the Course
                       </h4>
                       <p>
-                        Dr. Williams was a structural engineer with decades of
-                        experience designing bridges and buildings. His
-                        practical knowledge made the theoretical concepts much
-                        more tangible. He would often bring in physical models
-                        and demonstrations to help us visualize the forces at
-                        work, which was incredibly helpful for understanding
-                        abstract concepts. The course had three 1-hour lectures
-                        per week and a 2-hour tutorial. Dr. Williams used a
-                        combination of slides and board work, often drawing
-                        free-body diagrams by hand to show the process of
-                        analyzing forces. The tutorials were problem-solving
-                        sessions where we worked through more complex examples
-                        with TA guidance. What made this course special was the
-                        physical demonstrations - Dr. Williams would bring in
-                        trusses, beams, and other structures to show us
-                        real-world applications.
+                        Professor Willet was the one who taught the BMEs and the
+                        SYDEs this term. His practical knowledge made the
+                        theoretical concepts much more tangible. He would often
+                        demonstrate his examples to help us visualize the forces
+                        at work, which was incredibly helpful for understanding
+                        abstract concepts and very funny. The course had many
+                        1-hour lectures per week and a tutorial per week. The
+                        professor used a combination of slides and board work,
+                        often drawing free-body diagrams by hand to show the
+                        process of analyzing forces. The tutorials were
+                        problem-solving sessions where we had a question to
+                        solve within the time limit and were allowed to work
+                        together that would be marked by the TAs and counted for
+                        your final grade at the end of the term.
                       </p>
 
                       <h4 className="font-semibold text-white">Assessments</h4>
