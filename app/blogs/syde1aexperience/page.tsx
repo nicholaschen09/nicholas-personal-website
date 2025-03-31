@@ -1067,7 +1067,7 @@ export default function BlogPost() {
         <div className="space-y-8">
           {/* Blog Post 3 */}
           <Card className="bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
-            <div className="relative h-42 md:h-48">
+            <div className="relative h-38 md:h-40">
               <Image
                 src="/ownr.png"
                 alt="Software Engineering Intern at Ownr"
@@ -1092,26 +1092,6 @@ export default function BlogPost() {
                 development and the importance of teamwork in a professional
                 setting.
               </p>
-              <div className="flex flex-wrap gap-2 pt-2">
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
-                >
-                  Communication
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
-                >
-                  Software Engineering
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="bg-transparent text-white border-gray-500 font-medium"
-                >
-                  Javascript
-                </Badge>
-              </div>
             </CardContent>
             <CardFooter className="p-4 pt-0">
               <Link
