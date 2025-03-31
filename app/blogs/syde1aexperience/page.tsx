@@ -490,9 +490,11 @@ export default function BlogPost() {
 
                       <h4 className="font-semibold text-white">Assessments</h4>
                       <ul className="list-disc pl-5 space-y-1">
-                        <li>Weekly problem sets (25%)</li>
-                        <li>Two midterm exams (35%)</li>
-                        <li>Final exam (40%)</li>
+                        <li>3 Quizzes</li>
+                        <li>3 Tutorial Assignments</li>
+                        <li>2 Matlab Assignments</li>
+                        <li>Bonus Assignments</li>
+                        <li>Final exam </li>
                       </ul>
 
                       <h4 className="font-semibold text-white">
@@ -529,14 +531,14 @@ export default function BlogPost() {
                       </p>
                       <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
                         <Image
-                          src="/statics.WEBP"
+                          src="/113.jpg"
                           alt="SYDE"
                           fill
                           className="object-cover object-bottom"
                         />
                       </div>
                       <p className="text-sm text-gray-500 mt-4 text-center italic">
-                        my first 100 percent in university on a test/quiz/exam
+                        my cheatsheet for the first quiz we had in this course (I used up all the space)
                       </p>
                       <div className="mt-4">
                         <a
