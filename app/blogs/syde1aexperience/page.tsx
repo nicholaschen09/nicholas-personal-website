@@ -1069,7 +1069,7 @@ export default function BlogPost() {
           <Card className="bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
             <div className="relative h-42 md:h-48">
               <Image
-                src="/office.png"
+                src="/ownr.png"
                 alt="Software Engineering Intern at Ownr"
                 fill
                 className="object-cover"
