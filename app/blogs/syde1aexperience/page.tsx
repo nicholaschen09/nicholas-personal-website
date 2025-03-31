@@ -288,47 +288,42 @@ export default function BlogPost() {
                         wish her lectures weren't at 8:30am when no one would
                         wake up. I'm pretty sure no one went to her lectures
                         after midterms. This course was pretty fun if you enjoy
-                        coding though. The course consisted of two 1.5-hour
-                        lectures and one 3-hour lab session each week. Lectures
-                        were a mix of theory and live coding demonstrations,
-                        which was incredibly helpful for seeing how to apply
-                        concepts in practice. Dr. Chen would often make
-                        intentional mistakes during his live coding to show us
-                        common errors and how to debug them. The lab sessions
-                        were hands-on programming time with TAs available to
-                        help, which was invaluable for getting immediate
-                        feedback on our code.
+                        coding though. The course consisted of two lectures and
+                        labs each week where we were tasked to continue
+                        pre-built projects the professor gave us. The lab
+                        sessions were hands-on programming time with TAs
+                        available to help, which was invaluable for getting
+                        immediate feedback on our code.
                       </p>
 
                       <h4 className="font-semibold text-white">Assessments</h4>
                       <ul className="list-disc pl-5 space-y-1">
-                        <li>Weekly programming assignments (30%)</li>
-                        <li>Two programming projects (30%)</li>
-                        <li>Midterm exam (15%)</li>
-                        <li>Final exam (25%)</li>
+                        <li>Weekly programming assignments/labs</li>
+                        <li>3 programming projects </li>
+                        <li>Weekly online quizzes </li>
+                        <li>Midterm exam </li>
+                        <li>Final exam </li>
                       </ul>
 
                       <h4 className="font-semibold text-white">
                         My Experience
                       </h4>
                       <p>
-                        This was my favorite course in 1A! I had some
-                        programming experience from high school, but C++ was new
-                        to me. The learning curve was steep at first, especially
-                        with memory management and pointers, but the hands-on
-                        approach of the course made it click for me after a few
-                        weeks.
+                        This was my favorite course in 1A. I had some
+                        programming experience from high school, but we learned
+                        a lot more here. We learned about memory management and
+                        pointers as well as a lot of new syntax that I haven't
+                        seen before, but the hands-on approach of the course
+                        made it click for me after a few weeks.
                       </p>
 
                       <p>
-                        The projects were challenging but incredibly rewarding.
-                        Our first project was building a simple text-based game,
-                        and the second was creating a data analysis tool for
-                        engineering measurements. I spent countless late nights
-                        in the lab with classmates debugging code and
-                        celebrating when we finally got things working. These
-                        collaborative experiences were some of my best memories
-                        from the term.
+                        The projects turned out to be pretty straightforward and
+                        incredibly rewarding. Our first project was building a
+                        simple soccer game, and the second was creating a data
+                        management tool. The last project was a library system.
+                        These collaborative experiences were some of my best
+                        memories from the term.
                       </p>
 
                       <p>
@@ -338,6 +333,27 @@ export default function BlogPost() {
                         into smaller, manageable pieces is a skill that has
                         helped me in every other course.
                       </p>
+                      <div className="my-8 relative aspect-[16/13] w-full overflow-hidden rounded-lg">
+                        <Image
+                          src="/syde121.png"
+                          alt="SYDE"
+                          fill
+                          className="object-cover object-center"
+                        />
+                      </div>
+                      <p className="text-sm text-gray-500 mt-4 text-center italic">
+                        our final cs project that I worked on with my partner
+                      </p>
+                      <div className="mt-4">
+                        <a
+                          href="https://uwflow.com/course/syde121"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-pink-500 hover:underline mt-4 font-bold"
+                        >
+                          SYDE 121
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </AccordionContent>
@@ -358,7 +374,7 @@ export default function BlogPost() {
                   <div className="space-y-4">
                     <div className="border border-gray-500 p-4 rounded-lg space-y-3">
                       <h4 className="font-semibold text-white">
-                        Professor: Dr. Robert Williams
+                        About the Course
                       </h4>
                       <p>
                         Dr. Williams was a structural engineer with decades of
