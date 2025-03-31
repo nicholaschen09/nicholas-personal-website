@@ -284,14 +284,14 @@ export default function BlogPost() {
                         This course was generally just a introduction to
                         programming in C++ and if you already took computer
                         science in highschool, the course was pretty chill. Our
-                        professor was pretty good and she taught well. I just
-                        wish her lectures weren't at 8:30am when no one would
-                        wake up. I'm pretty sure no one went to her lectures
-                        after midterms. This course was pretty fun if you enjoy
-                        coding though. The course consisted of two lectures and
-                        labs each week where we were tasked to continue
-                        pre-built projects the professor gave us. The lab
-                        sessions were hands-on programming time with TAs
+                        professor (Mehrnaz Fani) was pretty good and she taught
+                        well. I just wish her lectures weren't at 8:30am when no
+                        one would wake up. I'm pretty sure no one went to her
+                        lectures after midterms. This course was pretty fun if
+                        you enjoy coding though. The course consisted of two
+                        lectures and labs each week where we were tasked to
+                        continue pre-built projects the professor gave us. The
+                        lab sessions were hands-on programming time with TAs
                         available to help, which was invaluable for getting
                         immediate feedback on our code.
                       </p>
@@ -383,33 +383,28 @@ export default function BlogPost() {
                         more tangible. He would often bring in physical models
                         and demonstrations to help us visualize the forces at
                         work, which was incredibly helpful for understanding
-                        abstract concepts.
+                        abstract concepts. The course had three 1-hour lectures
+                        per week and a 2-hour tutorial. Dr. Williams used a
+                        combination of slides and board work, often drawing
+                        free-body diagrams by hand to show the process of
+                        analyzing forces. The tutorials were problem-solving
+                        sessions where we worked through more complex examples
+                        with TA guidance. What made this course special was the
+                        physical demonstrations - Dr. Williams would bring in
+                        trusses, beams, and other structures to show us
+                        real-world applications.
                       </p>
 
-                      <h4 className="font-semibold text-white">
-                        Teaching Style:
-                      </h4>
-                      <p>
-                        The course had three 1-hour lectures per week and a
-                        2-hour tutorial. Dr. Williams used a combination of
-                        slides and board work, often drawing free-body diagrams
-                        by hand to show the process of analyzing forces. The
-                        tutorials were problem-solving sessions where we worked
-                        through more complex examples with TA guidance. What
-                        made this course special was the physical demonstrations
-                        - Dr. Williams would bring in trusses, beams, and other
-                        structures to show us real-world applications.
-                      </p>
-
-                      <h4 className="font-semibold text-white">Assessments:</h4>
+                      <h4 className="font-semibold text-white">Assessments</h4>
                       <ul className="list-disc pl-5 space-y-1">
-                        <li>Bi-weekly problem sets (20%)</li>
-                        <li>Two midterm exams (40%)</li>
-                        <li>Final exam (40%)</li>
+                        <li>4 Tests</li>
+                        <li>Weekly Tutorials</li>
+                        <li>Midterm Exam</li>
+                        <li>Final exam</li>
                       </ul>
 
                       <h4 className="font-semibold text-white">
-                        My Experience:
+                        My Experience
                       </h4>
                       <p>
                         Statics was conceptually challenging for me at first.
