@@ -1061,7 +1061,7 @@ export default function BlogPost() {
       </article>
       {/* More Posts Section */}
       <section className="max-w-4xl w-full mt-16 pt-8 border-t border-gray-700">
-        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
           More Posts
         </h2>
         <div className="space-y-8">
