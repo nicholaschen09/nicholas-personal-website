@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
 
-// Mock blog data - in a real app, this would come from a CMS or database
 const blogPosts = [
   {
     id: '1',
