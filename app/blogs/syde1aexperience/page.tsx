@@ -431,6 +431,27 @@ export default function BlogPost() {
                         - it showed the real importance of understanding these
                         principles thoroughly.
                       </p>
+                      <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
+                        <Image
+                          src="/statics.WEBP"
+                          alt="SYDE"
+                          fill
+                          className="object-cover object-bottom"
+                        />
+                      </div>
+                      <p className="text-sm text-gray-500 mt-4 text-center italic">
+                        my first 100 percent in university on a test/quiz/exam
+                      </p>
+                      <div className="mt-4">
+                        <a
+                          href="https://uwflow.com/course/syde181"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-pink-500 hover:underline mt-4 font-bold"
+                        >
+                          SYDE 181
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </AccordionContent>
