@@ -379,18 +379,20 @@ export default function BlogPost() {
                       <p>
                         Professor Willet was the one who taught the BMEs and the
                         SYDEs this term. His practical knowledge made the
-                        theoretical concepts much more tangible. He would often
-                        demonstrate his examples to help us visualize the forces
-                        at work, which was incredibly helpful for understanding
-                        abstract concepts and very funny. The course had many
-                        1-hour lectures per week and a tutorial per week. The
-                        professor used a combination of slides and board work,
-                        often drawing free-body diagrams by hand to show the
-                        process of analyzing forces. The tutorials were
-                        problem-solving sessions where we had a question to
-                        solve within the time limit and were allowed to work
-                        together that would be marked by the TAs and counted for
-                        your final grade at the end of the term.
+                        theoretical concepts much more tangible. Statics is a
+                        branch of physics where the sum of all the forces is
+                        equal to zero. He would often demonstrate his examples
+                        to help us visualize the forces at work, which was
+                        incredibly helpful for understanding abstract concepts
+                        and very funny. The course had many 1-hour lectures per
+                        week and a tutorial per week. The professor used a
+                        combination of slides and board work, often drawing
+                        free-body diagrams by hand to show the process of
+                        analyzing forces. The tutorials were problem-solving
+                        sessions where we had a question to solve within the
+                        time limit and were allowed to work together that would
+                        be marked by the TAs and counted for your final grade at
+                        the end of the term.
                       </p>
 
                       <h4 className="font-semibold text-white">Assessments</h4>
@@ -408,28 +410,22 @@ export default function BlogPost() {
                         Statics was conceptually challenging for me at first.
                         The idea of analyzing forces in 3D space took some time
                         to grasp, but once it clicked, I found the
-                        problem-solving process almost like a puzzle. The course
-                        required a lot of practice - I found myself redoing
-                        problems multiple times until I fully understood the
-                        approach.
+                        problem-solving process almost like a puzzle of pattern
+                        recognition. The course required a lot of practice. I
+                        found myself redoing problems multiple times until I
+                        fully understood the approach.
                       </p>
 
                       <p>
-                        One of the most interesting parts was our bridge design
-                        mini-project, where we had to analyze the forces in a
-                        truss bridge and optimize the design for maximum
-                        strength with minimal materials. Seeing the practical
-                        application of the theory made the course much more
-                        engaging.
-                      </p>
-
-                      <p>
-                        Dr. Williams' real-world examples from his engineering
-                        career showed us how these concepts apply to actual
-                        structures. Learning about bridge failures due to
-                        improper force analysis was both sobering and motivating
-                        - it showed the real importance of understanding these
-                        principles thoroughly.
+                        We learned about 2D and 3D equilibrium, beams, trusses
+                        and centroids. The most challenging part of the course
+                        was the centroids and 3D equilibrium just because there
+                        were so many calculations and if you missed one or
+                        messed up one, your entire answer would be wrong. The
+                        marking scheme was also very strict and you got part
+                        marks for your explanation, answer and shown work.
+                        Overall, this course is pretty applicable to real-life
+                        and was genuinely interesting to me.
                       </p>
                       <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
                         <Image
