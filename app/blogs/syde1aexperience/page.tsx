@@ -797,7 +797,7 @@ export default function BlogPost() {
                   <div className="space-y-4">
                     <div className="border border-gray-500 p-4 rounded-lg space-y-3">
                       <h4 className="font-semibold text-white">
-                        Professor: Dr. Lisa Nguyen
+                        About the Course
                       </h4>
                       <p>
                         Dr. Nguyen had a fascinating background that combined
@@ -807,25 +807,18 @@ export default function BlogPost() {
                         for companies like Apple and Samsung. Her industry
                         experience brought a practical, real-world perspective
                         to the course that made the design process feel tangible
-                        rather than theoretical.
+                        rather than theoretical. This course was structured
+                        differently from our other courses, with one 2-hour
+                        lecture and one 3-hour studio session each week. The
+                        lectures introduced design principles, methodologies,
+                        and case studies, while the studio sessions were
+                        dedicated to hands-on design work in teams. Dr. Nguyen
+                        created an active learning environment where we were
+                        constantly applying concepts through activities,
+                        discussions, and mini-design challenges.
                       </p>
 
-                      <h4 className="font-semibold text-white">
-                        Teaching Style:
-                      </h4>
-                      <p>
-                        This course was structured differently from our other
-                        courses, with one 2-hour lecture and one 3-hour studio
-                        session each week. The lectures introduced design
-                        principles, methodologies, and case studies, while the
-                        studio sessions were dedicated to hands-on design work
-                        in teams. Dr. Nguyen created an active learning
-                        environment where we were constantly applying concepts
-                        through activities, discussions, and mini-design
-                        challenges.
-                      </p>
-
-                      <h4 className="font-semibold text-white">Assessments:</h4>
+                      <h4 className="font-semibold text-white">Assessments</h4>
                       <ul className="list-disc pl-5 space-y-1">
                         <li>Design journal (15%)</li>
                         <li>User research report (20%)</li>
@@ -835,7 +828,7 @@ export default function BlogPost() {
                       </ul>
 
                       <h4 className="font-semibold text-white">
-                        My Experience:
+                        My Experience
                       </h4>
                       <p>
                         SYDE 161 was the course that most embodied what makes
