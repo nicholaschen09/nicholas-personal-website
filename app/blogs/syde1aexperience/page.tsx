@@ -565,7 +565,7 @@ export default function BlogPost() {
                   <div className="space-y-4">
                     <div className="border border-gray-500 p-4 rounded-lg space-y-3">
                       <h4 className="font-semibold text-white">
-                        Professor: Prof. Jennifer Martinez
+                        About the Course
                       </h4>
                       <p>
                         Prof. Martinez had a background in both engineering and
@@ -576,12 +576,6 @@ export default function BlogPost() {
                         effective in real-world settings. She was approachable
                         and provided detailed feedback on all our assignments,
                         which was incredibly valuable for improving our writing.
-                      </p>
-
-                      <h4 className="font-semibold text-white">
-                        Teaching Style:
-                      </h4>
-                      <p>
                         The course had one 2-hour lecture and one 1-hour
                         workshop each week. Lectures covered communication
                         principles, document structure, presentation techniques,
@@ -593,17 +587,16 @@ export default function BlogPost() {
                         receiving feedback.
                       </p>
 
-                      <h4 className="font-semibold text-white">Assessments:</h4>
+                      <h4 className="font-semibold text-white">Assessments</h4>
                       <ul className="list-disc pl-5 space-y-1">
-                        <li>Technical memo (15%)</li>
-                        <li>Design proposal (20%)</li>
-                        <li>Technical presentation (20%)</li>
-                        <li>Engineering report (30%)</li>
-                        <li>Participation in workshops (15%)</li>
+                        <li>Weekly Assignments</li>
+                        <li>Ethics Quiz</li>
+                        <li>Technical presentation </li>
+                        <li>Weekly Tutorial Presentations </li>
                       </ul>
 
                       <h4 className="font-semibold text-white">
-                        My Experience:
+                        My Experience
                       </h4>
                       <p>
                         Many students underestimated this course, thinking it
@@ -640,6 +633,28 @@ export default function BlogPost() {
                         subject matter for our communications assignments, which
                         reinforced both sets of learning.
                       </p>
+                      <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
+                        <Image
+                          src="/101.png"
+                          alt="SYDE"
+                          fill
+                          className="object-cover object-center"
+                        />
+                      </div>
+                      <p className="text-sm text-gray-500 mt-4 text-center italic">
+                        the bear my group and I made for our final project (I
+                        used up all the space)
+                      </p>
+                      <div className="mt-4">
+                        <a
+                          href="https://uwflow.com/course/syde101"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-pink-500 hover:underline mt-4 font-bold"
+                        >
+                          SYDE 101
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </AccordionContent>
@@ -660,7 +675,7 @@ export default function BlogPost() {
                   <div className="space-y-4">
                     <div className="border border-gray-500 p-4 rounded-lg space-y-3">
                       <h4 className="font-semibold text-white">
-                        Professor: Prof. David Kim
+                        About the Course
                       </h4>
                       <p>
                         Prof. Kim had an interesting background that combined
@@ -669,33 +684,26 @@ export default function BlogPost() {
                         vehicle components before becoming a professor. His dual
                         expertise in both the technical and aesthetic aspects of
                         design gave him a unique perspective that made the
-                        course particularly valuable.
+                        course particularly valuable. This was primarily a
+                        lab-based course with one 1-hour lecture and one 3-hour
+                        lab session each week. The lectures introduced concepts
+                        and techniques, while the labs were hands-on sessions
+                        where we practiced these skills with immediate feedback.
+                        Prof. Kim would demonstrate techniques on a projected
+                        screen, then walk around the lab helping students
+                        individually as we worked.
                       </p>
 
-                      <h4 className="font-semibold text-white">
-                        Teaching Style:
-                      </h4>
-                      <p>
-                        This was primarily a lab-based course with one 1-hour
-                        lecture and one 3-hour lab session each week. The
-                        lectures introduced concepts and techniques, while the
-                        labs were hands-on sessions where we practiced these
-                        skills with immediate feedback. Prof. Kim would
-                        demonstrate techniques on a projected screen, then walk
-                        around the lab helping students individually as we
-                        worked.
-                      </p>
-
-                      <h4 className="font-semibold text-white">Assessments:</h4>
+                      <h4 className="font-semibold text-white">Assessments</h4>
                       <ul className="list-disc pl-5 space-y-1">
-                        <li>Hand sketching portfolio (20%)</li>
-                        <li>CAD modeling assignments (30%)</li>
-                        <li>Technical drawing package (25%)</li>
-                        <li>Final design project (25%)</li>
+                        <li>Hand sketching portfolio </li>
+                        <li>CAD modeling assignments </li>
+                        <li>Technical drawing package </li>
+                        <li>Final design project </li>
                       </ul>
 
                       <h4 className="font-semibold text-white">
-                        My Experience:
+                        My Experience
                       </h4>
                       <p>
                         This course was a perfect complement to the verbal
@@ -747,6 +755,28 @@ export default function BlogPost() {
                         in team projects, where clear visual communication is
                         essential for collaboration.
                       </p>
+                      <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
+                        <Image
+                          src="/101L.png"
+                          alt="SYDE"
+                          fill
+                          className="object-cover object-bottom"
+                        />
+                      </div>
+                      <p className="text-sm text-gray-500 mt-4 text-center italic">
+                        a SOLIDWORKS 3D model of a car that I made for one of
+                        our last projects (I got a 95%)
+                      </p>
+                      <div className="mt-4">
+                        <a
+                          href="https://uwflow.com/course/syde101L"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-pink-500 hover:underline mt-4 font-bold"
+                        >
+                          SYDE 101L
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </AccordionContent>
