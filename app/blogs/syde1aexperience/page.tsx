@@ -568,23 +568,24 @@ export default function BlogPost() {
                         About the Course
                       </h4>
                       <p>
-                        Prof. Martinez had a background in both engineering and
-                        professional communications, having worked as a
-                        technical writer for several major tech companies before
-                        joining academia. Her industry experience gave her
-                        insights into what makes technical communication
-                        effective in real-world settings. She was approachable
-                        and provided detailed feedback on all our assignments,
-                        which was incredibly valuable for improving our writing.
-                        The course had one 2-hour lecture and one 1-hour
-                        workshop each week. Lectures covered communication
-                        principles, document structure, presentation techniques,
-                        and professional writing standards. The workshops were
-                        interactive sessions where we practiced what we learned
-                        through peer reviews, group activities, and presentation
-                        rehearsals. Prof. Martinez created a supportive
-                        environment where we felt comfortable giving and
-                        receiving feedback.
+                        This course is similar to any English course you take in
+                        highschool except it is engineering based. had a
+                        background in both engineering and professional
+                        communications, having worked as a technical writer for
+                        several major tech companies before joining academia.
+                        Her industry experience gave her insights into what
+                        makes technical communication effective in real-world
+                        settings. She was approachable and provided detailed
+                        feedback on all our assignments, which was incredibly
+                        valuable for improving our writing. The course had one
+                        2-hour lecture and one 1-hour workshop each week.
+                        Lectures covered communication principles, document
+                        structure, presentation techniques, and professional
+                        writing standards. The workshops were interactive
+                        sessions where we practiced what we learned through peer
+                        reviews, group activities, and presentation rehearsals.
+                        Prof. Martinez created a supportive environment where we
+                        felt comfortable giving and receiving feedback.
                       </p>
 
                       <h4 className="font-semibold text-white">Assessments</h4>
