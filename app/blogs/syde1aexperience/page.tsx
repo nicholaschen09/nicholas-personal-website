@@ -691,7 +691,7 @@ export default function BlogPost() {
                       <h4 className="font-semibold text-white">Assessments</h4>
                       <ul className="list-disc pl-5 space-y-1">
                         <li>Hand sketching portfolio </li>
-                        <li>CAD modeling assignments </li>
+                        <li>SOLIDWORKS modeling assignments </li>
                         <li>Technical drawing package </li>
                         <li>Final design project </li>
                       </ul>
@@ -871,6 +871,28 @@ export default function BlogPost() {
                         to technical solutions - a perspective that has proven
                         valuable in all my subsequent courses and projects.
                       </p>
+                      <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
+                        <Image
+                          src="/101L.png"
+                          alt="SYDE"
+                          fill
+                          className="object-cover object-bottom"
+                        />
+                      </div>
+                      <p className="text-sm text-gray-500 mt-4 text-center italic">
+                        a SOLIDWORKS 3D model of a car that I made for one of
+                        our last projects (I got a 95%)
+                      </p>
+                      <div className="mt-4">
+                        <a
+                          href="https://uwflow.com/course/syde101L"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-pink-500 hover:underline mt-4 font-bold"
+                        >
+                          SYDE 101L
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </AccordionContent>
