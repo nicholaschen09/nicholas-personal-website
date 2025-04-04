@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
 
-// Mock blog data - in a real app, this would come from a CMS or database
 const blogPosts = [
   {
     id: '1',
@@ -39,7 +38,7 @@ const regularPosts = blogPosts;
 
 export default function BlogsPage() {
   return (
-    <div className="container mx-auto py-16 px-4 mb-50 md:px-0">
+    <div className="container mx-auto py-16 px-4 mb-50 md:px-0 max-w-6xl">
       <div className="mb-16">
         <h1 className="text-4xl font-bold mb-6 mt-20">Blogs</h1>
         <p className="text-lg text-zinc-400 max-w-3xl">
