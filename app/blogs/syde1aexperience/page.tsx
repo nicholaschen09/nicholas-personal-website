@@ -739,31 +739,24 @@ export default function BlogPost() {
                         About the Course
                       </h4>
                       <p>
-                        Dr. Nguyen had a fascinating background that combined
-                        engineering with human factors and design thinking.
-                        Before academia, she worked at IDEO, one of the world's
-                        leading design firms, where she helped develop products
-                        for companies like Apple and Samsung. Her industry
-                        experience brought a practical, real-world perspective
-                        to the course that made the design process feel tangible
-                        rather than theoretical. This course was structured
-                        differently from our other courses, with one 2-hour
-                        lecture and one 3-hour studio session each week. The
-                        lectures introduced design principles, methodologies,
-                        and case studies, while the studio sessions were
-                        dedicated to hands-on design work in teams. Dr. Nguyen
-                        created an active learning environment where we were
-                        constantly applying concepts through activities,
-                        discussions, and mini-design challenges.
+                        Professor Kerr had a fascinating background that
+                        combined engineering with human factors and design
+                        thinking. This course was structured differently from
+                        our other courses, with two 1-hour lecture and two
+                        2-hour studio session each week. The lectures introduced
+                        design principles, methodologies, and case studies,
+                        while the studio sessions were dedicated to hands-on
+                        design work in teams. Prof. Kerr created an active
+                        learning environment where we were constantly applying
+                        concepts through activities, discussions, and
+                        mini-design challenges.
                       </p>
 
                       <h4 className="font-semibold text-white">Assessments</h4>
                       <ul className="list-disc pl-5 space-y-1">
-                        <li>Design journal (15%)</li>
-                        <li>User research report (20%)</li>
-                        <li>Concept development portfolio (20%)</li>
-                        <li>Final design project and presentation (35%)</li>
-                        <li>Participation in studio activities (10%)</li>
+                        <li>Design journal</li>
+                        <li>Weekly Group Assignments </li>
+                        <li>Final Project</li>
                       </ul>
 
                       <h4 className="font-semibold text-white">
@@ -788,24 +781,14 @@ export default function BlogPost() {
                       </p>
 
                       <p>
-                        Working in teams of four, we tackled a semester-long
-                        design project focused on improving campus accessibility
-                        for students with disabilities. My team focused
-                        specifically on navigation challenges for visually
-                        impaired students. We went through the entire design
-                        process - from research and problem definition to
-                        ideation, prototyping, testing, and refinement.
-                      </p>
-
-                      <p>
                         The most valuable lesson from this course was learning
                         to embrace iteration and feedback. Our first prototypes
                         were far from perfect, but through user testing and
                         continuous refinement, our final solution (a combination
                         of tactile maps and a smartphone app with audio
-                        guidance) evolved into something genuinely useful. Dr.
-                        Nguyen emphasized that good design rarely happens in a
-                        single attempt - it's a process of learning and
+                        guidance) evolved into something genuinely useful. Prof.
+                        Kerr emphasized that good design rarely happens in a
+                        single attempt, it's usually a process of learning and
                         improving through multiple iterations.
                       </p>
 
@@ -813,136 +796,29 @@ export default function BlogPost() {
                         This course changed how I think about engineering
                         problems. I now approach challenges by first
                         understanding the human context and needs before jumping
-                        to technical solutions - a perspective that has proven
-                        valuable in all my subsequent courses and projects.
+                        to technical solutions.
                       </p>
                       <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
                         <Image
-                          src="/101L.png"
+                          src="/systemmap.jpg"
                           alt="SYDE"
                           fill
                           className="object-cover object-bottom"
                         />
                       </div>
                       <p className="text-sm text-gray-500 mt-4 text-center italic">
-                        a SOLIDWORKS 3D model of a car that I made for one of
-                        our last projects (I got a 95%)
+                        a systems map we made for a project
                       </p>
                       <div className="mt-4">
                         <a
-                          href="https://uwflow.com/course/syde101L"
+                          href="https://uwflow.com/course/syde161"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-pink-500 hover:underline mt-4 font-bold"
                         >
-                          SYDE 101L
+                          SYDE 161
                         </a>
                       </div>
-                    </div>
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="gene-119" className="accordion-item">
-                <AccordionTrigger className="accordion-trigger">
-                  <div className="flex items-center justify-between w-full">
-                    <div className="flex items-center">
-                      <span className="font-bold text-lg">GENE 119</span>
-                      <span className="ml-4 text-gray-400">
-                        Problems Seminar
-                      </span>
-                    </div>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="accordion-content">
-                  <div className="space-y-4">
-                    <div className="border border-gray-500 p-4 rounded-lg space-y-3">
-                      <h4 className="font-semibold text-white">
-                        Professor: Prof. James Wilson
-                      </h4>
-                      <p>
-                        Prof. Wilson was a mechanical engineering professor who
-                        also served as the first-year engineering advisor. His
-                        genuine concern for student well-being was evident in
-                        every session. Having taught this course for over a
-                        decade, he had seen firsthand the challenges that
-                        first-year students face and had developed effective
-                        strategies to help us navigate them.
-                      </p>
-
-                      <h4 className="font-semibold text-white">
-                        Teaching Style:
-                      </h4>
-                      <p>
-                        This course met once a week for a 2-hour seminar
-                        session. Unlike our other courses, GENE 119 was much
-                        more discussion-based and interactive. Prof. Wilson
-                        would introduce topics and facilitate conversations, but
-                        much of the learning came from peer discussions and
-                        shared experiences. The small class size (about 25
-                        students) created a comfortable environment where people
-                        felt safe sharing their challenges and asking questions.
-                      </p>
-
-                      <h4 className="font-semibold text-white">Assessments:</h4>
-                      <ul className="list-disc pl-5 space-y-1">
-                        <li>Reflection journals (30%)</li>
-                        <li>Academic planning assignment (20%)</li>
-                        <li>Resource utilization project (20%)</li>
-                        <li>Final reflection paper (20%)</li>
-                        <li>Participation in discussions (10%)</li>
-                      </ul>
-
-                      <h4 className="font-semibold text-white">
-                        My Experience:
-                      </h4>
-                      <p>
-                        Initially, many students (including myself)
-                        underestimated the importance of this course, viewing it
-                        as less critical than our technical courses. However, as
-                        the term progressed, I came to appreciate how valuable
-                        these sessions were for maintaining balance and
-                        perspective during a challenging first term.
-                      </p>
-
-                      <p>
-                        The course covered practical skills like effective
-                        note-taking, study strategies for different types of
-                        courses, time management techniques, and stress
-                        management practices. We also learned about campus
-                        resources like the writing center, counseling services,
-                        and academic advisors - resources I might not have
-                        discovered or utilized otherwise.
-                      </p>
-
-                      <p>
-                        One of the most valuable aspects of the course was the
-                        community it created. Hearing that other students were
-                        facing similar challenges made me feel less alone in my
-                        struggles. We shared strategies for managing workload,
-                        dealing with difficult concepts, and maintaining
-                        well-being amid academic pressures.
-                      </p>
-
-                      <p>
-                        The reflection journals encouraged us to think
-                        critically about our learning processes and personal
-                        growth. This practice of self-reflection helped me
-                        identify patterns in my study habits and make
-                        adjustments that improved my performance in other
-                        courses. For example, I realized I was spending too much
-                        time on detailed notes and not enough on practice
-                        problems, which led me to adjust my approach for
-                        midterms.
-                      </p>
-
-                      <p>
-                        Looking back, GENE 119 provided a crucial foundation for
-                        success not just in 1A, but throughout my engineering
-                        education. The skills and habits developed in this
-                        course have continued to serve me well in managing
-                        increasingly complex coursework and projects.
-                      </p>
                     </div>
                   </div>
                 </AccordionContent>
