@@ -224,18 +224,6 @@ export default function BlogPost() {
                         closest friends in this class and we would often study
                         together in the E7 study rooms.
                       </p>
-                      <div className="my-8 relative aspect-[16/13] w-full overflow-hidden rounded-lg">
-                        <Image
-                          src="/calc.png"
-                          alt="SYDE"
-                          fill
-                          className="object-cover object-center"
-                        />
-                      </div>
-                      <p className="text-sm text-gray-500 mt-4 text-center italic">
-                        I remember everyone just randomly decide to skip the
-                        last calc quiz LOL
-                      </p>
                       <div className="my-8 relative aspect-[15/16] w-full overflow-hidden rounded-lg">
                         <Image
                           src="/calculus.png"
@@ -429,7 +417,7 @@ export default function BlogPost() {
                       </p>
                       <div className="my-8 relative aspect-[16/10] w-full overflow-hidden rounded-lg">
                         <Image
-                          src="/statics.WEBP"
+                          src="/statics.jpg"
                           alt="SYDE"
                           fill
                           className="object-cover object-bottom"
@@ -571,14 +559,16 @@ export default function BlogPost() {
                         This course is similar to any English course you take in
                         highschool except it is engineering based. We were
                         taught by Professor Atkins. The course had one 2-hour
-                        lecture and one 1-hour workshop each week. Lectures
-                        covered communication principles, document structure,
-                        presentation techniques, and professional writing
-                        standards. The workshops were interactive sessions where
-                        we practiced what we learned through peer reviews, group
-                        activities, and presentation rehearsals. Prof. Martinez
-                        created a supportive environment where we felt
-                        comfortable giving and receiving feedback.
+                        lecture and one 1-hour tutorial each week where we would
+                        present an idea on something engineering related.
+                        Lectures covered communication principles, document
+                        structure, presentation techniques, and professional
+                        writing standards. I definitely learned alot during
+                        these interactive sessions where we practiced what we
+                        learned through peer reviews, group activities, and
+                        presentation rehearsals. It was actually pretty chill
+                        and everyone felt comfortable giving and receiving
+                        feedback.
                       </p>
 
                       <h4 className="font-semibold text-white">Assessments</h4>
@@ -593,33 +583,13 @@ export default function BlogPost() {
                         My Experience
                       </h4>
                       <p>
-                        Many students underestimated this course, thinking it
-                        would be easy compared to the technical courses, but it
-                        was surprisingly challenging and incredibly valuable.
-                        Learning to communicate complex technical ideas clearly
-                        is a skill that's essential for engineers but often
-                        overlooked.
+                        A lot of us estimated that this course would be easy
+                        compared to the technical courses and it was relatively
+                        easy, but it was surprisingly a lot of work and
+                        incredibly valuable. Learning to communicate complex
+                        technical ideas clearly was something that was crucial
+                        in engineering.
                       </p>
-
-                      <p>
-                        The most challenging assignment for me was the technical
-                        presentation. Public speaking had always made me
-                        nervous, but the structured approach we learned and the
-                        supportive feedback from classmates helped me improve
-                        significantly. By the end of the term, I felt much more
-                        confident presenting my ideas.
-                      </p>
-
-                      <p>
-                        The engineering report was a comprehensive project where
-                        we had to research a technical topic, analyze data, and
-                        present recommendations. I chose to write about
-                        renewable energy integration in urban environments. The
-                        process of researching, organizing, and clearly
-                        presenting complex information taught me skills I've
-                        used in every course since.
-                      </p>
-
                       <p>
                         What made this course particularly effective was how it
                         integrated with our other courses. We often used
@@ -636,8 +606,8 @@ export default function BlogPost() {
                         />
                       </div>
                       <p className="text-sm text-gray-500 mt-4 text-center italic">
-                        the bear my group and I made for our final project (I
-                        used up all the space)
+                        the bear my group and I made for our final project that
+                        we presented to the class at the end of the term
                       </p>
                       <div className="mt-4">
                         <a
@@ -672,20 +642,16 @@ export default function BlogPost() {
                         About the Course
                       </h4>
                       <p>
-                        Prof. Kim had an interesting background that combined
-                        mechanical engineering and industrial design. He had
-                        worked for several automotive companies designing
-                        vehicle components before becoming a professor. His dual
-                        expertise in both the technical and aesthetic aspects of
-                        design gave him a unique perspective that made the
-                        course particularly valuable. This was primarily a
-                        lab-based course with one 1-hour lecture and one 3-hour
-                        lab session each week. The lectures introduced concepts
-                        and techniques, while the labs were hands-on sessions
-                        where we practiced these skills with immediate feedback.
-                        Prof. Kim would demonstrate techniques on a projected
-                        screen, then walk around the lab helping students
-                        individually as we worked.
+                        The professor for this course, Prof. Hunter, taught us
+                        how to effectively communicate through visual means.
+                        This was primarily a lab-based course with two 1-hour
+                        lecture and one 2-hour lab session each week. The
+                        lectures introduced concepts and techniques, while the
+                        labs were hands-on sessions where we practiced these
+                        skills with immediate feedback. Prof. Hunter would
+                        demonstrate techniques on a projected screen, then walk
+                        around the lab helping students individually as we
+                        worked.
                       </p>
 
                       <h4 className="font-semibold text-white">Assessments</h4>
@@ -699,14 +665,6 @@ export default function BlogPost() {
                       <h4 className="font-semibold text-white">
                         My Experience
                       </h4>
-                      <p>
-                        This course was a perfect complement to the verbal
-                        communication skills we learned in SYDE 101. I
-                        discovered that visual communication is just as
-                        important for engineers - sometimes a well- crafted
-                        diagram or model can explain a concept better than
-                        paragraphs of text.
-                      </p>
 
                       <p>
                         The course started with hand sketching, which was
@@ -725,19 +683,6 @@ export default function BlogPost() {
                         seeing my designs come to life on screen was incredibly
                         satisfying. We progressed from modeling simple objects
                         to creating complex assemblies with moving parts.
-                      </p>
-
-                      <p>
-                        The final project brought everything together - we had
-                        to design a mechanical device, create detailed CAD
-                        models, produce technical drawings with proper
-                        dimensioning and tolerances, and present our design
-                        visually. I designed an adjustable laptop stand with
-                        cooling features, and the process of taking an
-                        adjustable laptop stand with cooling features, and the
-                        process of taking it from initial concept sketches to
-                        detailed technical drawings taught me the entire visual
-                        communication workflow that engineers use in industry.
                       </p>
 
                       <p>
