@@ -93,7 +93,7 @@ export default function FernandoProject() {
             <h2 className="text-2xl font-bold">The Solution</h2>
             <p className="text-gray-300">
               Fernando provides immediate physical feedback when your posture
-              deteriorates. The gentle slap on your back creates an unmistakable
+              deteriorates. The gentle slap on your hand creates an unmistakable
               reminder that helps reinforce good habits through consistent,
               timely correction.
             </p>
