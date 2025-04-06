@@ -51,12 +51,12 @@ export default function BlogPost() {
         </div>
 
         {/* Featured Image */}
-        <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden">
+        <div className="relative w-full aspect-[16/8] rounded-xl overflow-hidden">
           <Image
-            src="/ownr.png"
+            src="/software engineering.png"
             alt="Co-op Experience"
-            width={1200}
-            height={600}
+            width={1300}
+            height={900}
             className="object-cover"
           />
         </div>
