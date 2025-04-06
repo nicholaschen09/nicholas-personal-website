@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowLeft, Github, ExternalLink } from 'lucide-react';
+import { ArrowLeft, Github, ExternalLink, ArrowRight } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardFooter } from '@/components/ui/card';
 
 export default function FernandoProject() {
   return (
@@ -25,7 +25,7 @@ export default function FernandoProject() {
           </div>
 
           <p className="text-xl text-gray-300">
-            A posture-correcting robot that slaps you when you slouch
+            A posture-correcting robot that taps you when you slouch
           </p>
         </div>
 
@@ -43,25 +43,31 @@ export default function FernandoProject() {
 
         {/* Project Links */}
         <div className="flex flex-wrap gap-4">
-          <Button
-            variant="outline"
-            className="border border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors"
+          <a
+            href="https://youtu.be/EBsmGGOubCk?si=aTxg0qsva-svoK6d"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
-          </Button>
-          <Button
-            variant="outline"
-            className="border border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors"
+            <Button className="text-white bg-transparent hover:text-gray-400 transition-colors">
+              <ExternalLink className="mr-2 h-4 w-4" /> Demo
+            </Button>
+          </a>
+          <a
+            href="https://github.com/enxilium/posture-checker-robot"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Image
-              src="/github.png"
-              alt="GitHub Logo"
-              width={16}
-              height={16}
-              className="mr-2"
-            />
-            View Code
-          </Button>
+            <Button className="text-white bg-transparent hover:text-gray-400 transition-colors">
+              <Image
+                src="/github.png"
+                alt="GitHub Logo"
+                width={16}
+                height={16}
+                className="mr-2"
+              />
+              Code
+            </Button>
+          </a>
         </div>
         {/* Overview Section */}
         <section className="space-y-6">
@@ -70,7 +76,7 @@ export default function FernandoProject() {
             Fernando is a hardware robot designed to help you maintain proper
             posture while working at your desk. Using computer vision to detect
             your posture, Fernando physically corrects bad habits by gently
-            slapping your back when you slouch. Unlike apps that are easy to
+            tapping your hand when you slouch. Unlike apps that are easy to
             ignore, Fernando provides immediate physical feedback that's
             impossible to miss, helping you develop better posture habits over
             time.
@@ -93,9 +99,9 @@ export default function FernandoProject() {
             <h2 className="text-2xl font-bold">The Solution</h2>
             <p className="text-gray-300">
               Fernando provides immediate physical feedback when your posture
-              deteriorates. The gentle slap on your back creates an unmistakable
-              reminder that helps reinforce good habits through consistent,
-              timely correction.
+              deteriorates. The gentle tap from its mechanical arm creates an
+              unmistakable reminder that helps reinforce good habits through
+              consistent, timely correction.
             </p>
           </section>
         </div>
@@ -105,9 +111,9 @@ export default function FernandoProject() {
           <h2 className="text-3xl font-bold">Key Features</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="bg-transparent border border-gray-800">
-              <CardContent className="p-6 space-y-4">
-                <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center">
+            <Card className="bg-transparent border border-white">
+              <CardContent className="p-6 space-y-2">
+                <div className="">
                   <span className="text-white font-bold">CV</span>
                 </div>
                 <h3 className="text-xl font-bold">Computer Vision</h3>
@@ -119,23 +125,23 @@ export default function FernandoProject() {
               </CardContent>
             </Card>
 
-            <Card className="bg-transparent border border-gray-800">
-              <CardContent className="p-6 space-y-4">
-                <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center">
+            <Card className="bg-transparent border border-white">
+              <CardContent className="p-6 space-y-2">
+                <div className="">
                   <span className="text-white font-bold">Arm</span>
                 </div>
                 <h3 className="text-xl font-bold">Mechanical Arm</h3>
                 <p className="text-gray-400">
-                  3-DOF robotic arm with force-calibrated tapping mechanism,
+                  A robotic arm with force-calibrated tapping mechanism,
                   designed for comfort while providing effective tactile
                   feedback.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="bg-transparent border border-gray-800">
-              <CardContent className="p-6 space-y-4">
-                <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center">
+            <Card className="bg-transparent border border-white">
+              <CardContent className="p-6 space-y-2">
+                <div className="">
                   <span className="text-white font-bold">App</span>
                 </div>
                 <h3 className="text-xl font-bold">Companion App</h3>
@@ -153,12 +159,15 @@ export default function FernandoProject() {
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">How It Works</h2>
 
-          <div className="relative w-full aspect-video rounded-xl overflow-hidden border border-gray-800 mb-6">
+          <div
+            className="relative w-full rounded-xl overflow-hidden border border-gray-800 mb-6"
+            style={{ height: '340px' }}
+          >
             <Image
-              src="/placeholder.svg?height=600&width=1200"
+              src="/fernando1.png"
               alt="Fernando system diagram"
               width={1200}
-              height={600}
+              height={400}
               className="object-cover"
             />
           </div>
@@ -248,25 +257,25 @@ export default function FernandoProject() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
               <div className="grid grid-cols-2 gap-4">
-                <div className="border border-gray-800 p-6 rounded-lg text-center">
+                <div className="border border-white p-6 rounded-lg text-center">
                   <span className="text-4xl font-bold text-white">92%</span>
                   <p className="text-gray-400 mt-2">
                     Improved posture awareness
                   </p>
                 </div>
-                <div className="border border-gray-800 p-6 rounded-lg text-center">
+                <div className="border border-white p-6 rounded-lg text-center">
                   <span className="text-4xl font-bold text-white">78%</span>
                   <p className="text-gray-400 mt-2">
                     Measurable posture improvement
                   </p>
                 </div>
-                <div className="border border-gray-800 p-6 rounded-lg text-center">
+                <div className="border border-white p-6 rounded-lg text-center">
                   <span className="text-4xl font-bold text-white">85%</span>
                   <p className="text-gray-400 mt-2">
                     Preferred over app notifications
                   </p>
                 </div>
-                <div className="border border-gray-800 p-6 rounded-lg text-center">
+                <div className="border border-white p-6 rounded-lg text-center">
                   <span className="text-4xl font-bold text-white">88%</span>
                   <p className="text-gray-400 mt-2">
                     Rated the feedback as comfortable
@@ -281,45 +290,10 @@ export default function FernandoProject() {
 
             <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-gray-800">
               <Image
-                src="/placeholder.svg?height=500&width=500"
+                src="/fernando2.png"
                 alt="User testing Fernando"
                 width={500}
                 height={500}
-                className="object-cover"
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* Gallery */}
-        <section className="space-y-6">
-          <h2 className="text-3xl font-bold">Gallery</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="relative aspect-square rounded-lg overflow-hidden border border-gray-800">
-              <Image
-                src="/placeholder.svg?height=400&width=400"
-                alt="Fernando prototype"
-                width={400}
-                height={400}
-                className="object-cover"
-              />
-            </div>
-            <div className="relative aspect-square rounded-lg overflow-hidden border border-gray-800">
-              <Image
-                src="/placeholder.svg?height=400&width=400"
-                alt="Fernando internal components"
-                width={400}
-                height={400}
-                className="object-cover"
-              />
-            </div>
-            <div className="relative aspect-square rounded-lg overflow-hidden border border-gray-800">
-              <Image
-                src="/placeholder.svg?height=400&width=400"
-                alt="Fernando in use"
-                width={400}
-                height={400}
                 className="object-cover"
               />
             </div>
@@ -331,81 +305,101 @@ export default function FernandoProject() {
           <div className="flex items-center justify-between">
             <h2 className="text-3xl font-bold text-white">More Projects</h2>
             <Link href="/projects" className="text-gray-400 hover:text-white">
-              View all →
+              View all Projects →
             </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card className="bg-transparent border border-gray-800 overflow-hidden">
+            {/* Project 3 */}
+            <Card className="bg-transparent border border-gray-700 overflow-hidden">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/pandas.png"
+                  alt="pandas"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardContent className="p-4 space-y-3">
+                <h3 className="text-xl font-bold text-white">
+                  TikTok View Predictor
+                </h3>
+                <p className="text-gray-300 text-sm">
+                  A machine learning-powered model that predicts the number of
+                  views a TikTok video will receive using linear regression.
+                </p>
+              </CardContent>
+              <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">
+                <div className="flex gap-4">
+                  <Link
+                    href="https://github.com/nicholaschen09/tiktok-view-predictor"
+                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                  >
+                    <div className="w-4 h-4 flex items-center justify-center mr-2">
+                      <img src="/github.png" alt="GitHub" className="w-4 h-4" />
+                    </div>
+                    Code
+                  </Link>
+                  <Link
+                    href="#"
+                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                  >
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Demo
+                  </Link>
+                </div>
+                <Link
+                  href="/projects/tiktokviewpredictor"
+                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                >
+                  Read more <ArrowRight className="ml-1 w-4 h-4" />
+                </Link>
+              </CardFooter>
+            </Card>
+
+            <Card className="bg-transparent border border-gray-700 overflow-hidden">
+              <div className="relative h-48">
+                <Image
+                  src="/basketbin.jpg"
                   alt="AI Content Generator"
                   fill
                   className="object-cover"
                 />
               </div>
-              <CardContent className="p-6 space-y-4">
-                <h3 className="text-xl font-bold text-white">
-                  AI Content Generator
-                </h3>
-                <p className="text-gray-400">
-                  An application that leverages AI to generate blog posts,
-                  social media content, and marketing copy.
+              <CardContent className="p-4 space-y-3">
+                <h3 className="text-xl font-bold text-white">BasketBin</h3>
+                <p className="text-gray-300 text-sm">
+                  An automated garbage sorter that leverages computer vision to
+                  sort garbage thrown in depending on if it is recylcable or
+                  not.
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  <Badge className="border border-white text-white">
-                    Next.js
-                  </Badge>
-                  <Badge className="border border-white text-white">
-                    OpenAI
-                  </Badge>
-                  <Badge className="border border-white text-white">
-                    Tailwind
-                  </Badge>
+              </CardContent>
+              <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">
+                <div className="flex gap-4">
+                  <Link
+                    href="https://github.com/DerrickHa/ht6"
+                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                  >
+                    <div className="w-4 h-4 flex items-center justify-center mr-2">
+                      <img src="/github.png" alt="GitHub" className="w-4 h-4" />
+                    </div>
+                    Code
+                  </Link>
+                  <Link
+                    href="https://youtu.be/6YRTP7_Oet8?si=nBcCJkoi8awZF-kz"
+                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                  >
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Demo
+                  </Link>
                 </div>
                 <Link
-                  href="/projects/ai-content-generator"
-                  className="text-gray-400 hover:text-white inline-flex items-center"
+                  href="/projects/basketbin"
+                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
                 >
-                  View project →
+                  Read more <ArrowRight className="ml-1 w-4 h-4" />
                 </Link>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-transparent border border-gray-800 overflow-hidden">
-              <div className="relative h-48">
-                <Image
-                  src="/placeholder.svg?height=400&width=600"
-                  alt="Smart Home Dashboard"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <CardContent className="p-6 space-y-4">
-                <h3 className="text-xl font-bold text-white">
-                  Smart Home Dashboard
-                </h3>
-                <p className="text-gray-400">
-                  An IoT dashboard for monitoring and controlling smart home
-                  devices with automation capabilities.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <Badge className="border border-white text-white">
-                    Vue.js
-                  </Badge>
-                  <Badge className="border border-white text-white">MQTT</Badge>
-                  <Badge className="border border-white text-white">
-                    Chart.js
-                  </Badge>
-                </div>
-                <Link
-                  href="/projects/smart-home-dashboard"
-                  className="text-gray-400 hover:text-white inline-flex items-center"
-                >
-                  View project →
-                </Link>
-              </CardContent>
+              </CardFooter>
             </Card>
           </div>
         </section>
