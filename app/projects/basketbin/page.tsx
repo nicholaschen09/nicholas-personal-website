@@ -118,108 +118,116 @@ export default function BasketBinProject() {
           </section>
         </div>
 
-        {/* Key Features */}
+        {/* Key Features - Vertical Column (Black & White) */}
         <section className="space-y-6">
-          <h2 className="text-3xl font-bold">Key Features</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="bg-transparent border border-gray-800">
-              <CardContent className="p-6 space-y-4">
-                <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center">
-                  <span className="text-white font-bold">CV</span>
-                </div>
-                <h3 className="text-xl font-bold">Computer Vision</h3>
-                <p className="text-gray-400">
+          <h2 className="text-3xl font-bold text-white">Key Features</h2>
+          <div className="grid grid-cols-1 gap-8">
+            <Card className="bg-black shadow-xl rounded-lg p-6 border border-white">
+              <CardContent className="flex flex-col items-center text-center space-y-4">
+                <h3 className="text-xl font-bold text-white">
+                  Computer Vision
+                </h3>
+                <p className="text-white">
                   Real-time posture detection using OpenCV and MediaPipe to
-                  track 33 key body points, with 94% accuracy in identifying
-                  poor posture.
+                  track key body points.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="bg-transparent border border-gray-800">
-              <CardContent className="p-6 space-y-4">
-                <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center">
-                  <span className="text-white font-bold">Arm</span>
-                </div>
-                <h3 className="text-xl font-bold">Mechanical Arm</h3>
-                <p className="text-gray-400">
-                  3-DOF robotic arm with force-calibrated tapping mechanism,
-                  designed for comfort while providing effective tactile
-                  feedback.
+            <Card className="bg-black shadow-xl rounded-lg p-6 border border-white">
+              <CardContent className="flex flex-col items-center text-center space-y-4">
+                <h3 className="text-xl font-bold text-white">Mechanical Arm</h3>
+                <p className="text-white">
+                  A 3-DOF robotic arm with a force-calibrated tapping mechanism
+                  designed for comfort.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="bg-transparent border border-gray-800">
-              <CardContent className="p-6 space-y-4">
-                <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center">
-                  <span className="text-white font-bold">App</span>
-                </div>
-                <h3 className="text-xl font-bold">Companion App</h3>
-                <p className="text-gray-400">
-                  Next.js web application for tracking posture history,
-                  customizing sensitivity, and providing personalized
-                  improvement recommendations.
+            <Card className="bg-black shadow-xl rounded-lg p-6 border border-white">
+              <CardContent className="flex flex-col items-center text-center space-y-4">
+                <h3 className="text-xl font-bold text-white">Companion App</h3>
+                <p className="text-white">
+                  A Next.js web app for tracking posture history, adjusting
+                  settings, and offering personalized recommendations.
                 </p>
               </CardContent>
             </Card>
           </div>
         </section>
-
         {/* How It Works */}
-        <section className="space-y-6">
-          <h2 className="text-3xl font-bold">How It Works</h2>
+        <section className="space-y-8">
+          <h2 className="text-3xl font-bold text-white">How It Works</h2>
 
-          <div className="relative w-full aspect-video rounded-xl overflow-hidden border border-gray-800 mb-6">
-            <Image
-              src="/placeholder.svg?height=600&width=1200"
-              alt="Fernando system diagram"
-              width={1200}
-              height={600}
-              className="object-cover"
-            />
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
-            <div className="space-y-2">
-              <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center mx-auto">
-                <span className="text-xl font-bold text-white">1</span>
+          <div className="flex flex-col md:flex-row md:items-start md:space-x-8">
+            {/* Steps on the Left */}
+            <div className="w-full md:w-1/2 flex flex-col space-y-8">
+              {/* Step 1 */}
+              <div className="flex items-center">
+                <div className="flex-shrink-0 h-16 w-16 rounded-full border border-white flex items-center justify-center mr-4">
+                  <span className="text-2xl font-bold text-white">1</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white">
+                    Detection
+                  </h3>
+                  <p className="text-gray-400 text-sm">
+                    Camera monitors your posture in real-time.
+                  </p>
+                </div>
               </div>
-              <h3 className="font-semibold text-white">Detection</h3>
-              <p className="text-gray-400 text-sm">
-                Camera monitors your posture in real-time
-              </p>
+
+              {/* Step 2 */}
+              <div className="flex items-center">
+                <div className="flex-shrink-0 h-16 w-16 rounded-full border border-white flex items-center justify-center mr-4">
+                  <span className="text-2xl font-bold text-white">2</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white">Analysis</h3>
+                  <p className="text-gray-400 text-sm">
+                    AI determines if your posture needs correction.
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="flex items-center">
+                <div className="flex-shrink-0 h-16 w-16 rounded-full border border-white flex items-center justify-center mr-4">
+                  <span className="text-2xl font-bold text-white">3</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white">
+                    Correction
+                  </h3>
+                  <p className="text-gray-400 text-sm">
+                    Mechanical arm delivers a gentle tap.
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 4 */}
+              <div className="flex items-center">
+                <div className="flex-shrink-0 h-16 w-16 rounded-full border border-white flex items-center justify-center mr-4">
+                  <span className="text-2xl font-bold text-white">4</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white">Learning</h3>
+                  <p className="text-gray-400 text-sm">
+                    System adapts to your habits over time.
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <div className="space-y-2">
-              <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center mx-auto">
-                <span className="text-xl font-bold text-white">2</span>
-              </div>
-              <h3 className="font-semibold text-white">Analysis</h3>
-              <p className="text-gray-400 text-sm">
-                AI determines if your posture needs correction
-              </p>
-            </div>
-
-            <div className="space-y-2">
-              <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center mx-auto">
-                <span className="text-xl font-bold text-white">3</span>
-              </div>
-              <h3 className="font-semibold text-white">Correction</h3>
-              <p className="text-gray-400 text-sm">
-                Mechanical arm delivers a gentle tap
-              </p>
-            </div>
-
-            <div className="space-y-2">
-              <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center mx-auto">
-                <span className="text-xl font-bold text-white">4</span>
-              </div>
-              <h3 className="font-semibold text-white">Learning</h3>
-              <p className="text-gray-400 text-sm">
-                System adapts to your habits over time
-              </p>
+            {/* Image on the Right */}
+            <div className="relative w-full md:w-1/2 h-96 rounded-xl overflow-hidden border border-gray-800">
+              <Image
+                src="/placeholder.svg?height=600&width=1200"
+                alt="Fernando system diagram"
+                width={1200}
+                height={600}
+                className="object-cover w-full h-full"
+              />
             </div>
           </div>
         </section>
@@ -255,91 +263,6 @@ export default function BasketBinProject() {
                 <li>WebSockets for real-time communication</li>
                 <li>Custom microservices architecture</li>
               </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Results */}
-        <section className="space-y-6">
-          <h2 className="text-3xl font-bold">Results</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="border border-gray-800 p-6 rounded-lg text-center">
-                  <span className="text-4xl font-bold text-white">92%</span>
-                  <p className="text-gray-400 mt-2">
-                    Improved posture awareness
-                  </p>
-                </div>
-                <div className="border border-gray-800 p-6 rounded-lg text-center">
-                  <span className="text-4xl font-bold text-white">78%</span>
-                  <p className="text-gray-400 mt-2">
-                    Measurable posture improvement
-                  </p>
-                </div>
-                <div className="border border-gray-800 p-6 rounded-lg text-center">
-                  <span className="text-4xl font-bold text-white">85%</span>
-                  <p className="text-gray-400 mt-2">
-                    Preferred over app notifications
-                  </p>
-                </div>
-                <div className="border border-gray-800 p-6 rounded-lg text-center">
-                  <span className="text-4xl font-bold text-white">88%</span>
-                  <p className="text-gray-400 mt-2">
-                    Rated the feedback as comfortable
-                  </p>
-                </div>
-              </div>
-              <p className="text-gray-300">
-                Based on a 4-week study with 25 participants using Fernando in
-                their daily work environment.
-              </p>
-            </div>
-
-            <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-gray-800">
-              <Image
-                src="/placeholder.svg?height=500&width=500"
-                alt="User testing Fernando"
-                width={500}
-                height={500}
-                className="object-cover"
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* Gallery */}
-        <section className="space-y-6">
-          <h2 className="text-3xl font-bold">Gallery</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="relative aspect-square rounded-lg overflow-hidden border border-gray-800">
-              <Image
-                src="/placeholder.svg?height=400&width=400"
-                alt="Fernando prototype"
-                width={400}
-                height={400}
-                className="object-cover"
-              />
-            </div>
-            <div className="relative aspect-square rounded-lg overflow-hidden border border-gray-800">
-              <Image
-                src="/placeholder.svg?height=400&width=400"
-                alt="Fernando internal components"
-                width={400}
-                height={400}
-                className="object-cover"
-              />
-            </div>
-            <div className="relative aspect-square rounded-lg overflow-hidden border border-gray-800">
-              <Image
-                src="/placeholder.svg?height=400&width=400"
-                alt="Fernando in use"
-                width={400}
-                height={400}
-                className="object-cover"
-              />
             </div>
           </div>
         </section>
