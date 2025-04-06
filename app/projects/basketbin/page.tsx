@@ -127,7 +127,7 @@ export default function BasketBinProject() {
 
         <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-gray-800">
           <Image
-            src="/h62.jpg"
+            src="/hack2.jpg"
             alt="Random Image 1"
             width={1100}
             height={600}
@@ -164,7 +164,7 @@ export default function BasketBinProject() {
 
         <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-gray-800">
           <Image
-            src="/h65.jpg"
+            src="/hack.jpg"
             alt="Random Image 1"
             width={1100}
             height={400}
