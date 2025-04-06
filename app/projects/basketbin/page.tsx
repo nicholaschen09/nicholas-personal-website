@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowLeft, Github, ExternalLink, ArrowRight } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
+import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 
@@ -26,21 +25,23 @@ export default function BasketBinProject() {
           </div>
 
           <p className="text-xl text-gray-300">
-            A posture-correcting robot that slaps you when you slouch
+            A fun and interactive waste sorting system to improve waste
+            management on campuses.
           </p>
         </div>
 
         {/* Featured Image */}
         <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden border border-gray-800">
           <Image
-            src="/fernando.png"
-            alt="Fernando Robot"
+            src="/basketbin.png"
+            alt="BasketBin Image"
             width={1200}
             height={800}
             className="object-cover"
             priority
           />
         </div>
+
         {/* Project Links */}
         <div className="flex flex-wrap gap-4">
           <Button
@@ -63,208 +64,119 @@ export default function BasketBinProject() {
             View Code
           </Button>
         </div>
+
         {/* Overview Section */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Overview</h2>
           <p className="text-gray-300 text-lg leading-relaxed">
-            Fernando is a hardware robot designed to help you maintain proper
-            posture while working at your desk. Using computer vision to detect
-            your posture, Fernando physically corrects bad habits by gently
-            slapping your back when you slouch. Unlike apps that are easy to
-            ignore, Fernando provides immediate physical feedback that's
-            impossible to miss, helping you develop better posture habits over
-            time.
+            BasketBin is a smart waste sorting system that encourages students
+            to correctly dispose of their waste in a fun and interactive way.
+            The system uses sensors and computer vision to detect if waste is
+            thrown into the correct bin, rewarding students with points for
+            correct disposal.
           </p>
         </section>
 
-        {/* Problem & Solution */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold">The Problem</h2>
-            <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-gray-800">
-              <Image
-                src="/placeholder.svg?height=500&width=500"
-                alt="Person with poor posture"
-                width={500}
-                height={500}
-                className="object-cover"
-              />
-            </div>
-            <p className="text-gray-300">
-              Poor posture during long hours at a desk leads to chronic back
-              pain, neck strain, and other health issues. Most existing
-              solutions rely on passive notifications that are easy to ignore,
-              resulting in continued poor habits.
-            </p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold">The Solution</h2>
-            <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-gray-800">
-              <Image
-                src="/placeholder.svg?height=500&width=500"
-                alt="Fernando correcting posture"
-                width={500}
-                height={500}
-                className="object-cover"
-              />
-            </div>
-            <p className="text-gray-300">
-              Fernando provides immediate physical feedback when your posture
-              deteriorates. The gentle slap on your back creates an unmistakable
-              reminder that helps reinforce good habits through consistent,
-              timely correction.
-            </p>
-          </section>
-        </div>
-
-        {/* Key Features - Vertical Column (Black & White) */}
+        {/* Key Features */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold text-white">Key Features</h2>
           <div className="grid grid-cols-1 gap-8">
             <Card className="bg-black shadow-xl rounded-lg p-6 border border-white">
               <CardContent className="flex flex-col items-center text-center space-y-4">
                 <h3 className="text-xl font-bold text-white">
-                  Computer Vision
+                  Waste Sorting with Feedback
                 </h3>
                 <p className="text-white">
-                  Real-time posture detection using OpenCV and MediaPipe to
-                  track key body points.
+                  Uses sensors to determine if waste is placed in the correct
+                  bin, providing immediate feedback to the user.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="bg-black shadow-xl rounded-lg p-6 border border-white">
               <CardContent className="flex flex-col items-center text-center space-y-4">
-                <h3 className="text-xl font-bold text-white">Mechanical Arm</h3>
+                <h3 className="text-xl font-bold text-white">
+                  Gamified Experience
+                </h3>
                 <p className="text-white">
-                  A 3-DOF robotic arm with a force-calibrated tapping mechanism
-                  designed for comfort.
+                  Users earn points for correctly disposing of waste, which can
+                  be redeemed for prizes across campus.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="bg-black shadow-xl rounded-lg p-6 border border-white">
               <CardContent className="flex flex-col items-center text-center space-y-4">
-                <h3 className="text-xl font-bold text-white">Companion App</h3>
+                <h3 className="text-xl font-bold text-white">
+                  Educational Tool
+                </h3>
                 <p className="text-white">
-                  A Next.js web app for tracking posture history, adjusting
-                  settings, and offering personalized recommendations.
+                  Helps educate students about recycling practices and
+                  encourages environmentally responsible behavior.
                 </p>
               </CardContent>
             </Card>
           </div>
         </section>
-        {/* How It Works */}
-        <section className="space-y-8">
-          <h2 className="text-3xl font-bold text-white">How It Works</h2>
 
-          <div className="flex flex-col md:flex-row md:items-start md:space-x-8">
-            {/* Steps on the Left */}
-            <div className="w-full md:w-1/2 flex flex-col space-y-8">
-              {/* Step 1 */}
-              <div className="flex items-center">
-                <div className="flex-shrink-0 h-16 w-16 rounded-full border border-white flex items-center justify-center mr-4">
-                  <span className="text-2xl font-bold text-white">1</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-white">
-                    Detection
-                  </h3>
-                  <p className="text-gray-400 text-sm">
-                    Camera monitors your posture in real-time.
-                  </p>
-                </div>
-              </div>
-
-              {/* Step 2 */}
-              <div className="flex items-center">
-                <div className="flex-shrink-0 h-16 w-16 rounded-full border border-white flex items-center justify-center mr-4">
-                  <span className="text-2xl font-bold text-white">2</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-white">Analysis</h3>
-                  <p className="text-gray-400 text-sm">
-                    AI determines if your posture needs correction.
-                  </p>
-                </div>
-              </div>
-
-              {/* Step 3 */}
-              <div className="flex items-center">
-                <div className="flex-shrink-0 h-16 w-16 rounded-full border border-white flex items-center justify-center mr-4">
-                  <span className="text-2xl font-bold text-white">3</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-white">
-                    Correction
-                  </h3>
-                  <p className="text-gray-400 text-sm">
-                    Mechanical arm delivers a gentle tap.
-                  </p>
-                </div>
-              </div>
-
-              {/* Step 4 */}
-              <div className="flex items-center">
-                <div className="flex-shrink-0 h-16 w-16 rounded-full border border-white flex items-center justify-center mr-4">
-                  <span className="text-2xl font-bold text-white">4</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-white">Learning</h3>
-                  <p className="text-gray-400 text-sm">
-                    System adapts to your habits over time.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Image on the Right */}
-            <div className="relative w-full md:w-1/2 h-96 rounded-xl overflow-hidden border border-gray-800">
-              <Image
-                src="/placeholder.svg?height=600&width=1200"
-                alt="Fernando system diagram"
-                width={1200}
-                height={600}
-                className="object-cover w-full h-full"
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* Technical Details */}
+        {/* Technical Stack */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Technical Details</h2>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-white">
                 Hardware Components
               </h3>
               <ul className="list-disc pl-5 space-y-2 text-gray-300">
-                <li>Raspberry Pi 4 (4GB) for processing</li>
-                <li>HD webcam for posture detection</li>
-                <li>3 high-torque servo motors for arm movement</li>
-                <li>Custom 3D-printed PLA housing and arm</li>
-                <li>Silicone padding for comfortable contact</li>
-                <li>5000mAh LiPo battery for 8-10 hours of operation</li>
-                <li>USB-C charging port</li>
+                <li>Servo motors for sorting waste</li>
+                <li>Ultrasonic and PIR sensors for waste detection</li>
+                <li>Webcam for real-time feedback</li>
+                <li>Cardboard box for the base structure</li>
               </ul>
             </div>
-
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-white">Software Stack</h3>
               <ul className="list-disc pl-5 space-y-2 text-gray-300">
-                <li>Python for core processing and control</li>
-                <li>OpenCV and MediaPipe for pose estimation</li>
-                <li>TensorFlow Lite for optimized edge inference</li>
-                <li>Next.js and React for the web interface</li>
-                <li>Vercel for application hosting</li>
-                <li>WebSockets for real-time communication</li>
-                <li>Custom microservices architecture</li>
+                <li>Flask server for web application</li>
+                <li>Supabase for user and scoring database</li>
+                <li>Python for hardware control and logic</li>
+                <li>OpenCV for object detection</li>
               </ul>
             </div>
           </div>
+        </section>
+
+        {/* Challenges */}
+        <section className="space-y-6">
+          <h2 className="text-3xl font-bold">Challenges We Encountered</h2>
+          <p className="text-gray-300 text-lg leading-relaxed">
+            Linking all the components of the project — from Flask and Supabase
+            to the sensors and hardware — was challenging, especially since it
+            was our first time working with these technologies. However, we
+            overcame these challenges by focusing on problem-solving and testing
+            each part iteratively.
+          </p>
+        </section>
+
+        {/* Accomplishments */}
+        <section className="space-y-6">
+          <h2 className="text-3xl font-bold">Accomplishments</h2>
+          <p className="text-gray-300 text-lg leading-relaxed">
+            We are proud of the seamless interaction between all the project
+            components and how it engages students with an enjoyable and
+            informative way to dispose of waste. The integration of hardware,
+            computer vision, and the database has made this project a success.
+          </p>
+        </section>
+
+        {/* What's Next */}
+        <section className="space-y-6">
+          <h2 className="text-3xl font-bold">What's Next for BasketBin</h2>
+          <p className="text-gray-300 text-lg leading-relaxed">
+            We aim to integrate BasketBin into campuses across Canada to promote
+            recycling and waste management in an engaging and educational
+            manner.
+          </p>
         </section>
 
         {/* More Projects */}
