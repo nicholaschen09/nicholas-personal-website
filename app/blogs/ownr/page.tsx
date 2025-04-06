@@ -19,7 +19,11 @@ export default function BlogPost() {
             What I Loved About Being A Software Engineering Intern at Ownr
           </h1>
           <div className="flex flex-wrap items-center gap-4">
-            <span className="text-gray-400">April 10, 2025</span>
+            <span className="text-gray-400">
+              April 10, 2025
+              <span className="text-pink-500"> // 8 min read</span>
+            </span>
+            <span className="text-gray-400 ml-auto">Nicholas Chen</span>
           </div>
         </div>
 
