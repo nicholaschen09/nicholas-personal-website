@@ -43,25 +43,31 @@ export default function FernandoProject() {
 
         {/* Project Links */}
         <div className="flex flex-wrap gap-4">
-          <Button
-            variant="outline"
-            className="border border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors"
+          <a
+            href="https://youtu.be/EBsmGGOubCk?si=aTxg0qsva-svoK6d"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
-          </Button>
-          <Button
-            variant="outline"
-            className="border border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors"
+            <Button className="text-white bg-transparent hover:text-gray-400 transition-colors">
+              <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
+            </Button>
+          </a>
+          <a
+            href="https://github.com/enxilium/posture-checker-robot"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Image
-              src="/github.png"
-              alt="GitHub Logo"
-              width={16}
-              height={16}
-              className="mr-2"
-            />
-            View Code
-          </Button>
+            <Button className="text-white bg-transparent hover:text-gray-400 transition-colors">
+              <Image
+                src="/github.png"
+                alt="GitHub Logo"
+                width={16}
+                height={16}
+                className="mr-2"
+              />
+              View Code
+            </Button>
+          </a>
         </div>
         {/* Overview Section */}
         <section className="space-y-6">
