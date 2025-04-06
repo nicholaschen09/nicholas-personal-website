@@ -125,6 +125,16 @@ export default function BasketBinProject() {
           </div>
         </section>
 
+        <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-gray-800">
+          <Image
+            src="/h62.jpg"
+            alt="Random Image 1"
+            width={1100}
+            height={600}
+            className="object-cover"
+          />
+        </div>
+
         {/* Technical Stack */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Technical Details</h2>
@@ -151,6 +161,16 @@ export default function BasketBinProject() {
             </div>
           </div>
         </section>
+
+        <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-gray-800">
+          <Image
+            src="/h65.jpg"
+            alt="Random Image 1"
+            width={1100}
+            height={400}
+            className="object-cover"
+          />
+        </div>
 
         {/* Challenges */}
         <section className="space-y-6">
