@@ -349,7 +349,7 @@ export default function BasketBinProject() {
           <div className="flex items-center justify-between">
             <h2 className="text-3xl font-bold text-white">More Projects</h2>
             <Link href="/projects" className="text-gray-400 hover:text-white">
-              View all →
+              View all Projects →
             </Link>
           </div>
 
