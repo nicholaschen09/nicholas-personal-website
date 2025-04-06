@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowLeft } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
 
 export default function BlogPost() {
   return (
@@ -20,33 +19,7 @@ export default function BlogPost() {
             What I Loved About Being A Software Engineering Intern at Ownr
           </h1>
           <div className="flex flex-wrap items-center gap-4">
-            <span className="text-gray-400">March 13, 2025</span>
-            <div className="flex flex-wrap gap-2">
-              <Badge
-                variant="outline"
-                className="bg-transparent text-white border-gray-500 font-medium"
-              >
-                Co-op
-              </Badge>
-              <Badge
-                variant="outline"
-                className="bg-transparent text-white border-gray-500 font-medium"
-              >
-                Software Engineering
-              </Badge>
-              <Badge
-                variant="outline"
-                className="bg-transparent text-white border-gray-500 font-medium"
-              >
-                RBC
-              </Badge>
-              <Badge
-                variant="outline"
-                className="bg-transparent text-white border-gray-500 font-medium"
-              >
-                Ownr
-              </Badge>
-            </div>
+            <span className="text-gray-400">April 10, 2025</span>
           </div>
         </div>
 
