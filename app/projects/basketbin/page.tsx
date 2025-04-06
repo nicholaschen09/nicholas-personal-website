@@ -33,7 +33,7 @@ export default function BasketBinProject() {
         {/* Featured Image */}
         <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden border border-gray-800">
           <Image
-            src="/basketbin.png"
+            src="/h63.jpg"
             alt="BasketBin Image"
             width={1200}
             height={800}
@@ -44,25 +44,31 @@ export default function BasketBinProject() {
 
         {/* Project Links */}
         <div className="flex flex-wrap gap-4">
-          <Button
-            variant="outline"
-            className="border border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors"
+          <a
+            href="https://youtu.be/EBsmGGOubCk?si=aTxg0qsva-svoK6d"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
-          </Button>
-          <Button
-            variant="outline"
-            className="border border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors"
+            <Button className="text-white bg-transparent hover:text-gray-400 transition-colors">
+              <ExternalLink className="mr-2 h-4 w-4" /> Demo
+            </Button>
+          </a>
+          <a
+            href="https://github.com/enxilium/posture-checker-robot"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Image
-              src="/github.png"
-              alt="GitHub Logo"
-              width={16}
-              height={16}
-              className="mr-2"
-            />
-            View Code
-          </Button>
+            <Button className="text-white bg-transparent hover:text-gray-400 transition-colors">
+              <Image
+                src="/github.png"
+                alt="GitHub Logo"
+                width={16}
+                height={16}
+                className="mr-2"
+              />
+              Code
+            </Button>
+          </a>
         </div>
 
         {/* Overview Section */}
