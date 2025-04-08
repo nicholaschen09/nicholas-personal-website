@@ -448,7 +448,7 @@ export default function BlogPost() {
                 </label>
                 <textarea
                   id="comment"
-                  rows="4"
+                  rows={4}
                   className="w-full bg-transparent border border-gray-700 rounded-lg p-2 text-white"
                   placeholder="Share your thoughts..."
                 ></textarea>
