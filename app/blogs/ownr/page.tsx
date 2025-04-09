@@ -464,7 +464,7 @@ export default function BlogPost() {
         </div>
       </article>
       {/* Footer */}
-      <footer className="w-full mt-16 pt-8">
+      <footer className="w-full mt-8 pt-8">
         <div className="max-w-4xl mx-auto w-full">
           <hr className="border-t border-gray-700 mb-8" />
           <div className="flex flex-col items-center md:items-start">
@@ -480,7 +480,7 @@ export default function BlogPost() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="w-10 h-10 flex items-center justify-center border border-gray-600 rounded-full">
+                <div className="w-10 h-10 flex items-center justify-center">
                   <img
                     src="/linkedin.png"
                     alt="LinkedIn"
@@ -495,7 +495,7 @@ export default function BlogPost() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="w-10 h-10 flex items-center justify-center border border-gray-600 rounded-full">
+                <div className="w-10 h-10 flex items-center justify-center">
                   <img
                     src="/github.png"
                     alt="GitHub"
@@ -508,7 +508,7 @@ export default function BlogPost() {
                 href="mailto:nicholas.chen243@gmail.com"
                 className="text-white hover:text-gray-300 transition-colors"
               >
-                <div className="w-10 h-10 flex items-center justify-center border border-gray-600 rounded-full">
+                <div className="w-10 h-10 flex items-center justify-center">
                   <img
                     src="/email.png"
                     alt="Email"
@@ -523,7 +523,7 @@ export default function BlogPost() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="w-10 h-10 flex items-center justify-center relative border border-gray-600 rounded-full">
+                <div className="w-7 h-8 flex items-center justify-center relative">
                   <img
                     src="/twitter.png"
                     alt="Twitter"
