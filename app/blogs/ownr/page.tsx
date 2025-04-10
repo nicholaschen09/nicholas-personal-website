@@ -166,13 +166,6 @@ export default function BlogPost() {
             initially seemed limiting but taught me the value of careful
             planning and thorough documentation.
           </p>
-          <p>
-            The mentorship program at RBC paired me with a senior data scientist
-            who guided me through the complexities of working with sensitive
-            financial data and helped me optimize my machine learning models.
-            This mentorship was invaluable in developing my technical skills and
-            understanding the business implications of our technology decisions.
-          </p>
 
           <h3 className="text-xl font-bold mt-8 mb-3">
             Technical Skills Gained
