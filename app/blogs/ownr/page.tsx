@@ -96,56 +96,23 @@ export default function BlogPost() {
             </div>
           </div>
 
-          <h3 className="text-xl font-bold mt-8 mb-3">Day-to-Day at Ownr</h3>
+          <h3 className="text-xl font-bold mt-8 mb-8">Day-to-Day at Ownr</h3>
           <p>
             A typical day at Ownr started with a team stand-up meeting where we
             discussed our progress, plans, and any blockers. This was followed
             by focused development time, where I would work on assigned tickets
             from our sprint backlog. The agile methodology practiced at Ownr
             taught me the importance of iterative development and continuous
-            feedback.
-          </p>
-          <p>
-            One aspect I particularly appreciated was the bi-weekly demo review
-            sessions. Developers would provide demos or give a brief overview of
-            what they worked on over the past two weeks. I also received
-            detailed feedback on my code, highlighting areas for improvement and
-            best practices. These sessions significantly accelerated my growth
-            as a developer and taught me how to learn to write maintainable,
-            more efficient code.
+            feedback. One aspect I particularly appreciated was the bi-weekly
+            demo review sessions. Developers would provide demos or give a brief
+            overview of what they worked on over the past two weeks. I also
+            received detailed feedback on my code, highlighting areas for
+            improvement and best practices. These sessions significantly
+            accelerated my growth as a developer and taught me how to learn to
+            write maintainable, more efficient code.
           </p>
 
-          <h3 className="text-xl font-bold mt-8 mb-3">
-            Technical Skills Gained
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 my-6">
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
-              <p className="font-medium">React.js</p>
-            </div>
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
-              <p className="font-medium">Node.js</p>
-            </div>
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
-              <p className="font-medium">MongoDB</p>
-            </div>
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
-              <p className="font-medium">GraphQL</p>
-            </div>
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
-              <p className="font-medium">Jest</p>
-            </div>
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
-              <p className="font-medium">CI/CD</p>
-            </div>
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
-              <p className="font-medium">AWS</p>
-            </div>
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
-              <p className="font-medium">Docker</p>
-            </div>
-          </div>
-
-          <div className="relative w-full aspect-video rounded-lg overflow-hidden border border-gray-700">
+          <div className="relative w-full aspect-video rounded-lg overflow-hidden border border-gray-700 mt-10">
             <Image
               src="/ownr1.png"
               alt="RBC Co-op"
