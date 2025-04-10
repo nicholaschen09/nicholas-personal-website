@@ -75,14 +75,14 @@ export default function BlogPost() {
                 with cross-functional teams, enhancing my communication and
                 teamwork skills. I also gained hands-on experience with modern
                 web technologies and frameworks including React, Node.js, and
-                MongoDB.
+                PostgreSQL.
               </p>
               <p>
-                One of my major projects involved redesigning the document
-                generation system, which improved processing speed by 40% and
-                enhanced the user experience for thousands of customers. I also
-                contributed to the implementation of a new payment gateway that
-                increased transaction success rates by 15%.
+                One of my major projects involved building an internal tool for
+                the company's system from scratch. I also contributed to the
+                implementation of new features in the main app and bug and
+                vulnerability fixes. The last month of my internship was
+                dedicated towards prod support where I fixed production bugs.
               </p>
             </div>
             <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-gray-700">
@@ -106,11 +106,13 @@ export default function BlogPost() {
             feedback.
           </p>
           <p>
-            One aspect I particularly appreciated was the bi-weekly code review
-            sessions. Senior developers would provide detailed feedback on my
-            code, highlighting areas for improvement and best practices. These
-            sessions significantly accelerated my growth as a developer and
-            taught me how to write maintainable, efficient code.
+            One aspect I particularly appreciated was the bi-weekly demo review
+            sessions. Developers would provide demos or give a brief overview of
+            what they worked on over the past two weeks. I also received
+            detailed feedback on my code, highlighting areas for improvement and
+            best practices. These sessions significantly accelerated my growth
+            as a developer and taught me how to learn to write maintainable,
+            more efficient code.
           </p>
 
           <h3 className="text-xl font-bold mt-8 mb-3">
@@ -143,42 +145,14 @@ export default function BlogPost() {
             </div>
           </div>
 
-          {/* RBC Experience */}
-          <h2 className="text-2xl font-bold mt-10 mb-4">RBC Co-op Term</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div>
-              <p>
-                During my co-op term at RBC, I worked as an innovation developer
-                intern within the Digital Banking division. My primary project
-                involved developing a machine learning model to predict monthly
-                sign-in volumes, which significantly improved resource
-                allocation within the support team and reduced response times by
-                23%.
-              </p>
-              <p>
-                This experience honed my skills in data analysis, machine
-                learning, and Python programming. I also learned the importance
-                of effective communication and collaboration in a large
-                organization with complex approval processes and security
-                protocols.
-              </p>
-              <p>
-                I had the opportunity to participate in RBC's annual hackathon,
-                where my team developed a financial literacy app targeting young
-                adults. Our project won the "Innovation Excellence" award and
-                parts of our solution were considered for implementation in the
-                bank's mobile application.
-              </p>
-            </div>
-            <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-gray-700">
-              <Image
-                src="/ownr1.png"
-                alt="RBC Co-op"
-                width={500}
-                height={400}
-                className="object-cover"
-              />
-            </div>
+          <div className="relative w-full aspect-video rounded-lg overflow-hidden border border-gray-700">
+            <Image
+              src="/ownr1.png"
+              alt="RBC Co-op"
+              width={1100}
+              height={100}
+              className="object-cover object-top"
+            />
           </div>
 
           <h3 className="text-xl font-bold mt-8 mb-3">
