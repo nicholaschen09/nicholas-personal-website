@@ -28,7 +28,7 @@ const blogPosts = [
     title: 'What I Loved About Being A Software Engineer Intern at Ownr',
     excerpt:
       'My first co-op term at Ownr, including the projects I worked on, skills I developed, and challenges I faced, highlighting insights into full-stack web development and teamwork.',
-    date: 'April 20, 2025',
+    date: 'April 10, 2025',
     readTime: '10 min read',
     slug: 'ownr',
     image: '/ownr.png',
