@@ -39,7 +39,7 @@ export default function BlogPost() {
         </div>
 
         <div className="prose prose-invert max-w-none">
-          <p className="text-xl leading-relaxed">
+          <p className="text-normalleading-relaxed">
             My co-op terms at Ownr and RBC were transformative experiences that
             provided me with invaluable industry knowledge and skills. Here's a
             detailed account of my journey, the challenges I faced, and the
@@ -87,9 +87,9 @@ export default function BlogPost() {
             </div>
             <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-gray-700">
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                src="/ownr2.png"
                 alt="Ownr Co-op"
-                width={400}
+                width={500}
                 height={400}
                 className="object-cover"
               />
@@ -172,9 +172,9 @@ export default function BlogPost() {
             </div>
             <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-gray-700">
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                src="/ownr1.png"
                 alt="RBC Co-op"
-                width={400}
+                width={500}
                 height={400}
                 className="object-cover"
               />
@@ -208,25 +208,37 @@ export default function BlogPost() {
               <p className="font-medium">Python</p>
             </div>
             <div className="border border-gray-600 p-3 rounded-lg text-center">
-              <p className="font-medium">TensorFlow</p>
+              <p className="font-medium">CI/CD</p>
             </div>
             <div className="border border-gray-600 p-3 rounded-lg text-center">
-              <p className="font-medium">Pandas</p>
+              <p className="font-medium">NestJS</p>
             </div>
             <div className="border border-gray-600 p-3 rounded-lg text-center">
               <p className="font-medium">SQL</p>
             </div>
             <div className="border border-gray-600 p-3 rounded-lg text-center">
-              <p className="font-medium">Tableau</p>
+              <p className="font-medium">Typescript</p>
             </div>
             <div className="border border-gray-600 p-3 rounded-lg text-center">
-              <p className="font-medium">Jenkins</p>
+              <p className="font-medium">Git</p>
             </div>
             <div className="border border-gray-600 p-3 rounded-lg text-center">
-              <p className="font-medium">Jira</p>
+              <p className="font-medium">Docker</p>
             </div>
             <div className="border border-gray-600 p-3 rounded-lg text-center">
-              <p className="font-medium">Azure ML</p>
+              <p className="font-medium">NodeJS</p>
+            </div>
+            <div className="border border-gray-600 p-3 rounded-lg text-center">
+              <p className="font-medium">AWS</p>
+            </div>
+            <div className="border border-gray-600 p-3 rounded-lg text-center">
+              <p className="font-medium">Jest</p>
+            </div>
+            <div className="border border-gray-600 p-3 rounded-lg text-center">
+              <p className="font-medium">Redis</p>
+            </div>
+            <div className="border border-gray-600 p-3 rounded-lg text-center">
+              <p className="font-medium">Kubernetes</p>
             </div>
           </div>
 
@@ -262,37 +274,6 @@ export default function BlogPost() {
             efficient testing strategies to maintain quality without sacrificing
             speed.
           </p>
-
-          <div className="border-2 border-gray-600 p-6 rounded-lg my-8">
-            <h3 className="font-bold text-xl mb-3 text-pink-400">
-              Advice for Future Interns
-            </h3>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>
-                <span className="font-medium">Document your achievements:</span>{' '}
-                Keep a detailed log of your projects, challenges overcome, and
-                skills acquired. This will be invaluable for future job
-                applications and performance reviews.
-              </li>
-              <li>
-                <span className="font-medium">Build relationships:</span>{' '}
-                Connect with colleagues across different teams and departments.
-                These relationships can provide support during your internship
-                and potentially lead to future opportunities.
-              </li>
-              <li>
-                <span className="font-medium">Ask specific questions:</span>{' '}
-                When seeking help, ask specific, well-researched questions
-                rather than general ones. This demonstrates your effort and
-                makes it easier for others to assist you.
-              </li>
-              <li>
-                <span className="font-medium">Embrace feedback:</span> Actively
-                seek feedback on your work and approach it with an open mind.
-                Constructive criticism is a valuable tool for growth.
-              </li>
-            </ul>
-          </div>
 
           {/* Key Takeaways */}
           <h2 className="text-2xl font-bold mt-10 mb-4">Key Takeaways</h2>
@@ -344,14 +325,14 @@ export default function BlogPost() {
 
           {/* Conclusion */}
           <h2 className="text-2xl font-bold mt-10 mb-4">Conclusion</h2>
-          <p className="text-xl leading-relaxed">
+          <p className="text-normal leading-relaxed">
             My internships at Ownr and RBC were pivotal experiences that bridged
             the gap between academic learning and professional practice. The
             contrast between a startup environment and a large enterprise gave
             me a comprehensive understanding of different organizational
             cultures and development methodologies.
           </p>
-          <p className="text-xl leading-relaxed mt-4">
+          <p className="text-normal leading-relaxed mt-4">
             If you're considering a co-op term at Ownr or RBC, I hope this gives
             you a helpful glimpse into what to expect. Both experiences were
             challenging but incredibly rewarding, providing me with skills and
