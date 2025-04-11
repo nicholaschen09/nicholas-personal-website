@@ -468,13 +468,6 @@ export default function Home() {
                   technical interviews.
                 </p>
               </CardContent>
-              <div className="relative w-full md:w-1/12 border-gray-700 p-2 flex items-center">
-                <img
-                  src="/lc.jpg"
-                  alt="Leetcode"
-                  className="object-contain w-16 h-16 rounded-md mx-auto"
-                />
-              </div>
             </div>
           </Card>
           {/* Devpost */}
@@ -496,16 +489,10 @@ export default function Home() {
                   >
                     Devpost Profile
                   </a>{' '}
-                  for all my hackathon projects that I submitted to devpost
+                  for all my hackathon projects that I worked on and have
+                  submitted to devpost
                 </p>
               </CardContent>
-              <div className="relative w-full md:w-1/12 border-gray-700 p-2 flex items-center">
-                <img
-                  src="/devpost.jpeg"
-                  alt="Leetcode"
-                  className="object-contain w-16 h-16 rounded-md mx-auto"
-                />
-              </div>
             </div>
           </Card>
         </div>
