@@ -78,42 +78,6 @@ const projects: Project[] = [
       details: '/projects/voluntrack',
     },
   },
-   {
-    id: 'mathcing app',
-    title: 'Match',
-    description:
-      'An app to match users with the right person across the world.',
-    image: '/match.png',
-    links: {
-      demo: '#',
-      github: '#',
-      details: '/projects/match',
-    },
-  },
-  {
-    id: 'eatr',
-    title: 'Eatr',
-    description:
-      'A real-time collaborative whiteboard application for remote teams with drawing tools and chat functionality.',
-    image: '/food.jpg',
-    links: {
-      demo: '#',
-      github: '#',
-      details: '/projects/eatr',
-    },
-  },
-  {
-    id: 'words to beats',
-    title: 'Words to Beats',
-    description:
-      'A real-time collaborative whiteboard application for remote teams with drawing tools and chat functionality.',
-    image: '/sound.png',
-    links: {
-      demo: '#',
-      github: '#',
-      details: '/projects/wordstobeats',
-    },
-  },
 ];
 
 export default function ProjectsPage() {
