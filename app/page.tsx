@@ -353,26 +353,25 @@ export default function Home() {
           <Card className="bg-transparent border border-gray-700 overflow-hidden">
             <div className="relative h-48">
               <Image
-                src="/car.png"
-                alt="engineering portfolio"
+                src="/etl.png"
+                alt="customer feedback etl pipeline"
                 fill
                 className="object-cover"
               />
             </div>
             <CardContent className="p-4 space-y-3">
               <h3 className="text-xl font-bold text-white">
-                Engineering Portfolio
+                Customer Feedback ETL Pipeline
               </h3>
               <p className="text-gray-300 text-sm">
-                A showcase of my engineering projects, featuring 3D modeling
-                with SOLIDWORKS, as well as physical and systems design
-                innovations.
+                An ETL pipeline that processes customer feedback with sentiment
+                analysis for actionable insights
               </p>
             </CardContent>
             <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">
               <div className="flex gap-4">
                 <Link
-                  href="https://github.com/nicholaschen09/engineering-portfolio"
+                  href="https://github.com/nicholaschen09/customer-feedback-etl-pipeline"
                   className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
                 >
                   <div className="w-4 h-4 flex items-center justify-center mr-2">
@@ -389,7 +388,7 @@ export default function Home() {
                 </Link>
               </div>
               <Link
-                href="/projects/engineeringportfolio"
+                href="/projects/customerfeedback"
                 className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
               >
                 Read more <ArrowRight className="ml-1 w-4 h-4" />

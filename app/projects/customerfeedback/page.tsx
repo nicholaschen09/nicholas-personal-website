@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 
-export default function TikTokProject() {
+export default function ETLProject() {
   return (
     <main className="flex min-h-screen flex-col items-center p-6 md:p-24 bg-black text-white">
       <div className="max-w-5xl w-full space-y-12">
@@ -20,25 +20,25 @@ export default function TikTokProject() {
         <div className="space-y-6">
           <div className="flex flex-col md:flex-row gap-4 md:items-center justify-between">
             <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold text-white">
-              TikTok View Predictor
+              Customer Feedback ETL Pipeline
             </h1>
           </div>
 
           <p className="text-xl text-gray-300">
-            A machine learning-powered model that predicts the number of views a
-            TikTok video will receive using linear regression and data
-            analytics.
+            An end-to-end pipeline that extracts, transforms, and loads customer
+            feedback data into a centralized database to generate actionable
+            insights.
           </p>
         </div>
 
         {/* Featured Image */}
-        <div className="relative w-full aspect-[16/8] rounded-xl overflow-hidden border border-gray-800">
+        <div className="relative w-full aspect-[16/5] rounded-xl overflow-hidden border border-gray-800">
           <Image
-            src="/pandas.png"
-            alt="TikTok View Predictor"
-            width={1200}
-            height={800}
-            className="object-cover object-top"
+            src="/customerfeedback.png"
+            alt="Customer Feedback ETL Pipeline"
+            width={1500}
+            height={600}
+            className="object-cover"
             priority
           />
         </div>
@@ -46,7 +46,7 @@ export default function TikTokProject() {
         {/* Project Links */}
         <div className="flex flex-wrap gap-4">
           <a
-            href="https://youtu.be/your-demo-video-link"
+            href="https://youtu.be/demo_video_link_here"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -55,7 +55,7 @@ export default function TikTokProject() {
             </Button>
           </a>
           <a
-            href="https://github.com/nicholaschen09/tiktok-view-predictor"
+            href="https://github.com/nicholaschen09/customer-feedback-etl-pipeline"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -76,138 +76,101 @@ export default function TikTokProject() {
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Overview</h2>
           <p className="text-gray-300 text-lg leading-relaxed">
-            TikTok View Predictor is an innovative machine learning project that
-            forecasts the number of views a TikTok video can receive. By
-            leveraging linear regression models and data processing techniques,
-            the pipeline ingests historical video data, cleans and analyzes it,
-            and finally predicts future view counts. This insight-driven
-            approach assists content creators and marketers in optimizing their
-            strategies.
+            This project implements a robust ETL pipeline that extracts raw
+            customer feedback from CSV files and various APIs, transforms the
+            data by cleaning and enriching it with sentiment analysis (achieving
+            92% accuracy), and loads the processed data into a centralized
+            PostgreSQL database. The resulting insights are visualized via a
+            custom dashboard for actionable business intelligence.
           </p>
         </section>
 
         {/* Key Features */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold text-white">Key Features</h2>
-          <div className="grid grid-cols-1 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="bg-black shadow-xl rounded-lg p-6 border border-white">
               <CardContent className="flex flex-col items-center text-center space-y-4">
                 <h3 className="text-xl font-bold text-white">
-                  Predictive Analytics
+                  Data Extraction
                 </h3>
                 <p className="text-white">
-                  Uses linear regression and statistical analysis to accurately
-                  forecast TikTok video views.
+                  Gathers customer feedback from CSV files and APIs, automating
+                  data ingestion.
                 </p>
               </CardContent>
             </Card>
             <Card className="bg-black shadow-xl rounded-lg p-6 border border-white">
               <CardContent className="flex flex-col items-center text-center space-y-4">
                 <h3 className="text-xl font-bold text-white">
-                  Data Pipeline Integration
+                  Data Transformation
                 </h3>
                 <p className="text-white">
-                  Automates data extraction from TikTok APIs and CSV datasets,
-                  transforming raw data into actionable insights.
+                  Cleans and processes data with Python and Pandas, applying
+                  sentiment analysis using TextBlob.
                 </p>
               </CardContent>
             </Card>
             <Card className="bg-black shadow-xl rounded-lg p-6 border border-white">
               <CardContent className="flex flex-col items-center text-center space-y-4">
                 <h3 className="text-xl font-bold text-white">
-                  Interactive Dashboard
+                  Data Loading & Visualization
                 </h3>
                 <p className="text-white">
-                  Visualizes predictions and performance metrics, enabling users
-                  to explore trends and refine content strategies.
+                  Loads enriched data into PostgreSQL via SQLAlchemy and
+                  visualizes results with a custom Streamlit dashboard.
                 </p>
               </CardContent>
             </Card>
           </div>
         </section>
-
-        <div className="relative w-full aspect-[4/4] rounded-xl overflow-hidden border border-gray-800">
-          <Image
-            src="/seasonal.png"
-            alt="TikTok View Predictor Dashboard"
-            width={1100}
-            height={400}
-            className="object-cover"
-          />
-        </div>
 
         {/* Technical Stack */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Technical Details</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-4">
-              <h3 className="text-xl font-bold text-white">
-                Data Sources & Extraction
-              </h3>
+              <h3 className="text-xl font-bold text-white">Data Sources</h3>
               <ul className="list-disc pl-5 space-y-2 text-gray-300">
-                <li>API integration with TikTok data endpoints</li>
-                <li>CSV ingestion for historical video performance data</li>
+                <li>CSV files from customer surveys</li>
+                <li>APIs for real-time feedback data</li>
               </ul>
             </div>
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-white">Software Stack</h3>
               <ul className="list-disc pl-5 space-y-2 text-gray-300">
-                <li>Python for data processing & model building</li>
-                <li>Flask for serving APIs and web integration</li>
-                <li>Scikit-learn for regression modeling</li>
-                <li>Jupyter Notebook for data exploration & analysis</li>
-                <li>Numpy and Pandas for data manipulation</li>
+                <li>
+                  Python with Pandas and TextBlob for ETL and sentiment analysis
+                </li>
+                <li>Flask for API services</li>
+                <li>Supabase and PostgreSQL for data storage</li>
+                <li>SQLAlchemy for ORM and database interactions</li>
+                <li>Streamlit for dashboard visualizations</li>
               </ul>
             </div>
           </div>
         </section>
 
-        <div className="relative w-full aspect-[4/2.5] rounded-xl overflow-hidden border border-gray-800">
+        <div className="relative w-full aspect-[4/2] rounded-xl overflow-hidden border border-gray-800">
           <Image
-            src="/tiktokgraph.png"
-            alt="TikTok View Predictor Dashboard"
+            src="/pipeline.png"
+            alt="ETL Pipeline Dashboard"
             width={1100}
             height={400}
             className="object-cover"
           />
         </div>
-        <p className="text-center text-gray-400 italic mt-1">
-          this is the predicted graph for future tiktok views
-        </p>
-
-        {/* Challenges */}
-        <section className="space-y-6">
-          <h2 className="text-3xl font-bold">Challenges I Encountered</h2>
-          <p className="text-gray-300 text-lg leading-relaxed">
-            One major challenge was cleaning diverse data formats from multiple
-            sources and ensuring the regression model was robust against
-            outliers. We overcame these challenges by employing advanced data
-            preprocessing techniques and continuous model evaluation.
-          </p>
-        </section>
-
-        {/* Accomplishments */}
-        <section className="space-y-6">
-          <h2 className="text-3xl font-bold">Accomplishments</h2>
-          <p className="text-gray-300 text-lg leading-relaxed">
-            The TikTok View Predictor achieved strong forecasting performance,
-            providing content creators with reliable estimates for video views.
-            The end-to-end pipeline streamlined data collection, analysis, and
-            visualization, enhancing decision-making and content optimization
-            strategies.
-          </p>
-        </section>
 
         {/* What's Next */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">
-            What's Next for TikTok View Predictor
+            What's Next for the Customer Feedback ETL Pipeline
           </h2>
           <p className="text-gray-300 text-lg leading-relaxed">
-            Future improvements include incorporating more advanced machine
-            learning models, expanding data source integration, and developing
-            automated reporting capabilities to further empower content strategy
-            optimizations.
+            I plan to integrate additional data sources, enhance our sentiment
+            analysis algorithms, and further optimize our data loading
+            processes. Future iterations will include machine learning models
+            for predictive analytics and automated reporting.
           </p>
         </section>
 
@@ -224,25 +187,25 @@ export default function TikTokProject() {
             <Card className="bg-transparent border border-gray-700 overflow-hidden">
               <div className="relative h-48">
                 <Image
-                  src="/customerfeedback.png"
-                  alt="Customer Feedback ETL Pipeline"
+                  src="/pandas.png"
+                  alt="TikTok View Predictor"
                   fill
                   className="object-cover"
                 />
               </div>
               <CardContent className="p-4 space-y-3">
                 <h3 className="text-xl font-bold text-white">
-                  Customer Feedback ETL Pipeline
+                  TikTok View Predictor
                 </h3>
                 <p className="text-gray-300 text-sm">
-                  An end-to-end data pipeline that processes customer feedback
-                  using ETL techniques and machine learning analysis.
+                  A machine learning model that predicts TikTok video views
+                  using linear regression.
                 </p>
               </CardContent>
               <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">
                 <div className="flex gap-4">
                   <Link
-                    href="https://github.com/nicholaschen09/customer-feedback-etl-pipeline"
+                    href="https://github.com/nicholaschen09/tiktok-view-predictor"
                     className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
                   >
                     <div className="w-4 h-4 flex items-center justify-center mr-2">
@@ -259,7 +222,7 @@ export default function TikTokProject() {
                   </Link>
                 </div>
                 <Link
-                  href="/projects/customerfeedback"
+                  href="/projects/tiktokviewpredictor"
                   className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
                 >
                   Read more <ArrowRight className="ml-1 w-4 h-4" />
@@ -270,24 +233,26 @@ export default function TikTokProject() {
             <Card className="bg-transparent border border-gray-700 overflow-hidden">
               <div className="relative h-48">
                 <Image
-                  src="/fernando.png"
-                  alt="Fernando"
+                  src="/car.png"
+                  alt="Engineering"
                   fill
                   className="object-cover"
                 />
               </div>
               <CardContent className="p-4 space-y-3">
-                <h3 className="text-xl font-bold text-white">Fernando</h3>
+                <h3 className="text-xl font-bold text-white">
+                  Engineering Portfolio
+                </h3>
                 <p className="text-gray-300 text-sm">
-                  A posture correcting robot that helps you maintain a healthy
-                  posture while working at your desk by slapping you when you
-                  slouch.
+                  A showcase of my engineering projects, featuring 3D modeling
+                  with SOLIDWORKS, as well as physical and systems design
+                  innovations.
                 </p>
               </CardContent>
               <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">
                 <div className="flex gap-4">
                   <Link
-                    href="https://github.com/enxilium/posture-checker-robot"
+                    href="https://github.com/nicholaschen09/engineering-portfolio"
                     className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
                   >
                     <div className="w-4 h-4 flex items-center justify-center mr-2">
@@ -295,16 +260,9 @@ export default function TikTokProject() {
                     </div>
                     Code
                   </Link>
-                  <Link
-                    href="https://youtu.be/EBsmGGOubCk?si=1_ksNQak9YQNffQ6"
-                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Demo
-                  </Link>
                 </div>
                 <Link
-                  href="/projects/fernando"
+                  href="/projects/engineeringportfolio"
                   className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
                 >
                   Read more <ArrowRight className="ml-1 w-4 h-4" />
