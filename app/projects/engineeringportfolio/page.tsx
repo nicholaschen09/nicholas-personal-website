@@ -180,7 +180,7 @@ export default function EngineeringProject() {
             <Card className="bg-transparent border border-gray-700 overflow-hidden">
               <div className="relative h-48">
                 <Image
-                  src="/car.png"
+                  src="/etl.png"
                   alt="Engineering"
                   fill
                   className="object-cover"
