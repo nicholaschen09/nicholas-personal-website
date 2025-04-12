@@ -262,7 +262,7 @@ export default function ETLProject() {
                   </Link>
                 </div>
                 <Link
-                  href="/projects/fernando"
+                  href="/projects/engineeringportfolio"
                   className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
                 >
                   Read more <ArrowRight className="ml-1 w-4 h-4" />
