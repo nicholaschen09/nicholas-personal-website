@@ -25,7 +25,6 @@ const projects: Project[] = [
       'A posture-correcting robot that slaps you when you slouch, using computer vision and a mechanical arm to provide physical feedback.',
     image: '/fernando.png',
     links: {
-      demo: 'https://youtu.be/EBsmGGOubCk?si=Jpgb_pFdg3EN-EB1',
       github: 'https://github.com/enxilium/posture-checker-robot',
       details: '/projects/fernando',
     },
@@ -37,7 +36,6 @@ const projects: Project[] = [
       'An automated garbage sorter that leverages computer vision to sort garbage thrown in depending on if it is recylcable or not.',
     image: '/basketbin.jpg',
     links: {
-      demo: 'https://youtu.be/6YRTP7_Oet8?si=fFE3LqMQ1A5mmX56',
       github: 'https://github.com/DerrickHa/ht6',
       details: '/projects/basketbin',
     },
@@ -50,7 +48,6 @@ const projects: Project[] = [
       'A machine learning-powered model that predicts the number of views a TikTok video will receive using linear regression.',
     image: '/pandas.png',
     links: {
-      demo: '#',
       github: 'https://github.com/nicholaschen09/tiktok-view-predictor',
       details: '/projects/tiktokviewpredictor',
     },
@@ -62,8 +59,8 @@ const projects: Project[] = [
       'An ETL pipeline that processes customer feedback with sentiment analysis for actionable insights',
     image: '/etl.png',
     links: {
-      demo: '#',
-      github: '#',
+      github:
+        'https://github.com/nicholaschen09/customer-feedback-etl-pipeline',
       details: '/projects/customerfeedback',
     },
   },
@@ -74,7 +71,6 @@ const projects: Project[] = [
       'A showcase of my engineering projects, featuring 3D modeling with SOLIDWORKS, as well as physical and systems design innovations.',
     image: '/car.png',
     links: {
-      demo: '#',
       github: 'https://github.com/nicholaschen09/engineering-portfolio',
       details: '/projects/engineeringportfolio',
     },
@@ -86,8 +82,7 @@ const projects: Project[] = [
       'A mobile-first application for tracking workouts, nutrition, and fitness progress with data visualization and goal setting.',
     image: '/voluntrack.jpeg',
     links: {
-      demo: '#',
-      github: '#',
+      github: 'https://github.com/VolunTrack',
       details: '/projects/voluntrack',
     },
   },
