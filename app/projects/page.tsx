@@ -42,6 +42,7 @@ const projects: Project[] = [
       details: '/projects/basketbin',
     },
   },
+
   {
     id: 'Tiktokviewpredictor',
     title: 'TikTok View Predictor',
@@ -52,6 +53,18 @@ const projects: Project[] = [
       demo: '#',
       github: 'https://github.com/nicholaschen09/tiktok-view-predictor',
       details: '/projects/tiktokviewpredictor',
+    },
+  },
+  {
+    id: 'customerfeedback',
+    title: 'Customer Feedback ETL Pipeline',
+    description:
+      'An ETL pipeline that processes customer feedback with sentiment analysis for actionable insights',
+    image: '/etl.png',
+    links: {
+      demo: '#',
+      github: '#',
+      details: '/projects/customerfeedback',
     },
   },
   {
