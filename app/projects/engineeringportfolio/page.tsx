@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowLeft, Github, ExternalLink, ArrowRight } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 
@@ -49,11 +48,7 @@ export default function EngineeringProject() {
             href="https://youtu.be/EBsmGGOubCk?si=aTxg0qsva-svoK6d"
             target="_blank"
             rel="noopener noreferrer"
-          >
-            <Button className="text-white bg-transparent hover:text-gray-400 transition-colors">
-              <ExternalLink className="mr-2 h-4 w-4" /> Demo
-            </Button>
-          </a>
+          ></a>
           <a
             href="https://github.com/enxilium/posture-checker-robot"
             target="_blank"
@@ -67,7 +62,7 @@ export default function EngineeringProject() {
                 height={16}
                 className="mr-2"
               />
-              Code
+              Github
             </Button>
           </a>
         </div>
@@ -89,32 +84,28 @@ export default function EngineeringProject() {
         {/* Gallery */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Gallery</h2>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="relative aspect-square rounded-lg overflow-hidden border border-gray-800">
+            <div className="relative aspect-[3/3] rounded-lg overflow-hidden border border-gray-800">
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                src="/nintendo.png"
                 alt="Fernando prototype"
-                width={400}
-                height={400}
+                fill
                 className="object-cover"
               />
             </div>
             <div className="relative aspect-square rounded-lg overflow-hidden border border-gray-800">
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                src="/carfinal.png"
                 alt="Fernando internal components"
-                width={400}
-                height={400}
+                fill
                 className="object-cover"
               />
             </div>
             <div className="relative aspect-square rounded-lg overflow-hidden border border-gray-800">
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                src="/spreadpieces.png"
                 alt="Fernando in use"
-                width={400}
-                height={400}
+                fill
                 className="object-cover"
               />
             </div>
@@ -170,7 +161,9 @@ export default function EngineeringProject() {
                 </div>
                 <Link
                   href="/projects/tiktokviewpredictor"
-                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                  className="text-gray-300 hover:te
+                  
+                  xt-white flex items-center gap-1 text-sm"
                 >
                   Read more <ArrowRight className="ml-1 w-4 h-4" />
                 </Link>
