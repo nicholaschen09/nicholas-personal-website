@@ -63,7 +63,7 @@ export default function Header() {
           {/* Spacer div between Blogs and Resume */}
           <div className="w-4"></div>
           <Link
-            href="/resume1.pdf"
+            href="/resume.pdf"
             className="text-white hover:underline hover:underline-offset-4 transition-colors"
             target="_blank"
           >
@@ -119,7 +119,7 @@ export default function Header() {
               Projects
             </Link>
             <Link
-              href="/resume1.pdf"
+              href="/resume.pdf"
               className="text-white hover:underline hover:underline-offset-4 transition-colors py-3 text-center text-lg"
               onClick={() => setIsMenuOpen(false)}
               target="_blank"
