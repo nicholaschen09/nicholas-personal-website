@@ -271,7 +271,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-white">BasketBin</h3>
               <p className="text-gray-300 text-sm">
                 An automated garbage sorter that leverages computer vision to
-                sort garbage thrown in depending on if it is recylcable or not.
+                sort garbage thrown in depending on if it is recyclable or not.
               </p>
             </CardContent>
             <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">

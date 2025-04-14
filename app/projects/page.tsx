@@ -33,7 +33,7 @@ const projects: Project[] = [
     id: 'basketbin',
     title: 'BasketBin',
     description:
-      'An automated garbage sorter that leverages computer vision to sort garbage thrown in depending on if it is recylcable or not.',
+      'An automated garbage sorter that leverages computer vision to sort garbage thrown in depending on if it is recyclable or not.',
     image: '/basketbin.jpg',
     links: {
       github: 'https://github.com/DerrickHa/ht6',
