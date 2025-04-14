@@ -321,7 +321,7 @@ export default function TikTokProject() {
           <hr className="border-t border-gray-700 mb-8" />
           <div className="flex flex-col items-center md:items-start">
             <p className="text-gray-400 mb-4">
-              © 2025 Nicholas Chen. All rights reserved.
+              © 2025 Nicholas Chen. 
             </p>
 
             {/* Social Media Links */}
