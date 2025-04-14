@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowLeft, Github, ExternalLink } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
+import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
