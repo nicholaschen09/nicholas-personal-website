@@ -25,54 +25,67 @@ export default function VoluntrackProject() {
           </div>
 
           <p className="text-xl text-gray-300">
-            A posture-correcting robot that slaps you when you slouch
+            A comprehensive volunteer tracking platform that streamlines event
+            management and fosters community engagement.
           </p>
         </div>
 
         {/* Featured Image */}
         <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden border border-gray-800">
           <Image
-            src="/fernando.png"
-            alt="Fernando Robot"
+            src="/voluntrack.png"
+            alt="VolunTrack Dashboard"
             width={1200}
             height={800}
             className="object-cover"
             priority
           />
         </div>
+
         {/* Project Links */}
         <div className="flex flex-wrap gap-4">
-          <Button
-            variant="outline"
-            className="border border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors"
+          <a
+            href="https://voluntrack-demo.example.com"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
-          </Button>
-          <Button
-            variant="outline"
-            className="border border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors"
+            <Button
+              variant="outline"
+              className="border border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors"
+            >
+              <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
+            </Button>
+          </a>
+          <a
+            href="https://github.com/VolunTrack"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Image
-              src="/github.png"
-              alt="GitHub Logo"
-              width={16}
-              height={16}
-              className="mr-2"
-            />
-            View Code
-          </Button>
+            <Button
+              variant="outline"
+              className="border border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors"
+            >
+              <Image
+                src="/github.png"
+                alt="GitHub Logo"
+                width={16}
+                height={16}
+                className="mr-2"
+              />
+              View Code
+            </Button>
+          </a>
         </div>
+
         {/* Overview Section */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Overview</h2>
           <p className="text-gray-300 text-lg leading-relaxed">
-            Fernando is a hardware robot designed to help you maintain proper
-            posture while working at your desk. Using computer vision to detect
-            your posture, Fernando physically corrects bad habits by gently
-            slapping your back when you slouch. Unlike apps that are easy to
-            ignore, Fernando provides immediate physical feedback that's
-            impossible to miss, helping you develop better posture habits over
-            time.
+            VolunTrack is an innovative web-based platform designed to simplify
+            volunteer management. The system automates the tracking of volunteer
+            hours, event participation, and community contributions, enabling
+            organizations to generate real-time insights and comprehensive
+            reports that boost engagement.
           </p>
         </section>
 
@@ -82,18 +95,17 @@ export default function VoluntrackProject() {
             <h2 className="text-2xl font-bold">The Problem</h2>
             <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-gray-800">
               <Image
-                src="/placeholder.svg?height=500&width=500"
-                alt="Person with poor posture"
+                src="/voluntrack-problem.png"
+                alt="Inefficient volunteer tracking"
                 width={500}
                 height={500}
                 className="object-cover"
               />
             </div>
             <p className="text-gray-300">
-              Poor posture during long hours at a desk leads to chronic back
-              pain, neck strain, and other health issues. Most existing
-              solutions rely on passive notifications that are easy to ignore,
-              resulting in continued poor habits.
+              Many organizations struggle with manually tracking volunteer
+              contributions and event participation, leading to inefficiencies
+              and missed opportunities for engagement.
             </p>
           </section>
 
@@ -101,18 +113,18 @@ export default function VoluntrackProject() {
             <h2 className="text-2xl font-bold">The Solution</h2>
             <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-gray-800">
               <Image
-                src="/placeholder.svg?height=500&width=500"
-                alt="Fernando correcting posture"
+                src="/voluntrack-solution.png"
+                alt="Automated volunteer tracking"
                 width={500}
                 height={500}
                 className="object-cover"
               />
             </div>
             <p className="text-gray-300">
-              Fernando provides immediate physical feedback when your posture
-              deteriorates. The gentle slap on your back creates an unmistakable
-              reminder that helps reinforce good habits through consistent,
-              timely correction.
+              VolunTrack offers an integrated platform that automates data
+              collection, standardizes volunteer hours, and generates real-time
+              reports. This streamlined process enhances resource allocation and
+              improves community engagement.
             </p>
           </section>
         </div>
@@ -120,18 +132,16 @@ export default function VoluntrackProject() {
         {/* Key Features */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Key Features</h2>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card className="bg-transparent border border-gray-800">
               <CardContent className="p-6 space-y-4">
                 <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center">
-                  <span className="text-white font-bold">CV</span>
+                  <span className="text-white font-bold">DB</span>
                 </div>
-                <h3 className="text-xl font-bold">Computer Vision</h3>
+                <h3 className="text-xl font-bold">Real-Time Dashboard</h3>
                 <p className="text-gray-400">
-                  Real-time posture detection using OpenCV and MediaPipe to
-                  track 33 key body points, with 94% accuracy in identifying
-                  poor posture.
+                  Provides up-to-date insights into volunteer participation and
+                  event performance.
                 </p>
               </CardContent>
             </Card>
@@ -139,13 +149,12 @@ export default function VoluntrackProject() {
             <Card className="bg-transparent border border-gray-800">
               <CardContent className="p-6 space-y-4">
                 <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center">
-                  <span className="text-white font-bold">Arm</span>
+                  <span className="text-white font-bold">AT</span>
                 </div>
-                <h3 className="text-xl font-bold">Mechanical Arm</h3>
+                <h3 className="text-xl font-bold">Automated Tracking</h3>
                 <p className="text-gray-400">
-                  3-DOF robotic arm with force-calibrated tapping mechanism,
-                  designed for comfort while providing effective tactile
-                  feedback.
+                  Automatically records volunteer hours and event attendance to
+                  eliminate manual entry.
                 </p>
               </CardContent>
             </Card>
@@ -153,106 +162,39 @@ export default function VoluntrackProject() {
             <Card className="bg-transparent border border-gray-800">
               <CardContent className="p-6 space-y-4">
                 <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center">
-                  <span className="text-white font-bold">App</span>
+                  <span className="text-white font-bold">RP</span>
                 </div>
-                <h3 className="text-xl font-bold">Companion App</h3>
+                <h3 className="text-xl font-bold">Robust Reporting</h3>
                 <p className="text-gray-400">
-                  Next.js web application for tracking posture history,
-                  customizing sensitivity, and providing personalized
-                  improvement recommendations.
+                  Generates detailed reports that help organizations assess
+                  volunteer impact and streamline operations.
                 </p>
               </CardContent>
             </Card>
-          </div>
-        </section>
-
-        {/* How It Works */}
-        <section className="space-y-6">
-          <h2 className="text-3xl font-bold">How It Works</h2>
-
-          <div className="relative w-full aspect-video rounded-xl overflow-hidden border border-gray-800 mb-6">
-            <Image
-              src="/placeholder.svg?height=600&width=1200"
-              alt="Fernando system diagram"
-              width={1200}
-              height={600}
-              className="object-cover"
-            />
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
-            <div className="space-y-2">
-              <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center mx-auto">
-                <span className="text-xl font-bold text-white">1</span>
-              </div>
-              <h3 className="font-semibold text-white">Detection</h3>
-              <p className="text-gray-400 text-sm">
-                Camera monitors your posture in real-time
-              </p>
-            </div>
-
-            <div className="space-y-2">
-              <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center mx-auto">
-                <span className="text-xl font-bold text-white">2</span>
-              </div>
-              <h3 className="font-semibold text-white">Analysis</h3>
-              <p className="text-gray-400 text-sm">
-                AI determines if your posture needs correction
-              </p>
-            </div>
-
-            <div className="space-y-2">
-              <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center mx-auto">
-                <span className="text-xl font-bold text-white">3</span>
-              </div>
-              <h3 className="font-semibold text-white">Correction</h3>
-              <p className="text-gray-400 text-sm">
-                Mechanical arm delivers a gentle tap
-              </p>
-            </div>
-
-            <div className="space-y-2">
-              <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center mx-auto">
-                <span className="text-xl font-bold text-white">4</span>
-              </div>
-              <h3 className="font-semibold text-white">Learning</h3>
-              <p className="text-gray-400 text-sm">
-                System adapts to your habits over time
-              </p>
-            </div>
           </div>
         </section>
 
         {/* Technical Details */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Technical Details</h2>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-white">
-                Hardware Components
+                Data Sources & Extraction
               </h3>
               <ul className="list-disc pl-5 space-y-2 text-gray-300">
-                <li>Raspberry Pi 4 (4GB) for processing</li>
-                <li>HD webcam for posture detection</li>
-                <li>3 high-torque servo motors for arm movement</li>
-                <li>Custom 3D-printed PLA housing and arm</li>
-                <li>Silicone padding for comfortable contact</li>
-                <li>5000mAh LiPo battery for 8-10 hours of operation</li>
-                <li>USB-C charging port</li>
+                <li>APIs for volunteer event data and registrations</li>
+                <li>CSV file ingestion for historical volunteer records</li>
               </ul>
             </div>
-
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-white">Software Stack</h3>
               <ul className="list-disc pl-5 space-y-2 text-gray-300">
-                <li>Python for core processing and control</li>
-                <li>OpenCV and MediaPipe for pose estimation</li>
-                <li>TensorFlow Lite for optimized edge inference</li>
-                <li>Next.js and React for the web interface</li>
-                <li>Vercel for application hosting</li>
-                <li>WebSockets for real-time communication</li>
-                <li>Custom microservices architecture</li>
+                <li>Next.js & React for the web interface</li>
+                <li>Node.js & Express for API services</li>
+                <li>Firebase/Firestore for real-time data storage</li>
+                <li>RESTful APIs for data integration</li>
+                <li>Custom analytics and reporting modules</li>
               </ul>
             </div>
           </div>
@@ -261,45 +203,30 @@ export default function VoluntrackProject() {
         {/* Results */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Results</h2>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
               <div className="grid grid-cols-2 gap-4">
                 <div className="border border-gray-800 p-6 rounded-lg text-center">
-                  <span className="text-4xl font-bold text-white">92%</span>
+                  <span className="text-4xl font-bold text-white">+30%</span>
                   <p className="text-gray-400 mt-2">
-                    Improved posture awareness
+                    Increase in volunteer engagement
                   </p>
                 </div>
                 <div className="border border-gray-800 p-6 rounded-lg text-center">
-                  <span className="text-4xl font-bold text-white">78%</span>
+                  <span className="text-4xl font-bold text-white">-80%</span>
                   <p className="text-gray-400 mt-2">
-                    Measurable posture improvement
-                  </p>
-                </div>
-                <div className="border border-gray-800 p-6 rounded-lg text-center">
-                  <span className="text-4xl font-bold text-white">85%</span>
-                  <p className="text-gray-400 mt-2">
-                    Preferred over app notifications
-                  </p>
-                </div>
-                <div className="border border-gray-800 p-6 rounded-lg text-center">
-                  <span className="text-4xl font-bold text-white">88%</span>
-                  <p className="text-gray-400 mt-2">
-                    Rated the feedback as comfortable
+                    Reduction in manual tracking effort
                   </p>
                 </div>
               </div>
               <p className="text-gray-300">
-                Based on a 4-week study with 25 participants using Fernando in
-                their daily work environment.
+                Based on a 6-month pilot with multiple community organizations.
               </p>
             </div>
-
             <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-gray-800">
               <Image
-                src="/placeholder.svg?height=500&width=500"
-                alt="User testing Fernando"
+                src="/voluntrack-results.png"
+                alt="VolunTrack Results Dashboard"
                 width={500}
                 height={500}
                 className="object-cover"
@@ -311,12 +238,11 @@ export default function VoluntrackProject() {
         {/* Gallery */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Gallery</h2>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="relative aspect-square rounded-lg overflow-hidden border border-gray-800">
               <Image
-                src="/placeholder.svg?height=400&width=400"
-                alt="Fernando prototype"
+                src="/voluntrack-1.png"
+                alt="VolunTrack Home Screen"
                 width={400}
                 height={400}
                 className="object-cover"
@@ -324,8 +250,8 @@ export default function VoluntrackProject() {
             </div>
             <div className="relative aspect-square rounded-lg overflow-hidden border border-gray-800">
               <Image
-                src="/placeholder.svg?height=400&width=400"
-                alt="Fernando internal components"
+                src="/voluntrack-2.png"
+                alt="Volunteer Event Tracking"
                 width={400}
                 height={400}
                 className="object-cover"
@@ -333,8 +259,8 @@ export default function VoluntrackProject() {
             </div>
             <div className="relative aspect-square rounded-lg overflow-hidden border border-gray-800">
               <Image
-                src="/placeholder.svg?height=400&width=400"
-                alt="Fernando in use"
+                src="/voluntrack-3.png"
+                alt="Detailed Reporting"
                 width={400}
                 height={400}
                 className="object-cover"
@@ -356,22 +282,22 @@ export default function VoluntrackProject() {
             <Card className="bg-transparent border border-gray-800 overflow-hidden">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
-                  alt="AI Content Generator"
+                  src="/tiktokview.png"
+                  alt="TikTok View Predictor"
                   fill
                   className="object-cover"
                 />
               </div>
               <CardContent className="p-6 space-y-4">
                 <h3 className="text-xl font-bold text-white">
-                  AI Content Generator
+                  TikTok View Predictor
                 </h3>
                 <p className="text-gray-400">
-                  An application that leverages AI to generate blog posts,
-                  social media content, and marketing copy.
+                  A machine learning model that forecasts TikTok video views
+                  using linear regression and data analytics.
                 </p>
                 <Link
-                  href="/projects/ai-content-generator"
+                  href="/projects/tiktokviewpredictor"
                   className="text-gray-400 hover:text-white inline-flex items-center"
                 >
                   View project →
@@ -382,22 +308,22 @@ export default function VoluntrackProject() {
             <Card className="bg-transparent border border-gray-800 overflow-hidden">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
-                  alt="Smart Home Dashboard"
+                  src="/customerfeedback.png"
+                  alt="Customer Feedback ETL Pipeline"
                   fill
                   className="object-cover"
                 />
               </div>
               <CardContent className="p-6 space-y-4">
                 <h3 className="text-xl font-bold text-white">
-                  Smart Home Dashboard
+                  Customer Feedback ETL Pipeline
                 </h3>
                 <p className="text-gray-400">
-                  An IoT dashboard for monitoring and controlling smart home
-                  devices with automation capabilities.
+                  An end-to-end data pipeline that processes customer feedback
+                  using ETL techniques and machine learning analysis.
                 </p>
                 <Link
-                  href="/projects/smart-home-dashboard"
+                  href="/projects/customerfeedbacketl"
                   className="text-gray-400 hover:text-white inline-flex items-center"
                 >
                   View project →
