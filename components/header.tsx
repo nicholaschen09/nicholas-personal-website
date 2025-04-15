@@ -60,7 +60,6 @@ export default function Header() {
           >
             Projects
           </Link>
-          {/* Spacer div between Blogs and Resume */}
           <div className="w-4"></div>
           <Link
             href="/resumev2.pdf"
