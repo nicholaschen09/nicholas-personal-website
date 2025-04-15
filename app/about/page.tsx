@@ -178,6 +178,9 @@ export default function About() {
                     <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Helios
                     </span>
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
+                      CI/CD
+                    </span>
                   </div>
                 </div>
               </div>
