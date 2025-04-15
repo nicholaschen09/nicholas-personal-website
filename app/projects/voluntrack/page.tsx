@@ -31,9 +31,9 @@ export default function VoluntrackProject() {
         </div>
 
         {/* Featured Image */}
-        <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden border border-gray-800">
+        <div className="relative w-full aspect-[16/16] rounded-xl overflow-hidden border border-gray-800">
           <Image
-            src="/voluntrack.png"
+            src="/voluntrack1.jpg"
             alt="VolunTrack Dashboard"
             width={1200}
             height={800}
@@ -83,85 +83,42 @@ export default function VoluntrackProject() {
           </p>
         </section>
 
-        {/* Problem & Solution */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold">The Problem</h2>
-            <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-gray-800">
-              <Image
-                src="/voluntrack-problem.png"
-                alt="Inefficient volunteer tracking"
-                width={500}
-                height={500}
-                className="object-cover"
-              />
-            </div>
-            <p className="text-gray-300">
-              Many organizations struggle with manually tracking volunteer
-              contributions and event participation, leading to inefficiencies
-              and missed opportunities for engagement.
-            </p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold">The Solution</h2>
-            <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-gray-800">
-              <Image
-                src="/voluntrack-solution.png"
-                alt="Automated volunteer tracking"
-                width={500}
-                height={500}
-                className="object-cover"
-              />
-            </div>
-            <p className="text-gray-300">
-              VolunTrack offers an integrated platform that automates data
-              collection, standardizes volunteer hours, and generates real-time
-              reports. This streamlined process enhances resource allocation and
-              improves community engagement.
-            </p>
-          </section>
-        </div>
-
         {/* Key Features */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Key Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="bg-transparent border border-gray-800">
-              <CardContent className="p-6 space-y-4">
-                <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center">
-                  <span className="text-white font-bold">DB</span>
-                </div>
-                <h3 className="text-xl font-bold">Real-Time Dashboard</h3>
+            <Card className="bg-transparent border border-gray-800 p-4 rounded-lg">
+              <CardContent className="p-4 space-y-3">
                 <p className="text-gray-400">
                   Provides up-to-date insights into volunteer participation and
-                  event performance.
+                  event performance. The dashboard offers a user-friendly
+                  interface that allows organizations to monitor key metrics,
+                  track trends, and make data-driven decisions to enhance
+                  engagement and operational efficiency.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="bg-transparent border border-gray-800">
-              <CardContent className="p-6 space-y-4">
-                <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center">
-                  <span className="text-white font-bold">AT</span>
-                </div>
-                <h3 className="text-xl font-bold">Automated Tracking</h3>
+            <Card className="bg-transparent border border-gray-800 p-4 rounded-lg">
+              <CardContent className="p-4 space-y-3">
                 <p className="text-gray-400">
                   Automatically records volunteer hours and event attendance to
-                  eliminate manual entry.
+                  eliminate manual entry. This feature ensures accuracy and
+                  saves time by seamlessly integrating with event schedules and
+                  attendance logs, providing a hassle-free experience for both
+                  volunteers and administrators.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="bg-transparent border border-gray-800">
-              <CardContent className="p-6 space-y-4">
-                <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center">
-                  <span className="text-white font-bold">RP</span>
-                </div>
-                <h3 className="text-xl font-bold">Robust Reporting</h3>
+            <Card className="bg-transparent border border-gray-800 p-4 rounded-lg">
+              <CardContent className="p-4 space-y-3">
                 <p className="text-gray-400">
                   Generates detailed reports that help organizations assess
-                  volunteer impact and streamline operations.
+                  volunteer impact and streamline operations. The reporting
+                  tools provide customizable templates, visual analytics, and
+                  exportable formats, enabling organizations to showcase their
+                  achievements and identify areas for improvement.
                 </p>
               </CardContent>
             </Card>
@@ -190,75 +147,6 @@ export default function VoluntrackProject() {
                 <li>RESTful APIs for data integration</li>
                 <li>Custom analytics and reporting modules</li>
               </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Results */}
-        <section className="space-y-6">
-          <h2 className="text-3xl font-bold">Results</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="border border-gray-800 p-6 rounded-lg text-center">
-                  <span className="text-4xl font-bold text-white">+30%</span>
-                  <p className="text-gray-400 mt-2">
-                    Increase in volunteer engagement
-                  </p>
-                </div>
-                <div className="border border-gray-800 p-6 rounded-lg text-center">
-                  <span className="text-4xl font-bold text-white">-80%</span>
-                  <p className="text-gray-400 mt-2">
-                    Reduction in manual tracking effort
-                  </p>
-                </div>
-              </div>
-              <p className="text-gray-300">
-                Based on a 6-month pilot with multiple community organizations.
-              </p>
-            </div>
-            <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-gray-800">
-              <Image
-                src="/voluntrack-results.png"
-                alt="VolunTrack Results Dashboard"
-                width={500}
-                height={500}
-                className="object-cover"
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* Gallery */}
-        <section className="space-y-6">
-          <h2 className="text-3xl font-bold">Gallery</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="relative aspect-square rounded-lg overflow-hidden border border-gray-800">
-              <Image
-                src="/voluntrack-1.png"
-                alt="VolunTrack Home Screen"
-                width={400}
-                height={400}
-                className="object-cover"
-              />
-            </div>
-            <div className="relative aspect-square rounded-lg overflow-hidden border border-gray-800">
-              <Image
-                src="/voluntrack-2.png"
-                alt="Volunteer Event Tracking"
-                width={400}
-                height={400}
-                className="object-cover"
-              />
-            </div>
-            <div className="relative aspect-square rounded-lg overflow-hidden border border-gray-800">
-              <Image
-                src="/voluntrack-3.png"
-                alt="Detailed Reporting"
-                width={400}
-                height={400}
-                className="object-cover"
-              />
             </div>
           </div>
         </section>
