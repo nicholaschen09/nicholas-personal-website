@@ -33,7 +33,7 @@ const projects: Project[] = [
     id: 'basketbin',
     title: 'BasketBin',
     description:
-      'An automated garbage sorter that leverages computer vision to sort garbage thrown in depending on if it is recylcable or not.',
+      'An automated garbage sorter that leverages computer vision to sort garbage thrown in depending on if it is recyclable or not.',
     image: '/basketbin.jpg',
     links: {
       github: 'https://github.com/DerrickHa/ht6',
@@ -170,7 +170,7 @@ export default function ProjectsPage() {
             <hr className="border-t border-gray-700 mb-8" />
             <div className="flex flex-col items-center md:items-start">
               <p className="text-gray-400 mb-4">
-                © 2025 Nicholas Chen. All rights reserved.
+                © 2025 Nicholas Chen. 
               </p>
 
               {/* Social Media Links */}

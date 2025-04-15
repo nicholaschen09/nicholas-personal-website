@@ -120,7 +120,7 @@ export default function About() {
                     Software Engineer Intern
                   </h4>
                   <span className="text-gray-400 text-sm sm:text-base">
-                    Jan 2025 - Present
+                    Jan 2025 - April 2025
                   </span>
                 </div>
                 <p className="text-gray-300 font-medium">Ownr - RBCx</p>
@@ -177,6 +177,9 @@ export default function About() {
                     </span>
                     <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
                       Helios
+                    </span>
+                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
+                      CI/CD
                     </span>
                   </div>
                 </div>
@@ -379,15 +382,13 @@ export default function About() {
                     University of Waterloo Alternative Fuels Team
                   </h4>
                   <span className="text-gray-400 text-sm sm:text-base">
-                    2024 - Present
+                    Sept 2024 - Dec 2024
                   </span>
                 </div>
-                <p className="text-gray-300 font-medium">
-                  Electrical and Mechanical Engineer
-                </p>
+                <p className="text-gray-300 font-medium">Software Engineer</p>
                 <p className="text-gray-400 text-sm sm:text-base">
-                  Worked on designing and implementing electrical and mechanical
-                  systems for our alternative fuel vehicle.
+                  Worked on designing and implementing software systems for our
+                  alternative fuel vehicle.
                 </p>
 
                 {/* Technical Skills */}
@@ -501,9 +502,7 @@ export default function About() {
           {/* Footer */}
           <footer className="w-full max-w-6xl mt-16 pt-8 border-t border-gray-700">
             <div className="flex flex-col items-center md:items-start">
-              <p className="text-gray-400 mb-4">
-                © 2025 Nicholas Chen. All rights reserved.
-              </p>
+              <p className="text-gray-400 mb-4">© 2025 Nicholas Chen.</p>
 
               {/* Social Media Links */}
               <div className="flex space-x-8 pt-4 justify-center sm:justify-start">

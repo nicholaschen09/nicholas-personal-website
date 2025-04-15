@@ -282,9 +282,7 @@ export default function BlogPost() {
         <div className="max-w-4xl mx-auto w-full">
           <hr className="border-t border-gray-700 mb-8" />
           <div className="flex flex-col items-center md:items-start">
-            <p className="text-gray-400 mb-4">
-              © 2025 Nicholas Chen. All rights reserved.
-            </p>
+            <p className="text-gray-400 mb-4">© 2025 Nicholas Chen.</p>
 
             {/* Social Media Links */}
             <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
