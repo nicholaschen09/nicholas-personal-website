@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowLeft, ExternalLink } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardFooter } from '@/components/ui/card';
 
 export default function VoluntrackProject() {
   return (
@@ -45,15 +45,12 @@ export default function VoluntrackProject() {
         {/* Project Links */}
         <div className="flex flex-wrap gap-4">
           <a
-            href="https://voluntrack-demo.example.com"
+            href="https://voluntracks.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button
-              variant="outline"
-              className="border border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors"
-            >
-              <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
+            <Button className="text-white bg-transparent hover:text-gray-400 transition-colors">
+              <ExternalLink className="mr-2 h-4 w-4" /> Demo
             </Button>
           </a>
           <a
@@ -61,10 +58,7 @@ export default function VoluntrackProject() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button
-              variant="outline"
-              className="border border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors"
-            >
+            <Button className="text-white bg-transparent hover:text-gray-400 transition-colors">
               <Image
                 src="/github.png"
                 alt="GitHub Logo"
@@ -72,7 +66,7 @@ export default function VoluntrackProject() {
                 height={16}
                 className="mr-2"
               />
-              View Code
+              Code
             </Button>
           </a>
         </div>
@@ -274,61 +268,102 @@ export default function VoluntrackProject() {
           <div className="flex items-center justify-between">
             <h2 className="text-3xl font-bold text-white">More Projects</h2>
             <Link href="/projects" className="text-gray-400 hover:text-white">
-              View all →
+              View all Projects →
             </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card className="bg-transparent border border-gray-800 overflow-hidden">
+            <Card className="bg-transparent border border-gray-700 overflow-hidden">
               <div className="relative h-48">
                 <Image
-                  src="/tiktokview.png"
+                  src="/pandas.png"
                   alt="TikTok View Predictor"
                   fill
                   className="object-cover"
                 />
               </div>
-              <CardContent className="p-6 space-y-4">
+              <CardContent className="p-4 space-y-3">
                 <h3 className="text-xl font-bold text-white">
                   TikTok View Predictor
                 </h3>
-                <p className="text-gray-400">
-                  A machine learning model that forecasts TikTok video views
-                  using linear regression and data analytics.
+                <p className="text-gray-300 text-sm">
+                  A machine learning model that predicts TikTok video views
+                  using linear regression.
                 </p>
+              </CardContent>
+              <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">
+                <div className="flex gap-4">
+                  <Link
+                    href="https://github.com/nicholaschen09/tiktok-view-predictor"
+                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                  >
+                    <div className="w-4 h-4 flex items-center justify-center mr-2">
+                      <img src="/github.png" alt="GitHub" className="w-4 h-4" />
+                    </div>
+                    Code
+                  </Link>
+                  <Link
+                    href="#"
+                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                  >
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Demo
+                  </Link>
+                </div>
                 <Link
                   href="/projects/tiktokviewpredictor"
-                  className="text-gray-400 hover:text-white inline-flex items-center"
+                  className="text-gray-300 hover:te
+                  
+                  xt-white flex items-center gap-1 text-sm"
                 >
-                  View project →
+                  Read more <ArrowRight className="ml-1 w-4 h-4" />
                 </Link>
-              </CardContent>
+              </CardFooter>
             </Card>
 
-            <Card className="bg-transparent border border-gray-800 overflow-hidden">
+            <Card className="bg-transparent border border-gray-700 overflow-hidden">
               <div className="relative h-48">
                 <Image
-                  src="/customerfeedback.png"
-                  alt="Customer Feedback ETL Pipeline"
+                  src="/fernando.png"
+                  alt="Fernando"
                   fill
                   className="object-cover"
                 />
               </div>
-              <CardContent className="p-6 space-y-4">
-                <h3 className="text-xl font-bold text-white">
-                  Customer Feedback ETL Pipeline
-                </h3>
-                <p className="text-gray-400">
-                  An end-to-end data pipeline that processes customer feedback
-                  using ETL techniques and machine learning analysis.
+              <CardContent className="p-4 space-y-3">
+                <h3 className="text-xl font-bold text-white">Fernando</h3>
+                <p className="text-gray-300 text-sm">
+                  A posture correcting robot that helps you maintain a healthy
+                  posture while working at your desk by slapping you when you
+                  slouch.
                 </p>
-                <Link
-                  href="/projects/customerfeedbacketl"
-                  className="text-gray-400 hover:text-white inline-flex items-center"
-                >
-                  View project →
-                </Link>
               </CardContent>
+              <CardFooter className="p-4 pt-0 flex flex-col sm:flex-row gap-3 sm:justify-between">
+                <div className="flex gap-4">
+                  <Link
+                    href="https://github.com/enxilium/posture-checker-robot"
+                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                  >
+                    <div className="w-4 h-4 flex items-center justify-center mr-2">
+                      <img src="/github.png" alt="GitHub" className="w-4 h-4" />
+                    </div>
+                    Code
+                  </Link>
+                  <Link
+                    href="https://youtu.be/EBsmGGOubCk?si=1_ksNQak9YQNffQ6"
+                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                  >
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Demo
+                  </Link>
+                </div>
+                <Link
+                  href="/projects/fernando"
+                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                >
+                  Read more <ArrowRight className="ml-1 w-4 h-4" />
+                </Link>
+              </CardFooter>
             </Card>
           </div>
         </section>
@@ -339,9 +374,7 @@ export default function VoluntrackProject() {
         <div className="max-w-5xl mx-auto w-full">
           <hr className="border-t border-gray-700 mb-8" />
           <div className="flex flex-col items-center md:items-start">
-            <p className="text-gray-400 mb-4">
-              © 2025 Nicholas Chen. 
-            </p>
+            <p className="text-gray-400 mb-4">© 2025 Nicholas Chen.</p>
 
             {/* Social Media Links */}
             <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
