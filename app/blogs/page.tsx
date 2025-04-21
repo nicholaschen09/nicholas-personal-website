@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
+import Footer from '@/components/footer/footer';
 
 const blogPosts = [
   {
@@ -38,7 +39,7 @@ const regularPosts = blogPosts;
 
 export default function BlogsPage() {
   return (
-    <div className="container mx-auto py-16 px-4 mb-50 md:px-0 max-w-6xl">
+    <div className="container mx-auto py-16 px-4 md:px-0 max-w-6xl mb-20">
       <div className="mb-16">
         <h1 className="text-4xl font-bold mb-6 mt-20">Blogs</h1>
         <p className="text-lg text-zinc-400 max-w-3xl">
@@ -46,8 +47,6 @@ export default function BlogsPage() {
           and my personal journey in the tech industry.
         </p>
       </div>
-      <div className="mb-12"></div>
-
       <div className="grid gap-16">
         {regularPosts.map((post) => (
           <article
@@ -70,7 +69,7 @@ export default function BlogsPage() {
                 <div className="flex items-center">
                   <Link
                     href={`/blogs/${post.slug}`}
-                    className="inline-flex items-center gap-1 text-white hover:text-zinc-300 transition-colors pl-0"
+                    className="inline-flex items-center gap-1 text-white hover:text-zinc-300 transition-colors"
                   >
                     Read more
                     <ArrowUpRight
@@ -93,83 +92,9 @@ export default function BlogsPage() {
           </article>
         ))}
       </div>
-      {/* Footer */}
-      <footer className="w-full mt-8 pt-8">
-        <div className="max-w-8xl mx-auto w-full">
-          <hr className="border-t border-gray-700 mb-8" />
-          <div className="flex flex-col items-center md:items-start">
-            <p className="text-gray-400 mb-4">
-              © 2025 Nicholas Chen.
-            </p>
-
-            {/* Social Media Links */}
-            <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
-              <Link
-                href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
-                className="text-white hover:text-gray-300 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-10 h-10 flex items-center justify-center">
-                  <img
-                    src="/linkedin.png"
-                    alt="LinkedIn"
-                    className="max-w-full max-h-full object-contain"
-                  />
-                </div>
-                <span className="sr-only">LinkedIn</span>
-              </Link>
-              <Link
-                href="https://github.com/nicholaschen09"
-                className="text-white hover:text-gray-300 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-10 h-10 flex items-center justify-center">
-                  <img
-                    src="/github.png"
-                    alt="GitHub"
-                    className="w-7 h-7 md:w-8 md:h-8"
-                  />
-                </div>
-                <span className="sr-only">GitHub</span>
-              </Link>
-              <Link
-                href="mailto:nicholas.chen243@gmail.com"
-                className="text-white hover:text-gray-300 transition-colors"
-              >
-                <div className="w-10 h-10 flex items-center justify-center">
-                  <img
-                    src="/email.png"
-                    alt="Email"
-                    className="max-w-full max-h-full object-contain"
-                  />
-                </div>
-                <span className="sr-only">Email</span>
-              </Link>
-              <Link
-                href="https://x.com/nicholaschen__"
-                className="text-white hover:text-gray-300 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-7 h-8 flex items-center justify-center relative">
-                  <img
-                    src="/twitter.png"
-                    alt="Twitter"
-                    className="max-w-full max-h-full object-contain translate-y-1 translate-x-1"
-                  />
-                </div>
-                <span className="sr-only">Twitter</span>
-              </Link>
-            </div>
-
-            <p className="text-gray-500 text-sm mt-6 text-center md:text-left">
-              Designed and built by Nicholas Chen
-            </p>
-          </div>
-        </div>
-      </footer>
+      <div className="mt-40">
+        <Footer />
+      </div>
     </div>
   );
 }

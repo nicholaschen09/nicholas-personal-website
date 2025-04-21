@@ -1,5 +1,5 @@
 'use client';
-import { Card, CardContent, CardFooter } from '@/components/ui/card';
+import Footer from '@/components/footer/footer';
 import Image from 'next/image';
 import Link from 'next/link';
 import { TypeAnimation } from 'react-type-animation';
@@ -17,7 +17,7 @@ export default function About() {
             <div className="text-base sm:text-lg text-gray-300 min-h-[150px] md:min-h-[120px]">
               <TypeAnimation
                 sequence={[
-                  "Hello! I'm a Systems Design Engineering student at the University of Waterloo. I'm currently working as a software engineering intern at Ownr. In the past, I've worked at companies like RBC and Meta Hash Capital where I made some pretty cool things.",
+                  "Hello! I'm a Systems Design Engineering student at the University of Waterloo. In the past, I've worked at companies like Ownr, RBC and Meta Hash Capital where I made some pretty cool things.",
                   1000,
                 ]}
                 wrapper="p"
@@ -82,6 +82,21 @@ export default function About() {
                   />
                 </div>
                 <span className="sr-only">Twitter</span>
+              </Link>
+              <Link
+                href="linktree.png"
+                className="text-white hover:text-gray-300 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="w-8 h-8 flex items-center justify-center mt-0.5 ml-1">
+                  <img
+                    src="/linktree.png"
+                    alt="Linktree"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <span className="sr-only">Linktree</span>
               </Link>
             </div>
           </div>
@@ -498,79 +513,7 @@ export default function About() {
               </div>
             </div>
           </section>
-
-          {/* Footer */}
-          <footer className="w-full max-w-6xl mt-16 pt-8 border-t border-gray-700">
-            <div className="flex flex-col items-center md:items-start">
-              <p className="text-gray-400 mb-4">© 2025 Nicholas Chen.</p>
-
-              {/* Social Media Links */}
-              <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
-                <Link
-                  href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
-                  className="text-white hover:text-gray-300 transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="w-10 h-10 flex items-center justify-center">
-                    <img
-                      src="/linkedin.png"
-                      alt="LinkedIn"
-                      className="max-w-full max-h-full object-contain"
-                    />
-                  </div>
-                  <span className="sr-only">LinkedIn</span>
-                </Link>
-                <Link
-                  href="https://github.com/nicholaschen09"
-                  className="text-white hover:text-gray-300 transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="w-10 h-10 flex items-center justify-center">
-                    <img
-                      src="/github.png"
-                      alt="GitHub"
-                      className="w-7 h-7 md:w-8 md:h-8"
-                    />
-                  </div>
-                  <span className="sr-only">GitHub</span>
-                </Link>
-                <Link
-                  href="mailto:nicholas.chen243@gmail.com"
-                  className="text-white hover:text-gray-300 transition-colors"
-                >
-                  <div className="w-10 h-10 flex items-center justify-center">
-                    <img
-                      src="/email.png"
-                      alt="Email"
-                      className="max-w-full max-h-full object-contain"
-                    />
-                  </div>
-                  <span className="sr-only">Email</span>
-                </Link>
-                <Link
-                  href="https://x.com/nicholaschen__"
-                  className="text-white hover:text-gray-300 transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="w-7 h-8 flex items-center justify-center relative">
-                    <img
-                      src="/twitter.png"
-                      alt="Twitter"
-                      className="max-w-full max-h-full object-contain translate-y-1"
-                    />
-                  </div>
-                  <span className="sr-only">Twitter</span>
-                </Link>
-              </div>
-
-              <p className="text-gray-500 text-sm mt-6 text-center md:text-left">
-                Designed and built by Nicholas Chen
-              </p>
-            </div>
-          </footer>
+          <Footer />
         </div>
       </div>
     </main>
