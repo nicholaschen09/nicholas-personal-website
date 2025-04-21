@@ -314,10 +314,6 @@ export default function BasketBinProject() {
         <div className="max-w-5xl mx-auto w-full">
           <hr className="border-t border-gray-700 mb-8" />
           <div className="flex flex-col items-center md:items-start">
-            <p className="text-gray-400 mb-4">
-              © 2025 Nicholas Chen. 
-            </p>
-
             {/* Social Media Links */}
             <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
               <Link
@@ -378,12 +374,24 @@ export default function BasketBinProject() {
                 </div>
                 <span className="sr-only">Twitter</span>
               </Link>
+              <Link
+                href="https://linktr.ee/nicholas.chen__"
+                className="text-white hover:text-gray-300 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="w-8 h-8 flex items-center justify-center mt-0.5 ml-1">
+                  <img
+                    src="/linktree.png"
+                    alt="Linktree"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <span className="sr-only">Linktree</span>
+              </Link>
             </div>
-
-            <p className="text-gray-500 text-sm mt-6 text-center md:text-left">
-              Designed and built by Nicholas Chen
-            </p>
           </div>
+          <p className="text-gray-400 mt-10 mb-4">© 2025 Nicholas Chen.</p>
         </div>
       </footer>
     </main>
