@@ -18,7 +18,7 @@ export default function Home() {
         <div className="h-auto min-h-[150px] md:min-h-[120px]">
           <TypeAnimation
             sequence={[
-              "I am a software engineer intern at Ownr doing full stack web development and infrastructure. I am currently studying Systems Design Engineering at the University of Waterloo. Previously, I've helped create awesome things at RBC and Meta Hash Capital.",
+              "I am currently studying Systems Design Engineering at the University of Waterloo. Previously, I've helped create some awesome things at Ownr, RBC and Meta Hash Capital.",
               1000,
             ]}
             wrapper="p"
