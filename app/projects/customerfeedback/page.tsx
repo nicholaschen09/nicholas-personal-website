@@ -339,7 +339,7 @@ export default function ETLProject() {
                 <span className="sr-only">Twitter</span>
               </Link>
               <Link
-                href="linktree.png"
+                href="https://linktr.ee/nicholas.chen__"
                 className="text-white hover:text-gray-300 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
