@@ -123,7 +123,7 @@ export default function ProjectsPage() {
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
                     <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                    <p className="text-gray-300 text-sm mb-4 flex-grow">
+                    <p className="text-gray-400 text-sm mb-4 flex-grow">
                       {project.description}
                     </p>
                     <div className="flex justify-between items-center">
