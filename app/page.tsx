@@ -126,7 +126,7 @@ export default function Home() {
                   March 13, 2025
                 </span>
               </div>
-              <p className="text-gray-300 text-sm">
+              <p className="text-gray-400 text-sm">
                 In this blog post, I reflect on my first semester in the Systems
                 Design Engineering program at the University of Waterloo. I
                 discuss the challenges I faced, the projects I worked on, and
@@ -163,7 +163,7 @@ export default function Home() {
                   March 24, 2025
                 </span>
               </div>
-              <p className="text-gray-300 text-sm">
+              <p className="text-gray-400 text-sm">
                 In this article, I share my personal journey and experiences
                 with social media, discussing both the positive and negative
                 impacts it has had on my life. From connecting with friends to
@@ -199,7 +199,7 @@ export default function Home() {
                   April 20, 2025
                 </span>
               </div>
-              <p className="text-gray-300 text-sm">
+              <p className="text-gray-400 text-sm">
                 In this article, I share my experiences during my first co-op
                 term at Ownr, an RBCx company. I discuss the projects I worked
                 on, the skills I developed, and the challenges I faced. This
@@ -239,7 +239,7 @@ export default function Home() {
             </div>
             <CardContent className="p-4 space-y-3">
               <h3 className="text-xl font-bold text-white">Fernando</h3>
-              <p className="text-gray-300 text-sm">
+              <p className="text-gray-400 text-sm">
                 A posture correcting robot that helps you maintain a healthy
                 posture while working at your desk by slapping you when you
                 slouch.
@@ -285,7 +285,7 @@ export default function Home() {
             </div>
             <CardContent className="p-4 space-y-3">
               <h3 className="text-xl font-bold text-white">BasketBin</h3>
-              <p className="text-gray-300 text-sm">
+              <p className="text-gray-400 text-sm">
                 An automated garbage sorter that leverages computer vision to
                 sort garbage thrown in depending on if it is recyclable or not.
               </p>
@@ -332,7 +332,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-white">
                 TikTok View Predictor
               </h3>
-              <p className="text-gray-300 text-sm">
+              <p className="text-gray-400 text-sm">
                 A machine learning-powered model that predicts the number of
                 views a TikTok video will receive using linear regression.
               </p>
@@ -379,7 +379,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-white">
                 Customer Feedback ETL Pipeline
               </h3>
-              <p className="text-gray-300 text-sm">
+              <p className="text-gray-400 text-sm">
                 An ETL pipeline that processes customer feedback with sentiment
                 analysis for actionable insights
               </p>
@@ -437,7 +437,7 @@ export default function Home() {
                   April 20, 2024
                 </span>
               </div>
-              <p className="text-gray-300 text-sm">
+              <p className="text-gray-400 text-sm">
                 In this website, I share the process of creating my art
                 portfolio website. I discuss the design choices, the
                 technologies used, and the challenges faced during development.
@@ -469,7 +469,7 @@ export default function Home() {
                     Leetcode Profile
                   </h3>
                 </div>
-                <p className="text-gray-300 text-sm">
+                <p className="text-gray-400 text-sm">
                   My{' '}
                   <a
                     href="https://leetcode.com/u/nic_09/"
@@ -494,7 +494,7 @@ export default function Home() {
                     Devpost Profile
                   </h3>
                 </div>
-                <p className="text-gray-300 text-sm">
+                <p className="text-gray-400 text-sm">
                   My{' '}
                   <a
                     href="https://devpost.com/nicholaschen09?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
