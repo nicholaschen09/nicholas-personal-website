@@ -87,7 +87,7 @@ export default function VoluntrackProject() {
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Key Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="bg-transparent border border-gray-800 p-4 rounded-lg">
+            <Card className="bg-transparent border border-white p-4 rounded-lg">
               <CardContent className="p-4 space-y-3">
                 <p className="text-gray-400">
                   Provides up-to-date insights into volunteer participation and
@@ -99,7 +99,7 @@ export default function VoluntrackProject() {
               </CardContent>
             </Card>
 
-            <Card className="bg-transparent border border-gray-800 p-4 rounded-lg">
+            <Card className="bg-transparent border border-white p-4 rounded-lg">
               <CardContent className="p-4 space-y-3">
                 <p className="text-gray-400">
                   Automatically records volunteer hours and event attendance to
@@ -111,7 +111,7 @@ export default function VoluntrackProject() {
               </CardContent>
             </Card>
 
-            <Card className="bg-transparent border border-gray-800 p-4 rounded-lg">
+            <Card className="bg-transparent border border-white p-4 rounded-lg">
               <CardContent className="p-4 space-y-3">
                 <p className="text-gray-400">
                   Generates detailed reports that help organizations assess

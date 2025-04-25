@@ -89,7 +89,7 @@ export default function ETLProject() {
         <section className="space-y-6">
           <h2 className="text-3xl font-bold text-white">Key Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="bg-black shadow-xl rounded-lg p-6 border border-white">
+            <Card className="bg-[hsl(var(--background))] shadow-xl rounded-lg p-6 border border-white">
               <CardContent className="flex flex-col items-center text-center space-y-4">
                 <h3 className="text-xl font-bold text-white">
                   Data Extraction
@@ -100,7 +100,7 @@ export default function ETLProject() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="bg-black shadow-xl rounded-lg p-6 border border-white">
+            <Card className="bg-[hsl(var(--background))] shadow-xl rounded-lg p-6 border border-white">
               <CardContent className="flex flex-col items-center text-center space-y-4">
                 <h3 className="text-xl font-bold text-white">
                   Data Transformation
@@ -111,7 +111,7 @@ export default function ETLProject() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="bg-black shadow-xl rounded-lg p-6 border border-white">
+            <Card className="bg-[hsl(var(--background))] shadow-xl rounded-lg p-6 border border-white">
               <CardContent className="flex flex-col items-center text-center space-y-4">
                 <h3 className="text-xl font-bold text-white">
                   Data Loading & Visualization
@@ -124,7 +124,6 @@ export default function ETLProject() {
             </Card>
           </div>
         </section>
-
         {/* Technical Stack */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Technical Details</h2>
