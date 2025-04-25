@@ -89,7 +89,7 @@ export default function About() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="w-8 h-8 flex items-center justify-center mt-1">
+                <div className="w-8 h-8 flex items-center justify-center mt-0.5">
                   <img
                     src="/linktree.png"
                     alt="Linktree"
