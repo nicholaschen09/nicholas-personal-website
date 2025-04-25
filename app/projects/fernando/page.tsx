@@ -116,7 +116,7 @@ export default function FernandoProject() {
                 <div className="">
                   <span className="text-white font-bold">CV</span>
                 </div>
-                <h3 className="text-xl font-bold">Computer Vision</h3>
+
                 <p className="text-gray-400">
                   Real-time posture detection using OpenCV and MediaPipe to
                   track 33 key body points, with 94% accuracy in identifying
@@ -130,7 +130,7 @@ export default function FernandoProject() {
                 <div className="">
                   <span className="text-white font-bold">Arm</span>
                 </div>
-                <h3 className="text-xl font-bold">Mechanical Arm</h3>
+
                 <p className="text-gray-400">
                   A robotic arm with force-calibrated tapping mechanism,
                   designed for comfort while providing effective tactile
@@ -144,7 +144,7 @@ export default function FernandoProject() {
                 <div className="">
                   <span className="text-white font-bold">App</span>
                 </div>
-                <h3 className="text-xl font-bold">Companion App</h3>
+
                 <p className="text-gray-400">
                   Next.js web application for tracking posture history,
                   customizing sensitivity, and providing personalized
