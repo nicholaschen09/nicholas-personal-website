@@ -11,8 +11,6 @@ export default function Footer() {
             <Link
               href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
               className="text-white hover:text-gray-300 transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <div className="w-10 h-10 flex items-center justify-center">
                 <img
@@ -26,14 +24,12 @@ export default function Footer() {
             <Link
               href="https://github.com/nicholaschen09"
               className="text-white hover:text-gray-300 transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
             >
-              <div className="w-10 h-10 flex items-center justify-center">
+              <div className="w-12 h-8 flex items-center justify-center mt-1">
                 <img
-                  src="/github.png"
+                  src="/github1.png"
                   alt="GitHub"
-                  className="w-7 h-7 md:w-8 md:h-8"
+                  className="w-10 h-10 md:w-12 md:h-12"
                 />
               </div>
               <span className="sr-only">GitHub</span>
@@ -42,7 +38,7 @@ export default function Footer() {
               href="mailto:nicholas.chen243@gmail.com"
               className="text-white hover:text-gray-300 transition-colors"
             >
-              <div className="w-10 h-10 flex items-center justify-center">
+              <div className="w-11 h-12 flex items-center justify-center relative -top-1">
                 <img
                   src="/email.png"
                   alt="Email"
@@ -57,7 +53,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="w-7 h-8 flex items-center justify-center relative">
+              <div className="w-11 h-8 flex items-center justify-center relative">
                 <img
                   src="/twitter.png"
                   alt="Twitter"
@@ -72,7 +68,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="w-8 h-8 flex items-center justify-center mt-0.5 ml-1">
+              <div className="w-8 h-8 flex items-center justify-center mt-0.5">
                 <img
                   src="/linktree.png"
                   alt="Linktree"
