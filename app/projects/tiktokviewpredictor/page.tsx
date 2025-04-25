@@ -61,10 +61,10 @@ export default function TikTokProject() {
           >
             <Button className="text-white bg-transparent hover:text-gray-400 transition-colors">
               <Image
-                src="/github.png"
+                src="/github1.png"
                 alt="GitHub Logo"
-                width={16}
-                height={16}
+                width={24}
+                height={24}
                 className="mr-2"
               />
               Code
