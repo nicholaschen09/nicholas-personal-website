@@ -335,8 +335,12 @@ export default function FernandoProject() {
                     href="https://github.com/nicholaschen09/tiktok-view-predictor"
                     className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
                   >
-                    <div className="w-4 h-4 flex items-center justify-center mr-2">
-                      <img src="/github.png" alt="GitHub" className="w-4 h-4" />
+                    <div className="w-6 h-6 flex items-center justify-center mr-2">
+                      <img
+                        src="/github1.png"
+                        alt="GitHub"
+                        className="w-6 h-6"
+                      />
                     </div>
                     Code
                   </Link>
@@ -380,8 +384,12 @@ export default function FernandoProject() {
                     href="https://github.com/DerrickHa/ht6"
                     className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
                   >
-                    <div className="w-4 h-4 flex items-center justify-center mr-2">
-                      <img src="/github.png" alt="GitHub" className="w-4 h-4" />
+                    <div className="w-6 h-6 flex items-center justify-center mr-2">
+                      <img
+                        src="/github1.png"
+                        alt="GitHub"
+                        className="w-6 h-6"
+                      />
                     </div>
                     Code
                   </Link>
