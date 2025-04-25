@@ -6,7 +6,7 @@ import { Card, CardContent, CardFooter } from '@/components/ui/card';
 
 export default function TikTokProject() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-6 md:p-24 bg-black text-white">
+    <main className="flex min-h-screen flex-col items-center p-6 md:p-24 text-white">
       <div className="max-w-5xl w-full space-y-12">
         {/* Navigation */}
         <Link
@@ -61,10 +61,10 @@ export default function TikTokProject() {
           >
             <Button className="text-white bg-transparent hover:text-gray-400 transition-colors">
               <Image
-                src="/github.png"
+                src="/github1.png"
                 alt="GitHub Logo"
-                width={16}
-                height={16}
+                width={24}
+                height={24}
                 className="mr-2"
               />
               Code
@@ -90,7 +90,7 @@ export default function TikTokProject() {
         <section className="space-y-6">
           <h2 className="text-3xl font-bold text-white">Key Features</h2>
           <div className="grid grid-cols-1 gap-8">
-            <Card className="bg-black shadow-xl rounded-lg p-6 border border-white">
+            <Card className="bg-[hsl(var(--background))] shadow-xl rounded-lg p-6 border border-white">
               <CardContent className="flex flex-col items-center text-center space-y-4">
                 <h3 className="text-xl font-bold text-white">
                   Predictive Analytics
@@ -101,7 +101,7 @@ export default function TikTokProject() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="bg-black shadow-xl rounded-lg p-6 border border-white">
+            <Card className="bg-[hsl(var(--background))] shadow-xl rounded-lg p-6 border border-white">
               <CardContent className="flex flex-col items-center text-center space-y-4">
                 <h3 className="text-xl font-bold text-white">
                   Data Pipeline Integration
@@ -112,7 +112,7 @@ export default function TikTokProject() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="bg-black shadow-xl rounded-lg p-6 border border-white">
+            <Card className="bg-[hsl(var(--background))] shadow-xl rounded-lg p-6 border border-white">
               <CardContent className="flex flex-col items-center text-center space-y-4">
                 <h3 className="text-xl font-bold text-white">
                   Interactive Dashboard
@@ -245,8 +245,12 @@ export default function TikTokProject() {
                     href="https://github.com/nicholaschen09/customer-feedback-etl-pipeline"
                     className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
                   >
-                    <div className="w-4 h-4 flex items-center justify-center mr-2">
-                      <img src="/github.png" alt="GitHub" className="w-4 h-4" />
+                    <div className="w-6 h-6 flex items-center justify-center mr-2">
+                      <img
+                        src="/github1.png"
+                        alt="GitHub"
+                        className="w-6 h-6"
+                      />
                     </div>
                     Code
                   </Link>
@@ -290,8 +294,12 @@ export default function TikTokProject() {
                     href="https://github.com/enxilium/posture-checker-robot"
                     className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
                   >
-                    <div className="w-4 h-4 flex items-center justify-center mr-2">
-                      <img src="/github.png" alt="GitHub" className="w-4 h-4" />
+                    <div className="w-6 h-6 flex items-center justify-center mr-2">
+                      <img
+                        src="/github1.png"
+                        alt="GitHub"
+                        className="w-6 h-6"
+                      />
                     </div>
                     Code
                   </Link>
@@ -325,8 +333,6 @@ export default function TikTokProject() {
               <Link
                 href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
                 className="text-white hover:text-gray-300 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 <div className="w-10 h-10 flex items-center justify-center">
                   <img
@@ -340,14 +346,12 @@ export default function TikTokProject() {
               <Link
                 href="https://github.com/nicholaschen09"
                 className="text-white hover:text-gray-300 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
               >
-                <div className="w-10 h-10 flex items-center justify-center">
+                <div className="w-12 h-8 flex items-center justify-center mt-1">
                   <img
-                    src="/github.png"
+                    src="/github1.png"
                     alt="GitHub"
-                    className="w-7 h-7 md:w-8 md:h-8"
+                    className="w-10 h-10 md:w-12 md:h-12"
                   />
                 </div>
                 <span className="sr-only">GitHub</span>
@@ -356,7 +360,7 @@ export default function TikTokProject() {
                 href="mailto:nicholas.chen243@gmail.com"
                 className="text-white hover:text-gray-300 transition-colors"
               >
-                <div className="w-10 h-10 flex items-center justify-center">
+                <div className="w-11 h-12 flex items-center justify-center relative -top-1">
                   <img
                     src="/email.png"
                     alt="Email"
@@ -371,7 +375,7 @@ export default function TikTokProject() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="w-7 h-8 flex items-center justify-center relative">
+                <div className="w-11 h-8 flex items-center justify-center relative">
                   <img
                     src="/twitter.png"
                     alt="Twitter"
@@ -386,7 +390,7 @@ export default function TikTokProject() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="w-8 h-8 flex items-center justify-center mt-0.5 ml-1">
+                <div className="w-8 h-8 flex items-center justify-center mt-0.5">
                   <img
                     src="/linktree.png"
                     alt="Linktree"
