@@ -140,9 +140,9 @@ export default function ProjectsPage() {
                             className="text-gray-400 hover:text-white mr-2"
                           >
                             <img
-                              src="/github.png"
+                              src="/github1.png"
                               alt="GitHub"
-                              className="h-5 w-5"
+                              className="h-8 w-8"
                             />
                             <span className="sr-only">GitHub</span>
                           </Link>
