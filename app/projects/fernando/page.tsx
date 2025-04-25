@@ -7,7 +7,7 @@ import { Card, CardContent, CardFooter } from '@/components/ui/card';
 
 export default function FernandoProject() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-6 md:p-24 bg-black text-white">
+    <main className="flex min-h-screen flex-col items-center p-6 md:p-24 text-white">
       <div className="max-w-5xl w-full space-y-12">
         {/* Navigation */}
         <Link
