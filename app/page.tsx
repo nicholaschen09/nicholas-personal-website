@@ -1,4 +1,5 @@
 'use client';
+import SearchBar from '@/components/search/search';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ExternalLink, ArrowRight } from 'lucide-react';
@@ -100,6 +101,9 @@ export default function Home() {
           </Link>
         </div>
       </div>
+            
+      <SearchBar />
+
       {/* Blog Section */}
       <div className="w-full max-w-6xl mb-10">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 md:mb-10">
