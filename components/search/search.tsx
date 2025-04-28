@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function SearchBar() {
   const [query, setQuery] = useState('');
@@ -8,10 +9,13 @@ export default function SearchBar() {
 
   async function handleSearch(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    if (!query.trim()) return;
+    const trimmedQuery = query.trim();
+    if (!trimmedQuery) return;
     setLoading(true);
     try {
-      const res = await fetch(`/api/route?query=${encodeURIComponent(query)}`);
+      const res = await fetch(
+        `/api/route?query=${encodeURIComponent(trimmedQuery)}`
+      );
       const data = await res.json();
       setResults(data.results);
     } catch (error) {
@@ -19,6 +23,17 @@ export default function SearchBar() {
     } finally {
       setLoading(false);
     }
+  }
+
+  // Helper to determine the URL based on category.
+  function getLink(result: any) {
+    if (result.category === 'projects') {
+      return `/projects/${result.id}`;
+    }
+    if (result.category === 'blogs') {
+      return `/blogs/${result.id}`;
+    }
+    return '/';
   }
 
   return (
@@ -44,7 +59,9 @@ export default function SearchBar() {
                 key={index}
                 className="text-gray-300 py-1 border-b border-gray-700"
               >
-                {result.title}
+                <Link href={getLink(result)} className="hover:text-blue-400">
+                  {result.title}
+                </Link>
               </li>
             ))}
           </ul>
