@@ -19,11 +19,12 @@ export default function Home() {
         <div className="h-auto min-h-[150px] md:min-h-[120px]">
           <TypeAnimation
             sequence={[
+              500,
               "I am currently studying Systems Design Engineering at the University of Waterloo. Previously, I've helped create some awesome things at Ownr, RBC and Meta Hash Capital.",
               1000,
             ]}
             wrapper="p"
-            speed={50}
+            speed={10} // Types each character in 10ms
             className="text-base sm:text-lg md:text-xl text-gray-300"
             repeat={0}
           />
@@ -101,7 +102,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-            
+
       <SearchBar />
 
       {/* Blog Section */}
@@ -479,7 +480,7 @@ export default function Home() {
                     href="https://leetcode.com/u/nic_09/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-pink-500 hover:underline underline underline-offset-4 mt-2"
+                    className="inline-block bg-pink-500 text-black transition-colors mt-2 hover:underline"
                   >
                     Leetcode Profile
                   </a>{' '}
@@ -504,7 +505,7 @@ export default function Home() {
                     href="https://devpost.com/nicholaschen09?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-pink-500 hover:underline underline underline-offset-4 mt-2"
+                    className="inline-block bg-pink-500 text-black transition-colors mt-2 hover:underline"
                   >
                     Devpost Profile
                   </a>{' '}
