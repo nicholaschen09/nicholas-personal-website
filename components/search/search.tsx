@@ -45,7 +45,7 @@ export default function SearchBar() {
     return '/';
   }
 
-  // Helper to get the appropriate icon based on category
+  // Helper to get the appropriate icon based on category.
   function getCategoryIcon(category: string) {
     switch (category) {
       case 'projects':
@@ -57,7 +57,7 @@ export default function SearchBar() {
     }
   }
 
-  // Helper to get the appropriate color for category badge
+  // Helper to get the appropriate color for category badge.
   function getCategoryColor(category: string) {
     return 'border-white/30 bg-transparent text-white hover:bg-white/5';
   }
@@ -110,7 +110,7 @@ export default function SearchBar() {
       )}
 
       {(results.length > 0 || (focused && query)) && (
-        <Card className="absolute w-full mt-2 bg-transparent border border-white/30 shadow-lg rounded-lg z-10 overflow-hidden">
+        <Card className="absolute w-full mt-2 bg-[hsl(var(--background))] border border-white/30 shadow-lg rounded-lg z-10 overflow-hidden">
           <CardContent className="p-0">
             {results.length > 0 ? (
               <div>
@@ -120,6 +120,7 @@ export default function SearchBar() {
                     found
                   </h2>
                 </div>
+
                 <ul className="max-h-[350px] overflow-y-auto">
                   {results.map((result, index) => (
                     <li
@@ -130,11 +131,8 @@ export default function SearchBar() {
                         href={getLink(result)}
                         className="flex items-start gap-3 p-3 hover:bg-white/5 transition-colors"
                       >
-                        <div className="mt-0.5 border border-white/30 bg-transparent rounded-md p-2">
-                          {getCategoryIcon(result.category)}
-                        </div>
                         <div className="flex-1 min-w-0">
-                          <h3 className="text-white font-medium truncate">
+                          <h3 className="text-white font-medium truncate flex items-center gap-2">
                             {result.title}
                           </h3>
                           {result.description && (
@@ -142,14 +140,6 @@ export default function SearchBar() {
                               {result.description}
                             </p>
                           )}
-                          <div className="mt-2">
-                            <Badge
-                              variant="outline"
-                              className="border-white/30 bg-transparent text-white text-xs font-normal"
-                            >
-                              {result.category}
-                            </Badge>
-                          </div>
                         </div>
                       </Link>
                     </li>
