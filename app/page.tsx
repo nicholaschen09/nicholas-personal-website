@@ -19,11 +19,12 @@ export default function Home() {
         <div className="h-auto min-h-[150px] md:min-h-[120px]">
           <TypeAnimation
             sequence={[
+              500,
               "I am currently studying Systems Design Engineering at the University of Waterloo. Previously, I've helped create some awesome things at Ownr, RBC and Meta Hash Capital.",
               1000,
             ]}
             wrapper="p"
-            speed={50}
+            speed={10} // Types each character in 10ms
             className="text-base sm:text-lg md:text-xl text-gray-300"
             repeat={0}
           />
@@ -101,7 +102,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-            
+
       <SearchBar />
 
       {/* Blog Section */}
@@ -462,57 +463,6 @@ export default function Home() {
                 />
               </Link>
             </CardFooter>
-          </Card>
-
-          {/* Leetcode */}
-          <Card className="bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
-            <div className="flex flex-col md:flex-row">
-              <CardContent className="p-4 space-y-3 flex-1">
-                <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                  <h3 className="text-xl font-bold text-white">
-                    Leetcode Profile
-                  </h3>
-                </div>
-                <p className="text-gray-400 text-sm">
-                  My{' '}
-                  <a
-                    href="https://leetcode.com/u/nic_09/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-pink-500 hover:underline underline underline-offset-4 mt-2"
-                  >
-                    Leetcode Profile
-                  </a>{' '}
-                  where I practice coding problems for software engineering
-                  technical interviews.
-                </p>
-              </CardContent>
-            </div>
-          </Card>
-          {/* Devpost */}
-          <Card className="bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
-            <div className="flex flex-col md:flex-row">
-              <CardContent className="p-4 space-y-3 flex-1">
-                <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                  <h3 className="text-xl font-bold text-white">
-                    Devpost Profile
-                  </h3>
-                </div>
-                <p className="text-gray-400 text-sm">
-                  My{' '}
-                  <a
-                    href="https://devpost.com/nicholaschen09?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-pink-500 hover:underline underline underline-offset-4 mt-2"
-                  >
-                    Devpost Profile
-                  </a>{' '}
-                  for all my hackathon projects that I worked on and have
-                  submitted to devpost
-                </p>
-              </CardContent>
-            </div>
           </Card>
         </div>
       </div>

@@ -140,64 +140,8 @@ export default function About() {
                 </div>
                 <p className="text-gray-300 font-medium">Ownr - RBCx</p>
                 <p className="text-gray-400 text-sm sm:text-base">
-                  Working on full-stack web development, implementing new
-                  features, and improving existing functionality. Collaborating
-                  with cross-functional teams to deliver high-quality software
-                  solutions.
+                  Full-stack web development and infrastructure
                 </p>
-                {/* Technical Skills */}
-                <div className="mt-2">
-                  <p className="text-white text-sm font-medium">
-                    Technical Skills:
-                  </p>
-                  <div className="flex flex-wrap gap-2 mt-3">
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      React
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      TypeScript
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Node.js
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Docker
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      AWS
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Kubernetes
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      NestJS
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Redis
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      RabbitMQ
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Jest
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      REST APIs
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      PostgreSQL
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Git
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Helios
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      CI/CD
-                    </span>
-                  </div>
-                </div>
               </div>
 
               <div className="space-y-2">
@@ -213,36 +157,8 @@ export default function About() {
                   Royal Bank of Canada
                 </p>
                 <p className="text-gray-400 text-sm sm:text-base">
-                  Developed a machine learning model using python to predict
-                  monthly sign-in volumes, improving resource allocation and
-                  reducing support team work times.
+                  Machine learning
                 </p>
-                {/* Technical Skills */}
-                <div className="mt-2">
-                  <p className="text-white text-sm font-medium">
-                    Technical Skills:
-                  </p>
-                  <div className="flex flex-wrap gap-2 mt-3">
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Python
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Machine Learning
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Data Analysis
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Pandas
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Numpy
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Matplotlib
-                    </span>
-                  </div>
-                </div>
               </div>
 
               <div className="space-y-2">
@@ -255,43 +171,7 @@ export default function About() {
                   </span>
                 </div>
                 <p className="text-gray-300 font-medium">Meta Hash Capital</p>
-                <p className="text-gray-400 text-sm sm:text-base">
-                  Worked on blockchain and cryptocurrency projects, developing
-                  solutions through designing wireframes, prototypes, and
-                  high-fidelity mockups using Figma and Adobe Creative Suite.
-                </p>
-                {/* Technical Skills */}
-                <div className="mt-2">
-                  <p className="text-white text-sm font-medium">
-                    Technical Skills:
-                  </p>
-                  <div className="flex flex-wrap gap-2 mt-3">
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Figma
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Adobe XD
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Wireframing
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Prototyping
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      User Research
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      UI/UX Design
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Adobe Photoshop
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Adobe Illustrator
-                    </span>
-                  </div>
-                </div>
+                <p className="text-gray-400 text-sm sm:text-base">Figma</p>
               </div>
             </div>
           </section>
@@ -314,74 +194,9 @@ export default function About() {
                 University of Waterloo
               </p>
               <p className="text-gray-400 text-sm sm:text-base">
-                Focusing on interdisciplinary engineering with specialization in
-                software systems and human-centered design.
+                Interdisciplinary engineering with specialization in
+                software systems and human-centered design
               </p>
-
-              {/* Relevant Courses */}
-              <div className="mt-3">
-                <h5 className="text-white font-medium mb-2">
-                  Relevant Courses:
-                </h5>
-                <ul className="text-gray-400 text-sm sm:text-base flex flex-wrap gap-x-4 gap-y-1">
-                  <li>Introduction to Design</li>
-                  <li>Digital Computation</li>
-                  <li>Elementary Engineering Math</li>
-                  <li>Visual Communications</li>
-                  <li>Calculus 1</li>
-                  <li>Physics: Statics</li>
-                  <li>Communications</li>
-                </ul>
-              </div>
-
-              {/* Academic Skills */}
-              <div className="mt-4">
-                <h5 className="text-white font-medium mb-2">
-                  Academic Skills:
-                </h5>
-                <div className="flex flex-wrap gap-2 mt-2">
-                  <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                    Engineering Design
-                  </span>
-                  <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                    Calculus
-                  </span>
-                  <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                    Engineering Math
-                  </span>
-                  <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                    C++
-                  </span>
-                  <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                    Technical Writing
-                  </span>
-                  <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                    SOLIDWORKS
-                  </span>
-                  <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                    Problem Analysis
-                  </span>
-                  <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                    Statics
-                  </span>
-                </div>
-              </div>
-
-              {/* Academic Projects */}
-              <div className="mt-4">
-                <h5 className="text-white font-medium mb-2">Projects:</h5>
-                <ul className="list-disc pl-5 text-gray-400 text-sm space-y-1 mt-2">
-                  <li>
-                    Designed and built a small-scale installation to allow
-                    people to see the different constellations at different
-                    viewpoints while also being eco-friendly and sustainable.
-                  </li>
-                  <li>
-                    Designed using SOLIDWORKS printed a 3D model of a bear.
-                  </li>
-                  <li>Created a library management system using C++.</li>
-                </ul>
-              </div>
             </div>
           </section>
 
@@ -402,36 +217,8 @@ export default function About() {
                 </div>
                 <p className="text-gray-300 font-medium">Software Engineer</p>
                 <p className="text-gray-400 text-sm sm:text-base">
-                  Worked on designing and implementing software systems for our
-                  alternative fuel vehicle.
+                 Software systems
                 </p>
-
-                {/* Technical Skills */}
-                <div className="mt-2">
-                  <p className="text-white text-sm font-medium">
-                    Technical Skills:
-                  </p>
-                  <div className="flex flex-wrap gap-2 mt-3">
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Circuit Design
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      PCB Layout
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Microcontroller Programming
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      CAD Modeling
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      3D Printing
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Mechanical Assembly
-                    </span>
-                  </div>
-                </div>
               </div>
             </div>
           </section>
@@ -454,62 +241,12 @@ export default function About() {
                 </p>
                 <p className="text-gray-400">
                   Placed second with a team of four people to develop an
-                  innovative solution for helping people with bad posture.
+                  innovative solution (Fernando) for helping people with bad
+                  posture.
                 </p>
 
                 {/* Project Details */}
-                <div className="mt-2">
-                  <p className="text-white text-sm font-medium">
-                    Project: Fernando - Posture Correction Robot
-                  </p>
-                  <div className="flex flex-wrap gap-2 mt-3">
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      OpenCV
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Machine Learning
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Hardware Integration
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Rapid Prototyping
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      Terraform
-                    </span>
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      NextJS
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <div className="flex justify-between items-baseline">
-                  <h4 className="text-lg font-semibold text-white">
-                    Engineering Entrance Scholarship
-                  </h4>
-                  <span className="text-gray-400">Apr 2024</span>
-                </div>
-                <p className="text-gray-300 font-medium">
-                  University of Waterloo
-                </p>
-                <p className="text-gray-400">
-                  Awarded a $5000 merit-based scholarship for academic
-                  achievement and leadership potential.
-                </p>
-                {/* Qualification Details */}
-                <div className="mt-2">
-                  <p className="text-white text-sm font-medium">
-                    Qualification Criteria:
-                  </p>
-                  <div className="flex flex-wrap gap-2 mt-3">
-                    <span className="px-2 py-1 border border-pink-500 text-pink-500 rounded-md text-xs">
-                      95%+ High School Average
-                    </span>
-                  </div>
-                </div>
+                <div className="mt-2"></div>
               </div>
             </div>
           </section>
