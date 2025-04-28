@@ -120,9 +120,6 @@ export default function SearchBar() {
                         href={getLink(r)}
                         className="flex items-start gap-3 p-3 hover:bg-white/5 transition-colors"
                       >
-                        <div className="mt-0.5 border border-white/30 bg-transparent rounded-md p-2">
-                          {getCategoryIcon(r.category)}
-                        </div>
                         <div className="flex-1 min-w-0">
                           <h3 className="text-white font-medium truncate">
                             {r.title}
