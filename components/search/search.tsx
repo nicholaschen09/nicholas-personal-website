@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { Search, Loader2, FileText, FolderKanban } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 
 export default function SearchBar() {
