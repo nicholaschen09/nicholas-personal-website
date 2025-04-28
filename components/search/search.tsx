@@ -63,14 +63,12 @@ export default function SearchBar() {
 
   return (
     <div className="mb-12 w-full max-w-6xl relative">
-      <div className="relative">
-        <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
+      <div className="relative group">
+        <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 transition-colors text-gray-400 group-focus-within:text-white" />
         <Input
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          onFocus={() => setFocused(true)}
-          onBlur={() => setTimeout(() => setFocused(false), 200)}
           placeholder="search for my other projects/blogs"
           className="w-full pl-10 py-6 rounded-lg border border-white/30 bg-transparent text-white placeholder-gray-400 focus:outline-none focus-visible:outline-none focus:ring-0 focus-visible:ring-0 focus:shadow-none focus:border-white/60 transition-all"
         />
