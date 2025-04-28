@@ -11,8 +11,7 @@ export default function SearchBar() {
     if (!query.trim()) return;
     setLoading(true);
     try {
-      // Replace `/api/search` with your API endpoint
-      const res = await fetch(`/api/search?query=${encodeURIComponent(query)}`);
+      const res = await fetch(`/api/route?query=${encodeURIComponent(query)}`);
       const data = await res.json();
       setResults(data.results);
     } catch (error) {
