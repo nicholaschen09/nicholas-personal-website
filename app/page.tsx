@@ -464,57 +464,6 @@ export default function Home() {
               </Link>
             </CardFooter>
           </Card>
-
-          {/* Leetcode */}
-          <Card className="bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
-            <div className="flex flex-col md:flex-row">
-              <CardContent className="p-4 space-y-3 flex-1">
-                <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                  <h3 className="text-xl font-bold text-white">
-                    Leetcode Profile
-                  </h3>
-                </div>
-                <p className="text-gray-400 text-sm">
-                  My{' '}
-                  <a
-                    href="https://leetcode.com/u/nic_09/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block bg-pink-500 text-black transition-colors mt-2 hover:underline"
-                  >
-                    Leetcode Profile
-                  </a>{' '}
-                  where I practice coding problems for software engineering
-                  technical interviews.
-                </p>
-              </CardContent>
-            </div>
-          </Card>
-          {/* Devpost */}
-          <Card className="bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
-            <div className="flex flex-col md:flex-row">
-              <CardContent className="p-4 space-y-3 flex-1">
-                <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                  <h3 className="text-xl font-bold text-white">
-                    Devpost Profile
-                  </h3>
-                </div>
-                <p className="text-gray-400 text-sm">
-                  My{' '}
-                  <a
-                    href="https://devpost.com/nicholaschen09?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block bg-pink-500 text-black transition-colors mt-2 hover:underline"
-                  >
-                    Devpost Profile
-                  </a>{' '}
-                  for all my hackathon projects that I worked on and have
-                  submitted to devpost
-                </p>
-              </CardContent>
-            </div>
-          </Card>
         </div>
       </div>
       <Footer />
