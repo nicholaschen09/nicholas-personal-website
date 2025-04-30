@@ -420,7 +420,7 @@ export default function Home() {
           <hr className="w-full border-t border-gray-700 my-8 col-span-1 md:col-span-2" />
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 md:mb-6">
-            My Other Links
+            My Art
           </h2>
 
           {/* Art Website */}
