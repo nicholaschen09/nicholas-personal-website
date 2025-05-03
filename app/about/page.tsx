@@ -116,6 +116,29 @@ export default function About() {
             </div>
           </div>
         </div>
+        <section className="">
+          <h2 className="text-4xl font-bold text-white mb-4">Contact Me</h2>
+          <p className="text-gray-300 text-base">
+            I'd love to hear from you! Want to hire me? or simply wanna chat?
+            Feel free to reach out by{' '}
+            <a
+              href="mailto:nicholas.chen243@gmail.com"
+              className="text-pink-500 hover:underline transition-colors"
+            >
+              email
+            </a>
+            , or connect with me on{' '}
+            <a
+              href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-pink-500 hover:underline transition-colors"
+            >
+              linkedin
+            </a>
+            .
+          </p>
+        </section>
 
         {/* Experience, Education, Community, Awards Section */}
         <div className="space-y-8 mt-10 md:mt-16">
@@ -194,8 +217,8 @@ export default function About() {
                 University of Waterloo
               </p>
               <p className="text-gray-400 text-sm sm:text-base">
-                Interdisciplinary engineering with specialization in
-                software systems and human-centered design
+                Interdisciplinary engineering with specialization in software
+                systems and human-centered design
               </p>
             </div>
           </section>
@@ -217,7 +240,7 @@ export default function About() {
                 </div>
                 <p className="text-gray-300 font-medium">Software Engineer</p>
                 <p className="text-gray-400 text-sm sm:text-base">
-                 Software systems
+                  Software systems
                 </p>
               </div>
             </div>
