@@ -362,7 +362,7 @@ export default function ETLProject() {
               </Link>
             </div>
           </div>
-          <p className="text-stone-400 mt-10 mb-4">© 2025 Nicholas Chen.</p>
+          <p className="text-stone-400 mt-10 mb-4">© 2025 Nicholas Chen</p>
         </div>
       </footer>
     </main>

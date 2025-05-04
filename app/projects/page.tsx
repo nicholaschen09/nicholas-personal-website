@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { ExternalLink, ArrowRight } from 'lucide-react';
 import Header from '@/components/header';
 
-
 // Project type definition
 type Project = {
   id: string;
@@ -243,7 +242,7 @@ export default function ProjectsPage() {
                 </Link>
               </div>
             </div>
-            <p className="text-stone-400 mt-10 mb-4">© 2025 Nicholas Chen.</p>
+            <p className="text-stone-400 mt-10 mb-4">© 2025 Nicholas Chen</p>
           </div>
         </footer>
       </main>
