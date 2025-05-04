@@ -49,7 +49,7 @@ export default function VoluntrackProject() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="text-white bg-transparent hover:text-stone-400 transition-colors">
+            <Button className="text-white bg-white/5 hover:bg-white/10 hover:text-stone-400 transition-colors rounded-md px-4 py-2">
               <ExternalLink className="mr-2 h-4 w-4" /> Demo
             </Button>
           </a>
@@ -58,13 +58,13 @@ export default function VoluntrackProject() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="text-white bg-transparent hover:text-stone-400 transition-colors">
+            <Button className="group text-white bg-white/5 hover:bg-white/10 hover:text-stone-400 transition-colors rounded-md px-4 py-2">
               <Image
                 src="/github1.png"
                 alt="GitHub Logo"
                 width={24}
                 height={24}
-                className="mr-2"
+                className="mr-2 transition-opacity group-hover:opacity-70"
               />
               Code
             </Button>
@@ -87,7 +87,7 @@ export default function VoluntrackProject() {
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Key Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="bg-transparent border border-white p-4 rounded-lg">
+            <Card className="bg-white/5 p-4 rounded-xl border-0">
               <CardContent className="p-4 space-y-3">
                 <p className="text-stone-400">
                   Provides up-to-date insights into volunteer participation and
@@ -99,7 +99,7 @@ export default function VoluntrackProject() {
               </CardContent>
             </Card>
 
-            <Card className="bg-transparent border border-white p-4 rounded-lg">
+            <Card className="bg-white/5 p-4 rounded-xl border-0">
               <CardContent className="p-4 space-y-3">
                 <p className="text-stone-400">
                   Automatically records volunteer hours and event attendance to
@@ -111,7 +111,7 @@ export default function VoluntrackProject() {
               </CardContent>
             </Card>
 
-            <Card className="bg-transparent border border-white p-4 rounded-lg">
+            <Card className="bg-white/5 p-4 rounded-xl border-0">
               <CardContent className="p-4 space-y-3">
                 <p className="text-stone-400">
                   Generates detailed reports that help organizations assess
