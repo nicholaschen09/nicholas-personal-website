@@ -14,7 +14,7 @@ export default function About() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-10 mt-4">
               Hey I'm Nicholas!
             </h1>
-            <div className="text-base sm:text-lg text-gray-300 min-h-[150px] md:min-h-[120px]">
+            <div className="text-base sm:text-lg text-stone-300 min-h-[150px] md:min-h-[120px]">
               <TypeAnimation
                 sequence={[
                   "Hello! I'm a Systems Design Engineering student at the University of Waterloo. In the past, I've worked at companies like Ownr, RBC and Meta Hash Capital where I made some pretty cool things.",
@@ -22,7 +22,7 @@ export default function About() {
                 ]}
                 wrapper="p"
                 speed={50}
-                className="text-base sm:text-lg text-gray-300"
+                className="text-base sm:text-lg text-stone-300"
                 repeat={0}
               />
             </div>
@@ -31,7 +31,7 @@ export default function About() {
             <div className="flex space-x-8 pt-1 justify-center sm:justify-start">
               <Link
                 href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
               >
                 <div className="w-10 h-10 flex items-center justify-center">
                   <img
@@ -44,7 +44,7 @@ export default function About() {
               </Link>
               <Link
                 href="https://github.com/nicholaschen09"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
               >
                 <div className="w-12 h-8 flex items-center justify-center mt-1">
                   <img
@@ -57,7 +57,7 @@ export default function About() {
               </Link>
               <Link
                 href="mailto:nicholas.chen243@gmail.com"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
               >
                 <div className="w-11 h-12 flex items-center justify-center relative -top-1">
                   <img
@@ -70,7 +70,7 @@ export default function About() {
               </Link>
               <Link
                 href="https://x.com/nicholaschen__"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -85,7 +85,7 @@ export default function About() {
               </Link>
               <Link
                 href="https://linktr.ee/nicholas.chen__"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -110,7 +110,7 @@ export default function About() {
                 height={1000}
                 className="object-cover rounded-lg mb-6"
               />
-              <p className="text-gray-400 text-center italic text-sm sm:text-base mb-4">
+              <p className="text-stone-400 text-center italic text-sm sm:text-base mb-4">
                 Throwback to a picture of me on the last day of highschool
               </p>
             </div>
@@ -118,7 +118,7 @@ export default function About() {
         </div>
         <section className="">
           <h2 className="text-4xl font-bold text-white mb-4">Contact Me</h2>
-          <p className="text-gray-300 text-base">
+          <p className="text-stone-300 text-base">
             I'd love to hear from you! Want to hire me? or simply wanna chat?
             Feel free to reach out by{' '}
             <a
@@ -142,7 +142,7 @@ export default function About() {
 
         {/* Experience, Education, Community, Awards Section */}
         <div className="space-y-8 mt-10 md:mt-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white border-b border-gray-700 pb-2">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white border-b border-stone-700 pb-2">
             Some of the Cool Things I've Done
           </h2>
 
@@ -157,12 +157,12 @@ export default function About() {
                   <h4 className="text-lg sm:text-xl font-semibold text-white">
                     Software Engineer Intern
                   </h4>
-                  <span className="text-gray-400 text-sm sm:text-base">
+                  <span className="text-stone-400 text-sm sm:text-base">
                     Jan 2025 - April 2025
                   </span>
                 </div>
-                <p className="text-gray-300 font-medium">Ownr - RBCx</p>
-                <p className="text-gray-400 text-sm sm:text-base">
+                <p className="text-stone-300 font-medium">Ownr - RBCx</p>
+                <p className="text-stone-400 text-sm sm:text-base">
                   Full-stack web development and infrastructure
                 </p>
               </div>
@@ -172,14 +172,14 @@ export default function About() {
                   <h4 className="text-lg sm:text-xl font-semibold text-white">
                     Innovation Developer Intern
                   </h4>
-                  <span className="text-gray-400 text-sm sm:text-base">
+                  <span className="text-stone-400 text-sm sm:text-base">
                     Jul 2024 - Aug 2024
                   </span>
                 </div>
-                <p className="text-gray-300 font-medium">
+                <p className="text-stone-300 font-medium">
                   Royal Bank of Canada
                 </p>
-                <p className="text-gray-400 text-sm sm:text-base">
+                <p className="text-stone-400 text-sm sm:text-base">
                   Machine learning
                 </p>
               </div>
@@ -189,12 +189,12 @@ export default function About() {
                   <h4 className="text-lg sm:text-xl font-semibold text-white">
                     UX Design Intern
                   </h4>
-                  <span className="text-gray-400 text-sm sm:text-base">
+                  <span className="text-stone-400 text-sm sm:text-base">
                     Mar 2023 - Aug 2023
                   </span>
                 </div>
-                <p className="text-gray-300 font-medium">Meta Hash Capital</p>
-                <p className="text-gray-400 text-sm sm:text-base">Figma</p>
+                <p className="text-stone-300 font-medium">Meta Hash Capital</p>
+                <p className="text-stone-400 text-sm sm:text-base">Figma</p>
               </div>
             </div>
           </section>
@@ -209,14 +209,14 @@ export default function About() {
                 <h4 className="text-lg sm:text-xl font-semibold text-white">
                   Systems Design Engineering
                 </h4>
-                <span className="text-gray-400 text-sm sm:text-base">
+                <span className="text-stone-400 text-sm sm:text-base">
                   2024 - 2029
                 </span>
               </div>
-              <p className="text-gray-300 font-medium">
+              <p className="text-stone-300 font-medium">
                 University of Waterloo
               </p>
-              <p className="text-gray-400 text-sm sm:text-base">
+              <p className="text-stone-400 text-sm sm:text-base">
                 Interdisciplinary engineering with specialization in software
                 systems and human-centered design
               </p>
@@ -234,12 +234,12 @@ export default function About() {
                   <h4 className="text-normal sm:text-xl font-semibold text-white">
                     University of Waterloo Alternative Fuels Team
                   </h4>
-                  <span className="text-gray-400 text-sm sm:text-base">
+                  <span className="text-stone-400 text-sm sm:text-base">
                     Sept 2024 - Dec 2024
                   </span>
                 </div>
-                <p className="text-gray-300 font-medium">Software Engineer</p>
-                <p className="text-gray-400 text-sm sm:text-base">
+                <p className="text-stone-300 font-medium">Software Engineer</p>
+                <p className="text-stone-400 text-sm sm:text-base">
                   Software systems
                 </p>
               </div>
@@ -257,12 +257,12 @@ export default function About() {
                   <h4 className="text-lg font-semibold text-white">
                     Second Place - UTRA Hacks
                   </h4>
-                  <span className="text-gray-400">Feb 2025</span>
+                  <span className="text-stone-400">Feb 2025</span>
                 </div>
-                <p className="text-gray-300 font-medium">
+                <p className="text-stone-300 font-medium">
                   University of Toronto
                 </p>
-                <p className="text-gray-400">
+                <p className="text-stone-400">
                   Placed second with a team of four people to develop an
                   innovative solution (Fernando) for helping people with bad
                   posture.
