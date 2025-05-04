@@ -22,7 +22,7 @@ export default function About() {
                 ]}
                 wrapper="p"
                 speed={50}
-                className="text-base sm:text-lg text-stone-300"
+                className="text-base sm:text-lg text-stone-400"
                 repeat={0}
               />
             </div>
@@ -118,7 +118,7 @@ export default function About() {
         </div>
         <section className="">
           <h2 className="text-4xl font-bold text-white mb-4">Contact Me</h2>
-          <p className="text-stone-300 text-base">
+          <p className="text-stone-400 text-base">
             I'd love to hear from you! Want to hire me? or simply wanna chat?
             Feel free to reach out by{' '}
             <a
