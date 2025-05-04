@@ -11,7 +11,7 @@ export default function EngineeringProject() {
         {/* Navigation */}
         <Link
           href="/projects"
-          className="inline-flex items-center text-gray-400 hover:text-white transition-colors"
+          className="inline-flex items-center text-stone-400 hover:text-white transition-colors"
         >
           <ArrowLeft className="mr-2 w-4 h-4" /> Back to projects
         </Link>
@@ -24,14 +24,14 @@ export default function EngineeringProject() {
             </h1>
           </div>
 
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-stone-300">
             A showcase of my engineering projects, featuring 3D modeling with
             SOLIDWORKS, as well as physical and systems design innovations.
           </p>
         </div>
 
         {/* Featured Image */}
-        <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden border border-gray-800">
+        <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden border border-stone-800">
           <Image
             src="/car.png"
             alt="Fernando Robot"
@@ -54,7 +54,7 @@ export default function EngineeringProject() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="text-white bg-transparent hover:text-gray-400 transition-colors">
+            <Button className="text-white bg-transparent hover:text-stone-400 transition-colors">
               <Image
                 src="/github1.png"
                 alt="GitHub Logo"
@@ -69,7 +69,7 @@ export default function EngineeringProject() {
         {/* Overview Section */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Overview</h2>
-          <p className="text-gray-300 text-lg leading-relaxed">
+          <p className="text-stone-300 text-lg leading-relaxed">
             Welcome to my engineering portfolio, where I showcase a collection
             of innovative projects that highlight my skills in software
             development, hardware integration, and problem-solving. From
@@ -85,7 +85,7 @@ export default function EngineeringProject() {
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Gallery</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="relative aspect-[3/3] rounded-lg overflow-hidden border border-gray-800">
+            <div className="relative aspect-[3/3] rounded-lg overflow-hidden border border-stone-800">
               <Image
                 src="/nintendo.png"
                 alt="Fernando prototype"
@@ -93,7 +93,7 @@ export default function EngineeringProject() {
                 className="object-cover"
               />
             </div>
-            <div className="relative aspect-square rounded-lg overflow-hidden border border-gray-800">
+            <div className="relative aspect-square rounded-lg overflow-hidden border border-stone-800">
               <Image
                 src="/carfinal.png"
                 alt="Fernando internal components"
@@ -101,7 +101,7 @@ export default function EngineeringProject() {
                 className="object-cover"
               />
             </div>
-            <div className="relative aspect-square rounded-lg overflow-hidden border border-gray-800">
+            <div className="relative aspect-square rounded-lg overflow-hidden border border-stone-800">
               <Image
                 src="/spreadpieces.png"
                 alt="Fernando in use"
@@ -116,13 +116,13 @@ export default function EngineeringProject() {
         <section className="space-y-6">
           <div className="flex items-center justify-between">
             <h2 className="text-3xl font-bold text-white">More Projects</h2>
-            <Link href="/projects" className="text-gray-400 hover:text-white">
+            <Link href="/projects" className="text-stone-400 hover:text-white">
               View all Projects →
             </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card className="bg-transparent border border-gray-700 overflow-hidden">
+            <Card className="bg-transparent border border-stone-700 overflow-hidden">
               <div className="relative h-48">
                 <Image
                   src="/pandas.png"
@@ -135,7 +135,7 @@ export default function EngineeringProject() {
                 <h3 className="text-xl font-bold text-white">
                   TikTok View Predictor
                 </h3>
-                <p className="text-gray-300 text-sm">
+                <p className="text-stone-300 text-sm">
                   A machine learning model that predicts TikTok video views
                   using linear regression.
                 </p>
@@ -144,7 +144,7 @@ export default function EngineeringProject() {
                 <div className="flex gap-4">
                   <Link
                     href="https://github.com/nicholaschen09/tiktok-view-predictor"
-                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                    className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                   >
                     <div className="w-6 h-6 flex items-center justify-center mr-2">
                       <img
@@ -157,7 +157,7 @@ export default function EngineeringProject() {
                   </Link>
                   <Link
                     href="#"
-                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                    className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Demo
@@ -165,16 +165,14 @@ export default function EngineeringProject() {
                 </div>
                 <Link
                   href="/projects/tiktokviewpredictor"
-                  className="text-gray-300 hover:te
-                  
-                  xt-white flex items-center gap-1 text-sm"
+                  className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                 >
                   Read more <ArrowRight className="ml-1 w-4 h-4" />
                 </Link>
               </CardFooter>
             </Card>
 
-            <Card className="bg-transparent border border-gray-700 overflow-hidden">
+            <Card className="bg-transparent border border-stone-700 overflow-hidden">
               <div className="relative h-48">
                 <Image
                   src="/etl.png"
@@ -187,7 +185,7 @@ export default function EngineeringProject() {
                 <h3 className="text-xl font-bold text-white">
                   Customer FeedBack ETL Pipeline
                 </h3>
-                <p className="text-gray-300 text-sm">
+                <p className="text-stone-300 text-sm">
                   An ETL pipeline that processes customer feedback with
                   sentiment analysis for actionable insights.
                 </p>
@@ -196,7 +194,7 @@ export default function EngineeringProject() {
                 <div className="flex gap-4">
                   <Link
                     href="https://github.com/nicholaschen09/engineering-portfolio"
-                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                    className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                   >
                     <div className="w-6 h-6 flex items-center justify-center mr-2">
                       <img
@@ -210,7 +208,7 @@ export default function EngineeringProject() {
                 </div>
                 <Link
                   href="/projects/engineeringportfolio"
-                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                  className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                 >
                   Read more <ArrowRight className="ml-1 w-4 h-4" />
                 </Link>
@@ -223,13 +221,13 @@ export default function EngineeringProject() {
       {/* Footer */}
       <footer className="w-full mt-8 pt-8">
         <div className="max-w-5xl mx-auto w-full">
-          <hr className="border-t border-gray-700 mb-8" />
+          <hr className="border-t border-stone-700 mb-8" />
           <div className="flex flex-col items-center md:items-start">
             {/* Social Media Links */}
             <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
               <Link
                 href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
               >
                 <div className="w-10 h-10 flex items-center justify-center">
                   <img
@@ -242,7 +240,7 @@ export default function EngineeringProject() {
               </Link>
               <Link
                 href="https://github.com/nicholaschen09"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
               >
                 <div className="w-12 h-8 flex items-center justify-center mt-1">
                   <img
@@ -255,7 +253,7 @@ export default function EngineeringProject() {
               </Link>
               <Link
                 href="mailto:nicholas.chen243@gmail.com"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
               >
                 <div className="w-11 h-12 flex items-center justify-center relative -top-1">
                   <img
@@ -268,7 +266,7 @@ export default function EngineeringProject() {
               </Link>
               <Link
                 href="https://x.com/nicholaschen__"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -283,7 +281,7 @@ export default function EngineeringProject() {
               </Link>
               <Link
                 href="https://linktr.ee/nicholas.chen__"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -298,7 +296,7 @@ export default function EngineeringProject() {
               </Link>
             </div>
           </div>
-          <p className="text-gray-400 mt-10 mb-4">© 2025 Nicholas Chen.</p>
+          <p className="text-stone-400 mt-10 mb-4">© 2025 Nicholas Chen.</p>
         </div>
       </footer>
     </main>

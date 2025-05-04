@@ -8,7 +8,7 @@ export default function BlogPost() {
       <article className="max-w-4xl w-full space-y-8 pt-24 md:pt-16">
         <Link
           href="/blogs"
-          className="inline-flex items-center text-gray-400 hover:text-white transition-colors mb-6"
+          className="inline-flex items-center text-stone-400 hover:text-white transition-colors mb-6"
         >
           <ArrowLeft className="mr-2 w-4 h-4" /> Back to blogs
         </Link>
@@ -19,16 +19,16 @@ export default function BlogPost() {
             What I Loved About Being A Software Engineering Intern at Ownr
           </h1>
           <div className="flex flex-wrap items-center gap-4">
-            <span className="text-gray-400">
+            <span className="text-stone-400">
               April 10, 2025
               <span className="text-pink-500"> // 8 min read</span>
             </span>
-            <span className="text-gray-400 ml-auto">Nicholas Chen</span>
+            <span className="text-stone-400 ml-auto">Nicholas Chen</span>
           </div>
         </div>
 
         {/* Featured Image */}
-        <div className="relative w-full aspect-[16/8] rounded-xl overflow-hidden border border-gray-700">
+        <div className="relative w-full aspect-[16/8] rounded-xl overflow-hidden border border-stone-700">
           <Image
             src="/software engineering.png"
             alt="Co-op Experience"
@@ -85,7 +85,7 @@ export default function BlogPost() {
                 dedicated towards prod support where I fixed production bugs.
               </p>
             </div>
-            <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-gray-700">
+            <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-stone-700">
               <Image
                 src="/ownr2.png"
                 alt="Ownr Co-op"
@@ -112,7 +112,7 @@ export default function BlogPost() {
             write maintainable, more efficient code.
           </p>
 
-          <div className="relative w-full aspect-video rounded-lg overflow-hidden border border-gray-700 mt-10">
+          <div className="relative w-full aspect-video rounded-lg overflow-hidden border border-stone-700 mt-10">
             <Image
               src="/ownr1.png"
               alt="RBC Co-op"
@@ -138,40 +138,40 @@ export default function BlogPost() {
             Technical Skills Gained
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 my-6">
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
+            <div className="border border-stone-600 p-3 rounded-lg text-center">
               <p className="font-medium">Python</p>
             </div>
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
+            <div className="border border-stone-600 p-3 rounded-lg text-center">
               <p className="font-medium">CI/CD</p>
             </div>
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
+            <div className="border border-stone-600 p-3 rounded-lg text-center">
               <p className="font-medium">NestJS</p>
             </div>
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
+            <div className="border border-stone-600 p-3 rounded-lg text-center">
               <p className="font-medium">SQL</p>
             </div>
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
+            <div className="border border-stone-600 p-3 rounded-lg text-center">
               <p className="font-medium">Typescript</p>
             </div>
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
+            <div className="border border-stone-600 p-3 rounded-lg text-center">
               <p className="font-medium">Git</p>
             </div>
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
+            <div className="border border-stone-600 p-3 rounded-lg text-center">
               <p className="font-medium">Docker</p>
             </div>
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
+            <div className="border border-stone-600 p-3 rounded-lg text-center">
               <p className="font-medium">NodeJS</p>
             </div>
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
+            <div className="border border-stone-600 p-3 rounded-lg text-center">
               <p className="font-medium">AWS</p>
             </div>
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
+            <div className="border border-stone-600 p-3 rounded-lg text-center">
               <p className="font-medium">Jest</p>
             </div>
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
+            <div className="border border-stone-600 p-3 rounded-lg text-center">
               <p className="font-medium">Redis</p>
             </div>
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
+            <div className="border border-stone-600 p-3 rounded-lg text-center">
               <p className="font-medium">Kubernetes</p>
             </div>
           </div>
@@ -217,7 +217,7 @@ export default function BlogPost() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-            <div className="border-2 border-gray-600 p-4 rounded-lg">
+            <div className="border-2 border-stone-600 p-4 rounded-lg">
               <h3 className="font-bold text-lg mb-2">Embrace the challenge</h3>
               <p className="text-sm">
                 The workload is intense, but it's designed to build your
@@ -226,7 +226,7 @@ export default function BlogPost() {
                 limits.
               </p>
             </div>
-            <div className="border-2 border-gray-600 p-4 rounded-lg">
+            <div className="border-2 border-stone-600 p-4 rounded-lg">
               <h3 className="font-bold text-lg mb-2">
                 Collaborate effectively
               </h3>
@@ -237,7 +237,7 @@ export default function BlogPost() {
                 environments.
               </p>
             </div>
-            <div className="border-2 border-gray-600 p-4 rounded-lg">
+            <div className="border-2 border-stone-600 p-4 rounded-lg">
               <h3 className="font-bold text-lg mb-2">Seek help early</h3>
               <p className="text-sm">
                 Don't wait until you're struggling to ask for assistance from
@@ -246,7 +246,7 @@ export default function BlogPost() {
                 of frustration.
               </p>
             </div>
-            <div className="border-2 border-gray-600 p-4 rounded-lg">
+            <div className="border-2 border-stone-600 p-4 rounded-lg">
               <h3 className="font-bold text-lg mb-2">Balance is key</h3>
               <p className="text-sm">
                 Make time for activities outside of work to maintain your
@@ -280,13 +280,13 @@ export default function BlogPost() {
       {/* Footer */}
       <footer className="w-full mt-8 pt-8">
         <div className="max-w-4xl mx-auto w-full">
-          <hr className="border-t border-gray-700 mb-8" />
+          <hr className="border-t border-stone-700 mb-8" />
           <div className="flex flex-col items-center md:items-start">
             {/* Social Media Links */}
             <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
               <Link
                 href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -301,7 +301,7 @@ export default function BlogPost() {
               </Link>
               <Link
                 href="https://github.com/nicholaschen09"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -316,7 +316,7 @@ export default function BlogPost() {
               </Link>
               <Link
                 href="mailto:nicholas.chen243@gmail.com"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
               >
                 <div className="w-10 h-10 flex items-center justify-center">
                   <img
@@ -329,7 +329,7 @@ export default function BlogPost() {
               </Link>
               <Link
                 href="https://x.com/nicholaschen__"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -344,7 +344,7 @@ export default function BlogPost() {
               </Link>
               <Link
                 href="https://linktr.ee/nicholas.chen__"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -359,7 +359,7 @@ export default function BlogPost() {
               </Link>
             </div>
           </div>
-          <p className="text-gray-400 mt-10 mb-4">© 2025 Nicholas Chen.</p>
+          <p className="text-stone-400 mt-10 mb-4">© 2025 Nicholas Chen.</p>
         </div>
       </footer>
     </main>

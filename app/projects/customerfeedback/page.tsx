@@ -11,7 +11,7 @@ export default function ETLProject() {
         {/* Navigation */}
         <Link
           href="/projects"
-          className="inline-flex items-center text-gray-400 hover:text-white transition-colors"
+          className="inline-flex items-center text-stone-400 hover:text-white transition-colors"
         >
           <ArrowLeft className="mr-2 w-4 h-4" /> Back to projects
         </Link>
@@ -24,7 +24,7 @@ export default function ETLProject() {
             </h1>
           </div>
 
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-stone-300">
             An end-to-end pipeline that extracts, transforms, and loads customer
             feedback data into a centralized database to generate actionable
             insights.
@@ -32,7 +32,7 @@ export default function ETLProject() {
         </div>
 
         {/* Featured Image */}
-        <div className="relative w-full aspect-[16/5] rounded-xl overflow-hidden border border-gray-800">
+        <div className="relative w-full aspect-[16/5] rounded-xl overflow-hidden border border-stone-800">
           <Image
             src="/customerfeedback.png"
             alt="Customer Feedback ETL Pipeline"
@@ -50,7 +50,7 @@ export default function ETLProject() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="text-white bg-transparent hover:text-gray-400 transition-colors">
+            <Button className="text-white bg-transparent hover:text-stone-400 transition-colors">
               <ExternalLink className="mr-2 h-4 w-4" /> Demo
             </Button>
           </a>
@@ -59,7 +59,7 @@ export default function ETLProject() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="text-white bg-transparent hover:text-gray-400 transition-colors">
+            <Button className="text-white bg-transparent hover:text-stone-400 transition-colors">
               <Image
                 src="/github1.png"
                 alt="GitHub Logo"
@@ -75,7 +75,7 @@ export default function ETLProject() {
         {/* Overview Section */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Overview</h2>
-          <p className="text-gray-300 text-lg leading-relaxed">
+          <p className="text-stone-300 text-lg leading-relaxed">
             This project implements a robust ETL pipeline that extracts raw
             customer feedback from CSV files and various APIs, transforms the
             data by cleaning and enriching it with sentiment analysis (achieving
@@ -130,14 +130,14 @@ export default function ETLProject() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-white">Data Sources</h3>
-              <ul className="list-disc pl-5 space-y-2 text-gray-300">
+              <ul className="list-disc pl-5 space-y-2 text-stone-300">
                 <li>CSV files from customer surveys</li>
                 <li>APIs for real-time feedback data</li>
               </ul>
             </div>
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-white">Software Stack</h3>
-              <ul className="list-disc pl-5 space-y-2 text-gray-300">
+              <ul className="list-disc pl-5 space-y-2 text-stone-300">
                 <li>
                   Python with Pandas and TextBlob for ETL and sentiment analysis
                 </li>
@@ -150,7 +150,7 @@ export default function ETLProject() {
           </div>
         </section>
 
-        <div className="relative w-full aspect-[4/2] rounded-xl overflow-hidden border border-gray-800">
+        <div className="relative w-full aspect-[4/2] rounded-xl overflow-hidden border border-stone-800">
           <Image
             src="/pipeline.png"
             alt="ETL Pipeline Dashboard"
@@ -165,7 +165,7 @@ export default function ETLProject() {
           <h2 className="text-3xl font-bold">
             What's Next for the Customer Feedback ETL Pipeline
           </h2>
-          <p className="text-gray-300 text-lg leading-relaxed">
+          <p className="text-stone-300 text-lg leading-relaxed">
             I plan to integrate additional data sources, enhance our sentiment
             analysis algorithms, and further optimize our data loading
             processes. Future iterations will include machine learning models
@@ -177,13 +177,13 @@ export default function ETLProject() {
         <section className="space-y-6">
           <div className="flex items-center justify-between">
             <h2 className="text-3xl font-bold text-white">More Projects</h2>
-            <Link href="/projects" className="text-gray-400 hover:text-white">
+            <Link href="/projects" className="text-stone-400 hover:text-white">
               View all Projects →
             </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card className="bg-transparent border border-gray-700 overflow-hidden">
+            <Card className="bg-transparent border border-stone-700 overflow-hidden">
               <div className="relative h-48">
                 <Image
                   src="/pandas.png"
@@ -196,7 +196,7 @@ export default function ETLProject() {
                 <h3 className="text-xl font-bold text-white">
                   TikTok View Predictor
                 </h3>
-                <p className="text-gray-300 text-sm">
+                <p className="text-stone-300 text-sm">
                   A machine learning model that predicts TikTok video views
                   using linear regression.
                 </p>
@@ -205,7 +205,7 @@ export default function ETLProject() {
                 <div className="flex gap-4">
                   <Link
                     href="https://github.com/nicholaschen09/tiktok-view-predictor"
-                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                    className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                   >
                     <div className="w-6 h-6 flex items-center justify-center mr-2">
                       <img
@@ -218,7 +218,7 @@ export default function ETLProject() {
                   </Link>
                   <Link
                     href="#"
-                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                    className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Demo
@@ -226,14 +226,14 @@ export default function ETLProject() {
                 </div>
                 <Link
                   href="/projects/tiktokviewpredictor"
-                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                  className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                 >
                   Read more <ArrowRight className="ml-1 w-4 h-4" />
                 </Link>
               </CardFooter>
             </Card>
 
-            <Card className="bg-transparent border border-gray-700 overflow-hidden">
+            <Card className="bg-transparent border border-stone-700 overflow-hidden">
               <div className="relative h-48">
                 <Image
                   src="/car.png"
@@ -246,7 +246,7 @@ export default function ETLProject() {
                 <h3 className="text-xl font-bold text-white">
                   Engineering Portfolio
                 </h3>
-                <p className="text-gray-300 text-sm">
+                <p className="text-stone-300 text-sm">
                   A showcase of my engineering projects, featuring 3D modeling
                   with SOLIDWORKS, as well as physical and systems design
                   innovations.
@@ -256,7 +256,7 @@ export default function ETLProject() {
                 <div className="flex gap-4">
                   <Link
                     href="https://github.com/nicholaschen09/engineering-portfolio"
-                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                    className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                   >
                     <div className="w-6 h-6 flex items-center justify-center mr-2">
                       <img
@@ -270,7 +270,7 @@ export default function ETLProject() {
                 </div>
                 <Link
                   href="/projects/engineeringportfolio"
-                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                  className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                 >
                   Read more <ArrowRight className="ml-1 w-4 h-4" />
                 </Link>
@@ -283,13 +283,13 @@ export default function ETLProject() {
       {/* Footer */}
       <footer className="w-full mt-8 pt-8">
         <div className="max-w-5xl mx-auto w-full">
-          <hr className="border-t border-gray-700 mb-8" />
+          <hr className="border-t border-stone-700 mb-8" />
           <div className="flex flex-col items-center md:items-start">
             {/* Social Media Links */}
             <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
               <Link
                 href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
               >
                 <div className="w-10 h-10 flex items-center justify-center">
                   <img
@@ -302,7 +302,7 @@ export default function ETLProject() {
               </Link>
               <Link
                 href="https://github.com/nicholaschen09"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
               >
                 <div className="w-12 h-8 flex items-center justify-center mt-1">
                   <img
@@ -315,7 +315,7 @@ export default function ETLProject() {
               </Link>
               <Link
                 href="mailto:nicholas.chen243@gmail.com"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
               >
                 <div className="w-11 h-12 flex items-center justify-center relative -top-1">
                   <img
@@ -328,7 +328,7 @@ export default function ETLProject() {
               </Link>
               <Link
                 href="https://x.com/nicholaschen__"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -343,7 +343,7 @@ export default function ETLProject() {
               </Link>
               <Link
                 href="https://linktr.ee/nicholas.chen__"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -358,7 +358,7 @@ export default function ETLProject() {
               </Link>
             </div>
           </div>
-          <p className="text-gray-400 mt-10 mb-4">© 2025 Nicholas Chen.</p>
+          <p className="text-stone-400 mt-10 mb-4">© 2025 Nicholas Chen.</p>
         </div>
       </footer>
     </main>

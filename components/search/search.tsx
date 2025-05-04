@@ -49,7 +49,7 @@ export default function SearchBar() {
   return (
     <div className="mb-12 w-full max-w-6xl relative">
       <div className="relative group">
-        <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400 group-focus-within:text-white transition-colors" />
+        <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-stone-400 group-focus-within:text-white transition-colors" />
         <Input
           type="text"
           value={query}
@@ -57,7 +57,7 @@ export default function SearchBar() {
           placeholder="search for my other projects/blogs"
           className="
             w-full pl-10 py-6 rounded-lg border border-white/30
-            bg-transparent text-white placeholder-gray-400
+            bg-transparent text-white placeholder-stone-400
             focus:outline-none focus-visible:outline-none
             focus:ring-0 focus-visible:ring-0 focus:shadow-none
             focus:border-white/60 transition-all
@@ -67,7 +67,7 @@ export default function SearchBar() {
           <Button
             variant="ghost"
             size="icon"
-            className="absolute right-3 top-1/2 -translate-y-1/2 h-8 w-8 text-gray-400 hover:text-white"
+            className="absolute right-3 top-1/2 -translate-y-1/2 h-8 w-8 text-stone-400 hover:text-white"
             onClick={() => setQuery('')}
           >
             <span className="sr-only">Clear search</span>
@@ -91,8 +91,14 @@ export default function SearchBar() {
         )}
       </div>
 
+      {/* Hint text when the search box is empty */}
+      {!query && (
+        <p className="text-stone-400 text-xs mt-2 opacity-70 italic">
+          Hint: type "projects" or "blogs" in the search bar to see them all
+        </p>
+      )}
       {loading && query && (
-        <div className="mt-2 flex items-center gap-2 text-gray-400 pl-2">
+        <div className="mt-2 flex items-center gap-2 text-stone-400 pl-2">
           <Loader2 className="h-4 w-4 animate-spin" />
           <span>Searching...</span>
         </div>
@@ -125,7 +131,7 @@ export default function SearchBar() {
                             {r.title}
                           </h3>
                           {r.description && (
-                            <p className="text-gray-400 text-sm line-clamp-2 mt-1">
+                            <p className="text-stone-400 text-sm line-clamp-2 mt-1">
                               {r.description}
                             </p>
                           )}

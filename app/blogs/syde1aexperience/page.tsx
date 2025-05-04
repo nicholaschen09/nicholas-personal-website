@@ -16,7 +16,7 @@ export default function BlogPost() {
       <article className="max-w-4xl w-full space-y-8 pt-24 md:pt-16">
         <Link
           href="/blogs"
-          className="inline-flex items-center text-gray-400 hover:text-white transition-colors mb-6"
+          className="inline-flex items-center text-stone-400 hover:text-white transition-colors mb-6"
         >
           <ArrowLeft className="mr-2 w-4 h-4" /> Back to blogs
         </Link>
@@ -27,11 +27,11 @@ export default function BlogPost() {
             My SYDE 1A Experience
           </h1>
           <div className="flex flex-wrap items-center gap-4">
-            <span className="text-gray-400">
+            <span className="text-stone-400">
               March 13, 2025{' '}
               <span className="text-pink-500">// 10 min read</span>
             </span>
-            <span className="text-gray-400 ml-auto">Nicholas Chen</span>
+            <span className="text-stone-400 ml-auto">Nicholas Chen</span>
           </div>
         </div>
 
@@ -45,11 +45,11 @@ export default function BlogPost() {
             className="object-cover"
           />
         </div>
-        <p className="text-gray-400 italic text-center mt-2">
+        <p className="text-stone-400 italic text-center mt-2">
           here's a photo of the entire class after the SYDE 121 final exam in E7
         </p>
 
-        <div className="text-gray-300 space-y-6 w-full">
+        <div className="text-stone-300 space-y-6 w-full">
           <p className="text-normal leading-relaxed">
             My first term (1A) in Systems Design Engineering (SYDE) at the
             University of Waterloo was extremely exciting and challenging. This
@@ -77,7 +77,7 @@ export default function BlogPost() {
               height={300}
               className="object-cover rounded-xl"
             />
-            <p className="text-gray-400 italic text-center mt-8">
+            <p className="text-stone-400 italic text-center mt-8">
               E7, The Engineering Building at the University of Waterloo
             </p>
           </div>
@@ -102,7 +102,7 @@ export default function BlogPost() {
               height={500}
               className="object-cover rounded-xl"
             />
-            <p className="text-gray-400 italic text-center mt-8">
+            <p className="text-stone-400 italic text-center mt-8">
               Orientation Week activities at the University of Waterloo
             </p>
           </div>
@@ -141,7 +141,7 @@ export default function BlogPost() {
                   className="object-cover rounded-xl"
                 />
               </div>
-              <p className="text-gray-400 italic mt-2 text-center w-full">
+              <p className="text-stone-400 italic mt-2 text-center w-full">
                 My SYDE 1A schedule. Everyone, including me hated 8:30am classes
               </p>
             </div>
@@ -168,13 +168,13 @@ export default function BlogPost() {
                   <div className="flex items-center justify-between w-full">
                     <div className="flex items-center">
                       <span className="font-bold text-lg">SYDE 111</span>
-                      <span className="ml-4 text-gray-400">Calculus 1</span>
+                      <span className="ml-4 text-stone-400">Calculus 1</span>
                     </div>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
                   <div className="space-y-4">
-                    <div className="border border-gray-500 p-4 rounded-lg space-y-3">
+                    <div className="border border-stone-500 p-4 rounded-lg space-y-3">
                       <h4 className="font-semibold text-white">
                         About the Course
                       </h4>
@@ -232,7 +232,7 @@ export default function BlogPost() {
                           className="object-cover object-center"
                         />
                       </div>
-                      <p className="text-sm text-gray-500 mt-4 text-center italic">
+                      <p className="text-sm text-stone-500 mt-4 text-center italic">
                         This was the hardest integral I had to ever solve in my
                         life
                       </p>
@@ -256,7 +256,7 @@ export default function BlogPost() {
                   <div className="flex items-center justify-between w-full">
                     <div className="flex items-center">
                       <span className="font-bold text-lg">SYDE 121</span>
-                      <span className="ml-4 text-gray-400">
+                      <span className="ml-4 text-stone-400">
                         Digital Computation
                       </span>
                     </div>
@@ -264,7 +264,7 @@ export default function BlogPost() {
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
                   <div className="space-y-4">
-                    <div className="border border-gray-500 p-4 rounded-lg space-y-3">
+                    <div className="border border-stone-500 p-4 rounded-lg space-y-3">
                       <h4 className="font-semibold text-white">
                         About the Course
                       </h4>
@@ -329,7 +329,7 @@ export default function BlogPost() {
                           className="object-cover object-center"
                         />
                       </div>
-                      <p className="text-sm text-gray-500 mt-4 text-center italic">
+                      <p className="text-sm text-stone-500 mt-4 text-center italic">
                         our final cs project that I worked on with my partner
                       </p>
                       <div className="mt-4">
@@ -352,7 +352,7 @@ export default function BlogPost() {
                   <div className="flex items-center justify-between w-full">
                     <div className="flex items-center">
                       <span className="font-bold text-lg">SYDE 181</span>
-                      <span className="ml-4 text-gray-400">
+                      <span className="ml-4 text-stone-400">
                         Physics: Statics
                       </span>
                     </div>
@@ -360,7 +360,7 @@ export default function BlogPost() {
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
                   <div className="space-y-4">
-                    <div className="border border-gray-500 p-4 rounded-lg space-y-3">
+                    <div className="border border-stone-500 p-4 rounded-lg space-y-3">
                       <h4 className="font-semibold text-white">
                         About the Course
                       </h4>
@@ -423,7 +423,7 @@ export default function BlogPost() {
                           className="object-cover object-bottom"
                         />
                       </div>
-                      <p className="text-sm text-gray-500 mt-4 text-center italic">
+                      <p className="text-sm text-stone-500 mt-4 text-center italic">
                         my first 100 percent in university on a test/quiz/exam
                       </p>
                       <div className="mt-4">
@@ -446,7 +446,7 @@ export default function BlogPost() {
                   <div className="flex items-center justify-between w-full">
                     <div className="flex items-center">
                       <span className="font-bold text-lg">SYDE 113</span>
-                      <span className="ml-4 text-gray-400">
+                      <span className="ml-4 text-stone-400">
                         Elementary Engineering Math
                       </span>
                     </div>
@@ -454,7 +454,7 @@ export default function BlogPost() {
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
                   <div className="space-y-4">
-                    <div className="border border-gray-500 p-4 rounded-lg space-y-3">
+                    <div className="border border-stone-500 p-4 rounded-lg space-y-3">
                       <h4 className="font-semibold text-white">
                         About the Course
                       </h4>
@@ -521,7 +521,7 @@ export default function BlogPost() {
                           className="object-cover object-bottom"
                         />
                       </div>
-                      <p className="text-sm text-gray-500 mt-4 text-center italic">
+                      <p className="text-sm text-stone-500 mt-4 text-center italic">
                         my cheatsheet for the first quiz we had in this course
                         (I used up all the space)
                       </p>
@@ -545,13 +545,15 @@ export default function BlogPost() {
                   <div className="flex items-center justify-between w-full">
                     <div className="flex items-center">
                       <span className="font-bold text-lg">SYDE 101</span>
-                      <span className="ml-4 text-gray-400">Communications</span>
+                      <span className="ml-4 text-stone-400">
+                        Communications
+                      </span>
                     </div>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
                   <div className="space-y-4">
-                    <div className="border border-gray-500 p-4 rounded-lg space-y-3">
+                    <div className="border border-stone-500 p-4 rounded-lg space-y-3">
                       <h4 className="font-semibold text-white">
                         About the Course
                       </h4>
@@ -605,7 +607,7 @@ export default function BlogPost() {
                           className="object-cover object-center"
                         />
                       </div>
-                      <p className="text-sm text-gray-500 mt-4 text-center italic">
+                      <p className="text-sm text-stone-500 mt-4 text-center italic">
                         the bear my group and I made for our final project that
                         we presented to the class at the end of the term
                       </p>
@@ -629,7 +631,7 @@ export default function BlogPost() {
                   <div className="flex items-center justify-between w-full">
                     <div className="flex items-center">
                       <span className="font-bold text-lg">SYDE 101L</span>
-                      <span className="ml-4 text-gray-400">
+                      <span className="ml-4 text-stone-400">
                         Visual Communications
                       </span>
                     </div>
@@ -637,7 +639,7 @@ export default function BlogPost() {
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
                   <div className="space-y-4">
-                    <div className="border border-gray-500 p-4 rounded-lg space-y-3">
+                    <div className="border border-stone-500 p-4 rounded-lg space-y-3">
                       <h4 className="font-semibold text-white">
                         About the Course
                       </h4>
@@ -702,7 +704,7 @@ export default function BlogPost() {
                           className="object-cover object-bottom"
                         />
                       </div>
-                      <p className="text-sm text-gray-500 mt-4 text-center italic">
+                      <p className="text-sm text-stone-500 mt-4 text-center italic">
                         a SOLIDWORKS 3D model of a car that I made for one of
                         our last projects (I got a 95%)
                       </p>
@@ -726,7 +728,7 @@ export default function BlogPost() {
                   <div className="flex items-center justify-between w-full">
                     <div className="flex items-center">
                       <span className="font-bold text-lg">SYDE 161</span>
-                      <span className="ml-4 text-gray-400">
+                      <span className="ml-4 text-stone-400">
                         Introduction to Design
                       </span>
                     </div>
@@ -734,7 +736,7 @@ export default function BlogPost() {
                 </AccordionTrigger>
                 <AccordionContent className="accordion-content">
                   <div className="space-y-4">
-                    <div className="border border-gray-500 p-4 rounded-lg space-y-3">
+                    <div className="border border-stone-500 p-4 rounded-lg space-y-3">
                       <h4 className="font-semibold text-white">
                         About the Course
                       </h4>
@@ -806,7 +808,7 @@ export default function BlogPost() {
                           className="object-cover object-bottom"
                         />
                       </div>
-                      <p className="text-sm text-gray-500 mt-4 text-center italic">
+                      <p className="text-sm text-stone-500 mt-4 text-center italic">
                         a systems map we made for a project
                       </p>
                       <div className="mt-4">
@@ -872,7 +874,7 @@ export default function BlogPost() {
                   className="object-cover rounded xl"
                 />
               </div>
-              <p className="text-gray-400 italic text-center mt-4 w-full">
+              <p className="text-stone-400 italic text-center mt-4 w-full">
                 A picture of CMH at night
               </p>
             </div>
@@ -943,13 +945,13 @@ export default function BlogPost() {
         </div>
       </article>
       {/* More Posts Section */}
-      <section className="max-w-4xl w-full mt-16 pt-8 border-t border-gray-700">
+      <section className="max-w-4xl w-full mt-16 pt-8 border-t border-stone-700">
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
           More Posts
         </h2>
         <div className="space-y-8">
           {/* Blog Post 3 */}
-          <Card className="bg-transparent border border-gray-700 overflow-hidden md:col-span-2">
+          <Card className="bg-transparent border border-stone-700 overflow-hidden md:col-span-2">
             <div className="relative h-32 md:h-36">
               <Image
                 src="/ownr.png"
@@ -963,11 +965,11 @@ export default function BlogPost() {
                 <h3 className="text-xl font-bold text-white">
                   What I Loved About Being A Software Engineering Intern at Ownr
                 </h3>
-                <span className="text-gray-400 text-sm mt-1 md:mt-0">
+                <span className="text-stone-400 text-sm mt-1 md:mt-0">
                   April 20, 2025
                 </span>
               </div>
-              <p className="text-gray-300 text-sm">
+              <p className="text-stone-300 text-sm">
                 In this article, I share my experiences during my first co-op
                 term at Ownr, an RBCx company. I discuss the projects I worked
                 on, the skills I developed, and the challenges I faced. This
@@ -979,7 +981,7 @@ export default function BlogPost() {
             <CardFooter className="p-4 pt-0">
               <Link
                 href="/blogs/ownr"
-                className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
+                className="inline-flex items-center text-white hover:text-stone-300 transition-colors"
               >
                 Read more <ArrowRight className="ml-1 w-4 h-4" />
               </Link>
@@ -990,13 +992,13 @@ export default function BlogPost() {
       {/* Footer */}
       <footer className="w-full mt-8 pt-8">
         <div className="max-w-4xl mx-auto w-full">
-          <hr className="border-t border-gray-700 mb-8" />
+          <hr className="border-t border-stone-700 mb-8" />
           <div className="flex flex-col items-center md:items-start">
             {/* Social Media Links */}
             <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
               <Link
                 href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1011,7 +1013,7 @@ export default function BlogPost() {
               </Link>
               <Link
                 href="https://github.com/nicholaschen09"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1026,7 +1028,7 @@ export default function BlogPost() {
               </Link>
               <Link
                 href="mailto:nicholas.chen243@gmail.com"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
               >
                 <div className="w-10 h-10 flex items-center justify-center">
                   <img
@@ -1039,7 +1041,7 @@ export default function BlogPost() {
               </Link>
               <Link
                 href="https://x.com/nicholaschen__"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1054,7 +1056,7 @@ export default function BlogPost() {
               </Link>
               <Link
                 href="https://linktr.ee/nicholas.chen__"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1069,7 +1071,7 @@ export default function BlogPost() {
               </Link>
             </div>
           </div>
-          <p className="text-gray-400 mt-10 mb-4">© 2025 Nicholas Chen.</p>
+          <p className="text-stone-400 mt-10 mb-4">© 2025 Nicholas Chen.</p>
         </div>
       </footer>
     </main>

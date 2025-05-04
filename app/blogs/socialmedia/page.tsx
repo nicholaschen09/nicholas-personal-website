@@ -11,7 +11,7 @@ export default function BlogPost() {
       <article className="max-w-4xl w-full space-y-8 pt-24 md:pt-16">
         <Link
           href="/blogs"
-          className="inline-flex items-center text-gray-400 hover:text-white transition-colors mb-6"
+          className="inline-flex items-center text-stone-400 hover:text-white transition-colors mb-6"
         >
           <ArrowLeft className="mr-2 w-4 h-4" /> Back to blogs
         </Link>
@@ -21,11 +21,11 @@ export default function BlogPost() {
             How Social Media Changed My Life
           </h1>
           <div className="flex flex-wrap items-center gap-4">
-            <span className="text-gray-400">
+            <span className="text-stone-400">
               March 24, 2025{' '}
               <span className="text-pink-500">// 7 min read</span>
             </span>
-            <span className="text-gray-400 ml-auto">Nicholas Chen</span>
+            <span className="text-stone-400 ml-auto">Nicholas Chen</span>
           </div>
         </div>
 
@@ -47,7 +47,7 @@ export default function BlogPost() {
             className="object-cover object-top"
           />
         </div>
-        <p className="text-normal text-gray-500 mt-1 text-center italic">
+        <p className="text-normal text-stone-500 mt-1 text-center italic">
           My instagram account since I started doing social media in 2022
         </p>
 
@@ -67,15 +67,15 @@ export default function BlogPost() {
 
         <div className="my-8 relative w-full overflow-hidden rounded-lg">
           <CarouselContainer />
-          <p className="text-normal text-gray-500 mt-4 text-center italic">
+          <p className="text-normal text-stone-500 mt-4 text-center italic">
             The first TikTok post that went viral and changed my life
           </p>
         </div>
 
         <h2 className="mt-8 text-3xl font-bold">Building My Platform</h2>
         <p>
-          Creating and maintaining a social media presence isn’t just about
-          posting content, it’s about building a platform that represents your
+          Creating and maintaining a social media presence isn't just about
+          posting content, it's about building a platform that represents your
           voice. I began experimenting with different formats: videos, photos,
           and live sessions. I quickly learned that authenticity and consistency
           are the keys to connecting with an audience.
@@ -86,7 +86,7 @@ export default function BlogPost() {
         </h3>
         <ol className="list-decimal list-inside space-y-4">
           <li>
-            Being authentic goes a long way. People can tell when you’re
+            Being authentic goes a long way. People can tell when you're
             genuine. Sharing your true self, your struggles and successes help
             build trust and create a loyal following. Nobody wants to follow
             someone who just posts about their successes and never their
@@ -111,7 +111,7 @@ export default function BlogPost() {
           </li>
           <li>
             Embrace Change. Social media is ever-evolving. Adapting to new
-            trends and platforms, like TikTok’s rapid rise, allowed me to reach
+            trends and platforms, like TikTok's rapid rise, allowed me to reach
             new audiences and stay relevant. You should always be looking for
             new ways to change up your content and try new things. If you're not
             growing you're dying.
@@ -139,7 +139,7 @@ export default function BlogPost() {
             className="object-cover object-top"
           />
         </div>
-        <p className="text-normal text-gray-500 mt-1 text-center italic">
+        <p className="text-normal text-stone-500 mt-1 text-center italic">
           Here's a picture of what I first saw when exploring the syde floor in
           e7 at uwaterloo for the first time
         </p>
@@ -148,7 +148,7 @@ export default function BlogPost() {
           Personal Growth and New Friendships
         </h3>
         <p>
-          Social media isn’t just about numbers—it’s about the people you meet.
+          Social media isn't just about numbers—it's about the people you meet.
           Through my posts, I connected with individuals who shared my interests
           and values. These relationships have grown from online interactions
           into lasting friendships and collaborations.
@@ -162,7 +162,7 @@ export default function BlogPost() {
             className="object-cover object-bottom"
           />
         </div>
-        <p className="text-normal text-gray-500 mt-1 text-center italic">
+        <p className="text-normal text-stone-500 mt-1 text-center italic">
           Pic of Ian I took when he visited the RBC office lol
         </p>
 
@@ -184,7 +184,7 @@ export default function BlogPost() {
         <ul>
           <li>
             Working with brands taught me how to create content that aligns with
-            both my personal style and the brand’s message. This balance is
+            both my personal style and the brand's message. This balance is
             crucial for maintaining authenticity while providing value to
             sponsors. I experimented with affiliate marketing and sponsored
             posts. Learning what worked for my audience was key to turning my
@@ -200,7 +200,7 @@ export default function BlogPost() {
             className="object-cover object-top"
           />
         </div>
-        <p className="text-normal text-gray-500 mt-1 text-center italic">
+        <p className="text-normal text-stone-500 mt-1 text-center italic">
           The first brand deal that actually paid some decent money for my video
         </p>
 
@@ -217,13 +217,13 @@ export default function BlogPost() {
       {/* Footer */}
       <footer className="w-full mt-8 pt-8">
         <div className="max-w-4xl mx-auto w-full">
-          <hr className="border-t border-gray-700 mb-8" />
+          <hr className="border-t border-stone-700 mb-8" />
           <div className="flex flex-col items-center md:items-start">
             {/* Social Media Links */}
             <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
               <Link
                 href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -238,7 +238,7 @@ export default function BlogPost() {
               </Link>
               <Link
                 href="https://github.com/nicholaschen09"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -253,7 +253,7 @@ export default function BlogPost() {
               </Link>
               <Link
                 href="mailto:nicholas.chen243@gmail.com"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
               >
                 <div className="w-10 h-10 flex items-center justify-center">
                   <img
@@ -266,7 +266,7 @@ export default function BlogPost() {
               </Link>
               <Link
                 href="https://x.com/nicholaschen__"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -281,7 +281,7 @@ export default function BlogPost() {
               </Link>
               <Link
                 href="https://linktr.ee/nicholas.chen__"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -296,7 +296,7 @@ export default function BlogPost() {
               </Link>
             </div>
           </div>
-          <p className="text-gray-400 mt-10 mb-4">© 2025 Nicholas Chen.</p>
+          <p className="text-stone-400 mt-10 mb-4">© 2025 Nicholas Chen.</p>
         </div>
       </footer>
     </main>

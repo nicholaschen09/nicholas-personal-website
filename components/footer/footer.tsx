@@ -4,13 +4,13 @@ export default function Footer() {
   return (
     <footer className="w-full -mt-20 pt-8">
       <div className="max-w-6xl mx-auto w-full">
-        <hr className="border-t border-gray-700 mb-8" />
+        <hr className="border-t border-stone-700 mb-8" />
         <div className="flex flex-col items-center md:items-start">
           {/* Social Media Links */}
           <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
             <Link
               href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
-              className="text-white hover:text-gray-300 transition-colors"
+              className="text-white hover:text-stone-300 transition-colors"
             >
               <div className="w-10 h-10 flex items-center justify-center">
                 <img
@@ -23,7 +23,7 @@ export default function Footer() {
             </Link>
             <Link
               href="https://github.com/nicholaschen09"
-              className="text-white hover:text-gray-300 transition-colors"
+              className="text-white hover:text-stone-300 transition-colors"
             >
               <div className="w-12 h-8 flex items-center justify-center mt-1">
                 <img
@@ -36,7 +36,7 @@ export default function Footer() {
             </Link>
             <Link
               href="mailto:nicholas.chen243@gmail.com"
-              className="text-white hover:text-gray-300 transition-colors"
+              className="text-white hover:text-stone-300 transition-colors"
             >
               <div className="w-11 h-12 flex items-center justify-center relative -top-1">
                 <img
@@ -49,7 +49,7 @@ export default function Footer() {
             </Link>
             <Link
               href="https://x.com/nicholaschen__"
-              className="text-white hover:text-gray-300 transition-colors"
+              className="text-white hover:text-stone-300 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -64,7 +64,7 @@ export default function Footer() {
             </Link>
             <Link
               href="https://linktr.ee/nicholas.chen__"
-              className="text-white hover:text-gray-300 transition-colors"
+              className="text-white hover:text-stone-300 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -78,7 +78,7 @@ export default function Footer() {
               <span className="sr-only">Linktree</span>
             </Link>
           </div>
-          <p className="text-gray-400 mt-8 mb-4">© 2025 Nicholas Chen.</p>
+          <p className="text-stone-400 mt-8 mb-4">© 2025 Nicholas Chen.</p>
         </div>
       </div>
     </footer>

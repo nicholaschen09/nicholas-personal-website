@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Github, ExternalLink, ArrowRight } from 'lucide-react';
+import { ExternalLink, ArrowRight } from 'lucide-react';
 import Header from '@/components/header';
-import Footer from '@/components/footer/footer';
+
 
 // Project type definition
 type Project = {
@@ -100,7 +100,7 @@ export default function ProjectsPage() {
             <h1 className="text-3xl sm:text-3xl md:text-4xl font-bold text-white mt-10">
               Projects
             </h1>
-            <p className="text-lg text-gray-300 max-w-3xl">
+            <p className="text-lg text-stone-400 max-w-3xl">
               A collection of my work spanning hardware, software, and design.
               Each project represents a unique challenge and solution.
             </p>
@@ -111,7 +111,7 @@ export default function ProjectsPage() {
               {projects.slice(0, 8).map((project) => (
                 <div
                   key={project.id}
-                  className="bg-transparent rounded-xl overflow-hidden border border-gray-700 flex flex-col h-full transition-transform hover:translate-y-[-5px] duration-300"
+                  className="bg-transparent rounded-xl overflow-hidden border border-stone-700 flex flex-col h-full transition-transform hover:translate-y-[-5px] duration-300"
                 >
                   <div className="relative h-48">
                     <Image
@@ -123,13 +123,13 @@ export default function ProjectsPage() {
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
                     <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                    <p className="text-gray-400 text-sm mb-4 flex-grow">
+                    <p className="text-stone-400 text-sm mb-4 flex-grow">
                       {project.description}
                     </p>
                     <div className="flex justify-between items-center">
                       <Link
                         href={project.links.details}
-                        className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                        className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                       >
                         Read more <ArrowRight className="ml-1 w-4 h-4" />
                       </Link>
@@ -137,7 +137,7 @@ export default function ProjectsPage() {
                         {project.links.github && (
                           <Link
                             href={project.links.github}
-                            className="text-gray-400 hover:text-white mr-2"
+                            className="text-stone-400 hover:text-white mr-2"
                           >
                             <img
                               src="/github1.png"
@@ -150,7 +150,7 @@ export default function ProjectsPage() {
                         {project.links.demo && (
                           <Link
                             href={project.links.demo}
-                            className="text-gray-400 hover:text-white"
+                            className="text-stone-400 hover:text-white"
                           >
                             <ExternalLink className="h-5 w-5" />
                             <span className="sr-only">Live Demo</span>
@@ -168,13 +168,13 @@ export default function ProjectsPage() {
         {/* Footer */}
         <footer className="w-full mt-8 pt-8">
           <div className="max-w-6xl mx-auto w-full">
-            <hr className="border-t border-gray-700 mb-8" />
+            <hr className="border-t border-stone-700 mb-8" />
             <div className="flex flex-col items-center md:items-start">
               {/* Social Media Links */}
               <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
                 <Link
                   href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
-                  className="text-white hover:text-gray-300 transition-colors"
+                  className="text-white hover:text-stone-300 transition-colors"
                 >
                   <div className="w-10 h-10 flex items-center justify-center">
                     <img
@@ -187,7 +187,7 @@ export default function ProjectsPage() {
                 </Link>
                 <Link
                   href="https://github.com/nicholaschen09"
-                  className="text-white hover:text-gray-300 transition-colors"
+                  className="text-white hover:text-stone-300 transition-colors"
                 >
                   <div className="w-12 h-8 flex items-center justify-center mt-1">
                     <img
@@ -200,7 +200,7 @@ export default function ProjectsPage() {
                 </Link>
                 <Link
                   href="mailto:nicholas.chen243@gmail.com"
-                  className="text-white hover:text-gray-300 transition-colors"
+                  className="text-white hover:text-stone-300 transition-colors"
                 >
                   <div className="w-11 h-12 flex items-center justify-center relative -top-1">
                     <img
@@ -213,7 +213,7 @@ export default function ProjectsPage() {
                 </Link>
                 <Link
                   href="https://x.com/nicholaschen__"
-                  className="text-white hover:text-gray-300 transition-colors"
+                  className="text-white hover:text-stone-300 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -228,7 +228,7 @@ export default function ProjectsPage() {
                 </Link>
                 <Link
                   href="https://linktr.ee/nicholas.chen__"
-                  className="text-white hover:text-gray-300 transition-colors"
+                  className="text-white hover:text-stone-300 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -243,7 +243,7 @@ export default function ProjectsPage() {
                 </Link>
               </div>
             </div>
-            <p className="text-gray-400 mt-10 mb-4">© 2025 Nicholas Chen.</p>
+            <p className="text-stone-400 mt-10 mb-4">© 2025 Nicholas Chen.</p>
           </div>
         </footer>
       </main>

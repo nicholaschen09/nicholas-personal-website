@@ -11,7 +11,7 @@ export default function TikTokProject() {
         {/* Navigation */}
         <Link
           href="/projects"
-          className="inline-flex items-center text-gray-400 hover:text-white transition-colors"
+          className="inline-flex items-center text-stone-400 hover:text-white transition-colors"
         >
           <ArrowLeft className="mr-2 w-4 h-4" /> Back to projects
         </Link>
@@ -24,7 +24,7 @@ export default function TikTokProject() {
             </h1>
           </div>
 
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-stone-300">
             A machine learning-powered model that predicts the number of views a
             TikTok video will receive using linear regression and data
             analytics.
@@ -32,7 +32,7 @@ export default function TikTokProject() {
         </div>
 
         {/* Featured Image */}
-        <div className="relative w-full aspect-[16/8] rounded-xl overflow-hidden border border-gray-800">
+        <div className="relative w-full aspect-[16/8] rounded-xl overflow-hidden border border-stone-800">
           <Image
             src="/pandas.png"
             alt="TikTok View Predictor"
@@ -50,7 +50,7 @@ export default function TikTokProject() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="text-white bg-transparent hover:text-gray-400 transition-colors">
+            <Button className="text-white bg-transparent hover:text-stone-400 transition-colors">
               <ExternalLink className="mr-2 h-4 w-4" /> Demo
             </Button>
           </a>
@@ -59,7 +59,7 @@ export default function TikTokProject() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="text-white bg-transparent hover:text-gray-400 transition-colors">
+            <Button className="text-white bg-transparent hover:text-stone-400 transition-colors">
               <Image
                 src="/github1.png"
                 alt="GitHub Logo"
@@ -75,7 +75,7 @@ export default function TikTokProject() {
         {/* Overview Section */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Overview</h2>
-          <p className="text-gray-300 text-lg leading-relaxed">
+          <p className="text-stone-300 text-lg leading-relaxed">
             TikTok View Predictor is an innovative machine learning project that
             forecasts the number of views a TikTok video can receive. By
             leveraging linear regression models and data processing techniques,
@@ -126,7 +126,7 @@ export default function TikTokProject() {
           </div>
         </section>
 
-        <div className="relative w-full aspect-[4/4] rounded-xl overflow-hidden border border-gray-800">
+        <div className="relative w-full aspect-[4/4] rounded-xl overflow-hidden border border-stone-800">
           <Image
             src="/seasonal.png"
             alt="TikTok View Predictor Dashboard"
@@ -144,14 +144,14 @@ export default function TikTokProject() {
               <h3 className="text-xl font-bold text-white">
                 Data Sources & Extraction
               </h3>
-              <ul className="list-disc pl-5 space-y-2 text-gray-300">
+              <ul className="list-disc pl-5 space-y-2 text-stone-300">
                 <li>API integration with TikTok data endpoints</li>
                 <li>CSV ingestion for historical video performance data</li>
               </ul>
             </div>
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-white">Software Stack</h3>
-              <ul className="list-disc pl-5 space-y-2 text-gray-300">
+              <ul className="list-disc pl-5 space-y-2 text-stone-300">
                 <li>Python for data processing & model building</li>
                 <li>Flask for serving APIs and web integration</li>
                 <li>Scikit-learn for regression modeling</li>
@@ -162,7 +162,7 @@ export default function TikTokProject() {
           </div>
         </section>
 
-        <div className="relative w-full aspect-[4/2.5] rounded-xl overflow-hidden border border-gray-800">
+        <div className="relative w-full aspect-[4/2.5] rounded-xl overflow-hidden border border-stone-800">
           <Image
             src="/tiktokgraph.png"
             alt="TikTok View Predictor Dashboard"
@@ -171,14 +171,14 @@ export default function TikTokProject() {
             className="object-cover"
           />
         </div>
-        <p className="text-center text-gray-400 italic mt-1">
+        <p className="text-center text-stone-400 italic mt-1">
           this is the predicted graph for future tiktok views
         </p>
 
         {/* Challenges */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Challenges I Encountered</h2>
-          <p className="text-gray-300 text-lg leading-relaxed">
+          <p className="text-stone-300 text-lg leading-relaxed">
             One major challenge was cleaning diverse data formats from multiple
             sources and ensuring the regression model was robust against
             outliers. We overcame these challenges by employing advanced data
@@ -189,7 +189,7 @@ export default function TikTokProject() {
         {/* Accomplishments */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Accomplishments</h2>
-          <p className="text-gray-300 text-lg leading-relaxed">
+          <p className="text-stone-300 text-lg leading-relaxed">
             The TikTok View Predictor achieved strong forecasting performance,
             providing content creators with reliable estimates for video views.
             The end-to-end pipeline streamlined data collection, analysis, and
@@ -203,7 +203,7 @@ export default function TikTokProject() {
           <h2 className="text-3xl font-bold">
             What's Next for TikTok View Predictor
           </h2>
-          <p className="text-gray-300 text-lg leading-relaxed">
+          <p className="text-stone-300 text-lg leading-relaxed">
             Future improvements include incorporating more advanced machine
             learning models, expanding data source integration, and developing
             automated reporting capabilities to further empower content strategy
@@ -215,13 +215,13 @@ export default function TikTokProject() {
         <section className="space-y-6">
           <div className="flex items-center justify-between">
             <h2 className="text-3xl font-bold text-white">More Projects</h2>
-            <Link href="/projects" className="text-gray-400 hover:text-white">
+            <Link href="/projects" className="text-stone-400 hover:text-white">
               View all Projects →
             </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card className="bg-transparent border border-gray-700 overflow-hidden">
+            <Card className="bg-transparent border border-stone-700 overflow-hidden">
               <div className="relative h-48">
                 <Image
                   src="/customerfeedback.png"
@@ -234,7 +234,7 @@ export default function TikTokProject() {
                 <h3 className="text-xl font-bold text-white">
                   Customer Feedback ETL Pipeline
                 </h3>
-                <p className="text-gray-300 text-sm">
+                <p className="text-stone-300 text-sm">
                   An end-to-end data pipeline that processes customer feedback
                   using ETL techniques and machine learning analysis.
                 </p>
@@ -243,7 +243,7 @@ export default function TikTokProject() {
                 <div className="flex gap-4">
                   <Link
                     href="https://github.com/nicholaschen09/customer-feedback-etl-pipeline"
-                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                    className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                   >
                     <div className="w-6 h-6 flex items-center justify-center mr-2">
                       <img
@@ -256,7 +256,7 @@ export default function TikTokProject() {
                   </Link>
                   <Link
                     href="#"
-                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                    className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Demo
@@ -264,14 +264,14 @@ export default function TikTokProject() {
                 </div>
                 <Link
                   href="/projects/customerfeedback"
-                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                  className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                 >
                   Read more <ArrowRight className="ml-1 w-4 h-4" />
                 </Link>
               </CardFooter>
             </Card>
 
-            <Card className="bg-transparent border border-gray-700 overflow-hidden">
+            <Card className="bg-transparent border border-stone-700 overflow-hidden">
               <div className="relative h-48">
                 <Image
                   src="/fernando.png"
@@ -282,7 +282,7 @@ export default function TikTokProject() {
               </div>
               <CardContent className="p-4 space-y-3">
                 <h3 className="text-xl font-bold text-white">Fernando</h3>
-                <p className="text-gray-300 text-sm">
+                <p className="text-stone-300 text-sm">
                   A posture correcting robot that helps you maintain a healthy
                   posture while working at your desk by slapping you when you
                   slouch.
@@ -292,7 +292,7 @@ export default function TikTokProject() {
                 <div className="flex gap-4">
                   <Link
                     href="https://github.com/enxilium/posture-checker-robot"
-                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                    className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                   >
                     <div className="w-6 h-6 flex items-center justify-center mr-2">
                       <img
@@ -305,7 +305,7 @@ export default function TikTokProject() {
                   </Link>
                   <Link
                     href="https://youtu.be/EBsmGGOubCk?si=1_ksNQak9YQNffQ6"
-                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                    className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Demo
@@ -313,7 +313,7 @@ export default function TikTokProject() {
                 </div>
                 <Link
                   href="/projects/fernando"
-                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                  className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                 >
                   Read more <ArrowRight className="ml-1 w-4 h-4" />
                 </Link>
@@ -326,13 +326,13 @@ export default function TikTokProject() {
       {/* Footer */}
       <footer className="w-full mt-8 pt-8">
         <div className="max-w-5xl mx-auto w-full">
-          <hr className="border-t border-gray-700 mb-8" />
+          <hr className="border-t border-stone-700 mb-8" />
           <div className="flex flex-col items-center md:items-start">
             {/* Social Media Links */}
             <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
               <Link
                 href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
               >
                 <div className="w-10 h-10 flex items-center justify-center">
                   <img
@@ -345,7 +345,7 @@ export default function TikTokProject() {
               </Link>
               <Link
                 href="https://github.com/nicholaschen09"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
               >
                 <div className="w-12 h-8 flex items-center justify-center mt-1">
                   <img
@@ -358,7 +358,7 @@ export default function TikTokProject() {
               </Link>
               <Link
                 href="mailto:nicholas.chen243@gmail.com"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
               >
                 <div className="w-11 h-12 flex items-center justify-center relative -top-1">
                   <img
@@ -371,7 +371,7 @@ export default function TikTokProject() {
               </Link>
               <Link
                 href="https://x.com/nicholaschen__"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -386,7 +386,7 @@ export default function TikTokProject() {
               </Link>
               <Link
                 href="https://linktr.ee/nicholas.chen__"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-stone-300 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -401,7 +401,7 @@ export default function TikTokProject() {
               </Link>
             </div>
           </div>
-          <p className="text-gray-400 mt-10 mb-4">© 2025 Nicholas Chen.</p>
+          <p className="text-stone-400 mt-10 mb-4">© 2025 Nicholas Chen.</p>
         </div>
       </footer>
     </main>
