@@ -42,7 +42,7 @@ export default function BlogsPage() {
     <div className="container mx-auto py-16 px-4 md:px-0 max-w-6xl mb-20">
       <div className="mb-16">
         <h1 className="text-4xl font-bold mb-6 mt-20">Blogs</h1>
-        <p className="text-lg text-zinc-400 max-w-3xl">
+        <p className="text-lg text-stone-400 max-w-3xl">
           Thoughts, ideas, and reflections on technology, software development,
           and my personal journey in the tech industry.
         </p>
@@ -51,25 +51,25 @@ export default function BlogsPage() {
         {regularPosts.map((post) => (
           <article
             key={post.id}
-            className="border-t border-zinc-800 pt-10 group"
+            className="border-t border-stone-800 pt-10 group"
           >
             <div className="flex flex-col md:flex-row items-start justify-between gap-8">
               <div className="flex-1">
-                <div className="flex items-center gap-3 text-sm text-zinc-500 mb-3">
+                <div className="flex items-center gap-3 text-sm text-stone-500 mb-3">
                   <span>{post.date}</span>
                   <span>//</span>
                   <span className="text-pink-500">{post.readTime}</span>
                 </div>
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 group-hover:text-zinc-300 transition-colors">
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 group-hover:text-stone-300 transition-colors">
                   {post.title}
                 </h2>
-                <p className="text-zinc-400 mb-5 md:text-normal">
+                <p className="text-stone-400 mb-5 md:text-normal">
                   {post.excerpt}
                 </p>
                 <div className="flex items-center">
                   <Link
                     href={`/blogs/${post.slug}`}
-                    className="inline-flex items-center gap-1 text-white hover:text-zinc-300 transition-colors"
+                    className="inline-flex items-center gap-1 text-white hover:text-stone-300 transition-colors"
                   >
                     Read more
                     <ArrowUpRight
