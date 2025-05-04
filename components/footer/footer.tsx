@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="w-full -mt-20 pt-8">
       <div className="max-w-6xl mx-auto w-full">
-        <hr className="border-t border-gray-700 mb-8" />
+        <hr className="border-t border-stone-700 mb-8" />
         <div className="flex flex-col items-center md:items-start">
           {/* Social Media Links */}
           <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
@@ -78,7 +78,7 @@ export default function Footer() {
               <span className="sr-only">Linktree</span>
             </Link>
           </div>
-          <p className="text-gray-400 mt-8 mb-4">© 2025 Nicholas Chen.</p>
+          <p className="text-stone-400 mt-8 mb-4">© 2025 Nicholas Chen.</p>
         </div>
       </div>
     </footer>
