@@ -49,7 +49,7 @@ export default function SearchBar() {
   return (
     <div className="mb-12 w-full max-w-6xl relative">
       <div className="relative group">
-        <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400 group-focus-within:text-white transition-colors" />
+        <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-stone-400 group-focus-within:text-white transition-colors" />
         <Input
           type="text"
           value={query}
@@ -93,11 +93,10 @@ export default function SearchBar() {
 
       {/* Hint text when the search box is empty */}
       {!query && (
-        <p className="text-stone-400 text-xs mt-2">
-          Type "projects" or "blogs" in the search bar to see them all.
+        <p className="text-stone-400 text-xs mt-2 opacity-70">
+          Hint: type "projects" or "blogs" in the search bar to see them all.
         </p>
       )}
-
       {loading && query && (
         <div className="mt-2 flex items-center gap-2 text-gray-400 pl-2">
           <Loader2 className="h-4 w-4 animate-spin" />
