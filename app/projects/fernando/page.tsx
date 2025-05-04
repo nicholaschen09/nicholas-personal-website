@@ -174,7 +174,7 @@ export default function FernandoProject() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
             <div className="space-y-2">
-              <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center mx-auto">
+              <div className="h-12 w-12 rounded-full bg-white/5 flex items-center justify-center mx-auto">
                 <span className="text-xl font-bold text-white">1</span>
               </div>
               <h3 className="font-semibold text-white">Detection</h3>
@@ -184,7 +184,7 @@ export default function FernandoProject() {
             </div>
 
             <div className="space-y-2">
-              <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center mx-auto">
+              <div className="h-12 w-12 rounded-full bg-white/5 flex items-center justify-center mx-auto">
                 <span className="text-xl font-bold text-white">2</span>
               </div>
               <h3 className="font-semibold text-white">Analysis</h3>
@@ -194,7 +194,7 @@ export default function FernandoProject() {
             </div>
 
             <div className="space-y-2">
-              <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center mx-auto">
+              <div className="h-12 w-12 rounded-full bg-white/5 flex items-center justify-center mx-auto">
                 <span className="text-xl font-bold text-white">3</span>
               </div>
               <h3 className="font-semibold text-white">Correction</h3>
@@ -204,7 +204,7 @@ export default function FernandoProject() {
             </div>
 
             <div className="space-y-2">
-              <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center mx-auto">
+              <div className="h-12 w-12 rounded-full bg-white/5 flex items-center justify-center mx-auto">
                 <span className="text-xl font-bold text-white">4</span>
               </div>
               <h3 className="font-semibold text-white">Learning</h3>
@@ -257,25 +257,25 @@ export default function FernandoProject() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
               <div className="grid grid-cols-2 gap-4">
-                <div className="border border-white p-6 rounded-lg text-center">
+                <div className="bg-white/5 p-6 rounded-md text-center">
                   <span className="text-4xl font-bold text-white">92%</span>
                   <p className="text-stone-400 mt-2">
                     Improved posture awareness
                   </p>
                 </div>
-                <div className="border border-white p-6 rounded-lg text-center">
+                <div className="bg-white/5 p-6 rounded-md text-center">
                   <span className="text-4xl font-bold text-white">78%</span>
                   <p className="text-stone-400 mt-2">
                     Measurable posture improvement
                   </p>
                 </div>
-                <div className="border border-white p-6 rounded-lg text-center">
+                <div className="bg-white/5 p-6 rounded-md text-center">
                   <span className="text-4xl font-bold text-white">85%</span>
                   <p className="text-stone-400 mt-2">
                     Preferred over app notifications
                   </p>
                 </div>
-                <div className="border border-white p-6 rounded-lg text-center">
+                <div className="bg-white/5 p-6 rounded-md text-center">
                   <span className="text-4xl font-bold text-white">88%</span>
                   <p className="text-stone-400 mt-2">
                     Rated the feedback as comfortable
@@ -304,8 +304,11 @@ export default function FernandoProject() {
         <section className="space-y-6">
           <div className="flex items-center justify-between">
             <h2 className="text-3xl font-bold text-white">More Projects</h2>
-            <Link href="/projects" className="text-stone-400 hover:text-white">
-              View all Projects →
+            <Link
+              href="/projects"
+              className="inline-flex px-4 py-2 bg-white/5 hover:bg-white/10 text-stone-400 hover:text-white transition-colors rounded-md"
+            >
+              View all Projects
             </Link>
           </div>
 
