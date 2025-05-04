@@ -11,7 +11,7 @@ export default function VoluntrackProject() {
         {/* Navigation */}
         <Link
           href="/projects"
-          className="inline-flex items-center text-stone-400 hover:text-white transition-colors"
+          className="inline-flex items-center text-stone-400 hover:text-white transition-colors bg-white/5 hover:bg-white/10 px-4 py-2 rounded-md"
         >
           <ArrowLeft className="mr-2 w-4 h-4" /> Back to projects
         </Link>
