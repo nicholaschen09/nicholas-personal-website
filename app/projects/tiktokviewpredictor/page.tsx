@@ -50,7 +50,7 @@ export default function TikTokProject() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="text-white bg-transparent hover:text-stone-400 transition-colors">
+            <Button className="text-white bg-white/5 hover:bg-white/10 hover:text-stone-400 transition-colors rounded-md px-4 py-2">
               <ExternalLink className="mr-2 h-4 w-4" /> Demo
             </Button>
           </a>
@@ -59,13 +59,13 @@ export default function TikTokProject() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="text-white bg-transparent hover:text-stone-400 transition-colors">
+            <Button className="group text-white bg-white/5 hover:bg-white/10 hover:text-stone-400 transition-colors rounded-md px-4 py-2">
               <Image
                 src="/github1.png"
                 alt="GitHub Logo"
                 width={24}
                 height={24}
-                className="mr-2"
+                className="mr-2 transition-opacity group-hover:opacity-70"
               />
               Code
             </Button>
