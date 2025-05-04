@@ -50,7 +50,7 @@ export default function ETLProject() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="text-white bg-transparent hover:text-stone-400 transition-colors">
+            <Button className="text-white bg-white/5 hover:bg-white/10 hover:text-stone-400 transition-colors rounded-md px-4 py-2">
               <ExternalLink className="mr-2 h-4 w-4" /> Demo
             </Button>
           </a>
@@ -59,13 +59,13 @@ export default function ETLProject() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="text-white bg-transparent hover:text-stone-400 transition-colors">
+            <Button className="group text-white bg-white/5 hover:bg-white/10 hover:text-stone-400 transition-colors rounded-md px-4 py-2">
               <Image
                 src="/github1.png"
                 alt="GitHub Logo"
                 width={24}
                 height={24}
-                className="mr-2"
+                className="mr-2 transition-opacity group-hover:opacity-70"
               />
               Code
             </Button>
@@ -89,7 +89,7 @@ export default function ETLProject() {
         <section className="space-y-6">
           <h2 className="text-3xl font-bold text-white">Key Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="bg-[hsl(var(--background))] shadow-xl rounded-lg p-6 border border-white">
+            <Card className="bg-white/5 rounded-xl p-6 border-0">
               <CardContent className="flex flex-col items-center text-center space-y-4">
                 <h3 className="text-xl font-bold text-white">
                   Data Extraction
@@ -100,7 +100,7 @@ export default function ETLProject() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="bg-[hsl(var(--background))] shadow-xl rounded-lg p-6 border border-white">
+            <Card className="bg-white/5 rounded-xl p-6 border-0">
               <CardContent className="flex flex-col items-center text-center space-y-4">
                 <h3 className="text-xl font-bold text-white">
                   Data Transformation
@@ -111,7 +111,7 @@ export default function ETLProject() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="bg-[hsl(var(--background))] shadow-xl rounded-lg p-6 border border-white">
+            <Card className="bg-white/5 rounded-xl p-6 border-0">
               <CardContent className="flex flex-col items-center text-center space-y-4">
                 <h3 className="text-xl font-bold text-white">
                   Data Loading & Visualization
@@ -124,6 +124,7 @@ export default function ETLProject() {
             </Card>
           </div>
         </section>
+
         {/* Technical Stack */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Technical Details</h2>
