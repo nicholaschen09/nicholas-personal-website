@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Github, ExternalLink, ArrowRight } from 'lucide-react';
+import { ExternalLink, ArrowRight } from 'lucide-react';
 import Header from '@/components/header';
-import Footer from '@/components/footer/footer';
+
 
 // Project type definition
 type Project = {
