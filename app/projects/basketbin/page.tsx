@@ -87,7 +87,7 @@ export default function BasketBinProject() {
         <section className="space-y-6">
           <h2 className="text-3xl font-bold text-white">Key Features</h2>
           <div className="grid grid-cols-1 gap-8">
-            <Card className="bg-[hsl(var(--background))] shadow-xl rounded-lg p-6 border border-white">
+            <Card className="bg-white/5 rounded-xl p-6 border-0">
               <CardContent className="flex flex-col items-center text-center space-y-4">
                 <h3 className="text-xl font-bold text-white">
                   Waste Sorting with Feedback
@@ -99,7 +99,7 @@ export default function BasketBinProject() {
               </CardContent>
             </Card>
 
-            <Card className="bg-[hsl(var(--background))] shadow-xl rounded-lg p-6 border border-white">
+            <Card className="bg-white/5 rounded-xl p-6 border-0">
               <CardContent className="flex flex-col items-center text-center space-y-4">
                 <h3 className="text-xl font-bold text-white">
                   Gamified Experience
@@ -111,7 +111,7 @@ export default function BasketBinProject() {
               </CardContent>
             </Card>
 
-            <Card className="bg-[hsl(var(--background))] shadow-xl rounded-lg p-6 border border-white">
+            <Card className="bg-white/5 rounded-xl p-6 border-0">
               <CardContent className="flex flex-col items-center text-center space-y-4">
                 <h3 className="text-xl font-bold text-white">
                   Educational Tool
