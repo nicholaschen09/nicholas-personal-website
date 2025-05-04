@@ -93,7 +93,7 @@ export default function SearchBar() {
 
       {/* Hint text when the search box is empty */}
       {!query && (
-        <p className="text-stone-400 text-xs mt-2 opacity-70">
+        <p className="text-stone-400 text-xs mt-2 opacity-70 italic">
           Hint: type "projects" or "blogs" in the search bar to see them all
         </p>
       )}
