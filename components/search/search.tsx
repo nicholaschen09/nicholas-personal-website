@@ -67,7 +67,7 @@ export default function SearchBar() {
           <Button
             variant="ghost"
             size="icon"
-            className="absolute right-3 top-1/2 -translate-y-1/2 h-8 w-8 text-gray-400 hover:text-white"
+            className="absolute right-3 top-1/2 -translate-y-1/2 h-8 w-8 text-stone-400 hover:text-white"
             onClick={() => setQuery('')}
           >
             <span className="sr-only">Clear search</span>
@@ -90,6 +90,13 @@ export default function SearchBar() {
           </Button>
         )}
       </div>
+
+      {/* Hint text when the search box is empty */}
+      {!query && (
+        <p className="text-stone-400 text-xs mt-2">
+          Type "projects" or "blogs" in the search bar to see them all.
+        </p>
+      )}
 
       {loading && query && (
         <div className="mt-2 flex items-center gap-2 text-gray-400 pl-2">
