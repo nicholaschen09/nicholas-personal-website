@@ -155,8 +155,11 @@ export default function VoluntrackProject() {
         <section className="space-y-6">
           <div className="flex items-center justify-between">
             <h2 className="text-3xl font-bold text-white">More Projects</h2>
-            <Link href="/projects" className="text-stone-400 hover:text-white">
-              View all Projects →
+            <Link
+              href="/projects"
+              className="inline-flex px-4 py-2 bg-white/5 hover:bg-white/10 text-stone-400 hover:text-white transition-colors rounded-md"
+            >
+              View all Projects
             </Link>
           </div>
 
