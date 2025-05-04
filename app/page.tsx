@@ -25,7 +25,7 @@ export default function Home() {
             ]}
             wrapper="p"
             speed={10} // Types each character in 10ms
-            className="text-base sm:text-lg md:text-xl text-stone-300"
+            className="text-base sm:text-lg md:text-xl text-stone-400"
             repeat={0}
           />
         </div>
