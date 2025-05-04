@@ -47,7 +47,7 @@ export default function FernandoProject() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="text-white bg-transparent hover:text-stone-400 transition-colors">
+            <Button className="text-white bg-transparent hover:text-stone-400 transition-colors border border-stone-400">
               <ExternalLink className="mr-2 h-4 w-4" /> Demo
             </Button>
           </a>
@@ -56,7 +56,7 @@ export default function FernandoProject() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="text-white bg-transparent hover:text-stone-400 transition-colors">
+            <Button className="text-white bg-transparent hover:text-stone-400 transition-colors border border-stone-400">
               <Image
                 src="/github1.png"
                 alt="GitHub Logo"
@@ -68,6 +68,7 @@ export default function FernandoProject() {
             </Button>
           </a>
         </div>
+
         {/* Overview Section */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Overview</h2>
