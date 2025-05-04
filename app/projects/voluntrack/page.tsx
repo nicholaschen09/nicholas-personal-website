@@ -11,7 +11,7 @@ export default function VoluntrackProject() {
         {/* Navigation */}
         <Link
           href="/projects"
-          className="inline-flex items-center text-gray-400 hover:text-white transition-colors"
+          className="inline-flex items-center text-stone-400 hover:text-white transition-colors"
         >
           <ArrowLeft className="mr-2 w-4 h-4" /> Back to projects
         </Link>
@@ -24,14 +24,14 @@ export default function VoluntrackProject() {
             </h1>
           </div>
 
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-stone-300">
             A comprehensive volunteer tracking platform that streamlines event
             management and fosters community engagement.
           </p>
         </div>
 
         {/* Featured Image */}
-        <div className="relative w-full aspect-[16/16] rounded-xl overflow-hidden border border-gray-800">
+        <div className="relative w-full aspect-[16/16] rounded-xl overflow-hidden border border-stone-800">
           <Image
             src="/voluntrack1.jpg"
             alt="VolunTrack Dashboard"
@@ -49,7 +49,7 @@ export default function VoluntrackProject() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="text-white bg-transparent hover:text-gray-400 transition-colors">
+            <Button className="text-white bg-transparent hover:text-stone-400 transition-colors">
               <ExternalLink className="mr-2 h-4 w-4" /> Demo
             </Button>
           </a>
@@ -58,7 +58,7 @@ export default function VoluntrackProject() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="text-white bg-transparent hover:text-gray-400 transition-colors">
+            <Button className="text-white bg-transparent hover:text-stone-400 transition-colors">
               <Image
                 src="/github1.png"
                 alt="GitHub Logo"
@@ -74,7 +74,7 @@ export default function VoluntrackProject() {
         {/* Overview Section */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Overview</h2>
-          <p className="text-gray-300 text-lg leading-relaxed">
+          <p className="text-stone-300 text-lg leading-relaxed">
             VolunTrack is an innovative web-based platform designed to simplify
             volunteer management. The system automates the tracking of volunteer
             hours, event participation, and community contributions, enabling
@@ -89,7 +89,7 @@ export default function VoluntrackProject() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card className="bg-transparent border border-white p-4 rounded-lg">
               <CardContent className="p-4 space-y-3">
-                <p className="text-gray-400">
+                <p className="text-stone-400">
                   Provides up-to-date insights into volunteer participation and
                   event performance. The dashboard offers a user-friendly
                   interface that allows organizations to monitor key metrics,
@@ -101,7 +101,7 @@ export default function VoluntrackProject() {
 
             <Card className="bg-transparent border border-white p-4 rounded-lg">
               <CardContent className="p-4 space-y-3">
-                <p className="text-gray-400">
+                <p className="text-stone-400">
                   Automatically records volunteer hours and event attendance to
                   eliminate manual entry. This feature ensures accuracy and
                   saves time by seamlessly integrating with event schedules and
@@ -113,7 +113,7 @@ export default function VoluntrackProject() {
 
             <Card className="bg-transparent border border-white p-4 rounded-lg">
               <CardContent className="p-4 space-y-3">
-                <p className="text-gray-400">
+                <p className="text-stone-400">
                   Generates detailed reports that help organizations assess
                   volunteer impact and streamline operations. The reporting
                   tools provide customizable templates, visual analytics, and
@@ -133,14 +133,14 @@ export default function VoluntrackProject() {
               <h3 className="text-xl font-bold text-white">
                 Data Sources & Extraction
               </h3>
-              <ul className="list-disc pl-5 space-y-2 text-gray-300">
+              <ul className="list-disc pl-5 space-y-2 text-stone-300">
                 <li>APIs for volunteer event data and registrations</li>
                 <li>CSV file ingestion for historical volunteer records</li>
               </ul>
             </div>
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-white">Software Stack</h3>
-              <ul className="list-disc pl-5 space-y-2 text-gray-300">
+              <ul className="list-disc pl-5 space-y-2 text-stone-300">
                 <li>Next.js & React for the web interface</li>
                 <li>Node.js & Express for API services</li>
                 <li>Firebase/Firestore for real-time data storage</li>
@@ -155,13 +155,13 @@ export default function VoluntrackProject() {
         <section className="space-y-6">
           <div className="flex items-center justify-between">
             <h2 className="text-3xl font-bold text-white">More Projects</h2>
-            <Link href="/projects" className="text-gray-400 hover:text-white">
+            <Link href="/projects" className="text-stone-400 hover:text-white">
               View all Projects →
             </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card className="bg-transparent border border-gray-700 overflow-hidden">
+            <Card className="bg-transparent border border-stone-700 overflow-hidden">
               <div className="relative h-48">
                 <Image
                   src="/pandas.png"
@@ -174,7 +174,7 @@ export default function VoluntrackProject() {
                 <h3 className="text-xl font-bold text-white">
                   TikTok View Predictor
                 </h3>
-                <p className="text-gray-300 text-sm">
+                <p className="text-stone-300 text-sm">
                   A machine learning model that predicts TikTok video views
                   using linear regression.
                 </p>
@@ -183,7 +183,7 @@ export default function VoluntrackProject() {
                 <div className="flex gap-4">
                   <Link
                     href="https://github.com/nicholaschen09/tiktok-view-predictor"
-                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                    className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                   >
                     <div className="w-6 h-6 flex items-center justify-center mr-2">
                       <img
@@ -196,7 +196,7 @@ export default function VoluntrackProject() {
                   </Link>
                   <Link
                     href="#"
-                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                    className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Demo
@@ -204,16 +204,14 @@ export default function VoluntrackProject() {
                 </div>
                 <Link
                   href="/projects/tiktokviewpredictor"
-                  className="text-gray-300 hover:te
-                  
-                  xt-white flex items-center gap-1 text-sm"
+                  className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                 >
                   Read more <ArrowRight className="ml-1 w-4 h-4" />
                 </Link>
               </CardFooter>
             </Card>
 
-            <Card className="bg-transparent border border-gray-700 overflow-hidden">
+            <Card className="bg-transparent border border-stone-700 overflow-hidden">
               <div className="relative h-48">
                 <Image
                   src="/fernando.png"
@@ -224,7 +222,7 @@ export default function VoluntrackProject() {
               </div>
               <CardContent className="p-4 space-y-3">
                 <h3 className="text-xl font-bold text-white">Fernando</h3>
-                <p className="text-gray-300 text-sm">
+                <p className="text-stone-300 text-sm">
                   A posture correcting robot that helps you maintain a healthy
                   posture while working at your desk by slapping you when you
                   slouch.
@@ -234,7 +232,7 @@ export default function VoluntrackProject() {
                 <div className="flex gap-4">
                   <Link
                     href="https://github.com/enxilium/posture-checker-robot"
-                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                    className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                   >
                     <div className="w-6 h-6 flex items-center justify-center mr-2">
                       <img
@@ -247,7 +245,7 @@ export default function VoluntrackProject() {
                   </Link>
                   <Link
                     href="https://youtu.be/EBsmGGOubCk?si=1_ksNQak9YQNffQ6"
-                    className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                    className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Demo
@@ -255,7 +253,7 @@ export default function VoluntrackProject() {
                 </div>
                 <Link
                   href="/projects/fernando"
-                  className="text-gray-300 hover:text-white flex items-center gap-1 text-sm"
+                  className="text-stone-300 hover:text-white flex items-center gap-1 text-sm"
                 >
                   Read more <ArrowRight className="ml-1 w-4 h-4" />
                 </Link>
@@ -268,7 +266,7 @@ export default function VoluntrackProject() {
       {/* Footer */}
       <footer className="w-full mt-8 pt-8">
         <div className="max-w-5xl mx-auto w-full">
-          <hr className="border-t border-gray-700 mb-8" />
+          <hr className="border-t border-stone-700 mb-8" />
           <div className="flex flex-col items-center md:items-start">
             {/* Social Media Links */}
             <div className="flex space-x-8 pt-4 justify-center sm:justify-start">
