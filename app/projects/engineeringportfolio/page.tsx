@@ -11,7 +11,7 @@ export default function EngineeringProject() {
         {/* Navigation */}
         <Link
           href="/projects"
-          className="inline-flex items-center text-stone-400 hover:text-white transition-colors"
+          className="inline-flex items-center text-stone-400 hover:text-white transition-colors bg-white/5 hover:bg-white/10 px-4 py-2 rounded-md"
         >
           <ArrowLeft className="mr-2 w-4 h-4" /> Back to projects
         </Link>
@@ -43,26 +43,21 @@ export default function EngineeringProject() {
         </div>
 
         {/* Project Links */}
-        <div className="flex flex-wrap gap-4">
-          <a
-            href="https://youtu.be/EBsmGGOubCk?si=aTxg0qsva-svoK6d"
-            target="_blank"
-            rel="noopener noreferrer"
-          ></a>
+        <div className="flex flex-wrap gap-4 ">
           <a
             href="https://github.com/enxilium/posture-checker-robot"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="text-white bg-transparent hover:text-stone-400 transition-colors">
+            <Button className="group text-white bg-white/5 hover:bg-white/10 hover:text-stone-400 transition-colors rounded-md px-4 py-2">
               <Image
                 src="/github1.png"
                 alt="GitHub Logo"
                 width={24}
                 height={24}
-                className="mr-2"
+                className="mr-2 transition-opacity group-hover:opacity-70"
               />
-              Github
+              Code
             </Button>
           </a>
         </div>
@@ -116,8 +111,11 @@ export default function EngineeringProject() {
         <section className="space-y-6">
           <div className="flex items-center justify-between">
             <h2 className="text-3xl font-bold text-white">More Projects</h2>
-            <Link href="/projects" className="text-stone-400 hover:text-white">
-              View all Projects →
+            <Link
+              href="/projects"
+              className="inline-flex px-4 py-2 bg-white/5 hover:bg-white/10 text-stone-400 hover:text-white transition-colors rounded-md"
+            >
+              View all Projects
             </Link>
           </div>
 

@@ -11,7 +11,7 @@ export default function FernandoProject() {
         {/* Navigation */}
         <Link
           href="/projects"
-          className="inline-flex items-center text-stone-400 hover:text-white transition-colors"
+          className="inline-flex items-center text-stone-400 hover:text-white transition-colors bg-white/5 hover:bg-white/10 px-4 py-2 rounded-md"
         >
           <ArrowLeft className="mr-2 w-4 h-4" /> Back to projects
         </Link>
@@ -47,7 +47,7 @@ export default function FernandoProject() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="text-white bg-transparent hover:text-stone-400 transition-colors">
+            <Button className="text-white bg-white/5 hover:bg-white/10 hover:text-stone-400 transition-colors rounded-md px-4 py-2">
               <ExternalLink className="mr-2 h-4 w-4" /> Demo
             </Button>
           </a>
@@ -56,18 +56,19 @@ export default function FernandoProject() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="text-white bg-transparent hover:text-stone-400 transition-colors">
+            <Button className="group text-white bg-white/5 hover:bg-white/10 hover:text-stone-400 transition-colors rounded-md px-4 py-2">
               <Image
                 src="/github1.png"
                 alt="GitHub Logo"
                 width={24}
                 height={24}
-                className="mr-2"
+                className="mr-2 transition-opacity group-hover:opacity-70"
               />
               Code
             </Button>
           </a>
         </div>
+
         {/* Overview Section */}
         <section className="space-y-6">
           <h2 className="text-3xl font-bold">Overview</h2>
@@ -110,7 +111,7 @@ export default function FernandoProject() {
           <h2 className="text-3xl font-bold">Key Features</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="bg-transparent border border-white">
+            <Card className="bg-white/5 rounded-md border-0">
               <CardContent className="p-6 space-y-2">
                 <div className="">
                   <span className="text-white font-bold">CV</span>
@@ -124,7 +125,7 @@ export default function FernandoProject() {
               </CardContent>
             </Card>
 
-            <Card className="bg-transparent border border-white">
+            <Card className="bg-white/5 rounded-md border-0">
               <CardContent className="p-6 space-y-2">
                 <div className="">
                   <span className="text-white font-bold">Arm</span>
@@ -138,7 +139,7 @@ export default function FernandoProject() {
               </CardContent>
             </Card>
 
-            <Card className="bg-transparent border border-white">
+            <Card className="bg-white/5 rounded-md border-0">
               <CardContent className="p-6 space-y-2">
                 <div className="">
                   <span className="text-white font-bold">App</span>
@@ -173,7 +174,7 @@ export default function FernandoProject() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
             <div className="space-y-2">
-              <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center mx-auto">
+              <div className="h-12 w-12 rounded-full bg-white/5 flex items-center justify-center mx-auto">
                 <span className="text-xl font-bold text-white">1</span>
               </div>
               <h3 className="font-semibold text-white">Detection</h3>
@@ -183,7 +184,7 @@ export default function FernandoProject() {
             </div>
 
             <div className="space-y-2">
-              <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center mx-auto">
+              <div className="h-12 w-12 rounded-full bg-white/5 flex items-center justify-center mx-auto">
                 <span className="text-xl font-bold text-white">2</span>
               </div>
               <h3 className="font-semibold text-white">Analysis</h3>
@@ -193,7 +194,7 @@ export default function FernandoProject() {
             </div>
 
             <div className="space-y-2">
-              <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center mx-auto">
+              <div className="h-12 w-12 rounded-full bg-white/5 flex items-center justify-center mx-auto">
                 <span className="text-xl font-bold text-white">3</span>
               </div>
               <h3 className="font-semibold text-white">Correction</h3>
@@ -203,7 +204,7 @@ export default function FernandoProject() {
             </div>
 
             <div className="space-y-2">
-              <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center mx-auto">
+              <div className="h-12 w-12 rounded-full bg-white/5 flex items-center justify-center mx-auto">
                 <span className="text-xl font-bold text-white">4</span>
               </div>
               <h3 className="font-semibold text-white">Learning</h3>
@@ -256,25 +257,25 @@ export default function FernandoProject() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
               <div className="grid grid-cols-2 gap-4">
-                <div className="border border-white p-6 rounded-lg text-center">
+                <div className="bg-white/5 p-6 rounded-md text-center">
                   <span className="text-4xl font-bold text-white">92%</span>
                   <p className="text-stone-400 mt-2">
                     Improved posture awareness
                   </p>
                 </div>
-                <div className="border border-white p-6 rounded-lg text-center">
+                <div className="bg-white/5 p-6 rounded-md text-center">
                   <span className="text-4xl font-bold text-white">78%</span>
                   <p className="text-stone-400 mt-2">
                     Measurable posture improvement
                   </p>
                 </div>
-                <div className="border border-white p-6 rounded-lg text-center">
+                <div className="bg-white/5 p-6 rounded-md text-center">
                   <span className="text-4xl font-bold text-white">85%</span>
                   <p className="text-stone-400 mt-2">
                     Preferred over app notifications
                   </p>
                 </div>
-                <div className="border border-white p-6 rounded-lg text-center">
+                <div className="bg-white/5 p-6 rounded-md text-center">
                   <span className="text-4xl font-bold text-white">88%</span>
                   <p className="text-stone-400 mt-2">
                     Rated the feedback as comfortable
@@ -303,8 +304,11 @@ export default function FernandoProject() {
         <section className="space-y-6">
           <div className="flex items-center justify-between">
             <h2 className="text-3xl font-bold text-white">More Projects</h2>
-            <Link href="/projects" className="text-stone-400 hover:text-white">
-              View all Projects →
+            <Link
+              href="/projects"
+              className="inline-flex px-4 py-2 bg-white/5 hover:bg-white/10 text-stone-400 hover:text-white transition-colors rounded-md"
+            >
+              View all Projects
             </Link>
           </div>
 
