@@ -57,7 +57,7 @@ export default function SearchBar() {
           placeholder="search for my other projects/blogs"
           className="
             w-full pl-10 py-6 rounded-lg border border-white/30
-            bg-transparent text-white placeholder-gray-400
+            bg-transparent text-white placeholder-stone-400
             focus:outline-none focus-visible:outline-none
             focus:ring-0 focus-visible:ring-0 focus:shadow-none
             focus:border-white/60 transition-all
@@ -98,7 +98,7 @@ export default function SearchBar() {
         </p>
       )}
       {loading && query && (
-        <div className="mt-2 flex items-center gap-2 text-gray-400 pl-2">
+        <div className="mt-2 flex items-center gap-2 text-stone-400 pl-2">
           <Loader2 className="h-4 w-4 animate-spin" />
           <span>Searching...</span>
         </div>
@@ -131,7 +131,7 @@ export default function SearchBar() {
                             {r.title}
                           </h3>
                           {r.description && (
-                            <p className="text-gray-400 text-sm line-clamp-2 mt-1">
+                            <p className="text-stone-400 text-sm line-clamp-2 mt-1">
                               {r.description}
                             </p>
                           )}
