@@ -11,7 +11,7 @@ export default function TikTokProject() {
         {/* Navigation */}
         <Link
           href="/projects"
-          className="inline-flex items-center text-stone-400 hover:text-white transition-colors"
+          className="inline-flex items-center text-stone-400 hover:text-white transition-colors bg-white/5 hover:bg-white/10 px-4 py-2 rounded-md"
         >
           <ArrowLeft className="mr-2 w-4 h-4" /> Back to projects
         </Link>
@@ -50,7 +50,7 @@ export default function TikTokProject() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="text-white bg-transparent hover:text-stone-400 transition-colors">
+            <Button className="text-white bg-white/5 hover:bg-white/10 hover:text-stone-400 transition-colors rounded-md px-4 py-2">
               <ExternalLink className="mr-2 h-4 w-4" /> Demo
             </Button>
           </a>
@@ -59,13 +59,13 @@ export default function TikTokProject() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="text-white bg-transparent hover:text-stone-400 transition-colors">
+            <Button className="group text-white bg-white/5 hover:bg-white/10 hover:text-stone-400 transition-colors rounded-md px-4 py-2">
               <Image
                 src="/github1.png"
                 alt="GitHub Logo"
                 width={24}
                 height={24}
-                className="mr-2"
+                className="mr-2 transition-opacity group-hover:opacity-70"
               />
               Code
             </Button>
@@ -90,7 +90,7 @@ export default function TikTokProject() {
         <section className="space-y-6">
           <h2 className="text-3xl font-bold text-white">Key Features</h2>
           <div className="grid grid-cols-1 gap-8">
-            <Card className="bg-[hsl(var(--background))] shadow-xl rounded-lg p-6 border border-white">
+            <Card className="bg-white/5 rounded-xl p-6 border-0">
               <CardContent className="flex flex-col items-center text-center space-y-4">
                 <h3 className="text-xl font-bold text-white">
                   Predictive Analytics
@@ -101,7 +101,7 @@ export default function TikTokProject() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="bg-[hsl(var(--background))] shadow-xl rounded-lg p-6 border border-white">
+            <Card className="bg-white/5 rounded-xl p-6 border-0">
               <CardContent className="flex flex-col items-center text-center space-y-4">
                 <h3 className="text-xl font-bold text-white">
                   Data Pipeline Integration
@@ -112,7 +112,7 @@ export default function TikTokProject() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="bg-[hsl(var(--background))] shadow-xl rounded-lg p-6 border border-white">
+            <Card className="bg-white/5 rounded-xl p-6 border-0">
               <CardContent className="flex flex-col items-center text-center space-y-4">
                 <h3 className="text-xl font-bold text-white">
                   Interactive Dashboard
@@ -215,8 +215,11 @@ export default function TikTokProject() {
         <section className="space-y-6">
           <div className="flex items-center justify-between">
             <h2 className="text-3xl font-bold text-white">More Projects</h2>
-            <Link href="/projects" className="text-stone-400 hover:text-white">
-              View all Projects →
+            <Link
+              href="/projects"
+              className="inline-flex px-4 py-2 bg-white/5 hover:bg-white/10 text-stone-400 hover:text-white transition-colors rounded-md"
+            >
+              View all Projects
             </Link>
           </div>
 
