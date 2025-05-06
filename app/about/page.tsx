@@ -100,21 +100,6 @@ export default function About() {
               </Link>
             </div>
           </div>
-
-          <div className="flex flex-col items-center order-1 md:order-2 mb-0 md:mb-0">
-            <div className="relative w-full max-w-[250px] md:max-w-md aspect-square overflow-hidden rounded-lg">
-              <Image
-                src="/me.png"
-                alt="Nicholas Chen"
-                width={1000}
-                height={1000}
-                className="object-cover rounded-lg mb-6"
-              />
-              <p className="text-stone-400 text-center italic text-sm sm:text-base mb-4">
-                Throwback to a picture of me on the last day of highschool
-              </p>
-            </div>
-          </div>
         </div>
         <section className="">
           <h2 className="text-4xl font-bold text-white mb-4">Contact Me</h2>
