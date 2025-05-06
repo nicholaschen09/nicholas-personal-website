@@ -102,7 +102,7 @@ export default function About() {
           </div>
         </div>
         <section className="">
-          <h2 className="text-4xl font-bold text-white mb-4">Contact Me</h2>
+          <h2 className="text-4xl font-bold text-white mt-8 mb-4">Contact Me</h2>
           <p className="text-stone-400 text-base">
             I'd love to hear from you! Want to hire me? or simply wanna chat?
             Feel free to reach out by{' '}
