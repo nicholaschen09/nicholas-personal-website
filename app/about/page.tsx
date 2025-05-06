@@ -1,17 +1,16 @@
 'use client';
 import Footer from '@/components/footer/footer';
-import Image from 'next/image';
 import Link from 'next/link';
 import { TypeAnimation } from 'react-type-animation';
 
 export default function About() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-4 sm:p-8 md:p-24 pt-40 md:pt-32">
-      <div className="max-w-6xl w-full pt-16 md:pt-20">
+    <main className="flex min-h-screen flex-col items-center p-4 sm:p-8 md:p-24 pt-20 md:pt-16">
+      <div className="max-w-6xl w-full">
         {/* Two-column layout: About text and Image */}
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="space-y-4 order-2 md:order-1">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-10 mt-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-10 mt-10">
               Hey I'm Nicholas!
             </h1>
             <div className="text-base sm:text-lg text-stone-300 min-h-[150px] md:min-h-[120px]">
@@ -100,24 +99,11 @@ export default function About() {
               </Link>
             </div>
           </div>
-
-          <div className="flex flex-col items-center order-1 md:order-2 mb-0 md:mb-0">
-            <div className="relative w-full max-w-[250px] md:max-w-md aspect-square overflow-hidden rounded-lg">
-              <Image
-                src="/me.png"
-                alt="Nicholas Chen"
-                width={1000}
-                height={1000}
-                className="object-cover rounded-lg mb-6"
-              />
-              <p className="text-stone-400 text-center italic text-sm sm:text-base mb-4">
-                Throwback to a picture of me on the last day of highschool
-              </p>
-            </div>
-          </div>
         </div>
         <section className="">
-          <h2 className="text-4xl font-bold text-white mb-4">Contact Me</h2>
+          <h2 className="text-4xl font-bold text-white mt-8 mb-4">
+            Contact Me
+          </h2>
           <p className="text-stone-400 text-base">
             I'd love to hear from you! Want to hire me? or simply wanna chat?
             Feel free to reach out by{' '}
