@@ -78,7 +78,7 @@ export default function Footer() {
               <span className="sr-only">Linktree</span>
             </Link>
           </div>
-          <p className="text-stone-400 mt-8 mb-4">© 2025 Nicholas Chen.</p>
+          <p className="text-stone-400 mt-8 mb-4">© 2025 Nicholas Chen</p>
         </div>
       </div>
     </footer>
