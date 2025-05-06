@@ -7,9 +7,9 @@ export default function About() {
   return (
     <main className="flex min-h-screen flex-col items-center p-4 sm:p-8 md:p-24 pt-20 md:pt-16">
       <div className="max-w-6xl w-full">
-        {/* Two-column layout: About text and Image */}
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="space-y-4 order-2 md:order-1">
+        {/* Full-width layout */}
+        <div className="w-full">
+          <div className="space-y-4">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-10 mt-10">
               Hey I'm Nicholas!
             </h1>
