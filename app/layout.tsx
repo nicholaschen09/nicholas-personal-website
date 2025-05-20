@@ -1,8 +1,10 @@
+'use client';
 import type React from 'react';
 import { JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/header';
 import Image from 'next/image';
+import { useState, useRef } from 'react';
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
@@ -11,31 +13,52 @@ const jetbrainsMono = JetBrains_Mono({
   weight: ['400', '700'],
 });
 
-export const metadata = {
-  title: 'Nicholas Chen | Portfolio',
-  description:
-    'Personal website of Nicholas Chen, Systems Design Engineering student',
-  generator: 'v0.dev',
-};
-
-export const generateViewport = () => ({
-  width: 'device-width',
-  initialScale: 1,
-  maximumScale: 1,
-});
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  // Draggable cat sticker state
+  const [catPos, setCatPos] = useState({ x: 60, y: 60 });
+  const [dragging, setDragging] = useState(false);
+  const dragOffset = useRef({ x: 0, y: 0 });
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    setDragging(true);
+    dragOffset.current = {
+      x: e.clientX - catPos.x,
+      y: e.clientY - catPos.y,
+    };
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!dragging) return;
+    setCatPos({
+      x: e.clientX - dragOffset.current.x,
+      y: e.clientY - dragOffset.current.y,
+    });
+  };
+
+  const handleMouseUp = () => {
+    setDragging(false);
+  };
+
   return (
     <html lang="en" className={jetbrainsMono.variable}>
       <body
         className={`${jetbrainsMono.className} bg-[#1a1a1a] min-h-screen antialiased`}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
       >
         {/* Cat sticker easter egg */}
-        <div className="absolute top-60 right-60 z-50 pointer-events-none select-none" style={{ transform: 'rotate(12deg)' }}>
+        <div
+          className={`absolute z-50 select-none ${dragging ? 'cursor-grabbing' : 'cursor-grab'}`}
+          style={{
+            top: catPos.y,
+            left: catPos.x,
+            transform: 'rotate(12deg)',
+          }}
+        >
           <Image
             src="/ghcat.png"
             alt="Cat sticker"
@@ -43,6 +66,8 @@ export default function RootLayout({
             height={100}
             className="drop-shadow-lg rounded-xl border-2 border-white/60 opacity-90"
             priority
+            onMouseDown={handleMouseDown}
+            draggable={false}
           />
         </div>
         <Header />
