@@ -2,6 +2,7 @@ import type React from 'react';
 import { JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/header';
+import Image from 'next/image';
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
@@ -33,6 +34,17 @@ export default function RootLayout({
       <body
         className={`${jetbrainsMono.className} bg-[#1a1a1a] min-h-screen antialiased`}
       >
+        {/* Cat sticker easter egg */}
+        <div className="fixed top-60 right-60 z-50 pointer-events-none select-none" style={{ transform: 'rotate(12deg)' }}>
+          <Image
+            src="/ghcat.png"
+            alt="Cat sticker"
+            width={100}
+            height={100}
+            className="drop-shadow-lg rounded-xl border-2 border-white/60 opacity-90"
+            priority
+          />
+        </div>
         <Header />
         {children}
       </body>
