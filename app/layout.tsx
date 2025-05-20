@@ -52,7 +52,7 @@ export default function RootLayout({
       >
         {/* Cat sticker easter egg */}
         <div
-          className={`absolute z-50 select-none ${dragging ? 'cursor-grabbing' : 'cursor-grab'}`}
+          className={`absolute z-[9999] select-none ${dragging ? 'cursor-grabbing' : 'cursor-grab'}`}
           style={{
             top: catPos.y,
             left: catPos.x,
@@ -62,8 +62,8 @@ export default function RootLayout({
           <Image
             src="/ghcat.png"
             alt="Cat sticker"
-            width={100}
-            height={100}
+            width={150}
+            height={150}
             className="drop-shadow-lg rounded-xl border-2 border-white/60 opacity-90"
             priority
             onMouseDown={handleMouseDown}
