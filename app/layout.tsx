@@ -35,7 +35,7 @@ export default function RootLayout({
         className={`${jetbrainsMono.className} bg-[#1a1a1a] min-h-screen antialiased`}
       >
         {/* Cat sticker easter egg */}
-        <div className="fixed top-60 right-60 z-50 pointer-events-none select-none" style={{ transform: 'rotate(12deg)' }}>
+        <div className="absolute top-60 right-60 z-50 pointer-events-none select-none" style={{ transform: 'rotate(12deg)' }}>
           <Image
             src="/ghcat.png"
             alt="Cat sticker"
