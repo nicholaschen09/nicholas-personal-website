@@ -182,6 +182,8 @@ export default function SearchBar() {
           fill="none"
           stroke="currentColor"
           strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           className="text-stone-500"
         >
           <circle cx="11" cy="11" r="8" />
@@ -201,14 +203,14 @@ export default function SearchBar() {
 
       {/* Results - positioned directly under search bar */}
       {filteredItems.length > 0 && (
-        <div className="absolute top-full left-0 mt-1 w-full bg-stone-800/50 rounded-lg z-[100] max-h-[400px] overflow-y-auto" style={{ position: 'absolute', borderRadius: '8px' }}>
-          <div className="py-2">
+        <div className="absolute top-full left-0 mt-1 w-full bg-stone-800/50 rounded-lg z-[100] max-h-[400px] overflow-hidden" style={{ position: 'absolute', borderRadius: '8px' }}>
+          <div className="py-2 overflow-y-auto max-h-[400px]">
             {filteredItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleItemClick(item)}
-                className="w-full px-4 py-4 text-left transition-colors text-stone-400 hover:bg-stone-800/80 hover:text-stone-100"
-                style={{ textAlign: 'left' }}
+                className="w-full px-4 text-left transition-colors text-stone-400 hover:bg-stone-800/80 hover:text-stone-100"
+                style={{ textAlign: 'left', paddingTop: '4px', paddingBottom: '4px' }}
               >
                 <div style={{ textAlign: 'left' }}>
                   <div className="text-sm font-medium" style={{ textAlign: 'left' }}>{item.title}</div>
