@@ -203,8 +203,9 @@ export default function SearchBar() {
 
       {/* Results - positioned directly under search bar */}
       {filteredItems.length > 0 && (
-        <div className="absolute top-full left-0 mt-1 w-full bg-stone-800/50 rounded-lg z-[100] max-h-[400px] overflow-hidden" style={{ position: 'absolute', borderRadius: '8px' }}>
-          <div className="py-2 overflow-y-auto max-h-[400px]">
+        <div className="absolute top-full left-0 mt-1 w-full bg-stone-800/50 rounded-lg z-[100] overflow-hidden" style={{ position: 'absolute', borderRadius: '8px', maxHeight: '400px' }}>
+          <div className="overflow-y-auto" style={{ maxHeight: '400px', overflowY: 'auto', WebkitOverflowScrolling: 'touch' }}>
+            <div className="py-2">
             {filteredItems.map((item) => (
               <button
                 key={item.id}
@@ -220,6 +221,7 @@ export default function SearchBar() {
                 </div>
               </button>
             ))}
+            </div>
           </div>
         </div>
       )}
