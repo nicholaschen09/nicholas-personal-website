@@ -194,7 +194,7 @@ export default function SearchBar() {
           onChange={(e) => setSearchQuery(e.target.value)}
           onClick={(e) => e.stopPropagation()}
           placeholder="Search..."
-          className="flex-1 bg-transparent text-stone-100 placeholder-stone-500 outline-none focus:outline-none focus:ring-0 focus:border-0 border-0 text-sm"
+          className="flex-1 bg-transparent text-stone-100 placeholder-stone-400 outline-none focus:outline-none focus:ring-0 focus:border-0 border-0 text-sm"
           style={{ outline: 'none', boxShadow: 'none', height: '24px' }}
         />
       </div>
