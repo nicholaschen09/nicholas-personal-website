@@ -207,11 +207,12 @@ export default function SearchBar() {
               <button
                 key={item.id}
                 onClick={() => handleItemClick(item)}
-                className="w-full px-4 py-3 text-left flex items-start gap-3 transition-colors text-stone-400 hover:bg-stone-800/80 hover:text-stone-100"
+                className="w-full px-4 py-4 text-left transition-colors text-stone-400 hover:bg-stone-800/80 hover:text-stone-100"
+                style={{ textAlign: 'left' }}
               >
-                <div className="flex-1 min-w-0 text-left">
-                  <div className="text-sm font-medium truncate text-left">{item.title}</div>
-                  <div className="text-xs text-stone-500 mt-0.5 text-left">
+                <div style={{ textAlign: 'left' }}>
+                  <div className="text-sm font-medium" style={{ textAlign: 'left' }}>{item.title}</div>
+                  <div className="text-xs text-stone-500 mt-0.5" style={{ textAlign: 'left' }}>
                     {getCategoryLabel(item.category)}
                   </div>
                 </div>
