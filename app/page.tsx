@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import SearchBar from '@/components/SearchBar';
 
 export default function Home() {
   const { t, language, setLanguage } = useLanguage();
@@ -53,7 +54,8 @@ export default function Home() {
     <main className="flex h-screen flex-col items-center justify-center p-4 md:p-12 overflow-hidden relative z-10">
       {/* Hero Section */}
       <div className="max-w-lg w-full space-y-1 md:space-y-2 mb-6 md:mb-8 pt-24 md:pt-32 mx-auto">
-        <div className="flex items-start justify-between mb-0">
+        {/* Title and Cat */}
+        <div className="flex items-start justify-between mb-6">
           <h1 className="text-xl sm:text-2xl md:text-3xl font-normal text-white">
             {getDisplayName()}
           </h1>
@@ -65,34 +67,45 @@ export default function Home() {
             <img src="/ghcat.png" alt="GitHub Cat" className="w-8 h-8 md:w-10 md:h-10 opacity-80" />
           </div>
         </div>
-        {/* location / building lines removed */}
 
-        <div>
-          <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">
-            {t('hero.currently')}
-          </p>
-          <ul className="text-xs md:text-sm text-stone-400 space-y-1">
-            <li>
-              <a
-                href="https://uwaterloo.ca/systems-design-engineering/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center gap-3 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80"
-              >
-                <img src="/uwaterloo_logo.jpeg" alt="University of Waterloo" className="w-8 h-8" />
-                <div className="leading-tight text-xs md:text-sm">
-                  <div className="text-stone-100 font-medium">SYDE</div>
-                  <div className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                    UWaterloo
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
+        {/* Content Layout */}
+        <div className="w-full space-y-4">
+          {/* Currently and Search Row */}
+          <div className="flex flex-col md:flex-row gap-8 md:gap-12 w-full items-start">
+            {/* Currently Section */}
+            <div className="flex-1">
+              <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">
+                {t('hero.currently')}
+              </p>
+              <ul className="text-xs md:text-sm text-stone-400 space-y-1">
+                <li>
+                  <a
+                    href="https://uwaterloo.ca/systems-design-engineering/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center gap-3 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80"
+                  >
+                    <img src="/uwaterloo_logo.jpeg" alt="University of Waterloo" className="w-8 h-8" />
+                    <div className="leading-tight text-xs md:text-sm">
+                      <div className="text-stone-100 font-medium">SYDE</div>
+                      <div className="text-stone-400 group-hover:text-stone-100 transition-colors">
+                        UWaterloo
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-        <div className="h-auto min-h-[80px] md:min-h-[60px]">
-          <div className="mt-4 space-y-3">
+            {/* Search Section */}
+            <div className="w-full md:w-auto md:min-w-[240px]">
+              <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">Search</p>
+              <SearchBar />
+            </div>
+          </div>
+
+          <div className="h-auto min-h-[80px] md:min-h-[60px]">
+            <div className="mt-4 space-y-3">
             <div>
               <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">
                 {t('previously.title')}
@@ -426,6 +439,7 @@ export default function Home() {
       </div>
       {/* Animated Drawing Sections */}
       <div className="mt-8 mb-12 space-y-8"></div>
+      </div>
     </main>
   );
 }

@@ -8,6 +8,8 @@ import './globals.css';
 import Script from 'next/script';
 
 import { LanguageProvider } from '@/contexts/LanguageContext';
+import { CommandPaletteProvider } from '@/contexts/CommandPaletteContext';
+import CommandPalette from '@/components/CommandPalette';
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
@@ -24,7 +26,8 @@ const minecraft = localFont({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <LanguageProvider>
-      <html lang="en" className={`${jetbrainsMono.variable} ${minecraft.variable}`}>
+      <CommandPaletteProvider>
+        <html lang="en" className={`${jetbrainsMono.variable} ${minecraft.variable}`}>
         <head>
           <meta
             name="viewport"
@@ -64,8 +67,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }}
           />
           {children}
+          <CommandPalette />
         </body>
       </html>
+      </CommandPaletteProvider>
     </LanguageProvider>
   );
 }

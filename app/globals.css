@@ -134,4 +134,12 @@ body {
     scrollbar-color: #333 #1a1a1a;
     scrollbar-width: thin;
   }
+
+  /* Remove blue focus outline from inputs */
+  input:focus,
+  input:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: inherit !important;
+  }
 }
