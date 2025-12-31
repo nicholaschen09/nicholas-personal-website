@@ -201,17 +201,17 @@ export default function SearchBar() {
 
       {/* Results - positioned directly under search bar */}
       {filteredItems.length > 0 && (
-        <div className="absolute top-full left-0 mt-1 w-full bg-stone-900 rounded-lg border-2 border-stone-600 shadow-2xl z-[100] max-h-[400px] overflow-y-auto" style={{ position: 'absolute' }}>
+        <div className="absolute top-full left-0 mt-1 w-full bg-stone-800/50 rounded-lg z-[100] max-h-[400px] overflow-y-auto" style={{ position: 'absolute', borderRadius: '8px' }}>
           <div className="py-2">
             {filteredItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleItemClick(item)}
-                className="w-full px-4 py-3 text-left flex items-center gap-3 transition-colors text-stone-300 hover:bg-stone-800/50"
+                className="w-full px-4 py-3 text-left flex items-start gap-3 transition-colors text-stone-400 hover:bg-stone-800/80 hover:text-stone-100"
               >
-                <div className="flex-1 min-w-0">
-                  <div className="text-sm font-medium truncate">{item.title}</div>
-                  <div className="text-xs text-stone-500 mt-0.5">
+                <div className="flex-1 min-w-0 text-left">
+                  <div className="text-sm font-medium truncate text-left">{item.title}</div>
+                  <div className="text-xs text-stone-500 mt-0.5 text-left">
                     {getCategoryLabel(item.category)}
                   </div>
                 </div>
