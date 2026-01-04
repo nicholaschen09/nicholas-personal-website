@@ -1,7 +1,6 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import { serialize } from 'next-mdx-remote/serialize';
 
 const blogsDirectory = path.join(process.cwd(), 'content/blogs');
 
@@ -39,24 +38,24 @@ export async function getPostBySlug(slug: string) {
       sourceZh = content;
       frontmatterZh = data;
     } else {
-      // Fallback to EN if ZH doesn't exist, or just leave empty?
-      // Leaving empty allows us to handle "translation missing" in UI
+      // Fallback to EN if ZH doesn't exist
+      sourceZh = sourceEn;
+      frontmatterZh = frontmatterEn;
     }
   } catch (e) {
     console.error(`Error reading ZH file for ${slug}:`, e);
+    sourceZh = sourceEn;
+    frontmatterZh = frontmatterEn;
   }
-
-  const mdxSourceEn = await serialize(sourceEn, { parseFrontmatter: false });
-  const mdxSourceZh = await serialize(sourceZh || sourceEn, { parseFrontmatter: false }); // Fallback for serialization
 
   return {
     slug,
     en: {
-      source: mdxSourceEn,
+      source: sourceEn,
       frontmatter: frontmatterEn,
     },
     zh: {
-      source: mdxSourceZh,
+      source: sourceZh,
       frontmatter: frontmatterZh,
     },
   };
