@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: en.frontmatter.title,
       images: en.frontmatter.image ? [`https://nicholaschen.me${en.frontmatter.image}`] : [],
     },
-  };R
+  };
 }
 
 export async function generateStaticParams() {
