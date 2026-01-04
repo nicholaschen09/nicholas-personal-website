@@ -5,14 +5,21 @@ import { serialize } from 'next-mdx-remote/serialize';
 
 const blogsDirectory = path.join(process.cwd(), 'content/blogs');
 
+interface Frontmatter {
+  title?: string;
+  date?: string;
+  description?: string;
+  image?: string;
+}
+
 export async function getPostBySlug(slug: string) {
   const fullPathEn = path.join(blogsDirectory, `${slug}.mdx`);
   const fullPathZh = path.join(blogsDirectory, `${slug}.zh.mdx`);
 
   let sourceEn = '';
   let sourceZh = '';
-  let frontmatterEn = {};
-  let frontmatterZh = {};
+  let frontmatterEn: Frontmatter = {};
+  let frontmatterZh: Frontmatter = {};
 
   try {
     if (fs.existsSync(fullPathEn)) {
