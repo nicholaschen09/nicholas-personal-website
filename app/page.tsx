@@ -51,9 +51,9 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center p-4 md:p-12 relative z-10">
+    <main className="flex min-h-screen flex-col items-center justify-center p-4 md:p-12 relative z-10">
       {/* Hero Section */}
-      <div className="max-w-lg w-full space-y-1 md:space-y-2 mb-6 md:mb-8 pt-24 md:pt-32 mx-auto">
+      <div className="max-w-lg w-full space-y-1 md:space-y-2 mx-auto">
         <div className="flex items-start justify-between mb-0">
           <h1 className="text-xl sm:text-2xl md:text-3xl font-normal text-white">
             {getDisplayName()}
@@ -346,8 +346,6 @@ export default function Home() {
 
         <Footer />
       </div>
-      {/* Animated Drawing Sections */}
-      <div className="mt-8 mb-12 space-y-8"></div>
     </main>
   );
 }
