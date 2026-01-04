@@ -14,23 +14,15 @@ gRPC (google remote procedure call) is an open-source remote procedure call fram
 
 at a high level, gRPC allows you to define a service, specifying the methods that can be called remotely with their parameters and return types. the server implements this interface and runs a gRPC server to handle client calls. the client has a stub (referred to as just a client in some languages) that provides the same methods as the server.
 
-## protocol buffers
-
 by default, gRPC uses Protocol Buffers (Protobuf) as its Interface Definition Language (IDL) and as its underlying message interchange format. in REST, you often use JSON. with Protobuf, you define the structure of your data once in a .proto file. then, you use the protoc compiler to generate data access classes in your preferred programming language. this binary format is much lighter and faster to serialize/deserialize than JSON.
 
 ## why is it good?
 
-## performance
-
 gRPC uses HTTP/2 as its transport protocol, which allows for features like multiplexing (sending multiple requests over a single connection), header compression, and binary framing. this makes gRPC much more efficient than REST over HTTP/1.1, reducing latency and bandwidth usage.
-
-## code generation
 
 with the .proto file serving as the contract, you can automatically generate client and server code in many languages (go, java, python, C++, node.js, etc.). this ensures that the client and server strictly adhere to the defined interface, reducing errors and saving development time.
 
-## streaming
-
-gRPC supports streaming natively. you can have server-side streaming, client-side streaming, or bidirectional streaming. this is perfect for real-time applications, large file transfers, or long-lived connections where data needs to be pushed continuously.
+gRPC also supports streaming natively. you can have server-side streaming, client-side streaming, or bidirectional streaming. this is perfect for real-time applications, large file transfers, or long-lived connections where data needs to be pushed continuously.
 
 ## gRPC with go
 
