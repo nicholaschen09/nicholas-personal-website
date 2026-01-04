@@ -94,6 +94,15 @@ export default function GrpcBlog() {
             <p>{t('blog.grpc.benefits.streamingText')}</p>
           </section>
 
+          {/* gRPC with Go */}
+          <section>
+            <h2 className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8">
+              {t('blog.grpc.goTitle')}
+            </h2>
+            <p className="mb-4">{t('blog.grpc.goText')}</p>
+            <p>{t('blog.grpc.goDetails')}</p>
+          </section>
+
           {/* Comparison */}
           <section>
             <h2 className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8">
