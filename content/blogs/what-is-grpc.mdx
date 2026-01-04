@@ -1,0 +1,47 @@
+---
+title: 'what is gRPC?'
+date: 'nicholas chen · january 4, 2026 · 6 min read'
+image: '/blogs/grpc/grpc.png'
+---
+
+in modern software architecture, especially with microservices, the way services communicate is crucial. while REST has been the standard for a long time, gRPC has emerged as a powerful alternative for many use cases. in this post, i'll explain what gRPC is, how it works, and why you might want to use it.
+
+## what is gRPC?
+
+gRPC (google remote procedure call) is an open-source remote procedure call framework initially developed by google. it allows a client application to directly call a method on a server application on a different machine as if it were a local object, making it easier to create distributed applications and services. unlike REST, which is resource-oriented, gRPC is action-oriented.
+
+## how it works
+
+at a high level, gRPC allows you to define a service, specifying the methods that can be called remotely with their parameters and return types. the server implements this interface and runs a gRPC server to handle client calls. the client has a stub (referred to as just a client in some languages) that provides the same methods as the server.
+
+### protocol buffers
+
+by default, gRPC uses Protocol Buffers (Protobuf) as its Interface Definition Language (IDL) and as its underlying message interchange format. in REST, you often use JSON. with Protobuf, you define the structure of your data once in a .proto file. then, you use the protoc compiler to generate data access classes in your preferred programming language. this binary format is much lighter and faster to serialize/deserialize than JSON.
+
+## why is it good?
+
+### performance
+
+gRPC uses HTTP/2 as its transport protocol, which allows for features like multiplexing (sending multiple requests over a single connection), header compression, and binary framing. this makes gRPC much more efficient than REST over HTTP/1.1, reducing latency and bandwidth usage.
+
+### code generation
+
+with the .proto file serving as the contract, you can automatically generate client and server code in many languages (go, java, python, C++, node.js, etc.). this ensures that the client and server strictly adhere to the defined interface, reducing errors and saving development time.
+
+### streaming
+
+gRPC supports streaming natively. you can have server-side streaming, client-side streaming, or bidirectional streaming. this is perfect for real-time applications, large file transfers, or long-lived connections where data needs to be pushed continuously.
+
+## gRPC with go
+
+gRPC and go are a match made in heaven. since both are born out of google, the support for gRPC in go is first-class. the go ecosystem embraces gRPC for microservices due to go's concurrency model (goroutines) which handles the multiplexing nature of HTTP/2 efficiently.
+
+to use gRPC with go, you typically define your service in a .proto file and then use the `protoc` compiler with the `protoc-gen-go` and `protoc-gen-go-grpc` plugins. this generates two files: one for the message structs and one for the service interface. on the server side, you implement the generated interface and register it with a `grpc.NewServer()`. on the client side, you use `grpc.Dial()` to connect to the server and create a client stub to make calls. the generated code is idiomatic go, making it easy to integrate into existing go projects.
+
+## gRPC vs REST
+
+REST is great for public APIs where human readability (JSON) and browser support are important. it's flexible and widely understood. gRPC, on the other hand, excels in internal microservices communication where low latency and high throughput are critical. it's also strongly typed, which helps in maintaining large systems.
+
+## conclusion
+
+gRPC is a robust framework that offers significant performance improvements and developer productivity benefits for the right use cases. if you are building a microservices architecture or need efficient communication between internal services, gRPC is definitely worth considering.

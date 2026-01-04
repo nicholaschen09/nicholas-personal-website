@@ -1,0 +1,291 @@
+---
+title: 'git 命令'
+date: 'nicholas chen · 2025年12月21日 · 4分钟阅读'
+image: '/blogs/git/git-copy.png'
+---
+
+通过各种工作经验和副业项目，我学到了很多git命令，这些命令不止一次救了我的命。我想创建一个中心位置来存储所有这些命令以便于参考。
+
+## 思维模型
+
+git是一个分布式版本控制系统（本地）。github是一个托管平台（在线）。我们大多数人记住命令而不理解底层的图模型。
+
+## 核心概念
+
+### 快照，不是差异
+
+git 在每次提交时存储项目的完整快照，而不仅仅是差异。如果文件没有更改，它会存储指向前一个版本的指针。
+
+### 三棵树
+
+*   `工作目录`：您看到/编辑的文件。
+*   `暂存区（索引）`：准备提交的更改。
+*   `HEAD`：指向最后一次提交的指针。
+
+## 设置与配置
+
+`git config --global user.name "name"`
+为提交设置您的用户名。
+
+`git config --global user.email "email"`
+为提交设置您的电子邮件。
+
+`git config --global color.ui auto`
+启用有用的颜色输出。
+
+`git config --list`
+显示所有配置设置。
+
+`git config --global alias.co checkout`
+创建一个快捷方式：输入 'git co' 而不是 'git checkout'。
+
+`git config --global core.editor "code --wait"`
+将 VS Code 设置为提交消息的默认编辑器。
+
+## 获取和创建项目
+
+`git init`
+在当前目录中初始化一个新仓库。
+
+`git clone <url>`
+下载一个仓库及其整个历史记录。
+
+`git clone --depth=1 <url>`
+浅克隆（仅最新快照，更快）。
+
+## 基本快照
+
+`git commit --amend --no-edit`
+将暂存的更改添加到最后一次提交而不更改消息。
+
+`git status`
+显示修改的、暂存的和未跟踪的文件。
+
+`git add <file>`
+为下一次提交暂存特定文件。
+
+`git add .`
+暂存当前目录中的所有更改。
+
+`git add -p`
+交互式选择要暂存的代码块。
+
+`git commit -m "msg"`
+将暂存的更改保存为新快照。
+
+`git commit -am "msg"`
+一步暂存跟踪文件并提交。
+
+`git rm <file>`
+从工作树和索引中移除文件。
+
+`git mv <old> <new>`
+移动或重命名文件。
+
+## 分支与合并
+
+`git switch -`
+快速切换回上一个分支。
+
+`git branch --merged`
+列出已合并到当前分支的分支。
+
+`git merge-base A B`
+找到两个分支的共同祖先。
+
+`git branch`
+列出所有本地分支。
+
+`git branch <name>`
+创建一个新分支（指针）。
+
+`git branch -d <name>`
+安全删除已合并的分支。
+
+`git branch -D <name>`
+强制删除分支（即使未合并）。
+
+`git switch <name>`
+切换到分支。
+
+`git switch -c <name>`
+创建并切换到新分支。
+
+`git merge <branch>`
+将另一个分支的历史记录合并到当前分支。
+
+`git merge --abort`
+取消正在进行的合并并返回到合并前的状态。
+
+`git tag <name>`
+用标签标记当前提交。
+
+`git tag -a <name> -m "msg"`
+创建带元数据的注释标签。
+
+## 共享与更新
+
+`git remote rename <old> <new>`
+重命名远程连接。
+
+`git push origin :<branch>`
+删除远程分支。
+
+`git remote -v`
+列出所有远程仓库。
+
+`git remote add origin <url>`
+将本地仓库连接到远程仓库。
+
+`git remote set-url origin <url>`
+更改现有远程的 URL。
+
+`git fetch`
+从远程下载更改但不合并。
+
+`git fetch --prune`
+删除指向已删除远程分支的本地引用。
+
+`git pull`
+获取 + 合并（更新当前分支）。
+
+`git push`
+将本地提交上传到远程。
+
+`git push -u origin <branch>`
+推送并设置上游跟踪。
+
+`git push --force-with-lease`
+更安全的强制推送；如果其他人推送则失败。
+
+`git push --tags`
+将所有本地标签推送到远程。
+
+## 检查与比较
+
+`git log -S "text"`
+搜索历史记录中字符串的首次出现。
+
+`git log --author="name"`
+按作者过滤提交历史记录。
+
+`git log --since="2.weeks"`
+显示特定时间范围内的提交。
+
+`git log`
+显示提交历史记录。
+
+`git log --oneline --graph`
+紧凑地可视化提交历史图。
+
+`git shortlog -sn`
+按作者显示提交摘要。
+
+`git diff`
+显示未暂存的更改。
+
+`git diff --staged`
+显示暂存的更改（将要提交的内容）。
+
+`git diff --word-diff`
+突出显示更改的单词而不是整行。
+
+`git show <hash>`
+显示特定提交的更改和元数据。
+
+`git blame <file>`
+显示谁修改了文件的每一行。
+
+`git blame -L 10,20 <file>`
+仅责备 10 到 20 行。
+
+`git grep "text"`
+在跟踪文件中搜索文本。
+
+## 撤销与修复
+
+`git checkout <hash> -- <file>`
+将文件恢复到特定的过去版本。
+
+`git update-ref -d HEAD`
+有效地“取消初始化”仓库的第一次提交。
+
+`git reset --soft HEAD~1`
+撤销最后一次提交但保持更改暂存。
+
+`git reset --hard HEAD~1`
+撤销最后一次提交并丢弃所有更改（危险）。
+
+`git revert <hash>`
+创建新提交来撤销之前的提交。
+
+`git restore <file>`
+丢弃文件中的本地更改。
+
+`git restore --staged <file>`
+取消暂存文件（保持工作目录中的更改）。
+
+`git commit --amend`
+将暂存的更改添加到之前的提交 / 编辑消息。
+
+## 高级与强大工具
+
+`git rebase -i HEAD~3`
+交互式重写历史：压缩、修复、重新排序或删除。
+
+`git rebase <branch>`
+在另一个基础顶部重新应用提交。
+
+`git stash`
+临时搁置脏更改。
+
+`git stash pop`
+重新应用隐藏的更改并从隐藏列表中移除。
+
+`git stash list`
+列出所有隐藏的变更集。
+
+`git stash -u`
+隐藏包括未跟踪的文件。
+
+`git bisect start`
+开始二分搜索以找到引入错误的提交。
+
+`git cherry-pick <hash>`
+应用特定提交的更改。
+
+`git reflog`
+显示所有引用移动的日志（恢复丢失的提交）。
+
+`git worktree add <path> <branch>`
+在并行文件夹中检出多个分支。
+
+`git submodule update --init`
+获取并更新子模块依赖项。
+
+`git rerere`
+重用记录的冲突合并解决方案。
+
+## 管理
+
+`git clean -fd`
+移除所有未跟踪的文件和目录。
+
+`git gc`
+清理不必要的文件并优化本地仓库。
+
+`git check-ignore -v <file>`
+调试文件被忽略的原因。
+
+`git archive -o project.zip HEAD`
+将当前分支导出到 zip 文件。
+
+`git rev-parse HEAD`
+输出当前提交的完整 SHA-1 哈希。
+
+---
+
+### 参考
+
+*   [official git docs](https://git-scm.com/doc)
+*   [dangit, git!](https://dangitgit.com/)

@@ -12,7 +12,9 @@
     "docker": "docker-compose up --build"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "next": "15.3.6",
+    "next-mdx-remote": "^5.0.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },

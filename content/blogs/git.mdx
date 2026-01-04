@@ -1,0 +1,291 @@
+---
+title: 'git commands'
+date: 'nicholas chen · december 21, 2025 · 4 min read'
+image: '/blogs/git/git-copy.png'
+---
+
+through various work experiences and side projects, i've picked up a lot of git commands that have saved my life more than once. i wanted to create a central place to store all these commands for easy reference.
+
+## mental model
+
+git is a distributed version control system (local). github is a hosting platform (online). most of us memorize commands without understanding the graph model underneath.
+
+## core concepts
+
+### snapshots, not diffs
+
+git stores a full snapshot of your project with every commit, not just the differences. if a file hasn't changed, it stores a pointer to the previous version.
+
+### the three trees
+
+*   `working directory`: files you see/edit.
+*   `staging area (index)`: changes ready for commit.
+*   `HEAD`: pointer to the last commit.
+
+## setup & config
+
+`git config --global user.name "name"`
+set your username for commits.
+
+`git config --global user.email "email"`
+set your email for commits.
+
+`git config --global color.ui auto`
+enable helpful color output.
+
+`git config --list`
+show all configuration settings.
+
+`git config --global alias.co checkout`
+create a shortcut: type 'git co' instead of 'git checkout'.
+
+`git config --global core.editor "code --wait"`
+set vs code as default editor for commit messages.
+
+## getting & creating projects
+
+`git init`
+initialize a new repo in current directory.
+
+`git clone <url>`
+download a repo and its entire history.
+
+`git clone --depth=1 <url>`
+shallow clone (latest snapshot only, faster).
+
+## basic snapshotting
+
+`git commit --amend --no-edit`
+add staged changes to last commit without changing message.
+
+`git status`
+show modified, staged, and untracked files.
+
+`git add <file>`
+stage a specific file for the next commit.
+
+`git add .`
+stage all changes in current directory.
+
+`git add -p`
+interactively choose chunks of code to stage.
+
+`git commit -m "msg"`
+save staged changes as a new snapshot.
+
+`git commit -am "msg"`
+stage tracked files and commit in one step.
+
+`git rm <file>`
+remove a file from working tree and index.
+
+`git mv <old> <new>`
+move or rename a file.
+
+## branching & merging
+
+`git switch -`
+quickly switch back to the previous branch.
+
+`git branch --merged`
+list branches already merged into current.
+
+`git merge-base A B`
+find the common ancestor of two branches.
+
+`git branch`
+list all local branches.
+
+`git branch <name>`
+create a new branch (pointer).
+
+`git branch -d <name>`
+delete a merged branch safely.
+
+`git branch -D <name>`
+force delete a branch (even if unmerged).
+
+`git switch <name>`
+switch to a branch.
+
+`git switch -c <name>`
+create and switch to a new branch.
+
+`git merge <branch>`
+combine history of another branch into current.
+
+`git merge --abort`
+cancel a merge in progress and return to pre-merge state.
+
+`git tag <name>`
+mark the current commit with a tag.
+
+`git tag -a <name> -m "msg"`
+create an annotated tag with metadata.
+
+## sharing & updating
+
+`git remote rename <old> <new>`
+rename a remote connection.
+
+`git push origin :<branch>`
+delete a remote branch.
+
+`git remote -v`
+list all remote repositories.
+
+`git remote add origin <url>`
+connect local repo to a remote one.
+
+`git remote set-url origin <url>`
+change the url of an existing remote.
+
+`git fetch`
+download changes from remote but don't merge.
+
+`git fetch --prune`
+delete local refs to remote branches that were deleted.
+
+`git pull`
+fetch + merge (update current branch).
+
+`git push`
+upload local commits to remote.
+
+`git push -u origin <branch>`
+push and set upstream tracking.
+
+`git push --force-with-lease`
+safer force push; fails if someone else pushed.
+
+`git push --tags`
+push all local tags to remote.
+
+## inspection & comparison
+
+`git log -S "text"`
+search history for the first occurrence of a string.
+
+`git log --author="name"`
+filter commit history by author.
+
+`git log --since="2.weeks"`
+show commits from a specific timeframe.
+
+`git log`
+show commit history.
+
+`git log --oneline --graph`
+visualize commit history graph compactly.
+
+`git shortlog -sn`
+show summary of commits by author.
+
+`git diff`
+show unstaged changes.
+
+`git diff --staged`
+show staged changes (what will be committed).
+
+`git diff --word-diff`
+highlight changed words instead of whole lines.
+
+`git show <hash>`
+show changes and metadata for a specific commit.
+
+`git blame <file>`
+show who modified each line of a file.
+
+`git blame -L 10,20 <file>`
+blame only lines 10 through 20.
+
+`git grep "text"`
+search for text inside tracked files.
+
+## undo & fix
+
+`git checkout <hash> -- <file>`
+restore a file to a specific past version.
+
+`git update-ref -d HEAD`
+effectively "un-initialize" the first commit of a repo.
+
+`git reset --soft HEAD~1`
+undo last commit but keep changes staged.
+
+`git reset --hard HEAD~1`
+undo last commit and discard all changes (dangerous).
+
+`git revert <hash>`
+create new commit that reverses a previous one.
+
+`git restore <file>`
+discard local changes in a file.
+
+`git restore --staged <file>`
+unstage a file (keep changes in working directory).
+
+`git commit --amend`
+add staged changes to previous commit / edit message.
+
+## advanced & power tools
+
+`git rebase -i HEAD~3`
+interactively rewrite history: squash, fixup, reorder, or drop.
+
+`git rebase <branch>`
+reapply commits on top of another base tip.
+
+`git stash`
+temporarily shelve dirty changes.
+
+`git stash pop`
+reapply stashed changes and remove from stash list.
+
+`git stash list`
+list all stashed changesets.
+
+`git stash -u`
+stash including untracked files.
+
+`git bisect start`
+start binary search to find the commit that introduced a bug.
+
+`git cherry-pick <hash>`
+apply the changes from a specific commit.
+
+`git reflog`
+show a log of all reference movements (recover lost commits).
+
+`git worktree add <path> <branch>`
+checkout multiple branches in parallel folders.
+
+`git submodule update --init`
+fetch and update submodule dependencies.
+
+`git rerere`
+reuse recorded resolution of conflicted merges.
+
+## administration
+
+`git clean -fd`
+remove all untracked files and directories.
+
+`git gc`
+cleanup unnecessary files and optimize local repo.
+
+`git check-ignore -v <file>`
+debug why a file is being ignored.
+
+`git archive -o project.zip HEAD`
+export the current branch to a zip file.
+
+`git rev-parse HEAD`
+output the full SHA-1 hash of the current commit.
+
+---
+
+### references
+
+*   [official git docs](https://git-scm.com/doc)
+*   [dangit, git!](https://dangitgit.com/)
