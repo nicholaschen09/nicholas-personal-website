@@ -51,7 +51,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex h-screen flex-col items-center justify-center p-4 md:p-12 overflow-hidden relative z-10">
+    <main className="flex min-h-screen flex-col items-center p-4 md:p-12 relative z-10">
       {/* Hero Section */}
       <div className="max-w-lg w-full space-y-1 md:space-y-2 mb-6 md:mb-8 pt-24 md:pt-32 mx-auto">
         <div className="flex items-start justify-between mb-0">
