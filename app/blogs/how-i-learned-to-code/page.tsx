@@ -491,7 +491,7 @@ export default function SoftwareEngineeringLearningBlog() {
                     <>
                       {t('blog.coding.item38').split(/facial recognition|面部识别/)[0]}
                       <a
-                        href="https://github.com/nicholaschen09/facial-recognition-neural-network"
+                        href="https://facial-recognition-neural-network.vercel.app/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-stone-200 transition-colors underline"
