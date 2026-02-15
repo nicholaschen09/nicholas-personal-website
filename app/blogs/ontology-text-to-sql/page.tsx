@@ -15,6 +15,8 @@ export default function OntologyTextToSqlBlog() {
       { id: 'why-matter', title: t('blog.ontology.whyMatterTitle') },
       { id: 'building', title: t('blog.ontology.buildingTitle') },
       { id: 'how-engines', title: t('blog.ontology.howEnginesTitle') },
+      { id: 'how-used', title: t('blog.ontology.howUsedTitle') },
+      { id: 'in-code', title: t('blog.ontology.inCodeTitle') },
       { id: 'vs-other', title: t('blog.ontology.vsOtherTitle') },
       { id: 'future', title: t('blog.ontology.futureTitle') },
     ],
@@ -193,6 +195,71 @@ export default function OntologyTextToSqlBlog() {
                   {t('blog.ontology.chatAlt')}
                 </figcaption>
               </figure>
+            </section>
+
+            <section>
+              <h2
+                id="how-used"
+                className="text-lg md:text-xl font-semibold text-stone-100 mb-3 scroll-mt-8"
+              >
+                {t('blog.ontology.howUsedTitle')}
+              </h2>
+              <p>{t('blog.ontology.howUsedP1')}</p>
+            </section>
+
+            <section>
+              <h2
+                id="in-code"
+                className="text-lg md:text-xl font-semibold text-stone-100 mb-3 scroll-mt-8"
+              >
+                {t('blog.ontology.inCodeTitle')}
+              </h2>
+              <p>{t('blog.ontology.inCodeP1')}</p>
+              <pre className="mt-6 p-4 bg-stone-900 border border-stone-700 rounded-md overflow-x-auto text-[11px] md:text-xs text-stone-300 font-mono">
+                {`{
+  "entities": [
+    {
+      "id": "customers",
+      "table": "public.customers",
+      "primaryKey": "customer_id",
+      "attributes": [
+        { "id": "customer_id", "column": "customer_id" },
+        { "id": "segment", "column": "segment" }
+      ]
+    },
+    {
+      "id": "orders",
+      "table": "public.orders",
+      "primaryKey": "order_id",
+      "attributes": [
+        { "id": "order_id", "column": "order_id" },
+        { "id": "total_amount", "column": "total_amount" },
+        { "id": "status", "column": "status" }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "orders",
+      "to": "customers",
+      "type": "many-to-one",
+      "join": "orders.customer_id = customers.customer_id"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "revenue",
+      "label": "revenue",
+      "expression": "SUM(orders.total_amount)",
+      "entity": "orders",
+      "filter": "orders.status = 'completed'"
+    }
+  ]
+}`}
+              </pre>
+              <figcaption className="text-stone-500 text-xs mt-2 italic">
+                {t('blog.ontology.jsonExampleCaption')}
+              </figcaption>
             </section>
 
             <section>

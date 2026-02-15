@@ -495,6 +495,13 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.ontology.howEnginesP5':
       'finally, it applies any business rules. maybe the ontology specifies that revenue calculations should exclude refunds, or that only orders from the last 12 months count. these rules get automatically incorporated into the generated sql. the result is a query that would take a human analyst 10 minutes to write (and possibly get wrong), generated correctly in seconds.',
     'blog.ontology.chatAlt': 'Querying a test database with Ana using the text-to-sql feature',
+    'blog.ontology.howUsedTitle': 'how an ontology is used',
+    'blog.ontology.howUsedP1':
+      'when a data analyst or an ai agent asks something like "show me revenue by customer segment," the system loads the ontology, parses the question into entities and metrics, then looks up the definitions. it finds which tables to join, which columns to use, and what filters or business rules to apply. the agent does not guess—it follows the ontology. that\'s why the same question always yields the same, consistent sql. the ontology is the contract between how humans think about the business and how the database is actually queried.',
+    'blog.ontology.inCodeTitle': 'what the ontology looks like in code',
+    'blog.ontology.inCodeP1':
+      'under the hood, an ontology is usually stored as structured data—often a json file or similar—that defines entities, their attributes, relationships, and metrics. the ui you use to build it (drag-and-drop objects, forms for attributes) is just a layer on top: when you save, the system serializes your graph into something like the snippet below. this file gets versioned, deployed, and loaded at runtime by the text-to-sql engine or any agent that needs to answer questions against your data.',
+    'blog.ontology.jsonExampleCaption': 'example ontology structure (simplified json): entities, relationships, and a metric.',
     'blog.ontology.ambiguityTitle': 'handling ambiguity',
     'blog.ontology.ambiguityP1':
       'ambiguous questions are where ontologies really shine. if you ask "show me sales," that could mean the sales team (entity), sales transactions (orders entity), sales revenue (metric), or sales count (different metric). without an ontology, the system has to guess. with an ontology, it can recognize that "sales" is ambiguous, check which interpretation makes sense in context, ask for clarification if needed ("did you mean sales revenue or number of sales?"), and use the most common interpretation based on usage patterns.',
@@ -1140,6 +1147,13 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.ontology.howEnginesP5':
       '最后，它应用任何业务规则。也许本体指定收入计算应排除退款，或者只有过去12个月的订单才计算。这些规则会自动合并到生成的SQL中。结果是一个人类分析师需要10分钟才能编写（并且可能出错）的查询，在几秒钟内正确生成。',
     'blog.ontology.chatAlt': '我使用文本到SQL功能查询测试数据库与Ana',
+    'blog.ontology.howUsedTitle': '本体如何被使用',
+    'blog.ontology.howUsedP1':
+      '当数据分析师或 ai 代理问「按客户细分显示收入」之类的问题时，系统会加载本体，将问题解析为实体和指标，然后查找定义。它会确定要连接哪些表、使用哪些列以及应用哪些过滤器或业务规则。代理不会猜测——它遵循本体。这就是为什么同一个问题总是产生一致、相同的 sql。本体是人类对业务的思考方式与数据库实际查询方式之间的契约。',
+    'blog.ontology.inCodeTitle': '本体在代码中的样子',
+    'blog.ontology.inCodeP1':
+      '在底层，本体通常以结构化数据存储——通常是 json 文件或类似格式——用来定义实体、属性、关系和指标。你用来构建它的界面（拖放对象、属性表单）只是其上的一层：保存时，系统会将你的图序列化成类似下面这样的内容。该文件会被版本控制、部署，并在运行时由文本到 sql 引擎或任何需要根据你的数据回答问题的代理加载。',
+    'blog.ontology.jsonExampleCaption': '示例本体结构（简化 json）：实体、关系和指标。',
     'blog.ontology.ambiguityTitle': '处理歧义',
     'blog.ontology.ambiguityP1':
       '模糊问题是本体真正发光的地方。如果你问"显示销售"，这可能意味着销售团队（实体）、销售交易（订单实体）、销售收入（指标）或销售数量（不同的指标）。没有本体，系统必须猜测。有了本体，它可以识别"销售"是模糊的，检查哪种解释在上下文中有意义，如果需要，要求澄清（"你是指销售收入还是销售数量？"），并根据使用模式使用最常见的解释。',
