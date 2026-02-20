@@ -364,6 +364,16 @@ export default function OntologyTextToSqlBlog() {
                     docs.textql.com - ontology overview
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="https://app.textql.com/ontology"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-stone-200 transition-colors underline"
+                  >
+                    app.textql.com/ontology
+                  </a>
+                </li>
               </ul>
               <p className="mt-4 text-stone-500 text-xs italic">
                 {t('blog.ontology.note')}{' '}
