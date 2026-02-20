@@ -257,16 +257,6 @@ export default function Home() {
                       {t('projects.label.facialRecognition')}
                     </a>
                   </li>
-                  <li>
-                    <a
-                      href="https://llm-benchmarking-kappa.vercel.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
-                    >
-                      {t('projects.label.agentSearchEvals')}
-                    </a>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -283,34 +273,6 @@ export default function Home() {
                       {t('blog.ontology.title')}
                     </a>
                   </li>
-
-                  <li>
-                    <a
-                      href="/blogs/how-i-learned-to-code"
-                      className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
-                    >
-                      {t('blog.coding.title')}
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="/blogs/waterloo-coop"
-                      className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
-                    >
-                      {t('blog.waterlooCoop.title')}
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="/blogs/first-internship"
-                      className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
-                    >
-                      {t('blog.firstInternship.title')}
-                    </a>
-                  </li>
-
                   <li>
                     <a
                       href="/blogs/grpc"

@@ -562,7 +562,6 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.label.sqlParser': 'sql query parser',
     'projects.label.fernando': 'fernando',
     'projects.label.facialRecognition': 'facial recognition',
-    'projects.label.agentSearchEvals': 'agent search evals',
 
     // Home hero title
     'home.title': 'hi im nic',
@@ -698,7 +697,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.git.referencesTitle': 'references',
     'blog.git.references.docs': 'official git docs',
     'blog.git.references.dangit': 'dangit, git!',
-    'blog.grpc.title': 'grpc',
+    'blog.grpc.title': 'what makes gRPC so good',
     'blog.grpc.date': 'nicholas chen · january 11, 2026 · 9 min read',
     'blog.grpc.intro':
       "in modern software architecture, especially with microservices, the way services communicate is crucial. while rest has been the standard for a long time, grpc has emerged as a powerful alternative for many use cases. in this post, i'll explain what grpc is, how it works, and why you might want to use it.",
@@ -938,7 +937,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.contents': '目录',
     'blog.git.title': 'git 命令',
     'blog.git.date': 'nicholas chen · 2025年12月21日 · 4分钟阅读',
-    'blog.grpc.title': 'grpc',
+    'blog.grpc.title': '为什么 gRPC 这么好？',
     'blog.grpc.date': 'nicholas chen · 2026年1月11日 · 9分钟阅读',
     'blog.coding.title': '我是如何学习编程的',
     'blog.coding.date': 'nicholas chen · 2025年12月26日 · 5分钟阅读',
@@ -1213,7 +1212,6 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.label.sqlParser': 'sql query parser',
     'projects.label.fernando': 'fernando',
     'projects.label.facialRecognition': 'facial recognition',
-    'projects.label.agentSearchEvals': 'agent search evals',
 
     // Home hero title
     'home.title': '嗨，我是 nic',

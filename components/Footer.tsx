@@ -99,6 +99,10 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           </svg>
         </a>
       </div>
+
+      {/* Short connecting line */}
+      <div className="hidden flex-1 border-t border-stone-700/80 md:block" />
+
       <div className="flex items-center flex-shrink-0">
         {/* Language switcher */}
         <div className="flex items-center gap-1.5">
