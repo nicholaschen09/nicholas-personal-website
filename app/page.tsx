@@ -85,7 +85,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-4 md:p-12 relative z-10">
       {/* Hero Section */}
-      <div className="max-w-lg w-full space-y-1 md:space-y-2 mx-auto">
+      <div className="max-w-lg w-full space-y-3 md:space-y-4 mx-auto">
         <div className="flex items-start justify-between mb-0">
           <h1 className="text-xl sm:text-2xl md:text-3xl font-normal text-white">
             {getDisplayName()}
@@ -138,7 +138,7 @@ export default function Home() {
                 href="https://uwaterloo.ca/systems-design-engineering/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-2 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
+                className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80"
               >
                 <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
                   {t('current.role1')}
@@ -153,7 +153,7 @@ export default function Home() {
         </div>
 
         <div className="h-auto min-h-[80px] md:min-h-[60px]">
-          <div className="mt-4 space-y-3">
+          <div className="mt-5 space-y-4">
             <div>
               <p className="mb-2 text-stone-100 text-sm md:text-base font-medium">
                 {t('previously.title')}
@@ -164,7 +164,7 @@ export default function Home() {
                     href="https://textql.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-center gap-2 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
+                    className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80"
                   >
                     <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
                       {t('current.role2')}
@@ -180,7 +180,7 @@ export default function Home() {
                     href="https://www.ownr.co/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-center gap-2 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
+                    className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80"
                   >
                     <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
                       {t('previously.role1')}
@@ -196,7 +196,7 @@ export default function Home() {
                     href="https://www.rbc.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-center gap-2 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
+                    className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80"
                   >
                     <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
                       {t('previously.role2')}
@@ -221,7 +221,7 @@ export default function Home() {
                       href="https://tiktokviewpredictor.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
                     >
                       {t('projects.label.tiktok')}
                     </a>
@@ -232,7 +232,7 @@ export default function Home() {
                       href="https://sql-query-parser.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
                     >
                       {t('projects.label.sqlParser')}
                     </a>
@@ -242,7 +242,7 @@ export default function Home() {
                       href="https://github.com/enxilium/posture-checker-robot"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
                     >
                       {t('projects.label.fernando')}
                     </a>
@@ -252,7 +252,7 @@ export default function Home() {
                       href="https://facial-recognition-neural-network.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
                     >
                       {t('projects.label.facialRecognition')}
                     </a>
@@ -268,7 +268,7 @@ export default function Home() {
                   <li>
                     <a
                       href="/blogs/ontology-text-to-sql"
-                      className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
                     >
                       {t('blog.ontology.title')}
                     </a>
@@ -276,7 +276,7 @@ export default function Home() {
                   <li>
                     <a
                       href="/blogs/grpc"
-                      className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
                     >
                       {t('blog.grpc.title')}
                     </a>
