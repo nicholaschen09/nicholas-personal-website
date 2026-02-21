@@ -283,9 +283,8 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              {/* Neighbours navigation under Blogs */}
+              {/* Webring links - commented out
               <div className="mt-4 mb-4 flex items-center gap-2 text-xs text-stone-400">
-                {/* Left Arrow */}
                 <a
                   href="https://about.ceruleanechoes.com/"
                   target="_blank"
@@ -321,7 +320,6 @@ export default function Home() {
                     className="w-6 h-6 opacity-60 transition-opacity duration-200 group-hover:opacity-100"
                   />
                 </a>
-                {/* Right Arrow */}
                 <a
                   href="https://www.jordankhatri.me/"
                   target="_blank"
@@ -346,6 +344,7 @@ export default function Home() {
                   </svg>
                 </a>
               </div>
+              */}
             </div>
           </div>
         </div>
