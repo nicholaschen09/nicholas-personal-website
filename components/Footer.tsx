@@ -17,9 +17,13 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
       <div className="flex items-center gap-1.5">
         <a
           href="mailto:nicholas.chen243@gmail.com"
-          className="group flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-stone-800/80 hover:text-stone-100 transition-colors"
+          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-stone-800/80 hover:text-stone-100 transition-colors"
           aria-label="Email"
+          title="Email"
         >
+          <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-medium text-stone-100 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase">
+            email
+          </span>
           <svg
             width="22"
             height="22"
@@ -34,9 +38,13 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
           target="_blank"
           rel="noopener noreferrer"
-          className="group flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-stone-800/80 hover:text-stone-100 transition-colors"
+          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-stone-800/80 hover:text-stone-100 transition-colors"
           aria-label="LinkedIn"
+          title="LinkedIn"
         >
+          <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-medium text-stone-100 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase">
+            linkedin
+          </span>
           <svg
             width="20"
             height="20"
@@ -51,9 +59,13 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           href="https://github.com/nicholaschen09"
           target="_blank"
           rel="noopener noreferrer"
-          className="group flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-stone-800/80 hover:text-stone-100 transition-colors"
+          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-stone-800/80 hover:text-stone-100 transition-colors"
           aria-label="GitHub"
+          title="GitHub"
         >
+          <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-medium text-stone-100 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase">
+            github
+          </span>
           <svg
             width="20"
             height="20"
@@ -68,9 +80,13 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           href="https://x.com/nicholaschen__"
           target="_blank"
           rel="noopener noreferrer"
-          className="group flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-stone-800/80 hover:text-stone-100 transition-colors"
+          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-stone-800/80 hover:text-stone-100 transition-colors"
           aria-label="X (Twitter)"
+          title="X (Twitter)"
         >
+          <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-medium text-stone-100 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase">
+            x (twitter)
+          </span>
           <svg
             width="18"
             height="18"
@@ -85,9 +101,13 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           href="https://nicholaschen243.wixsite.com/nicholas-chen"
           target="_blank"
           rel="noopener noreferrer"
-          className="group flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-stone-800/80 hover:text-stone-100 transition-colors"
+          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-stone-800/80 hover:text-stone-100 transition-colors"
           aria-label="Art Portfolio"
+          title="Art portfolio"
         >
+          <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-medium text-stone-100 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase">
+            art
+          </span>
           <svg
             width="22"
             height="21"
@@ -100,7 +120,6 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
         </a>
       </div>
       <div className="flex items-center flex-shrink-0">
-        {/* Language switcher */}
         <div className="flex items-center gap-1.5">
           <button
             type="button"
