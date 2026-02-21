@@ -129,7 +129,7 @@ export default function Home() {
         {/* location / building lines removed */}
 
         <div>
-          <p className="mb-2 text-stone-100 text-sm md:text-base font-medium">
+          <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">
             {t('hero.currently')}
           </p>
           <ul className="text-xs md:text-sm text-stone-400 space-y-1">
@@ -155,7 +155,7 @@ export default function Home() {
         <div className="h-auto min-h-[80px] md:min-h-[60px]">
           <div className="mt-5 space-y-4">
             <div>
-              <p className="mb-2 text-stone-100 text-sm md:text-base font-medium">
+              <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">
                 {t('previously.title')}
               </p>
               <ul className="text-xs md:text-sm text-stone-400 space-y-1">
@@ -211,7 +211,7 @@ export default function Home() {
             </div>
 
             <div>
-              <p className="mb-2 text-stone-100 text-sm md:text-base font-medium">
+              <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">
                 {t('projects.title')}
               </p>
               <div className="-mx-2 px-2">
@@ -262,7 +262,7 @@ export default function Home() {
             </div>
 
             <div>
-              <p className="mb-2 text-stone-100 text-sm md:text-base font-medium">{t('nav.blogs')}</p>
+              <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">{t('nav.blogs')}</p>
               <div className="-mx-2 px-2">
                 <ul className="text-xs md:text-sm text-stone-400 space-y-1">
                   <li>
