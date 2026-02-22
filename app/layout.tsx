@@ -7,6 +7,7 @@ import './globals.css';
 import Script from 'next/script';
 
 import ClientProviders from '@/components/ClientProviders';
+import OrangeBgShortcut from '@/components/OrangeBgShortcut';
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
@@ -41,7 +42,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${jetbrainsMono.variable} ${minecraft.variable}`}>
       <body className={`bg-[#1a1a1a] min-h-screen antialiased`}>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{if(localStorage.getItem('orange-bg-active')==='true')document.body.classList.add('orange-bg-active');}catch(e){}`,
+          }}
+        />
         <ClientProviders>
+          <OrangeBgShortcut />
           {/* Google Analytics Script */}
           <Script
             strategy="afterInteractive"
