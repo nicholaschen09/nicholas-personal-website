@@ -124,9 +124,9 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           <button
             type="button"
             onClick={() => setLanguage('en')}
-            className={`lang-switcher-btn text-[10px] tracking-[0.18em] uppercase rounded-md px-2 py-0.5 transition-colors ${
+            className={`text-[10px] tracking-[0.18em] uppercase rounded-md px-2 py-0.5 transition-colors ${
               language === 'en'
-                ? 'lang-active bg-stone-800/80 text-white'
+                ? 'bg-stone-800/80 text-white'
                 : 'text-stone-500 hover:bg-stone-800/80 hover:text-stone-100'
             }`}
           >
@@ -136,9 +136,9 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           <button
             type="button"
             onClick={() => setLanguage('zh')}
-            className={`lang-switcher-btn text-[10px] tracking-[0.18em] uppercase rounded-md px-2 py-0.5 transition-colors ${
+            className={`text-[10px] tracking-[0.18em] uppercase rounded-md px-2 py-0.5 transition-colors ${
               language === 'zh'
-                ? 'lang-active bg-stone-800/80 text-white'
+                ? 'bg-stone-800/80 text-white'
                 : 'text-stone-500 hover:bg-stone-800/80 hover:text-stone-100'
             }`}
           >
