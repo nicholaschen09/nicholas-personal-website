@@ -501,7 +501,8 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.ontology.inCodeTitle': 'what the ontology looks like in code',
     'blog.ontology.inCodeP1':
       'under the hood, an ontology is usually stored as structured data—often a json file or similar—that defines entities, their attributes, relationships, and metrics. the ui you use to build it (drag-and-drop objects, forms for attributes) is just a layer on top: when you save, the system serializes your graph into something like the snippet below. this file gets versioned, deployed, and loaded at runtime by the text-to-sql engine or any agent that needs to answer questions against your data.',
-    'blog.ontology.jsonExampleCaption': 'example ontology structure (simplified json): entities, relationships, and a metric.',
+    'blog.ontology.jsonExampleCaption':
+      'example ontology structure (simplified json): entities, relationships, and a metric.',
     'blog.ontology.ambiguityTitle': 'handling ambiguity',
     'blog.ontology.ambiguityP1':
       'ambiguous questions are where ontologies really shine. if you ask "show me sales," that could mean the sales team (entity), sales transactions (orders entity), sales revenue (metric), or sales count (different metric). without an ontology, the system has to guess. with an ontology, it can recognize that "sales" is ambiguous, check which interpretation makes sense in context, ask for clarification if needed ("did you mean sales revenue or number of sales?"), and use the most common interpretation based on usage patterns.',

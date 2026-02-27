@@ -52,7 +52,11 @@ export default function ImageLightbox({ children }: { children: React.ReactNode 
 
   return (
     <>
-      <div ref={containerRef} onClick={handleClick} className="cursor-zoom-in [&_img]:cursor-zoom-in">
+      <div
+        ref={containerRef}
+        onClick={handleClick}
+        className="cursor-zoom-in [&_img]:cursor-zoom-in"
+      >
         {children}
       </div>
 
@@ -72,7 +76,16 @@ export default function ImageLightbox({ children }: { children: React.ReactNode 
             className="absolute top-4 right-4 text-white/70 hover:text-white transition-colors p-2"
             aria-label="Close"
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
               <line x1="18" y1="6" x2="6" y2="18" />
               <line x1="6" y1="6" x2="18" y2="18" />
             </svg>
