@@ -4,6 +4,7 @@ import { useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/contexts/LanguageContext';
 import Footer from '@/components/Footer';
+import ImageLightbox from '@/components/ImageLightbox';
 import TableOfContents, { TOCSection } from '@/components/TableOfContents';
 
 export default function OntologyTextToSqlBlog() {
@@ -32,6 +33,7 @@ export default function OntologyTextToSqlBlog() {
     <main className="min-h-screen bg-[#1a1a1a] text-stone-300 pb-12 px-4 md:px-8">
       <div className="max-w-6xl mx-auto pt-12 flex gap-8 items-start justify-center">
         <TableOfContents sections={sections} title={t('blog.contents')} />
+        <ImageLightbox>
         <article className="w-full lg:max-w-lg">
           {/* Back link */}
           <Link
@@ -391,6 +393,7 @@ export default function OntologyTextToSqlBlog() {
 
           <Footer className="mt-10" />
         </article>
+        </ImageLightbox>
       </div>
     </main>
   );
