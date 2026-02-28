@@ -379,6 +379,36 @@ export default function OntologyTextToSqlBlog() {
                       app.textql.com/ontology
                     </a>
                   </li>
+                  <li>
+                    <a
+                      href="https://textql.com/blog/sql-process"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-stone-200 transition-colors underline"
+                    >
+                      textql.com/blog/sql-process
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://textql.com/blog/why-ontology"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-stone-200 transition-colors underline"
+                    >
+                      textql.com/blog/why-ontology
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://textql.com/blog/haskell-in-production"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-stone-200 transition-colors underline"
+                    >
+                      textql.com/blog/haskell-in-production
+                    </a>
+                  </li>
                 </ul>
                 <p className="mt-4 text-stone-500 text-xs italic">
                   {t('blog.ontology.note')}{' '}
