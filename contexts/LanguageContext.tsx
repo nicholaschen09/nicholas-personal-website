@@ -591,6 +591,8 @@ const translations: Record<Language, Record<string, string>> = {
     // Footer
     'footer.copyright': '© 2025 NICHOLAS CHEN',
     'footer.by': 'BY NICHOLAS®',
+    'footer.langEn': 'english',
+    'footer.langZh': 'chinese',
 
     // Additional info
     'info.favouriteShow': '> favourite show -> one punch man',
@@ -1240,6 +1242,8 @@ const translations: Record<Language, Record<string, string>> = {
     // Footer
     'footer.copyright': '© 2025 NICHOLAS CHEN',
     'footer.by': '设计：NICHOLAS®',
+    'footer.langEn': '英语',
+    'footer.langZh': '中文',
 
     // Additional info
     'info.favouriteShow': '> 最喜欢的节目 -> 一拳超人',

@@ -7,7 +7,7 @@ interface FooterProps {
 }
 
 export default function Footer({ className = 'mt-20' }: FooterProps) {
-  const { language, setLanguage } = useLanguage();
+  const { language, setLanguage, t } = useLanguage();
 
   return (
     <div
@@ -124,24 +124,30 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           <button
             type="button"
             onClick={() => setLanguage('en')}
-            className={`text-[10px] tracking-[0.18em] uppercase rounded-md h-8 w-10 flex items-center justify-center transition-colors ${
+            className={`group relative text-[10px] tracking-[0.18em] uppercase rounded-md h-8 w-10 flex items-center justify-center transition-colors ${
               language === 'en'
                 ? 'bg-stone-800/80 text-white'
                 : 'text-stone-500 hover:bg-stone-800/80 hover:text-stone-100'
             }`}
           >
+            <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-medium text-stone-100 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase tracking-normal normal-case">
+              {t('footer.langEn')}
+            </span>
             EN
           </button>
           <span className="text-stone-600">/</span>
           <button
             type="button"
             onClick={() => setLanguage('zh')}
-            className={`text-[10px] tracking-[0.18em] uppercase rounded-md h-8 w-10 flex items-center justify-center transition-colors ${
+            className={`group relative text-[10px] tracking-[0.18em] uppercase rounded-md h-8 w-10 flex items-center justify-center transition-colors ${
               language === 'zh'
                 ? 'bg-stone-800/80 text-white'
                 : 'text-stone-500 hover:bg-stone-800/80 hover:text-stone-100'
             }`}
           >
+            <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-medium text-stone-100 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase tracking-normal normal-case">
+              {t('footer.langZh')}
+            </span>
             中文
           </button>
         </div>
