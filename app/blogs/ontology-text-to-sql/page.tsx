@@ -328,7 +328,7 @@ export default function OntologyTextToSqlBlog() {
                 <h3 className="text-sm md:text-base font-semibold text-stone-200 mb-3">
                   {t('blog.ontology.referencesTitle')}
                 </h3>
-                <ul className="space-y-2 text-stone-400 text-sm">
+                <ul className="space-y-2 text-stone-400 text-xs md:text-sm">
                   <li>
                     <a
                       href="https://builtin.com/data-science/ontology"

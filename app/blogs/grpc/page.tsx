@@ -484,7 +484,7 @@ func main() {
                 <h3 className="text-sm md:text-base font-semibold text-stone-200 mb-3">
                   {t('blog.grpc.referencesTitle')}
                 </h3>
-                <ul className="space-y-2 text-stone-400 text-sm">
+                <ul className="space-y-2 text-stone-400 text-xs md:text-sm">
                   <li>
                     <a href="https://grpc.io/docs/" className="hover:text-stone-200 underline">
                       official gRPC docs
