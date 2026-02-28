@@ -21,7 +21,7 @@ export default function FirstInternshipBlog() {
   );
 
   useEffect(() => {
-    document.title = `${t('blog.firstInternship.title')} | Nicholas Chen`;
+    document.title = t('blog.firstInternship.title');
   }, [t, language]);
 
   return (

@@ -25,7 +25,7 @@ export default function WaterlooCoopBlog() {
 
   useEffect(() => {
     // Update document title for client-side
-    document.title = `${t('blog.waterlooCoop.title')} | Nicholas Chen`;
+    document.title = t('blog.waterlooCoop.title');
   }, [t, language]);
 
   return (

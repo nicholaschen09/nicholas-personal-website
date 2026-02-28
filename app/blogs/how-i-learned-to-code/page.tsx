@@ -22,7 +22,7 @@ export default function SoftwareEngineeringLearningBlog() {
 
   useEffect(() => {
     // Update document title for client-side
-    document.title = `${t('blog.coding.title')} | Nicholas Chen`;
+    document.title = t('blog.coding.title');
   }, [t, language]);
 
   return (

@@ -22,7 +22,7 @@ export default function GrpcBlog() {
   );
 
   useEffect(() => {
-    document.title = `${t('blog.grpc.title')} | Nicholas Chen`;
+    document.title = t('blog.grpc.title');
   }, [t, language]);
 
   return (

@@ -26,7 +26,7 @@ export default function OntologyTextToSqlBlog() {
 
   useEffect(() => {
     // Update document title for client-side
-    document.title = `${t('blog.ontology.title')} | Nicholas Chen`;
+    document.title = t('blog.ontology.title');
   }, [t, language]);
 
   return (
