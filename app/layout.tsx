@@ -21,6 +21,10 @@ const minecraft = localFont({
 });
 
 export const metadata: Metadata = {
+  title: {
+    default: 'Nicholas Chen',
+    template: '%s | Nicholas Chen',
+  },
   metadataBase: new URL('https://nicholaschen.me'),
   icons: {
     icon: [
