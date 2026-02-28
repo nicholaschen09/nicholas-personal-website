@@ -30,10 +30,10 @@ export default function WaterlooCoopBlog() {
 
   return (
     <main className="min-h-screen bg-[#1a1a1a] text-stone-300 pb-12 px-4 md:px-8">
-      <div className="max-w-6xl mx-auto pt-12 flex gap-8 items-start justify-center">
+      <div className="max-w-6xl mx-auto pt-12 lg:grid lg:grid-cols-[12rem_1fr_12rem] lg:gap-8 lg:items-start">
         <TableOfContents sections={sections} title={t('blog.contents')} />
         <ImageLightbox>
-          <article className="w-full lg:max-w-lg">
+          <article className="w-full lg:max-w-lg lg:mx-auto">
             {/* Back link */}
             <Link
               href="/"
