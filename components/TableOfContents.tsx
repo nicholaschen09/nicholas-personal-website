@@ -94,7 +94,7 @@ export default function TableOfContents({ sections, title = 'contents' }: TableO
   return (
     <aside
       ref={scrollContainerRef}
-      className="hidden lg:block w-48 flex-shrink-0 sticky top-12 max-h-[calc(100vh-6rem)] overflow-y-auto px-2"
+      className="hidden lg:block w-48 flex-shrink-0 sticky top-12 max-h-[calc(100vh-6rem)] overflow-y-auto px-2 ml-auto"
     >
       {/* Header */}
       <h2 className="text-stone-500 text-base mb-4 mt-1 font-medium px-2">{title}</h2>
