@@ -126,7 +126,7 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
             onClick={() => setLanguage('en')}
             className={`group relative text-[10px] tracking-[0.18em] uppercase rounded-md h-8 w-10 flex items-center justify-center transition-colors ${
               language === 'en'
-                ? 'bg-stone-800/80 text-white'
+                ? 'text-white hover:bg-stone-800/80'
                 : 'text-stone-500 hover:bg-stone-800/80 hover:text-stone-100'
             }`}
           >
@@ -141,7 +141,7 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
             onClick={() => setLanguage('zh')}
             className={`group relative text-[10px] tracking-[0.18em] uppercase rounded-md h-8 w-10 flex items-center justify-center transition-colors ${
               language === 'zh'
-                ? 'bg-stone-800/80 text-white'
+                ? 'text-white hover:bg-stone-800/80'
                 : 'text-stone-500 hover:bg-stone-800/80 hover:text-stone-100'
             }`}
           >
