@@ -563,6 +563,7 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.label.sqlParser': 'sql query parser',
     'projects.label.fernando': 'fernando',
     'projects.label.facialRecognition': 'facial recognition',
+    'projects.label.tunl': 'tunl',
 
     // Home hero title
     'home.title': 'hi im nic',
@@ -1215,6 +1216,7 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.label.sqlParser': 'sql query parser',
     'projects.label.fernando': 'fernando',
     'projects.label.facialRecognition': 'facial recognition',
+    'projects.label.tunl': 'tunl',
 
     // Home hero title
     'home.title': '嗨，我是 nic',
