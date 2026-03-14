@@ -313,6 +313,14 @@ export default function Home() {
                       {t('blog.grpc.title')}
                     </a>
                   </li>
+                  <li>
+                    <a
+                      href="/blogs/lossless-audio"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+                    >
+                      {t('blog.lossless.title')}
+                    </a>
+                  </li>
                 </ul>
               </div>
               {/* Webring links - commented out
