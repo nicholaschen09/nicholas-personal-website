@@ -58,7 +58,7 @@ export default function MathText({ text, className }: { text: string; className?
           return (
             <span
               key={i}
-              className="inline-block max-w-full overflow-x-auto [.katex]:text-[0.95em] [.katex]:md:text-base"
+              className="inline-[.katex]"
               dangerouslySetInnerHTML={{ __html: renderLatex(seg.value, false) }}
             />
           );
@@ -66,7 +66,7 @@ export default function MathText({ text, className }: { text: string; className?
         return (
           <span
             key={i}
-            className="my-5 block max-w-full overflow-x-auto [.katex]:text-center [.katex]:text-[0.9em] [.katex]:md:text-base"
+            className="my-5 block [.katex]:text-center"
             dangerouslySetInnerHTML={{ __html: renderLatex(seg.value, true) }}
           />
         );
