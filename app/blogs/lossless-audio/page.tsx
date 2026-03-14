@@ -22,7 +22,6 @@ export default function LosslessBlog() {
       { id: 'common-formats', title: t('blog.lossless.formatsTitle') },
       { id: 'linear-prediction-depth', title: t('blog.lossless.lpcDepthTitle') },
       { id: 'rice-coding', title: t('blog.lossless.riceTitle') },
-      { id: 'conclusion', title: t('blog.lossless.conclusionTitle') },
     ],
     [t],
   );
@@ -238,7 +237,9 @@ export default function LosslessBlog() {
                 <p className="mb-6">
                   <MathText text={t('blog.lossless.riceUnary')} />
                 </p>
-                <p className="mb-4">{t('blog.lossless.riceTableIntro')}</p>
+                <p className="mb-4">
+                  <MathText text={t('blog.lossless.riceTableIntro')} />
+                </p>
                 <div className="mb-6 overflow-x-auto">
                   <table className="w-full min-w-[200px] border-collapse text-left text-xs">
                     <thead>
@@ -281,16 +282,6 @@ export default function LosslessBlog() {
                 <p className="mb-0">
                   <MathText text={t('blog.lossless.riceChooseK')} />
                 </p>
-              </section>
-
-              <section>
-                <h2
-                  id="conclusion"
-                  className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
-                >
-                  {t('blog.lossless.conclusionTitle')}
-                </h2>
-                <p>{t('blog.lossless.conclusionText')}</p>
               </section>
             </div>
 
