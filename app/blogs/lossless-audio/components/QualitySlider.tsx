@@ -10,7 +10,7 @@ import {
 const LENGTH = 512;
 const CHART_HEIGHT = 44;
 const ANIMATION_DURATION_MS = 4000;
-const MAX_BARS = 100;
+const MAX_BARS = 130;
 
 function applyLossyWithStrength(signal: Float32Array, strength: number): Float32Array {
   const kernelSize = Math.max(2, Math.round(2 + strength * 28));
@@ -207,7 +207,7 @@ export default function QualitySlider() {
         />
         <span className="text-[10px] shrink-0 text-stone-500">More lossy</span>
       </div>
-      <p className="mb-0.5 pl-11 text-[11px] text-stone-500">
+      <p className="mb-0.5 text-[11px] text-stone-500">
         Lossiness: <span className="inline-block min-w-[3ch] font-medium tabular-nums text-stone-400">{lossyParams.lossinessPct}%</span>
         {' · '}
         levels: <span className="inline-block min-w-[2.5ch] font-medium tabular-nums text-stone-400">{lossyParams.levels}</span>
@@ -248,17 +248,17 @@ export default function QualitySlider() {
           ))}
         </g>
       </svg>
-      <div className="mt-2 flex items-center gap-4 pl-11 text-[10px] text-stone-500">
+      <div className="mt-2 flex items-center gap-4 text-[10px] text-stone-500">
         <span className="flex items-center gap-1.5">
           <span
-            className="inline-block h-2 w-2 rounded-sm opacity-85"
+            className="inline-block h-2 w-6 rounded-sm opacity-85"
             style={{ backgroundColor: 'rgb(251 146 60)' }}
           />
           Original
         </span>
         <span className="flex items-center gap-1.5">
           <span
-            className="inline-block h-2 w-2 rounded-sm opacity-85"
+            className="inline-block h-2 w-6 rounded-sm opacity-85"
             style={{ backgroundColor: 'rgb(163 230 53)' }}
           />
           Simulated lossy
