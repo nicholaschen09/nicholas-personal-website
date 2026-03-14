@@ -9,12 +9,12 @@ import {
 
 const LENGTH = 512;
 const CHART_HEIGHT = 44;
-const ANIMATION_DURATION_MS = 2500;
+const ANIMATION_DURATION_MS = 4000;
 const MAX_BARS = 100;
 
 function applyLossyWithStrength(signal: Float32Array, strength: number): Float32Array {
-  const kernelSize = Math.max(2, Math.round(2 + strength * 22));
-  const levels = Math.max(4, Math.round(48 - strength * 42));
+  const kernelSize = Math.max(2, Math.round(2 + strength * 28));
+  const levels = Math.max(4, Math.round(40 - strength * 35));
   const out = new Float32Array(signal.length);
   const half = Math.floor(kernelSize / 2);
   for (let i = 0; i < signal.length; i++) {
@@ -80,7 +80,9 @@ export default function QualitySlider() {
     setIsPlaying(false);
   };
 
-  const { magOriginal, magLossy, maxMag } = useMemo(() => {
+  const { magOriginal, magLossy, maxMag, lossyParams } = useMemo(() => {
+    const kernelSize = Math.max(2, Math.round(2 + strength * 28));
+    const levels = Math.max(4, Math.round(40 - strength * 35));
     const orig = generateSyntheticSignal(LENGTH);
     const lossySig = applyLossyWithStrength(orig, strength);
     const magO = dftMagnitude(orig);
@@ -89,7 +91,12 @@ export default function QualitySlider() {
     for (let i = 0; i < magO.length; i++) {
       max = Math.max(max, magO[i], magL[i]);
     }
-    return { magOriginal: magO, magLossy: magL, maxMag: max || 1 };
+    return {
+      magOriginal: magO,
+      magLossy: magL,
+      maxMag: max || 1,
+      lossyParams: { kernelSize, levels, lossinessPct: Math.round(strength * 100) },
+    };
   }, [strength]);
 
   const step = Math.max(1, Math.floor(magOriginal.length / MAX_BARS));
@@ -143,32 +150,22 @@ export default function QualitySlider() {
         />
         <span className="text-[10px] shrink-0 text-stone-500">More lossy</span>
       </div>
+      <p className="mb-2 pl-11 text-[11px] text-stone-500">
+        Lossiness: <span className="font-medium text-stone-400">{lossyParams.lossinessPct}%</span>
+        {' · '}
+        levels: <span className="font-medium text-stone-400">{lossyParams.levels}</span>
+        {' · '}
+        kernel: <span className="font-medium text-stone-400">{lossyParams.kernelSize}</span>
+        {' · '}
+        Frequency: <span className="font-medium text-stone-400">0 – {Math.round(cutoffHz / 100) / 10} kHz</span>
+      </p>
       <svg
-        viewBox={`0 0 ${chartW} ${CHART_HEIGHT * 2 + 32}`}
+        viewBox={`0 0 ${chartW} ${CHART_HEIGHT * 2 + 8}`}
         className="w-full max-w-full"
-        style={{ height: CHART_HEIGHT * 2 + 32 }}
+        style={{ height: CHART_HEIGHT * 2 + 8 }}
       >
-        <text x={0} y={12} className="fill-stone-500 text-[10px]">
-          Original
-        </text>
-        <g transform="translate(0, 18)">
+        <g transform="translate(0, 0)">
           {barsOriginal.map((b, i) => (
-            <rect
-              key={i}
-              x={b.x}
-              y={CHART_HEIGHT - b.h}
-              width={barWidth}
-              height={b.h}
-              fill="rgb(163 230 53)"
-              opacity={0.85}
-            />
-          ))}
-        </g>
-        <text x={0} y={18 + CHART_HEIGHT + 12} className="fill-stone-500 text-[10px]">
-          Simulated lossy
-        </text>
-        <g transform={`translate(0, 18 + CHART_HEIGHT + 18)`}>
-          {barsLossy.map((b, i) => (
             <rect
               key={i}
               x={b.x}
@@ -180,22 +177,36 @@ export default function QualitySlider() {
             />
           ))}
         </g>
-        <text
-          x={0}
-          y={CHART_HEIGHT * 2 + 26}
-          className="fill-stone-500 text-[9px]"
-        >
-          Frequency
-        </text>
-        <text
-          x={chartW}
-          y={CHART_HEIGHT * 2 + 26}
-          textAnchor="end"
-          className="fill-stone-600 text-[9px]"
-        >
-          0 – {Math.round(cutoffHz / 100) / 10} kHz
-        </text>
+        <g transform={`translate(0, ${CHART_HEIGHT + 8})`}>
+          {barsLossy.map((b, i) => (
+            <rect
+              key={i}
+              x={b.x}
+              y={CHART_HEIGHT - b.h}
+              width={barWidth}
+              height={b.h}
+              fill="rgb(163 230 53)"
+              opacity={0.85}
+            />
+          ))}
+        </g>
       </svg>
+      <div className="mt-2 flex items-center gap-4 pl-11 text-[10px] text-stone-500">
+        <span className="flex items-center gap-1.5">
+          <span
+            className="inline-block h-2 w-2 rounded-sm opacity-85"
+            style={{ backgroundColor: 'rgb(251 146 60)' }}
+          />
+          Original
+        </span>
+        <span className="flex items-center gap-1.5">
+          <span
+            className="inline-block h-2 w-2 rounded-sm opacity-85"
+            style={{ backgroundColor: 'rgb(163 230 53)' }}
+          />
+          Simulated lossy
+        </span>
+      </div>
     </figure>
   );
 }
