@@ -134,4 +134,21 @@ body {
     scrollbar-color: #333 #1a1a1a;
     scrollbar-width: thin;
   }
+
+  /* KaTeX: inherit text color so math matches surrounding content */
+  .katex,
+  .katex * {
+    color: inherit !important;
+  }
+
+  /* Lossless audio slider: no hover lightening */
+  .lossless-audio-slider::-webkit-slider-thumb:hover,
+  .lossless-audio-slider::-webkit-slider-thumb:active {
+    opacity: 1;
+    filter: none;
+  }
+  .lossless-audio-slider::-moz-range-thumb:hover,
+  .lossless-audio-slider::-moz-range-thumb:active {
+    filter: none;
+  }
 }
