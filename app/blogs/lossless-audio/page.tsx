@@ -21,8 +21,6 @@ export default function LosslessBlog() {
       { id: 'why-it-matters', title: t('blog.lossless.whyItMattersTitle') },
       { id: 'common-formats', title: t('blog.lossless.formatsTitle') },
       { id: 'how-lossless-compressed', title: t('blog.lossless.howCompressedTitle') },
-      { id: 'linear-prediction-depth', title: t('blog.lossless.lpcDepthTitle') },
-      { id: 'rice-coding', title: t('blog.lossless.riceTitle') },
     ],
     [t],
   );
@@ -90,12 +88,12 @@ export default function LosslessBlog() {
                 <p className="mb-4">{t('blog.lossless.lossyIntro')}</p>
                 <p className="mb-6">{t('blog.lossless.losslessIntro')}</p>
 
-                <h3
+                <h2
                   id="visualizers"
-                  className="text-lg font-medium text-white mb-2 mt-6 scroll-mt-8"
+                  className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
                 >
                   {t('blog.lossless.visualizersTitle')}
-                </h3>
+                </h2>
                 <p className="mb-4">{t('blog.lossless.visualizersIntro')}</p>
                 <QualitySlider />
               </section>
@@ -131,24 +129,9 @@ export default function LosslessBlog() {
                 <p className="mb-6">{t('blog.lossless.formatsText')}</p>
 
                 <div className="space-y-6">
-                  <div>
-                    <h3 className="text-lg font-medium text-white mb-2">
-                      {t('blog.lossless.whatIsFlacTitle')}
-                    </h3>
-                    <p>{t('blog.lossless.whatIsFlacText')}</p>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-medium text-white mb-2">
-                      {t('blog.lossless.alacTitle')}
-                    </h3>
-                    <p>{t('blog.lossless.alacText')}</p>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-medium text-white mb-2">
-                      {t('blog.lossless.wavTitle')}
-                    </h3>
-                    <p>{t('blog.lossless.wavText')}</p>
-                  </div>
+                  <p>{t('blog.lossless.whatIsFlacText')}</p>
+                  <p>{t('blog.lossless.alacText')}</p>
+                  <p>{t('blog.lossless.wavText')}</p>
                 </div>
               </section>
 
@@ -161,13 +144,7 @@ export default function LosslessBlog() {
                 </h2>
                 <p className="mb-6">{t('blog.lossless.howCompressedIntro')}</p>
 
-                <h3
-                  id="linear-prediction-depth"
-                  className="text-lg font-medium text-white mb-4 mt-6 scroll-mt-8"
-                >
-                  {t('blog.lossless.lpcDepthTitle')}
-                </h3>
-                <p className="mb-6">
+                <p id="linear-prediction-depth" className="mb-6 scroll-mt-8">
                   <MathText text={t('blog.lossless.lpcSamples')} />
                 </p>
                 <p className="mb-6">
@@ -190,39 +167,24 @@ const residual = xActual - pred;  // e[n] = 105 - 103 = 2
 // Store residual (small) instead of 105 (large) → compression.`}
                 </pre>
 
-                <h3 className="text-lg font-medium text-white mb-2 mt-8">
-                  {t('blog.lossless.lpcHowFindTitle')}
-                </h3>
                 <p className="mb-4">{t('blog.lossless.lpcHowFindText')}</p>
                 <p className="mb-6">
                   <MathText text={t('blog.lossless.lpcMinFormula')} />
                 </p>
                 <p className="mb-6">{t('blog.lossless.lpcLeastSquares')}</p>
 
-                <h3 className="text-lg font-medium text-white mb-2 mt-6">
-                  <MathText text={t('blog.lossless.lpcOrderTitle')} />
-                </h3>
                 <p className="mb-6">
                   <MathText text={t('blog.lossless.lpcOrderText')} />
                 </p>
 
-                <h3 className="text-lg font-medium text-white mb-2">
-                  {t('blog.lossless.lpcKeyPointTitle')}
-                </h3>
                 <p className="mb-8">
                   <MathText text={t('blog.lossless.lpcKeyPointText')} />
                 </p>
 
-                <h3 className="text-lg font-medium text-white mb-2">
-                  {t('blog.lossless.whatIsNTitle')}
-                </h3>
                 <p className="mb-6">
                   <MathText text={t('blog.lossless.whatIsNText')} />
                 </p>
 
-                <h3 className="text-lg font-medium text-white mb-2">
-                  {t('blog.lossless.residualsTitle')}
-                </h3>
                 <p className="mb-4">
                   <MathText text={t('blog.lossless.residualsText')} />
                 </p>
@@ -234,9 +196,6 @@ const residual = xActual - pred;  // e[n] = 105 - 103 = 2
                   <MathText text={t('blog.lossless.losslessGuarantee')} />
                 </p>
 
-                <h3 className="text-lg font-medium text-white mb-2">
-                  {t('blog.lossless.reconstructTitle')}
-                </h3>
                 <p className="mb-4">
                   <MathText text={t('blog.lossless.reconstructText')} />
                 </p>
@@ -251,7 +210,7 @@ const xReconstructed = pred + residual;  // 103 + 2 = 105 ✓`}
               <section>
                 <h2
                   id="rice-coding"
-                  className="text-xl md:text-2xl font-semibold text-white mb-6 mt-8 scroll-mt-8"
+                  className="text-lg font-medium text-white mb-4 mt-8 scroll-mt-8"
                 >
                   {t('blog.lossless.riceTitle')}
                 </h2>

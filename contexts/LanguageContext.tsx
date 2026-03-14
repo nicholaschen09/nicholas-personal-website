@@ -825,7 +825,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.grpc.referencesTitle': 'references',
     'blog.lossless.title': 'how lossless compression preserves audio quality',
     'blog.lossless.date': 'nicholas chen · march 14, 2026 · 6 min read',
-    'blog.lossless.intro': "in an era of streaming and convenience, audio quality is often overlooked. however, for those who care about the nuances of sound, lossless audio is the gold standard. in this post, we'll explore what it is and why it matters.",
+    'blog.lossless.intro': "in an era of streaming and convenience, audio quality is often overlooked. however, for those who care about the nuances of sound, lossless audio is the gold standard. in this post, i will explore what it is and why it matters.",
     'blog.lossless.whatIsTitle': 'what is lossless audio?',
     'blog.lossless.whatIsText': 'lossless audio compression reduces the file size of an audio track without losing any data. unlike lossy formats like MP3 or AAC, which discard information to save space, lossless formats like FLAC or ALAC preserve every single bit of the original recording.',
     'blog.lossless.howItWorksTitle': 'how it works',
