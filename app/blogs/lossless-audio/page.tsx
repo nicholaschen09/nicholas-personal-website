@@ -165,7 +165,7 @@ export default function LosslessBlog() {
                 <p className="mb-6">
                   <MathText text={t('blog.lossless.lpcPredictable')} />
                 </p>
-                <p className="mb-6">
+                <p className="mb-6 whitespace-pre-line">
                   <MathText text={t('blog.lossless.lpcExample')} />
                 </p>
                 <pre className="mb-6 rounded-md border border-stone-700 bg-stone-800/50 p-4 overflow-x-auto text-[10px] text-stone-200 md:text-xs font-mono">

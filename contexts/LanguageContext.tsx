@@ -930,7 +930,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.lossless.lpcPredictable':
       'why is audio predictable? sound waves are smooth. if the last four samples were 100, 105, 110, 115, the next is probably ~120. the predictor finds coefficients \\( a_1, a_2, \\ldots, a_p \\) so that the next sample is best predicted by: \\[ \\hat{x}[n] = a_1 x[n-1] + a_2 x[n-2] + \\cdots + a_p x[n-p] \\]',
     'blog.lossless.lpcExample':
-      "concrete example. say \\( p=3 \\) and FLAC found these coefficients: \\[ a_1 = 1.5,\\quad a_2 = -0.7,\\quad a_3 = 0.2 \\] and the last three samples were \\( x[n-1]=100 \\), \\( x[n-2]=90 \\), \\( x[n-3]=80 \\). the prediction is: \\[ \\hat{x}[n] = 1.5(100) + (-0.7)(90) + 0.2(80) = 150 - 63 + 16 = 103 \\] if the actual sample \\( x[n] = 105 \\), the residual is: \\[ e[n] = 105 - 103 = 2 \\] so instead of storing 105 (needs ~8 bits), you store 2 (needs ~2 bits). that's the compression.",
+      "concrete example. say \\( p=3 \\) and FLAC found these coefficients: \\[ a_1 = 1.5,\\quad a_2 = -0.7,\\quad a_3 = 0.2 \\] and the last three samples were \\( x[n-1]=100 \\), \\( x[n-2]=90 \\), \\( x[n-3]=80 \\). the prediction is:\n\\[ \\hat{x}[n] = 1.5(100) + (-0.7)(90) + 0.2(80) \\\\ = 150 - 63 + 16 = 103 \\] if the actual sample \\( x[n] = 105 \\), the residual is: \\[ e[n] = 105 - 103 = 2 \\] so instead of storing 105 (needs ~8 bits), you store 2 (needs ~2 bits). that's the compression.",
     'blog.lossless.lpcHowFindTitle': 'how does FLAC find the coefficients?',
     'blog.lossless.lpcHowFindText':
       'uses Levinson–Durbin algorithm — solves a system of equations called the Yule–Walker equations. basically finds the \\( a \\) values that minimize the average squared residual:',
@@ -1880,7 +1880,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.lossless.lpcPredictable':
       '为何音频可预测？声波是平滑的。若最近四个采样是 100、105、110、115，下一个大概 ~120。预测器找到系数 \\( a_1, a_2, \\ldots, a_p \\)，使下一采样由下式最佳预测：\\[ \\hat{x}[n] = a_1 x[n-1] + a_2 x[n-2] + \\cdots + a_p x[n-p] \\]',
     'blog.lossless.lpcExample':
-      '具体例子。设 \\( p=3 \\)，FLAC 求得系数：\\[ a_1 = 1.5,\\quad a_2 = -0.7,\\quad a_3 = 0.2 \\] 最近三采样 \\( x[n-1]=100 \\)，\\( x[n-2]=90 \\)，\\( x[n-3]=80 \\)。预测为：\\[ \\hat{x}[n] = 1.5(100) + (-0.7)(90) + 0.2(80) = 150 - 63 + 16 = 103 \\] 若实际采样 \\( x[n]=105 \\)，残差为：\\[ e[n] = 105 - 103 = 2 \\] 因此不存 105（约 8 比特）而存 2（约 2 比特），即压缩。',
+      '具体例子。设 \\( p=3 \\)，FLAC 求得系数：\\[ a_1 = 1.5,\\quad a_2 = -0.7,\\quad a_3 = 0.2 \\] 最近三采样 \\( x[n-1]=100 \\)，\\( x[n-2]=90 \\)，\\( x[n-3]=80 \\)。预测为：\n\\[ \\hat{x}[n] = 1.5(100) + (-0.7)(90) + 0.2(80) \\\\ = 150 - 63 + 16 = 103 \\] 若实际采样 \\( x[n]=105 \\)，残差为：\\[ e[n] = 105 - 103 = 2 \\] 因此不存 105（约 8 比特）而存 2（约 2 比特），即压缩。',
     'blog.lossless.lpcHowFindTitle': 'FLAC 如何求系数？',
     'blog.lossless.lpcHowFindText':
       '用 Levinson–Durbin 算法——求解称为 Yule–Walker 方程的方程组。本质上是找使平均平方残差最小的 \\( a \\)：',
