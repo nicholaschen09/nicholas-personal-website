@@ -90,7 +90,6 @@ export default function LosslessBlog() {
 
                 <div id="visualizers" className="mt-8 scroll-mt-8 space-y-8">
                   <QualitySlider />
-                  <LosslessComparisonPlayer />
                 </div>
 
                 <h2
@@ -141,7 +140,8 @@ export default function LosslessBlog() {
                   {t('blog.lossless.whyItMattersTitle')}
                 </h2>
                 <p className="mb-4">{t('blog.lossless.whyItMattersText')}</p>
-                <p>{t('blog.lossless.whyMattersHonest')}</p>
+                <p className="mb-8">{t('blog.lossless.whyMattersHonest')}</p>
+                <LosslessComparisonPlayer />
               </section>
 
               <section>

@@ -23,7 +23,7 @@ export default function LosslessComparisonPlayer() {
   const dataArrayRef = useRef<Uint8Array | null>(null);
 
   const [playing, setPlaying] = useState<Format>(null);
-  const [activeFormat, setActiveFormat] = useState<Format>(null);
+  const [activeFormat, setActiveFormat] = useState<Format>('flac');
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [isSeeking, setIsSeeking] = useState(false);
@@ -92,7 +92,6 @@ export default function LosslessComparisonPlayer() {
   }, []);
 
   const selectFormat = useCallback((format: Format) => {
-    if (playing && playing !== format) stop();
     const other = format === 'mp3' ? flacRef.current : mp3Ref.current;
     const audio = format === 'mp3' ? mp3Ref.current : flacRef.current;
     if (audio && other && Number.isFinite(other.currentTime)) {
@@ -100,7 +99,10 @@ export default function LosslessComparisonPlayer() {
       setCurrentTime(other.currentTime);
     }
     setActiveFormat(format);
-  }, [playing, stop]);
+    if (playing && playing !== format) {
+      connectAndPlay(format);
+    }
+  }, [playing, connectAndPlay]);
 
   const togglePlayPause = useCallback(() => {
     if (!activeFormat) return;
