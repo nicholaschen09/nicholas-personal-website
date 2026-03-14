@@ -984,6 +984,8 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.lossless.riceChooseK':
       'FLAC tries multiple values of \\( k \\) and picks whichever gives the smallest total size for that block of residuals. it stores the chosen \\( k \\) in the subframe so the decoder knows how to decode.',
 
+    'blog.lossless.referencesTitle': 'references',
+
     // FLAC file structure
     'blog.lossless.flacStructureTitle': 'FLAC file structure',
     'blog.lossless.flacStructureText':
@@ -1931,6 +1933,8 @@ const translations: Record<Language, Record<string, string>> = {
       '参数 \\( k \\)：\\( k=2 \\) 时按 \\( 2^2=4 \\) 分割。商 \\( q = \\lfloor |e|/4 \\rfloor \\)（能放几个 4），余数 \\( r = |e| \\bmod 4 \\)。\\( q \\) 用一元码（\\( q \\) 个 1 再一个 0），\\( r \\) 用 \\( k \\) 比特。例：\\( e=6 \\)，\\( k=2 \\) → \\( q=1 \\)，\\( r=2 \\) → 一元 10，二进制 10 → 共 4 比特。\\( e=0 \\)（极常见）→ 码 0（1 比特）。',
     'blog.lossless.riceChooseK':
       'FLAC 尝试多个 \\( k \\)，选使该块残差总长最小的那个，并将所选 \\( k \\) 存在子帧中，解码器据此解码。',
+
+    'blog.lossless.referencesTitle': '参考与延伸阅读',
 
     'blog.lossless.flacStructureTitle': 'FLAC 文件结构',
     'blog.lossless.flacStructureText':

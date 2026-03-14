@@ -92,6 +92,17 @@ export default function LosslessBlog() {
                   <QualitySlider />
                 </div>
 
+                <figure className="mt-6">
+                  <img
+                    src="/blogs/lossless-audio/audio-compression.png"
+                    alt="Spectral representation of compressed sound"
+                    className="w-full rounded-md border border-stone-700"
+                  />
+                  <figcaption className="mt-2 text-[11px] md:text-xs text-stone-400">
+                    Spectral representation of compressed sound.
+                  </figcaption>
+                </figure>
+
                 <h2
                   id="common-formats"
                   className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
@@ -303,10 +314,46 @@ const xReconstructed = pred + residual;  // 103 + 2 = 105 ✓`}
                   <MathText text={t('blog.lossless.riceChooseK')} />
                 </p>
               </section>
-            </div>
 
-            <hr className="border-stone-700 my-12" />
-            <Footer />
+              <section className="border-t border-stone-700 pt-6 mt-8">
+                <h3 className="text-sm md:text-base font-semibold text-stone-200 mb-3">
+                  {t('blog.lossless.referencesTitle')}
+                </h3>
+                <ul className="space-y-2 text-stone-400 text-xs md:text-sm">
+                  <li>
+                    <a
+                      href="https://xiph.org/flac/format.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-stone-200 underline"
+                    >
+                      xiph.org/flac/format.html
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://michaeldipperstein.github.io/rice.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-stone-200 underline"
+                    >
+                      Rice (Golomb) coding – discussion and implementation
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://techblog.paalijarvi.fi/2014/06/23/a-short-study-on-audio-compression/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-stone-200 underline"
+                    >
+                      a short study on audio compression
+                    </a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+            <Footer className="mt-10" />
           </article>
         </ImageLightbox>
         <div className="hidden lg:block" />
