@@ -54,6 +54,8 @@ export default function LosslessBlog() {
             </h1>
             <p className="text-stone-500 text-sm mb-6">{t('blog.lossless.date')}</p>
 
+            {/* Cover image */}
+            <img src="/blogs/lossless-audio/FLAC.png" alt="FLAC" className="w-full mb-6" />
             <hr className="border-stone-700 mb-8" />
 
             {/* Content */}

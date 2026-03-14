@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import GrpcBlog from '../app/blogs/grpc/page';
+import LosslessBlog from '../app/blogs/lossless-audio/page';
 import { LanguageProvider } from '../contexts/LanguageContext';
 import { describe, it, expect } from 'vitest';
 import { ReactNode } from 'react';
@@ -9,14 +9,14 @@ const wrapper = ({ children }: { children: ReactNode }) => (
   <LanguageProvider>{children}</LanguageProvider>
 );
 
-describe('gRPC Blog Page', () => {
+describe('Lossless Audio Blog Page', () => {
   it('renders title', () => {
-    render(<GrpcBlog />, { wrapper });
-    expect(screen.getByText('what makes gRPC so good')).toBeInTheDocument();
+    render(<LosslessBlog />, { wrapper });
+    expect(screen.getByText('how lossless compression preserves audio quality')).toBeInTheDocument();
   });
 
   it('renders back link', () => {
-    render(<GrpcBlog />, { wrapper });
+    render(<LosslessBlog />, { wrapper });
     expect(screen.getByText('back')).toBeInTheDocument();
   });
 });

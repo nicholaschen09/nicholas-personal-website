@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Why Lossless Audio Matters | Nicholas Chen',
-  description: 'A deep dive into lossless audio formats and why they are essential for high-fidelity listening.',
+  title: 'How Lossless Compression Preserves Audio Quality | Nicholas Chen',
+  description: 'A deep dive into how lossless audio formats maintain every bit of audio quality.',
   openGraph: {
-    title: 'Why Lossless Audio Matters',
-    description: 'A deep dive into lossless audio formats and why they are essential for high-fidelity listening.',
+    title: 'How Lossless Compression Preserves Audio Quality',
+    description: 'A deep dive into how lossless audio formats maintain every bit of audio quality.',
     type: 'article',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Why Lossless Audio Matters',
+    title: 'How Lossless Compression Preserves Audio Quality',
   },
 };
 
