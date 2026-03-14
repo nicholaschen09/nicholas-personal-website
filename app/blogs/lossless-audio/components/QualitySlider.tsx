@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   generateSyntheticSignal,
   dftMagnitude,
@@ -45,6 +45,18 @@ export default function QualitySlider() {
   const startTimeRef = useRef(0);
   const isDraggingRef = useRef(false);
   const strengthRef = useRef(0.55);
+  const isMountedRef = useRef(true);
+  const pauseRef = useRef<() => void>(() => {});
+  const frameCountRef = useRef(0);
+
+  const pause = () => {
+    if (animRef.current !== null) {
+      cancelAnimationFrame(animRef.current);
+      animRef.current = null;
+    }
+    setIsPlaying(false);
+  };
+  pauseRef.current = pause;
 
   const play = () => {
     if (strength >= 1) {
@@ -59,6 +71,7 @@ export default function QualitySlider() {
     setIsPlaying(true);
 
     const tick = () => {
+      if (!isMountedRef.current) return;
       if (isDraggingRef.current) {
         animRef.current = requestAnimationFrame(tick);
         return;
@@ -68,13 +81,15 @@ export default function QualitySlider() {
       const eased = t * t * (3 - 2 * t);
       const newStrength = startStrengthRef.current + eased * (1 - startStrengthRef.current);
       strengthRef.current = newStrength;
-      setStrength(newStrength);
+      frameCountRef.current += 1;
+      if (frameCountRef.current % 2 === 0 || t >= 1) setStrength(newStrength);
       if (t < 1) {
         animRef.current = requestAnimationFrame(tick);
       } else {
         startStrengthRef.current = 0;
         startTimeRef.current = performance.now();
         strengthRef.current = 0;
+        frameCountRef.current = 0;
         setStrength(0);
         animRef.current = requestAnimationFrame(tick);
       }
@@ -82,13 +97,20 @@ export default function QualitySlider() {
     animRef.current = requestAnimationFrame(tick);
   };
 
-  const pause = () => {
-    if (animRef.current !== null) {
-      cancelAnimationFrame(animRef.current);
-      animRef.current = null;
-    }
-    setIsPlaying(false);
-  };
+  useEffect(() => {
+    const onVisibilityChange = () => {
+      if (document.visibilityState === 'hidden') pauseRef.current();
+    };
+    document.addEventListener('visibilitychange', onVisibilityChange);
+    return () => {
+      document.removeEventListener('visibilitychange', onVisibilityChange);
+      isMountedRef.current = false;
+      if (animRef.current !== null) {
+        cancelAnimationFrame(animRef.current);
+        animRef.current = null;
+      }
+    };
+  }, []);
 
   const { magOriginal, magLossy, maxMag, lossyParams, effectiveCutoffHz } = useMemo(() => {
     const kernelSize = Math.max(2, Math.round(2 + strength * 28));

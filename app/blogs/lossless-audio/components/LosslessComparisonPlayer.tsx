@@ -211,6 +211,8 @@ export default function LosslessComparisonPlayer() {
   useEffect(() => {
     return () => {
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      mp3Ref.current?.pause();
+      flacRef.current?.pause();
       contextRef.current?.close();
     };
   }, []);
