@@ -17,9 +17,9 @@ export default function LosslessBlog() {
     () => [
       { id: 'what-is-lossless', title: t('blog.lossless.whatIsTitle') },
       { id: 'lossless-vs-lossy', title: t('blog.lossless.losslessVsLossyTitle') },
+      { id: 'common-formats', title: t('blog.lossless.formatsTitle') },
       { id: 'mp3-under-the-hood', title: t('blog.lossless.mp3Title') },
       { id: 'why-it-matters', title: t('blog.lossless.whyItMattersTitle') },
-      { id: 'common-formats', title: t('blog.lossless.formatsTitle') },
       { id: 'how-lossless-compressed', title: t('blog.lossless.howCompressedTitle') },
     ],
     [t],
