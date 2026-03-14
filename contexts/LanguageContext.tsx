@@ -851,7 +851,7 @@ const translations: Record<Language, Record<string, string>> = {
       'lossless formats (FLAC, WAV) keep every sample exactly. they compress like a zip file: perfectly reconstructable, nothing discarded.',
     'blog.lossless.visualizersTitle': 'see the difference',
     'blog.lossless.visualizersIntro':
-      'below: a synthetic audio clip run through a simulated “lossy” process (low-pass filter + quantization). the waveform and spectrum show what gets removed.',
+      'below: a synthetic audio clip run through a simulated “lossy” process (low-pass filter + quantization). drag the slider to see how high frequencies drop.',
 
     // MP3 under the hood
     'blog.lossless.mp3Title': 'MP3 under the hood',
@@ -910,28 +910,55 @@ const translations: Record<Language, Record<string, string>> = {
       'why is audio predictable? sound waves are smooth. if the last four samples were 100, 105, 110, 115, the next is probably ~120. the predictor finds coefficients \\( a_1, a_2, \\ldots, a_p \\) so that the next sample is best predicted by: \\[ \\hat{x}[n] = a_1 x[n-1] + a_2 x[n-2] + \\cdots + a_p x[n-p] \\]',
     'blog.lossless.lpcExample':
       'concrete example. say \\( p=3 \\) and FLAC found these coefficients: \\[ a_1 = 1.5,\\quad a_2 = -0.7,\\quad a_3 = 0.2 \\] and the last three samples were \\( x[n-1]=100 \\), \\( x[n-2]=90 \\), \\( x[n-3]=80 \\). the prediction is: \\[ \\hat{x}[n] = 1.5(100) + (-0.7)(90) + 0.2(80) = 150 - 63 + 16 = 103 \\] if the actual sample \\( x[n] = 105 \\), the residual is: \\[ e[n] = 105 - 103 = 2 \\] so instead of storing 105 (needs ~8 bits), you store 2 (needs ~2 bits). that\'s the compression.',
-    'blog.lossless.lpcCoeffs':
-      'FLAC finds the coefficients with the Levinson–Durbin algorithm (least squares for time series). it tries multiple orders \\( p \\) (typically 8–12) and picks the best tradeoff. the decoder has the same coefficients and residuals and reconstructs: \\[ x[n] = \\hat{x}[n] + e[n] \\] exactly.',
+    'blog.lossless.lpcHowFindTitle': 'how does FLAC find the coefficients?',
+    'blog.lossless.lpcHowFindText':
+      'uses Levinson–Durbin algorithm — solves a system of equations called the Yule–Walker equations. basically finds the \\( a \\) values that minimize the average squared residual:',
+    'blog.lossless.lpcMinFormula':
+      '\\[ \\min_{a_1 \\ldots a_p} \\sum_n e[n]^2 = \\min \\sum_n \\left(x[n] - \\sum_{k=1}^p a_k x[n-k]\\right)^2 \\]',
+    'blog.lossless.lpcLeastSquares':
+      'this is just least squares regression but for time series. FLAC stores the winning coefficients in the subframe header so the decoder can reconstruct.',
+    'blog.lossless.lpcOrderTitle': 'order \\( p \\) — how many previous samples?',
+    'blog.lossless.lpcOrderText':
+      'higher order = better prediction = smaller residuals = better compression, but you have to store more coefficients. FLAC tries multiple orders and picks the best tradeoff. typically \\( p = 8 \\) to \\( p = 12 \\) for music. order 1 (just previous sample) works okay for slowly varying signals. order 8+ captures more complex wave patterns like harmonics.',
+    'blog.lossless.lpcKeyPointTitle': 'the key point:',
+    'blog.lossless.lpcKeyPointText':
+      'the decoder has the same coefficients and the residuals. it just runs \\[ x[n] = \\hat{x}[n] + e[n] \\] since nothing was ever approximated or thrown away — residuals stored exactly — you get back the original perfectly every time.',
 
     // What is n / residuals
     'blog.lossless.whatIsNTitle': 'what is n?',
     'blog.lossless.whatIsNText':
-      'n is just the index — the position of the current sample. x[n] is sample number n, x[n−1] is the previous, x[n−2] the one before that. the formula works for any n as you slide across the whole sequence.',
+      'n is just the index — the position of the current sample in the sequence. so if you have \\( x[0], x[1], x[2], x[3], x[4], \\ldots \\) and you\'re predicting sample number 50, then \\( n = 50 \\): \\( x[n] = x[50] \\), \\( x[n-1] = x[49] \\), \\( x[n-2] = x[48] \\). the formula works for any \\( n \\) — you slide it across the whole audio sequence, predicting each sample from the ones before it.',
 
     'blog.lossless.residualsTitle': 'why store the error?',
     'blog.lossless.residualsText':
-      'the residual e[n] is the predictor\'s mistake. if it guessed 103 and the real sample was 105, e[n]=2. we store the error because it\'s almost always a small number — small numbers need fewer bits. raw sample 105 could be anything in ±32768 (16 bits); residual 2 needs ~2–3 bits. audio is smooth so the predictor is usually close; the error is the small unpredictable part. and we never round e[n] — we store it exactly. that\'s what makes it lossless.',
+      'the residual \\( e[n] \\) is the predictor\'s mistake. if it guessed 103 and the real sample was 105, \\( e[n] = 2 \\). we store the error because it\'s almost always a small number — small numbers need fewer bits. raw sample 105 could be anything in \\( \\pm 32768 \\) (16 bits); residual 2 needs ~2–3 bits. audio is smooth so the predictor is usually close; the error is the small unpredictable part. we never round \\( e[n] \\) — we store it exactly. that\'s what makes it lossless.',
+    'blog.lossless.residualsBitsIntro':
+      'so instead of writing 16 bits for every sample, you write: the predictor coefficients once per frame (small, fixed cost), and 2–3 bits per residual instead of 16 bits per sample. across millions of samples that difference is massive.',
+    'blog.lossless.residualsDist':
+      'why are residuals almost always small? because audio is smooth — the predictor is pretty good, so the error is rarely large. the distribution looks like: \\( e = 0 \\) → very common; \\( e = \\pm 1, \\pm 2 \\) → common; \\( e = \\pm 100 \\) → rare. Rice coding exploits this: small numbers get short codes, large numbers get long codes. since large residuals are rare, the average bits per sample stays low.',
+    'blog.lossless.losslessGuarantee':
+      'the lossless guarantee: if you stored \\( e[n] = 5 \\) instead of \\( e[n] = 2 \\), you\'d get a different \\( x[n] \\) back. so FLAC stores the exact integer residual every time — no rounding.',
 
     'blog.lossless.reconstructTitle': 'how does the error give back the audio?',
     'blog.lossless.reconstructText':
-      'the decoder needs both: x[n] = x̂[n] + e[n]. it has the coefficients, runs the same predictor to get x̂[n], then adds the stored residual. prediction + error = original sample exactly. example: predictor 103, residual 2 → 103 + 2 = 105 ✓. the error alone is useless; together they reconstruct perfectly.',
+      'it doesn\'t — on its own the error is meaningless. the decoder needs both: \\( x[n] = \\hat{x}[n] + e[n] \\). it has the coefficients, runs the same predictor to get \\( \\hat{x}[n] \\), then adds the stored residual. prediction + error = original sample exactly. example: predictor 103, residual 2 → 103 + 2 = 105 ✓. think of it like directions: "start at the coffee shop (prediction) and walk 2 steps east (residual)." together they get you exactly there.',
 
     // Rice coding
     'blog.lossless.riceTitle': 'Rice coding',
     'blog.lossless.riceGoal': 'goal: small residuals are common, large ones rare. give small numbers short codes, large numbers long codes — like Morse code (E is one dot).',
+    'blog.lossless.riceParamK':
+      'the parameter \\( k \\): with \\( k = 2 \\) you split at the \\( 2^2 = 4 \\) boundary. quotient \\( q = \\lfloor |e|/4 \\rfloor \\) (how many 4s fit), remainder \\( r = |e| \\bmod 4 \\) (the leftover). store \\( q \\) in unary (\\( q \\) ones then a zero), then \\( r \\) in \\( k \\) bits.',
+    'blog.lossless.riceExampleE6':
+      'concrete example: \\( e = 6 \\), \\( k = 2 \\). then \\( q = \\lfloor 6/4 \\rfloor = 1 \\), \\( r = 6 \\bmod 4 = 2 \\). store \\( q \\) in unary: 1 one followed by a zero → 10. store \\( r \\) in binary with \\( k = 2 \\) bits → 10. full code: 10 10 = 4 bits. versus storing 6 in 16-bit audio = 8 bits. already saving bits.',
+    'blog.lossless.riceUnary':
+      'why unary for \\( q \\)? unary means \\( q \\) ones then a zero: \\( q = 0 \\) → 0 (1 bit); \\( q = 1 \\) → 10 (2 bits); \\( q = 2 \\) → 110 (3 bits). small \\( q \\) (small residual) = short code.',
+    'blog.lossless.riceTableIntro': 'e.g. \\( e = 0 \\) is the most common residual (predictor nailed it) → gets the shortest code, just 1 bit.',
+    'blog.lossless.riceTableE': 'e',
+    'blog.lossless.riceTableBinary': 'normal binary',
+    'blog.lossless.riceTableRice': 'Rice code (k=2)',
     'blog.lossless.riceK':
       'parameter \\( k \\): with \\( k=2 \\) you split by \\( 2^2=4 \\). quotient \\( q = \\lfloor |e|/4 \\rfloor \\) (how many 4s fit), remainder \\( r = |e| \\bmod 4 \\). store \\( q \\) in unary (\\( q \\) ones then a zero), then \\( r \\) in \\( k \\) bits. example: \\( e=6 \\), \\( k=2 \\) → \\( q=1 \\), \\( r=2 \\) → unary 10, binary 10 → 4 bits total. \\( e=0 \\) (very common) → code 0 (1 bit).',
-    'blog.lossless.riceChooseK': 'FLAC tries multiple k and stores the one that minimizes total size for that block.',
+    'blog.lossless.riceChooseK': 'FLAC tries multiple values of \\( k \\) and picks whichever gives the smallest total size for that block of residuals. it stores the chosen \\( k \\) in the subframe so the decoder knows how to decode.',
 
     // FLAC file structure
     'blog.lossless.flacStructureTitle': 'FLAC file structure',
@@ -1758,7 +1785,7 @@ const translations: Record<Language, Record<string, string>> = {
       '无损格式（FLAC、WAV）完整保留每个采样。像 zip 一样压缩：可完美重建，不丢弃任何数据。',
     'blog.lossless.visualizersTitle': '看看差别',
     'blog.lossless.visualizersIntro':
-      '下面：一段合成音频经过模拟的「有损」处理（低通 + 量化）。波形和频谱显示被去掉的内容。',
+      '下面：拖动滑块查看模拟的「有损」处理（低通 + 量化）如何削弱高频。',
 
     'blog.lossless.mp3Title': 'MP3 原理',
     'blog.lossless.mp3Step1': '第一步：分帧——将音频切成约 26 ms 的帧（每帧约 1152 个采样），每帧独立编码。',
@@ -1811,26 +1838,53 @@ const translations: Record<Language, Record<string, string>> = {
       '为何音频可预测？声波是平滑的。若最近四个采样是 100、105、110、115，下一个大概 ~120。预测器找到系数 \\( a_1, a_2, \\ldots, a_p \\)，使下一采样由下式最佳预测：\\[ \\hat{x}[n] = a_1 x[n-1] + a_2 x[n-2] + \\cdots + a_p x[n-p] \\]',
     'blog.lossless.lpcExample':
       '具体例子。设 \\( p=3 \\)，FLAC 求得系数：\\[ a_1 = 1.5,\\quad a_2 = -0.7,\\quad a_3 = 0.2 \\] 最近三采样 \\( x[n-1]=100 \\)，\\( x[n-2]=90 \\)，\\( x[n-3]=80 \\)。预测为：\\[ \\hat{x}[n] = 1.5(100) + (-0.7)(90) + 0.2(80) = 150 - 63 + 16 = 103 \\] 若实际采样 \\( x[n]=105 \\)，残差为：\\[ e[n] = 105 - 103 = 2 \\] 因此不存 105（约 8 比特）而存 2（约 2 比特），即压缩。',
-    'blog.lossless.lpcCoeffs':
-      'FLAC 用 Levinson–Durbin 算法（时间序列的最小二乘）求系数。会尝试多个阶数 \\( p \\)（通常 8–12）并选最优折中。解码器有相同系数和残差，按 \\[ x[n] = \\hat{x}[n] + e[n] \\] 精确重建。',
+    'blog.lossless.lpcHowFindTitle': 'FLAC 如何求系数？',
+    'blog.lossless.lpcHowFindText':
+      '用 Levinson–Durbin 算法——求解称为 Yule–Walker 方程的方程组。本质上是找使平均平方残差最小的 \\( a \\)：',
+    'blog.lossless.lpcMinFormula':
+      '\\[ \\min_{a_1 \\ldots a_p} \\sum_n e[n]^2 = \\min \\sum_n \\left(x[n] - \\sum_{k=1}^p a_k x[n-k]\\right)^2 \\]',
+    'blog.lossless.lpcLeastSquares':
+      '这就是时间序列上的最小二乘回归。FLAC 将求得的系数存在子帧头里，解码器即可重建。',
+    'blog.lossless.lpcOrderTitle': '阶数 \\( p \\)——用多少个前采样？',
+    'blog.lossless.lpcOrderText':
+      '阶数越高，预测越好、残差越小、压缩越好，但要多存系数。FLAC 会尝试多个阶数并选最优折中。音乐常用 \\( p=8 \\) 到 \\( p=12 \\)。1 阶（只用前一个采样）对缓变信号够用；8 阶以上能刻画谐波等更复杂的波形。',
+    'blog.lossless.lpcKeyPointTitle': '关键点：',
+    'blog.lossless.lpcKeyPointText':
+      '解码器有同样的系数和残差，只需计算 \\[ x[n] = \\hat{x}[n] + e[n] \\]。因为没有任何近似或丢弃——残差被精确存储——所以每次都能完美还原原始信号。',
 
     'blog.lossless.whatIsNTitle': 'n 是什么？',
     'blog.lossless.whatIsNText':
-      'n 就是下标——当前采样的位置。x[n] 是第 n 个采样，x[n−1] 是前一个，x[n−2] 再前一个。公式对任意 n 成立，沿整段序列滑动即可。',
+      'n 就是下标——当前采样在序列中的位置。例如 \\( x[0], x[1], x[2], x[3], x[4], \\ldots \\)，若你在预测第 50 个采样，则 \\( n=50 \\)：\\( x[n]=x[50] \\)，\\( x[n-1]=x[49] \\)，\\( x[n-2]=x[48] \\)。公式对任意 \\( n \\) 成立——沿整段音频滑动，用前面的采样预测当前采样。',
 
     'blog.lossless.residualsTitle': '为什么存误差？',
     'blog.lossless.residualsText':
-      '残差 e[n] 是预测器的误差。若猜 103 而真实是 105，则 e[n]=2。我们存误差是因为它几乎总是小数——小数用更少比特。原始采样 105 可能在 ±32768 任意值（16 比特）；残差 2 约 2–3 比特。音频平滑所以预测通常很准；误差是那一小部分不可预测的。且我们从不舍入 e[n]——精确存储。这就是无损。',
+      '残差 \\( e[n] \\) 是预测器的误差。若预测 103 而真实是 105，则 \\( e[n]=2 \\)。存误差是因为它几乎总是小数，小数用更少比特。原始采样 105 可能在 \\( \\pm 32768 \\)（16 比特）内任意；残差 2 约 2–3 比特。音频平滑，预测通常很准；误差是不可预测的那一小部分。我们从不舍入 \\( e[n] \\)，精确存储。这就是无损。',
+    'blog.lossless.residualsBitsIntro':
+      '所以不必每个采样都写 16 比特，而是：每帧存一次预测系数（固定小开销），以及每个残差 2–3 比特而非 16 比特。在数百万采样上，差异巨大。',
+    'blog.lossless.residualsDist':
+      '为什么残差几乎总是很小？因为音频平滑，预测器通常很准，误差很少很大。分布大致是：\\( e=0 \\) 很常见；\\( e=\\pm 1,\\pm 2 \\) 常见；\\( e=\\pm 100 \\) 少见。Rice 编码利用这一点：小数短码，大数长码。大残差少见，所以平均每采样比特数仍很低。',
+    'blog.lossless.losslessGuarantee':
+      '无损保证：若存 \\( e[n]=5 \\) 而不是 \\( e[n]=2 \\)，解码得到的 \\( x[n] \\) 会不同。所以 FLAC 每次都存精确的整数残差——不舍入。',
 
     'blog.lossless.reconstructTitle': '误差如何还原音频？',
     'blog.lossless.reconstructText':
-      '解码器需要两项：x[n] = x̂[n] + e[n]。它有系数，运行同一预测器得到 x̂[n]，再加上存好的残差。预测 + 误差 = 原始采样。例：预测 103，残差 2 → 103 + 2 = 105 ✓。单有误差没用；两者一起才能完美重建。',
+      '单靠误差不行——它本身没有意义。解码器需要两项：\\( x[n] = \\hat{x}[n] + e[n] \\)。它有系数，用同一预测器得到 \\( \\hat{x}[n] \\)，再加上存好的残差。预测 + 误差 = 原始采样。例：预测 103，残差 2 → 103 + 2 = 105 ✓。好比指路：「从咖啡馆（预测）向东走 2 步（残差）。」两者一起才能精确到达。',
 
     'blog.lossless.riceTitle': 'Rice 编码',
     'blog.lossless.riceGoal': '目标：小残差常见，大残差少见。小数给短码，大数给长码——类似莫尔斯码（E 一个点）。',
+    'blog.lossless.riceParamK':
+      '参数 \\( k \\)：\\( k=2 \\) 时按 \\( 2^2=4 \\) 为界。商 \\( q = \\lfloor |e|/4 \\rfloor \\)（能放几个 4），余数 \\( r = |e| \\bmod 4 \\)（余下部分）。\\( q \\) 用一元码（\\( q \\) 个 1 再一个 0），\\( r \\) 用 \\( k \\) 比特。',
+    'blog.lossless.riceExampleE6':
+      '具体例：\\( e=6 \\)，\\( k=2 \\)。则 \\( q = \\lfloor 6/4 \\rfloor = 1 \\)，\\( r = 6 \\bmod 4 = 2 \\)。\\( q \\) 一元：1 个 1 加一个 0 → 10。\\( r \\) 用 \\( k=2 \\) 比特二进制 → 10。完整码：10 10 = 4 比特。若用 16 比特存 6 则要 8 比特。已经省了。',
+    'blog.lossless.riceUnary':
+      '为什么 \\( q \\) 用一元？一元即 \\( q \\) 个 1 再一个 0：\\( q=0 \\) → 0（1 比特）；\\( q=1 \\) → 10（2 比特）；\\( q=2 \\) → 110（3 比特）。小 \\( q \\)（小残差）= 短码。',
+    'blog.lossless.riceTableIntro': '例如 \\( e=0 \\) 是最常见的残差（预测完全正确）→ 得到最短码，仅 1 比特。',
+    'blog.lossless.riceTableE': 'e',
+    'blog.lossless.riceTableBinary': '普通二进制',
+    'blog.lossless.riceTableRice': 'Rice 码 (k=2)',
     'blog.lossless.riceK':
       '参数 \\( k \\)：\\( k=2 \\) 时按 \\( 2^2=4 \\) 分割。商 \\( q = \\lfloor |e|/4 \\rfloor \\)（能放几个 4），余数 \\( r = |e| \\bmod 4 \\)。\\( q \\) 用一元码（\\( q \\) 个 1 再一个 0），\\( r \\) 用 \\( k \\) 比特。例：\\( e=6 \\)，\\( k=2 \\) → \\( q=1 \\)，\\( r=2 \\) → 一元 10，二进制 10 → 共 4 比特。\\( e=0 \\)（极常见）→ 码 0（1 比特）。',
-    'blog.lossless.riceChooseK': 'FLAC 尝试多个 k，并存储使该块总长最小的那个。',
+    'blog.lossless.riceChooseK': 'FLAC 尝试多个 \\( k \\)，选使该块残差总长最小的那个，并将所选 \\( k \\) 存在子帧中，解码器据此解码。',
 
     'blog.lossless.flacStructureTitle': 'FLAC 文件结构',
     'blog.lossless.flacStructureText':

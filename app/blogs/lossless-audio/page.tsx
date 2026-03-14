@@ -8,8 +8,6 @@ import ImageLightbox from '@/components/ImageLightbox';
 import MathText from '@/components/MathText';
 import TableOfContents, { TOCSection } from '@/components/TableOfContents';
 import QualitySlider from './components/QualitySlider';
-import SpectrumComparison from './components/SpectrumComparison';
-import WaveformComparison from './components/WaveformComparison';
 
 export default function LosslessBlog() {
   const { language, t } = useLanguage();
@@ -99,8 +97,6 @@ export default function LosslessBlog() {
                   {t('blog.lossless.visualizersTitle')}
                 </h3>
                 <p className="mb-4">{t('blog.lossless.visualizersIntro')}</p>
-                <WaveformComparison />
-                <SpectrumComparison />
                 <QualitySlider />
               </section>
 
@@ -172,21 +168,118 @@ export default function LosslessBlog() {
                 <p className="mb-6">
                   <MathText text={t('blog.lossless.lpcExample')} />
                 </p>
+
+                <h3 className="text-lg font-medium text-white mb-2 mt-8">
+                  {t('blog.lossless.lpcHowFindTitle')}
+                </h3>
+                <p className="mb-4">{t('blog.lossless.lpcHowFindText')}</p>
+                <p className="mb-6">
+                  <MathText text={t('blog.lossless.lpcMinFormula')} />
+                </p>
+                <p className="mb-6">{t('blog.lossless.lpcLeastSquares')}</p>
+
+                <h3 className="text-lg font-medium text-white mb-2 mt-6">
+                  <MathText text={t('blog.lossless.lpcOrderTitle')} />
+                </h3>
+                <p className="mb-6">
+                  <MathText text={t('blog.lossless.lpcOrderText')} />
+                </p>
+
+                <h3 className="text-lg font-medium text-white mb-2">
+                  {t('blog.lossless.lpcKeyPointTitle')}
+                </h3>
+                <p className="mb-8">
+                  <MathText text={t('blog.lossless.lpcKeyPointText')} />
+                </p>
+
+                <h3 className="text-lg font-medium text-white mb-2">
+                  {t('blog.lossless.whatIsNTitle')}
+                </h3>
+                <p className="mb-6">
+                  <MathText text={t('blog.lossless.whatIsNText')} />
+                </p>
+
+                <h3 className="text-lg font-medium text-white mb-2">
+                  {t('blog.lossless.residualsTitle')}
+                </h3>
+                <p className="mb-4">
+                  <MathText text={t('blog.lossless.residualsText')} />
+                </p>
+                <p className="mb-4">{t('blog.lossless.residualsBitsIntro')}</p>
+                <p className="mb-4">
+                  <MathText text={t('blog.lossless.residualsDist')} />
+                </p>
+                <p className="mb-6">
+                  <MathText text={t('blog.lossless.losslessGuarantee')} />
+                </p>
+
+                <h3 className="text-lg font-medium text-white mb-2">
+                  {t('blog.lossless.reconstructTitle')}
+                </h3>
                 <p className="mb-0">
-                  <MathText text={t('blog.lossless.lpcCoeffs')} />
+                  <MathText text={t('blog.lossless.reconstructText')} />
                 </p>
               </section>
 
               <section>
                 <h2
                   id="rice-coding"
-                  className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
+                  className="text-xl md:text-2xl font-semibold text-white mb-6 mt-8 scroll-mt-8"
                 >
                   {t('blog.lossless.riceTitle')}
                 </h2>
                 <p className="mb-6">{t('blog.lossless.riceGoal')}</p>
+                <p className="mb-6">
+                  <MathText text={t('blog.lossless.riceParamK')} />
+                </p>
+                <p className="mb-6">
+                  <MathText text={t('blog.lossless.riceExampleE6')} />
+                </p>
+                <p className="mb-6">
+                  <MathText text={t('blog.lossless.riceUnary')} />
+                </p>
+                <p className="mb-4">{t('blog.lossless.riceTableIntro')}</p>
+                <div className="mb-6 overflow-x-auto">
+                  <table className="w-full min-w-[200px] border-collapse text-left text-xs">
+                    <thead>
+                      <tr className="border-b border-stone-600">
+                        <th className="py-2 pr-3 font-medium text-stone-400">
+                          {t('blog.lossless.riceTableE')}
+                        </th>
+                        <th className="py-2 pr-3 font-medium text-stone-400">
+                          {t('blog.lossless.riceTableBinary')}
+                        </th>
+                        <th className="py-2 font-medium text-stone-400">
+                          {t('blog.lossless.riceTableRice')}
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody className="text-stone-300">
+                      <tr className="border-b border-stone-700">
+                        <td className="py-2 pr-3">0</td>
+                        <td className="py-2 pr-3">0000</td>
+                        <td className="py-2">0 (1 bit)</td>
+                      </tr>
+                      <tr className="border-b border-stone-700">
+                        <td className="py-2 pr-3">1</td>
+                        <td className="py-2 pr-3">0001</td>
+                        <td className="py-2">010 (3 bits)</td>
+                      </tr>
+                      <tr className="border-b border-stone-700">
+                        <td className="py-2 pr-3">2</td>
+                        <td className="py-2 pr-3">0010</td>
+                        <td className="py-2">011 (3 bits)</td>
+                      </tr>
+                      <tr className="border-b border-stone-700">
+                        <td className="py-2 pr-3">4</td>
+                        <td className="py-2 pr-3">0100</td>
+                        <td className="py-2">10100 (5 bits)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
                 <p className="mb-0">
-                  <MathText text={t('blog.lossless.riceK')} />
+                  <MathText text={t('blog.lossless.riceChooseK')} />
                 </p>
               </section>
 
