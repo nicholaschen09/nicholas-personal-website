@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import {
   generateSyntheticSignal,
   dftMagnitude,
@@ -8,7 +8,8 @@ import {
 } from './audioVizUtils';
 
 const LENGTH = 512;
-const CHART_HEIGHT = 72;
+const CHART_HEIGHT = 44;
+const ANIMATION_DURATION_MS = 2500;
 const MAX_BARS = 100;
 
 function applyLossyWithStrength(signal: Float32Array, strength: number): Float32Array {
@@ -38,6 +39,46 @@ function applyLossyWithStrength(signal: Float32Array, strength: number): Float32
 
 export default function QualitySlider() {
   const [strength, setStrength] = useState(0.4);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const animRef = useRef<number | null>(null);
+  const startStrengthRef = useRef(0.4);
+  const startTimeRef = useRef(0);
+
+  const play = () => {
+    if (strength >= 1) {
+      setStrength(0);
+      startStrengthRef.current = 0;
+    } else {
+      startStrengthRef.current = strength;
+    }
+    startTimeRef.current = performance.now();
+    setIsPlaying(true);
+
+    const tick = () => {
+      const elapsed = performance.now() - startTimeRef.current;
+      const t = Math.min(elapsed / ANIMATION_DURATION_MS, 1);
+      const eased = t * t * (3 - 2 * t);
+      const newStrength = startStrengthRef.current + eased * (1 - startStrengthRef.current);
+      setStrength(newStrength);
+      if (t < 1) {
+        animRef.current = requestAnimationFrame(tick);
+      } else {
+        startStrengthRef.current = 0;
+        startTimeRef.current = performance.now();
+        setStrength(0);
+        animRef.current = requestAnimationFrame(tick);
+      }
+    };
+    animRef.current = requestAnimationFrame(tick);
+  };
+
+  const pause = () => {
+    if (animRef.current !== null) {
+      cancelAnimationFrame(animRef.current);
+      animRef.current = null;
+    }
+    setIsPlaying(false);
+  };
 
   const { magOriginal, magLossy, maxMag } = useMemo(() => {
     const orig = generateSyntheticSignal(LENGTH);
@@ -71,8 +112,25 @@ export default function QualitySlider() {
 
   return (
     <figure className="my-6 rounded-lg border border-stone-700 bg-stone-900/50 p-4">
-      <div className="mb-3 flex items-center justify-between gap-2">
-        <span className="text-[10px] text-stone-500">Less lossy</span>
+      <div className="mb-3 flex items-center gap-3">
+        <button
+          type="button"
+          onClick={isPlaying ? pause : play}
+          className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-stone-700 text-stone-200 transition-colors hover:bg-stone-600 hover:text-white"
+          aria-label={isPlaying ? 'Pause' : 'Play'}
+        >
+          {isPlaying ? (
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+              <rect x="2" y="0" width="3" height="12" />
+              <rect x="7" y="0" width="3" height="12" />
+            </svg>
+          ) : (
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+              <path d="M2 0v12l10-6-10-6z" />
+            </svg>
+          )}
+        </button>
+        <span className="text-[10px] shrink-0 text-stone-500">Less lossy</span>
         <input
           type="range"
           min={0}
@@ -80,10 +138,10 @@ export default function QualitySlider() {
           step={0.05}
           value={strength}
           onChange={(e) => setStrength(Number(e.target.value))}
-          className="h-2 w-40 flex-1 max-w-[200px] accent-lime-500"
+          className="lossless-audio-slider h-1 w-40 flex-1 max-w-[200px] accent-lime-500"
           aria-label="Lossy strength"
         />
-        <span className="text-[10px] text-stone-500">More lossy</span>
+        <span className="text-[10px] shrink-0 text-stone-500">More lossy</span>
       </div>
       <svg
         viewBox={`0 0 ${chartW} ${CHART_HEIGHT * 2 + 32}`}
@@ -124,16 +182,13 @@ export default function QualitySlider() {
         </g>
         <text
           x={chartW}
-          y={CHART_HEIGHT * 2 + 48}
+          y={CHART_HEIGHT * 2 + 26}
           textAnchor="end"
           className="fill-stone-600 text-[9px]"
         >
           0 – {Math.round(cutoffHz / 100) / 10} kHz
         </text>
       </svg>
-      <figcaption className="mt-2 text-center text-[11px] text-stone-500">
-        Drag the slider: more “lossy” → stronger low-pass and quantization → high frequencies drop
-      </figcaption>
     </figure>
   );
 }
