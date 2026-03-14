@@ -192,7 +192,6 @@ export default function LosslessBlog() {
                 <p className="mb-6">
                   <MathText text={t('blog.lossless.lpcExample')} />
                 </p>
-                <hr className="border-stone-700 my-8" />
                 <p className="mb-0">
                   <MathText text={t('blog.lossless.lpcCoeffs')} />
                 </p>
