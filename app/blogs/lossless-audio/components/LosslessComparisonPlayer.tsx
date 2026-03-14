@@ -206,7 +206,7 @@ export default function LosslessComparisonPlayer() {
     return () => {
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
-  }, [activeFormat]);
+  }, [activeFormat, playing]);
 
   useEffect(() => {
     return () => {
