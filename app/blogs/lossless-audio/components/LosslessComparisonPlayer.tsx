@@ -91,6 +91,17 @@ export default function LosslessComparisonPlayer() {
     setPlaying(null);
   }, []);
 
+  const selectFormat = useCallback((format: Format) => {
+    if (playing && playing !== format) stop();
+    const other = format === 'mp3' ? flacRef.current : mp3Ref.current;
+    const audio = format === 'mp3' ? mp3Ref.current : flacRef.current;
+    if (audio && other && Number.isFinite(other.currentTime)) {
+      audio.currentTime = other.currentTime;
+      setCurrentTime(other.currentTime);
+    }
+    setActiveFormat(format);
+  }, [playing, stop]);
+
   const togglePlayPause = useCallback(() => {
     if (!activeFormat) return;
     const audio = activeFormat === 'mp3' ? mp3Ref.current : flacRef.current;
@@ -203,6 +214,7 @@ export default function LosslessComparisonPlayer() {
   }, []);
 
   return (
+    <>
     <figure className="my-6 rounded-lg border border-stone-700 bg-stone-900/50 p-4">
       <audio ref={mp3Ref} src={MP3_SRC} preload="metadata" />
       <audio ref={flacRef} src={FLAC_SRC} preload="metadata" />
@@ -210,25 +222,29 @@ export default function LosslessComparisonPlayer() {
       <div className="mb-3 flex flex-wrap items-center gap-2">
         <button
           type="button"
-          onClick={() => (playing === 'mp3' ? stop() : connectAndPlay('mp3'))}
+          onClick={() => selectFormat('mp3')}
           className={`rounded-md px-3 py-1.5 text-xs font-medium transition-colors ${
-            playing === 'mp3'
-              ? 'bg-amber-600 text-white'
+            activeFormat === 'mp3'
+              ? playing
+                ? 'bg-amber-600 text-white'
+                : 'bg-stone-600 text-stone-200'
               : 'bg-stone-700 text-stone-300 hover:bg-stone-600'
           }`}
         >
-          {playing === 'mp3' ? 'Stop' : 'MP3'}
+          MP3
         </button>
         <button
           type="button"
-          onClick={() => (playing === 'flac' ? stop() : connectAndPlay('flac'))}
+          onClick={() => selectFormat('flac')}
           className={`rounded-md px-3 py-1.5 text-xs font-medium transition-colors ${
-            playing === 'flac'
-              ? 'bg-lime-600 text-white'
+            activeFormat === 'flac'
+              ? playing
+                ? 'bg-lime-600 text-white'
+                : 'bg-stone-600 text-stone-200'
               : 'bg-stone-700 text-stone-300 hover:bg-stone-600'
           }`}
         >
-          {playing === 'flac' ? 'Stop' : 'FLAC'}
+          FLAC
         </button>
         {activeFormat && (
           <span className="text-[10px] text-stone-500">
@@ -293,5 +309,9 @@ export default function LosslessComparisonPlayer() {
         </span>
       </div>
     </figure>
+    <p className="mt-2 text-sm italic text-stone-400">
+      Note: It’s really hard to tell the difference for most people.
+    </p>
+    </>
   );
 }
