@@ -8,6 +8,7 @@ import ImageLightbox from '@/components/ImageLightbox';
 import MathText from '@/components/MathText';
 import TableOfContents, { TOCSection } from '@/components/TableOfContents';
 import QualitySlider from './components/QualitySlider';
+import LosslessComparisonPlayer from './components/LosslessComparisonPlayer';
 
 export default function LosslessBlog() {
   const { language, t } = useLanguage();
@@ -87,33 +88,11 @@ export default function LosslessBlog() {
                 <p className="mb-4">{t('blog.lossless.lossyIntro')}</p>
                 <p className="mb-6">{t('blog.lossless.losslessIntro')}</p>
 
-                <div id="visualizers" className="mt-8 scroll-mt-8">
+                <div id="visualizers" className="mt-8 scroll-mt-8 space-y-8">
                   <QualitySlider />
+                  <LosslessComparisonPlayer />
                 </div>
-              </section>
 
-              <section>
-                <h2
-                  id="mp3-under-the-hood"
-                  className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
-                >
-                  {t('blog.lossless.mp3Title')}
-                </h2>
-                <p>{t('blog.lossless.mp3Short')}</p>
-              </section>
-
-              <section>
-                <h2
-                  id="why-it-matters"
-                  className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
-                >
-                  {t('blog.lossless.whyItMattersTitle')}
-                </h2>
-                <p className="mb-4">{t('blog.lossless.whyItMattersText')}</p>
-                <p>{t('blog.lossless.whyMattersHonest')}</p>
-              </section>
-
-              <section>
                 <h2
                   id="common-formats"
                   className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
@@ -142,6 +121,27 @@ export default function LosslessBlog() {
                     <p>{t('blog.lossless.wavText')}</p>
                   </div>
                 </div>
+              </section>
+
+              <section>
+                <h2
+                  id="mp3-under-the-hood"
+                  className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
+                >
+                  {t('blog.lossless.mp3Title')}
+                </h2>
+                <p>{t('blog.lossless.mp3Short')}</p>
+              </section>
+
+              <section>
+                <h2
+                  id="why-it-matters"
+                  className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
+                >
+                  {t('blog.lossless.whyItMattersTitle')}
+                </h2>
+                <p className="mb-4">{t('blog.lossless.whyItMattersText')}</p>
+                <p>{t('blog.lossless.whyMattersHonest')}</p>
               </section>
 
               <section>
