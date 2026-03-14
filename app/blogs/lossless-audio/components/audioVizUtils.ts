@@ -7,9 +7,11 @@ export function generateSyntheticSignal(length: number): Float32Array {
   for (let n = 0; n < length; n++) {
     const t = n / SAMPLE_RATE;
     signal[n] =
-      0.6 * Math.sin(2 * Math.PI * fundFreq * t) +
-      0.35 * Math.sin(2 * Math.PI * fundFreq * 3 * t) +
-      0.2 * Math.sin(2 * Math.PI * fundFreq * 5 * t);
+      0.5 * Math.sin(2 * Math.PI * fundFreq * t) +
+      0.3 * Math.sin(2 * Math.PI * fundFreq * 3 * t) +
+      0.2 * Math.sin(2 * Math.PI * fundFreq * 5 * t) +
+      0.15 * Math.sin(2 * Math.PI * fundFreq * 7 * t) +
+      0.08 * Math.sin(2 * Math.PI * fundFreq * 9 * t);
     if (n < length * 0.1) {
       signal[n] *= n / (length * 0.1);
     }

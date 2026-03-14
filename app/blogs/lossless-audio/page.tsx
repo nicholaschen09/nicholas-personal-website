@@ -20,6 +20,7 @@ export default function LosslessBlog() {
       { id: 'mp3-under-the-hood', title: t('blog.lossless.mp3Title') },
       { id: 'why-it-matters', title: t('blog.lossless.whyItMattersTitle') },
       { id: 'common-formats', title: t('blog.lossless.formatsTitle') },
+      { id: 'how-lossless-compressed', title: t('blog.lossless.howCompressedTitle') },
       { id: 'linear-prediction-depth', title: t('blog.lossless.lpcDepthTitle') },
       { id: 'rice-coding', title: t('blog.lossless.riceTitle') },
     ],
@@ -153,11 +154,19 @@ export default function LosslessBlog() {
 
               <section>
                 <h2
+                  id="how-lossless-compressed"
+                  className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
+                >
+                  {t('blog.lossless.howCompressedTitle')}
+                </h2>
+                <p className="mb-6">{t('blog.lossless.howCompressedIntro')}</p>
+
+                <h3
                   id="linear-prediction-depth"
-                  className="text-xl md:text-2xl font-semibold text-white mb-6 mt-8 scroll-mt-8"
+                  className="text-lg font-medium text-white mb-4 mt-6 scroll-mt-8"
                 >
                   {t('blog.lossless.lpcDepthTitle')}
-                </h2>
+                </h3>
                 <p className="mb-6">
                   <MathText text={t('blog.lossless.lpcSamples')} />
                 </p>

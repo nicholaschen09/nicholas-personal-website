@@ -13,8 +13,8 @@ const ANIMATION_DURATION_MS = 2500;
 const MAX_BARS = 100;
 
 function applyLossyWithStrength(signal: Float32Array, strength: number): Float32Array {
-  const kernelSize = Math.max(2, Math.round(2 + strength * 14));
-  const levels = Math.max(4, Math.round(64 - strength * 60));
+  const kernelSize = Math.max(2, Math.round(2 + strength * 22));
+  const levels = Math.max(4, Math.round(48 - strength * 42));
   const out = new Float32Array(signal.length);
   const half = Math.floor(kernelSize / 2);
   for (let i = 0; i < signal.length; i++) {
@@ -38,10 +38,10 @@ function applyLossyWithStrength(signal: Float32Array, strength: number): Float32
 }
 
 export default function QualitySlider() {
-  const [strength, setStrength] = useState(0.4);
+  const [strength, setStrength] = useState(0.55);
   const [isPlaying, setIsPlaying] = useState(false);
   const animRef = useRef<number | null>(null);
-  const startStrengthRef = useRef(0.4);
+  const startStrengthRef = useRef(0.55);
   const startTimeRef = useRef(0);
 
   const play = () => {
@@ -138,7 +138,7 @@ export default function QualitySlider() {
           step={0.05}
           value={strength}
           onChange={(e) => setStrength(Number(e.target.value))}
-          className="lossless-audio-slider h-1 w-40 flex-1 max-w-[200px] accent-lime-500"
+          className="lossless-audio-slider h-1 min-w-0 flex-1 max-w-[260px] accent-lime-500"
           aria-label="Lossy strength"
         />
         <span className="text-[10px] shrink-0 text-stone-500">More lossy</span>
@@ -180,6 +180,13 @@ export default function QualitySlider() {
             />
           ))}
         </g>
+        <text
+          x={0}
+          y={CHART_HEIGHT * 2 + 26}
+          className="fill-stone-500 text-[9px]"
+        >
+          Frequency
+        </text>
         <text
           x={chartW}
           y={CHART_HEIGHT * 2 + 26}

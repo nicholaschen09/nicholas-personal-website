@@ -902,6 +902,11 @@ const translations: Record<Language, Record<string, string>> = {
       'Step 3: Rice coding — encode residuals with Rice codes. for parameter k: quotient q = ⌊|e|/2ᵏ⌋ (stored in unary: q ones then zero), remainder r = |e| mod 2ᵏ (in k bits). small e → short codes.',
     'blog.lossless.mathStep4': 'Step 4: Reconstruct — decoder runs the same predictor and adds residuals: x[n] = x̂[n] + e[n]. since e[n] was stored exactly (no rounding), this is bit-perfect. no quality is lost because every residual is kept.',
 
+    // How lossless audio is compressed
+    'blog.lossless.howCompressedTitle': 'how lossless audio is compressed',
+    'blog.lossless.howCompressedIntro':
+      'FLAC and similar codecs use linear prediction plus entropy coding to shrink the file without losing a single sample. below is how it works.',
+
     // Linear prediction in depth
     'blog.lossless.lpcDepthTitle': 'linear prediction in depth',
     'blog.lossless.lpcSamples':
@@ -1830,6 +1835,10 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.lossless.mathStep3':
       '第三步：Rice 编码——用 Rice 码编码残差。参数 k：商 q = ⌊|e|/2ᵏ⌋（用一元码：q 个 1 再一个 0），余数 r = |e| mod 2ᵏ（k 比特）。小的 e → 短码。',
     'blog.lossless.mathStep4': '第四步：重建——解码器用同一预测器并加回残差：x[n] = x̂[n] + e[n]。因为 e[n] 被精确存储（无舍入），所以是比特级完美。保留每个残差，故无质量损失。',
+
+    'blog.lossless.howCompressedTitle': '无损音频如何被压缩',
+    'blog.lossless.howCompressedIntro':
+      'FLAC 等编码用线性预测和熵编码缩小文件，同时不丢失任何采样。下面说明其原理。',
 
     'blog.lossless.lpcDepthTitle': '线性预测详解',
     'blog.lossless.lpcSamples':
