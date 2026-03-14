@@ -825,28 +825,37 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.grpc.referencesTitle': 'references',
     'blog.lossless.title': 'how lossless compression preserves audio quality',
     'blog.lossless.date': 'nicholas chen · march 14, 2026 · 6 min read',
-    'blog.lossless.intro': "in an era of streaming and convenience, audio quality is often overlooked. however, for those who care about the nuances of sound, lossless audio is the gold standard. in this post, i will explore what it is and why it matters.",
+    'blog.lossless.intro':
+      'in an era of streaming and convenience, audio quality is often overlooked. however, for those who care about the nuances of sound, lossless audio is the gold standard. in this post, i will explore what it is and why it matters.',
     'blog.lossless.whatIsTitle': 'what is lossless audio?',
-    'blog.lossless.whatIsText': 'lossless audio compression reduces the file size of an audio track without losing any data. unlike lossy formats like MP3 or AAC, which discard information to save space, lossless formats like FLAC or ALAC preserve every single bit of the original recording.',
+    'blog.lossless.whatIsText':
+      'lossless audio compression reduces the file size of an audio track without losing any data. unlike lossy formats like MP3 or AAC, which discard information to save space, lossless formats like FLAC or ALAC preserve every single bit of the original recording.',
     'blog.lossless.howItWorksTitle': 'how it works',
-    'blog.lossless.howItWorksText': 'lossless compression works similarly to a ZIP file. it uses mathematical algorithms to store the audio data more efficiently. when you play back a lossless file, the player "unpacks" it in real-time to perfectly reconstruct the original audio signal.',
+    'blog.lossless.howItWorksText':
+      'lossless compression works similarly to a ZIP file. it uses mathematical algorithms to store the audio data more efficiently. when you play back a lossless file, the player "unpacks" it in real-time to perfectly reconstruct the original audio signal.',
     'blog.lossless.formatsTitle': 'common lossless formats',
-    'blog.lossless.formatsText': 'there are several lossless formats available today, each with its own advantages. WAV and AIFF are uncompressed formats, while FLAC and ALAC are compressed but still lossless.',
+    'blog.lossless.formatsText':
+      'there are several lossless formats available today, each with its own advantages. WAV and AIFF are uncompressed formats, while FLAC and ALAC are compressed but still lossless.',
     'blog.lossless.flacTitle': 'FLAC (free lossless audio codec)',
-    'blog.lossless.flacText': 'FLAC is the most popular lossless format. it is open-source, widely supported, and offers excellent compression ratios. it also supports metadata (tags) and album art.',
+    'blog.lossless.flacText':
+      'FLAC is the most popular lossless format. it is open-source, widely supported, and offers excellent compression ratios. it also supports metadata (tags) and album art.',
     'blog.lossless.alacTitle': 'ALAC (apple lossless audio codec)',
-    'blog.lossless.alacText': "ALAC is apple's proprietary lossless format. it is similar to FLAC but designed for use within the apple ecosystem, including itunes and apple music.",
+    'blog.lossless.alacText':
+      "ALAC is apple's proprietary lossless format. it is similar to FLAC but designed for use within the apple ecosystem, including itunes and apple music.",
     'blog.lossless.wavTitle': 'WAV and AIFF',
-    'blog.lossless.wavText': 'these are uncompressed formats that store raw PCM audio. they are the highest quality but have the largest file sizes and limited metadata support compared to FLAC or ALAC.',
+    'blog.lossless.wavText':
+      'these are uncompressed formats that store raw PCM audio. they are the highest quality but have the largest file sizes and limited metadata support compared to FLAC or ALAC.',
     'blog.lossless.whyItMattersTitle': 'why does it matter?',
-    'blog.lossless.whyItMattersText': "the primary benefit is sound quality. lossless audio provides more detail, better dynamic range, and a wider soundstage. it's also essential for archiving and professional audio work. if you ever need to convert your music to another format, starting from a lossless source ensures the best possible results.",
+    'blog.lossless.whyItMattersText':
+      "the primary benefit is sound quality. lossless audio provides more detail, better dynamic range, and a wider soundstage. it's also essential for archiving and professional audio work. if you ever need to convert your music to another format, starting from a lossless source ensures the best possible results.",
     'blog.lossless.conclusionTitle': 'conclusion',
-    'blog.lossless.conclusionText': "while lossy formats are fine for casual listening on the go, lossless audio is the way to go for the best possible listening experience. with storage and bandwidth becoming cheaper, there's less reason than ever to settle for lower quality.",
+    'blog.lossless.conclusionText':
+      "while lossy formats are fine for casual listening on the go, lossless audio is the way to go for the best possible listening experience. with storage and bandwidth becoming cheaper, there's less reason than ever to settle for lower quality.",
 
     // Lossless vs lossy
     'blog.lossless.losslessVsLossyTitle': 'lossless vs lossy',
     'blog.lossless.lossyIntro':
-      'lossy formats like MP3 use psychoacoustics — they throw away information humans can\'t easily hear: sounds masked by louder nearby frequencies, very high frequencies (above ~16 kHz for most adults), and quiet sounds during loud moments (temporal masking).',
+      "lossy formats like MP3 use psychoacoustics — they throw away information humans can't easily hear: sounds masked by louder nearby frequencies, very high frequencies (above ~16 kHz for most adults), and quiet sounds during loud moments (temporal masking).",
     'blog.lossless.losslessIntro':
       'lossless formats (FLAC, WAV) keep every sample exactly. they compress like a zip file: perfectly reconstructable, nothing discarded.',
     'blog.lossless.visualizersTitle': 'Visualizers',
@@ -855,30 +864,33 @@ const translations: Record<Language, Record<string, string>> = {
 
     // MP3 under the hood
     'blog.lossless.mp3Title': 'MP3 under the hood',
-    'blog.lossless.mp3Step1': 'Step 1: Split into frames — chunk the audio into ~26 ms frames (~1152 samples each). each frame is encoded independently.',
+    'blog.lossless.mp3Step1':
+      'Step 1: Split into frames — chunk the audio into ~26 ms frames (~1152 samples each). each frame is encoded independently.',
     'blog.lossless.mp3Step2':
       'Step 2: Two parallel transforms — MDCT (Modified Discrete Cosine Transform) splits the frame into 576 frequency subbands (like DCT in JPEG but overlapping to avoid blocking). a polyphase filterbank gives 32 subbands for the psychoacoustic model.',
     'blog.lossless.mp3Step3':
-      'Step 3: Psychoacoustic model — computes a masking threshold per frequency band: what\'s the minimum volume a sound needs to be audible? simultaneous masking (loud 1 kHz masks nearby 1.1 kHz), temporal masking (loud sound masks quieter sounds ~50 ms before and ~200 ms after), and the absolute threshold of hearing (~4 kHz most sensitive).',
+      "Step 3: Psychoacoustic model — computes a masking threshold per frequency band: what's the minimum volume a sound needs to be audible? simultaneous masking (loud 1 kHz masks nearby 1.1 kHz), temporal masking (loud sound masks quieter sounds ~50 ms before and ~200 ms after), and the absolute threshold of hearing (~4 kHz most sensitive).",
     'blog.lossless.mp3Step4':
       'Step 4: Bit allocation — given a target bitrate, bands below the masking threshold get zero bits (thrown away). bands above get bits proportional to how audible they are. then quantization (round to fewer levels) and Huffman coding.',
     'blog.lossless.mp3Step5':
       'Step 5: The key insight — you\'re compressing perceptual error. the goal is that the difference between original and decoded is always below the masking threshold, so it\'s inaudible by construction. at 128 kbps it mostly works; at 64 kbps you get artifacts (pre-ringing, "birdie" tones, swirly highs).',
     'blog.lossless.mp3Short':
-      'MP3 splits audio into short frames, uses MDCT and a psychoacoustic model to compute a masking threshold per band, then allocates bits only where the signal is audible. you\'re compressing perceptual error — the removed data is designed to be inaudible. at 128 kbps it mostly works; at 64 kbps artifacts appear.',
+      "MP3 splits audio into short frames, uses MDCT and a psychoacoustic model to compute a masking threshold per band, then allocates bits only where the signal is audible. you're compressing perceptual error — the removed data is designed to be inaudible. at 128 kbps it mostly works; at 64 kbps artifacts appear.",
 
     // Why lossless actually matters
     'blog.lossless.whyMattersExtended':
       'lossless isn\'t "better" in the psychoacoustic sense — it\'s a different goal. MP3\'s promise is that the removed data is inaudible by construction. so "better" depends on what you believe.',
     'blog.lossless.whyMattersReasons':
-      'reasons lossless actually matters: the model isn\'t perfect (masking thresholds are averages; trained ears or good headphones in quiet rooms can sometimes hear artifacts). transcoding — re-encoding MP3→MP3 stacks errors each generation; lossless is the only safe archival format. future-proofing — you can always encode lossless→lossy later; you can\'t go back. dynamic range — MP3 at low bitrates can crush transients (drum hits, plucks) because the psychoacoustic model smears energy around them.',
+      "reasons lossless actually matters: the model isn't perfect (masking thresholds are averages; trained ears or good headphones in quiet rooms can sometimes hear artifacts). transcoding — re-encoding MP3→MP3 stacks errors each generation; lossless is the only safe archival format. future-proofing — you can always encode lossless→lossy later; you can't go back. dynamic range — MP3 at low bitrates can crush transients (drum hits, plucks) because the psychoacoustic model smears energy around them.",
     'blog.lossless.whyMattersHonest':
       'honest answer: for casual listening on spotify through airpods, you generally cannot hear the difference. studies show ABX tests at 320 kbps are basically coin flips for most people. the meaningful difference is archival and editing, not perceptual quality on a good encode.',
 
     // FLAC under the hood
     'blog.lossless.flacUnderHoodTitle': 'FLAC under the hood',
-    'blog.lossless.flacGoal': 'Goal: reconstruct bit-perfect audio, just stored smaller — like zip but exploiting audio-specific structure.',
-    'blog.lossless.flacStep1': 'Step 1: Blocking — split into frames (192–8192 samples). frames are independent; if decoding fails you recover from the next frame.',
+    'blog.lossless.flacGoal':
+      'Goal: reconstruct bit-perfect audio, just stored smaller — like zip but exploiting audio-specific structure.',
+    'blog.lossless.flacStep1':
+      'Step 1: Blocking — split into frames (192–8192 samples). frames are independent; if decoding fails you recover from the next frame.',
     'blog.lossless.flacStep2':
       'Step 2: Interchannel decorrelation (stereo) — left/right are highly correlated. store \\( \\text{mid} = (L+R)/2 \\) and \\( \\text{side} = (L-R)/2 \\). the side channel has way less energy and compresses better.',
     'blog.lossless.flacStep3':
@@ -891,16 +903,20 @@ const translations: Record<Language, Record<string, string>> = {
     // What is FLAC (expanded)
     'blog.lossless.whatIsFlacTitle': 'what is FLAC?',
     'blog.lossless.whatIsFlacText':
-      'FLAC = Free Lossless Audio Codec. open source by Xiph.org (same as Ogg Vorbis). completely free, no patents. common alternatives: ALAC (Apple\'s version, same idea), WAV/AIFF (lossless but uncompressed, no LPC), WavPack (slightly better compression). FLAC is the standard for lossless archival: open, well-supported, ~50–60% compression.',
+      "FLAC = Free Lossless Audio Codec. open source by Xiph.org (same as Ogg Vorbis). completely free, no patents. common alternatives: ALAC (Apple's version, same idea), WAV/AIFF (lossless but uncompressed, no LPC), WavPack (slightly better compression). FLAC is the standard for lossless archival: open, well-supported, ~50–60% compression.",
 
     // The math: how FLAC compresses
     'blog.lossless.mathTitle': 'how FLAC compresses without losing quality',
-    'blog.lossless.mathIntro': 'the core insight: audio is predictable. the next sample is correlated with previous samples. FLAC exploits this.',
-    'blog.lossless.mathStep1': 'Step 1: Prediction — fit a linear predictor. given previous samples, predict the next: x̂[n] = a₁x[n−1] + a₂x[n−2] + … + aₚx[n−p].',
-    'blog.lossless.mathStep2': 'Step 2: Residuals — instead of storing x[n], store the error e[n] = x[n] − x̂[n]. if the predictor is good, e[n] is tiny (clustered near zero). a raw sample needs 16 bits; residuals often need only 4–5 bits.',
+    'blog.lossless.mathIntro':
+      'the core insight: audio is predictable. the next sample is correlated with previous samples. FLAC exploits this.',
+    'blog.lossless.mathStep1':
+      'Step 1: Prediction — fit a linear predictor. given previous samples, predict the next: x̂[n] = a₁x[n−1] + a₂x[n−2] + … + aₚx[n−p].',
+    'blog.lossless.mathStep2':
+      'Step 2: Residuals — instead of storing x[n], store the error e[n] = x[n] − x̂[n]. if the predictor is good, e[n] is tiny (clustered near zero). a raw sample needs 16 bits; residuals often need only 4–5 bits.',
     'blog.lossless.mathStep3':
       'Step 3: Rice coding — encode residuals with Rice codes. for parameter k: quotient q = ⌊|e|/2ᵏ⌋ (stored in unary: q ones then zero), remainder r = |e| mod 2ᵏ (in k bits). small e → short codes.',
-    'blog.lossless.mathStep4': 'Step 4: Reconstruct — decoder runs the same predictor and adds residuals: x[n] = x̂[n] + e[n]. since e[n] was stored exactly (no rounding), this is bit-perfect. no quality is lost because every residual is kept.',
+    'blog.lossless.mathStep4':
+      'Step 4: Reconstruct — decoder runs the same predictor and adds residuals: x[n] = x̂[n] + e[n]. since e[n] was stored exactly (no rounding), this is bit-perfect. no quality is lost because every residual is kept.',
 
     // How lossless audio is compressed
     'blog.lossless.howCompressedTitle': 'how lossless audio is compressed',
@@ -914,7 +930,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.lossless.lpcPredictable':
       'why is audio predictable? sound waves are smooth. if the last four samples were 100, 105, 110, 115, the next is probably ~120. the predictor finds coefficients \\( a_1, a_2, \\ldots, a_p \\) so that the next sample is best predicted by: \\[ \\hat{x}[n] = a_1 x[n-1] + a_2 x[n-2] + \\cdots + a_p x[n-p] \\]',
     'blog.lossless.lpcExample':
-      'concrete example. say \\( p=3 \\) and FLAC found these coefficients: \\[ a_1 = 1.5,\\quad a_2 = -0.7,\\quad a_3 = 0.2 \\] and the last three samples were \\( x[n-1]=100 \\), \\( x[n-2]=90 \\), \\( x[n-3]=80 \\). the prediction is: \\[ \\hat{x}[n] = 1.5(100) + (-0.7)(90) + 0.2(80) = 150 - 63 + 16 = 103 \\] if the actual sample \\( x[n] = 105 \\), the residual is: \\[ e[n] = 105 - 103 = 2 \\] so instead of storing 105 (needs ~8 bits), you store 2 (needs ~2 bits). that\'s the compression.',
+      "concrete example. say \\( p=3 \\) and FLAC found these coefficients: \\[ a_1 = 1.5,\\quad a_2 = -0.7,\\quad a_3 = 0.2 \\] and the last three samples were \\( x[n-1]=100 \\), \\( x[n-2]=90 \\), \\( x[n-3]=80 \\). the prediction is: \\[ \\hat{x}[n] = 1.5(100) + (-0.7)(90) + 0.2(80) = 150 - 63 + 16 = 103 \\] if the actual sample \\( x[n] = 105 \\), the residual is: \\[ e[n] = 105 - 103 = 2 \\] so instead of storing 105 (needs ~8 bits), you store 2 (needs ~2 bits). that's the compression.",
     'blog.lossless.lpcHowFindTitle': 'how does FLAC find the coefficients?',
     'blog.lossless.lpcHowFindText':
       'uses Levinson–Durbin algorithm — solves a system of equations called the Yule–Walker equations. basically finds the \\( a \\) values that minimize the average squared residual:',
@@ -932,17 +948,17 @@ const translations: Record<Language, Record<string, string>> = {
     // What is n / residuals
     'blog.lossless.whatIsNTitle': 'what is n?',
     'blog.lossless.whatIsNText':
-      'n is just the index — the position of the current sample in the sequence. so if you have \\( x[0], x[1], x[2], x[3], x[4], \\ldots \\) and you\'re predicting sample number 50, then \\( n = 50 \\): \\( x[n] = x[50] \\), \\( x[n-1] = x[49] \\), \\( x[n-2] = x[48] \\). the formula works for any \\( n \\) — you slide it across the whole audio sequence, predicting each sample from the ones before it.',
+      "n is just the index — the position of the current sample in the sequence. so if you have \\( x[0], x[1], x[2], x[3], x[4], \\ldots \\) and you're predicting sample number 50, then \\( n = 50 \\): \\( x[n] = x[50] \\), \\( x[n-1] = x[49] \\), \\( x[n-2] = x[48] \\). the formula works for any \\( n \\) — you slide it across the whole audio sequence, predicting each sample from the ones before it.",
 
     'blog.lossless.residualsTitle': 'why store the error?',
     'blog.lossless.residualsText':
-      'the residual \\( e[n] \\) is the predictor\'s mistake. if it guessed 103 and the real sample was 105, \\( e[n] = 2 \\). we store the error because it\'s almost always a small number — small numbers need fewer bits. raw sample 105 could be anything in \\( \\pm 32768 \\) (16 bits); residual 2 needs ~2–3 bits. audio is smooth so the predictor is usually close; the error is the small unpredictable part. we never round \\( e[n] \\) — we store it exactly. that\'s what makes it lossless.',
+      "the residual \\( e[n] \\) is the predictor's mistake. if it guessed 103 and the real sample was 105, \\( e[n] = 2 \\). we store the error because it's almost always a small number — small numbers need fewer bits. raw sample 105 could be anything in \\( \\pm 32768 \\) (16 bits); residual 2 needs ~2–3 bits. audio is smooth so the predictor is usually close; the error is the small unpredictable part. we never round \\( e[n] \\) — we store it exactly. that's what makes it lossless.",
     'blog.lossless.residualsBitsIntro':
       'so instead of writing 16 bits for every sample, you write: the predictor coefficients once per frame (small, fixed cost), and 2–3 bits per residual instead of 16 bits per sample. across millions of samples that difference is massive.',
     'blog.lossless.residualsDist':
       'why are residuals almost always small? because audio is smooth — the predictor is pretty good, so the error is rarely large. the distribution looks like: \\( e = 0 \\) → very common; \\( e = \\pm 1, \\pm 2 \\) → common; \\( e = \\pm 100 \\) → rare. Rice coding exploits this: small numbers get short codes, large numbers get long codes. since large residuals are rare, the average bits per sample stays low.',
     'blog.lossless.losslessGuarantee':
-      'the lossless guarantee: if you stored \\( e[n] = 5 \\) instead of \\( e[n] = 2 \\), you\'d get a different \\( x[n] \\) back. so FLAC stores the exact integer residual every time — no rounding.',
+      "the lossless guarantee: if you stored \\( e[n] = 5 \\) instead of \\( e[n] = 2 \\), you'd get a different \\( x[n] \\) back. so FLAC stores the exact integer residual every time — no rounding.",
 
     'blog.lossless.reconstructTitle': 'how does the error give back the audio?',
     'blog.lossless.reconstructText':
@@ -950,20 +966,23 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Rice coding
     'blog.lossless.riceTitle': 'rice coding',
-    'blog.lossless.riceGoal': 'goal: small residuals are common, large ones rare. give small numbers short codes, large numbers long codes — like Morse code (E is one dot).',
+    'blog.lossless.riceGoal':
+      'goal: small residuals are common, large ones rare. give small numbers short codes, large numbers long codes — like Morse code (E is one dot).',
     'blog.lossless.riceParamK':
       'the parameter \\( k \\): with \\( k = 2 \\) you split at the \\( 2^2 = 4 \\) boundary. quotient \\( q = \\lfloor |e|/4 \\rfloor \\) (how many 4s fit), remainder \\( r = |e| \\bmod 4 \\) (the leftover). store \\( q \\) in unary (\\( q \\) ones then a zero), then \\( r \\) in \\( k \\) bits.',
     'blog.lossless.riceExampleE6':
       'concrete example: \\( e = 6 \\), \\( k = 2 \\). then \\( q = \\lfloor 6/4 \\rfloor = 1 \\), \\( r = 6 \\bmod 4 = 2 \\). store \\( q \\) in unary: 1 one followed by a zero → 10. store \\( r \\) in binary with \\( k = 2 \\) bits → 10. full code: 10 10 = 4 bits. versus storing 6 in 16-bit audio = 8 bits. already saving bits.',
     'blog.lossless.riceUnary':
       'why unary for \\( q \\)? unary means \\( q \\) ones then a zero: \\( q = 0 \\) → 0 (1 bit); \\( q = 1 \\) → 10 (2 bits); \\( q = 2 \\) → 110 (3 bits). small \\( q \\) (small residual) = short code.',
-    'blog.lossless.riceTableIntro': 'e.g. \\( e = 0 \\) is the most common residual (predictor nailed it) → gets the shortest code, just 1 bit.',
+    'blog.lossless.riceTableIntro':
+      'e.g. \\( e = 0 \\) is the most common residual (predictor nailed it) → gets the shortest code, just 1 bit.',
     'blog.lossless.riceTableE': 'e',
     'blog.lossless.riceTableBinary': 'normal binary',
     'blog.lossless.riceTableRice': 'Rice code (k=2)',
     'blog.lossless.riceK':
       'parameter \\( k \\): with \\( k=2 \\) you split by \\( 2^2=4 \\). quotient \\( q = \\lfloor |e|/4 \\rfloor \\) (how many 4s fit), remainder \\( r = |e| \\bmod 4 \\). store \\( q \\) in unary (\\( q \\) ones then a zero), then \\( r \\) in \\( k \\) bits. example: \\( e=6 \\), \\( k=2 \\) → \\( q=1 \\), \\( r=2 \\) → unary 10, binary 10 → 4 bits total. \\( e=0 \\) (very common) → code 0 (1 bit).',
-    'blog.lossless.riceChooseK': 'FLAC tries multiple values of \\( k \\) and picks whichever gives the smallest total size for that block of residuals. it stores the chosen \\( k \\) in the subframe so the decoder knows how to decode.',
+    'blog.lossless.riceChooseK':
+      'FLAC tries multiple values of \\( k \\) and picks whichever gives the smallest total size for that block of residuals. it stores the chosen \\( k \\) in the subframe so the decoder knows how to decode.',
 
     // FLAC file structure
     'blog.lossless.flacStructureTitle': 'FLAC file structure',
@@ -1765,23 +1784,32 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.grpc.referencesTitle': '参考',
     'blog.lossless.title': '无损压缩如何保持音质',
     'blog.lossless.date': 'nicholas chen · 2026年3月14日 · 6分钟阅读',
-    'blog.lossless.intro': '在流媒体和便利性至上的时代，音频质量常被忽视。然而，对于那些在意声音细微差别的人来说，无损音频是黄金标准。在这篇文章中，我们将探讨它是什么以及为什么它很重要。',
+    'blog.lossless.intro':
+      '在流媒体和便利性至上的时代，音频质量常被忽视。然而，对于那些在意声音细微差别的人来说，无损音频是黄金标准。在这篇文章中，我们将探讨它是什么以及为什么它很重要。',
     'blog.lossless.whatIsTitle': '什么是无损音频？',
-    'blog.lossless.whatIsText': '无损音频压缩在不丢失任何数据的情况下减小音频轨道的原始文件大小。与 MP3 或 AAC 等为了节省空间而丢弃信息的有损格式不同，FLAC 或 ALAC 等无损格式保留了原始录音的每一个比特。',
+    'blog.lossless.whatIsText':
+      '无损音频压缩在不丢失任何数据的情况下减小音频轨道的原始文件大小。与 MP3 或 AAC 等为了节省空间而丢弃信息的有损格式不同，FLAC 或 ALAC 等无损格式保留了原始录音的每一个比特。',
     'blog.lossless.howItWorksTitle': '它是如何工作的',
-    'blog.lossless.howItWorksText': '无损压缩的工作方式类似于 ZIP 文件。它使用数学算法更有效地存储音频数据。当您播放无损文件时，播放器会实时“解压”它，以完美重建原始音频信号。',
+    'blog.lossless.howItWorksText':
+      '无损压缩的工作方式类似于 ZIP 文件。它使用数学算法更有效地存储音频数据。当您播放无损文件时，播放器会实时“解压”它，以完美重建原始音频信号。',
     'blog.lossless.formatsTitle': '常见的无损格式',
-    'blog.lossless.formatsText': '今天有几种无损格式可供选择，每种都有自己的优势。WAV 和 AIFF 是未压缩格式，而 FLAC 和 ALAC 是已压缩但仍无损的格式。',
+    'blog.lossless.formatsText':
+      '今天有几种无损格式可供选择，每种都有自己的优势。WAV 和 AIFF 是未压缩格式，而 FLAC 和 ALAC 是已压缩但仍无损的格式。',
     'blog.lossless.flacTitle': 'FLAC (自由无损音频编解码器)',
-    'blog.lossless.flacText': 'FLAC 是最受欢迎的无损格式。它是开源的，受到广泛支持，并提供出色的压缩率。它还支持元数据（标签）和专辑封面。',
+    'blog.lossless.flacText':
+      'FLAC 是最受欢迎的无损格式。它是开源的，受到广泛支持，并提供出色的压缩率。它还支持元数据（标签）和专辑封面。',
     'blog.lossless.alacTitle': 'ALAC (苹果无损音频编解码器)',
-    'blog.lossless.alacText': 'ALAC 是苹果公司专有的无损格式。它与 FLAC 类似，但专为在苹果生态系统（包括 iTunes 和 Apple Music）中使用而设计。',
+    'blog.lossless.alacText':
+      'ALAC 是苹果公司专有的无损格式。它与 FLAC 类似，但专为在苹果生态系统（包括 iTunes 和 Apple Music）中使用而设计。',
     'blog.lossless.wavTitle': 'WAV 和 AIFF',
-    'blog.lossless.wavText': '这些是存储原始 PCM 音频的未压缩格式。它们质量最高，但文件大小最大，且与 FLAC 或 ALAC 相比元数据支持有限。',
+    'blog.lossless.wavText':
+      '这些是存储原始 PCM 音频的未压缩格式。它们质量最高，但文件大小最大，且与 FLAC 或 ALAC 相比元数据支持有限。',
     'blog.lossless.whyItMattersTitle': '为什么它很重要？',
-    'blog.lossless.whyItMattersText': '主要好处是音质。无损音频提供更多细节、更好的动态范围和更宽广的音场。它对于存档和专业音频工作也是必不可少的。如果您需要将音乐转换为另一种格式，从无损源开始可确保最佳结果。',
+    'blog.lossless.whyItMattersText':
+      '主要好处是音质。无损音频提供更多细节、更好的动态范围和更宽广的音场。它对于存档和专业音频工作也是必不可少的。如果您需要将音乐转换为另一种格式，从无损源开始可确保最佳结果。',
     'blog.lossless.conclusionTitle': '结论',
-    'blog.lossless.conclusionText': '虽然有损格式对于日常随身听来说已经足够，但对于追求最佳聆听体验的人来说，无损音频是必经之路。随着存储和带宽变得越来越便宜，我们没有理由再妥协于较低的音质。',
+    'blog.lossless.conclusionText':
+      '虽然有损格式对于日常随身听来说已经足够，但对于追求最佳聆听体验的人来说，无损音频是必经之路。随着存储和带宽变得越来越便宜，我们没有理由再妥协于较低的音质。',
 
     'blog.lossless.losslessVsLossyTitle': '无损与有损',
     'blog.lossless.lossyIntro':
@@ -1793,7 +1821,8 @@ const translations: Record<Language, Record<string, string>> = {
       '下面：拖动滑块查看模拟的「有损」处理（低通 + 量化）如何削弱高频。',
 
     'blog.lossless.mp3Title': 'MP3 原理',
-    'blog.lossless.mp3Step1': '第一步：分帧——将音频切成约 26 ms 的帧（每帧约 1152 个采样），每帧独立编码。',
+    'blog.lossless.mp3Step1':
+      '第一步：分帧——将音频切成约 26 ms 的帧（每帧约 1152 个采样），每帧独立编码。',
     'blog.lossless.mp3Step2':
       '第二步：两种并行变换——MDCT（修正离散余弦变换）将帧分成 576 个频率子带（类似 JPEG 的 DCT，但帧间重叠以避免块效应）；多相滤波器组提供 32 个子带供心理声学模型使用。',
     'blog.lossless.mp3Step3':
@@ -1813,8 +1842,10 @@ const translations: Record<Language, Record<string, string>> = {
       '实话实说：用 AirPods 听 Spotify 随便听听，大多数人听不出差别。研究显示 320 kbps 的 ABX 盲测对多数人接近随机。有意义的差别在于归档和编辑，而不是在编码良好时的听感。',
 
     'blog.lossless.flacUnderHoodTitle': 'FLAC 原理',
-    'blog.lossless.flacGoal': '目标：比特级完美重建音频，只是存得更小——像 zip，但利用音频特有的结构。',
-    'blog.lossless.flacStep1': '第一步：分块——切成帧（192–8192 采样）。帧之间独立；某一帧解码失败可从下一帧恢复。',
+    'blog.lossless.flacGoal':
+      '目标：比特级完美重建音频，只是存得更小——像 zip，但利用音频特有的结构。',
+    'blog.lossless.flacStep1':
+      '第一步：分块——切成帧（192–8192 采样）。帧之间独立；某一帧解码失败可从下一帧恢复。',
     'blog.lossless.flacStep2':
       '第二步：声道去相关（立体声）——左右声道高度相关。存 \\( \\text{mid} = (L+R)/2 \\) 和 \\( \\text{side} = (L-R)/2 \\)。side 能量小得多，压缩更好。',
     'blog.lossless.flacStep3':
@@ -1830,11 +1861,14 @@ const translations: Record<Language, Record<string, string>> = {
 
     'blog.lossless.mathTitle': 'FLAC 如何在不损音质下压缩',
     'blog.lossless.mathIntro': '核心思想：音频是可预测的。下一采样与前面相关。FLAC 利用这一点。',
-    'blog.lossless.mathStep1': '第一步：预测——拟合线性预测器。给定前面采样，预测下一个：x̂[n] = a₁x[n−1] + a₂x[n−2] + … + aₚx[n−p]。',
-    'blog.lossless.mathStep2': '第二步：残差——不存 x[n]，而存误差 e[n] = x[n] − x̂[n]。预测器好时 e[n] 很小（集中在零附近）。原始采样要 16 比特；残差往往只需 4–5 比特。',
+    'blog.lossless.mathStep1':
+      '第一步：预测——拟合线性预测器。给定前面采样，预测下一个：x̂[n] = a₁x[n−1] + a₂x[n−2] + … + aₚx[n−p]。',
+    'blog.lossless.mathStep2':
+      '第二步：残差——不存 x[n]，而存误差 e[n] = x[n] − x̂[n]。预测器好时 e[n] 很小（集中在零附近）。原始采样要 16 比特；残差往往只需 4–5 比特。',
     'blog.lossless.mathStep3':
       '第三步：Rice 编码——用 Rice 码编码残差。参数 k：商 q = ⌊|e|/2ᵏ⌋（用一元码：q 个 1 再一个 0），余数 r = |e| mod 2ᵏ（k 比特）。小的 e → 短码。',
-    'blog.lossless.mathStep4': '第四步：重建——解码器用同一预测器并加回残差：x[n] = x̂[n] + e[n]。因为 e[n] 被精确存储（无舍入），所以是比特级完美。保留每个残差，故无质量损失。',
+    'blog.lossless.mathStep4':
+      '第四步：重建——解码器用同一预测器并加回残差：x[n] = x̂[n] + e[n]。因为 e[n] 被精确存储（无舍入），所以是比特级完美。保留每个残差，故无质量损失。',
 
     'blog.lossless.howCompressedTitle': '无损音频如何被压缩',
     'blog.lossless.howCompressedIntro':
@@ -1880,20 +1914,23 @@ const translations: Record<Language, Record<string, string>> = {
       '单靠误差不行——它本身没有意义。解码器需要两项：\\( x[n] = \\hat{x}[n] + e[n] \\)。它有系数，用同一预测器得到 \\( \\hat{x}[n] \\)，再加上存好的残差。预测 + 误差 = 原始采样。例：预测 103，残差 2 → 103 + 2 = 105 ✓。好比指路：「从咖啡馆（预测）向东走 2 步（残差）。」两者一起才能精确到达。',
 
     'blog.lossless.riceTitle': 'Rice 编码',
-    'blog.lossless.riceGoal': '目标：小残差常见，大残差少见。小数给短码，大数给长码——类似莫尔斯码（E 一个点）。',
+    'blog.lossless.riceGoal':
+      '目标：小残差常见，大残差少见。小数给短码，大数给长码——类似莫尔斯码（E 一个点）。',
     'blog.lossless.riceParamK':
       '参数 \\( k \\)：\\( k=2 \\) 时按 \\( 2^2=4 \\) 为界。商 \\( q = \\lfloor |e|/4 \\rfloor \\)（能放几个 4），余数 \\( r = |e| \\bmod 4 \\)（余下部分）。\\( q \\) 用一元码（\\( q \\) 个 1 再一个 0），\\( r \\) 用 \\( k \\) 比特。',
     'blog.lossless.riceExampleE6':
       '具体例：\\( e=6 \\)，\\( k=2 \\)。则 \\( q = \\lfloor 6/4 \\rfloor = 1 \\)，\\( r = 6 \\bmod 4 = 2 \\)。\\( q \\) 一元：1 个 1 加一个 0 → 10。\\( r \\) 用 \\( k=2 \\) 比特二进制 → 10。完整码：10 10 = 4 比特。若用 16 比特存 6 则要 8 比特。已经省了。',
     'blog.lossless.riceUnary':
       '为什么 \\( q \\) 用一元？一元即 \\( q \\) 个 1 再一个 0：\\( q=0 \\) → 0（1 比特）；\\( q=1 \\) → 10（2 比特）；\\( q=2 \\) → 110（3 比特）。小 \\( q \\)（小残差）= 短码。',
-    'blog.lossless.riceTableIntro': '例如 \\( e=0 \\) 是最常见的残差（预测完全正确）→ 得到最短码，仅 1 比特。',
+    'blog.lossless.riceTableIntro':
+      '例如 \\( e=0 \\) 是最常见的残差（预测完全正确）→ 得到最短码，仅 1 比特。',
     'blog.lossless.riceTableE': 'e',
     'blog.lossless.riceTableBinary': '普通二进制',
     'blog.lossless.riceTableRice': 'Rice 码 (k=2)',
     'blog.lossless.riceK':
       '参数 \\( k \\)：\\( k=2 \\) 时按 \\( 2^2=4 \\) 分割。商 \\( q = \\lfloor |e|/4 \\rfloor \\)（能放几个 4），余数 \\( r = |e| \\bmod 4 \\)。\\( q \\) 用一元码（\\( q \\) 个 1 再一个 0），\\( r \\) 用 \\( k \\) 比特。例：\\( e=6 \\)，\\( k=2 \\) → \\( q=1 \\)，\\( r=2 \\) → 一元 10，二进制 10 → 共 4 比特。\\( e=0 \\)（极常见）→ 码 0（1 比特）。',
-    'blog.lossless.riceChooseK': 'FLAC 尝试多个 \\( k \\)，选使该块残差总长最小的那个，并将所选 \\( k \\) 存在子帧中，解码器据此解码。',
+    'blog.lossless.riceChooseK':
+      'FLAC 尝试多个 \\( k \\)，选使该块残差总长最小的那个，并将所选 \\( k \\) 存在子帧中，解码器据此解码。',
 
     'blog.lossless.flacStructureTitle': 'FLAC 文件结构',
     'blog.lossless.flacStructureText':

@@ -12,7 +12,9 @@ const wrapper = ({ children }: { children: ReactNode }) => (
 describe('Lossless Audio Blog Page', () => {
   it('renders title', () => {
     render(<LosslessBlog />, { wrapper });
-    expect(screen.getByText('how lossless compression preserves audio quality')).toBeInTheDocument();
+    expect(
+      screen.getByText('how lossless compression preserves audio quality'),
+    ).toBeInTheDocument();
   });
 
   it('renders back link', () => {

@@ -28,7 +28,8 @@ export default function LosslessComparisonPlayer() {
   const [duration, setDuration] = useState(0);
   const [isSeeking, setIsSeeking] = useState(false);
 
-  const activeAudio = activeFormat === 'mp3' ? mp3Ref.current : activeFormat === 'flac' ? flacRef.current : null;
+  const activeAudio =
+    activeFormat === 'mp3' ? mp3Ref.current : activeFormat === 'flac' ? flacRef.current : null;
 
   const connectAndPlay = useCallback((format: Format) => {
     const audio = format === 'mp3' ? mp3Ref.current : flacRef.current;
@@ -43,7 +44,8 @@ export default function LosslessComparisonPlayer() {
 
     let ctx = contextRef.current;
     if (!ctx) {
-      ctx = new (window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext)();
+      ctx = new (window.AudioContext ||
+        (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext)();
       contextRef.current = ctx;
     }
 
@@ -91,18 +93,21 @@ export default function LosslessComparisonPlayer() {
     setPlaying(null);
   }, []);
 
-  const selectFormat = useCallback((format: Format) => {
-    const other = format === 'mp3' ? flacRef.current : mp3Ref.current;
-    const audio = format === 'mp3' ? mp3Ref.current : flacRef.current;
-    if (audio && other && Number.isFinite(other.currentTime)) {
-      audio.currentTime = other.currentTime;
-      setCurrentTime(other.currentTime);
-    }
-    setActiveFormat(format);
-    if (playing && playing !== format) {
-      connectAndPlay(format);
-    }
-  }, [playing, connectAndPlay]);
+  const selectFormat = useCallback(
+    (format: Format) => {
+      const other = format === 'mp3' ? flacRef.current : mp3Ref.current;
+      const audio = format === 'mp3' ? mp3Ref.current : flacRef.current;
+      if (audio && other && Number.isFinite(other.currentTime)) {
+        audio.currentTime = other.currentTime;
+        setCurrentTime(other.currentTime);
+      }
+      setActiveFormat(format);
+      if (playing && playing !== format) {
+        connectAndPlay(format);
+      }
+    },
+    [playing, connectAndPlay],
+  );
 
   const togglePlayPause = useCallback(() => {
     if (!activeFormat) return;
@@ -120,7 +125,8 @@ export default function LosslessComparisonPlayer() {
     (e: React.ChangeEvent<HTMLInputElement>) => {
       const t = Number(e.target.value);
       setCurrentTime(t);
-      const audio = activeFormat === 'mp3' ? mp3Ref.current : activeFormat === 'flac' ? flacRef.current : null;
+      const audio =
+        activeFormat === 'mp3' ? mp3Ref.current : activeFormat === 'flac' ? flacRef.current : null;
       if (audio) audio.currentTime = t;
     },
     [activeFormat],
@@ -219,103 +225,103 @@ export default function LosslessComparisonPlayer() {
 
   return (
     <>
-    <figure className="my-6 rounded-lg border border-stone-700 bg-stone-900/50 p-4">
-      <audio ref={mp3Ref} src={MP3_SRC} preload="metadata" />
-      <audio ref={flacRef} src={FLAC_SRC} preload="metadata" />
+      <figure className="my-6 rounded-lg border border-stone-700 bg-stone-900/50 p-4">
+        <audio ref={mp3Ref} src={MP3_SRC} preload="metadata" />
+        <audio ref={flacRef} src={FLAC_SRC} preload="metadata" />
 
-      <div className="mb-3 flex flex-wrap items-center gap-2">
-        <button
-          type="button"
-          onClick={() => selectFormat('mp3')}
-          className={`rounded-md px-3 py-1.5 text-xs font-medium transition-colors ${
-            activeFormat === 'mp3'
-              ? playing
-                ? 'bg-amber-600 text-white'
-                : 'bg-stone-600 text-stone-200'
-              : 'bg-stone-700 text-stone-300 hover:bg-stone-600'
-          }`}
-        >
-          MP3
-        </button>
-        <button
-          type="button"
-          onClick={() => selectFormat('flac')}
-          className={`rounded-md px-3 py-1.5 text-xs font-medium transition-colors ${
-            activeFormat === 'flac'
-              ? playing
-                ? 'bg-lime-600 text-white'
-                : 'bg-stone-600 text-stone-200'
-              : 'bg-stone-700 text-stone-300 hover:bg-stone-600'
-          }`}
-        >
-          FLAC
-        </button>
-        {activeFormat && (
-          <span className="text-[10px] text-stone-500">
-            Visualizer: {activeFormat.toUpperCase()}
-          </span>
-        )}
-      </div>
-
-      <div className="mb-3 flex items-center gap-2">
-        <button
-          type="button"
-          onClick={togglePlayPause}
-          disabled={!activeFormat}
-          className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-stone-700 text-stone-200 transition-colors hover:bg-stone-600 hover:text-white disabled:opacity-40 disabled:pointer-events-none"
-          aria-label={playing ? 'Pause' : 'Play'}
-        >
-          {playing ? (
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
-              <rect x="2" y="0" width="3" height="12" />
-              <rect x="7" y="0" width="3" height="12" />
-            </svg>
-          ) : (
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
-              <path d="M2 0v12l10-6-10-6z" />
-            </svg>
+        <div className="mb-3 flex flex-wrap items-center gap-2">
+          <button
+            type="button"
+            onClick={() => selectFormat('mp3')}
+            className={`rounded-md px-3 py-1.5 text-xs font-medium transition-colors ${
+              activeFormat === 'mp3'
+                ? playing
+                  ? 'bg-amber-600 text-white'
+                  : 'bg-stone-600 text-stone-200'
+                : 'bg-stone-700 text-stone-300 hover:bg-stone-600'
+            }`}
+          >
+            MP3
+          </button>
+          <button
+            type="button"
+            onClick={() => selectFormat('flac')}
+            className={`rounded-md px-3 py-1.5 text-xs font-medium transition-colors ${
+              activeFormat === 'flac'
+                ? playing
+                  ? 'bg-lime-600 text-white'
+                  : 'bg-stone-600 text-stone-200'
+                : 'bg-stone-700 text-stone-300 hover:bg-stone-600'
+            }`}
+          >
+            FLAC
+          </button>
+          {activeFormat && (
+            <span className="text-[10px] text-stone-500">
+              Visualizer: {activeFormat.toUpperCase()}
+            </span>
           )}
-        </button>
-        <input
-          type="range"
-          min={0}
-          max={duration || 100}
-          step={0.1}
-          value={currentTime}
-          onChange={handleSeek}
-          onMouseDown={() => setIsSeeking(true)}
-          onMouseUp={() => setIsSeeking(false)}
-          onPointerLeave={() => setIsSeeking(false)}
-          className="lossless-audio-slider h-1 flex-1 accent-lime-500"
-          aria-label="Seek"
+        </div>
+
+        <div className="mb-3 flex items-center gap-2">
+          <button
+            type="button"
+            onClick={togglePlayPause}
+            disabled={!activeFormat}
+            className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-stone-700 text-stone-200 transition-colors hover:bg-stone-600 hover:text-white disabled:opacity-40 disabled:pointer-events-none"
+            aria-label={playing ? 'Pause' : 'Play'}
+          >
+            {playing ? (
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                <rect x="2" y="0" width="3" height="12" />
+                <rect x="7" y="0" width="3" height="12" />
+              </svg>
+            ) : (
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                <path d="M2 0v12l10-6-10-6z" />
+              </svg>
+            )}
+          </button>
+          <input
+            type="range"
+            min={0}
+            max={duration || 100}
+            step={0.1}
+            value={currentTime}
+            onChange={handleSeek}
+            onMouseDown={() => setIsSeeking(true)}
+            onMouseUp={() => setIsSeeking(false)}
+            onPointerLeave={() => setIsSeeking(false)}
+            className="lossless-audio-slider h-1 flex-1 accent-lime-500"
+            aria-label="Seek"
+          />
+          <span className="w-16 shrink-0 text-right text-[10px] tabular-nums text-stone-500">
+            {formatTime(currentTime)} / {formatTime(duration)}
+          </span>
+        </div>
+
+        <canvas
+          ref={canvasRef}
+          width={NUM_BARS * (BAR_WIDTH + BAR_GAP)}
+          height={VIS_HEIGHT}
+          className="w-full max-w-full rounded border border-stone-700"
+          style={{ height: VIS_HEIGHT }}
         />
-        <span className="w-16 shrink-0 text-right text-[10px] tabular-nums text-stone-500">
-          {formatTime(currentTime)} / {formatTime(duration)}
-        </span>
-      </div>
 
-      <canvas
-        ref={canvasRef}
-        width={NUM_BARS * (BAR_WIDTH + BAR_GAP)}
-        height={VIS_HEIGHT}
-        className="w-full max-w-full rounded border border-stone-700"
-        style={{ height: VIS_HEIGHT }}
-      />
-
-      <div className="mt-2 flex items-center gap-4 pl-0 text-[10px] text-stone-500">
-        <span className="flex items-center gap-1.5">
-          <span className="inline-block h-2 w-2 rounded-sm bg-amber-500/90" />
-          MP3
-        </span>
-        <span className="flex items-center gap-1.5">
-          <span className="inline-block h-2 w-2 rounded-sm bg-lime-500/90" />
-          FLAC
-        </span>
-      </div>
-    </figure>
-    <p className="mt-2 text-sm italic text-stone-400">
-      Note: It’s really hard to tell the difference for most people.
-    </p>
+        <div className="mt-2 flex items-center gap-4 pl-0 text-[10px] text-stone-500">
+          <span className="flex items-center gap-1.5">
+            <span className="inline-block h-2 w-2 rounded-sm bg-amber-500/90" />
+            MP3
+          </span>
+          <span className="flex items-center gap-1.5">
+            <span className="inline-block h-2 w-2 rounded-sm bg-lime-500/90" />
+            FLAC
+          </span>
+        </div>
+      </figure>
+      <p className="mt-2 text-sm italic text-stone-400">
+        Note: It’s really hard to tell the difference for most people.
+      </p>
     </>
   );
 }

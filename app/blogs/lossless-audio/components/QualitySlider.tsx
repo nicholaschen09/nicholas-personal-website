@@ -1,11 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
-import {
-  generateSyntheticSignal,
-  dftMagnitude,
-  SAMPLE_RATE,
-} from './audioVizUtils';
+import { generateSyntheticSignal, dftMagnitude, SAMPLE_RATE } from './audioVizUtils';
 
 const LENGTH = 512;
 const CHART_HEIGHT = 44;
@@ -187,7 +183,9 @@ export default function QualitySlider() {
             strengthRef.current = v;
             setStrength(v);
           }}
-          onPointerDown={() => { isDraggingRef.current = true; }}
+          onPointerDown={() => {
+            isDraggingRef.current = true;
+          }}
           onPointerUp={() => {
             isDraggingRef.current = false;
             if (isPlaying) {
@@ -208,13 +206,25 @@ export default function QualitySlider() {
         <span className="text-[10px] shrink-0 text-stone-500">More lossy</span>
       </div>
       <p className="mb-0.5 text-[11px] text-stone-500">
-        Lossiness: <span className="inline-block min-w-[3ch] font-medium tabular-nums text-stone-400">{lossyParams.lossinessPct}%</span>
+        Lossiness:{' '}
+        <span className="inline-block min-w-[3ch] font-medium tabular-nums text-stone-400">
+          {lossyParams.lossinessPct}%
+        </span>
         {' · '}
-        levels: <span className="inline-block min-w-[2.5ch] font-medium tabular-nums text-stone-400">{lossyParams.levels}</span>
+        levels:{' '}
+        <span className="inline-block min-w-[2.5ch] font-medium tabular-nums text-stone-400">
+          {lossyParams.levels}
+        </span>
         {' · '}
-        kernel: <span className="inline-block min-w-[2.5ch] font-medium tabular-nums text-stone-400">{lossyParams.kernelSize}</span>
+        kernel:{' '}
+        <span className="inline-block min-w-[2.5ch] font-medium tabular-nums text-stone-400">
+          {lossyParams.kernelSize}
+        </span>
         {' · '}
-        Frequency: <span className="inline-block min-w-[10ch] font-medium tabular-nums text-stone-400">0 – {Math.round(effectiveCutoffHz / 100) / 10} kHz</span>
+        Frequency:{' '}
+        <span className="inline-block min-w-[10ch] font-medium tabular-nums text-stone-400">
+          0 – {Math.round(effectiveCutoffHz / 100) / 10} kHz
+        </span>
       </p>
       <svg
         viewBox={`0 0 ${chartW} ${CHART_HEIGHT * 2}`}

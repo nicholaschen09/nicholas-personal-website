@@ -1,10 +1,7 @@
 'use client';
 
 import { useMemo } from 'react';
-import {
-  generateSyntheticSignal,
-  applyLossySimulation,
-} from './audioVizUtils';
+import { generateSyntheticSignal, applyLossySimulation } from './audioVizUtils';
 
 const LENGTH = 512;
 const HEIGHT = 48;

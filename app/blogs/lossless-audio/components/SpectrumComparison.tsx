@@ -98,7 +98,8 @@ export default function SpectrumComparison() {
         </text>
       </svg>
       <figcaption className="mt-2 text-center text-[11px] text-stone-500">
-        FFT magnitude: lossy simulation cuts and smears high frequencies (like MP3’s psychoacoustic cutoff)
+        FFT magnitude: lossy simulation cuts and smears high frequencies (like MP3’s psychoacoustic
+        cutoff)
       </figcaption>
     </figure>
   );

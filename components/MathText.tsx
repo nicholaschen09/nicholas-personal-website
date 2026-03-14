@@ -3,7 +3,10 @@
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 
-type Segment = { type: 'text'; value: string } | { type: 'inline'; value: string } | { type: 'display'; value: string };
+type Segment =
+  | { type: 'text'; value: string }
+  | { type: 'inline'; value: string }
+  | { type: 'display'; value: string };
 
 function parseMathText(text: string): Segment[] {
   const segments: Segment[] = [];
@@ -38,13 +41,7 @@ function renderLatex(latex: string, displayMode: boolean): string {
   });
 }
 
-export default function MathText({
-  text,
-  className,
-}: {
-  text: string;
-  className?: string;
-}) {
+export default function MathText({ text, className }: { text: string; className?: string }) {
   const segments = parseMathText(text);
 
   if (segments.length === 1 && segments[0].type === 'text') {
