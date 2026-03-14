@@ -80,7 +80,7 @@ export default function QualitySlider() {
     setIsPlaying(false);
   };
 
-  const { magOriginal, magLossy, maxMag, lossyParams } = useMemo(() => {
+  const { magOriginal, magLossy, maxMag, lossyParams, effectiveCutoffHz } = useMemo(() => {
     const kernelSize = Math.max(2, Math.round(2 + strength * 28));
     const levels = Math.max(4, Math.round(40 - strength * 35));
     const orig = generateSyntheticSignal(LENGTH);
@@ -91,11 +91,19 @@ export default function QualitySlider() {
     for (let i = 0; i < magO.length; i++) {
       max = Math.max(max, magO[i], magL[i]);
     }
+    // Effective high-frequency cutoff of lossy: highest bin with >5% of max magnitude
+    const threshold = (max || 1) * 0.05;
+    let lastSignificantBin = 0;
+    for (let i = 0; i < magL.length; i++) {
+      if (magL[i] >= threshold) lastSignificantBin = i;
+    }
+    const effectiveCutoffHz = (lastSignificantBin / magL.length) * (SAMPLE_RATE / 2);
     return {
       magOriginal: magO,
       magLossy: magL,
       maxMag: max || 1,
       lossyParams: { kernelSize, levels, lossinessPct: Math.round(strength * 100) },
+      effectiveCutoffHz,
     };
   }, [strength]);
 
@@ -115,11 +123,9 @@ export default function QualitySlider() {
     barsLossy.push({ x, h: Math.max(0.5, hL) });
   }
 
-  const cutoffHz = (MAX_BARS * step * SAMPLE_RATE) / LENGTH;
-
   return (
     <figure className="my-6 rounded-lg border border-stone-700 bg-stone-900/50 p-4">
-      <div className="mb-3 flex items-center gap-3">
+      <div className="mb-1 flex items-center gap-3">
         <button
           type="button"
           onClick={isPlaying ? pause : play}
@@ -150,19 +156,19 @@ export default function QualitySlider() {
         />
         <span className="text-[10px] shrink-0 text-stone-500">More lossy</span>
       </div>
-      <p className="mb-2 pl-11 text-[11px] text-stone-500">
-        Lossiness: <span className="font-medium text-stone-400">{lossyParams.lossinessPct}%</span>
+      <p className="mb-0.5 pl-11 text-[11px] text-stone-500">
+        Lossiness: <span className="inline-block min-w-[3ch] font-medium tabular-nums text-stone-400">{lossyParams.lossinessPct}%</span>
         {' · '}
-        levels: <span className="font-medium text-stone-400">{lossyParams.levels}</span>
+        levels: <span className="inline-block min-w-[2.5ch] font-medium tabular-nums text-stone-400">{lossyParams.levels}</span>
         {' · '}
-        kernel: <span className="font-medium text-stone-400">{lossyParams.kernelSize}</span>
+        kernel: <span className="inline-block min-w-[2.5ch] font-medium tabular-nums text-stone-400">{lossyParams.kernelSize}</span>
         {' · '}
-        Frequency: <span className="font-medium text-stone-400">0 – {Math.round(cutoffHz / 100) / 10} kHz</span>
+        Frequency: <span className="inline-block min-w-[10ch] font-medium tabular-nums text-stone-400">0 – {Math.round(effectiveCutoffHz / 100) / 10} kHz</span>
       </p>
       <svg
-        viewBox={`0 0 ${chartW} ${CHART_HEIGHT * 2 + 8}`}
+        viewBox={`0 0 ${chartW} ${CHART_HEIGHT * 2}`}
         className="w-full max-w-full"
-        style={{ height: CHART_HEIGHT * 2 + 8 }}
+        style={{ height: CHART_HEIGHT * 2 }}
       >
         <g transform="translate(0, 0)">
           {barsOriginal.map((b, i) => (
@@ -177,7 +183,7 @@ export default function QualitySlider() {
             />
           ))}
         </g>
-        <g transform={`translate(0, ${CHART_HEIGHT + 8})`}>
+        <g transform={`translate(0, ${CHART_HEIGHT})`}>
           {barsLossy.map((b, i) => (
             <rect
               key={i}
