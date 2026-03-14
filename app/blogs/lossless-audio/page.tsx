@@ -21,7 +21,6 @@ export default function LosslessBlog() {
       { id: 'visualizers', title: t('blog.lossless.visualizersTitle') },
       { id: 'mp3-under-the-hood', title: t('blog.lossless.mp3Title') },
       { id: 'why-it-matters', title: t('blog.lossless.whyItMattersTitle') },
-      { id: 'flac-under-the-hood', title: t('blog.lossless.flacUnderHoodTitle') },
       { id: 'common-formats', title: t('blog.lossless.formatsTitle') },
       { id: 'linear-prediction-depth', title: t('blog.lossless.lpcDepthTitle') },
       { id: 'rice-coding', title: t('blog.lossless.riceTitle') },
@@ -124,25 +123,6 @@ export default function LosslessBlog() {
                 </h2>
                 <p className="mb-4">{t('blog.lossless.whyItMattersText')}</p>
                 <p>{t('blog.lossless.whyMattersHonest')}</p>
-              </section>
-
-              <section>
-                <h2
-                  id="flac-under-the-hood"
-                  className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
-                >
-                  {t('blog.lossless.flacUnderHoodTitle')}
-                </h2>
-                <p className="mb-6">{t('blog.lossless.flacGoal')}</p>
-                <p className="mb-6">{t('blog.lossless.flacStep1')}</p>
-                <p className="mb-6">
-                  <MathText text={t('blog.lossless.flacStep2')} />
-                </p>
-                <p className="mb-6">
-                  <MathText text={t('blog.lossless.flacStep3')} />
-                </p>
-                <p className="mb-6">{t('blog.lossless.flacStep4')}</p>
-                <p className="mb-0">{t('blog.lossless.flacStep5')}</p>
               </section>
 
               <section>
