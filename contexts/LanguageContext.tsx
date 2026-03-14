@@ -825,7 +825,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.grpc.referencesTitle': 'references',
     'blog.lossless.title': 'how lossless compression preserves audio quality',
     'blog.lossless.date': 'nicholas chen · march 14, 2026 · 6 min read',
-    'blog.lossless.intro': "in an era of streaming and convenience, audio quality often takes a backseat. however, for those who care about the nuances of sound, lossless audio is the gold standard. in this post, we'll explore what it is and why it matters.",
+    'blog.lossless.intro': "in an era of streaming and convenience, audio quality is often overlooked. however, for those who care about the nuances of sound, lossless audio is the gold standard. in this post, we'll explore what it is and why it matters.",
     'blog.lossless.whatIsTitle': 'what is lossless audio?',
     'blog.lossless.whatIsText': 'lossless audio compression reduces the file size of an audio track without losing any data. unlike lossy formats like MP3 or AAC, which discard information to save space, lossless formats like FLAC or ALAC preserve every single bit of the original recording.',
     'blog.lossless.howItWorksTitle': 'how it works',
@@ -849,6 +849,9 @@ const translations: Record<Language, Record<string, string>> = {
       'lossy formats like MP3 use psychoacoustics — they throw away information humans can\'t easily hear: sounds masked by louder nearby frequencies, very high frequencies (above ~16 kHz for most adults), and quiet sounds during loud moments (temporal masking).',
     'blog.lossless.losslessIntro':
       'lossless formats (FLAC, WAV) keep every sample exactly. they compress like a zip file: perfectly reconstructable, nothing discarded.',
+    'blog.lossless.visualizersTitle': 'see the difference',
+    'blog.lossless.visualizersIntro':
+      'below: a synthetic audio clip run through a simulated “lossy” process (low-pass filter + quantization). the waveform and spectrum show what gets removed.',
 
     // MP3 under the hood
     'blog.lossless.mp3Title': 'MP3 under the hood',
@@ -1730,7 +1733,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.grpc.referencesTitle': '参考',
     'blog.lossless.title': '无损压缩如何保持音质',
     'blog.lossless.date': 'nicholas chen · 2026年3月14日 · 6分钟阅读',
-    'blog.lossless.intro': '在流媒体和便利性至上的时代，音频质量往往退居其次。然而，对于那些在意声音细微差别的人来说，无损音频是黄金标准。在这篇文章中，我们将探讨它是什么以及为什么它很重要。',
+    'blog.lossless.intro': '在流媒体和便利性至上的时代，音频质量常被忽视。然而，对于那些在意声音细微差别的人来说，无损音频是黄金标准。在这篇文章中，我们将探讨它是什么以及为什么它很重要。',
     'blog.lossless.whatIsTitle': '什么是无损音频？',
     'blog.lossless.whatIsText': '无损音频压缩在不丢失任何数据的情况下减小音频轨道的原始文件大小。与 MP3 或 AAC 等为了节省空间而丢弃信息的有损格式不同，FLAC 或 ALAC 等无损格式保留了原始录音的每一个比特。',
     'blog.lossless.howItWorksTitle': '它是如何工作的',
@@ -1753,6 +1756,9 @@ const translations: Record<Language, Record<string, string>> = {
       '有损格式（如 MP3）利用心理声学——丢弃人耳不易察觉的信息：被邻近更强频率掩蔽的声音、极高频率（多数成年人约 16 kHz 以上）、以及响亮瞬间中的安静声音（时间掩蔽）。',
     'blog.lossless.losslessIntro':
       '无损格式（FLAC、WAV）完整保留每个采样。像 zip 一样压缩：可完美重建，不丢弃任何数据。',
+    'blog.lossless.visualizersTitle': '看看差别',
+    'blog.lossless.visualizersIntro':
+      '下面：一段合成音频经过模拟的「有损」处理（低通 + 量化）。波形和频谱显示被去掉的内容。',
 
     'blog.lossless.mp3Title': 'MP3 原理',
     'blog.lossless.mp3Step1': '第一步：分帧——将音频切成约 26 ms 的帧（每帧约 1152 个采样），每帧独立编码。',

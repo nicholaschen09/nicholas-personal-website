@@ -7,6 +7,9 @@ import Footer from '@/components/Footer';
 import ImageLightbox from '@/components/ImageLightbox';
 import MathText from '@/components/MathText';
 import TableOfContents, { TOCSection } from '@/components/TableOfContents';
+import QualitySlider from './components/QualitySlider';
+import SpectrumComparison from './components/SpectrumComparison';
+import WaveformComparison from './components/WaveformComparison';
 
 export default function LosslessBlog() {
   const { language, t } = useLanguage();
@@ -15,6 +18,7 @@ export default function LosslessBlog() {
     () => [
       { id: 'what-is-lossless', title: t('blog.lossless.whatIsTitle') },
       { id: 'lossless-vs-lossy', title: t('blog.lossless.losslessVsLossyTitle') },
+      { id: 'visualizers', title: t('blog.lossless.visualizersTitle') },
       { id: 'mp3-under-the-hood', title: t('blog.lossless.mp3Title') },
       { id: 'why-it-matters', title: t('blog.lossless.whyItMattersTitle') },
       { id: 'flac-under-the-hood', title: t('blog.lossless.flacUnderHoodTitle') },
@@ -87,7 +91,18 @@ export default function LosslessBlog() {
                   {t('blog.lossless.losslessVsLossyTitle')}
                 </h2>
                 <p className="mb-4">{t('blog.lossless.lossyIntro')}</p>
-                <p>{t('blog.lossless.losslessIntro')}</p>
+                <p className="mb-6">{t('blog.lossless.losslessIntro')}</p>
+
+                <h3
+                  id="visualizers"
+                  className="text-lg font-medium text-white mb-2 mt-6 scroll-mt-8"
+                >
+                  {t('blog.lossless.visualizersTitle')}
+                </h3>
+                <p className="mb-4">{t('blog.lossless.visualizersIntro')}</p>
+                <WaveformComparison />
+                <SpectrumComparison />
+                <QualitySlider />
               </section>
 
               <section>
