@@ -43,28 +43,38 @@ export default function QualitySlider() {
   const animRef = useRef<number | null>(null);
   const startStrengthRef = useRef(0.55);
   const startTimeRef = useRef(0);
+  const isDraggingRef = useRef(false);
+  const strengthRef = useRef(0.55);
 
   const play = () => {
     if (strength >= 1) {
       setStrength(0);
       startStrengthRef.current = 0;
+      strengthRef.current = 0;
     } else {
       startStrengthRef.current = strength;
+      strengthRef.current = strength;
     }
     startTimeRef.current = performance.now();
     setIsPlaying(true);
 
     const tick = () => {
+      if (isDraggingRef.current) {
+        animRef.current = requestAnimationFrame(tick);
+        return;
+      }
       const elapsed = performance.now() - startTimeRef.current;
       const t = Math.min(elapsed / ANIMATION_DURATION_MS, 1);
       const eased = t * t * (3 - 2 * t);
       const newStrength = startStrengthRef.current + eased * (1 - startStrengthRef.current);
+      strengthRef.current = newStrength;
       setStrength(newStrength);
       if (t < 1) {
         animRef.current = requestAnimationFrame(tick);
       } else {
         startStrengthRef.current = 0;
         startTimeRef.current = performance.now();
+        strengthRef.current = 0;
         setStrength(0);
         animRef.current = requestAnimationFrame(tick);
       }
@@ -150,7 +160,26 @@ export default function QualitySlider() {
           max={1}
           step={0.05}
           value={strength}
-          onChange={(e) => setStrength(Number(e.target.value))}
+          onChange={(e) => {
+            const v = Number(e.target.value);
+            strengthRef.current = v;
+            setStrength(v);
+          }}
+          onPointerDown={() => { isDraggingRef.current = true; }}
+          onPointerUp={() => {
+            isDraggingRef.current = false;
+            if (isPlaying) {
+              startStrengthRef.current = strengthRef.current;
+              startTimeRef.current = performance.now();
+            }
+          }}
+          onPointerLeave={() => {
+            isDraggingRef.current = false;
+            if (isPlaying) {
+              startStrengthRef.current = strengthRef.current;
+              startTimeRef.current = performance.now();
+            }
+          }}
           className="lossless-audio-slider h-1 min-w-0 flex-1 max-w-[260px] accent-lime-500"
           aria-label="Lossy strength"
         />
