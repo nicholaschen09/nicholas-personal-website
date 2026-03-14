@@ -141,6 +141,17 @@ body {
     color: inherit !important;
   }
 
+  /* KaTeX on mobile: allow horizontal scroll for long equations, prevent overflow */
+  .katex-display {
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+  .katex-display > .katex {
+    white-space: normal;
+  }
+
   /* Lossless audio slider: no hover lightening */
   .lossless-audio-slider::-webkit-slider-thumb:hover,
   .lossless-audio-slider::-webkit-slider-thumb:active {
