@@ -849,7 +849,7 @@ const translations: Record<Language, Record<string, string>> = {
       'lossy formats like MP3 use psychoacoustics — they throw away information humans can\'t easily hear: sounds masked by louder nearby frequencies, very high frequencies (above ~16 kHz for most adults), and quiet sounds during loud moments (temporal masking).',
     'blog.lossless.losslessIntro':
       'lossless formats (FLAC, WAV) keep every sample exactly. they compress like a zip file: perfectly reconstructable, nothing discarded.',
-    'blog.lossless.visualizersTitle': 'see the difference',
+    'blog.lossless.visualizersTitle': 'Visualizers',
     'blog.lossless.visualizersIntro':
       'below: a synthetic audio clip run through a simulated “lossy” process (low-pass filter + quantization). drag the slider to see how high frequencies drop.',
 
