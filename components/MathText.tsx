@@ -69,7 +69,7 @@ export default function MathText({
         return (
           <span
             key={i}
-            className="my-2 block [.katex]:text-center"
+            className="my-5 block [.katex]:text-center"
             dangerouslySetInnerHTML={{ __html: renderLatex(seg.value, true) }}
           />
         );

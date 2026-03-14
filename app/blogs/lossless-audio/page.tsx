@@ -133,16 +133,16 @@ export default function LosslessBlog() {
                 >
                   {t('blog.lossless.flacUnderHoodTitle')}
                 </h2>
-                <p className="mb-4">{t('blog.lossless.flacGoal')}</p>
-                <p className="mb-4">{t('blog.lossless.flacStep1')}</p>
-                <p className="mb-4">
+                <p className="mb-6">{t('blog.lossless.flacGoal')}</p>
+                <p className="mb-6">{t('blog.lossless.flacStep1')}</p>
+                <p className="mb-6">
                   <MathText text={t('blog.lossless.flacStep2')} />
                 </p>
-                <p className="mb-4">
+                <p className="mb-6">
                   <MathText text={t('blog.lossless.flacStep3')} />
                 </p>
-                <p className="mb-4">{t('blog.lossless.flacStep4')}</p>
-                <p>{t('blog.lossless.flacStep5')}</p>
+                <p className="mb-6">{t('blog.lossless.flacStep4')}</p>
+                <p className="mb-0">{t('blog.lossless.flacStep5')}</p>
               </section>
 
               <section>
@@ -179,20 +179,21 @@ export default function LosslessBlog() {
               <section>
                 <h2
                   id="linear-prediction-depth"
-                  className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
+                  className="text-xl md:text-2xl font-semibold text-white mb-6 mt-8 scroll-mt-8"
                 >
                   {t('blog.lossless.lpcDepthTitle')}
                 </h2>
-                <p className="mb-4">
+                <p className="mb-6">
                   <MathText text={t('blog.lossless.lpcSamples')} />
                 </p>
-                <p className="mb-4">
+                <p className="mb-6">
                   <MathText text={t('blog.lossless.lpcPredictable')} />
                 </p>
-                <p className="mb-4">
+                <p className="mb-6">
                   <MathText text={t('blog.lossless.lpcExample')} />
                 </p>
-                <p>
+                <hr className="border-stone-700 my-8" />
+                <p className="mb-0">
                   <MathText text={t('blog.lossless.lpcCoeffs')} />
                 </p>
               </section>
@@ -204,8 +205,8 @@ export default function LosslessBlog() {
                 >
                   {t('blog.lossless.riceTitle')}
                 </h2>
-                <p className="mb-4">{t('blog.lossless.riceGoal')}</p>
-                <p>
+                <p className="mb-6">{t('blog.lossless.riceGoal')}</p>
+                <p className="mb-0">
                   <MathText text={t('blog.lossless.riceK')} />
                 </p>
               </section>

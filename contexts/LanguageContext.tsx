@@ -882,7 +882,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.lossless.flacStep2':
       'Step 2: Interchannel decorrelation (stereo) — left/right are highly correlated. store \\( \\text{mid} = (L+R)/2 \\) and \\( \\text{side} = (L-R)/2 \\). the side channel has way less energy and compresses better.',
     'blog.lossless.flacStep3':
-      'Step 3: Linear Predictive Coding (LPC) — audio is predictable; the next sample is usually close to previous ones. FLAC fits a linear predictor: \\( \\hat{x}[n] = a_1 x[n-1] + a_2 x[n-2] + \\cdots + a_p x[n-p] \\). store the residual \\( e[n] = x[n] - \\hat{x}[n] \\) instead of raw samples. residuals are tiny and cluster near zero → easier to compress. predictor order \\( p \\) is typically 4–12.',
+      'Step 3: Linear Predictive Coding (LPC) — audio is predictable; the next sample is usually close to previous ones. FLAC fits a linear predictor: \\[ \\hat{x}[n] = a_1 x[n-1] + a_2 x[n-2] + \\cdots + a_p x[n-p] \\] store the residual \\[ e[n] = x[n] - \\hat{x}[n] \\] instead of raw samples. residuals are tiny and cluster near zero → easier to compress. predictor order \\( p \\) is typically 4–12.',
     'blog.lossless.flacStep4':
       'Step 4: Rice coding — residuals are entropy-coded with Rice/Golomb codes. small numbers get short codes, large numbers get long codes. FLAC tries multiple k and picks the best per block.',
     'blog.lossless.flacStep5':
@@ -907,11 +907,11 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.lossless.lpcSamples':
       'a "sample" is one number in the sequence. at CD quality, 44,100 numbers per second — each is air pressure at that moment. a 3-minute song is ~8 million integers: \\( x[0], x[1], x[2], \\ldots, x[n] \\).',
     'blog.lossless.lpcPredictable':
-      'why is audio predictable? sound waves are smooth. if the last four samples were 100, 105, 110, 115, the next is probably ~120. the predictor finds coefficients \\( a_1, a_2, \\ldots, a_p \\) so that \\( \\hat{x}[n] = a_1 x[n-1] + a_2 x[n-2] + \\cdots + a_p x[n-p] \\) best predicts the next sample.',
+      'why is audio predictable? sound waves are smooth. if the last four samples were 100, 105, 110, 115, the next is probably ~120. the predictor finds coefficients \\( a_1, a_2, \\ldots, a_p \\) so that the next sample is best predicted by: \\[ \\hat{x}[n] = a_1 x[n-1] + a_2 x[n-2] + \\cdots + a_p x[n-p] \\]',
     'blog.lossless.lpcExample':
-      'example: \\( p=3 \\), \\( a_1=1.5 \\), \\( a_2=-0.7 \\), \\( a_3=0.2 \\). last three samples \\( x[n-1]=100 \\), \\( x[n-2]=90 \\), \\( x[n-3]=80 \\). then \\( \\hat{x}[n] = 1.5(100) - 0.7(90) + 0.2(80) = 150 - 63 + 16 = 103 \\). if the actual \\( x[n] = 105 \\), the residual \\( e[n] = 105 - 103 = 2 \\). we store 2 (a few bits) instead of 105 (many bits).',
+      'concrete example. say \\( p=3 \\) and FLAC found these coefficients: \\[ a_1 = 1.5,\\quad a_2 = -0.7,\\quad a_3 = 0.2 \\] and the last three samples were \\( x[n-1]=100 \\), \\( x[n-2]=90 \\), \\( x[n-3]=80 \\). the prediction is: \\[ \\hat{x}[n] = 1.5(100) + (-0.7)(90) + 0.2(80) = 150 - 63 + 16 = 103 \\] if the actual sample \\( x[n] = 105 \\), the residual is: \\[ e[n] = 105 - 103 = 2 \\] so instead of storing 105 (needs ~8 bits), you store 2 (needs ~2 bits). that\'s the compression.',
     'blog.lossless.lpcCoeffs':
-      'FLAC finds the coefficients with the Levinson–Durbin algorithm (least squares for time series). it tries multiple orders \\( p \\) (typically 8–12) and picks the best tradeoff. the decoder has the same coefficients and residuals and reconstructs \\( x[n] = \\hat{x}[n] + e[n] \\) exactly.',
+      'FLAC finds the coefficients with the Levinson–Durbin algorithm (least squares for time series). it tries multiple orders \\( p \\) (typically 8–12) and picks the best tradeoff. the decoder has the same coefficients and residuals and reconstructs: \\[ x[n] = \\hat{x}[n] + e[n] \\] exactly.',
 
     // What is n / residuals
     'blog.lossless.whatIsNTitle': 'what is n?',
@@ -1786,7 +1786,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.lossless.flacStep2':
       '第二步：声道去相关（立体声）——左右声道高度相关。存 \\( \\text{mid} = (L+R)/2 \\) 和 \\( \\text{side} = (L-R)/2 \\)。side 能量小得多，压缩更好。',
     'blog.lossless.flacStep3':
-      '第三步：线性预测编码（LPC）——音频可预测；下一采样通常与前面接近。FLAC 拟合线性预测器：\\( \\hat{x}[n] = a_1 x[n-1] + a_2 x[n-2] + \\cdots + a_p x[n-p] \\)。不存原始采样而存残差 \\( e[n] = x[n] - \\hat{x}[n] \\)。残差很小、集中在零附近，更容易压缩。预测阶数 \\( p \\) 通常为 4–12。',
+      '第三步：线性预测编码（LPC）——音频可预测；下一采样通常与前面接近。FLAC 拟合线性预测器：\\[ \\hat{x}[n] = a_1 x[n-1] + a_2 x[n-2] + \\cdots + a_p x[n-p] \\] 不存原始采样而存残差 \\[ e[n] = x[n] - \\hat{x}[n] \\] 残差很小、集中在零附近，更容易压缩。预测阶数 \\( p \\) 通常为 4–12。',
     'blog.lossless.flacStep4':
       '第四步：Rice 编码——残差用 Rice/Golomb 码做熵编码。小数用短码，大数用长码。FLAC 对多个 k 尝试并选该块最优。',
     'blog.lossless.flacStep5':
@@ -1808,11 +1808,11 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.lossless.lpcSamples':
       '“采样”是序列中的一个数。CD 质量下每秒 44,100 个数——每个代表该时刻的气压。一首 3 分钟的歌约 800 万个整数：\\( x[0], x[1], x[2], \\ldots, x[n] \\)。',
     'blog.lossless.lpcPredictable':
-      '为何音频可预测？声波是平滑的。若最近四个采样是 100、105、110、115，下一个大概 ~120。预测器找到系数 \\( a_1, a_2, \\ldots, a_p \\)，使 \\( \\hat{x}[n] = a_1 x[n-1] + a_2 x[n-2] + \\cdots + a_p x[n-p] \\) 最好地预测下一采样。',
+      '为何音频可预测？声波是平滑的。若最近四个采样是 100、105、110、115，下一个大概 ~120。预测器找到系数 \\( a_1, a_2, \\ldots, a_p \\)，使下一采样由下式最佳预测：\\[ \\hat{x}[n] = a_1 x[n-1] + a_2 x[n-2] + \\cdots + a_p x[n-p] \\]',
     'blog.lossless.lpcExample':
-      '例：\\( p=3 \\)，\\( a_1=1.5 \\)，\\( a_2=-0.7 \\)，\\( a_3=0.2 \\)。最近三采样 \\( x[n-1]=100 \\)，\\( x[n-2]=90 \\)，\\( x[n-3]=80 \\)。则 \\( \\hat{x}[n] = 1.5(100) - 0.7(90) + 0.2(80) = 150 - 63 + 16 = 103 \\)。若实际 \\( x[n]=105 \\)，残差 \\( e[n]=2 \\)。我们存 2（几位）而不是 105（很多位）。',
+      '具体例子。设 \\( p=3 \\)，FLAC 求得系数：\\[ a_1 = 1.5,\\quad a_2 = -0.7,\\quad a_3 = 0.2 \\] 最近三采样 \\( x[n-1]=100 \\)，\\( x[n-2]=90 \\)，\\( x[n-3]=80 \\)。预测为：\\[ \\hat{x}[n] = 1.5(100) + (-0.7)(90) + 0.2(80) = 150 - 63 + 16 = 103 \\] 若实际采样 \\( x[n]=105 \\)，残差为：\\[ e[n] = 105 - 103 = 2 \\] 因此不存 105（约 8 比特）而存 2（约 2 比特），即压缩。',
     'blog.lossless.lpcCoeffs':
-      'FLAC 用 Levinson–Durbin 算法（时间序列的最小二乘）求系数。会尝试多个阶数 \\( p \\)（通常 8–12）并选最优折中。解码器有相同系数和残差，按 \\( x[n] = \\hat{x}[n] + e[n] \\) 精确重建。',
+      'FLAC 用 Levinson–Durbin 算法（时间序列的最小二乘）求系数。会尝试多个阶数 \\( p \\)（通常 8–12）并选最优折中。解码器有相同系数和残差，按 \\[ x[n] = \\hat{x}[n] + e[n] \\] 精确重建。',
 
     'blog.lossless.whatIsNTitle': 'n 是什么？',
     'blog.lossless.whatIsNText':
