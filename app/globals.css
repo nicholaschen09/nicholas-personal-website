@@ -134,4 +134,10 @@ body {
     scrollbar-color: #333 #1a1a1a;
     scrollbar-width: thin;
   }
+
+  /* KaTeX: inherit text color so math matches surrounding content */
+  .katex,
+  .katex * {
+    color: inherit !important;
+  }
 }

@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useLanguage } from '@/contexts/LanguageContext';
 import Footer from '@/components/Footer';
 import ImageLightbox from '@/components/ImageLightbox';
+import MathText from '@/components/MathText';
 import TableOfContents, { TOCSection } from '@/components/TableOfContents';
 
 export default function LosslessBlog() {
@@ -14,15 +15,12 @@ export default function LosslessBlog() {
     () => [
       { id: 'what-is-lossless', title: t('blog.lossless.whatIsTitle') },
       { id: 'lossless-vs-lossy', title: t('blog.lossless.losslessVsLossyTitle') },
-      { id: 'how-it-works', title: t('blog.lossless.howItWorksTitle') },
       { id: 'mp3-under-the-hood', title: t('blog.lossless.mp3Title') },
       { id: 'why-it-matters', title: t('blog.lossless.whyItMattersTitle') },
       { id: 'flac-under-the-hood', title: t('blog.lossless.flacUnderHoodTitle') },
       { id: 'common-formats', title: t('blog.lossless.formatsTitle') },
-      { id: 'the-math', title: t('blog.lossless.mathTitle') },
       { id: 'linear-prediction-depth', title: t('blog.lossless.lpcDepthTitle') },
       { id: 'rice-coding', title: t('blog.lossless.riceTitle') },
-      { id: 'flac-file-structure', title: t('blog.lossless.flacStructureTitle') },
       { id: 'conclusion', title: t('blog.lossless.conclusionTitle') },
     ],
     [t],
@@ -94,26 +92,12 @@ export default function LosslessBlog() {
 
               <section>
                 <h2
-                  id="how-it-works"
-                  className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
-                >
-                  {t('blog.lossless.howItWorksTitle')}
-                </h2>
-                <p>{t('blog.lossless.howItWorksText')}</p>
-              </section>
-
-              <section>
-                <h2
                   id="mp3-under-the-hood"
                   className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
                 >
                   {t('blog.lossless.mp3Title')}
                 </h2>
-                <p className="mb-4">{t('blog.lossless.mp3Step1')}</p>
-                <p className="mb-4">{t('blog.lossless.mp3Step2')}</p>
-                <p className="mb-4">{t('blog.lossless.mp3Step3')}</p>
-                <p className="mb-4">{t('blog.lossless.mp3Step4')}</p>
-                <p>{t('blog.lossless.mp3Step5')}</p>
+                <p>{t('blog.lossless.mp3Short')}</p>
               </section>
 
               <section>
@@ -124,8 +108,6 @@ export default function LosslessBlog() {
                   {t('blog.lossless.whyItMattersTitle')}
                 </h2>
                 <p className="mb-4">{t('blog.lossless.whyItMattersText')}</p>
-                <p className="mb-4">{t('blog.lossless.whyMattersExtended')}</p>
-                <p className="mb-4">{t('blog.lossless.whyMattersReasons')}</p>
                 <p>{t('blog.lossless.whyMattersHonest')}</p>
               </section>
 
@@ -138,8 +120,12 @@ export default function LosslessBlog() {
                 </h2>
                 <p className="mb-4">{t('blog.lossless.flacGoal')}</p>
                 <p className="mb-4">{t('blog.lossless.flacStep1')}</p>
-                <p className="mb-4">{t('blog.lossless.flacStep2')}</p>
-                <p className="mb-4">{t('blog.lossless.flacStep3')}</p>
+                <p className="mb-4">
+                  <MathText text={t('blog.lossless.flacStep2')} />
+                </p>
+                <p className="mb-4">
+                  <MathText text={t('blog.lossless.flacStep3')} />
+                </p>
                 <p className="mb-4">{t('blog.lossless.flacStep4')}</p>
                 <p>{t('blog.lossless.flacStep5')}</p>
               </section>
@@ -158,8 +144,7 @@ export default function LosslessBlog() {
                     <h3 className="text-lg font-medium text-white mb-2">
                       {t('blog.lossless.whatIsFlacTitle')}
                     </h3>
-                    <p className="mb-4">{t('blog.lossless.whatIsFlacText')}</p>
-                    <p>{t('blog.lossless.flacText')}</p>
+                    <p>{t('blog.lossless.whatIsFlacText')}</p>
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-white mb-2">
@@ -178,44 +163,23 @@ export default function LosslessBlog() {
 
               <section>
                 <h2
-                  id="the-math"
-                  className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
-                >
-                  {t('blog.lossless.mathTitle')}
-                </h2>
-                <p className="mb-4">{t('blog.lossless.mathIntro')}</p>
-                <p className="mb-4">{t('blog.lossless.mathStep1')}</p>
-                <p className="mb-4">{t('blog.lossless.mathStep2')}</p>
-                <p className="mb-4">{t('blog.lossless.mathStep3')}</p>
-                <p>{t('blog.lossless.mathStep4')}</p>
-              </section>
-
-              <section>
-                <h2
                   id="linear-prediction-depth"
                   className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
                 >
                   {t('blog.lossless.lpcDepthTitle')}
                 </h2>
-                <p className="mb-4">{t('blog.lossless.lpcSamples')}</p>
-                <p className="mb-4">{t('blog.lossless.lpcPredictable')}</p>
-                <p className="mb-4">{t('blog.lossless.lpcExample')}</p>
-                <p className="mb-6">{t('blog.lossless.lpcCoeffs')}</p>
-
-                <h3 className="text-lg font-medium text-white mb-2 mt-6">
-                  {t('blog.lossless.whatIsNTitle')}
-                </h3>
-                <p className="mb-6">{t('blog.lossless.whatIsNText')}</p>
-
-                <h3 className="text-lg font-medium text-white mb-2">
-                  {t('blog.lossless.residualsTitle')}
-                </h3>
-                <p className="mb-6">{t('blog.lossless.residualsText')}</p>
-
-                <h3 className="text-lg font-medium text-white mb-2">
-                  {t('blog.lossless.reconstructTitle')}
-                </h3>
-                <p>{t('blog.lossless.reconstructText')}</p>
+                <p className="mb-4">
+                  <MathText text={t('blog.lossless.lpcSamples')} />
+                </p>
+                <p className="mb-4">
+                  <MathText text={t('blog.lossless.lpcPredictable')} />
+                </p>
+                <p className="mb-4">
+                  <MathText text={t('blog.lossless.lpcExample')} />
+                </p>
+                <p>
+                  <MathText text={t('blog.lossless.lpcCoeffs')} />
+                </p>
               </section>
 
               <section>
@@ -226,18 +190,9 @@ export default function LosslessBlog() {
                   {t('blog.lossless.riceTitle')}
                 </h2>
                 <p className="mb-4">{t('blog.lossless.riceGoal')}</p>
-                <p className="mb-4">{t('blog.lossless.riceK')}</p>
-                <p>{t('blog.lossless.riceChooseK')}</p>
-              </section>
-
-              <section>
-                <h2
-                  id="flac-file-structure"
-                  className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
-                >
-                  {t('blog.lossless.flacStructureTitle')}
-                </h2>
-                <p>{t('blog.lossless.flacStructureText')}</p>
+                <p>
+                  <MathText text={t('blog.lossless.riceK')} />
+                </p>
               </section>
 
               <section>
