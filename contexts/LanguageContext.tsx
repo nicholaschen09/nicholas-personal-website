@@ -949,7 +949,7 @@ const translations: Record<Language, Record<string, string>> = {
       'it doesn\'t — on its own the error is meaningless. the decoder needs both: \\( x[n] = \\hat{x}[n] + e[n] \\). it has the coefficients, runs the same predictor to get \\( \\hat{x}[n] \\), then adds the stored residual. prediction + error = original sample exactly. example: predictor 103, residual 2 → 103 + 2 = 105 ✓. think of it like directions: "start at the coffee shop (prediction) and walk 2 steps east (residual)." together they get you exactly there.',
 
     // Rice coding
-    'blog.lossless.riceTitle': 'Rice coding',
+    'blog.lossless.riceTitle': 'rice coding',
     'blog.lossless.riceGoal': 'goal: small residuals are common, large ones rare. give small numbers short codes, large numbers long codes — like Morse code (E is one dot).',
     'blog.lossless.riceParamK':
       'the parameter \\( k \\): with \\( k = 2 \\) you split at the \\( 2^2 = 4 \\) boundary. quotient \\( q = \\lfloor |e|/4 \\rfloor \\) (how many 4s fit), remainder \\( r = |e| \\bmod 4 \\) (the leftover). store \\( q \\) in unary (\\( q \\) ones then a zero), then \\( r \\) in \\( k \\) bits.',

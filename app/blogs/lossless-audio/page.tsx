@@ -176,6 +176,19 @@ export default function LosslessBlog() {
                 <p className="mb-6">
                   <MathText text={t('blog.lossless.lpcExample')} />
                 </p>
+                <pre className="mb-6 rounded-md border border-stone-700 bg-stone-800/50 p-4 overflow-x-auto text-[10px] text-stone-200 md:text-xs font-mono">
+                  {`// Same example: p=3, coefficients a1=1.5, a2=-0.7, a3=0.2
+const a = [1.5, -0.7, 0.2];
+const prev = [100, 90, 80];  // x[n-1], x[n-2], x[n-3]
+
+let pred = 0;
+for (let k = 0; k < a.length; k++) pred += a[k] * prev[k];
+// pred = 1.5*100 + (-0.7)*90 + 0.2*80 = 103
+
+const xActual = 105;
+const residual = xActual - pred;  // e[n] = 105 - 103 = 2
+// Store residual (small) instead of 105 (large) → compression.`}
+                </pre>
 
                 <h3 className="text-lg font-medium text-white mb-2 mt-8">
                   {t('blog.lossless.lpcHowFindTitle')}
@@ -224,9 +237,15 @@ export default function LosslessBlog() {
                 <h3 className="text-lg font-medium text-white mb-2">
                   {t('blog.lossless.reconstructTitle')}
                 </h3>
-                <p className="mb-0">
+                <p className="mb-4">
                   <MathText text={t('blog.lossless.reconstructText')} />
                 </p>
+                <pre className="mb-0 rounded-md border border-stone-700 bg-stone-800/50 p-4 overflow-x-auto text-[10px] text-stone-200 md:text-xs font-mono">
+                  {`// Decoder: prediction + residual → original sample
+const pred = 103;   // from same coefficients + previous samples
+const residual = 2; // stored in the bitstream
+const xReconstructed = pred + residual;  // 103 + 2 = 105 ✓`}
+                </pre>
               </section>
 
               <section>
