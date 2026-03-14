@@ -16,7 +16,6 @@ export default function LosslessBlog() {
     () => [
       { id: 'what-is-lossless', title: t('blog.lossless.whatIsTitle') },
       { id: 'lossless-vs-lossy', title: t('blog.lossless.losslessVsLossyTitle') },
-      { id: 'visualizers', title: t('blog.lossless.visualizersTitle') },
       { id: 'mp3-under-the-hood', title: t('blog.lossless.mp3Title') },
       { id: 'why-it-matters', title: t('blog.lossless.whyItMattersTitle') },
       { id: 'common-formats', title: t('blog.lossless.formatsTitle') },
@@ -88,8 +87,9 @@ export default function LosslessBlog() {
                 <p className="mb-4">{t('blog.lossless.lossyIntro')}</p>
                 <p className="mb-6">{t('blog.lossless.losslessIntro')}</p>
 
-                <p id="visualizers" className="mb-4 mt-8 scroll-mt-8">{t('blog.lossless.visualizersIntro')}</p>
-                <QualitySlider />
+                <div id="visualizers" className="mt-8 scroll-mt-8">
+                  <QualitySlider />
+                </div>
               </section>
 
               <section>
