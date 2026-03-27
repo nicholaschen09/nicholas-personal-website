@@ -240,6 +240,16 @@ export default function Home() {
                 <ul className="text-xs md:text-sm text-stone-400 space-y-1">
                   <li>
                     <a
+                      href="https://github.com/nicholaschen09/metallic-blob"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+                    >
+                      {t('projects.label.metallicBlob')}
+                    </a>
+                  </li>
+                  <li>
+                    <a
                       href="https://tiktokviewpredictor.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"

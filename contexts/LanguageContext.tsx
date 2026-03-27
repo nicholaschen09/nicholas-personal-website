@@ -564,6 +564,7 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.label.fernando': 'fernando',
     'projects.label.facialRecognition': 'facial recognition',
     'projects.label.tunl': 'tunl',
+    'projects.label.metallicBlob': 'metallic blob',
 
     // Home hero title
     'home.title': 'hi im nic',
@@ -1384,6 +1385,7 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.label.fernando': 'fernando',
     'projects.label.facialRecognition': 'facial recognition',
     'projects.label.tunl': 'tunl',
+    'projects.label.metallicBlob': 'metallic blob',
 
     // Home hero title
     'home.title': '嗨，我是 nic',
