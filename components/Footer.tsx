@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 interface FooterProps {
@@ -11,9 +12,9 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
 
   return (
     <div
-      className={`${className} flex flex-wrap items-center justify-between gap-3 text-xs text-stone-400 max-w-lg w-full`}
+      className={`${className} flex max-w-lg w-full flex-wrap items-center justify-between gap-3 text-xs text-stone-400`}
     >
-      {/* Social media icons */}
+      {/* Social media icons + back-to-top */}
       <div className="flex items-center gap-1.5">
         <a
           href="mailto:nicholas.chen243@gmail.com"
@@ -118,9 +119,36 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
             <rect x="3" y="3" width="18" height="18" />
           </svg>
         </a>
+        <Link
+          href="/ascii"
+          className="group relative flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-transparent text-stone-400 transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+          aria-label={t('footer.torus')}
+          title={t('footer.torus')}
+        >
+          <span className="pointer-events-none absolute top-full left-1/2 z-10 mt-1.5 -translate-x-1/2 whitespace-nowrap rounded bg-stone-800 px-2 py-1 text-[10px] font-medium lowercase tracking-normal text-stone-100 opacity-0 transition-opacity duration-150 group-hover:opacity-100">
+            {t('footer.torus')}
+          </span>
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="7"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="5"
+            />
+          </svg>
+        </Link>
       </div>
-      <div className="flex items-center flex-shrink-0">
-        <div className="flex items-center gap-1.5">
+      <div className="flex flex-shrink-0 items-center">
+          <div className="flex items-center gap-1.5">
           <button
             type="button"
             onClick={() => setLanguage('en')}
@@ -150,8 +178,8 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
             </span>
             中文
           </button>
+          </div>
         </div>
-      </div>
     </div>
   );
 }
