@@ -4,7 +4,7 @@ import { memo, useLayoutEffect, useRef } from 'react';
 import * as THREE from 'three';
 
 /** Columns × rows in the ASCII grid (monospace cells). */
-const COLS = 58;
+const COLS = 80;
 const ROWS = 32;
 /** Supersamples per cell (spatial anti-aliasing, à la Alex Harri). */
 const SS = 2;
