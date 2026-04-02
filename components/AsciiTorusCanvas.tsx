@@ -25,8 +25,6 @@ function luminance(r: number, g: number, b: number) {
 function AsciiTorusCanvas() {
   const preRef = useRef<HTMLPreElement>(null);
   const rafRef = useRef<number>(0);
-
-  // Before first paint on the client so the grid never flashes empty (useEffect runs too late).
   useLayoutEffect(() => {
     const pre = preRef.current;
     if (!pre) return;
