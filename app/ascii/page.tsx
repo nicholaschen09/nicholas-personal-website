@@ -24,10 +24,8 @@ export default function AsciiPage() {
           </p>
         </div>
 
-        <div className="flex w-full flex-col items-center justify-center px-1 py-2 md:px-2 md:py-5">
-          <div className="flex w-full justify-center">
-            <AsciiTorusCanvas />
-          </div>
+        <div className="w-full py-2 md:py-5">
+          <AsciiTorusCanvas />
         </div>
 
         <section className="w-full self-start border-t border-stone-700 pt-6">
