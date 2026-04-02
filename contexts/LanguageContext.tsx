@@ -600,7 +600,7 @@ const translations: Record<Language, Record<string, string>> = {
     // ASCII torus page
     'ascii.title': 'rotating torus ascii render',
     'ascii.intro':
-      'Small experiment: a torus as monospace text, brightness becomes character density so the hole and rim read as contours. Each frame is the same mesh, spinning with nothing to tweak. three.js renders offscreen in React, maps luminance to a sorted glyph ramp, and averages a few subpixels per cell for slightly softer edges.',
+      'small experiment: a torus as monospace text, brightness becomes character density so the hole and rim read as contours. each frame is the same mesh, spinning with nothing to tweak. three.js renders offscreen in react, maps luminance to a sorted glyph ramp, and averages a few subpixels per cell for slightly softer edges.',
     'ascii.referencesTitle': 'references',
     'ascii.harriArticleLinkText':
       'ASCII characters are not pixels: a deep dive into ASCII rendering (Alex Harri)',
