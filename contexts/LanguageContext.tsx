@@ -595,7 +595,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.by': 'BY NICHOLAS®',
     'footer.langEn': 'english',
     'footer.langZh': 'chinese',
-    'footer.torus': 'torus',
+    'footer.torus': 'ascii',
 
     // ASCII torus page
     'ascii.title': 'rotating torus ascii render',
@@ -1424,7 +1424,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.by': '设计：NICHOLAS®',
     'footer.langEn': '英语',
     'footer.langZh': '中文',
-    'footer.torus': 'torus',
+    'footer.torus': 'ascii',
 
     // ASCII torus page
     'ascii.title': 'rotating torus ascii render',
