@@ -136,19 +136,12 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden
           >
-            <circle
-              cx="12"
-              cy="12"
-              r="7"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="5"
-            />
+            <circle cx="12" cy="12" r="7" fill="none" stroke="currentColor" strokeWidth="5" />
           </svg>
         </Link>
       </div>
       <div className="flex flex-shrink-0 items-center">
-          <div className="flex items-center gap-1.5">
+        <div className="flex items-center gap-1.5">
           <button
             type="button"
             onClick={() => setLanguage('en')}
@@ -178,8 +171,8 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
             </span>
             中文
           </button>
-          </div>
         </div>
+      </div>
     </div>
   );
 }

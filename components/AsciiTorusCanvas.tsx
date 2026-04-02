@@ -15,8 +15,7 @@ const COLS_MAX = 220;
  * Printable characters sorted from light / sparse → dark / dense.
  * Luminance maps to index (bright → left, dark → right).
  */
-const CHARS =
-  " .'`^\",:;Il!i><~+_-?][}{1)(|\\/tfjrxnuvcXVYCJFTLUQOZmwqpdbkhao*#MW&8%B@$";
+const CHARS = ' .\'`^",:;Il!i><~+_-?][}{1)(|\\/tfjrxnuvcXVYCJFTLUQOZmwqpdbkhao*#MW&8%B@$';
 
 function luminance(r: number, g: number, b: number) {
   return 0.2126 * r + 0.7152 * g + 0.0722 * b;
@@ -131,10 +130,7 @@ function AsciiTorusCanvas() {
             }
             const avg = sum / n;
             const v = enhance(avg, frameMax);
-            const charIdx = Math.min(
-              CHARS.length - 1,
-              Math.floor((1 - v) * (CHARS.length - 1)),
-            );
+            const charIdx = Math.min(CHARS.length - 1, Math.floor((1 - v) * (CHARS.length - 1)));
             line += CHARS[charIdx];
           }
           lines.push(line);
@@ -156,10 +152,7 @@ function AsciiTorusCanvas() {
     disposeThree = buildThree(cols);
 
     const ro = new ResizeObserver(() => {
-      const next = measureCols(
-        container.getBoundingClientRect().width,
-        getComputedStyle(pre).font,
-      );
+      const next = measureCols(container.getBoundingClientRect().width, getComputedStyle(pre).font);
       if (next === cols) return;
       cols = next;
       disposeThree?.();
