@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { memo, useLayoutEffect, useRef } from 'react';
 import * as THREE from 'three';
 
 /** Columns × rows in the ASCII grid (monospace cells). */
@@ -22,11 +22,12 @@ function luminance(r: number, g: number, b: number) {
   return 0.2126 * r + 0.7152 * g + 0.0722 * b;
 }
 
-export default function AsciiTorusCanvas() {
+function AsciiTorusCanvas() {
   const preRef = useRef<HTMLPreElement>(null);
   const rafRef = useRef<number>(0);
 
-  useEffect(() => {
+  // Before first paint on the client so the grid never flashes empty (useEffect runs too late).
+  useLayoutEffect(() => {
     const pre = preRef.current;
     if (!pre) return;
 
@@ -138,8 +139,11 @@ export default function AsciiTorusCanvas() {
   return (
     <pre
       ref={preRef}
-      className="mx-auto block w-fit max-w-full overflow-x-auto font-mono text-[8px] leading-[1.06] tracking-[0.01em] text-stone-300 selection:bg-stone-700 sm:text-[9px] md:text-[10px]"
+      className="block w-full overflow-x-auto text-center font-mono text-[8px] leading-[1.06] tracking-[0.01em] text-stone-300 selection:bg-stone-700 sm:text-[9px] md:text-[10px]"
       aria-label="ASCII 3D torus animation"
     />
   );
 }
+
+/** No props: memo avoids parent re-renders (e.g. language) clearing imperative `textContent`. */
+export default memo(AsciiTorusCanvas);
