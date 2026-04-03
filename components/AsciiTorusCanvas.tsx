@@ -171,7 +171,7 @@ function AsciiTorusCanvas() {
     <div ref={containerRef} className="w-full">
       <pre
         ref={preRef}
-        className="block w-full overflow-x-auto text-center font-mono text-[8px] leading-[1.06] tracking-[0.01em] text-stone-300 selection:bg-stone-700 sm:text-[9px] md:text-[10px]"
+        className="block w-full overflow-hidden text-center font-mono text-[8px] leading-[1.06] tracking-[0.01em] text-stone-300 selection:bg-stone-700 sm:text-[9px] md:text-[10px]"
         aria-label="ASCII 3D torus animation"
       />
     </div>
