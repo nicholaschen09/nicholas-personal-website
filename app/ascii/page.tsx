@@ -13,11 +13,11 @@ export default function AsciiPage() {
       <div className="mx-auto flex w-full max-w-lg flex-col items-center space-y-6">
         <div className="w-full self-start text-left">
           <BackToHomeLink />
-          <h1 className="mt-4 text-2xl font-medium leading-snug text-white md:text-3xl">
+          <h1 className="mb-2 mt-4 text-2xl font-medium text-white md:text-3xl">
             {t('ascii.title')}
           </h1>
           <p
-            className="mt-5 text-sm leading-relaxed text-stone-400 md:text-[15px]"
+            className="mt-5 text-xs leading-relaxed text-stone-400 md:text-sm"
             style={{ fontWeight: 400 }}
           >
             {t('ascii.intro')}

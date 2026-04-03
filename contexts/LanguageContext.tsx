@@ -600,7 +600,7 @@ const translations: Record<Language, Record<string, string>> = {
     // ASCII torus page
     'ascii.title': 'rotating torus ascii render',
     'ascii.intro':
-      'small experiment: a torus as monospace text, brightness becomes character density so the hole and rim read as contours. each frame is the same mesh, spinning with nothing to tweak. three.js renders offscreen in react, maps luminance to a sorted glyph ramp, and averages a few subpixels per cell for slightly softer edges.',
+      'small experiment: a torus as monospace text where brightness maps to character density, so the hole and rim read as contours. three.js renders offscreen in react, maps luminance to a sorted glyph ramp, and averages a few subpixels per cell for softer edges.',
     'ascii.referencesTitle': 'references',
     'ascii.harriArticleLinkText':
       'ASCII characters are not pixels: a deep dive into ASCII rendering (Alex Harri)',
@@ -1429,7 +1429,7 @@ const translations: Record<Language, Record<string, string>> = {
     // ASCII torus page
     'ascii.title': 'rotating torus ascii render',
     'ascii.intro':
-      '小实验：用等宽字符画环面，亮度变成疏密后孔和边缘像轮廓。每一帧仍是同一网格在转，没有可调控件。three.js 在 React 里离屏渲染，把亮度映射到一组排序过的字符，并对每格做少量 supersample，让边缘稍柔和。',
+      '小实验：用等宽字符画环面，把亮度映射成字符疏密，让孔和边缘读起来像轮廓。three.js 在 react 里离屏渲染，把亮度映射到一组排序过的字符，并对每格做少量 supersample，让边缘更柔和。',
     'ascii.referencesTitle': '参考',
     'ascii.harriArticleLinkText':
       'ASCII characters are not pixels: a deep dive into ASCII rendering（Alex Harri）',
