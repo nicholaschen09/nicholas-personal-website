@@ -579,16 +579,16 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Previously section
     'previously.title': 'previously',
-    'previously.role1': 'engineering',
-    'previously.role2': 'engineering',
+    'previously.role1': '',
+    'previously.role2': '',
     'previously.role3': 'engineering',
     'previously.item1': 'ownr',
     'previously.item2': 'rbc',
     'previously.item3': 'insforge',
 
     // Current roles (compact labels)
-    'current.role1': 'systems design engineering',
-    'current.role2': 'engineering',
+    'current.role1': 'systems design engineering at university of waterloo',
+    'current.role2': '',
 
     // Footer
     'footer.copyright': '© 2025 NICHOLAS CHEN',
@@ -1408,16 +1408,16 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Previously section
     'previously.title': '之前经历...',
-    'previously.role1': '工程',
-    'previously.role2': '工程',
+    'previously.role1': '',
+    'previously.role2': '',
     'previously.role3': '工程',
     'previously.item1': 'ownr',
     'previously.item2': 'rbc',
     'previously.item3': 'insforge',
 
     // Current roles (compact labels)
-    'current.role1': '系统设计工程',
-    'current.role2': '工程',
+    'current.role1': '滑铁卢大学系统设计工程',
+    'current.role2': '',
 
     // Footer
     'footer.copyright': '© 2025 NICHOLAS CHEN',
