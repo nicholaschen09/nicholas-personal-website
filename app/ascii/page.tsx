@@ -16,7 +16,10 @@ export default function AsciiPage() {
           </h1>
           <div className="space-y-4">
             <p className="text-xs md:text-sm leading-relaxed text-stone-400 lowercase">
-              small experiment: a torus as monospace text where brightness maps to character density, so the hole and rim read as contours. three.js renders offscreen in react, maps luminance to a sorted glyph ramp, and averages a few subpixels per cell for softer edges.
+              small experiment: a torus as monospace text where brightness maps to character
+              density, so the hole and rim read as contours. three.js renders offscreen in react,
+              maps luminance to a sorted glyph ramp, and averages a few subpixels per cell for
+              softer edges.
             </p>
           </div>
         </header>
