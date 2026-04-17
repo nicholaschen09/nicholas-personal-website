@@ -78,7 +78,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-4 md:p-12 relative z-10 selection:bg-orange-500/30 selection:text-orange-200">
+    <main className="flex min-h-screen flex-col items-center justify-center p-4 md:p-12 relative z-10">
       {/* Hero Section */}
       <div className="max-w-lg w-full space-y-3 md:space-y-4 mx-auto">
         <div className="flex items-start justify-between mb-0">

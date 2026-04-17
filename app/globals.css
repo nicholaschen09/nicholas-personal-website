@@ -156,4 +156,9 @@ body {
   .btn-interactive {
     @apply transition-colors hover:bg-orange-500/10 hover:text-orange-500;
   }
+
+  /* Global orange selection highlight */
+  ::selection {
+    @apply bg-orange-500/30 text-orange-200;
+  }
 }
