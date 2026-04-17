@@ -217,7 +217,7 @@ export default function Home() {
                       rel="noopener noreferrer"
                       className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
                     >
-                      metallic-blob
+                      metallic blob
                     </a>
                   </li>
                   <li>
@@ -258,7 +258,7 @@ export default function Home() {
                       rel="noopener noreferrer"
                       className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
                     >
-                      facial-recognition
+                      facial recognition
                     </a>
                   </li>
                   <li>
