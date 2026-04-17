@@ -1,7 +1,5 @@
 'use client';
 
-import Link from 'next/link';
-
 interface FooterProps {
   className?: string;
 }
@@ -97,7 +95,7 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
         </a>
       </div>
 
-      {/* Art + ASCII buttons on the right */}
+      {/* Art button on the right */}
       <div className="flex items-center gap-1.5">
         <a
           href="https://nicholaschen243.wixsite.com/nicholas-chen"
@@ -120,26 +118,6 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
             <rect x="3" y="3" width="18" height="18" />
           </svg>
         </a>
-        <Link
-          href="/ascii"
-          className="group relative flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-transparent text-stone-400 transition-colors hover:bg-orange-500/10 hover:text-orange-500"
-          aria-label="ascii"
-          title="ascii"
-        >
-          <span className="pointer-events-none absolute top-full left-1/2 z-20 mt-1.5 -translate-x-1/2 whitespace-nowrap rounded bg-stone-800 px-2 py-1 text-[10px] font-bold lowercase tracking-normal text-orange-500 opacity-0 transition-opacity duration-150 group-hover:opacity-100">
-            ascii
-          </span>
-          <svg
-            width="22"
-            height="22"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden
-          >
-            <circle cx="12" cy="12" r="7" fill="none" stroke="currentColor" strokeWidth="5" />
-          </svg>
-        </Link>
       </div>
     </div>
   );
