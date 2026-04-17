@@ -1,10 +1,8 @@
 'use client';
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { useLanguage } from '@/contexts/LanguageContext';
 import Footer from '@/components/Footer';
 
 export default function Home() {
-  const { t, language, setLanguage } = useLanguage();
   const [isHovering, setIsHovering] = useState(false);
   const [typedChars, setTypedChars] = useState(0);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
@@ -74,16 +72,13 @@ export default function Home() {
 
   const getDisplayName = () => {
     if (typedChars > 0 || isHovering) {
-      if (language === 'zh') {
-        return '嗨，我是 nic' + extraChars.slice(0, typedChars);
-      }
       return 'hi im nic' + extraChars.slice(0, typedChars);
     }
-    return t('home.title');
+    return 'hi im nic';
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-4 md:p-12 relative z-10">
+    <main className="flex min-h-screen flex-col items-center justify-center p-4 md:p-12 relative z-10 selection:bg-orange-500/30 selection:text-orange-200">
       {/* Hero Section */}
       <div className="max-w-lg w-full space-y-3 md:space-y-4 mx-auto">
         <div className="flex items-start justify-between mb-0">
@@ -107,7 +102,7 @@ export default function Home() {
               <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 z-50">
                 <button
                   onClick={handleCopySvg}
-                  className="flex items-center justify-center gap-2 px-3 py-2.5 text-sm text-stone-400 bg-stone-800/80 hover:text-stone-100 rounded-md whitespace-nowrap w-[120px]"
+                  className="flex items-center justify-center gap-2 px-3 py-2.5 text-sm text-stone-400 bg-stone-800/80 hover:bg-orange-500/10 hover:text-orange-500 rounded-md whitespace-nowrap w-[120px] transition-colors"
                 >
                   {copied ? (
                     <>
@@ -148,11 +143,10 @@ export default function Home() {
             )}
           </div>
         </div>
-        {/* location / building lines removed */}
 
         <div>
           <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">
-            {t('hero.currently')}
+            currently
           </p>
           <ul className="text-xs md:text-sm text-stone-400 space-y-1">
             <li>
@@ -160,10 +154,10 @@ export default function Home() {
                 href="https://uwaterloo.ca/systems-design-engineering/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80"
+                className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10"
               >
-                <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                  {t('current.role1')}
+                <span className="text-stone-400 group-hover:text-orange-500 transition-colors">
+                  systems design engineering at university of waterloo
                 </span>
               </a>
             </li>
@@ -174,7 +168,7 @@ export default function Home() {
           <div className="mt-5 space-y-4">
             <div>
               <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">
-                {t('previously.title')}
+                previously
               </p>
               <ul className="text-xs md:text-sm text-stone-400 space-y-1">
                 <li>
@@ -182,9 +176,9 @@ export default function Home() {
                     href="https://textql.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80"
+                    className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10"
                   >
-                    <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
+                    <span className="text-stone-400 group-hover:text-orange-500 transition-colors">
                       textql
                     </span>
                   </a>
@@ -194,10 +188,10 @@ export default function Home() {
                     href="https://www.ownr.co/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80"
+                    className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10"
                   >
-                    <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                      {t('previously.item1')}
+                    <span className="text-stone-400 group-hover:text-orange-500 transition-colors">
+                      ownr
                     </span>
                   </a>
                 </li>
@@ -206,10 +200,10 @@ export default function Home() {
                     href="https://www.rbc.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80"
+                    className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10"
                   >
-                    <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                      {t('previously.item2')}
+                    <span className="text-stone-400 group-hover:text-orange-500 transition-colors">
+                      rbc
                     </span>
                   </a>
                 </li>
@@ -218,7 +212,7 @@ export default function Home() {
 
             <div>
               <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">
-                {t('projects.title')}
+                projects
               </p>
               <div className="-mx-2 px-2">
                 <ul className="text-xs md:text-sm text-stone-400 space-y-1">
@@ -227,9 +221,9 @@ export default function Home() {
                       href="https://github.com/nicholaschen09/metallic-blob"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
                     >
-                      {t('projects.label.metallicBlob')}
+                      metallic-blob
                     </a>
                   </li>
                   <li>
@@ -237,9 +231,9 @@ export default function Home() {
                       href="https://tiktokviewpredictor.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
                     >
-                      {t('projects.label.tiktok')}
+                      tiktok view predictor
                     </a>
                   </li>
 
@@ -248,9 +242,9 @@ export default function Home() {
                       href="https://sql-query-parser.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
                     >
-                      {t('projects.label.sqlParser')}
+                      sql query parser
                     </a>
                   </li>
                   <li>
@@ -258,9 +252,9 @@ export default function Home() {
                       href="https://github.com/enxilium/posture-checker-robot"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
                     >
-                      {t('projects.label.fernando')}
+                      fernando
                     </a>
                   </li>
                   <li>
@@ -268,9 +262,9 @@ export default function Home() {
                       href="https://facial-recognition-neural-network.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
                     >
-                      {t('projects.label.facialRecognition')}
+                      facial-recognition
                     </a>
                   </li>
                   <li>
@@ -278,9 +272,9 @@ export default function Home() {
                       href="https://github.com/nicholaschen09/tunl"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
                     >
-                      {t('projects.label.tunl')}
+                      tunl
                     </a>
                   </li>
                 </ul>
@@ -288,97 +282,35 @@ export default function Home() {
             </div>
 
             <div>
-              <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">{t('nav.blogs')}</p>
+              <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">writing</p>
               <div className="-mx-2 px-2">
                 <ul className="text-xs md:text-sm text-stone-400 space-y-1">
                   <li>
                     <a
                       href="/blogs/ontology-text-to-sql"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
                     >
-                      {t('blog.ontology.title')}
+                      why ontology for text-to-sql?
                     </a>
                   </li>
                   <li>
                     <a
                       href="/blogs/grpc"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
                     >
-                      {t('blog.grpc.title')}
+                      an introduction to grpc
                     </a>
                   </li>
                   <li>
                     <a
                       href="/blogs/lossless-audio"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
                     >
-                      {t('blog.lossless.title')}
+                      how lossless compression preserves audio quality
                     </a>
                   </li>
                 </ul>
               </div>
-              {/* Webring links - commented out
-              <div className="mt-4 mb-4 flex items-center gap-2 text-xs text-stone-400">
-                <a
-                  href="https://about.ceruleanechoes.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex h-6 w-6 items-center justify-center rounded bg-transparent text-stone-400 hover:bg-stone-800/80 hover:text-stone-100 transition-colors"
-                >
-                  <svg
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="opacity-60 transition-opacity duration-200 group-hover:opacity-100"
-                  >
-                    <path
-                      d="M12 15L6 9L12 3"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </a>
-                <a
-                  href="https://www.sydeb.me/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex h-6 w-6 items-center justify-center rounded bg-transparent text-stone-400 hover:bg-stone-800/80 hover:text-stone-100 transition-colors"
-                >
-                  <img
-                    src="/white.svg"
-                    alt="White SVG Pattern"
-                    className="w-6 h-6 opacity-60 transition-opacity duration-200 group-hover:opacity-100"
-                  />
-                </a>
-                <a
-                  href="https://www.jordankhatri.me/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex h-6 w-6 items-center justify-center rounded bg-transparent text-stone-400 hover:bg-stone-800/80 hover:text-stone-100 transition-colors"
-                >
-                  <svg
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="opacity-60 transition-opacity duration-200 group-hover:opacity-100"
-                  >
-                    <path
-                      d="M6 3L12 9L6 15"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </a>
-              </div>
-              */}
             </div>
           </div>
         </div>

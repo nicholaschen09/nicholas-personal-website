@@ -157,7 +157,7 @@ export default function QualitySlider() {
         <button
           type="button"
           onClick={isPlaying ? pause : play}
-          className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-stone-700 text-stone-200 transition-colors hover:bg-stone-600 hover:text-white"
+          className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-stone-700 text-stone-200 transition-colors hover:bg-orange-500/10 hover:text-orange-500"
           aria-label={isPlaying ? 'Pause' : 'Play'}
         >
           {isPlaying ? (

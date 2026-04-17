@@ -109,11 +109,11 @@ export default function TableOfContents({ sections, title = 'contents' }: TableO
               className={`
                 block text-sm transition-colors duration-200
                 px-2 py-0.5 rounded-md
-                hover:bg-stone-800/80
+                hover:bg-orange-500/10 hover:text-orange-500
                 ${
                   activeSection === section.id
                     ? 'text-stone-100'
-                    : 'text-stone-500 hover:text-stone-100'
+                    : 'text-stone-500'
                 }
               `}
             >

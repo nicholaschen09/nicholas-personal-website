@@ -1,53 +1,48 @@
 'use client';
 
-import { useLanguage } from '@/contexts/LanguageContext';
+import Link from 'next/link';
 import AsciiTorusCanvas from '@/components/AsciiTorusCanvas';
 import BackToHomeLink from '@/components/BackToHomeLink';
-import Footer from '@/components/Footer';
 
 export default function AsciiPage() {
-  const { t } = useLanguage();
-
   return (
-    <main className="relative z-10 flex min-h-screen flex-col items-center justify-center p-4 md:p-12">
-      <div className="mx-auto flex w-full max-w-lg flex-col items-center space-y-6">
-        <div className="w-full self-start text-left">
-          <BackToHomeLink />
-          <h1 className="mb-2 mt-4 text-2xl font-medium text-white md:text-3xl">
-            {t('ascii.title')}
+    <div className="min-h-screen bg-stone-950 text-stone-400 font-mono selection:bg-orange-500/30 selection:text-orange-200">
+      <main className="max-w-lg mx-auto px-6 py-12 md:py-24">
+        <BackToHomeLink />
+
+        <header className="mb-12">
+          <h1 className="text-stone-100 text-base md:text-lg font-medium lowercase mb-4">
+            rotating torus ascii render
           </h1>
-          <p
-            className="mt-5 text-xs leading-relaxed text-stone-400 md:text-sm"
-            style={{ fontWeight: 400 }}
-          >
-            {t('ascii.intro')}
-          </p>
-        </div>
+          <div className="space-y-4">
+            <p className="text-xs md:text-sm leading-relaxed text-stone-400 lowercase">
+              small experiment: a torus as monospace text where brightness maps to character density, so the hole and rim read as contours. three.js renders offscreen in react, maps luminance to a sorted glyph ramp, and averages a few subpixels per cell for softer edges.
+            </p>
+          </div>
+        </header>
 
-        <div className="w-full py-2 md:py-5">
-          <AsciiTorusCanvas />
-        </div>
+        <section className="mb-12">
+          <div className="aspect-square w-full bg-stone-900/30 rounded-lg border border-stone-800/50 flex items-center justify-center overflow-hidden">
+            <AsciiTorusCanvas />
+          </div>
+        </section>
 
-        <section className="w-full self-start border-t border-stone-700 pt-6">
-          <h3 className="mb-3 text-sm font-semibold text-stone-200 md:text-base">
-            {t('ascii.referencesTitle')}
-          </h3>
-          <ul className="space-y-2 text-xs text-stone-400 md:text-sm">
+        <section className="space-y-4">
+          <h2 className="text-stone-100 text-sm font-medium lowercase">references</h2>
+          <ul className="text-xs md:text-sm space-y-2 list-none p-0">
             <li>
               <a
-                href="https://alexharri.com/blog/ascii-rendering"
+                href="https://alexharri.com/blog/ascii-characters-are-not-pixels"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-stone-200"
+                className="inline-block px-2 py-1 -mx-2 rounded-md hover:bg-orange-500/10 hover:text-orange-500 transition-colors underline decoration-stone-800 underline-offset-4"
               >
-                {t('ascii.harriArticleLinkText')}
+                ASCII characters are not pixels: a deep dive into ASCII rendering (Alex Harri)
               </a>
             </li>
           </ul>
         </section>
-
-        <Footer className="mt-0 w-full" />
-      </div>
-    </main>
+      </main>
+    </div>
   );
 }

@@ -151,4 +151,9 @@ body {
   .lossless-audio-slider::-moz-range-thumb:active {
     filter: none;
   }
+
+  /* Global interactive button/link style */
+  .btn-interactive {
+    @apply transition-colors hover:bg-orange-500/10 hover:text-orange-500;
+  }
 }

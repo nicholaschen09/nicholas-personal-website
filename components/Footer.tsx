@@ -1,24 +1,21 @@
 'use client';
 
 import Link from 'next/link';
-import { useLanguage } from '@/contexts/LanguageContext';
 
 interface FooterProps {
   className?: string;
 }
 
 export default function Footer({ className = 'mt-20' }: FooterProps) {
-  const { language, setLanguage, t } = useLanguage();
-
   return (
     <div
       className={`${className} flex max-w-lg w-full flex-wrap items-center justify-between gap-3 text-xs text-stone-400`}
     >
-      {/* Social media icons + back-to-top */}
+      {/* Social media icons */}
       <div className="flex items-center gap-1.5">
         <a
           href="mailto:nicholas.chen243@gmail.com"
-          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-stone-800/80 hover:text-stone-100 transition-colors"
+          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-orange-500/10 hover:text-orange-500 transition-colors"
           aria-label="Email"
           title="Email"
         >
@@ -39,7 +36,7 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-stone-800/80 hover:text-stone-100 transition-colors"
+          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-orange-500/10 hover:text-orange-500 transition-colors"
           aria-label="LinkedIn"
           title="LinkedIn"
         >
@@ -60,7 +57,7 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           href="https://github.com/nicholaschen09"
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-stone-800/80 hover:text-stone-100 transition-colors"
+          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-orange-500/10 hover:text-orange-500 transition-colors"
           aria-label="GitHub"
           title="GitHub"
         >
@@ -81,7 +78,7 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           href="https://x.com/nicholaschen__"
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-stone-800/80 hover:text-stone-100 transition-colors"
+          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-orange-500/10 hover:text-orange-500 transition-colors"
           aria-label="X (Twitter)"
           title="X (Twitter)"
         >
@@ -98,11 +95,15 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
             <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
           </svg>
         </a>
+      </div>
+
+      {/* Art + ASCII buttons on the right */}
+      <div className="flex items-center gap-1.5">
         <a
           href="https://nicholaschen243.wixsite.com/nicholas-chen"
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-stone-800/80 hover:text-stone-100 transition-colors"
+          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-orange-500/10 hover:text-orange-500 transition-colors"
           aria-label="Art Portfolio"
           title="Art portfolio"
         >
@@ -121,12 +122,12 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
         </a>
         <Link
           href="/ascii"
-          className="group relative flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-transparent text-stone-400 transition-colors hover:bg-stone-800/80 hover:text-stone-100"
-          aria-label={t('footer.torus')}
-          title={t('footer.torus')}
+          className="group relative flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-transparent text-stone-400 transition-colors hover:bg-orange-500/10 hover:text-orange-500"
+          aria-label="ascii"
+          title="ascii"
         >
           <span className="pointer-events-none absolute top-full left-1/2 z-10 mt-1.5 -translate-x-1/2 whitespace-nowrap rounded bg-stone-800 px-2 py-1 text-[10px] font-medium lowercase tracking-normal text-stone-100 opacity-0 transition-opacity duration-150 group-hover:opacity-100">
-            {t('footer.torus')}
+            ascii
           </span>
           <svg
             width="22"
@@ -139,39 +140,6 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
             <circle cx="12" cy="12" r="7" fill="none" stroke="currentColor" strokeWidth="5" />
           </svg>
         </Link>
-      </div>
-      <div className="flex flex-shrink-0 items-center">
-        <div className="flex items-center gap-1.5">
-          <button
-            type="button"
-            onClick={() => setLanguage('en')}
-            className={`group relative text-[10px] tracking-[0.18em] uppercase rounded-md h-8 w-10 flex items-center justify-center transition-colors ${
-              language === 'en'
-                ? 'text-white hover:bg-stone-800/80'
-                : 'text-stone-500 hover:bg-stone-800/80 hover:text-stone-100'
-            }`}
-          >
-            <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-medium text-stone-100 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase tracking-normal normal-case">
-              {t('footer.langEn')}
-            </span>
-            EN
-          </button>
-          <span className="text-stone-600">/</span>
-          <button
-            type="button"
-            onClick={() => setLanguage('zh')}
-            className={`group relative text-[10px] tracking-[0.18em] uppercase rounded-md h-8 w-10 flex items-center justify-center transition-colors ${
-              language === 'zh'
-                ? 'text-white hover:bg-stone-800/80'
-                : 'text-stone-500 hover:bg-stone-800/80 hover:text-stone-100'
-            }`}
-          >
-            <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-medium text-stone-100 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase tracking-normal normal-case">
-              {t('footer.langZh')}
-            </span>
-            中文
-          </button>
-        </div>
       </div>
     </div>
   );
