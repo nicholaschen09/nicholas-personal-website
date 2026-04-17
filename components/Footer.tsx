@@ -19,7 +19,7 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           aria-label="Email"
           title="Email"
         >
-          <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-medium text-stone-100 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase">
+          <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-bold text-orange-500 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase z-20">
             email
           </span>
           <svg
@@ -40,7 +40,7 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           aria-label="LinkedIn"
           title="LinkedIn"
         >
-          <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-medium text-stone-100 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase">
+          <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-bold text-orange-500 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase z-20">
             linkedin
           </span>
           <svg
@@ -61,7 +61,7 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           aria-label="GitHub"
           title="GitHub"
         >
-          <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-medium text-stone-100 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase">
+          <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-bold text-orange-500 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase z-20">
             github
           </span>
           <svg
@@ -82,7 +82,7 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           aria-label="X (Twitter)"
           title="X (Twitter)"
         >
-          <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-medium text-stone-100 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase">
+          <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-bold text-orange-500 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase z-20">
             x (twitter)
           </span>
           <svg
@@ -107,7 +107,7 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           aria-label="Art Portfolio"
           title="Art portfolio"
         >
-          <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-medium text-stone-100 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase">
+          <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-bold text-orange-500 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase z-20">
             art
           </span>
           <svg
@@ -126,7 +126,7 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           aria-label="ascii"
           title="ascii"
         >
-          <span className="pointer-events-none absolute top-full left-1/2 z-10 mt-1.5 -translate-x-1/2 whitespace-nowrap rounded bg-stone-800 px-2 py-1 text-[10px] font-medium lowercase tracking-normal text-stone-100 opacity-0 transition-opacity duration-150 group-hover:opacity-100">
+          <span className="pointer-events-none absolute top-full left-1/2 z-20 mt-1.5 -translate-x-1/2 whitespace-nowrap rounded bg-stone-800 px-2 py-1 text-[10px] font-bold lowercase tracking-normal text-orange-500 opacity-0 transition-opacity duration-150 group-hover:opacity-100">
             ascii
           </span>
           <svg
