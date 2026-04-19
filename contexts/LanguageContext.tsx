@@ -554,8 +554,6 @@ const translations: Record<Language, Record<string, string>> = {
     // Projects list labels (home page)
     'projects.label.tiktok': 'tiktok view predictor',
     'projects.label.sqlParser': 'sql query parser',
-    'projects.label.fernando': 'fernando',
-    'projects.label.facialRecognition': 'facial recognition',
     'projects.label.tunl': 'tunl',
     'projects.label.metallicBlob': 'metallic blob',
 
@@ -980,8 +978,6 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.contents': '目录',
     'blog.git.title': 'git 命令',
     'blog.git.date': 'nicholas chen · 2025年12月21日 · 4分钟阅读',
-    'blog.grpc.title': '为什么 gRPC 这么好？',
-    'blog.grpc.date': 'nicholas chen · 2026年1月11日 · 9分钟阅读',
     'blog.coding.title': '我是如何学习编程的',
     'blog.coding.date': 'nicholas chen · 2025年12月26日 · 5分钟阅读',
     'blog.ontology.title': '为什么文本到SQL需要本体？',
@@ -1253,8 +1249,6 @@ const translations: Record<Language, Record<string, string>> = {
     // Projects list labels (home page) — keep English names in both languages
     'projects.label.tiktok': 'tiktok view predictor',
     'projects.label.sqlParser': 'sql query parser',
-    'projects.label.fernando': 'fernando',
-    'projects.label.facialRecognition': 'facial recognition',
     'projects.label.tunl': 'tunl',
     'projects.label.metallicBlob': 'metallic blob',
 
