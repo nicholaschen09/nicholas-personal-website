@@ -243,26 +243,6 @@ export default function Home() {
                   </li>
                   <li>
                     <a
-                      href="https://github.com/enxilium/posture-checker-robot"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
-                    >
-                      fernando
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://facial-recognition-neural-network.vercel.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
-                    >
-                      facial recognition
-                    </a>
-                  </li>
-                  <li>
-                    <a
                       href="https://github.com/nicholaschen09/tunl"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -285,14 +265,6 @@ export default function Home() {
                       className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
                     >
                       why ontology for text-to-sql?
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/blogs/grpc"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
-                    >
-                      an introduction to grpc
                     </a>
                   </li>
                   <li>

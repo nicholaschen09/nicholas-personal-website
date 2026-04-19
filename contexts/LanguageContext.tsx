@@ -239,7 +239,6 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.coding.item29': '• messed around with postgres, sql and the debugger for the first time',
     'blog.coding.item30':
       '• got more familiar with the terminal and ai and used stack overflow still',
-    'blog.coding.item31': '• won 2nd place by building a posture checking robot at utra hacks',
     'blog.coding.item32':
       '• took data structures and algorithms in c++ during second semester of uni',
     'blog.coding.item33':
@@ -249,8 +248,6 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.coding.item35': '• made an etl pipeline that processed customer feedback',
     'blog.coding.item36': '• built a discord summarizer bot using python for fun at 2am',
     'blog.coding.item37': '• used golang for the first time and built an image processor',
-    'blog.coding.item38':
-      '• made this facial recognition software for fun in python and typescript',
     'blog.coding.item39': '• tried learning haskell for the first time',
     'blog.coding.item40':
       '• built sql query parser with typescript and svelte for parsing flat json',
@@ -275,7 +272,6 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.coding.item59': '• did some benchmarking with web search apis for the first time',
     'blog.coding.item60': '• made a link route checker script',
     'blog.coding.item61': '• started learning some system design for programming',
-    'blog.coding.item62': '• learned about grpc, wrote a blog on it',
     'blog.coding.item63': '• started contributing to open source projects like insforge',
     'blog.coding.item64':
       '• saw a cool website called uoftatlas.com and made a clone waterlooatlas',
@@ -551,12 +547,9 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.and': 'and',
     'projects.tiktokPredictor': 'ML model that predicts tiktok view counts',
     'projects.neoDiscordBot': 'discord bot that summarizes messages for you',
-    'projects.facialRecognition':
-      'deep learning CNN model for face identification and verification',
     'projects.sqlParser': 'parser that can query flat JSON objects',
     'projects.whiteboard': 'app to brainstorm, create and share ideas',
     'projects.dependabot': "app with 200+ users that's easier to use than github's dependabot",
-    'projects.fernando': 'posture checker robot that won 2nd place at utra hacks',
 
     // Projects list labels (home page)
     'projects.label.tiktok': 'tiktok view predictor',
@@ -702,128 +695,6 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.git.referencesTitle': 'references',
     'blog.git.references.docs': 'official git docs',
     'blog.git.references.dangit': 'dangit, git!',
-    'blog.grpc.title': 'what makes gRPC so good',
-    'blog.grpc.date': 'nicholas chen · january 11, 2026 · 9 min read',
-    'blog.grpc.intro':
-      "in modern software architecture, especially with microservices, the way services communicate is crucial. while rest has been the standard for a long time, grpc has emerged as a powerful alternative for many use cases. in this post, i'll explain what grpc is, how it works, and why you might want to use it.",
-    'blog.grpc.whatIsTitle': 'what is gRPC?',
-    'blog.grpc.whatIsText':
-      'grpc (google remote procedure call) is an open-source remote procedure call framework initially developed by google. it allows a client application to directly call a method on a server application on a different machine as if it were a local object, making it easier to create distributed applications and services. unlike rest, which is resource-oriented, grpc is action-oriented.',
-    'blog.grpc.howItWorksTitle': 'how it works',
-    'blog.grpc.howItWorksText1':
-      'this is typically done using protocol buffers (protobuf) in a .proto file. at a high level, gRPC allows you to define a service, specifying the methods that can be called remotely with their parameters and return types. the server implements this interface and runs a gRPC server to handle incoming calls. the client has a stub (referred to as just a client in some languages) that provides the same methods as the server.',
-    'blog.grpc.howItWorksText2':
-      'by default, gRPC uses protocol buffers (protobuf) as its interface definition language (IDL) and as its underlying message interchange format. in REST, you often use JSON. with protobuf, you define the structure of your data once in a .proto file. then, you use the protoc compiler to generate data access classes in your preferred programming language. this binary format is much lighter and faster to serialize/deserialize than JSON.',
-    'blog.grpc.whyGoodTitle': 'why is it good?',
-    'blog.grpc.httpVsHttp2Title': 'HTTP/1.1 vs HTTP/2',
-    'blog.grpc.rpcVsRestTitle': 'RPC vs REST',
-    'blog.grpc.rpcVsRestText':
-      'RPC focuses on actions (verbs) like "getUser", while REST focuses on resources (nouns) like "User". this makes gRPC feel more like calling a local function, simplifying distributed development.\n\nREST is great for public APIs where human readability (JSON) and browser support are important. it\'s flexible and widely understood. gRPC, on the other hand, excels in internal microservices communication where low latency and high throughput are critical. it\'s also strongly typed, which helps in maintaining large systems.',
-    'blog.grpc.whyGoodText':
-      "gRPC leverages HTTP/2's multiplexing, header compression, and binary framing for better efficiency than REST/HTTP/1.1. The .proto contract enables automatic code generation in multiple languages, ensuring type safety. Native streaming support (server, client, or bidirectional) makes it ideal for real-time apps, large file transfers, and long-lived connections.",
-    'blog.grpc.httpVsHttp2Text':
-      'gRPC uses HTTP/2 as its transport protocol, which provides significant improvements over HTTP/1.1. The following table compares the key features of both protocols.',
-    'blog.grpc.architectureCaption': 'gRPC architecture: client stub and server stub interaction',
-    'blog.grpc.protoExampleCaption': 'example .proto service definition',
-    'blog.grpc.usingApiTitle': 'using the API',
-    'blog.grpc.usingApiText':
-      'starting from a .proto file, gRPC compiler plugins generate client- and server-side code. the server implements the service methods and runs a gRPC server to handle calls. the client uses a local stub object that implements the same methods, wrapping parameters in protocol buffer messages and sending requests to the server.',
-    'blog.grpc.usingApiText2':
-      'gRPC APIs support both synchronous (blocking) and asynchronous (non-blocking) calls, useful for different network operation scenarios.',
-    'blog.grpc.serviceMethodTypesTitle': 'service method types',
-    'blog.grpc.serviceMethodTypesIntro': 'gRPC lets you define four kinds of service methods:',
-    'blog.grpc.serviceMethodTypesCaption': 'gRPC service method types',
-    'blog.grpc.unaryRPCs': 'unary RPCs',
-    'blog.grpc.unaryRPCsDesc': 'single request, single response.',
-    'blog.grpc.serverStreamingRPCs': 'server streaming RPCs',
-    'blog.grpc.serverStreamingRPCsDesc': 'client sends request, receives stream of messages.',
-    'blog.grpc.clientStreamingRPCs': 'client streaming RPCs',
-    'blog.grpc.clientStreamingRPCsDesc':
-      'client sends stream of messages, receives single response.',
-    'blog.grpc.bidirectionalStreamingRPCs': 'bidirectional streaming RPCs',
-    'blog.grpc.bidirectionalStreamingRPCsDesc':
-      'both sides send streams of messages independently.',
-    'blog.grpc.deadlinesTitle': 'deadlines and timeouts',
-    'blog.grpc.deadlinesText':
-      "clients can specify how long to wait for an RPC before it's terminated with DEADLINE_EXCEEDED. servers can query timeout status and remaining time.",
-    'blog.grpc.rpcTerminationTitle': 'RPC termination and cancellation',
-    'blog.grpc.rpcTerminationText':
-      'client and server make independent determinations of call success, so their conclusions may not match. either side can cancel an RPC at any time, which terminates it immediately. changes made before cancellation are not rolled back.',
-    'blog.grpc.metadataTitle': 'metadata',
-    'blog.grpc.metadataText':
-      'metadata is key-value pairs containing information about an RPC call (e.g., authentication). keys are case-insensitive ASCII strings, must not start with grpc- (reserved), and binary-valued keys end in -bin.',
-    'blog.grpc.channelsTitle': 'channels',
-    'blog.grpc.channelsText':
-      'a gRPC channel provides a connection to a server on a specified host and port, used when creating client stubs. clients can configure channel arguments to modify gRPC behavior (e.g., message compression). channels have state (connected, idle).',
-    'blog.grpc.errorHandlingTitle': 'error handling',
-    'blog.grpc.errorHandlingText':
-      'gRPC uses a standardized error model with status codes. common status codes include OK, INVALID_ARGUMENT, NOT_FOUND, UNAVAILABLE, and DEADLINE_EXCEEDED. errors include both a status code and an optional error message, providing consistent error handling across languages.',
-    'blog.grpc.securityTitle': 'security and authentication',
-    'blog.grpc.securityText':
-      "gRPC supports TLS (transport layer security) for encrypted communication between client and server. mTLS (mutual TLS) provides mutual authentication where both sides verify each other's certificates. authentication credentials can also be passed via metadata, allowing for various authentication mechanisms including OAuth2, JWT tokens, and API keys.",
-    'blog.grpc.http2Caption': 'http/1.1 vs http/2 multiplexing',
-    'blog.grpc.protobufVsJsonTitle': 'protocol buffers vs JSON',
-    'blog.grpc.protobufCaption': 'protocol buffers definition and serialized format (binary)',
-    'blog.grpc.jsonCaption': 'JSON format (human-readable text)',
-    'blog.grpc.tableFeature': 'feature',
-    'blog.grpc.tableMultiplexing': 'multiplexing',
-    'blog.grpc.tableHeaderCompression': 'header compression',
-    'blog.grpc.tableFraming': 'framing',
-    'blog.grpc.tableServerPush': 'server push',
-    'blog.grpc.tableRequestPrioritization': 'request prioritization',
-    'blog.grpc.tableEfficiency': 'efficiency',
-    'blog.grpc.tableMultiplexingNo': 'no (one request per connection)',
-    'blog.grpc.tableMultiplexingYes': 'yes (multiple requests over single connection)',
-    'blog.grpc.tableHeaderCompressionYes': 'yes (HPACK)',
-    'blog.grpc.tableFramingText': 'text-based',
-    'blog.grpc.tableFramingBinary': 'binary framing',
-    'blog.grpc.tableEfficiencyHttp11': 'higher latency, more bandwidth',
-    'blog.grpc.tableEfficiencyHttp2': 'lower latency, reduced bandwidth',
-    'blog.grpc.tableTransport': 'transport',
-    'blog.grpc.tableDataFormat': 'data format',
-    'blog.grpc.tableStreaming': 'streaming',
-    'blog.grpc.tableCodeGeneration': 'code generation',
-    'blog.grpc.tableTypeSafety': 'type safety',
-    'blog.grpc.tablePerformance': 'performance',
-    'blog.grpc.tableBrowserSupport': 'browser support',
-    'blog.grpc.tableProtobufBinary': 'protocol buffers (binary)',
-    'blog.grpc.tableJsonText': 'JSON (text)',
-    'blog.grpc.tableStreamingNative': 'native support',
-    'blog.grpc.tableStreamingLimited': 'limited (SSE, WebSocket)',
-    'blog.grpc.tableCodeGenAuto': 'automatic from .proto',
-    'blog.grpc.tableCodeGenManual': 'manual',
-    'blog.grpc.tableTypeSafetyEnforced': 'enforced by contract',
-    'blog.grpc.tableTypeSafetyRuntime': 'runtime validation',
-    'blog.grpc.tablePerformanceHigh': 'high (multiplexing, compression)',
-    'blog.grpc.tablePerformanceLower': 'lower latency, more bandwidth',
-    'blog.grpc.tableBrowserSupportLimited': 'limited (gRPC-Web required)',
-    'blog.grpc.tableBrowserSupportNative': 'native',
-    'blog.grpc.grpcWithGoTitle': 'gRPC with go',
-    'blog.grpc.grpcWithGoText1':
-      "gRPC and go are super compatible with each other. since both originated from google, gRPC support in go is first-class. the go ecosystem embraces gRPC for microservices due to go's concurrency model (goroutines) which handles HTTP/2 multiplexing efficiently.",
-    'blog.grpc.grpcWithGoText2':
-      'while go has excellent gRPC support, gRPC itself supports many languages including java, python, c++, node.js, rust, ruby, php, and more. code generation ensures consistent behavior across all language implementations.',
-    'blog.grpc.grpcWithGoText3':
-      'to use gRPC with go, define your service in a .proto file and use the protoc compiler with protoc-gen-go and protoc-gen-go-grpc plugins. this generates message structs and service interfaces. on the server, implement the generated interface and register it with grpc.NewServer(). on the client, use grpc.Dial() to connect and create a client stub. the generated code is idiomatic go.',
-    'blog.grpc.goImageCaption': 'the go programming language',
-    'blog.grpc.serverExampleCaption': 'example gRPC server implementation in go',
-    'blog.grpc.clientExampleCaption': 'example gRPC client implementation in go',
-    'blog.grpc.whenToUseTitle': 'when to use gRPC',
-    'blog.grpc.whenToUseIntro': 'gRPC is ideal for:',
-    'blog.grpc.whenToUse1':
-      'microservices architectures where services need efficient, low-latency communication',
-    'blog.grpc.whenToUse2':
-      'real-time systems like chat applications, gaming backends, and live data feeds',
-    'blog.grpc.whenToUse3':
-      "mobile APIs that benefit from gRPC's binary format, reducing bandwidth usage and battery consumption",
-    'blog.grpc.whenToUse4':
-      'streaming use cases such as file transfers, log aggregation, and real-time analytics',
-    'blog.grpc.widelyUsedBy': 'gRPC is widely used by:',
-    'blog.grpc.widelyUsedBy1':
-      'companies like google, netflix, and square for internal microservices communication',
-    'blog.grpc.widelyUsedBy2': 'kubernetes for its API',
-    'blog.grpc.widelyUsedBy3': 'cloudflare for edge computing',
-    'blog.grpc.referencesTitle': 'references',
     'blog.lossless.title': 'how lossless compression preserves audio quality',
     'blog.lossless.date': 'nicholas chen · march 14, 2026 · 6 min read',
     'blog.lossless.intro':
