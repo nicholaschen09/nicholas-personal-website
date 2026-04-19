@@ -56,7 +56,7 @@ export default function SpectrumComparison() {
         style={{ height: totalH }}
         aria-label="Frequency spectrum: original vs lossy"
       >
-        <text x={8} y={14} className="fill-stone-500 text-[10px] font-medium">
+        <text x={8} y={14} className="fill-stone-500 text-[10px] font-normal">
           Original spectrum
         </text>
         <g transform={`translate(0, 24)`}>
@@ -72,7 +72,7 @@ export default function SpectrumComparison() {
             />
           ))}
         </g>
-        <text x={8} y={24 + CHART_HEIGHT + 14} className="fill-stone-500 text-[10px] font-medium">
+        <text x={8} y={24 + CHART_HEIGHT + 14} className="fill-stone-500 text-[10px] font-normal">
           Lossy spectrum (high frequencies reduced)
         </text>
         <g transform={`translate(0, 24 + CHART_HEIGHT + 24)`}>

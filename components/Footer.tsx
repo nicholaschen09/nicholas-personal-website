@@ -17,9 +17,6 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           aria-label="Email"
           title="Email"
         >
-          <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-bold text-orange-500 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase z-20">
-            email
-          </span>
           <svg
             width="22"
             height="22"
@@ -38,9 +35,6 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           aria-label="LinkedIn"
           title="LinkedIn"
         >
-          <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-bold text-orange-500 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase z-20">
-            linkedin
-          </span>
           <svg
             width="20"
             height="20"
@@ -59,9 +53,6 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           aria-label="GitHub"
           title="GitHub"
         >
-          <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-bold text-orange-500 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase z-20">
-            github
-          </span>
           <svg
             width="20"
             height="20"
@@ -80,9 +71,6 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           aria-label="X (Twitter)"
           title="X (Twitter)"
         >
-          <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-bold text-orange-500 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase z-20">
-            x (twitter)
-          </span>
           <svg
             width="18"
             height="18"
@@ -105,9 +93,6 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           aria-label="Art Portfolio"
           title="Art portfolio"
         >
-          <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-1 text-[10px] font-bold text-orange-500 bg-stone-800 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap lowercase z-20">
-            art
-          </span>
           <svg
             width="22"
             height="21"

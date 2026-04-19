@@ -207,22 +207,22 @@ export default function QualitySlider() {
       </div>
       <p className="mb-0.5 text-[11px] text-stone-500">
         Lossiness:{' '}
-        <span className="inline-block min-w-[3ch] font-medium tabular-nums text-stone-400">
+        <span className="inline-block min-w-[3ch] font-normal tabular-nums text-stone-400">
           {lossyParams.lossinessPct}%
         </span>
         {' · '}
         levels:{' '}
-        <span className="inline-block min-w-[2.5ch] font-medium tabular-nums text-stone-400">
+        <span className="inline-block min-w-[2.5ch] font-normal tabular-nums text-stone-400">
           {lossyParams.levels}
         </span>
         {' · '}
         kernel:{' '}
-        <span className="inline-block min-w-[2.5ch] font-medium tabular-nums text-stone-400">
+        <span className="inline-block min-w-[2.5ch] font-normal tabular-nums text-stone-400">
           {lossyParams.kernelSize}
         </span>
         {' · '}
         Frequency:{' '}
-        <span className="inline-block min-w-[10ch] font-medium tabular-nums text-stone-400">
+        <span className="inline-block min-w-[10ch] font-normal tabular-nums text-stone-400">
           0 – {Math.round(effectiveCutoffHz / 100) / 10} kHz
         </span>
       </p>

@@ -233,7 +233,7 @@ export default function LosslessComparisonPlayer() {
           <button
             type="button"
             onClick={() => selectFormat('mp3')}
-            className={`rounded-md px-3 py-1.5 text-xs font-medium transition-colors ${
+            className={`rounded-md px-3 py-1.5 text-xs font-normal transition-colors ${
               activeFormat === 'mp3'
                 ? playing
                   ? 'bg-amber-600 text-white'
@@ -246,7 +246,7 @@ export default function LosslessComparisonPlayer() {
           <button
             type="button"
             onClick={() => selectFormat('flac')}
-            className={`rounded-md px-3 py-1.5 text-xs font-medium transition-colors ${
+            className={`rounded-md px-3 py-1.5 text-xs font-normal transition-colors ${
               activeFormat === 'flac'
                 ? playing
                   ? 'bg-lime-600 text-white'

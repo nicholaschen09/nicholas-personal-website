@@ -693,7 +693,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.git.referencesTitle': 'references',
     'blog.git.references.docs': 'official git docs',
     'blog.git.references.dangit': 'dangit, git!',
-    'blog.lossless.title': 'how lossless compression preserves audio quality',
+    'blog.lossless.title': 'how lossless audio compression works',
     'blog.lossless.date': 'nicholas chen · march 14, 2026 · 6 min read',
     'blog.lossless.intro':
       'in an era of streaming and convenience, audio quality is often overlooked. however, for those who care about the nuances of sound, lossless audio is the gold standard. in this post, i will explore what it is and why it matters.',

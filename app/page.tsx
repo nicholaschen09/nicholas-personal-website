@@ -272,7 +272,7 @@ export default function Home() {
                       href="/blogs/lossless-audio"
                       className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
                     >
-                      how lossless compression preserves audio quality
+                      how lossless audio compression works
                     </a>
                   </li>
                 </ul>
