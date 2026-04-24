@@ -159,6 +159,18 @@ export default function Home() {
                 </span>
               </a>
             </li>
+            <li>
+              <a
+                href="https://melius.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10"
+              >
+                <span className="text-stone-400 group-hover:text-orange-500 transition-colors">
+                  melius
+                </span>
+              </a>
+            </li>
           </ul>
         </div>
 

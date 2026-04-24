@@ -83,8 +83,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.achievement3': 'designed award winning book covers for authors',
     'hero.currently': 'currently',
     'hero.current1': '> studying syde (engineering) at the university of waterloo',
-    'hero.current2':
-      'working at textql as a software engineer intern in nyc building ai agents for data',
+    'hero.current2': 'working at melius as a software engineer intern',
     'hero.current3': 'building projects to help others create and invent new things',
     'hero.current4': 'sharing my journey in tech and creativity online with everyone to see',
     'hero.excited': "I'm excited about...",
@@ -99,6 +98,8 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.prev2': 'was a software engineer intern at rbc, working on machine learning models',
     'hero.prev3':
       'was a ux design intern at meta hash capital, focusing on user experience in fintech',
+    'hero.prev4':
+      'was a software engineer intern at textql in nyc, building ai agents for data',
 
     // Sections
     'section.howIStarted': 'How I Started',
@@ -874,7 +875,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.achievement3': '为作者设计了获奖书籍封面',
     'hero.currently': '我目前在...',
     'hero.current1': '> 在滑铁卢大学学习系统设计工程',
-    'hero.current2': '作为软件工程师实习生加入纽约的textql，构建数据AI代理',
+    'hero.current2': '在melius担任软件工程师实习生',
     'hero.current3': '构建项目帮助他人创造和发明新事物',
     'hero.current4': '在网上与大家分享我在技术和创意方面的旅程',
     'hero.excited': '我对以下事情感到兴奋...',
@@ -886,6 +887,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.prev1': '在ownr担任软件工程师实习生，为全球企业家构建工具',
     'hero.prev2': '在rbc担任软件工程师实习生，从事机器学习模型工作',
     'hero.prev3': '在meta hash capital担任用户体验设计实习生，专注于金融科技的用户体验',
+    'hero.prev4': '在纽约的textql担任软件工程师实习生，构建数据AI代理',
 
     // Sections
     'section.howIStarted': '我是如何开始的',
