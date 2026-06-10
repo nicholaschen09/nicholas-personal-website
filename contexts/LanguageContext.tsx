@@ -236,68 +236,54 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.template.noteLinkLabel': 'your-source-site',
     'blog.template.noteLinkUrl': 'https://example.com',
 
-    // Blog tmux-clone content
-    'blog.tmux-clone.title': 'Writing a tmux clone for windows — oh boy',
-    'blog.tmux-clone.date': 'Amaan Bilwar - April 5, 2026 - X min read',
-    // 'blog.tmux-clone.coverAlt': 'Cover image placeholder',
-    'blog.tmux-clone.section1.title': 'Section 1 title',
-    'blog.tmux-clone.section1.p1': 'Write your opening paragraph here.',
-    'blog.tmux-clone.section1.p2': 'Add a second paragraph to set context or tell a short story.',
-    // 'blog.tmux-clone.section1.imageAlt': 'Section 1 image alt text',
-    // 'blog.tmux-clone.section1.imageCaption': 'Section 1 image caption',
-    'blog.tmux-clone.section1.p3': 'Add a final paragraph to wrap up this section.',
-    'blog.tmux-clone.section2.p1': 'Introduce the main point for this section.',
-    'blog.tmux-clone.section2.p2': 'Expand with a supporting detail or example.',
-    'blog.tmux-clone.section2.listItem1': 'List item one',
-    'blog.tmux-clone.section2.listItem2': 'List item two',
-    'blog.tmux-clone.section2.listItem3': 'List item three',
-    // 'blog.tmux-clone.section2.imageAlt': 'Section 2 image alt text',
-    // 'blog.tmux-clone.section2.imageCaption': 'Section 2 image caption',
-    'blog.tmux-clone.section2.p3': 'Add a paragraph to explain the list or image above.',
-    'blog.tmux-clone.section2.p4': 'Close the section with a takeaway.',
-    'blog.tmux-clone.section3.title': 'Section 3 title',
-    'blog.tmux-clone.section3.p1': 'Open this section with a key idea.',
-    // 'blog.tmux-clone.section3.image1Alt': 'Section 3 image alt text',
-    // 'blog.tmux-clone.section3.image1Caption': 'Section 3 image caption',
-    'blog.tmux-clone.section3.p2': 'Add a supporting paragraph.',
-    'blog.tmux-clone.section3.p3': 'Add another supporting paragraph.',
-    'blog.tmux-clone.section3.p4': 'Share a detail, insight, or lesson learned.',
-    'blog.tmux-clone.section3.p5': 'Optional extra context or example.',
-    'blog.tmux-clone.section3.p6': 'Wrap this part up before the next image.',
-    // 'blog.tmux-clone.section3.image2Alt': 'Section 3 image alt text',
-    // 'blog.tmux-clone.section3.image2Caption': 'Section 3 image caption',
-    'blog.tmux-clone.section3.subsection.p2': 'Add a second paragraph to round it out.',
-    'blog.tmux-clone.section3.subsection.listItem1': 'Checklist item one',
-    'blog.tmux-clone.section3.subsection.listItem2': 'Checklist item two',
-    'blog.tmux-clone.section3.subsection.listItem3': 'Checklist item three',
-    'blog.tmux-clone.section3.subsection.listItem4': 'Checklist item four',
-    'blog.tmux-clone.section4.title': 'Section 4 title',
-    'blog.tmux-clone.section4.p1': 'Introduce the section topic.',
-    'blog.tmux-clone.section4.p2': 'Add a supporting detail.',
-    'blog.tmux-clone.section4.p3': 'Add another supporting detail.',
-    'blog.tmux-clone.section4.p4': 'Add a practical example or result.',
-    'blog.tmux-clone.section4.p5': 'Close with a short summary sentence.',
-    'blog.tmux-clone.section6.title': 'Section 5 title',
-    'blog.tmux-clone.section6.item1.title': 'Comparison item 1:',
-    'blog.tmux-clone.section6.item1.text': 'Explain the first comparison item in 1-2 sentences.',
-    'blog.tmux-clone.section6.item2.title': 'Comparison item 2:',
-    'blog.tmux-clone.section6.item2.text': 'Explain the second comparison item in 1-2 sentences.',
-    'blog.tmux-clone.section6.item3.title': 'Comparison item 3:',
-    'blog.tmux-clone.section6.item3.text': 'Explain the third comparison item in 1-2 sentences.',
-    // 'blog.tmux-clone.section6.imageAlt': 'Section 5 image alt text',
-    // 'blog.tmux-clone.section6.imageCaption': 'Section 5 image caption',
-    'blog.tmux-clone.section7.title': 'Section 6 title',
-    'blog.tmux-clone.section7.p1': 'Summarize the future or next steps.',
-    'blog.tmux-clone.section7.p2': 'Add a second paragraph with more detail.',
-    'blog.tmux-clone.section7.p3': 'Close with a final thought.',
-    'blog.tmux-clone.referencesTitle': 'references',
-    'blog.tmux-clone.references.item1': 'https://example.com/source-1',
-    'blog.tmux-clone.references.item2': 'https://example.com/source-2',
-    'blog.tmux-clone.references.item3': 'https://example.com/source-3',
-    'blog.tmux-clone.references.item4': 'https://example.com/source-4',
-    'blog.tmux-clone.note': 'note: list your image sources or attributions at',
-    'blog.tmux-clone.noteLinkLabel': 'your-source-site',
-    'blog.tmux-clone.noteLinkUrl': 'https://example.com',
+    // thoughts on schools blog
+    'blog.thoughts-about-schools.title': 'The Paradox of Indian Schools: High Talent, Broken Infrastructure',
+    'blog.thoughts-about-schools.date': 'Amaan Bilwar - June 10, 2026 - 4 min read',
+    'blog.thoughts-about-schools.coverAlt': '',
+    'blog.thoughts-about-schools.section1.title': 'The Paradox',
+    'blog.thoughts-about-schools.section1.p1':
+      'The paradox of Indian schools: high talent, broken infrastructure. India produces some of the world\'s sharpest minds. Yet walk into most of our 1.5M+ schools and you\'ll find:',
+    'blog.thoughts-about-schools.section1.p2':
+      "We have incredible talent density but the operational infrastructure inside schools hasn't caught up. Not because schools don't want better tools. But because the \"solution\" has always been a monolithic ERP that promises everything and delivers nothing useful. Schools end up with expensive software that doesn't fit their actual workflows, so they default back to spreadsheets and WhatsApp groups (yes, they basically give is what we've understood from all these customer discovery calls)",
+    'blog.thoughts-about-schools.section1.imageAlt': '',
+    'blog.thoughts-about-schools.section1.imageCaption': '',
+    'blog.thoughts-about-schools.section1.p3':
+      "The problem isn't adoption. It's architecture. You can't build one platform that works for 1.5M schools -- each has its own way of working, its own constraints, its own combination of broken workflows.",
+    'blog.thoughts-about-schools.section2.listItem1':
+      'Fees tracked in Excel sheets (reconciled manually)',
+    'blog.thoughts-about-schools.section2.listItem2':
+      'Parent communication via WhatsApp groups (notifications buried in 200+ messages)',
+    'blog.thoughts-about-schools.section2.listItem3':
+      'Timetables that collapse the moment one teacher is absent',
+    'blog.thoughts-about-schools.section2.listItem4':
+      'Report cards rushed every term with copy-pasted comments',
+    'blog.thoughts-about-schools.section3.title': 'A Different Approach',
+    'blog.thoughts-about-schools.section3.p1':
+      "So we're building CampusOS differently. Most software companies show up with a product and ask you to change how you work. We don't. We show up and ask:",
+    'blog.thoughts-about-schools.section3.p2':
+      "Tell us the one thing that hurts the most. Then we build just that. Not a 200-feature platform you'll never use. Not a system that requires you to change everything overnight. Just the piece of broken infrastructure you operate with every day -- fixed, installed at your school, your staff trained on it.",
+    'blog.thoughts-about-schools.section3.subsection.listItem1':
+      "what's actually broken?",
+    'blog.thoughts-about-schools.section3.subsection.listItem2':
+      'Fees taking too long to reconcile?',
+    'blog.thoughts-about-schools.section3.subsection.listItem3':
+      'Parents missing notices on WhatsApp?',
+    'blog.thoughts-about-schools.section3.subsection.listItem4':
+      'Timetables falling apart every month?',
+    'blog.thoughts-about-schools.section4.title': 'The Mission',
+    'blog.thoughts-about-schools.section4.p1':
+      "India's talent deserves infrastructure that doesn't hold it back. We're starting with schools, one workflow at a time. Especially when the youth of this country wants to take a stand for the betterment of the education system as a whole.",
+    'blog.thoughts-about-schools.section4.p2':
+      'If this resonates \u2014 or you know a school drowning in spreadsheets \u2014 I\'d love to talk.',
+    'blog.thoughts-about-schools.referencesTitle': '',
+    'blog.thoughts-about-schools.references.item1': '',
+    'blog.thoughts-about-schools.references.item2': '',
+    'blog.thoughts-about-schools.references.item3': '',
+    'blog.thoughts-about-schools.references.item4': '',
+    'blog.thoughts-about-schools.note': '',
+    'blog.thoughts-about-schools.noteLinkLabel': '',
+    'blog.thoughts-about-schools.noteLinkUrl': '',
+
 
     // scene ai when blog
     'blog.scene-ai-when.title': 'Scene AI When',
@@ -545,6 +531,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.tmux-clone.section3.subsection.title': 'Key Challenges',
     'blog.tmux-clone.section3.subsection.p1':
       'Building this taught me several things about Windows terminal programming:',
+    'blog.tmux-clone.section3.subsection.p2': 'Add a second paragraph to round it out.',
     'blog.tmux-clone.section3.subsection.listItem1':
       'ConPTY API is well-documented but tricky to use correctly',
     'blog.tmux-clone.section3.subsection.listItem2': 'Rust windows crate is excellent but verbose',

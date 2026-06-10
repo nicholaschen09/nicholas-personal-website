@@ -346,6 +346,14 @@ export default function Home() {
               <ul className="text-xs md:text-sm text-stone-400 space-y-1 pl-2">
                 <li>
                   <a
+                    href="/blogs/schools"
+                    className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+                  >
+                    {t('blog.thoughts-about-schools.title')}
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="/blogs/tmux-clone"
                     className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
                   >
