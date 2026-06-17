@@ -94,7 +94,7 @@ export default function AgentContextBlog() {
                   brainstorming
                 </h2>
                 <p>
-                  before building out this feature, we actually thought a lot and iterated upon our
+                  before building out this feature, we thought a lot and iterated upon our
                   initial ideas many times. having to think through the user experience and how users
                   would actually use and apply agent context to their generative media workflows was
                   different from the traditional ai saas tool because our platform is media-heavy
