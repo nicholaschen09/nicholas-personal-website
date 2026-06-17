@@ -237,6 +237,43 @@ export default function AgentContextBlog() {
                   were the best for these specific instructions to be applied to the agent, but also
                   be able to have it turned on / off frequently.
                 </p>
+                <p className="mt-4">
+                  the db model for saved team skills was pretty simple: one main team-scoped skill
+                  table for metadata and instructions, plus a join table that attaches optional image
+                  assets through our shared asset system.
+                </p>
+                <pre className="mt-6 p-4 bg-stone-900 border border-stone-700 rounded-md overflow-x-auto text-[11px] md:text-xs text-stone-300 font-mono">
+                  {`table team.agent_skill
+├── id                 uuid
+├── team_id            uuid  → team.team
+├── created_by_user_id uuid  → team member
+├── name               text
+├── kind               enum  (USE_CASE | BRAND_IDENTITY)
+├── description        text
+├── instructions       text  (the reusable prompt / procedure)
+└── deleted_at         timestamp
+
+table team.agent_skill_asset
+├── id             uuid
+├── team_id        uuid  → team.team
+├── agent_skill_id uuid  → team.agent_skill
+├── asset_id       uuid  → asset.asset
+├── description    text
+└── deleted_at     timestamp`}
+                </pre>
+                <p className="mt-4">
+                  skills are soft-deleted, scoped by team and unique by name within a team while
+                  they are active. image files do not live directly on the skill row; the join table
+                  points to normal asset records created with an agent-skill source. the slash
+                  command is also not stored in the db. it is derived from the skill name at response
+                  time, which keeps the stored model small while still letting users invoke a skill
+                  from chat.
+                </p>
+                <p className="mt-4">
+                  we also added product limits around the model: up to 200 skills per team, 20 images
+                  per skill, 10 mb per image, 80 characters for the skill name, 200 for the
+                  description and 50,000 for instructions.
+                </p>
                 <figure className="mt-6">
                   <img
                     src="/blogs/agent-context/skills.png"
