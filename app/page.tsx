@@ -273,6 +273,14 @@ export default function Home() {
                 <ul className="text-xs md:text-sm text-stone-400 space-y-1">
                   <li>
                     <a
+                      href="/blogs/agent-context"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
+                    >
+                      building agent context for generative media
+                    </a>
+                  </li>
+                  <li>
+                    <a
                       href="/blogs/ontology-text-to-sql"
                       className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
                     >
