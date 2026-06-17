@@ -58,6 +58,9 @@ export default function AgentContextBlog() {
                 alt="Melius canvas with interconnected image, video, and text nodes"
                 className="w-full"
               />
+              <figcaption className="text-stone-500 text-xs mt-2 italic">
+                Melius canvas with generated media and agent workflow nodes
+              </figcaption>
             </figure>
             <hr className="border-stone-700 mb-8" />
 
@@ -159,6 +162,9 @@ export default function AgentContextBlog() {
                     alt="Melius agent settings showing team context with brand guidelines"
                     className="w-full"
                   />
+                  <figcaption className="text-stone-500 text-xs mt-2 italic">
+                    Team-level agent context for shared brand guidelines
+                  </figcaption>
                 </figure>
               </section>
 
@@ -236,6 +242,9 @@ export default function AgentContextBlog() {
                     alt="Melius skills page showing a 3d art design skill and controls to import or add skills"
                     className="w-full"
                   />
+                  <figcaption className="text-stone-500 text-xs mt-2 italic">
+                    Skills list with a reusable 3d art design prompt
+                  </figcaption>
                 </figure>
                 <p className="mt-4">
                   we also added images to skills so users could reference visual examples directly
@@ -249,6 +258,9 @@ export default function AgentContextBlog() {
                     alt="Melius edit skill modal showing name, description, instructions, and reference images"
                     className="w-full"
                   />
+                  <figcaption className="text-stone-500 text-xs mt-2 italic">
+                    Edit skill modal with instructions and image references
+                  </figcaption>
                 </figure>
               </section>
 
