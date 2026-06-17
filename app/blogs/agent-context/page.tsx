@@ -12,6 +12,7 @@ export default function AgentContextBlog() {
       { id: 'what-are-context-and-skills', title: 'what are context and skills?' },
       { id: 'brainstorming', title: 'brainstorming ideas' },
       { id: 'agent-context', title: 'agent context' },
+      { id: 'evals', title: 'evals' },
       { id: 'agent-skills', title: 'agent skills' },
       { id: 'references', title: 'references' },
     ],
@@ -152,7 +153,27 @@ export default function AgentContextBlog() {
                   projects / canvases within a team because we thought it would be a good idea to
                   allow users to have some general guidelines for the agent to follow.
                 </p>
+                <figure className="mt-6">
+                  <img
+                    src="/blogs/agent-context/pocky-skill.jpeg"
+                    alt="Melius agent settings showing team context with brand guidelines"
+                    className="w-full"
+                  />
+                </figure>
                 <p className="mt-4">
+                  agent context, at the end of the day was just a system prompt and didn&apos;t
+                  allow our users to really cater to their specific workflow needs.
+                </p>
+              </section>
+
+              <section>
+                <h2
+                  id="evals"
+                  className="text-lg md:text-xl font-semibold text-stone-100 mb-3 scroll-mt-8"
+                >
+                  evals
+                </h2>
+                <p>
                   we also used braintrust-backed evals to make sure agent context was doing the
                   right things. our eval harness creates real projects, canvases and agent sessions
                   against the deployed api, attaches fixture-defined custom context, runs the agent
@@ -182,17 +203,6 @@ export default function AgentContextBlog() {
       generated_text_contains_all:
         - "@acme"`}
                 </pre>
-                <figure className="mt-6">
-                  <img
-                    src="/blogs/agent-context/pocky-skill.jpeg"
-                    alt="Melius agent settings showing team context with brand guidelines"
-                    className="w-full"
-                  />
-                </figure>
-                <p className="mt-4">
-                  agent context, at the end of the day was just a system prompt and didn&apos;t
-                  allow our users to really cater to their specific workflow needs.
-                </p>
               </section>
 
               <section>
