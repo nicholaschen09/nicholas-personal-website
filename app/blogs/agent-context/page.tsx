@@ -151,9 +151,11 @@ export default function AgentContextBlog() {
                   each team has a row in a custom_context table with a text column called
                   instructions. when the agent runs, we load that row, wrap it in a message, and
                   prepend it to the llm call. no vector store, no chunking, it&apos;s just a string
-                  that gets pasted into the prompt on every turn. the prompt is defined for all the
-                  projects / canvases within a team because we thought it would be a good idea to
-                  allow users to have some general guidelines for the agent to follow.
+                  that gets pasted into the prompt on every turn. our in-app agent runs on gemini
+                  3.5 flash, so keeping the context small and predictable mattered. the prompt is
+                  defined for all the projects / canvases within a team because we thought it would
+                  be a good idea to allow users to have some general guidelines for the agent to
+                  follow.
                 </p>
                 <figure className="mt-6">
                   <img
