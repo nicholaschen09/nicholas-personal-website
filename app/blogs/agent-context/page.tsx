@@ -59,7 +59,7 @@ export default function AgentContextBlog() {
                 className="w-full"
               />
               <figcaption className="text-stone-500 text-xs mt-2 italic">
-                Melius canvas with generated media and agent workflow nodes
+                melius canvas with generated media and agent workflow nodes
               </figcaption>
             </figure>
             <hr className="border-stone-700 mb-8" />
@@ -163,7 +163,7 @@ export default function AgentContextBlog() {
                     className="w-full"
                   />
                   <figcaption className="text-stone-500 text-xs mt-2 italic">
-                    Team-level agent context for shared brand guidelines
+                    team-level agent context for shared brand guidelines
                   </figcaption>
                 </figure>
               </section>
@@ -243,7 +243,7 @@ export default function AgentContextBlog() {
                     className="w-full"
                   />
                   <figcaption className="text-stone-500 text-xs mt-2 italic">
-                    Skills list with a reusable 3d art design prompt
+                    skills list with a reusable 3d art design prompt
                   </figcaption>
                 </figure>
                 <p className="mt-4">
@@ -259,7 +259,7 @@ export default function AgentContextBlog() {
                     className="w-full"
                   />
                   <figcaption className="text-stone-500 text-xs mt-2 italic">
-                    Edit skill modal with instructions and image references
+                    edit skill modal with instructions and image references
                   </figcaption>
                 </figure>
               </section>
