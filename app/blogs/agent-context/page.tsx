@@ -15,7 +15,7 @@ export default function AgentContextBlog() {
       { id: 'evals', title: 'evals' },
       { id: 'agent-skills', title: 'agent skills' },
       { id: 'mcp', title: 'the mcp' },
-      { id: 'whats-next', title: "what's next" },
+      { id: 'whats-next', title: "what's next?" },
       { id: 'references', title: 'references' },
     ],
     [],
@@ -369,7 +369,7 @@ actual user message`}
                   id="whats-next"
                   className="text-lg md:text-xl font-semibold text-stone-100 mb-3 scroll-mt-8"
                 >
-                  what&apos;s next
+                  what&apos;s next?
                 </h2>
                 <p>
                   we are also looking into agent learning, where the agent could improve from how
