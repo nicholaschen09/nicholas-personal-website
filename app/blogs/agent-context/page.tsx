@@ -51,7 +51,7 @@ export default function AgentContextBlog() {
               agent context and skills for creative tools
             </h1>
             <p className="text-stone-500 text-sm mb-6">
-              nicholas chen · june 16, 2026 · 5 min read
+              nicholas chen · june 17, 2026 · 8 min read
             </p>
 
             <figure className="mb-6">
