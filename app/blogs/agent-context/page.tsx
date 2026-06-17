@@ -273,15 +273,20 @@ export default function AgentContextBlog() {
                   mcp
                 </h2>
                 <p>
-                  mcp is not the same thing as skills. skills define reusable behavior, while mcp is
-                  the tool and context bridge that lets an external agent access melius capabilities
-                  and apply those skills to live product state.
+                  mcp was also a core part of the product because a lot of users work with melius
+                  through external agent surfaces. mcp is not the same thing as skills. skills define
+                  reusable behavior, while mcp is the tool and context bridge that lets an external
+                  agent access melius capabilities and apply those skills to live product state.
                 </p>
                 <p className="mt-4">
                   instead of stuffing every skill, canvas detail, model capability and asset into the
                   initial prompt, the agent can fetch only what it needs. for skills, that means an
                   agent can list team skills, load a specific skill, load its image assets and then
-                  use that context before planning nodes, prompts, edges, models or generations.
+                  use that context before planning nodes, prompts, edges, models or generations. one
+                  tricky part was working around the overloaded word skills: claude mcp skills and
+                  melius skills are not the same object, so we had to make the mcp instructions clear
+                  about when to load a melius team skill versus when to rely on the agent&apos;s own
+                  skill system.
                 </p>
                 <p className="mt-4">
                   mcp also became an engineering boundary. external agents should not directly poke
