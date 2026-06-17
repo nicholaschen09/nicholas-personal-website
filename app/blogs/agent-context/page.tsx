@@ -228,11 +228,10 @@ export default function AgentContextBlog() {
                   possible for teams to create separate skills for different workflows. this decision
                   was made after many iterations of testing and user feedback. we figured that skills
                   were the best for these specific instructions to be applied to the agent, but also
-                  be able to have it turned on / off frequently. we also wanted users to add media to
-                  context, but considered that they would likely want different types of branding or
-                  themes. this was another use-case that reinforced adding skills. traditionally,
-                  skills were not for images, but we did something different and added that in our
-                  app!
+                  be able to have it turned on / off frequently. we also added images to skills so
+                  users could reference visual examples directly when they wanted a certain brand
+                  look, product direction or theme. traditionally, skills were not for images, but we
+                  did something different and made those reference images part of the skill itself.
                 </p>
                 <figure className="mt-6">
                   <img
