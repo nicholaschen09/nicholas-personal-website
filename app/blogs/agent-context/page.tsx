@@ -184,6 +184,9 @@ export default function AgentContextBlog() {
                   adherence canaries, but the same fixture setup supports multi-turn follow-up
                   prompts for testing whether older context still survives after a longer workflow.
                 </p>
+                <p className="mt-4">
+                  an eval for this kind of case could look something like this:
+                </p>
                 <pre className="mt-6 p-4 bg-stone-900 border border-stone-700 rounded-md overflow-x-auto text-[11px] md:text-xs text-stone-300 font-mono">
                   {`cases:
   - id: canary-brand-context-survives-followups
