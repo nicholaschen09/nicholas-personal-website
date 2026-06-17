@@ -153,10 +153,12 @@ export default function AgentContextBlog() {
                   allow users to have some general guidelines for the agent to follow.
                 </p>
                 <p className="mt-4">
-                  we also spent time on evals to make sure agent context was actually doing the
-                  right things. using Braintrust, we could test whether the agent followed the
-                  team&apos;s branding instructions, avoided pulling in unrelated styles and kept the
-                  generated outputs aligned with the context that was attached to the canvas.
+                  we also used Braintrust-backed evals to make sure agent context was doing the
+                  right things. our eval harness creates real projects, canvases and agent sessions
+                  against the deployed api, runs fixture-defined conversations and checks whether the
+                  final canvas follows the attached custom context. today these are mostly
+                  custom-context adherence canaries, but the same fixture setup supports multi-turn
+                  tests for checking whether older context still survives after a longer workflow.
                 </p>
                 <figure className="mt-6">
                   <img
