@@ -12,7 +12,7 @@ export default function AgentContextBlog() {
       { id: 'what-are-context-and-skills', title: 'what are context and skills?' },
       { id: 'brainstorming', title: 'brainstorming ideas' },
       { id: 'agent-context', title: 'agent context' },
-      { id: 'evals', title: 'agent evals for context' },
+      { id: 'evals', title: 'evals for agent context' },
       { id: 'agent-skills', title: 'agent skills' },
       { id: 'mcp', title: 'agent mcp' },
       { id: 'whats-next', title: "what's next?" },
@@ -190,7 +190,7 @@ export default function AgentContextBlog() {
                   id="evals"
                   className="text-lg md:text-xl font-semibold text-stone-100 mb-3 scroll-mt-8"
                 >
-                  agent evals for context
+                  evals for agent context
                 </h2>
                 <p>
                   we also used braintrust-backed evals to make sure agent context was doing the
