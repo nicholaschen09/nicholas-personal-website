@@ -9,6 +9,7 @@ import TableOfContents, { TOCSection } from '@/components/TableOfContents';
 export default function AgentContextBlog() {
   const sections: TOCSection[] = useMemo(
     () => [
+      { id: 'what-are-context-and-skills', title: 'what are context and skills?' },
       { id: 'brainstorming', title: 'brainstorming' },
       { id: 'final-solution', title: 'the final solution' },
       { id: 'agent-context', title: 'agent context' },
@@ -83,6 +84,22 @@ export default function AgentContextBlog() {
                   as we onboarded more and more users, a request that often came up was allowing the
                   agent to use a set of pre-defined custom branding for all of the generative media
                   it creates. so, we built agent context.
+                </p>
+              </section>
+
+              <section>
+                <h2
+                  id="what-are-context-and-skills"
+                  className="text-lg md:text-xl font-semibold text-stone-100 mb-3 scroll-mt-8"
+                >
+                  what are context and skills?
+                </h2>
+                <p>
+                  context is the shared instruction layer for the agent. it captures the brand,
+                  product details, visual preferences and other defaults that should show up across a
+                  team&apos;s generated media. skills are more specific presets that the agent can
+                  apply for a certain type of output, like a brand style, product shot direction or
+                  repeatable creative workflow.
                 </p>
               </section>
 
