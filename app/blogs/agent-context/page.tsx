@@ -228,10 +228,7 @@ export default function AgentContextBlog() {
                   possible for teams to create separate skills for different workflows. this decision
                   was made after many iterations of testing and user feedback. we figured that skills
                   were the best for these specific instructions to be applied to the agent, but also
-                  be able to have it turned on / off frequently. we also added images to skills so
-                  users could reference visual examples directly when they wanted a certain brand
-                  look, product direction or theme. traditionally, skills were not for images, but we
-                  did something different and made those reference images part of the skill itself.
+                  be able to have it turned on / off frequently.
                 </p>
                 <figure className="mt-6">
                   <img
@@ -240,6 +237,12 @@ export default function AgentContextBlog() {
                     className="w-full"
                   />
                 </figure>
+                <p className="mt-4">
+                  we also added images to skills so users could reference visual examples directly
+                  when they wanted a certain brand look, product direction or theme. traditionally,
+                  skills were not for images, but we did something different and made those reference
+                  images part of the skill itself.
+                </p>
                 <figure className="mt-6">
                   <img
                     src="/blogs/agent-context/skill-edit.png"
