@@ -395,11 +395,11 @@ actual user message`}
                 <figure className="mt-6">
                   <img
                     src="/blogs/agent-context/mcp-team-skills.png"
-                    alt="External agent using Melius MCP tools to list team skills"
+                    alt="Claude.ai using Melius MCP tools to list team skills"
                     className="w-full"
                   />
                   <figcaption className="text-stone-500 text-xs mt-2 italic">
-                    external agent listing melius team skills through mcp
+                    claude.ai listing melius team skills through mcp
                   </figcaption>
                 </figure>
                 <p className="mt-4">
