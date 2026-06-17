@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { useState, useEffect, useRef, useCallback } from 'react';
 import Footer from '@/components/Footer';
 
@@ -101,6 +102,7 @@ export default function Home() {
             {contextMenu && (
               <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 z-50">
                 <button
+                  type="button"
                   onClick={handleCopySvg}
                   className="flex items-center justify-center gap-2 px-3 py-2.5 text-sm text-stone-400 bg-stone-800/80 hover:bg-orange-500/10 hover:text-orange-500 rounded-md whitespace-nowrap w-[120px] transition-colors"
                 >
@@ -272,28 +274,20 @@ export default function Home() {
               <div className="-mx-2 px-2">
                 <ul className="text-xs md:text-sm text-stone-400 space-y-1">
                   <li>
-                    <a
-                      href="/blogs/agent-context"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
-                    >
-                      agent context and skills for creative tools
-                    </a>
-                  </li>
-                  <li>
-                    <a
+                    <Link
                       href="/blogs/ontology-text-to-sql"
                       className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
                     >
                       why ontology for text-to-sql?
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/blogs/lossless-audio"
                       className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
                     >
                       how lossless audio compression works
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
