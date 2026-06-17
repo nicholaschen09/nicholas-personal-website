@@ -14,7 +14,7 @@ export default function AgentContextBlog() {
       { id: 'agent-context', title: 'agent context' },
       { id: 'evals', title: 'evals' },
       { id: 'agent-skills', title: 'agent skills' },
-      { id: 'mcp', title: 'mcp' },
+      { id: 'mcp', title: 'the mcp' },
       { id: 'references', title: 'references' },
     ],
     [],
@@ -270,10 +270,10 @@ export default function AgentContextBlog() {
                   id="mcp"
                   className="text-lg md:text-xl font-semibold text-stone-100 mb-3 scroll-mt-8"
                 >
-                  mcp
+                  the mcp
                 </h2>
                 <p>
-                  mcp was also a core part of the product because a lot of users work with melius
+                  the mcp was also a core part of the product because a lot of users work with melius
                   through external agent surfaces. mcp is not the same thing as skills. skills define
                   reusable behavior, while mcp is the tool and context bridge that lets an external
                   agent access melius capabilities and apply those skills to live product state.
