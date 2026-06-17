@@ -24,7 +24,7 @@ export default function AgentContextBlog() {
   );
 
   useEffect(() => {
-    document.title = 'building agent context for generative media | Nicholas Chen';
+    document.title = 'agent context / skills for creative tools | Nicholas Chen';
   }, []);
 
   return (
@@ -50,7 +50,7 @@ export default function AgentContextBlog() {
             </Link>
 
             <h1 className="text-2xl md:text-3xl font-medium text-white mb-2">
-              building agent context for generative media
+              agent context / skills for creative tools
             </h1>
             <p className="text-stone-500 text-sm mb-6">
               nicholas chen · june 16, 2026 · 8 min read
@@ -201,6 +201,17 @@ export default function AgentContextBlog() {
                   <li>• never use competitor logos.</li>
                   <li>• our brand colors are cobalt blue, white, and charcoal.</li>
                 </ul>
+                <figure className="mt-6">
+                  <img
+                    src="/blogs/agent-context/pocky-skill.jpeg"
+                    alt="Melius agent settings showing Pocky brand context — voice, palette, and naming rules"
+                    className="w-full"
+                  />
+                  <figcaption className="text-stone-500 text-xs mt-2 italic">
+                    Team context in Melius — brand voice, hex codes, and naming rules that run on
+                    every agent call
+                  </figcaption>
+                </figure>
                 <p className="mt-4">
                   bad things to put in context: one-off task instructions ("make this image taller")
                   or workflow-specific rules that only apply sometimes ("for product shots, use a

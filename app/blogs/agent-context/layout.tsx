@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'building agent context for generative media | Nicholas Chen',
+  title: 'agent context / skills for creative tools | Nicholas Chen',
   description:
     'How we designed team-wide context and skills at Melius so creative agents stay on-brand across image, video, and copy workflows.',
   openGraph: {
-    title: 'building agent context for generative media',
+    title: 'agent context / skills for creative tools',
     description:
       'How we designed team-wide context and skills at Melius so creative agents stay on-brand across image, video, and copy workflows.',
     type: 'article',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'building agent context for generative media',
+    title: 'agent context / skills for creative tools',
     images: ['https://nicholaschen.me/blogs/agent-context/canvas.png'],
   },
 };

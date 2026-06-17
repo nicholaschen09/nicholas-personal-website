@@ -276,7 +276,7 @@ export default function Home() {
                       href="/blogs/agent-context"
                       className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
                     >
-                      building agent context for generative media
+                      agent context / skills for creative tools
                     </a>
                   </li>
                   <li>
