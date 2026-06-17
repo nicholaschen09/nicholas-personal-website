@@ -14,6 +14,7 @@ export default function AgentContextBlog() {
       { id: 'agent-context', title: 'agent context' },
       { id: 'evals', title: 'evals' },
       { id: 'agent-skills', title: 'agent skills' },
+      { id: 'mcp', title: 'mcp' },
       { id: 'references', title: 'references' },
     ],
     [],
@@ -264,6 +265,33 @@ export default function AgentContextBlog() {
                 </figure>
               </section>
 
+              <section>
+                <h2
+                  id="mcp"
+                  className="text-lg md:text-xl font-semibold text-stone-100 mb-3 scroll-mt-8"
+                >
+                  mcp
+                </h2>
+                <p>
+                  mcp is not the same thing as skills. skills define reusable behavior, while mcp is
+                  the tool and context bridge that lets an external agent access melius capabilities
+                  and apply those skills to live product state.
+                </p>
+                <p className="mt-4">
+                  instead of stuffing every skill, canvas detail, model capability and asset into the
+                  initial prompt, the agent can fetch only what it needs. for skills, that means an
+                  agent can list team skills, load a specific skill, load its image assets and then
+                  use that context before planning nodes, prompts, edges, models or generations.
+                </p>
+                <p className="mt-4">
+                  mcp also became an engineering boundary. external agents should not directly poke
+                  database tables or internal service methods; they should call declared tools with
+                  schemas and instructions. once we had multiple agent surfaces, the native agent
+                  prompt and mcp instructions also had to keep shared canvas and domain rules in sync
+                  so behavior did not drift between the in-app agent and external agents.
+                </p>
+              </section>
+
               <section className="border-t border-stone-700 pt-6 mt-8">
                 <h3
                   id="references"
@@ -300,6 +328,26 @@ export default function AgentContextBlog() {
                       className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500 underline"
                     >
                       agentskills.io/home
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.braintrust.dev/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500 underline"
+                    >
+                      braintrust.dev
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://modelcontextprotocol.io/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500 underline"
+                    >
+                      modelcontextprotocol.io
                     </a>
                   </li>
                 </ul>
