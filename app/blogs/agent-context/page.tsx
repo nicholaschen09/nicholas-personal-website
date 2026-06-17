@@ -207,6 +207,16 @@ export default function AgentContextBlog() {
                   adherence canaries, but the same fixture setup supports multi-turn follow-up
                   prompts for testing whether older context still survives after a longer workflow.
                 </p>
+                <figure className="mt-6">
+                  <img
+                    src="/blogs/agent-context/braintrust-evals.png"
+                    alt="Braintrust eval comparison table showing graph integrity scores for agent runs"
+                    className="w-full"
+                  />
+                  <figcaption className="text-stone-500 text-xs mt-2 italic">
+                    braintrust comparison view for agent context eval runs
+                  </figcaption>
+                </figure>
                 <p className="mt-4">
                   an eval for this kind of case could look something like this:
                 </p>
