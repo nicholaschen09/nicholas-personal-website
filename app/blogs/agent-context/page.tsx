@@ -193,6 +193,13 @@ export default function AgentContextBlog() {
                   skills were not for images, but we did something different and added that in our
                   app!
                 </p>
+                <figure className="mt-6">
+                  <img
+                    src="/blogs/agent-context/skills.png"
+                    alt="Melius skills page showing a 3d art design skill and controls to import or add skills"
+                    className="w-full"
+                  />
+                </figure>
               </section>
             </div>
 
