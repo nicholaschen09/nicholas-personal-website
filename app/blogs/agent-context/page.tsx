@@ -12,7 +12,7 @@ export default function AgentContextBlog() {
       { id: 'what-are-context-and-skills', title: 'what are context and skills?' },
       { id: 'brainstorming', title: 'brainstorming ideas' },
       { id: 'agent-context', title: 'agent context' },
-      { id: 'skills', title: 'skills' },
+      { id: 'agent-skills', title: 'agent skills' },
       { id: 'references', title: 'references' },
     ],
     [],
@@ -173,10 +173,10 @@ export default function AgentContextBlog() {
 
               <section>
                 <h2
-                  id="skills"
+                  id="agent-skills"
                   className="text-lg md:text-xl font-semibold text-stone-100 mb-3 scroll-mt-8"
                 >
-                  skills
+                  agent skills
                 </h2>
                 <p>
                   this is why we added skills. we defined skills more as a way for users to utilize multiple different types of
