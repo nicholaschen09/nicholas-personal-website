@@ -341,7 +341,7 @@ table team.agent_skill_asset
                     demo
                   </a>
                   {' '}for agent skills
-                  .
+                  !
                 </p>
                 <figure className="mt-6">
                   <img
