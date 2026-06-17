@@ -218,6 +218,13 @@ export default function AgentContextBlog() {
                   </figcaption>
                 </figure>
                 <p className="mt-4">
+                  the example below is a simplified version of one of those canaries. it seeds a
+                  project with a small custom context block, asks the agent to create an initial
+                  concept, then sends a few follow-up prompts to make sure the same context survives
+                  across the whole conversation. the scorer checks that the required brand phrase is
+                  still present and that banned language does not creep back into the final output.
+                </p>
+                <p className="mt-4">
                   an eval for this kind of case could look something like this:
                 </p>
                 <pre className="mt-6 p-4 bg-stone-900 border border-stone-700 rounded-md overflow-x-auto text-[11px] md:text-xs text-stone-300 font-mono">
