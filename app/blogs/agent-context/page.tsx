@@ -168,7 +168,7 @@ export default function AgentContextBlog() {
                 </figure>
                 <p className="mt-4">
                   agent context, at the end of the day was just a system prompt and didn&apos;t
-                  allow our users to really cater to their workflow needs.
+                  allow our users to really cater to their specific workflow needs.
                 </p>
               </section>
 
