@@ -15,6 +15,7 @@ export default function AgentContextBlog() {
       { id: 'evals', title: 'evals' },
       { id: 'agent-skills', title: 'agent skills' },
       { id: 'mcp', title: 'the mcp' },
+      { id: 'whats-next', title: "what's next" },
       { id: 'references', title: 'references' },
     ],
     [],
@@ -334,6 +335,21 @@ table team.agent_skill_asset
                   schemas and instructions. once we had multiple agent surfaces, the native agent
                   prompt and mcp instructions also had to keep shared canvas and domain rules in sync
                   so behavior did not drift between the in-app agent and external agents.
+                </p>
+              </section>
+
+              <section>
+                <h2
+                  id="whats-next"
+                  className="text-lg md:text-xl font-semibold text-stone-100 mb-3 scroll-mt-8"
+                >
+                  what&apos;s next
+                </h2>
+                <p>
+                  we are also looking into agent learning, where the agent could improve from how
+                  teams repeatedly use context, skills and the canvas over time. that may or may not
+                  be implemented soon, but it is one direction we have been thinking about as these
+                  workflows become more personalized.
                 </p>
               </section>
 
