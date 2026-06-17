@@ -300,19 +300,12 @@ table team.agent_skill_asset
                   points to normal asset records created with an agent-skill source. those asset
                   records store the actual file metadata like media type, s3 bucket, s3 key, file
                   type and file size, while the skill asset row stores the relationship and optional
-                  per-image description. the slash command is also not stored in the db. it is
-                  derived from the skill name at response time, which keeps the stored model small
-                  while still letting users invoke a skill from chat.
+                  per-image description.
                 </p>
                 <p className="mt-4">
                   imported skills go through the same normalization path too: we parse the imported
                   instructions and metadata into the team skill model instead of treating them as a
                   separate runtime concept.
-                </p>
-                <p className="mt-4">
-                  we also added product limits around the model: up to 200 skills per team, 20 images
-                  per skill, 10 mb per image, 80 characters for the skill name, 200 for the
-                  description and 50,000 for instructions.
                 </p>
                 <figure className="mt-6">
                   <img
@@ -358,7 +351,7 @@ table team.agent_skill_asset
                   before the actual user message.
                 </p>
                 <pre className="mt-6 p-4 bg-stone-900 border border-stone-700 rounded-md overflow-x-auto text-[11px] md:text-xs text-stone-300 font-mono">
-                  {`⟦skill:/some-skill⟧
+                  {`⟦skill:some-skill-id⟧
 ...skill instructions...
 ⟦/skill⟧
 actual user message`}
@@ -474,6 +467,16 @@ actual user message`}
                       className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500 underline"
                     >
                       docs.melius.com
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://app.melius.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500 underline"
+                    >
+                      app.melius.com
                     </a>
                   </li>
                   <li>
