@@ -180,8 +180,7 @@ export default function AgentContextBlog() {
                   skills
                 </h2>
                 <p>
-                  this is why we added skills. apart from general instructions, we also added skills.
-                  we defined skills more as a way for users to utilize multiple different types of
+                  this is why we added skills. we defined skills more as a way for users to utilize multiple different types of
                   agent context packages that could all be stored within a team. instead of forcing every brand rule, visual
                   preference, and product detail instruction into one giant prompt, we made it
                   possible for teams to create separate skills for different workflows. this decision
