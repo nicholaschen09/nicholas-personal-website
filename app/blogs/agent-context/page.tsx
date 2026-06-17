@@ -10,8 +10,7 @@ export default function AgentContextBlog() {
   const sections: TOCSection[] = useMemo(
     () => [
       { id: 'what-are-context-and-skills', title: 'what are context and skills?' },
-      { id: 'brainstorming', title: 'brainstorming' },
-      { id: 'final-solution', title: 'the final solution' },
+      { id: 'brainstorming', title: 'brainstorming ideas' },
       { id: 'agent-context', title: 'agent context' },
       { id: 'skills', title: 'skills' },
       { id: 'references', title: 'references' },
@@ -111,7 +110,7 @@ export default function AgentContextBlog() {
                   id="brainstorming"
                   className="text-lg md:text-xl font-semibold text-stone-100 mb-3 scroll-mt-8"
                 >
-                  brainstorming
+                  brainstorming ideas
                 </h2>
                 <p>
                   before building out this feature, we thought a lot and iterated upon our
@@ -121,16 +120,7 @@ export default function AgentContextBlog() {
                   with generated media vs a large amount of text. we went through ideas of having context images per team,
                   skills and also allowing the agent to reference an image based on its description.
                 </p>
-              </section>
-
-              <section>
-                <h2
-                  id="final-solution"
-                  className="text-lg md:text-xl font-semibold text-stone-100 mb-3 scroll-mt-8"
-                >
-                  the final solution
-                </h2>
-                <p>
+                <p className="mt-4">
                   the final solution we landed on that was actually scalable was to have a general
                   text prompt for each team&apos;s context and store the team&apos;s specific custom
                   branding / styles each under different skills.
