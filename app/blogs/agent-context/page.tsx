@@ -200,6 +200,13 @@ export default function AgentContextBlog() {
                     className="w-full"
                   />
                 </figure>
+                <figure className="mt-6">
+                  <img
+                    src="/blogs/agent-context/skill-edit.png"
+                    alt="Melius edit skill modal showing name, description, instructions, and reference images"
+                    className="w-full"
+                  />
+                </figure>
               </section>
             </div>
 
