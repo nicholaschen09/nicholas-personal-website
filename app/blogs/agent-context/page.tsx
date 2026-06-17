@@ -97,8 +97,8 @@ export default function AgentContextBlog() {
                   before building out this feature, we thought a lot and iterated upon our
                   initial ideas many times. having to think through the user experience and how users
                   would actually use and apply agent context to their generative media workflows was
-                  different from the traditional ai saas tool because our platform is media-heavy
-                  rather than text-heavy. we went through ideas of having context images per team,
+                  different from the traditional ai saas tool because our platform is a canvas filled
+                  with generated media vs a large amount of text. we went through ideas of having context images per team,
                   skills and also allowing the agent to reference an image based on its description.
                 </p>
               </section>
