@@ -3,11 +3,11 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'agent context / skills for creative tools | Nicholas Chen',
   description:
-    'How we designed team-wide context and skills at Melius so creative agents stay on-brand across image, video, and copy workflows.',
+    'How we built agent context and skills at Melius so creative teams can apply custom branding across generative media workflows.',
   openGraph: {
     title: 'agent context / skills for creative tools',
     description:
-      'How we designed team-wide context and skills at Melius so creative agents stay on-brand across image, video, and copy workflows.',
+      'How we built agent context and skills at Melius so creative teams can apply custom branding across generative media workflows.',
     type: 'article',
     images: ['https://nicholaschen.me/blogs/agent-context/canvas.png'],
   },
