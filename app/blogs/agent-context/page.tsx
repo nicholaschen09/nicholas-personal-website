@@ -44,7 +44,7 @@ export default function AgentContextBlog() {
             </Link>
 
             <h1 className="text-2xl md:text-3xl font-medium text-white mb-2">
-              agent context and skills for creative tools this
+              agent context and skills for creative tools
             </h1>
             <p className="text-stone-500 text-sm mb-6">
               nicholas chen · june 16, 2026 · 5 min read
