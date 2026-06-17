@@ -468,6 +468,16 @@ actual user message`}
                   </li>
                   <li>
                     <a
+                      href="https://app.melius.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500 underline"
+                    >
+                      app.melius.com
+                    </a>
+                  </li>
+                  <li>
+                    <a
                       href="https://docs.melius.com/"
                       target="_blank"
                       rel="noopener noreferrer"
