@@ -14,7 +14,7 @@ export default function AgentContextBlog() {
       { id: 'agent-context', title: 'agent context' },
       { id: 'evals', title: 'evals for agent context' },
       { id: 'agent-skills', title: 'agent skills' },
-      { id: 'mcp', title: 'agent mcp' },
+      { id: 'mcp', title: 'mcp' },
       { id: 'whats-next', title: "what's next?" },
       { id: 'references', title: 'references' },
     ],
@@ -383,7 +383,7 @@ actual user message`}
                   id="mcp"
                   className="text-lg md:text-xl font-semibold text-stone-100 mb-3 scroll-mt-8"
                 >
-                  agent mcp
+                  mcp
                 </h2>
                 <p>
                   one of the core features of the melius product is the mcp, and because of that, a
