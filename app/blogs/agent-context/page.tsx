@@ -10,7 +10,7 @@ export default function AgentContextBlog() {
   const sections: TOCSection[] = useMemo(
     () => [
       { id: 'what-are-context-and-skills', title: 'what are context and skills?' },
-      { id: 'brainstorming', title: 'brainstorming ideas' },
+      { id: 'brainstorming', title: 'the solution' },
       { id: 'agent-context', title: 'agent context' },
       { id: 'skills', title: 'skills' },
       { id: 'references', title: 'references' },
@@ -110,7 +110,7 @@ export default function AgentContextBlog() {
                   id="brainstorming"
                   className="text-lg md:text-xl font-semibold text-stone-100 mb-3 scroll-mt-8"
                 >
-                  brainstorming ideas
+                  the solution
                 </h2>
                 <p>
                   before building out this feature, we thought a lot and iterated upon our
