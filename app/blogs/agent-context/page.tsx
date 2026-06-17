@@ -162,6 +162,12 @@ export default function AgentContextBlog() {
                   projects / canvases within a team because we thought it would be a good idea to
                   allow users to have some general guidelines for the agent to follow.
                 </p>
+                <p className="mt-4">
+                  we also spent time on evals to make sure agent context was actually doing the
+                  right things. using Braintrust, we could test whether the agent followed the
+                  team&apos;s branding instructions, avoided pulling in unrelated styles and kept the
+                  generated outputs aligned with the context that was attached to the canvas.
+                </p>
                 <figure className="mt-6">
                   <img
                     src="/blogs/agent-context/pocky-skill.jpeg"
