@@ -14,6 +14,7 @@ export default function AgentContextBlog() {
       { id: 'final-solution', title: 'the final solution' },
       { id: 'agent-context', title: 'agent context' },
       { id: 'skills', title: 'skills' },
+      { id: 'references', title: 'references' },
     ],
     [],
   );
@@ -206,6 +207,47 @@ export default function AgentContextBlog() {
                     className="w-full"
                   />
                 </figure>
+              </section>
+
+              <section className="border-t border-stone-700 pt-6 mt-8">
+                <h3
+                  id="references"
+                  className="text-sm md:text-base font-semibold text-stone-200 mb-3 scroll-mt-8"
+                >
+                  references
+                </h3>
+                <ul className="space-y-2 text-stone-400 text-xs md:text-sm">
+                  <li>
+                    <a
+                      href="https://www.melius.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500 underline"
+                    >
+                      melius.com
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://docs.melius.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500 underline"
+                    >
+                      docs.melius.com
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://agentskills.io/home"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500 underline"
+                    >
+                      agentskills.io/home
+                    </a>
+                  </li>
+                </ul>
               </section>
             </div>
 
