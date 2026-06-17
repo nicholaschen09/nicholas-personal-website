@@ -122,8 +122,8 @@ export default function AgentContextBlog() {
                 </p>
                 <p className="mt-4">
                   the final solution we landed on that was actually scalable was to have a general
-                  text prompt for each team&apos;s context and store the team&apos;s specific custom
-                  branding / styles each under different skills.
+                  text prompt for each team&apos;s context and store each team&apos;s specific custom
+                  branding / styles under different skills.
                 </p>
               </section>
 
