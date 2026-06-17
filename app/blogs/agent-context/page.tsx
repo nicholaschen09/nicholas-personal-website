@@ -277,6 +277,32 @@ table team.agent_skill_asset
                   per skill, 10 mb per image, 80 characters for the skill name, 200 for the
                   description and 50,000 for instructions.
                 </p>
+                <p className="mt-4">
+                  applying a skill had two separate paths: skill text and skill assets. the text path
+                  starts in chat, where the selected skill instructions are wrapped with delimiters
+                  before the actual user message.
+                </p>
+                <pre className="mt-6 p-4 bg-stone-900 border border-stone-700 rounded-md overflow-x-auto text-[11px] md:text-xs text-stone-300 font-mono">
+                  {`⟦skill:/some-skill⟧
+...skill instructions...
+⟦/skill⟧
+actual user message`}
+                </pre>
+                <p className="mt-4">
+                  on the backend, those leading skill blocks are parsed out of the user&apos;s actual
+                  request and turned into a separate model message for the turn. the final model
+                  context is ordered roughly as prior messages, custom context, applied skill context
+                  and then the current user prompt. importantly, the skill text is not secretly
+                  copied into every node prompt. it is used as context for deciding what to do.
+                </p>
+                <p className="mt-4">
+                  skill assets take a different path. they are stored as normal asset records and
+                  linked through the skill asset table, then loaded at runtime as signed image urls.
+                  those urls are used as hidden generation inputs, not visible chat attachments,
+                  canvas file nodes or canvas edges. if no skill is applied, hidden image urls are
+                  rejected; if a skill is applied, the backend loads image assets for that skill,
+                  dedupes them and injects them into image or video generations.
+                </p>
                 <figure className="mt-6">
                   <img
                     src="/blogs/agent-context/skills.png"
