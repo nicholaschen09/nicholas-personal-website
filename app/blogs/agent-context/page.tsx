@@ -98,9 +98,11 @@ export default function AgentContextBlog() {
                 <p>
                   context is the shared instruction layer for the agent. it captures the brand,
                   product details, visual preferences and other defaults that should show up across a
-                  team&apos;s generated media. skills are more specific presets that the agent can
-                  apply for a certain type of output, like a brand style, product shot direction or
-                  repeatable creative workflow.
+                  team&apos;s generated media.
+                </p>
+                <p className="mt-4">
+                  skills are more specific presets that the agent can apply for a certain type of
+                  output, like a brand style, product shot direction or repeatable creative workflow.
                 </p>
               </section>
 
