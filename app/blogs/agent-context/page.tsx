@@ -168,6 +168,16 @@ export default function AgentContextBlog() {
                     team-level agent context for shared brand guidelines
                   </figcaption>
                 </figure>
+                <figure className="mt-6">
+                  <img
+                    src="/blogs/agent-context/context-canvas.png"
+                    alt="Melius canvas showing Pocky product shot variations generated with agent context"
+                    className="w-full"
+                  />
+                  <figcaption className="text-stone-500 text-xs mt-2 italic">
+                    pocky product shot variations generated with agent context
+                  </figcaption>
+                </figure>
               </section>
 
               <section>
