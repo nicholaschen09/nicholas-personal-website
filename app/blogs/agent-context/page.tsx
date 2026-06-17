@@ -338,8 +338,9 @@ table team.agent_skill_asset
                     rel="noopener noreferrer"
                     className="text-stone-300 underline hover:text-orange-500 transition-colors"
                   >
-                    demo video for agent skills
+                    demo
                   </a>
+                  {' '}for agent skills
                   .
                 </p>
                 <figure className="mt-6">
