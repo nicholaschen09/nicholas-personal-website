@@ -264,10 +264,12 @@ table team.agent_skill_asset
                 <p className="mt-4">
                   skills are soft-deleted, scoped by team and unique by name within a team while
                   they are active. image files do not live directly on the skill row; the join table
-                  points to normal asset records created with an agent-skill source. the slash
-                  command is also not stored in the db. it is derived from the skill name at response
-                  time, which keeps the stored model small while still letting users invoke a skill
-                  from chat.
+                  points to normal asset records created with an agent-skill source. those asset
+                  records store the actual file metadata like media type, s3 bucket, s3 key, file
+                  type and file size, while the skill asset row stores the relationship and optional
+                  per-image description. the slash command is also not stored in the db. it is
+                  derived from the skill name at response time, which keeps the stored model small
+                  while still letting users invoke a skill from chat.
                 </p>
                 <p className="mt-4">
                   we also added product limits around the model: up to 200 skills per team, 20 images
