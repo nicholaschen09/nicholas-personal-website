@@ -330,6 +330,18 @@ table team.agent_skill_asset
                   skills were not for images, but we did something different and made those reference
                   images part of the skill itself.
                 </p>
+                <p className="mt-4">
+                  we also shared a short{' '}
+                  <a
+                    href="https://x.com/trymelius/status/2066941446247108899?s=20"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-stone-300 underline hover:text-orange-500 transition-colors"
+                  >
+                    demo video for agent skills
+                  </a>
+                  .
+                </p>
                 <figure className="mt-6">
                   <img
                     src="/blogs/agent-context/skill-edit.png"
