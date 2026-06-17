@@ -186,18 +186,24 @@ export default function AgentContextBlog() {
                 </p>
                 <pre className="mt-6 p-4 bg-stone-900 border border-stone-700 rounded-md overflow-x-auto text-[11px] md:text-xs text-stone-300 font-mono">
                   {`cases:
-  - id: canary-aging-custom-context
-    prompt: "start a campaign plan for acme."
+  - id: canary-brand-context-survives-followups
+    prompt: "create a launch concept for nova studio."
     custom_context:
-      name: "aging context requirement"
-      instructions: "every final marketing headline must include @acme."
+      name: "nova studio brand rules"
+      instructions: |
+        keep the tone calm and editorial.
+        use the phrase "designed for creative teams".
+        avoid hype words like revolutionary or game-changing.
     follow_up_prompts:
-      - "add three storyboard scenes."
-      - "add image prompts for each scene."
-      - "now write the final headline as a text node."
+      - "add three image directions."
+      - "turn those into a short campaign outline."
+      - "now write the final headline and subheadline."
     expected:
       generated_text_contains_all:
-        - "@acme"`}
+        - "designed for creative teams"
+      generated_text_excludes_all:
+        - "revolutionary"
+        - "game-changing"`}
                 </pre>
               </section>
 
