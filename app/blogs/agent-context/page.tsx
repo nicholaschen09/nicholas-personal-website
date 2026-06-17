@@ -155,10 +155,17 @@ export default function AgentContextBlog() {
                 <p className="mt-4">
                   we also used Braintrust-backed evals to make sure agent context was doing the
                   right things. our eval harness creates real projects, canvases and agent sessions
-                  against the deployed api, runs fixture-defined conversations and checks whether the
-                  final canvas follows the attached custom context. today these are mostly
-                  custom-context adherence canaries, but the same fixture setup supports multi-turn
-                  tests for checking whether older context still survives after a longer workflow.
+                  against the deployed api, attaches fixture-defined custom context, runs the agent
+                  conversation and then scores the final canvas and messages. for example, a canary
+                  might attach a brand rule, ask the agent to create a campaign or visual direction
+                  and then check that the generated text still includes the required phrase or style.
+                </p>
+                <p className="mt-4">
+                  Braintrust gives us a place to log each run, inspect the canvas url, compare
+                  outputs across changes and track telemetry like prompt size, image count, tool
+                  calls, latency and reasoning tokens. today these are mostly custom-context
+                  adherence canaries, but the same fixture setup supports multi-turn follow-up
+                  prompts for testing whether older context still survives after a longer workflow.
                 </p>
                 <figure className="mt-6">
                   <img
