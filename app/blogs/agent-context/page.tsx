@@ -14,7 +14,7 @@ export default function AgentContextBlog() {
       { id: 'agent-context', title: 'agent context' },
       { id: 'evals', title: 'evals' },
       { id: 'agent-skills', title: 'agent skills' },
-      { id: 'mcp', title: 'the mcp' },
+      { id: 'mcp', title: 'agent mcp' },
       { id: 'whats-next', title: "what's next?" },
       { id: 'references', title: 'references' },
     ],
@@ -60,9 +60,6 @@ export default function AgentContextBlog() {
                 alt="Melius canvas with interconnected image, video, and text nodes"
                 className="w-full"
               />
-              <figcaption className="text-stone-500 text-xs mt-2 italic">
-                melius canvas with generated media and agent workflow nodes
-              </figcaption>
             </figure>
             <hr className="border-stone-700 mb-8" />
 
@@ -168,6 +165,12 @@ export default function AgentContextBlog() {
                     team-level agent context for shared brand guidelines
                   </figcaption>
                 </figure>
+                <p className="mt-4">
+                  because agent context is set at the team level, it is automatically applied to
+                  every agent call across that team&apos;s projects and canvases. users do not have
+                  to remember to re-add the same brand rules each time; the agent always receives
+                  that shared context before deciding what to create.
+                </p>
                 <figure className="mt-6">
                   <img
                     src="/blogs/agent-context/context-canvas.png"
@@ -283,35 +286,14 @@ table team.agent_skill_asset
                   while still letting users invoke a skill from chat.
                 </p>
                 <p className="mt-4">
+                  imported skills go through the same normalization path too: we parse the imported
+                  instructions and metadata into the team skill model instead of treating them as a
+                  separate runtime concept.
+                </p>
+                <p className="mt-4">
                   we also added product limits around the model: up to 200 skills per team, 20 images
                   per skill, 10 mb per image, 80 characters for the skill name, 200 for the
                   description and 50,000 for instructions.
-                </p>
-                <p className="mt-4">
-                  applying a skill had two separate paths: skill text and skill assets. the text path
-                  starts in chat, where the selected skill instructions are wrapped with delimiters
-                  before the actual user message.
-                </p>
-                <pre className="mt-6 p-4 bg-stone-900 border border-stone-700 rounded-md overflow-x-auto text-[11px] md:text-xs text-stone-300 font-mono">
-                  {`⟦skill:/some-skill⟧
-...skill instructions...
-⟦/skill⟧
-actual user message`}
-                </pre>
-                <p className="mt-4">
-                  on the backend, those leading skill blocks are parsed out of the user&apos;s actual
-                  request and turned into a separate model message for the turn. the final model
-                  context is ordered roughly as prior messages, custom context, applied skill context
-                  and then the current user prompt. importantly, the skill text is not secretly
-                  copied into every node prompt. it is used as context for deciding what to do.
-                </p>
-                <p className="mt-4">
-                  skill assets take a different path. they are stored as normal asset records and
-                  linked through the skill asset table, then loaded at runtime as signed image urls.
-                  those urls are used as hidden generation inputs, not visible chat attachments,
-                  canvas file nodes or canvas edges. if no skill is applied, hidden image urls are
-                  rejected; if a skill is applied, the backend loads image assets for that skill,
-                  dedupes them and injects them into image or video generations.
                 </p>
                 <figure className="mt-6">
                   <img
@@ -339,6 +321,42 @@ actual user message`}
                     edit skill modal with instructions and image references
                   </figcaption>
                 </figure>
+                <p className="mt-4">
+                  applying a skill had two separate paths: skill text and skill assets. the text path
+                  starts in chat, where the selected skill instructions are wrapped with delimiters
+                  before the actual user message.
+                </p>
+                <pre className="mt-6 p-4 bg-stone-900 border border-stone-700 rounded-md overflow-x-auto text-[11px] md:text-xs text-stone-300 font-mono">
+                  {`⟦skill:/some-skill⟧
+...skill instructions...
+⟦/skill⟧
+actual user message`}
+                </pre>
+                <figure className="mt-6">
+                  <img
+                    src="/blogs/agent-context/skill-applied-canvas.png"
+                    alt="Melius canvas where a 3d art design skill is applied to generate a translucent crystal bird"
+                    className="w-full"
+                  />
+                  <figcaption className="text-stone-500 text-xs mt-2 italic">
+                    applied 3d art design skill generating a crystal bird on canvas
+                  </figcaption>
+                </figure>
+                <p className="mt-4">
+                  on the backend, those leading skill blocks are parsed out of the user&apos;s actual
+                  request and turned into a separate model message for the turn. the final model
+                  context is ordered roughly as prior messages, custom context, applied skill context
+                  and then the current user prompt. importantly, the skill text is not secretly
+                  copied into every node prompt. it is used as context for deciding what to do.
+                </p>
+                <p className="mt-4">
+                  skill assets take a different path. they are stored as normal asset records and
+                  linked through the skill asset table, then loaded at runtime as signed image urls.
+                  those urls are used as hidden generation inputs, not visible chat attachments,
+                  canvas file nodes or canvas edges. if no skill is applied, hidden image urls are
+                  rejected; if a skill is applied, the backend loads image assets for that skill,
+                  dedupes them and injects them into image or video generations.
+                </p>
               </section>
 
               <section>
@@ -346,7 +364,7 @@ actual user message`}
                   id="mcp"
                   className="text-lg md:text-xl font-semibold text-stone-100 mb-3 scroll-mt-8"
                 >
-                  the mcp
+                  agent mcp
                 </h2>
                 <p>
                   one of the core features of the melius product is the mcp, and because of that, a
@@ -355,6 +373,16 @@ actual user message`}
                   access melius capabilities, apply those skills and create workflows on our
                   node-based canvas.
                 </p>
+                <figure className="mt-6">
+                  <img
+                    src="/blogs/agent-context/mcp-team-skills.png"
+                    alt="External agent using Melius MCP tools to list team skills"
+                    className="w-full"
+                  />
+                  <figcaption className="text-stone-500 text-xs mt-2 italic">
+                    external agent listing melius team skills through mcp
+                  </figcaption>
+                </figure>
                 <p className="mt-4">
                   instead of stuffing every skill, canvas detail, model capability and asset into the
                   initial prompt, the agent can fetch only what it needs. for skills, that means an
