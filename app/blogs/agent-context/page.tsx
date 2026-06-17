@@ -160,10 +160,6 @@ export default function AgentContextBlog() {
                     className="w-full"
                   />
                 </figure>
-                <p className="mt-4">
-                  agent context, at the end of the day was just a system prompt and didn&apos;t
-                  allow our users to really cater to their specific workflow needs.
-                </p>
               </section>
 
               <section>
@@ -213,6 +209,10 @@ export default function AgentContextBlog() {
                   agent skills
                 </h2>
                 <p>
+                  agent context, at the end of the day was just a system prompt and didn&apos;t
+                  allow our users to really cater to their specific workflow needs.
+                </p>
+                <p className="mt-4">
                   this is why we added skills. we defined skills more as a way for users to utilize multiple different types of
                   agent context packages that could all be stored within a team. instead of forcing every brand rule, visual
                   preference, and product detail instruction into one giant prompt, we made it
