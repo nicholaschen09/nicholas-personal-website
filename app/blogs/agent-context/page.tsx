@@ -153,7 +153,7 @@ export default function AgentContextBlog() {
                   allow users to have some general guidelines for the agent to follow.
                 </p>
                 <p className="mt-4">
-                  we also used Braintrust-backed evals to make sure agent context was doing the
+                  we also used braintrust-backed evals to make sure agent context was doing the
                   right things. our eval harness creates real projects, canvases and agent sessions
                   against the deployed api, attaches fixture-defined custom context, runs the agent
                   conversation and then scores the final canvas and messages. for example, a canary
@@ -161,12 +161,27 @@ export default function AgentContextBlog() {
                   and then check that the generated text still includes the required phrase or style.
                 </p>
                 <p className="mt-4">
-                  Braintrust gives us a place to log each run, inspect the canvas url, compare
+                  braintrust gives us a place to log each run, inspect the canvas url, compare
                   outputs across changes and track telemetry like prompt size, image count, tool
                   calls, latency and reasoning tokens. today these are mostly custom-context
                   adherence canaries, but the same fixture setup supports multi-turn follow-up
                   prompts for testing whether older context still survives after a longer workflow.
                 </p>
+                <pre className="mt-6 p-4 bg-stone-900 border border-stone-700 rounded-md overflow-x-auto text-[11px] md:text-xs text-stone-300 font-mono">
+                  {`cases:
+  - id: canary-aging-custom-context
+    prompt: "start a campaign plan for acme."
+    custom_context:
+      name: "aging context requirement"
+      instructions: "every final marketing headline must include @acme."
+    follow_up_prompts:
+      - "add three storyboard scenes."
+      - "add image prompts for each scene."
+      - "now write the final headline as a text node."
+    expected:
+      generated_text_contains_all:
+        - "@acme"`}
+                </pre>
                 <figure className="mt-6">
                   <img
                     src="/blogs/agent-context/pocky-skill.jpeg"
