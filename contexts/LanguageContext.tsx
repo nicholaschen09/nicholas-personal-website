@@ -628,13 +628,16 @@ const translations: Record<Language, Record<string, string>> = {
     'previously.role1': 'engineering',
     'previously.role2': 'engineering',
     'previously.role3': 'engineering',
+    'previously.role4': 'bashing bugs',
     'previously.item1': 'Story',
     'previously.item2': 'Honeywell',
     'previously.item3': 'Honeywell',
+    'previously.item4': 'Zed Guild',
+
 
     // Current roles (compact labels)
-    'current.role1': 'engineering',
-    'current.role2': 'engineering',
+    'current.role1': 'tinkering',
+    'current.role2': 'ceo & co-founder',
 
     // Footer
     'footer.copyright': '© 2026 AMAAN BILWAR',

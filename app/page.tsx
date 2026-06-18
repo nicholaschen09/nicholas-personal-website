@@ -127,26 +127,19 @@ export default function Home() {
           <ul className="text-xs md:text-sm text-stone-400 space-y-1 pl-2">
             <li>
               <a
+                href="https://campusos.framer.website"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-2 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
-                href="https://github.com/zed-industries/zed/pulls?q=is%3Apr+author%3AAmaanBilwar"
               >
-                Zed Guild
-                <img src="/zed.png" alt="University of Cincinnati" className="w-4 h-4" />
-                bashing bugs
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center gap-2 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
-                href="https://github.com/HelixDB/helix-db"
-              >
-                HelixDB
-                <img src="/hlxdb.jpg" alt="University of Cincinnati" className="w-4 h-4" />
-                secret project
+                <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
+                  {t('current.role2')}
+                </span>
+                --
+                {/*<img src="/ucincy_logo.png" alt="CampusOS" className="w-6 h-4" />*/}
+                <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
+                 CampusOS
+                </span>
               </a>
             </li>
             <li>
@@ -174,6 +167,22 @@ export default function Home() {
                 {t('previously.title')}
               </p>
               <ul className="text-xs md:text-sm text-stone-400 space-y-1 pl-2">
+                <li>
+                  <a
+                    href="https://www.story.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center gap-2 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
+                  >
+                    <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
+                      {t('previously.role4')}
+                    </span>
+                    <img src="/zed.png" alt="Story" className="w-4 h-4" />
+                    <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
+                      {t('previously.item4')}
+                    </span>
+                  </a>
+                </li>
                 <li>
                   <a
                     href="https://www.story.com/"
@@ -261,7 +270,7 @@ export default function Home() {
                       </span>
                     </a>
                   </li>
-                  <li>
+                  {/*<li>
                     <a
                       href="https://github.com/AmaanBilwar/pi-openresolve"
                       target="_blank"
@@ -275,7 +284,7 @@ export default function Home() {
                         — {t('projects.pi-openresolve')}
                       </span>
                     </a>
-                  </li>
+                  </li>*/}
                   <li>
                     <a
                       href="https://github.com/AmaanBilwar/zsh-zed"
@@ -352,14 +361,14 @@ export default function Home() {
                     {t('blog.thoughts-about-schools.title')}
                   </a>
                 </li>
-                <li>
+                {/*<li>
                   <a
                     href="/blogs/tmux-clone"
                     className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
                   >
                     {t('blog.tmux-clone.title')}
                   </a>
-                </li>
+                </li>*/}
                 <li>
                   <a
                     href="/blogs/git101"
@@ -368,22 +377,22 @@ export default function Home() {
                     {t('blog.git101.title')}
                   </a>
                 </li>
-                <li>
+                {/*<li>
                   <a
                     href="/blogs/introducing-jia"
                     className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
                   >
                     {t('blog.introducing-jia.title')}
                   </a>
-                </li>
-                <li>
+                </li>*/}
+                {/*<li>
                   <a
                     href="/blogs/scene-ai-when"
                     className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
                   >
                     {t('blog.scene-ai-when.title')}
                   </a>
-                </li>
+                </li>*/}
               </ul>
             </div>
           </div>
