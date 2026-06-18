@@ -37,3 +37,5 @@ history.md
 .dev.vars*
 !.dev.vars.example
 !.env.example
+
+.playwright-mcp/
