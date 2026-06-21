@@ -1,0 +1,72 @@
+.blog-markdown {
+  @apply text-xs md:text-sm leading-relaxed;
+  font-weight: 400;
+}
+
+.blog-markdown p {
+  @apply my-4;
+}
+
+.blog-markdown h2 {
+  @apply text-lg md:text-xl font-semibold text-stone-100 mb-3 mt-8 scroll-mt-8;
+}
+
+.blog-markdown h3 {
+  @apply text-sm md:text-base font-semibold text-stone-200 mb-3 mt-6 scroll-mt-8;
+}
+
+.blog-markdown ul {
+  @apply my-3 ml-4 space-y-1 text-stone-300 list-none;
+}
+
+.blog-markdown ul li {
+  @apply before:content-['•'] before:mr-2;
+}
+
+.blog-markdown ol {
+  @apply my-3 ml-4 space-y-1 text-stone-300 list-decimal;
+}
+
+.blog-markdown a {
+  @apply text-stone-200 underline hover:text-white transition-colors;
+}
+
+.blog-markdown img {
+  @apply w-full mt-6;
+}
+
+.blog-markdown em {
+  @apply text-stone-500 text-xs italic;
+}
+
+.blog-markdown figure {
+  @apply mt-6;
+}
+
+.blog-markdown figcaption {
+  @apply text-stone-500 text-xs mt-2 italic;
+}
+
+.blog-markdown strong {
+  @apply text-stone-100 font-medium;
+}
+
+.blog-markdown hr {
+  @apply border-stone-700 my-8;
+}
+
+.blog-markdown blockquote {
+  @apply border-l-2 border-stone-600 pl-4 text-stone-400 italic my-4;
+}
+
+.blog-markdown code {
+  @apply bg-stone-800 text-stone-200 px-1 py-0.5 rounded text-xs;
+}
+
+.blog-markdown pre {
+  @apply bg-stone-900 p-4 rounded-md overflow-x-auto my-4;
+}
+
+.blog-markdown pre code {
+  @apply bg-transparent p-0;
+}
