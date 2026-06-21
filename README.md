@@ -2,7 +2,7 @@
 
 ### Overview
 
-Personal site and long-form blog, built with **Next.js**, **TypeScript**, and a small design system. Content is localized (English/中文) via a central `LanguageContext`.
+Personal site and long-form blog, built with **Next.js**, **TypeScript**, and a small design system. 
 
 ### Tech stack
 
