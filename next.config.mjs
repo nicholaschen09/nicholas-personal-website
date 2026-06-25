@@ -36,6 +36,21 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  // RFC 8288 Link headers for agent/crawler discovery. Points to a
+  // machine-readable summary of the site (IANA-registered link relations).
+  async headers() {
+    const linkHeader = [
+      '</llms.txt>; rel="describedby"; type="text/plain"',
+      '</llms.txt>; rel="service-desc"; type="text/plain"',
+    ].join(', ');
+
+    return [
+      {
+        source: '/:path*',
+        headers: [{ key: 'Link', value: linkHeader }],
+      },
+    ];
+  },
 };
 
 mergeConfig(nextConfig, userConfig);
