@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://amaandoes.tech';
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://amaandoes.tech').replace(/\/$/, '');
 
 // Generates /robots.txt, served as text/plain with HTTP 200.
 // The userAgent/allow/disallow rules and Sitemap directive follow RFC 9309
