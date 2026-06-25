@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/posts';
 
-const baseUrl = 'https://amaandoes.tech';
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://amaandoes.tech';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getAllPosts();
