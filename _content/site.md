@@ -30,11 +30,6 @@ home:
         name: Honeywell
         icon: /Honeywell-Logo.png
         iconAlt: Honeywell
-      - role: engineering
-        href: https://automation.honeywell.com/us/en/
-        name: Honeywell
-        icon: /Honeywell-Logo.png
-        iconAlt: Honeywell
   projects:
     label: projects
     items:

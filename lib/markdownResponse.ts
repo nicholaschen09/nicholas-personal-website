@@ -19,7 +19,11 @@ export function markdownResponse(markdown: string): Response {
     headers: {
       'Content-Type': 'text/markdown; charset=utf-8',
       'x-markdown-tokens': String(estimateTokens(markdown)),
-      'Cache-Control': 'public, max-age=0, must-revalidate',
+      // Content is prerendered and only changes on redeploy, so let the CDN
+      // edge-cache it indefinitely (Vercel purges the cache on each deploy)
+      // while browsers revalidate. `stale-while-revalidate` avoids a latency
+      // spike on the first request after a purge.
+      'Cache-Control': 'public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400',
       Vary: 'Accept',
     },
   });
