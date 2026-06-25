@@ -35,5 +35,5 @@
 ## Open source
 
 - Zed IDE — https://github.com/zed-industries/zed/pulls?q=is%3Apr+author%3AAmaanBilwar
-- Gemini CLI — https://github.com/google-gemini/gemini-cli/pulls/amaanbilwar
-- HelixDB — https://github.com/helixdb/helix-db/pulls/amaanbilwar
+- Gemini CLI — https://github.com/google-gemini/gemini-cli/pulls?q=is%3Apr+author%3AAmaanBilwar
+- HelixDB — https://github.com/helixdb/helix-db/pulls?q=is%3Apr+author%3AAmaanBilwar
