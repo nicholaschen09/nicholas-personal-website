@@ -61,9 +61,19 @@ const api = async (path, init = {}) => {
       ...(init.headers ?? {}),
     },
   });
+  // Cloudflare may return a non-JSON body on infra errors (HTML 429/503 pages,
+  // plain-text auth failures). Surface the HTTP status instead of letting
+  // res.json() throw an opaque SyntaxError that masks the real failure.
+  const contentType = res.headers.get("content-type") ?? "";
+  if (!contentType.includes("application/json")) {
+    const text = await res.text();
+    throw new Error(
+      `Cloudflare API ${path}: HTTP ${res.status} ${res.statusText} (non-JSON response) ${text.slice(0, 200)}`,
+    );
+  }
   const json = await res.json();
   if (!json.success) {
-    throw new Error(`Cloudflare API ${path}: ${JSON.stringify(json.errors)}`);
+    throw new Error(`Cloudflare API ${path}: HTTP ${res.status} ${JSON.stringify(json.errors)}`);
   }
   return json.result;
 };
@@ -89,10 +99,16 @@ for (const record of RECORDS) {
   }
 
   if (existing.length) {
+    // Update the first match and remove any duplicates so repeated runs with
+    // different values don't leave stale SVCB records accumulating in the zone.
     await api(`/zones/${zone.id}/dns_records/${existing[0].id}`, {
       method: "PUT",
       body: JSON.stringify(body),
     });
+    for (const dup of existing.slice(1)) {
+      await api(`/zones/${zone.id}/dns_records/${dup.id}`, { method: "DELETE" });
+      console.log(`deleted  duplicate ${record.type} ${record.name} (id=${dup.id})`);
+    }
     console.log(`updated  ${desc}`);
   } else {
     await api(`/zones/${zone.id}/dns_records`, {
