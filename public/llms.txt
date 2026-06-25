@@ -1,0 +1,39 @@
+# Amaan Bilwar
+
+> Personal website of Amaan Bilwar — co-founder & CEO of CampusOS and computer engineering student at the University of Cincinnati. This file is a machine-readable summary for AI agents and crawlers.
+
+- Site: https://amaandoes.tech
+- Author: Amaan Bilwar
+- GitHub: https://github.com/AmaanBilwar
+- Resume: https://amaandoes.tech/resume.pdf
+
+## Currently
+
+- Co-founder & CEO, CampusOS — https://campusos.framer.website
+- Computer Engineering, University of Cincinnati
+
+## Previously
+
+- Zed Guild (bug bashing) — https://zed.dev/community/guild
+- Engineering, Story — https://www.story.com/
+- Engineering, Honeywell — https://automation.honeywell.com/us/en/
+
+## Projects
+
+- the-search-thing — semantic search engine for your OS — https://github.com/AmaanBilwar/the-search-thing
+- better-vscode — private, fast, debloated vscode — https://github.com/AmaanBilwar/better-vscode
+- zed zsh extension — zsh extension for the Zed IDE — https://github.com/AmaanBilwar/zsh-zed
+- hql nvim plugin — neovim plugin for HQL highlighting — https://github.com/AmaanBilwar/hql.nvim
+- helixdb codebase indexer — codebase indexer for agents — https://github.com/AmaanBilwar/helix-indexer
+- vim for the browser — vim keybindings for your browser — https://github.com/AmaanBilwar/vim-extension
+
+## Blog
+
+- Blog index: https://amaandoes.tech (see the "blogs" section)
+- Posts live at https://amaandoes.tech/blogs/{slug}
+
+## Open source
+
+- Zed IDE — https://github.com/zed-industries/zed/pulls?q=is%3Apr+author%3AAmaanBilwar
+- Gemini CLI — https://github.com/google-gemini/gemini-cli/pulls?q=is%3Apr+author%3AAmaanBilwar
+- HelixDB — https://github.com/helixdb/helix-db/pulls?q=is%3Apr+author%3AAmaanBilwar

@@ -2,3 +2,9 @@
 # https://opennext.js.org/cloudflare/caching#static-assets-caching
 /_next/static/*
   Cache-Control: public,max-age=31536000,immutable
+
+# RFC 8288 Link headers for agent/crawler discovery (advertise machine-readable summary)
+/
+  Link: </llms.txt>; rel="describedby"; type="text/plain", </llms.txt>; rel="service-desc"; type="text/plain"
+/*
+  Link: </llms.txt>; rel="describedby"; type="text/plain", </llms.txt>; rel="service-desc"; type="text/plain"
