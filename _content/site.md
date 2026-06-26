@@ -50,9 +50,6 @@ home:
       - label: zsh extension
         description: extension for zsh for the Zed IDE
         href: https://github.com/AmaanBilwar/zsh-zed
-      - label: hql nvim plugin
-        description: neovim plugin for HQL highlighting
-        href: https://github.com/AmaanBilwar/hql.nvim
   blogs:
     label: blogs
   oss:
