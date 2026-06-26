@@ -23,7 +23,7 @@ home:
         name: Zed Guild
         icon: /zed.png
         iconAlt: Story
-      - role: taught clankers to make music and videos 
+      - role: taught clankers to make music
         href: https://www.story.com/
         name: Story
         icon: /story.jpg
