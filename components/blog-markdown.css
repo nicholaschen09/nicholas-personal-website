@@ -1,5 +1,5 @@
 .blog-markdown {
-  @apply text-xs md:text-sm leading-relaxed;
+  @apply text-sm leading-relaxed break-words;
   font-weight: 400;
 }
 

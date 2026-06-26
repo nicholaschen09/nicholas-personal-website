@@ -18,18 +18,21 @@ function RoleItem({ item }: { item: SiteRoleLinkItem }) {
         href={item.href}
         target="_blank"
         rel="noopener noreferrer"
-        className="group flex items-center gap-2 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
+        className="group flex flex-wrap items-center gap-x-2 gap-y-0.5 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
       >
         <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
           {item.role}
         </span>
-        {item.icon ? (
-          <img src={item.icon} alt={item.iconAlt ?? item.name} className="h-4 w-auto" />
-        ) : (
-          '—'
-        )}
-        <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-          {item.name}
+        {/* Keep the logo and name together so they wrap as one unit on narrow screens */}
+        <span className="inline-flex items-center gap-2 whitespace-nowrap">
+          {item.icon ? (
+            <img src={item.icon} alt={item.iconAlt ?? item.name} className="h-4 w-auto" />
+          ) : (
+            '—'
+          )}
+          <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
+            {item.name}
+          </span>
         </span>
       </a>
     </li>
