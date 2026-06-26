@@ -47,7 +47,7 @@ home:
       - label: better-vscode
         description: private, fast, debloated vscode
         href: https://github.com/AmaanBilwar/better-vscode
-      - label: zed zsh extension
+      - label: zsh extension
         description: extension for zsh for the Zed IDE
         href: https://github.com/AmaanBilwar/zsh-zed
       - label: hql nvim plugin
