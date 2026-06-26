@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import BlogPostView from '@/components/BlogPostView';
+import { getSiteContent } from '@/lib/content';
 import { extractHeadings } from '@/lib/extractHeadings';
 import markdownToHtml from '@/lib/markdownToHtml';
 import { getAllPosts, getPostBySlug } from '@/lib/posts';
@@ -51,6 +52,7 @@ export default async function BlogPostPage({ params }: Params) {
 
   const contentHtml = await markdownToHtml(post.content);
   const sections = extractHeadings(post.content);
+  const { ui } = getSiteContent();
 
   return (
     <BlogPostView
@@ -61,6 +63,8 @@ export default async function BlogPostPage({ params }: Params) {
       coverAlt={post.coverAlt}
       contentHtml={contentHtml}
       sections={sections}
+      backLabel={ui.blogBack}
+      contentsLabel={ui.blogContents}
     />
   );
 }

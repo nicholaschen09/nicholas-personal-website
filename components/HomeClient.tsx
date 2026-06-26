@@ -1,16 +1,76 @@
 'use client';
 import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
-import { useLanguage } from '@/contexts/LanguageContext';
 import Footer from '@/components/Footer';
+import type { SiteHome, SiteLinkItem, SiteRoleLinkItem } from '@/interfaces/site';
 
 export interface BlogPostLink {
   slug: string;
   title: string;
 }
 
-export default function HomeClient({ blogPosts }: { blogPosts: BlogPostLink[] }) {
-  const { t } = useLanguage();
+// A "currently"/"previously" entry: a role on the left, then either a logo or
+// an em-dash, then the linked name. Driven entirely by _content/site.md.
+function RoleItem({ item }: { item: SiteRoleLinkItem }) {
+  return (
+    <li>
+      <a
+        href={item.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group flex items-center gap-2 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
+      >
+        <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
+          {item.role}
+        </span>
+        {item.icon ? (
+          <img src={item.icon} alt={item.iconAlt ?? item.name} className="h-4 w-auto" />
+        ) : (
+          '—'
+        )}
+        <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
+          {item.name}
+        </span>
+      </a>
+    </li>
+  );
+}
+
+// A projects/oss/resume entry: a label plus an optional description that fades
+// in on hover (used by the projects list).
+function LinkItem({ item }: { item: SiteLinkItem }) {
+  return (
+    <li>
+      <a
+        href={item.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group flex flex-wrap items-center gap-1 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+      >
+        <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
+          {item.label}
+        </span>
+        {item.description && (
+          <span className="text-stone-600 group-hover:text-stone-400 transition-colors hidden group-hover:inline">
+            — {item.description}
+          </span>
+        )}
+      </a>
+    </li>
+  );
+}
+
+function SectionLabel({ children }: { children: React.ReactNode }) {
+  return <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">{children}</p>;
+}
+
+export default function HomeClient({
+  home,
+  blogPosts,
+}: {
+  home: SiteHome;
+  blogPosts: BlogPostLink[];
+}) {
   const [isHovering, setIsHovering] = useState(false);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -54,18 +114,12 @@ export default function HomeClient({ blogPosts }: { blogPosts: BlogPostLink[] })
     };
   }, [isHovering]);
 
-  const getDisplayName = () => {
-    return t('home.title');
-  };
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-4 md:p-12 relative z-10">
       {/* Hero Section */}
       <div className="max-w-lg w-full space-y-1 md:space-y-2 mx-auto">
         <div className="flex items-start justify-between mb-0">
-          <h1 className="text-xl sm:text-2xl md:text-3xl font-normal text-white">
-            {getDisplayName()}
-          </h1>
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-normal text-white">{home.title}</h1>
           <div className="relative -mt-3">
             <div
               className="flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-md cursor-pointer"
@@ -124,304 +178,86 @@ export default function HomeClient({ blogPosts }: { blogPosts: BlogPostLink[] })
             )}
           </div>
         </div>
-        {/* location / building lines removed */}
 
-        <div>
-          <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">
-            {t('hero.currently')}
-          </p>
-          <ul className="text-xs md:text-sm text-stone-400 space-y-1 pl-2">
-            <li>
-              <a
-                href="https://campusos.framer.website"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center gap-2 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
-              >
-                <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                  {t('current.role2')}
-                </span>
-                --
-                {/*<img src="/ucincy_logo.png" alt="CampusOS" className="w-6 h-4" />*/}
-                <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                 CampusOS
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.ceas.uc.edu/academics/departments/electrical-computer-engineering/degrees-programs/computer-engineering-bachelor-of-science.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center gap-2 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
-              >
-                <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                  {t('current.role1')}
-                </span>
-                <img src="/ucincy_logo.png" alt="University of Cincinnati" className="w-6 h-4" />
-                <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                  ucincinnati
-                </span>
-              </a>
-            </li>
-          </ul>
-        </div>
+        {home.currently && (
+          <div>
+            <SectionLabel>{home.currently.label}</SectionLabel>
+            <ul className="text-xs md:text-sm text-stone-400 space-y-1 pl-2">
+              {home.currently.items.map((item, i) => (
+                <RoleItem key={`${item.href}-${i}`} item={item} />
+              ))}
+            </ul>
+          </div>
+        )}
         <div className="h-auto min-h-[80px] md:min-h-[60px]">
           <div className="mt-4 space-y-3">
-            <div>
-              <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">
-                {t('previously.title')}
-              </p>
-              <ul className="text-xs md:text-sm text-stone-400 space-y-1 pl-2">
-                <li>
-                  <a
-                    href="https://www.story.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center gap-2 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
-                  >
-                    <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                      {t('previously.role4')}
-                    </span>
-                    <img src="/zed.png" alt="Story" className="w-4 h-4" />
-                    <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                      {t('previously.item4')}
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.story.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center gap-2 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
-                  >
-                    <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                      {t('previously.role1')}
-                    </span>
-                    <img src="/story.jpg" alt="Story" className="w-4 h-4" />
-                    <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                      {t('previously.item1')}
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://automation.honeywell.com/us/en/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center gap-2 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
-                  >
-                    <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                      {t('previously.role2')}
-                    </span>
-                    <img src="/Honeywell-Logo.png" alt="Honeywell" className="w-8 h-4" />
-                    <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                      {t('previously.item2')}
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://automation.honeywell.com/us/en/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center gap-2 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
-                  >
-                    <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                      {t('previously.role3')}
-                    </span>
-                    <img src="/Honeywell-Logo.png" alt="Honeywell" className="w-8 h-4" />
-                    <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                      {t('previously.item3')}
-                    </span>
-                  </a>
-                </li>
-              </ul>
-            </div>
+            {home.previously && (
+              <div>
+                <SectionLabel>{home.previously.label}</SectionLabel>
+                <ul className="text-xs md:text-sm text-stone-400 space-y-1 pl-2">
+                  {home.previously.items.map((item, i) => (
+                    <RoleItem key={`${item.href}-${i}`} item={item} />
+                  ))}
+                </ul>
+              </div>
+            )}
 
-            <div>
-              <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">
-                {t('projects.title')}
-              </p>
+            {home.projects && (
+              <div>
+                <SectionLabel>{home.projects.label}</SectionLabel>
+                <div className="-mx-2 px-2">
+                  <ul className="text-xs md:text-sm text-stone-400 space-y-1 pl-2">
+                    {home.projects.items.map((item, i) => (
+                      <LinkItem key={`${item.href}-${i}`} item={item} />
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            )}
+          </div>
+          {home.blogs && (
+            <div className="mt-4">
+              <SectionLabel>{home.blogs.label}</SectionLabel>
               <div className="-mx-2 px-2">
                 <ul className="text-xs md:text-sm text-stone-400 space-y-1 pl-2">
-                  <li>
-                    <a
-                      href="https://github.com/AmaanBilwar/the-search-thing"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group flex flex-wrap items-center gap-1 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
-                    >
-                      <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                        {t('projects.label.theSearchThing')}
-                      </span>
-                      <span className="text-stone-600 group-hover:text-stone-400 transition-colors hidden group-hover:inline">
-                        — {t('projects.theSearchThing')}
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/AmaanBilwar/better-vscode"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group flex flex-wrap items-center gap-1 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
-                    >
-                      <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                        {t('projects.label.bettervscode')}
-                      </span>
-                      <span className="text-stone-600 group-hover:text-stone-400 transition-colors hidden group-hover:inline">
-                        — {t('projects.bettervscode')}
-                      </span>
-                    </a>
-                  </li>
-                  {/*<li>
-                    <a
-                      href="https://github.com/AmaanBilwar/pi-openresolve"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group flex flex-wrap items-center gap-1 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
-                    >
-                      <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                        {t('projects.label.pi-openresolve')}
-                      </span>
-                      <span className="text-stone-600 group-hover:text-stone-400 transition-colors hidden group-hover:inline">
-                        — {t('projects.pi-openresolve')}
-                      </span>
-                    </a>
-                  </li>*/}
-                  <li>
-                    <a
-                      href="https://github.com/AmaanBilwar/zsh-zed"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group flex flex-wrap items-center gap-1 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
-                    >
-                      <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                        {t('projects.label.zed-zsh')}
-                      </span>
-                      <span className="text-stone-600 group-hover:text-stone-400 transition-colors hidden group-hover:inline">
-                        — {t('projects.zedZsh')}
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/AmaanBilwar/hql.nvim"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group flex flex-wrap items-center gap-1 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
-                    >
-                      <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                        {t('projects.label.hql-nvim')}
-                      </span>
-                      <span className="text-stone-600 group-hover:text-stone-400 transition-colors hidden group-hover:inline">
-                        — {t('projects.hqlNvim')}
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/AmaanBilwar/helix-indexer"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group flex flex-wrap items-center gap-1 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
-                    >
-                      <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                        {t('projects.label.helixdb-indexer')}
-                      </span>
-                      <span className="text-stone-600 group-hover:text-stone-400 transition-colors hidden group-hover:inline">
-                        — {t('projects.helixdbIndexer')}
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/AmaanBilwar/vim-extension"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group flex flex-wrap items-center gap-1 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
-                    >
-                      <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-                        {t('projects.label.vim')}
-                      </span>
-                      <span className="text-stone-600 group-hover:text-stone-400 transition-colors hidden group-hover:inline">
-                        — {t('projects.vimBrowser')}
-                      </span>
-                    </a>
-                  </li>
+                  {blogPosts.map((post) => (
+                    <li key={post.slug}>
+                      <Link
+                        href={`/blogs/${post.slug}`}
+                        className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+                      >
+                        {post.title}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
-          </div>
-          <div className="mt-4">
-            <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">{t('nav.blogs')}</p>
-            <div className="-mx-2 px-2">
-              <ul className="text-xs md:text-sm text-stone-400 space-y-1 pl-2">
-                {blogPosts.map((post) => (
-                  <li key={post.slug}>
-                    <Link
-                      href={`/blogs/${post.slug}`}
-                      className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
-                    >
-                      {post.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+          )}
+          {home.oss && (
+            <div className="mt-4">
+              <SectionLabel>{home.oss.label}</SectionLabel>
+              <div className="-mx-2 px-2">
+                <ul className="text-xs md:text-sm text-stone-400 space-y-1 pl-2">
+                  {home.oss.items.map((item, i) => (
+                    <LinkItem key={`${item.href}-${i}`} item={item} />
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
-          <div className="mt-4">
-            <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">{t('nav.oss')}</p>
-            <div className="-mx-2 px-2">
-              <ul className="text-xs md:text-sm text-stone-400 space-y-1 pl-2">
-                <li>
-                  <a
-                    href="https://github.com/zed-industries/zed/pulls?q=is%3Apr+author%3AAmaanBilwar"
-                    className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
-                  >
-                    {t('oss.zed')}
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/google-gemini/gemini-cli/pulls/amaanbilwar"
-                    className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
-                  >
-                    {t('oss.geminicli')}
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/helixdb/helix-db/pulls/amaanbilwar"
-                    className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
-                  >
-                    {t('oss.helixdb')}
-                  </a>
-                </li>
-              </ul>
+          )}
+          {home.resume && (
+            <div className="mt-4">
+              <SectionLabel>{home.resume.label}</SectionLabel>
+              <div className="-mx-2 px-2">
+                <ul className="text-xs md:text-sm text-stone-400 space-y-1 pl-2">
+                  {home.resume.items.map((item, i) => (
+                    <LinkItem key={`${item.href}-${i}`} item={item} />
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
-          <div className="mt-4">
-            <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">
-              {t('nav.resume')}
-            </p>
-            <div className="-mx-2 px-2">
-              <ul className="text-xs md:text-sm text-stone-400 space-y-1 pl-2">
-                <li>
-                  <a
-                    href="/resume.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
-                  >
-                    for when you wanna hire me
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          )}
         </div>
 
         <Footer />

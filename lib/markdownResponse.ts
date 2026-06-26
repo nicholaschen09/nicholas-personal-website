@@ -55,7 +55,8 @@ function isRoleLink(item: SiteLinkItem | SiteRoleLinkItem): item is SiteRoleLink
   return 'role' in item;
 }
 
-function renderSection(section: SiteSection<SiteLinkItem | SiteRoleLinkItem>): string {
+function renderSection(section?: SiteSection<SiteLinkItem | SiteRoleLinkItem>): string {
+  if (!section) return '';
   const lines = [`## ${section.label}`, ''];
   for (const item of section.items) {
     if (isRoleLink(item)) {
@@ -84,12 +85,14 @@ export function buildHomeMarkdown(
   ];
 
   // The home page lists blog titles; expose them as links to each post.
-  const blogLines = [`## ${home.blogs.label}`, ''];
-  for (const post of posts) {
-    blogLines.push(`- [${post.title}](${SITE_URL}/blogs/${post.slug})`);
+  if (home.blogs) {
+    const blogLines = [`## ${home.blogs.label}`, ''];
+    for (const post of posts) {
+      blogLines.push(`- [${post.title}](${SITE_URL}/blogs/${post.slug})`);
+    }
+    blogLines.push('');
+    sections.push(blogLines.join('\n'));
   }
-  blogLines.push('');
-  sections.push(blogLines.join('\n'));
 
   sections.push(renderSection(home.oss));
   sections.push(renderSection(home.resume));

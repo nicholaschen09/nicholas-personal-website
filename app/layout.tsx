@@ -6,8 +6,6 @@ import './globals.css';
 
 import Script from 'next/script';
 
-import ClientProviders from '@/components/ClientProviders';
-
 const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
   display: 'swap',
@@ -42,28 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${jetbrainsMono.variable} ${minecraft.variable}`}>
       <body className={`bg-[#1a1a1a] min-h-screen antialiased`}>
-        <ClientProviders>
-          {/* Google Analytics Script */}
-          <Script
-            strategy="afterInteractive"
-            src="https://www.googletagmanager.com/gtag/js?id=G-J6HJSY8DQ4"
-          />
-          <Script
-            id="google-analytics-init"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'G-J6HJSY8DQ4', {
-                  page_path: window.location.pathname,
-                });
-              `,
-            }}
-          />
-          {children}
-        </ClientProviders>
+        {children}
       </body>
     </html>
   );

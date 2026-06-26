@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import { useLanguage } from '@/contexts/LanguageContext';
 import Footer from '@/components/Footer';
 import TableOfContents, { TOCSection } from '@/components/TableOfContents';
 import { formatPostDate } from '@/lib/formatPostDate';
@@ -15,6 +14,8 @@ interface BlogPostViewProps {
   coverAlt?: string;
   contentHtml: string;
   sections: TOCSection[];
+  backLabel: string;
+  contentsLabel: string;
 }
 
 export default function BlogPostView({
@@ -25,13 +26,13 @@ export default function BlogPostView({
   coverAlt,
   contentHtml,
   sections,
+  backLabel,
+  contentsLabel,
 }: BlogPostViewProps) {
-  const { t } = useLanguage();
-
   return (
     <main className="min-h-screen bg-[#1a1a1a] text-stone-300 pb-12 px-4 md:px-8">
       <div className="max-w-6xl mx-auto pt-12 flex gap-8 items-start justify-center">
-        <TableOfContents sections={sections} title={t('blog.contents')} />
+        <TableOfContents sections={sections} title={contentsLabel} />
         <article className="w-full lg:max-w-lg">
           <Link
             href="/"
@@ -46,7 +47,7 @@ export default function BlogPostView({
                 strokeLinejoin="round"
               />
             </svg>
-            {t('blog.back')}
+            {backLabel}
           </Link>
 
           <h1 className="text-2xl md:text-3xl font-medium text-white mb-2">{title}</h1>

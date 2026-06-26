@@ -1,24 +1,15 @@
-import { render, screen } from "@testing-library/react";
-import Home from "../app/page";
-import { LanguageProvider } from "../contexts/LanguageContext";
-import { describe, it, expect } from "vitest";
-import { ReactNode } from "react";
+import { render, screen } from '@testing-library/react';
+import { describe, it, expect } from 'vitest';
+import Home from '../app/page';
 
-// Wrapper for the context
-const wrapper = ({ children }: { children: ReactNode }) => (
-  <LanguageProvider>{children}</LanguageProvider>
-);
-
-describe("Home Page", () => {
-  it("renders the greeting", () => {
-    render(<Home />, { wrapper });
-    // Check for the English greeting (default)
-    expect(screen.getByText((content) => content.includes("hi im nic"))).toBeInTheDocument();
+describe('Home Page', () => {
+  it('renders the title from site.md', () => {
+    render(<Home />);
+    expect(screen.getByText('hi im amaan')).toBeInTheDocument();
   });
 
-  it("renders the current role", () => {
-    render(<Home />, { wrapper });
-    // This key "hero.currently" translates to "Currently" in English
-    expect(screen.getByText("Currently")).toBeInTheDocument();
+  it('renders the currently section label', () => {
+    render(<Home />);
+    expect(screen.getByText('currently')).toBeInTheDocument();
   });
 });

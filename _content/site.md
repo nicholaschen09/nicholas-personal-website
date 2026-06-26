@@ -4,12 +4,15 @@ home:
   currently:
     label: currently
     items:
-      - role: co-founder & ceo
+      - role: CO-Founder & CEO
         href: https://campusos.framer.website
         name: CampusOS
-      - role: tinkering
+      - role: rewiring my brain with
+        href: https://effect.website/
+        name: Effect 
+      - role: yelling at transistors 
         href: https://www.ceas.uc.edu/academics/departments/electrical-computer-engineering/degrees-programs/computer-engineering-bachelor-of-science.html
-        name: ucincinnati
+        name: University of Cincinnati 
         icon: /ucincy_logo.png
         iconAlt: University of Cincinnati
   previously:
@@ -20,12 +23,17 @@ home:
         name: Zed Guild
         icon: /zed.png
         iconAlt: Story
-      - role: engineering
+      - role: taught clankers to make music and videos 
         href: https://www.story.com/
         name: Story
         icon: /story.jpg
         iconAlt: Story
-      - role: engineering
+      - role: interrogating logs with RAG 
+        href: https://automation.honeywell.com/us/en/
+        name: Honeywell
+        icon: /Honeywell-Logo.png
+        iconAlt: Honeywell
+      - role: babysitting legacy SpringBoot
         href: https://automation.honeywell.com/us/en/
         name: Honeywell
         icon: /Honeywell-Logo.png
@@ -45,12 +53,6 @@ home:
       - label: hql nvim plugin
         description: neovim plugin for HQL highlighting
         href: https://github.com/AmaanBilwar/hql.nvim
-      - label: helixdb codebase indexer
-        description: codebase indexer for agents
-        href: https://github.com/AmaanBilwar/helix-indexer
-      - label: vim for the browser
-        description: vim keybindings for your browser
-        href: https://github.com/AmaanBilwar/vim-extension
   blogs:
     label: blogs
   oss:
@@ -62,11 +64,6 @@ home:
         href: https://github.com/google-gemini/gemini-cli/pulls/amaanbilwar
       - label: HelixDB
         href: https://github.com/helixdb/helix-db/pulls/amaanbilwar
-  resume:
-    label: resume
-    items:
-      - label: for when you wanna hire me
-        href: /resume.pdf
 ui:
   blogBack: back
   blogContents: contents
