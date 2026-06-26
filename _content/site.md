@@ -12,7 +12,7 @@ home:
         name: Effect 
       - role: yelling at transistors 
         href: https://www.ceas.uc.edu/academics/departments/electrical-computer-engineering/degrees-programs/computer-engineering-bachelor-of-science.html
-        name: University of Cincinnati 
+        name: UofCincy 
         icon: /ucincy_logo.png
         iconAlt: University of Cincinnati
   previously:
