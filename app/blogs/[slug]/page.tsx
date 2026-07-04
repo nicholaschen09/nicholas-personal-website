@@ -4,6 +4,7 @@ import BlogPostView from '@/components/BlogPostView';
 import { getSiteContent } from '@/lib/content';
 import { extractHeadings } from '@/lib/extractHeadings';
 import markdownToHtml from '@/lib/markdownToHtml';
+import { mdxToReact } from '@/lib/mdxToReact';
 import { getAllPosts, getPostBySlug } from '@/lib/posts';
 
 type Params = {
@@ -50,7 +51,8 @@ export default async function BlogPostPage({ params }: Params) {
     notFound();
   }
 
-  const contentHtml = await markdownToHtml(post.content);
+  const contentHtml = post.extension === 'md' ? await markdownToHtml(post.content) : undefined;
+  const content = post.extension === 'mdx' ? await mdxToReact(post.content) : undefined;
   const sections = extractHeadings(post.content);
   const { ui } = getSiteContent();
 
@@ -65,6 +67,8 @@ export default async function BlogPostPage({ params }: Params) {
       sections={sections}
       backLabel={ui.blogBack}
       contentsLabel={ui.blogContents}
-    />
+    >
+      {content}
+    </BlogPostView>
   );
 }

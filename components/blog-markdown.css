@@ -70,3 +70,17 @@
 .blog-markdown pre code {
   @apply bg-transparent p-0;
 }
+
+@keyframes home-row-shimmer {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(300%);
+  }
+}
+
+.animate-home-row-shimmer {
+  animation: home-row-shimmer 1.1s linear infinite;
+}

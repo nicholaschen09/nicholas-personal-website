@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import type { ReactNode } from 'react';
 import Footer from '@/components/Footer';
 import TableOfContents, { TOCSection } from '@/components/TableOfContents';
 import { formatPostDate } from '@/lib/formatPostDate';
@@ -12,7 +13,8 @@ interface BlogPostViewProps {
   author?: string;
   coverImage?: string;
   coverAlt?: string;
-  contentHtml: string;
+  contentHtml?: string;
+  children?: ReactNode;
   sections: TOCSection[];
   backLabel: string;
   contentsLabel: string;
@@ -25,6 +27,7 @@ export default function BlogPostView({
   coverImage,
   coverAlt,
   contentHtml,
+  children,
   sections,
   backLabel,
   contentsLabel,
@@ -59,7 +62,9 @@ export default function BlogPostView({
 
           <hr className="border-stone-700 mb-8" />
 
-          <div className="blog-markdown" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+          <div className="blog-markdown">
+            {children ?? <div dangerouslySetInnerHTML={{ __html: contentHtml ?? '' }} />}
+          </div>
 
           <Footer className="mt-10" />
         </article>

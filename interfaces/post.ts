@@ -1,5 +1,6 @@
 export type Post = {
   slug: string;
+  extension: 'md' | 'mdx';
   title: string;
   date: string;
   author?: string;
