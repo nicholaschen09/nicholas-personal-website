@@ -79,19 +79,11 @@ body {
 
   body {
     @apply bg-background text-foreground;
-    font-family:
-      var(--font-jetbrains-mono),
-      ui-monospace,
-      SFMono-Regular,
-      "SF Mono",
-      Menlo,
-      Consolas,
-      "Liberation Mono",
-      monospace;
+    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
     font-weight: 500;
     font-feature-settings:
-      "tnum" on,
-      "lnum" on;
+      'tnum' on,
+      'lnum' on;
   }
 
   h1 {

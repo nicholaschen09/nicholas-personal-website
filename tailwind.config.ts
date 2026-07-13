@@ -9,9 +9,6 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-jetbrains-mono)"],
-        mono: ["var(--font-jetbrains-mono)"],
-        minecraft: ["var(--font-minecraft)"],
         "instrument-serif": ["var(--font-instrument-serif)"],
       },
       colors: {

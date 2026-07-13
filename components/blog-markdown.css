@@ -1,5 +1,6 @@
 .blog-markdown {
-  @apply text-sm leading-relaxed break-words;
+  @apply text-base md:text-lg leading-relaxed break-words;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
 }
 
@@ -8,11 +9,21 @@
 }
 
 .blog-markdown h2 {
-  @apply text-lg md:text-xl font-semibold text-stone-100 mb-3 mt-8 scroll-mt-8;
+  @apply text-xl md:text-2xl font-semibold text-stone-100 mb-3 mt-8 scroll-mt-8;
+}
+
+.blog-markdown h2::before {
+  content: "# ";
+  @apply text-stone-500 font-normal;
 }
 
 .blog-markdown h3 {
-  @apply text-sm md:text-base font-semibold text-stone-200 mb-3 mt-6 scroll-mt-8;
+  @apply text-base md:text-lg font-semibold text-stone-200 mb-3 mt-6 scroll-mt-8;
+}
+
+.blog-markdown h3::before {
+  content: "## ";
+  @apply text-stone-500 font-normal;
 }
 
 .blog-markdown ul {
@@ -36,7 +47,7 @@
 }
 
 .blog-markdown em {
-  @apply text-stone-500 text-xs italic;
+  @apply text-stone-500 text-sm italic;
 }
 
 .blog-markdown figure {
@@ -44,7 +55,7 @@
 }
 
 .blog-markdown figcaption {
-  @apply text-stone-500 text-xs mt-2 italic;
+  @apply text-stone-500 text-sm mt-2 italic;
 }
 
 .blog-markdown strong {
@@ -60,7 +71,7 @@
 }
 
 .blog-markdown code {
-  @apply bg-stone-800 text-stone-200 px-1 py-0.5 rounded text-xs;
+  @apply bg-stone-800 text-stone-200 px-1 py-0.5 rounded text-sm;
 }
 
 .blog-markdown pre {
