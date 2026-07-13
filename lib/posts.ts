@@ -11,7 +11,7 @@ function parseCategory(value: unknown): PostCategory {
   if (typeof value === 'string' && VALID_CATEGORIES.has(value as PostCategory)) {
     return value as PostCategory;
   }
-  return 'life';
+  throw new Error(`Invalid post category: ${String(value)}`);
 }
 
 export function getPostSlugs(): string[] {
