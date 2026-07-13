@@ -78,9 +78,8 @@ body {
   }
 
   body {
-    @apply bg-background text-foreground;
-    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 500;
+    @apply bg-background text-foreground font-serif;
+    font-weight: 400;
     font-feature-settings:
       'tnum' on,
       'lnum' on;

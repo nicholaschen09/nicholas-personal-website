@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        "instrument-serif": ["var(--font-instrument-serif)"],
+        serif: ["var(--font-merriweather)", "Georgia", "serif"],
       },
       colors: {
         border: "hsl(var(--border))",

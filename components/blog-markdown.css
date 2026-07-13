@@ -1,6 +1,5 @@
 .blog-markdown {
-  @apply text-base md:text-lg leading-relaxed break-words;
-  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  @apply text-base md:text-lg leading-relaxed break-words font-serif;
   font-weight: 400;
 }
 
