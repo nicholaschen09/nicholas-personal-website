@@ -1,10 +1,10 @@
 ---
-title: "Staying out of insert mode will save your life"
-listTitle: "vim insert mode"
+title: 'Staying out of insert mode will save your life'
+listTitle: 'vim insert mode'
 category: tech
-date: "2026-06-28"
-author: "Amaan Bilwar"
-published: true 
+date: '2026-06-28'
+author: 'Amaan Bilwar'
+published: false
 excerpt: "if you get used to this in vim, you're gonna be so much faster"
 ---
 
@@ -26,7 +26,7 @@ another way to get outta insert mode is to use the `Ctrl-[` (also known as `Ctrl
 inoremap kj <Esc>
 ```
 
-how did i come up with this? the creator of [atuin](https://atuin.sh/) actually! [ellie](https://ellie.wtf/posts/switching-to-zed) has this blog post where she talks about switching to zed and she mentions using jj -> esc key. 
+how did i come up with this? the creator of [atuin](https://atuin.sh/) actually! [ellie](https://ellie.wtf/posts/switching-to-zed) has this blog post where she talks about switching to zed and she mentions using jj -> esc key.
 
 > the funny thing is that i was reading it because i was contributing to Zed when i found the post & i wanted to read what she hates about zed so i can contribute actually good fixes that people care about.
 
@@ -67,7 +67,8 @@ You probably noticed, as a good habit to learn i also disabled the arrow keys(th
   },
 }
 ```
-your real nvim config would become: 
+
+your real nvim config would become:
 
 ```vim
 inoremap <Left>  <NOP>
@@ -76,9 +77,10 @@ inoremap <Up>    <NOP>
 inoremap <Down>  <NOP>
 ```
 
-### wrap it up 
+### wrap it up
 
 this is all i had to say in this one, hope this helps out
+
 ## References
 
 - [https://ellie.wtf/posts/switching-to-zed/](https://ellie.wtf/posts/switching-to-zed/)
