@@ -4,7 +4,7 @@ listTitle: 'vim insert mode'
 category: tech
 date: '2026-06-28'
 author: 'Amaan Bilwar'
-published: false
+published: true
 excerpt: "if you get used to this in vim, you're gonna be so much faster"
 ---
 
