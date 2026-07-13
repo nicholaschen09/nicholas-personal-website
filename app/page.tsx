@@ -6,7 +6,8 @@ export default function HomePage() {
   const { home } = getSiteContent();
   const blogPosts = getAllPosts().map((post) => ({
     slug: post.slug,
-    title: post.title,
+    title: post.listTitle,
+    category: post.category,
   }));
 
   return <HomeClient home={home} blogPosts={blogPosts} />;

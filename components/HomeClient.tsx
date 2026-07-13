@@ -4,10 +4,18 @@ import Link from 'next/link';
 import Footer from '@/components/Footer';
 import type { SiteHome, SiteLinkItem, SiteRoleLinkItem } from '@/interfaces/site';
 
+export type BlogCategory = 'tech' | 'life';
+
 export interface BlogPostLink {
   slug: string;
   title: string;
+  category: BlogCategory;
 }
+
+const BLOG_CATEGORIES: { id: BlogCategory; label: string }[] = [
+  { id: 'tech', label: 'tech' },
+  { id: 'life', label: 'life' },
+];
 
 // A "currently"/"previously" entry: a role on the left, then either a logo or
 // an em-dash, then the linked name. Driven entirely by _content/site.md.
@@ -26,7 +34,7 @@ function RoleItem({ item }: { item: SiteRoleLinkItem }) {
         {/* Keep the logo and name together so they wrap as one unit on narrow screens */}
         <span className="inline-flex items-center gap-2 whitespace-nowrap">
           {item.icon ? (
-            <img src={item.icon} alt={item.iconAlt ?? item.name} className="h-4 w-auto" />
+            <img src={item.icon} alt={item.iconAlt ?? item.name} className="h-5 w-auto" />
           ) : (
             '—'
           )}
@@ -64,7 +72,7 @@ function LinkItem({ item }: { item: SiteLinkItem }) {
 }
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
-  return <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">{children}</p>;
+  return <p className="mb-2.5 text-stone-100 text-sm md:text-base font-medium">{children}</p>;
 }
 
 export default function HomeClient({
@@ -118,14 +126,14 @@ export default function HomeClient({
   }, [isHovering]);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-4 md:p-12 relative z-10">
+    <main className="flex min-h-dvh flex-col items-center justify-center p-5 md:p-12 relative z-10">
       {/* Hero Section */}
-      <div className="max-w-lg w-full space-y-1 md:space-y-2 mx-auto">
+      <div className="max-w-xl w-full space-y-2 md:space-y-3 mx-auto">
         <div className="flex items-start justify-between mb-0">
-          <h1 className="text-xl sm:text-2xl md:text-3xl font-normal text-white">{home.title}</h1>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-normal text-white">{home.title}</h1>
           <div className="relative -mt-3">
             <div
-              className="flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-md cursor-pointer"
+              className="flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-md cursor-pointer"
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
               onContextMenu={handleContextMenu}
@@ -133,7 +141,7 @@ export default function HomeClient({
               <img
                 src="/gh_woody.svg"
                 alt="GitHub Woddy"
-                className="w-8 h-8 md:w-10 md:-10 opacity-80"
+                className="w-10 h-10 md:w-12 md:h-12 opacity-80"
               />
             </div>
             {contextMenu && (
@@ -185,19 +193,19 @@ export default function HomeClient({
         {home.currently && (
           <div>
             <SectionLabel>{home.currently.label}</SectionLabel>
-            <ul className="text-xs md:text-sm text-stone-400 space-y-1 pl-2">
+            <ul className="text-sm md:text-base text-stone-400 space-y-1.5 pl-2">
               {home.currently.items.map((item, i) => (
                 <RoleItem key={`${item.href}-${i}`} item={item} />
               ))}
             </ul>
           </div>
         )}
-        <div className="h-auto min-h-[80px] md:min-h-[60px]">
-          <div className="mt-4 space-y-3">
+        <div className="h-auto">
+          <div className="mt-5 space-y-4">
             {home.previously && (
               <div>
                 <SectionLabel>{home.previously.label}</SectionLabel>
-                <ul className="text-xs md:text-sm text-stone-400 space-y-1 pl-2">
+                <ul className="text-sm md:text-base text-stone-400 space-y-1.5 pl-2">
                   {home.previously.items.map((item, i) => (
                     <RoleItem key={`${item.href}-${i}`} item={item} />
                   ))}
@@ -209,7 +217,7 @@ export default function HomeClient({
               <div>
                 <SectionLabel>{home.projects.label}</SectionLabel>
                 <div className="-mx-2 px-2">
-                  <ul className="text-xs md:text-sm text-stone-400 space-y-1 pl-2">
+                  <ul className="text-sm md:text-base text-stone-400 space-y-1.5 pl-2">
                     {home.projects.items.map((item, i) => (
                       <LinkItem key={`${item.href}-${i}`} item={item} />
                     ))}
@@ -218,30 +226,39 @@ export default function HomeClient({
               </div>
             )}
           </div>
-          {home.blogs && (
-            <div className="mt-4">
+          {home.blogs && blogPosts.length > 0 && (
+            <div className="mt-5">
               <SectionLabel>{home.blogs.label}</SectionLabel>
-              <div className="-mx-2 px-2">
-                <ul className="text-xs md:text-sm text-stone-400 space-y-1 pl-2">
-                  {blogPosts.map((post) => (
-                    <li key={post.slug}>
-                      <Link
-                        href={`/blogs/${post.slug}`}
-                        className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
-                      >
-                        {post.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+              <div className="grid grid-cols-2 gap-x-6 pl-2">
+                {BLOG_CATEGORIES.map(({ id, label }) => {
+                  const posts = blogPosts.filter((post) => post.category === id);
+                  if (posts.length === 0) return null;
+                  return (
+                    <div key={id}>
+                      <p className="mb-1.5 text-stone-500 text-sm md:text-base">{label}</p>
+                      <ul className="text-sm md:text-base text-stone-400 space-y-1.5">
+                        {posts.map((post) => (
+                          <li key={post.slug}>
+                            <Link
+                              href={`/blogs/${post.slug}`}
+                              className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+                            >
+                              {post.title}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           )}
           {home.oss && (
-            <div className="mt-4">
+            <div className="mt-5">
               <SectionLabel>{home.oss.label}</SectionLabel>
               <div className="-mx-2 px-2">
-                <ul className="text-xs md:text-sm text-stone-400 space-y-1 pl-2">
+                <ul className="text-sm md:text-base text-stone-400 space-y-1.5 pl-2">
                   {home.oss.items.map((item, i) => (
                     <LinkItem key={`${item.href}-${i}`} item={item} />
                   ))}
@@ -250,10 +267,10 @@ export default function HomeClient({
             </div>
           )}
           {home.resume && (
-            <div className="mt-4">
+            <div className="mt-5">
               <SectionLabel>{home.resume.label}</SectionLabel>
               <div className="-mx-2 px-2">
-                <ul className="text-xs md:text-sm text-stone-400 space-y-1 pl-2">
+                <ul className="text-sm md:text-base text-stone-400 space-y-1.5 pl-2">
                   {home.resume.items.map((item, i) => (
                     <LinkItem key={`${item.href}-${i}`} item={item} />
                   ))}
@@ -263,7 +280,7 @@ export default function HomeClient({
           )}
         </div>
 
-        <Footer />
+        <Footer className="mt-10" />
       </div>
     </main>
   );

@@ -1,5 +1,7 @@
 ---
 title: "Scene AI When"
+listTitle: "scene ai when"
+category: life
 date: "2026-01-01"
 author: "Amaan Bilwar"
 published: false
