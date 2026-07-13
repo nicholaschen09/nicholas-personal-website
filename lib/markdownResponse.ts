@@ -72,7 +72,7 @@ function renderSection(section?: SiteSection<SiteLinkItem | SiteRoleLinkItem>): 
 
 export function buildHomeMarkdown(
   home: SiteHome,
-  posts: Pick<Post, 'slug' | 'title'>[],
+  posts: Pick<Post, 'slug' | 'listTitle' | 'category'>[],
 ): string {
   const fm = frontmatter({ title: home.title, url: SITE_URL });
 
@@ -84,13 +84,18 @@ export function buildHomeMarkdown(
     renderSection(home.projects),
   ];
 
-  // The home page lists blog titles; expose them as links to each post.
+  // Mirror the home page: short list titles grouped under tech / life.
   if (home.blogs) {
     const blogLines = [`## ${home.blogs.label}`, ''];
-    for (const post of posts) {
-      blogLines.push(`- [${post.title}](${SITE_URL}/blogs/${post.slug})`);
+    for (const category of ['tech', 'life'] as const) {
+      const grouped = posts.filter((post) => post.category === category);
+      if (grouped.length === 0) continue;
+      blogLines.push(`### ${category}`, '');
+      for (const post of grouped) {
+        blogLines.push(`- [${post.listTitle}](${SITE_URL}/blogs/${post.slug})`);
+      }
+      blogLines.push('');
     }
-    blogLines.push('');
     sections.push(blogLines.join('\n'));
   }
 

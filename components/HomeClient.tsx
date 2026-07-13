@@ -4,10 +4,18 @@ import Link from 'next/link';
 import Footer from '@/components/Footer';
 import type { SiteHome, SiteLinkItem, SiteRoleLinkItem } from '@/interfaces/site';
 
+export type BlogCategory = 'tech' | 'life';
+
 export interface BlogPostLink {
   slug: string;
   title: string;
+  category: BlogCategory;
 }
+
+const BLOG_CATEGORIES: { id: BlogCategory; label: string }[] = [
+  { id: 'tech', label: 'tech' },
+  { id: 'life', label: 'life' },
+];
 
 // A "currently"/"previously" entry: a role on the left, then either a logo or
 // an em-dash, then the linked name. Driven entirely by _content/site.md.
@@ -218,22 +226,31 @@ export default function HomeClient({
               </div>
             )}
           </div>
-          {home.blogs && (
+          {home.blogs && blogPosts.length > 0 && (
             <div className="mt-4">
               <SectionLabel>{home.blogs.label}</SectionLabel>
-              <div className="-mx-2 px-2">
-                <ul className="text-xs md:text-sm text-stone-400 space-y-1 pl-2">
-                  {blogPosts.map((post) => (
-                    <li key={post.slug}>
-                      <Link
-                        href={`/blogs/${post.slug}`}
-                        className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
-                      >
-                        {post.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+              <div className="grid grid-cols-2 gap-x-4 pl-2">
+                {BLOG_CATEGORIES.map(({ id, label }) => {
+                  const posts = blogPosts.filter((post) => post.category === id);
+                  if (posts.length === 0) return null;
+                  return (
+                    <div key={id}>
+                      <p className="mb-1 text-stone-500 text-xs md:text-sm">{label}</p>
+                      <ul className="text-xs md:text-sm text-stone-400 space-y-1">
+                        {posts.map((post) => (
+                          <li key={post.slug}>
+                            <Link
+                              href={`/blogs/${post.slug}`}
+                              className="block -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80 hover:text-stone-100"
+                            >
+                              {post.title}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           )}

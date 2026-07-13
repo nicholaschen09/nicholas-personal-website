@@ -1,5 +1,7 @@
 ---
 title: "tools i use everyday"
+listTitle: "tools i use"
+category: tech
 date: "2026-07-02"
 author: "Amaan Bilwar"
 published: true 

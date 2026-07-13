@@ -1,5 +1,7 @@
 ---
 title: "Staying out of insert mode will save your life"
+listTitle: "vim insert mode"
+category: tech
 date: "2026-06-28"
 author: "Amaan Bilwar"
 published: true 

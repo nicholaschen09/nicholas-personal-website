@@ -1,5 +1,7 @@
 ---
 title: "Building a tmux Clone for Windows in Rust"
+listTitle: "tmux clone"
+category: tech
 date: "2026-04-14"
 author: "Amaan Bilwar"
 published: false
