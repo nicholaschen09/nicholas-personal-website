@@ -1,5 +1,7 @@
 ---
 title: "Introducing Jia — the Search Engine for Everything"
+listTitle: "introducing jia"
+category: life
 date: "2025-12-23"
 author: "Amaan Bilwar"
 published: false

@@ -1,5 +1,7 @@
 ---
 title: "The Paradox of Indian Schools: High Talent, Broken Infrastructure"
+listTitle: "indian schools"
+category: life
 date: "2026-06-10"
 author: "Amaan Bilwar"
 coverImage: "/blogs/campusos-header.png"

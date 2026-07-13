@@ -1,5 +1,7 @@
 ---
 title: "Your blog title"
+listTitle: "short home title"
+category: tech
 date: "2026-06-22"
 author: "Amaan Bilwar"
 coverImage: "/blogs/template/placeholder.svg"

@@ -1,5 +1,7 @@
 ---
 title: "life lately — starting a new company, friends, hobbies, and taking breaks"
+listTitle: "life lately"
+category: life
 date: "2026-06-29"
 author: "Amaan"
 published: true

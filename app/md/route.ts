@@ -9,6 +9,10 @@ export const dynamic = 'force-static';
 
 export function GET(): Response {
   const { home } = getSiteContent();
-  const posts = getAllPosts().map((post) => ({ slug: post.slug, title: post.title }));
+  const posts = getAllPosts().map((post) => ({
+    slug: post.slug,
+    listTitle: post.listTitle,
+    category: post.category,
+  }));
   return markdownResponse(buildHomeMarkdown(home, posts));
 }

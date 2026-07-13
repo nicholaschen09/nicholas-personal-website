@@ -23,6 +23,7 @@
     "@mdx-js/react": "^3.1.1",
     "@opennextjs/cloudflare": "^1.18.0",
     "date-fns": "^4.4.0",
+    "effect": "^3.21.4",
     "github-slugger": "^2.0.0",
     "gray-matter": "^4.0.3",
     "next": "^16.2.2",
@@ -49,7 +50,6 @@
     "prettier": "^3.5.3",
     "tailwindcss": "^3.4.17",
     "typescript": "^5",
-    "vitest": "^4.0.16",
-    "wrangler": "^4.80.0"
+    "vitest": "^4.0.16"
   }
 }
