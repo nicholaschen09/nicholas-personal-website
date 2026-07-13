@@ -2,7 +2,7 @@ import { remark } from "remark";
 import remarkRehype from "remark-rehype";
 import rehypeSlug from "rehype-slug";
 import rehypeStringify from "rehype-stringify";
-import rehypePrettyCode from "rehype-pretty-code";
+// import rehypePrettyCode from "rehype-pretty-code";
 import { Effect } from "effect";
 // import { codeHighlightingOptions } from '@/lib/codeHighlighting';
 
