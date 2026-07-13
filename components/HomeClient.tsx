@@ -126,7 +126,7 @@ export default function HomeClient({
   }, [isHovering]);
 
   return (
-    <main className="flex h-dvh flex-col items-center justify-center overflow-hidden p-5 md:p-12 relative z-10">
+    <main className="flex min-h-dvh flex-col items-center justify-center p-5 md:p-12 relative z-10">
       {/* Hero Section */}
       <div className="max-w-xl w-full space-y-2 md:space-y-3 mx-auto">
         <div className="flex items-start justify-between mb-0">
