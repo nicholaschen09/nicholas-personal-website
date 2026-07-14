@@ -4,7 +4,7 @@ listTitle: 'The Fireball Binary'
 category: life
 date: '2026-07-13'
 author: 'Amaan'
-published: true
+published: false 
 excerpt: 'Learning to burn — the fireball binary, and why the middle is the real trap'
 ---
 
