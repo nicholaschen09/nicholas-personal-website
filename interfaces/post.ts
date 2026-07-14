@@ -13,5 +13,6 @@ export type Post = {
   coverImage?: string;
   coverAlt?: string;
   published?: boolean;
+  readingMinutes: number;
   content: string;
 };

@@ -8,6 +8,7 @@ function renderBlogPost() {
       title="Saving you from your Git troubles"
       date="2026-02-25"
       author="Amaan Bilwar"
+      readingMinutes={4}
       contentHtml="<p>Git content</p>"
       sections={[{ id: 'merge-conflicts', title: 'Merge Conflicts' }]}
       backLabel="back"
@@ -25,5 +26,10 @@ describe('Blog post view', () => {
   it('renders the back link', () => {
     renderBlogPost();
     expect(screen.getByText('back')).toBeInTheDocument();
+  });
+
+  it('renders reading time next to the date', () => {
+    renderBlogPost();
+    expect(screen.getByText(/4 min read/)).toBeInTheDocument();
   });
 });

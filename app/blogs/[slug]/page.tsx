@@ -61,6 +61,7 @@ export default async function BlogPostPage({ params }: Params) {
       title={post.title}
       date={post.date}
       author={post.author}
+      readingMinutes={post.readingMinutes}
       coverImage={post.coverImage}
       coverAlt={post.coverAlt}
       contentHtml={contentHtml}

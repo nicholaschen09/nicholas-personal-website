@@ -46,6 +46,7 @@ export function buildPostMarkdown(post: Post): string {
     date: post.date,
     author: post.author,
     description: post.excerpt,
+    readingMinutes: post.readingMinutes,
     url: `${SITE_URL}/blogs/${post.slug}`,
   });
   return `${fm}${post.content.trim()}\n`;
