@@ -1,54 +1,90 @@
 ---
-title: 'my wrists hurt so i decided to mod my keyboard'
+title: 'My wrists hurt so i modded my keyboard'
 listTitle: 'home-row mods'
 category: tech
-date: '2026-07-05'
+date: '2026-07-15'
 author: 'Amaan'
-published: false
-excerpt: 'home-row mods, carpel tunnel, and how i only use 34 keys while being faster than you.'
+published: true
+excerpt: 'home-row mods, carpal tunnel, and why you only need 34 keys'
 ---
 
-## the wrists
+I spend at least eight hours a day on a computer. That means my hands live in the same awkward staggered-keyboard posture for most of my waking life.
 
-I spend a minimum of 8 hours a day using a computer. You can probably imagine how many words i must be typing in a day. this means my hands are at this awkward position depicted by this very accurate representation of my wrists.
+At some point my wrists started complaining louder than my brain. I wanted to type faster, but I also wanted to stop doing the wrist yoga that normal keyboards force you into. So I started looking into layouts, split boards, layers, and eventually home row mods.
 
-![Section 1 image alt text](/blogs/template/placeholder.svg)
-_Section 1 image caption_
+One thing that becomes obvious once you pay attention: your hands are not evenly distributed over a full-size keyboard. Your left hand covers way fewer keys than your right. That imbalance is where a lot of the awkward reaching comes from.
 
-<HomeRowModsDemo />
+## Home row mods
 
-Add a final paragraph to wrap up this section.
+The home row is where your fingers are supposed to rest. The bumps on `f` and `j` are there so your index fingers can find home without looking.
 
-### Subsection title
+Home row mods take that idea further. Instead of reaching for `ctrl`, `shift`, `alt`, or `cmd`, those modifiers live under your home row keys. Tap the key and you get the letter. Hold the key and it becomes a modifier.
 
-Write a short subsection paragraph here.
+For example:
 
-## Section 2 title
+- tap `a` → `a`
+- hold `a` → modifier
+- tap `s` → `s`
+- hold `s` → another modifier
 
-Introduce the main point for this section.
+The point is not to make the keyboard more complicated. The point is to stop leaving the home row every three seconds.
 
-Expand with a supporting detail or example.
+## The setup
 
-- List item one
-- List item two
-- List item three
-- List item four
+I did this with [Kanata](https://github.com/jtroo/kanata), a keyboard remapper that lets you define tap-hold behavior and layers without flashing custom firmware.
 
-## Section 3 title
+My keyboards are very normal:
 
-Open this section with a key idea.
+- Legion 5 Pro laptop keyboard
+- Redragon Kumara K552
 
-Share a detail, insight, or lesson learned.
+That was intentional. I wanted to see how far I could get before buying or building a split board.
 
-### Subsection title
+## The layout
 
-Write a short paragraph for this subsection.
+The exact bindings matter less than the rules behind them.
 
-- Checklist item one
-- Checklist item two
-- Checklist item three
+Most common modifiers should be the easiest to hold. Keys I fat-finger the most should not sit in dangerous places. Timing is what makes or breaks the whole thing: too short and normal typing turns into accidental shortcuts, too long and every shortcut feels laggy.
+
+So the layout is less a keymap and more a negotiation between comfort, speed, and how much nonsense muscle memory is willing to relearn.
+
+## The learning curve
+
+Setting up Kanata was the easy part. Retraining years of muscle memory was not.
+
+It took about a week before it stopped feeling cursed. Even now, backspace is still the weird one. That key has been carrying a lot of baggage.
+
+## Layers vs home row mods
+
+I got the layers idea from split keyboards.
+
+On a split board, you often hold a thumb key and the same physical keys temporarily become arrows, numbers, symbols, navigation, media controls — whatever you mapped. Home row mods are mostly about bringing modifiers closer. Layers are about making the whole keyboard smaller and more programmable.
+
+The tradeoff looks something like this:
+
+- home row mods are easier to add to a normal keyboard
+- layers are more powerful once you commit
+- home row mods can interfere with fast letter rolls
+- layers can feel like learning a second keyboard
+- both are solving the same problem: stop reaching so much
+
+I do not think one is strictly better. Home row mods are the easier on-ramp. Layers are what you eventually build the board around.
+
+If you are still on a full-size keyboard, home row mods are easier to adopt. Layers make the keyboard programmatically smaller, but the physical keys are still sitting there tempting you. I mapped backspace to `[` and disabled the physical backspace key, and I still reached for the empty spot because the key was there. On a 34-key board, that temptation disappears.
+
+I have not given up on layers. If you only use ~34 keys, you get a lot more room for everything else — which is a good segue to what comes next.
+
+## Was it worth it?
+
+Probably.
+
+If you just want to type a little faster, this might be overkill. I am already 130+ WPM on full-size QWERTY. For me the appeal is comfort, fewer reaches, and making the keyboard feel like something I control instead of something I tolerate.
+
+## What's next
+
+The obvious next step is a split keyboard — maybe buy one, maybe build one from scratch. Either way, home row mods made one thing clear: the default layout is just one very popular opinion. The keyboard is a programmable interface. Do not make it boring.
 
 ## References
 
-- https://example.com/source-1
-- https://example.com/source-2
+- [kanata](https://github.com/jtroo/kanata)
+- [a guide to home row mods](https://precondition.github.io/home-row-mods)

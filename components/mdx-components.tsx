@@ -1,5 +1,5 @@
-import HomeRowModsDemo from '@/components/blog-scenes/HomeRowModsDemo';
+// import HomeRowModsDemo from '@/components/blog-scenes/HomeRowModsDemo';
 
 export const mdxComponents = {
-  HomeRowModsDemo,
+  // HomeRowModsDemo,
 };
