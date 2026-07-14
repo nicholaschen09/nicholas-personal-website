@@ -14,9 +14,6 @@ For context: I mostly work on a [Legion 5 Pro](https://www.lenovo.com/us/en/p/la
 
 When I'm home it's the laptop plus whatever keyboard era I'm currently obsessed with. When I'm moving around, it's just the laptop.
 
-![desk setup — legion, ghostty, zed](/blogs/tools/desk.png)
-_the habitat — legion 5 pro, ghostty, zed_
-
 ## Core
 
 I'm still pretty terminal-pilled, but the center of gravity moved when I switched hard to Zed. Shell, CLIs, and agents around the editor — not a full tmux-and-neovim desktop like it used to be.
@@ -70,6 +67,9 @@ _opencode + fzf + jj running in ghostty_
 
 I also keep [Cursor CLI](https://cursor.com/docs/cli/overview) around because I have about $700 in Cursor credits and I'm not leaving that on the table. Different tools, same job. OpenCode is the ideology. Cursor CLI is the added bonus.
 
+![cursor agent + nvim + next in ghostty](/terminal.png)
+_how i code in the terminal when i'm not in zed_
+
 ## Version control
 
 ### [Jujutsu (jj)](https://github.com/jj-vcs/jj)
@@ -88,9 +88,6 @@ Building a usable browser on top of Chromium is already hard. What I find intere
 
 The UI is excellent. Wukko and jj have clearly spent a lot of time deleting wasted pixel space — dynamic, compact, and a few other modes depending on how much chrome you want. Same recommendation energy as Zed. Just try it.
 
-![helium browser — compact mode](/blogs/tools/helium.png)
-_helium in compact mode_
-
 ## Audio
 
 ### Headphones
@@ -105,8 +102,5 @@ I spend most of my day on a keyboard, so this section keeps growing whether I wa
 - **[Redragon Kumara K552](https://redragonshop.com/products/redragon-kumara-k552)** — first mechanical. Outemu blues (Cherry MX clones). I tried my best to be that annoyingly loud roommate.
 - **Legion 5 Pro laptop keyboard** — the daily driver when I'm not on an external board. Fine. Not romantic.
 - **[Ferris Sweep](https://github.com/benvallack/Ferris-Sweep-Tweaked)** (Ben Vallack territory) — current hobby / addiction / reason to live. Building it from scratch: custom PCBs, artwork, Kailh Choc Pro Red linears, blank keycaps, soldering, no case. 34 keys. Cannot wait for this to be done.
-
-![ferris sweep build in progress](/blogs/tools/ferris-sweep.png)
-_ferris sweep — 34 keys, still cooking_
 
 If you only steal one idea from this post: optimize the thing your hands touch for eight hours a day.
