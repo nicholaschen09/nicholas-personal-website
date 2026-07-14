@@ -1,81 +1,95 @@
 ---
-title: 'Tools I use everyday'
-listTitle: 'Tools i use'
+title: 'on my personal development environment'
+listTitle: 'dev environment'
 category: tech
-date: '2026-07-02'
+date: '2026-07-14'
 author: 'Amaan Bilwar'
 published: true
 excerpt: 'why and how i use the tools i use everyday'
 ---
 
-Now that we're six months in already into the new year, I wanted to take some time to write up what my personal development environment looks like and other daily tools I use that make my life easier.
+Now that we're six months into the year, I wanted to write up what my personal development environment looks like, plus the daily tools that actually make life easier.
 
-## Programming
+For context: I mostly work on a [Legion 5 Pro](https://www.lenovo.com/us/en/p/laptops/legion/legion-5-series/lenovo-legion-5-pro-16inch-amd-gen-9/82wm00c3us) running Ubuntu 24.04. I'm not the biggest fan of the distro, but it serves me well. If you've got strong opinions on what I should switch to next, feel free to email me: [amaan@poke.com](mailto:amaan@poke.com).
 
-If you didn't already figure it out, i do spend a lot of time programming. I've always been a keyboard-centric computer user optimizing my workflows as much as possible.
+When I'm home it's the laptop plus whatever keyboard era I'm currently obsessed with. When I'm moving around, it's just the laptop.
 
-IDE: [Zed](https://zed.dev)
+## Core
 
-- I was a windows user back in the day and was waiting on Zed to drop their windows beta, and hopped on as soon as they did(early access member)
-- i closely followed Zed before i adopted it because i thought it was intesreting to build an IDE from scratch in rust, you see theres layers to this shit.
-- loved the vision of the founders and was tapped in, then i used it once and initially it was difficult to adopt coming from cursor, but the team's shipping speed got me hooked.
-- crazy that i have also contributed to Zed and only now i understand how much it takes to write something like zed, making a shader/game-like renderer, building something on top of it, and then keep iterating. HUGE RESPECT. they've upped their game when it comes to agents as well. love it.
-- use it once. you'll know what im talking about.
+I'm still pretty terminal-pilled, but the center of gravity moved when I switched hard to Zed. Shell, CLIs, and agents around the editor — not a full tmux-and-neovim desktop like it used to be.
 
-MOTIONS: [neovim](https://www.neovim.io)
+### Terminal emulator
 
-- i use vim motions in zed as well as when i need to view files quickly and dont wanna open zed, i use neovim.
-- it's faster, lighter, and more customizable than anything you could possibly use.
-- the only thing (other than the learning curve) that was stopping me from using vim motions before was the configs & setups i'd have to do, but now with ai its so much easier.
-- crazy part is i dont even use that many plugins.
+I was a big [WezTerm](https://wezfurlong.org/wezterm/) guy. Configurability, GPU rendering, the whole aesthetic — I was in deep. And then I had to admit the thing that kept nagging me: it's just slow as hell for how I work. Once you notice input lag and stutter in the place you live all day, you can't unsee it.
 
-Jujustsu: [jj](https://github.com/craftslab/jj)
+These days I'm on [Ghostty](https://ghostty.org) with [zsh](https://www.zsh.org) and [Fira Code](https://github.com/tonsky/FiraCode). Fast enough that I stop thinking about the emulator and just stay in the session. That's the whole job.
 
-By the time I was almost finished with this writeup, I adopted jj in my workflow, and I'm loving it so far. Here's my naive understanding of jj and how I use it:
+I still have [tmux](https://github.com/tmux/tmux) installed, but I barely reach for it now. Same story with [neovim](https://neovim.io) — used to be the quick-edit hammer; Zed ate most of that.
 
-- jj rewired my brain when using git because it has a very simple notion of how version control systems should work.
--
+### Navigation and CLIs
 
-~~GIT: [lazygit](https://github.com/jesseduffield/lazygit)~~
+Loose list of the ones I hit constantly:
 
-- ~~a simple terminal ui for git commands~~
-- ~~i used tobe teh guy that wouold learn the git commands just to be fast, until i discovered what lazygit was.~~
-- ~~life changing to say the least. im still no pro but dont get me wrong, im not here memorizing verbose commands anymore. those days are behind me.~~
+- [zoxide](https://github.com/ajeetdsouza/zoxide) — smarter `cd`. I barely type full paths anymore; `z` just teleports me.
+- [fzf](https://github.com/junegunn/fzf) — fuzzy finding for everything that should have been searchable already.
+- [Atuin](https://atuin.sh) — syncable, searchable shell history. Once you pull the exact command you ran on another machine, default history feels broken. Ellie also accidentally improved my vim life via a Zed keymap post, so Atuin stays undefeated here.
+- [LazyGit](https://github.com/jesseduffield/lazygit) — fast visual pass over git state when I don't want to reconstruct the world from flags. Intimidating for a day. Permanent after a week.
 
-BROWSER: [helium](https://www.helium.computer)
+### Keybinds
 
-- simple, fast, secure. privacy first browser
-- built by 2 devs i have a lot of respect for. did i mention it's open-source as well.
-- building on top of chromium an actual useable browser is actually insane to me, and theyve done something very interesting with their development too. they use patches instead of actual code changes so whenever ungoogled-chromium drops an update, they can just apply their patches on top and update the browser. sounds easy but is still a bit complex.
-- the ui is also very clean, one of the devs, wukko, has spent so much time stripping away every wasted pixed space they could to give us dynamic, compact and several other modes to use the browser in. love it. same as zed, couldn't recommend it enough.
+Vim motions in Zed, and in muscle memory everywhere else. The only thing that used to stop me from going all-in was the config tax — with AI, that barrier basically disappeared. I don't even run that many plugins.
+
+## The editor
+
+### [Zed](https://zed.dev)
+
+I was on Windows waiting for Zed's Windows beta, hopped on as soon as it dropped (early access), and stayed. Then the whole setup moved over to Ubuntu with me.
+
+I followed Zed pretty closely before I adopted it because building an IDE from scratch in Rust is interesting on its own. There are layers to this. I liked the founders' vision, stayed tapped in, then actually used it. Coming from Cursor, the first week was rough. The team's shipping speed is what got me hooked.
+
+I've also contributed to Zed, and only after that did I really understand how much it takes to build something like this — a shader / game-like renderer, an editor on top of it, then keep iterating forever. Huge respect.
+
+Use it once. You'll know what I'm talking about.
+
+## Agents
+
+This is the part of the stack that moved the most this year.
+
+I use [Zed agents](https://zed.dev) in the editor, and I've been using the terminal agent stuff they recently added too — thanks to them for taking agents seriously as a first-class workflow instead of a bolted-on chat panel or whatever they had going on way back when. iykyk. Still needs work, it's getting there, that's why I love opensource.
+
+For coding agents specifically, I'm heavily [OpenCode](https://opencode.ai) pilled. Terminal-native, open source, feels like it belongs next to the shell instead of fighting it. Also, I have insane amounts of respect for the Opencode team, and more so for Kit. Thank you for making me Effect pilled, it's amazing.
+
+I also keep [Cursor CLI](https://cursor.com/docs/cli/overview) around because I have about $700 in Cursor credits and I'm not leaving that on the table. Different tools, same job. OpenCode is the ideology. Cursor CLI is the added bonus.
+
+## Version control
+
+### [Jujutsu (jj)](https://github.com/jj-vcs/jj)
+
+By the time I was almost done with this writeup, I'd already adopted jj into the workflow, and I'm loving it so far. Naive take: jj rewired how I think about version control. The model is simpler than the git story I had in my head, and once that clicks, a lot of the old ceremony feels optional.
+
+## Browser
+
+### [Helium](https://www.helium.computer)
+
+Simple, fast, secure, privacy-first, open source. Built by two devs I respect a lot.
+
+Building a usable browser on top of Chromium is already hard. What I find interesting is how they develop it: patches on top of ungoogled-chromium, so when upstream moves, they re-apply the patch set instead of carrying a giant divergent fork. Sounds clean. Still complex.
+
+The UI is excellent. Wukko and jj have clearly spent a lot of time deleting wasted pixel space — dynamic, compact, and a few other modes depending on how much chrome you want. Same recommendation energy as Zed. Just try it.
 
 ## Audio
 
-HEADPHONES:
+### Headphones
 
-- [bose qc II](https://www.bose.com/en_us/products/headphones/qc-ii)
-  - great, comfortable, and supports anc
-  - i wear glasses and can wear this for hours with ease. ive flown 16-20 hours on this headset and is comforatbael all the way through.
-  - i like the case as well, very good and easy to carry around as well. replaceable ear cups.
-  - battery life is amazing, and honestly i was surprised at first. charges pretty quickly and lasts me days if not weeks.
-- [wired earphones by apple](https://www.apple.com/shop/product/)
-  - no not the performative ones the actual headphone jack ones
-  - i have the type c adapter in case i wanna use it with my phone, i carry both at all times.
-  - very convenient never gets tanngled atelast for me and i love the quality on these, honesytly if youre on a budget this is lowkey one of the best wired options out there.
+- **[Bose QuietComfort](https://www.bose.com/p/headphones/bose-quietcomfort-headphones/QCHP-HEADPHONEARN.html)** — comfortable, solid ANC, and I wear glasses. I've done 16–20 hour flights on these and they stay wearable the whole way. Good case, replaceable ear cups, battery life that still surprises me. Charges fast, lasts days if not weeks.
+- **[Apple EarPods (3.5mm)](https://www.apple.com/shop/product/MWU53AM/A/earpods-35mm-headphone-plug)** — not the performative wireless ones, the actual headphone-jack ones. I carry a USB-C adapter and keep both on me. They almost never tangle for me, sound better than they have any right to on a budget, and they're still one of the best cheap wired options out there.
 
-## Hardware
+## Keyboards
 
-KEYBOARDS:
+I spend most of my day on a keyboard, so this section keeps growing whether I want it to or not.
 
-- [ferris sweep mod by ben vallack](https://www.ferris-sweep.com/)
-- [legion 5 pro laptop keyboard](https://www.lenovo.com/us/en/p/laptops/legion-5-pro)
-- [redragon kumara 552](https://www.redragon.com/en-us/products/keyboards/kumara-552)
-- my first step towards mechanical keyboards, and clearly because of this reason i got the outemu (cherry mx clones redragon makes) blue switches. Tried mybest to be that annoyingly loud roommate.
-- my new hobby/addiction/willing to live currently.
-- building this from scratch, customizing the pcbs, adding artwork to them, ordering the switches(going with kalih choc pro red linear) and some blank keycaps for this one. Going to solder it all together too, no case for this one. its only a 34 keys keyboard, so this is going to be so much fun to use and type on.
-- Cannot wait for this to complete.
+- **[Redragon Kumara K552](https://redragonshop.com/products/redragon-kumara-k552)** — first mechanical. Outemu blues (Cherry MX clones). I tried my best to be that annoyingly loud roommate.
+- **Legion 5 Pro laptop keyboard** — the daily driver when I'm not on an external board. Fine. Not romantic.
+- **[Ferris Sweep](https://github.com/benvallack/Ferris-Sweep-Tweaked)** (Ben Vallack territory) — current hobby / addiction / reason to live. Building it from scratch: custom PCBs, artwork, Kailh Choc Pro Red linears, blank keycaps, soldering, no case. 34 keys. Cannot wait for this to be done.
 
-## References
-
-- https://example.com/source-1
-- https://example.com/source-2
+If you only steal one idea from this post: optimize the thing your hands touch for eight hours a day.
