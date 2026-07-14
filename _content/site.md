@@ -59,11 +59,11 @@ home:
   oss:
     label: oss
     items:
-      - label: Zed IDE
+      - label: zed ide
         href: https://github.com/zed-industries/zed/pulls?q=is%3Apr+author%3AAmaanBilwar
-      - label: Gemini CLI
+      - label: gemini cli
         href: https://github.com/google-gemini/gemini-cli/pulls/amaanbilwar
-      - label: HelixDB
+      - label: helixdb
         href: https://github.com/helixdb/helix-db/pulls/amaanbilwar
 ui:
   blogBack: back

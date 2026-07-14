@@ -100,7 +100,7 @@ The UI is excellent. Wukko and jj have clearly spent a lot of time deleting wast
 I spend most of my day on a keyboard, so this section keeps growing whether I want it to or not.
 
 - **[Redragon Kumara K552](https://redragonshop.com/products/redragon-kumara-k552)** — first mechanical. Outemu blues (Cherry MX clones). I tried my best to be that annoyingly loud roommate.
-- **Legion 5 Pro laptop keyboard** — the daily driver when I'm not on an external board. Fine. Not romantic.
+- **Legion 5 Pro laptop keyboard** — the daily driver when I'm not on an external board. Fine. Surpirsingly good keyboard.
 - **[Ferris Sweep](https://github.com/benvallack/Ferris-Sweep-Tweaked)** (Ben Vallack territory) — current hobby / addiction / reason to live. Building it from scratch: custom PCBs, artwork, Kailh Choc Pro Red linears, blank keycaps, soldering, no case. 34 keys. Cannot wait for this to be done.
 
 If you only steal one idea from this post: optimize the thing your hands touch for eight hours a day.

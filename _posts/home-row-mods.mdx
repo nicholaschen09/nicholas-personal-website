@@ -16,7 +16,7 @@ One thing that becomes obvious once you pay attention: your hands are not evenly
 
 ## Home row mods
 
-The home row is where your fingers are supposed to rest. The bumps on `f` and `j` are there so your index fingers can find home without looking.
+The home row is where your fingers are supposed to rest. The bumps on `f` and `j` (called the homing bumps) are there so your index fingers can find home without looking.
 
 Home row mods take that idea further. Instead of reaching for `ctrl`, `shift`, `alt`, or `cmd`, those modifiers live under your home row keys. Tap the key and you get the letter. Hold the key and it becomes a modifier.
 
@@ -27,9 +27,13 @@ For example:
 - tap `s` → `s`
 - hold `s` → another modifier
 
+A better way to visualize this is:
+
+<HomeRowKeyboard />
+
 The point is not to make the keyboard more complicated. The point is to stop leaving the home row every three seconds.
 
-## The setup
+## The Setup
 
 I did this with [Kanata](https://github.com/jtroo/kanata), a keyboard remapper that lets you define tap-hold behavior and layers without flashing custom firmware.
 
@@ -40,7 +44,7 @@ My keyboards are very normal:
 
 That was intentional. I wanted to see how far I could get before buying or building a split board.
 
-## The layout
+## The Layout
 
 The exact bindings matter less than the rules behind them.
 
@@ -48,11 +52,11 @@ Most common modifiers should be the easiest to hold. Keys I fat-finger the most 
 
 So the layout is less a keymap and more a negotiation between comfort, speed, and how much nonsense muscle memory is willing to relearn.
 
-## The learning curve
+## The Learning Curve
 
 Setting up Kanata was the easy part. Retraining years of muscle memory was not.
 
-It took about a week before it stopped feeling cursed. Even now, backspace is still the weird one. That key has been carrying a lot of baggage.
+It took about a week before it stopped feeling cursed. At the start, backspace is still the weird one. That key has been carrying a lot of baggage.
 
 ## Layers vs home row mods
 
@@ -63,22 +67,48 @@ On a split board, you often hold a thumb key and the same physical keys temporar
 The tradeoff looks something like this:
 
 - home row mods are easier to add to a normal keyboard
-- layers are more powerful once you commit
+- layers are more powerful once you commit (Spoiler alert: I did)
 - home row mods can interfere with fast letter rolls
 - layers can feel like learning a second keyboard
 - both are solving the same problem: stop reaching so much
 
 I do not think one is strictly better. Home row mods are the easier on-ramp. Layers are what you eventually build the board around.
 
-If you are still on a full-size keyboard, home row mods are easier to adopt. Layers make the keyboard programmatically smaller, but the physical keys are still sitting there tempting you. I mapped backspace to `[` and disabled the physical backspace key, and I still reached for the empty spot because the key was there. On a 34-key board, that temptation disappears.
+If you are still on a full-size keyboard, home row mods are easier to adopt. Layers make the keyboard programmatically smaller, but the physical keys are still sitting there **tempting you**. I mapped backspace to `[` and disabled the physical backspace key, and I still used to reach for the empty spot because the key was there. On a 34-key board, that temptation disappears.
 
 I have not given up on layers. If you only use ~34 keys, you get a lot more room for everything else — which is a good segue to what comes next.
 
+## Update about Layers
+
+I love them! I hated it when I first started not because they're not useful but because remembering where the keys are becomes difficult.
+
+Let me explain how it works.
+
+this is what keyboard looks like.
+
+<NormalKeyboard />
+
+Something you might have immediately noticed is the places where my ctrl and my esc keys go. These are the most comfortable positions they can be in for me.
+
+Wait wait wait! So do I never use the number keys, and the symbols. Well, `12345 (){}<>`. So I do use them, but where are they?
+
+Hold down the left alt key and see what happens to my keyboard.
+
+<LowerLayerKeyboard />
+
+See? they're right there. But what about the arrow keys?
+
+Hold down tab.
+
+<ArrowKeysKeyboard />
+
 ## Was it worth it?
 
-Probably.
+100% Yes. Next question.
 
-If you just want to type a little faster, this might be overkill. I am already 130+ WPM on full-size QWERTY. For me the appeal is comfort, fewer reaches, and making the keyboard feel like something I control instead of something I tolerate.
+On a serious note, if you don't spend most of your time typing, this wouldn't make much sense for you. Especially if you're a twink and keep using your mouse for everything(satire).
+
+If you just want to type a little faster, this might be overkill. I am already 130+ WPM on full-size QWERTY. For me the appeal is getting rid of my wrist pain, comfort, fewer reaches, and making the keyboard feel like something I control instead of something I tolerate.
 
 ## What's next
 
