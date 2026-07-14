@@ -3,7 +3,7 @@ title: 'on my personal development environment'
 listTitle: 'dev environment'
 category: tech
 date: '2026-07-14'
-author: 'Amaan Bilwar'
+author: 'Amaan'
 published: true
 excerpt: 'why and how i use the tools i use everyday'
 ---

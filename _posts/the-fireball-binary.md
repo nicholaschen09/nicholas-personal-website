@@ -3,7 +3,7 @@ title: 'The Fireball Binary'
 listTitle: 'The Fireball Binary'
 category: life
 date: '2026-07-13'
-author: 'Amaan Bilwar'
+author: 'Amaan'
 published: true
 excerpt: 'Learning to burn — the fireball binary, and why the middle is the real trap'
 ---

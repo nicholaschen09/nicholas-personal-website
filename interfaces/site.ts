@@ -12,6 +12,8 @@ export interface SiteRoleLinkItem {
   name: string;
   icon?: string;
   iconAlt?: string;
+  /** Shown in the expand panel when the role row is clicked. */
+  detail?: string;
 }
 
 export interface SiteSection<T> {

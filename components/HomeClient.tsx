@@ -17,32 +17,88 @@ const BLOG_CATEGORIES: { id: BlogCategory; label: string }[] = [
   { id: 'life', label: 'life' },
 ];
 
-// A "currently"/"previously" entry: a role on the left, then either a logo or
-// an em-dash, then the linked name. Driven entirely by _content/site.md.
+function RoleRowContent({ item }: { item: SiteRoleLinkItem }) {
+  return (
+    <>
+      <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
+        {item.role}
+      </span>
+      {/* Keep the logo and name together so they wrap as one unit on narrow screens */}
+      <span className="inline-flex items-center gap-2 whitespace-nowrap">
+        {item.icon ? (
+          <img src={item.icon} alt={item.iconAlt ?? item.name} className="h-5 w-auto" />
+        ) : (
+          '—'
+        )}
+        <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
+          {item.name}
+        </span>
+      </span>
+    </>
+  );
+}
+
+// Currently: outbound link. Previously (with detail): click expands a blurb.
+// Driven entirely by _content/site.md.
 function RoleItem({ item }: { item: SiteRoleLinkItem }) {
+  const [open, setOpen] = useState(false);
+  const hasDetail = Boolean(item.detail);
+
+  if (!hasDetail) {
+    return (
+      <li>
+        <a
+          href={item.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex flex-wrap items-center gap-x-2 gap-y-0.5 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
+        >
+          <RoleRowContent item={item} />
+        </a>
+      </li>
+    );
+  }
+
   return (
     <li>
-      <a
-        href={item.href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group flex flex-wrap items-center gap-x-2 gap-y-0.5 -mx-2 px-2 py-0.5 rounded-md transition-colors hover:bg-stone-800/80"
+      <button
+        type="button"
+        aria-expanded={open}
+        onClick={() => setOpen((prev) => !prev)}
+        className="group flex w-full flex-wrap items-center gap-x-2 gap-y-0.5 -mx-2 px-2 py-0.5 rounded-md text-left transition-colors hover:bg-stone-800/80"
       >
-        <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-          {item.role}
-        </span>
-        {/* Keep the logo and name together so they wrap as one unit on narrow screens */}
-        <span className="inline-flex items-center gap-2 whitespace-nowrap">
-          {item.icon ? (
-            <img src={item.icon} alt={item.iconAlt ?? item.name} className="h-5 w-auto" />
-          ) : (
-            '—'
-          )}
-          <span className="text-stone-400 group-hover:text-stone-100 transition-colors">
-            {item.name}
-          </span>
-        </span>
-      </a>
+        <RoleRowContent item={item} />
+      </button>
+      <div
+        className={`grid transition-[grid-template-rows] duration-200 ease-out ${
+          open ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
+        }`}
+      >
+        <div className="overflow-hidden">
+          <div className="flex gap-2 pl-5 pt-1.5 pb-1">
+            <span aria-hidden className="shrink-0 text-stone-600 select-none">
+              ⤷
+            </span>
+            <p className="min-w-0 text-sm text-stone-500 leading-relaxed">
+              {item.detail}
+              {item.href && (
+                <>
+                  {' '}
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center rounded-full bg-stone-800/80 px-2 py-[3px] text-xs leading-none text-stone-400 hover:bg-stone-700/80 hover:text-stone-200 transition-colors align-middle"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    {item.name}
+                  </a>
+                </>
+              )}
+            </p>
+          </div>
+        </div>
+      </div>
     </li>
   );
 }

@@ -61,7 +61,8 @@ function renderSection(section?: SiteSection<SiteLinkItem | SiteRoleLinkItem>): 
   const lines = [`## ${section.label}`, ''];
   for (const item of section.items) {
     if (isRoleLink(item)) {
-      lines.push(`- ${item.role} — [${item.name}](${item.href})`);
+      const detail = item.detail ? ` — ${item.detail}` : '';
+      lines.push(`- ${item.role} — [${item.name}](${item.href})${detail}`);
     } else {
       const desc = item.description ? ` — ${item.description}` : '';
       lines.push(`- [${item.label}](${item.href})${desc}`);

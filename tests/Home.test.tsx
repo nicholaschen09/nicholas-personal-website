@@ -5,7 +5,7 @@ import Home from '../app/page';
 describe('Home Page', () => {
   it('renders the title from site.md', () => {
     render(<Home />);
-    expect(screen.getByText('hi im amaan')).toBeInTheDocument();
+    expect(screen.getByText('hi, im Amaan')).toBeInTheDocument();
   });
 
   it('renders the currently section label', () => {
