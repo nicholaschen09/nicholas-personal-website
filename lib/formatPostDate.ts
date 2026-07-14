@@ -1,9 +1,9 @@
 import { format, parseISO } from 'date-fns';
 
-export function formatPostDate(date: string, author?: string): string {
+export function formatPostDate(date: string, author?: string, readingMinutes?: number): string {
   const formatted = format(parseISO(date), 'MMMM d, yyyy');
-  if (author) {
-    return `${author} - ${formatted}`;
-  }
-  return formatted;
+  const parts = [author, formatted, readingMinutes != null ? `${readingMinutes} min read` : null].filter(
+    Boolean,
+  );
+  return parts.join(' · ');
 }

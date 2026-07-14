@@ -78,20 +78,11 @@ body {
   }
 
   body {
-    @apply bg-background text-foreground;
-    font-family:
-      var(--font-jetbrains-mono),
-      ui-monospace,
-      SFMono-Regular,
-      "SF Mono",
-      Menlo,
-      Consolas,
-      "Liberation Mono",
-      monospace;
-    font-weight: 500;
+    @apply bg-background text-foreground font-serif;
+    font-weight: 400;
     font-feature-settings:
-      "tnum" on,
-      "lnum" on;
+      'tnum' on,
+      'lnum' on;
   }
 
   h1 {

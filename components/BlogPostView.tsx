@@ -11,6 +11,7 @@ interface BlogPostViewProps {
   title: string;
   date: string;
   author?: string;
+  readingMinutes?: number;
   coverImage?: string;
   coverAlt?: string;
   contentHtml?: string;
@@ -24,6 +25,7 @@ export default function BlogPostView({
   title,
   date,
   author,
+  readingMinutes,
   coverImage,
   coverAlt,
   contentHtml,
@@ -53,7 +55,9 @@ export default function BlogPostView({
           </Link>
 
           <h1 className="text-2xl md:text-3xl font-medium text-white mb-2">{title}</h1>
-          <p className="text-stone-500 text-sm mb-6">{formatPostDate(date, author)}</p>
+          <p className="text-stone-500 text-sm mb-6">
+            {formatPostDate(date, author, readingMinutes)}
+          </p>
 
           {coverImage && (
             <img src={coverImage} alt={coverAlt ?? title} className="w-full mb-6" />

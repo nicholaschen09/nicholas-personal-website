@@ -1,13 +1,13 @@
 ---
-title: "The Paradox of Indian Schools: High Talent, Broken Infrastructure"
-listTitle: "indian schools"
+title: 'The Paradox of Indian Schools: High Talent, Broken Infrastructure'
+listTitle: 'indian schools'
 category: life
-date: "2026-06-10"
-author: "Amaan Bilwar"
-coverImage: "/blogs/campusos-header.png"
-coverAlt: "CampusOS website header"
+date: '2026-06-10'
+author: 'Amaan'
+coverImage: '/blogs/campusos-header.png'
+coverAlt: 'CampusOS website header'
 published: true
-excerpt: "India produces sharp minds, but school operations still run on spreadsheets and WhatsApp."
+excerpt: 'India produces sharp minds, but school operations still run on spreadsheets and WhatsApp.'
 ---
 
 ## The Paradox

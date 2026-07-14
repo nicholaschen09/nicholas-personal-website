@@ -1,11 +1,11 @@
 ---
-title: "Scene AI When"
-listTitle: "scene ai when"
+title: 'Scene AI When'
+listTitle: 'scene ai when'
 category: life
-date: "2026-01-01"
-author: "Amaan Bilwar"
+date: '2026-01-01'
+author: 'Amaan'
 published: false
-excerpt: "How Scene AI started as a CLI side project and became a real video editing tool."
+excerpt: 'How Scene AI started as a CLI side project and became a real video editing tool.'
 ---
 
 ## Introduction
@@ -26,7 +26,7 @@ The idea was simple: take a video, pass flags like --trim, and get clean results
 
 I started researching. If you're editing programmatically, there's the undisputed GOAT: Ffmpeg. But I didn't want to learn this ffmpeg syntax of DOOM and DESPAIR. I wanted something you could use without squinting at docs.
 
-Python was the obvious starting point, familiar, fast to iterate, lots of libraries. CLI tools aren't difficult* in any language if you know what you're building.
+Python was the obvious starting point, familiar, fast to iterate, lots of libraries. CLI tools aren't difficult\* in any language if you know what you're building.
 
 Three days in, maybe 30–45 minutes a day, I had a working prototype. No Adobe Premiere Pro crashes, no sluggish timelines, just code doing what I asked. I felt like Frankenstein watching his monster take a step.
 

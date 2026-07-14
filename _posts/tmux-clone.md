@@ -1,11 +1,11 @@
 ---
-title: "Building a tmux Clone for Windows in Rust"
-listTitle: "tmux clone"
+title: 'Building a tmux Clone for Windows in Rust'
+listTitle: 'tmux clone'
 category: tech
-date: "2026-04-14"
-author: "Amaan Bilwar"
+date: '2026-04-14'
+author: 'Amaan'
 published: false
-excerpt: "A Windows terminal multiplexer written in Rust — ConPTY, panes, and the keyboard input problem."
+excerpt: 'A Windows terminal multiplexer written in Rust — ConPTY, panes, and the keyboard input problem.'
 ---
 
 ## What I Built
@@ -26,7 +26,7 @@ ConPTY is Microsoft solution for terminal emulation. It handles the complexity o
 - Two pipes: input (write to shell) and output (read from shell)
 - CreateProcessW with STARTF_USESTDHANDLES spawns the shell
 
-*How ConPTY connects your app to the shell*
+_How ConPTY connects your app to the shell_
 
 The key insight: Windows terminal apps need to create a pseudo console, then spawn a process where stdin/stdout connect to that console.
 
@@ -36,7 +36,7 @@ On Unix its just open(/dev/pts/X). On Windows its... significantly more.
 
 Heres how the multiplexer works:
 
-*Data flow through the multiplexer*
+_Data flow through the multiplexer_
 
 tty.rs wraps the ConPTY API. Creates the pseudo console and handles spawning cmd.exe or PowerShell.
 
@@ -81,7 +81,7 @@ Without raw mode interception at the right level, keys either go to cmd.exe or g
 
 **Tabby:** Electron-based with GUI, easier to extend.
 
-*If you need a working solution today, use these instead*
+_If you need a working solution today, use these instead_
 
 ## What I Learned
 

@@ -1,11 +1,11 @@
-import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
-import BlogPostView from '@/components/BlogPostView';
-import { getSiteContent } from '@/lib/content';
-import { extractHeadings } from '@/lib/extractHeadings';
-import markdownToHtml from '@/lib/markdownToHtml';
-import { mdxToReact } from '@/lib/mdxToReact';
-import { getAllPosts, getPostBySlug } from '@/lib/posts';
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import BlogPostView from "@/components/BlogPostView";
+import { getSiteContent } from "@/lib/content";
+import { extractHeadings } from "@/lib/extractHeadings";
+import markdownToHtml from "@/lib/markdownToHtml";
+import { mdxToReact } from "@/lib/mdxToReact";
+import { getAllPosts, getPostBySlug } from "@/lib/posts";
 
 type Params = {
   params: Promise<{ slug: string }>;
@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     return {};
   }
 
-  const title = `${post.title} | Amaan Bilwar`;
+  const title = `${post.title} | Amaan`;
 
   return {
     title,
@@ -32,11 +32,11 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      type: 'article',
+      type: "article",
       images: post.coverImage ? [post.coverImage] : undefined,
     },
     twitter: {
-      card: 'summary_large_image',
+      card: "summary_large_image",
       title: post.title,
       images: post.coverImage ? [post.coverImage] : undefined,
     },
@@ -51,8 +51,8 @@ export default async function BlogPostPage({ params }: Params) {
     notFound();
   }
 
-  const contentHtml = post.extension === 'md' ? await markdownToHtml(post.content) : undefined;
-  const content = post.extension === 'mdx' ? await mdxToReact(post.content) : undefined;
+  const contentHtml = post.extension === "md" ? await markdownToHtml(post.content) : undefined;
+  const content = post.extension === "mdx" ? await mdxToReact(post.content) : undefined;
   const sections = extractHeadings(post.content);
   const { ui } = getSiteContent();
 
@@ -61,6 +61,7 @@ export default async function BlogPostPage({ params }: Params) {
       title={post.title}
       date={post.date}
       author={post.author}
+      readingMinutes={post.readingMinutes}
       coverImage={post.coverImage}
       coverAlt={post.coverAlt}
       contentHtml={contentHtml}

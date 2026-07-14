@@ -1,43 +1,47 @@
 ---
 home:
-  title: hi im amaan
+  title: hi, im Amaan
   currently:
     label: currently
     items:
-      - role: CO-Founder & CEO
+      - role: Co-Founder & CEO
         href: https://campusos.framer.website
         name: CampusOS
-      - role: rewiring my brain with
+      - role: Rewiring my brain with
         href: https://effect.website/
-        name: Effect 
-      - role: yelling at transistors 
+        name: Effect
+      - role: Yelling at transistors
         href: https://www.ceas.uc.edu/academics/departments/electrical-computer-engineering/degrees-programs/computer-engineering-bachelor-of-science.html
-        name: UofCincy 
+        name: UofCincy
         icon: /ucincy_logo.png
         iconAlt: University of Cincinnati
   previously:
     label: previously
     items:
-      - role: bashing bugs
+      - role: Bug bashing
         href: https://zed.dev/community/guild
         name: Zed Guild
         icon: /zed.png
-        iconAlt: Story
-      - role: taught clankers to make music
+        iconAlt: Zed
+        detail: Hunting and fixing bugs in Zed as part of the community guild — shell breakage, agent quirks and ui, and whatever else broke.
+      - role: Multi-agent systems
         href: https://www.story.com/
         name: Story
         icon: /story.jpg
         iconAlt: Story
-      - role: interrogating logs with RAG 
+        detail: Shipped IOS App in a week then taught agents to collaborate on music generation — multi-agent orchestration, model routing, and keeping creative output coherent.
+      - role: Data pipelines & semantic search
         href: https://automation.honeywell.com/us/en/
         name: Honeywell
         icon: /Honeywell-Logo.png
         iconAlt: Honeywell
-      - role: babysitting legacy SpringBoot
+        detail: Built data pipelines and *insanely* fast RAG so engineers could just ask questions and debug faster.
+      - role: Distributed systems
         href: https://automation.honeywell.com/us/en/
         name: Honeywell
         icon: /Honeywell-Logo.png
         iconAlt: Honeywell
+        detail: Distributed systems with Go, Kubernetes and Spring Boot to keep legacy services alive and kicking — distributed workflows, reliability work.
   projects:
     label: projects
     items:

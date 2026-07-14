@@ -1,11 +1,11 @@
 ---
-title: "Introducing Jia — the Search Engine for Everything"
-listTitle: "introducing jia"
+title: 'Introducing Jia — the Search Engine for Everything'
+listTitle: 'introducing jia'
 category: life
-date: "2025-12-23"
-author: "Amaan Bilwar"
+date: '2025-12-23'
+author: 'Amaan'
 published: false
-excerpt: "Semantic search across your files — videos, PDFs, images — so you can find things by what they contain."
+excerpt: 'Semantic search across your files — videos, PDFs, images — so you can find things by what they contain.'
 ---
 
 ## What is Jia?

@@ -1,13 +1,13 @@
 ---
-title: "Your blog title"
-listTitle: "short home title"
+title: 'Your blog title'
+listTitle: 'short home title'
 category: tech
-date: "2026-06-22"
-author: "Amaan Bilwar"
-coverImage: "/blogs/template/placeholder.svg"
-coverAlt: "Cover image placeholder"
+date: '2026-06-22'
+author: 'Amaan'
+coverImage: '/blogs/template/placeholder.svg'
+coverAlt: 'Cover image placeholder'
 published: false
-excerpt: "Template for new blog posts — copy this file and write in markdown."
+excerpt: 'Template for new blog posts — copy this file and write in markdown.'
 ---
 
 ## Section 1 title
@@ -18,7 +18,7 @@ Add a second paragraph to set context or tell a short story.
 
 ![Section 1 image alt text](/blogs/template/placeholder.svg)
 
-*Section 1 image caption*
+_Section 1 image caption_
 
 Add a final paragraph to wrap up this section.
 

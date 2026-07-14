@@ -2,6 +2,7 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import { join } from 'path';
 import type { Post, PostCategory } from '@/interfaces/post';
+import { getReadingMinutes } from '@/lib/readingTime';
 
 const postsDirectory = join(process.cwd(), '_posts');
 
@@ -46,6 +47,7 @@ export function getPostBySlug(slug: string): Post | null {
     coverImage: data.coverImage as string | undefined,
     coverAlt: data.coverAlt as string | undefined,
     published: data.published !== false,
+    readingMinutes: getReadingMinutes(content),
     content,
   };
 }
