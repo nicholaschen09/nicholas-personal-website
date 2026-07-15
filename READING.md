@@ -1,0 +1,2 @@
+- Computer systems -- a programmer's perspective
+- understanding the linux kernel
