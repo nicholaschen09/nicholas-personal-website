@@ -1,3 +1,7 @@
+## become goated 
+
+- [how to ask questions the smart way](http://www.catb.org/~esr/faqs/smart-questions.html)
+
 ## systems programming
 
 - Computer systems -- a programmer's perspective -> write memory allocator
