@@ -393,7 +393,7 @@ const xReconstructed = pred + residual;  // 103 + 2 = 105 ✓`}
                       href="https://xiph.org/flac/format.html"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500 underline"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200 underline"
                     >
                       xiph.org/flac/format.html
                     </a>
@@ -403,7 +403,7 @@ const xReconstructed = pred + residual;  // 103 + 2 = 105 ✓`}
                       href="https://michaeldipperstein.github.io/rice.html"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500 underline"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200 underline"
                     >
                       Rice (Golomb) coding – discussion and implementation
                     </a>
@@ -413,7 +413,7 @@ const xReconstructed = pred + residual;  // 103 + 2 = 105 ✓`}
                       href="https://techblog.paalijarvi.fi/2014/06/23/a-short-study-on-audio-compression/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500 underline"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200 underline"
                     >
                       a short study on audio compression
                     </a>

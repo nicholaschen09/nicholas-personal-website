@@ -104,7 +104,7 @@ export default function Home() {
                 <button
                   type="button"
                   onClick={handleCopySvg}
-                  className="flex items-center justify-center gap-2 px-3 py-2.5 text-sm text-stone-400 bg-stone-800/80 hover:bg-orange-500/10 hover:text-orange-500 rounded-md whitespace-nowrap w-[120px] transition-colors"
+                  className="flex items-center justify-center gap-2 px-3 py-2.5 text-sm text-stone-400 bg-stone-800/80 hover:bg-stone-700/40 hover:text-stone-200 rounded-md whitespace-nowrap w-[120px] transition-colors"
                 >
                   {copied ? (
                     <>
@@ -154,9 +154,9 @@ export default function Home() {
                 href="https://uwaterloo.ca/systems-design-engineering/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10"
+                className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40"
               >
-                <span className="text-stone-400 group-hover:text-orange-500 transition-colors">
+                <span className="text-stone-400 transition-colors group-hover:text-stone-200">
                   systems design engineering at university of waterloo
                 </span>
               </a>
@@ -166,9 +166,9 @@ export default function Home() {
                 href="https://melius.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10"
+                className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40"
               >
-                <span className="text-stone-400 group-hover:text-orange-500 transition-colors">
+                <span className="text-stone-400 transition-colors group-hover:text-stone-200">
                   melius
                 </span>
               </a>
@@ -186,9 +186,9 @@ export default function Home() {
                     href="https://textql.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10"
+                    className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40"
                   >
-                    <span className="text-stone-400 group-hover:text-orange-500 transition-colors">
+                    <span className="text-stone-400 transition-colors group-hover:text-stone-200">
                       textql
                     </span>
                   </a>
@@ -198,9 +198,9 @@ export default function Home() {
                     href="https://www.ownr.co/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10"
+                    className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40"
                   >
-                    <span className="text-stone-400 group-hover:text-orange-500 transition-colors">
+                    <span className="text-stone-400 transition-colors group-hover:text-stone-200">
                       ownr
                     </span>
                   </a>
@@ -210,9 +210,9 @@ export default function Home() {
                     href="https://www.rbc.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10"
+                    className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40"
                   >
-                    <span className="text-stone-400 group-hover:text-orange-500 transition-colors">
+                    <span className="text-stone-400 transition-colors group-hover:text-stone-200">
                       rbc
                     </span>
                   </a>
@@ -229,7 +229,7 @@ export default function Home() {
                       href="https://github.com/nicholaschen09/metallic-blob"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200"
                     >
                       metallic blob
                     </a>
@@ -239,7 +239,7 @@ export default function Home() {
                       href="https://tiktokviewpredictor.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200"
                     >
                       tiktok view predictor
                     </a>
@@ -250,7 +250,7 @@ export default function Home() {
                       href="https://sql-query-parser.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200"
                     >
                       sql query parser
                     </a>
@@ -260,7 +260,7 @@ export default function Home() {
                       href="https://github.com/nicholaschen09/tunl"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200"
                     >
                       tunl
                     </a>
@@ -276,7 +276,7 @@ export default function Home() {
                   <li>
                     <Link
                       href="/blogs/ontology-text-to-sql"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200"
                     >
                       why ontology for text-to-sql?
                     </Link>
@@ -284,7 +284,7 @@ export default function Home() {
                   <li>
                     <Link
                       href="/blogs/lossless-audio"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-orange-500/10 hover:text-orange-500"
+                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200"
                     >
                       how lossless audio compression works
                     </Link>

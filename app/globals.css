@@ -154,11 +154,10 @@ body {
 
   /* Global interactive button/link style */
   .btn-interactive {
-    @apply transition-colors hover:bg-orange-500/10 hover:text-orange-500;
+    @apply transition-colors hover:bg-stone-700/40 hover:text-stone-200;
   }
 
-  /* Global orange selection highlight */
   ::selection {
-    @apply bg-orange-500/30 text-orange-200;
+    @apply bg-stone-500/30 text-stone-100;
   }
 }

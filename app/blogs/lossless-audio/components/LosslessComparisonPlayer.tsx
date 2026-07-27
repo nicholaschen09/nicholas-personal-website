@@ -238,7 +238,7 @@ export default function LosslessComparisonPlayer() {
                 ? playing
                   ? 'bg-amber-600 text-white'
                   : 'bg-stone-600 text-stone-200'
-                : 'bg-stone-700 text-stone-300 hover:bg-orange-500/10 hover:text-orange-500'
+                : 'bg-stone-700 text-stone-300 hover:bg-stone-600 hover:text-stone-100'
             }`}
           >
             MP3
@@ -251,7 +251,7 @@ export default function LosslessComparisonPlayer() {
                 ? playing
                   ? 'bg-lime-600 text-white'
                   : 'bg-stone-600 text-stone-200'
-                : 'bg-stone-700 text-stone-300 hover:bg-orange-500/10 hover:text-orange-500'
+                : 'bg-stone-700 text-stone-300 hover:bg-stone-600 hover:text-stone-100'
             }`}
           >
             FLAC
@@ -268,7 +268,7 @@ export default function LosslessComparisonPlayer() {
             type="button"
             onClick={togglePlayPause}
             disabled={!activeFormat}
-            className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-stone-700 text-stone-200 transition-colors hover:bg-orange-500/10 hover:text-orange-500 disabled:opacity-40 disabled:pointer-events-none"
+            className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-stone-700 text-stone-200 transition-colors hover:bg-stone-600 hover:text-stone-100 disabled:opacity-40 disabled:pointer-events-none"
             aria-label={playing ? 'Pause' : 'Play'}
           >
             {playing ? (

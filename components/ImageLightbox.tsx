@@ -73,7 +73,7 @@ export default function ImageLightbox({ children }: { children: React.ReactNode 
           />
           <button
             onClick={close}
-            className="absolute top-4 right-4 text-white/70 hover:bg-orange-500/10 hover:text-orange-500 transition-colors p-2 rounded-md"
+            className="absolute top-4 right-4 text-white/70 hover:bg-stone-700/40 hover:text-stone-200 transition-colors p-2 rounded-md"
             aria-label="Close"
           >
             <svg

@@ -13,7 +13,7 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
       <div className="flex items-center gap-1.5">
         <a
           href="mailto:nicholas.chen243@gmail.com"
-          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-orange-500/10 hover:text-orange-500 transition-colors"
+          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-stone-700/40 hover:text-stone-200 transition-colors"
           aria-label="Email"
           title="Email"
         >
@@ -31,7 +31,7 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-orange-500/10 hover:text-orange-500 transition-colors"
+          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-stone-700/40 hover:text-stone-200 transition-colors"
           aria-label="LinkedIn"
           title="LinkedIn"
         >
@@ -49,7 +49,7 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           href="https://github.com/nicholaschen09"
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-orange-500/10 hover:text-orange-500 transition-colors"
+          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-stone-700/40 hover:text-stone-200 transition-colors"
           aria-label="GitHub"
           title="GitHub"
         >
@@ -67,7 +67,7 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           href="https://x.com/nicholaschen__"
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-orange-500/10 hover:text-orange-500 transition-colors"
+          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-stone-700/40 hover:text-stone-200 transition-colors"
           aria-label="X (Twitter)"
           title="X (Twitter)"
         >
@@ -89,7 +89,7 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           href="https://nicholaschen243.wixsite.com/nicholas-chen"
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-orange-500/10 hover:text-orange-500 transition-colors"
+          className="group relative flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-stone-400 hover:bg-stone-700/40 hover:text-stone-200 transition-colors"
           aria-label="Art Portfolio"
           title="Art portfolio"
         >

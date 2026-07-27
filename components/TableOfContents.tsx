@@ -108,8 +108,7 @@ export default function TableOfContents({ sections, title = 'contents' }: TableO
               onClick={(e) => handleClick(e, section.id)}
               className={`
                 block text-sm transition-colors duration-200
-                px-2 py-0.5 rounded-md
-                hover:bg-orange-500/10 hover:text-orange-500
+                px-2 py-0.5 rounded-md hover:bg-stone-700/40 hover:text-stone-200
                 ${activeSection === section.id ? 'text-stone-100' : 'text-stone-500'}
               `}
             >
