@@ -1,7 +1,44 @@
 'use client';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect, useRef, useCallback } from 'react';
 import Footer from '@/components/Footer';
+
+type LogoHoverLinkProps = {
+  href: string;
+  label: string;
+  logoSrc?: string;
+  logoAlt: string;
+  logoClassName?: string;
+};
+
+function LogoHoverLink({ href, label, logoSrc, logoAlt, logoClassName = '' }: LogoHoverLinkProps) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group flex min-h-7 items-center gap-3 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40"
+    >
+      <span className="min-w-0 text-stone-400 transition-colors group-hover:text-stone-200">
+        {label}
+      </span>
+      <span className="ml-auto flex h-6 w-12 shrink-0 items-center justify-end opacity-0 transition-opacity duration-150 group-hover:opacity-100">
+        {logoSrc ? (
+          <Image
+            src={logoSrc}
+            alt={logoAlt}
+            width={48}
+            height={20}
+            className={`max-h-5 max-w-12 object-contain ${logoClassName}`}
+          />
+        ) : (
+          <span className="text-xs font-medium text-stone-200">{logoAlt}</span>
+        )}
+      </span>
+    </a>
+  );
+}
 
 export default function Home() {
   const [isHovering, setIsHovering] = useState(false);
@@ -150,28 +187,20 @@ export default function Home() {
           <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">currently</p>
           <ul className="text-xs md:text-sm text-stone-400 space-y-1">
             <li>
-              <a
+              <LogoHoverLink
                 href="https://uwaterloo.ca/systems-design-engineering/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40"
-              >
-                <span className="text-stone-400 transition-colors group-hover:text-stone-200">
-                  systems design engineering at university of waterloo
-                </span>
-              </a>
+                label="systems design engineering at university of waterloo"
+                logoSrc="/uwaterloo_logo.jpeg"
+                logoAlt="University of Waterloo"
+              />
             </li>
             <li>
-              <a
+              <LogoHoverLink
                 href="https://melius.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40"
-              >
-                <span className="text-stone-400 transition-colors group-hover:text-stone-200">
-                  melius
-                </span>
-              </a>
+                label="melius"
+                logoSrc="/meliusai_logo.jpeg"
+                logoAlt="Melius"
+              />
             </li>
           </ul>
         </div>
@@ -182,40 +211,28 @@ export default function Home() {
               <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">previously</p>
               <ul className="text-xs md:text-sm text-stone-400 space-y-1">
                 <li>
-                  <a
+                  <LogoHoverLink
                     href="https://textql.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40"
-                  >
-                    <span className="text-stone-400 transition-colors group-hover:text-stone-200">
-                      textql
-                    </span>
-                  </a>
+                    label="textql"
+                    logoSrc="/textql.jpg"
+                    logoAlt="TextQL"
+                  />
                 </li>
                 <li>
-                  <a
+                  <LogoHoverLink
                     href="https://www.ownr.co/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40"
-                  >
-                    <span className="text-stone-400 transition-colors group-hover:text-stone-200">
-                      ownr
-                    </span>
-                  </a>
+                    label="ownr"
+                    logoSrc="/ownrco_logo.jpeg"
+                    logoAlt="Ownr"
+                  />
                 </li>
                 <li>
-                  <a
+                  <LogoHoverLink
                     href="https://www.rbc.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40"
-                  >
-                    <span className="text-stone-400 transition-colors group-hover:text-stone-200">
-                      rbc
-                    </span>
-                  </a>
+                    label="rbc"
+                    logoSrc="/rbc.jpeg"
+                    logoAlt="RBC"
+                  />
                 </li>
               </ul>
             </div>
