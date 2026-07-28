@@ -18,19 +18,19 @@ function LogoHoverLink({ href, label, logoSrc, logoAlt, logoClassName = '' }: Lo
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group flex min-h-7 items-center gap-3 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40"
+      className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40"
     >
       <span className="min-w-0 text-stone-400 transition-colors group-hover:text-stone-200">
         {label}
       </span>
-      <span className="ml-auto flex h-6 w-12 shrink-0 items-center justify-end opacity-0 transition-opacity duration-150 group-hover:opacity-100">
+      <span className="ml-auto flex h-4 w-8 shrink-0 items-center justify-end opacity-0 transition-opacity duration-150 group-hover:opacity-100">
         {logoSrc ? (
           <Image
             src={logoSrc}
             alt={logoAlt}
-            width={48}
-            height={20}
-            className={`max-h-5 max-w-12 object-contain ${logoClassName}`}
+            width={32}
+            height={16}
+            className={`max-h-4 max-w-8 object-contain ${logoClassName}`}
           />
         ) : (
           <span className="text-xs font-medium text-stone-200">{logoAlt}</span>
