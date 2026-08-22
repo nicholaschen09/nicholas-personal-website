@@ -204,18 +204,18 @@ export default function Home() {
               <ul className="text-xs md:text-sm text-stone-400 space-y-1">
                 <li>
                   <LogoHoverLink
-                    href="https://textql.com/"
-                    label="textql"
-                    logoSrc="/textql.jpg"
-                    logoAlt="TextQL"
-                  />
-                </li>
-                <li>
-                  <LogoHoverLink
                     href="https://melius.com/"
                     label="melius"
                     logoSrc="/meliusai_logo.jpeg"
                     logoAlt="Melius"
+                  />
+                </li>
+                <li>
+                  <LogoHoverLink
+                    href="https://textql.com/"
+                    label="textql"
+                    logoSrc="/textql.jpg"
+                    logoAlt="TextQL"
                   />
                 </li>
                 <li>
