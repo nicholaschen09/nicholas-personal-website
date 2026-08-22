@@ -194,14 +194,6 @@ export default function Home() {
                 logoAlt="University of Waterloo"
               />
             </li>
-            <li>
-              <LogoHoverLink
-                href="https://melius.com/"
-                label="melius"
-                logoSrc="/meliusai_logo.jpeg"
-                logoAlt="Melius"
-              />
-            </li>
           </ul>
         </div>
 
@@ -216,6 +208,14 @@ export default function Home() {
                     label="textql"
                     logoSrc="/textql.jpg"
                     logoAlt="TextQL"
+                  />
+                </li>
+                <li>
+                  <LogoHoverLink
+                    href="https://melius.com/"
+                    label="melius"
+                    logoSrc="/meliusai_logo.jpeg"
+                    logoAlt="Melius"
                   />
                 </li>
                 <li>
