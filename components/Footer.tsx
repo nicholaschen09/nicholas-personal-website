@@ -7,7 +7,7 @@ interface FooterProps {
 export default function Footer({ className = 'mt-20' }: FooterProps) {
   return (
     <div
-      className={`${className} mx-auto flex max-w-lg w-full flex-wrap items-center justify-center gap-3 text-xs text-stone-400`}
+      className={`${className} mx-auto flex max-w-lg w-full flex-wrap items-center justify-start gap-3 text-xs text-stone-400`}
     >
       {/* Social media icons */}
       <div className="flex items-center gap-1.5">
