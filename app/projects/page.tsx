@@ -5,23 +5,27 @@ const projects = [
   {
     href: 'https://github.com/nicholaschen09/metallic-blob',
     title: 'metallic blob',
+    date: 'march 2026',
     description:
       'a small visual experiment with a shiny interactive shape that reacts to light and motion',
   },
   {
     href: 'https://tiktokviewpredictor.vercel.app/',
     title: 'tiktok view predictor',
+    date: 'october 2025',
     description: 'a playful predictor for estimating tiktok video views from a few quick inputs',
   },
   {
     href: 'https://sql-query-parser.vercel.app/',
     title: 'sql query parser',
+    date: 'may 2025',
     description:
       'a tool for parsing sql and turning query structure into something easier to inspect',
   },
   {
     href: 'https://github.com/nicholaschen09/tunl',
     title: 'tunl',
+    date: 'march 2026',
     description: 'a small project repo from my experiments with simple developer tooling',
   },
 ];
@@ -44,14 +48,17 @@ export default function ProjectsPage() {
         <section className="mt-8 space-y-5 text-xs leading-relaxed md:mt-10 md:text-sm">
           {projects.map((item) => (
             <article key={item.href}>
-              <a
-                href={item.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline decoration-stone-500/70 underline-offset-4 transition-colors hover:text-stone-100 hover:decoration-stone-200"
-              >
-                {item.title}
-              </a>
+              <div className="flex items-baseline justify-between gap-4">
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline decoration-stone-500/70 underline-offset-4 transition-colors hover:text-stone-100 hover:decoration-stone-200"
+                >
+                  {item.title}
+                </a>
+                <span className="shrink-0 text-right">{item.date}</span>
+              </div>
               <p className="mt-1 text-stone-500">{item.description}</p>
             </article>
           ))}

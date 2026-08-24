@@ -5,16 +5,19 @@ const writing = [
   {
     href: '/blogs/melius-summer-internship',
     title: 'my summer internship with melius',
+    date: 'august 2026',
     description: 'reflections on building agent context, skills, and the Playground at Melius',
   },
   {
     href: '/blogs/lossless-audio',
     title: 'how lossless audio compression works',
+    date: 'march 2026',
     description: 'a visual explainer on flac, mp3, prediction, and what lossless really means',
   },
   {
     href: '/blogs/ontology-text-to-sql',
     title: 'why ontology for text-to-sql?',
+    date: 'november 2025',
     description: 'notes on ontologies, context, and making natural language work better with data',
   },
 ];
@@ -37,12 +40,15 @@ export default function WritingPage() {
         <section className="mt-8 space-y-5 text-xs leading-relaxed md:mt-10 md:text-sm">
           {writing.map((item) => (
             <article key={item.href}>
-              <Link
-                href={item.href}
-                className="underline decoration-stone-500/70 underline-offset-4 transition-colors hover:text-stone-100 hover:decoration-stone-200"
-              >
-                {item.title}
-              </Link>
+              <div className="flex items-baseline justify-between gap-4">
+                <Link
+                  href={item.href}
+                  className="underline decoration-stone-500/70 underline-offset-4 transition-colors hover:text-stone-100 hover:decoration-stone-200"
+                >
+                  {item.title}
+                </Link>
+                <span className="shrink-0 text-right">{item.date}</span>
+              </div>
               <p className="mt-1 text-stone-500">{item.description}</p>
             </article>
           ))}
