@@ -26,8 +26,8 @@ export default function OntologyTextToSqlBlog() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-[#1a1a1a] text-stone-300 pb-12 px-4 md:px-8">
-      <div className="max-w-6xl mx-auto pt-12 lg:grid lg:grid-cols-[1fr_minmax(0,32rem)_1fr] lg:gap-8 lg:items-start">
+    <main className="min-h-screen bg-[#1a1a1a] px-6 pb-12 pt-10 text-stone-300 md:px-12 md:pt-12">
+      <div className="max-w-6xl mx-auto lg:grid lg:grid-cols-[1fr_minmax(0,32rem)_1fr] lg:gap-8 lg:items-start">
         <TableOfContents sections={sections} title="" className="lg:mt-14" />
         <ImageLightbox>
           <article className="w-full lg:max-w-lg lg:mx-auto">
@@ -54,7 +54,7 @@ export default function OntologyTextToSqlBlog() {
               why ontology for text-to-sql?
             </h1>
             <div className="text-stone-500 text-sm mb-6">
-              <p>Nicholas Chen · November 15, 2025</p>
+              <p>Nicholas Chen · November 2025</p>
             </div>
 
             {/* Cover image */}

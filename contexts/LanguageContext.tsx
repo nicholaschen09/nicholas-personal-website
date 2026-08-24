@@ -198,9 +198,9 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.back': 'back',
     'blog.contents': 'contents',
     'blog.git.title': 'git commands',
-    'blog.git.date': 'nicholas chen · december 21, 2025 · 4 min read',
+    'blog.git.date': 'nicholas chen · december 2025',
     'blog.coding.title': 'how i learned to code',
-    'blog.coding.date': 'nicholas chen · december 26, 2025 · 5 min read',
+    'blog.coding.date': 'nicholas chen · december 2025',
     'blog.coding.intro': 'small learnings that taught me to code from start (top) to end (bottom)',
     'blog.coding.year2023': '2023',
     'blog.coding.year2024': '2024',
@@ -285,9 +285,9 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.coding.item9': "• tried to make an interactive valentine's day website",
     'blog.coding.referencesTitle': 'references',
     'blog.ontology.title': 'why ontology for text-to-sql?',
-    'blog.ontology.date': 'nicholas chen · november 21, 2025 · 10 min read',
+    'blog.ontology.date': 'nicholas chen · november 2025',
     'blog.waterlooCoop.title': "my thoughts on waterloo's co-op program",
-    'blog.waterlooCoop.date': 'nicholas chen · january 1, 2026 · 7 min read',
+    'blog.waterlooCoop.date': 'nicholas chen · january 2026',
     'blog.waterlooCoop.note':
       'note: this is my experience from the engineering faculty co-op so content in this blog may differ from the other faculties including math, science, etc..',
     'blog.waterlooCoop.intro':
@@ -369,7 +369,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // First Internship blog content
     'blog.firstInternship.title': 'reflecting on my first engineering internship',
-    'blog.firstInternship.date': 'nicholas chen · august 5, 2025 · 5 min read',
+    'blog.firstInternship.date': 'nicholas chen · august 2025',
     'blog.firstInternship.intro':
       "this winter, i had my very first real co-op experience as a software engineer intern at ownr. i made a lot of mistakes and learned a lot as well. looking back now just a year ago got me thinking about how far i've come so i wanted to write about this experience because it taught me more about software engineering and the corporate life than i ever would've learned.",
     'blog.firstInternship.howGotTitle': 'how i got this internship',
@@ -695,7 +695,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.git.references.docs': 'official git docs',
     'blog.git.references.dangit': 'dangit, git!',
     'blog.lossless.title': 'how lossless audio compression works',
-    'blog.lossless.date': 'nicholas chen · march 14, 2026 · 6 min read',
+    'blog.lossless.date': 'nicholas chen · march 2026',
     'blog.lossless.intro':
       'in an era of streaming and convenience, audio quality is often overlooked. however, for those who care about the nuances of sound, lossless audio is the gold standard. in this post, i will explore what it is and why it matters.',
     'blog.lossless.whatIsTitle': 'what is lossless audio?',
@@ -979,13 +979,13 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.back': '返回',
     'blog.contents': '目录',
     'blog.git.title': 'git 命令',
-    'blog.git.date': 'nicholas chen · 2025年12月21日 · 4分钟阅读',
+    'blog.git.date': 'nicholas chen · 2025年12月',
     'blog.coding.title': '我是如何学习编程的',
-    'blog.coding.date': 'nicholas chen · 2025年12月26日 · 5分钟阅读',
+    'blog.coding.date': 'nicholas chen · 2025年12月',
     'blog.ontology.title': '为什么文本到SQL需要本体？',
-    'blog.ontology.date': 'nicholas chen · 2025年11月21日 · 10分钟阅读',
+    'blog.ontology.date': 'nicholas chen · 2025年11月',
     'blog.waterlooCoop.title': '我对滑铁卢合作项目的思考',
-    'blog.waterlooCoop.date': 'nicholas chen · 2026年1月1日 · 7分钟阅读',
+    'blog.waterlooCoop.date': 'nicholas chen · 2026年1月',
     'blog.waterlooCoop.note':
       '注意：这是我从工程学院合作项目的经历，因此本博客的内容可能与数学、科学等其他学院不同。',
     'blog.waterlooCoop.intro':
@@ -1063,7 +1063,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // First Internship blog content (Chinese)
     'blog.firstInternship.title': '反思我的第一次工程实习',
-    'blog.firstInternship.date': 'nicholas chen · 2025年8月5日 · 5分钟阅读',
+    'blog.firstInternship.date': 'nicholas chen · 2025年8月',
     'blog.firstInternship.intro':
       '今年冬天，我在ownr获得了我的第一个真正的合作实习经验，作为软件工程师实习生，我犯了很多错误，也学到了很多。现在回顾仅仅一年前，让我思考自己走了多远，所以我想写下这段经历，因为它教会了我关于软件工程和企业生活的知识，这些是我永远不会学到的。',
     'blog.firstInternship.howGotTitle': '我是如何获得这次实习的？',
@@ -1535,7 +1535,7 @@ const translations: Record<Language, Record<string, string>> = {
       '随着数据景观变得更复杂 - 更多来源、更多表、更多工具、更多用户 - 对本体的需求指数增加。没有本体，复杂性规模不好。每个新数据源需要每个人学习新的表结构。每个新分析师需要被训练所有业务逻辑。每个新工具需要自定义集成。有了本体，复杂性线性规模。新数据源映射到现有实体。新分析师学习本体一次。新工具集成本体层。数据未来不是更复杂 - 它是更复杂但更好组织。本体是如何在不淹没在其中的情况下管理那种复杂性。',
 
     'blog.lossless.title': '无损压缩如何保持音质',
-    'blog.lossless.date': 'nicholas chen · 2026年3月14日 · 6分钟阅读',
+    'blog.lossless.date': 'nicholas chen · 2026年3月',
     'blog.lossless.intro':
       '在流媒体和便利性至上的时代，音频质量常被忽视。然而，对于那些在意声音细微差别的人来说，无损音频是黄金标准。在这篇文章中，我们将探讨它是什么以及为什么它很重要。',
     'blog.lossless.whatIsTitle': '什么是无损音频？',

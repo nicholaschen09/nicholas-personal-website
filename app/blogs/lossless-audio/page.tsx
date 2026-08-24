@@ -27,9 +27,9 @@ export default function LosslessBlog() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-[#1a1a1a] text-stone-300 pb-12 px-4 md:px-8">
-      <div className="max-w-6xl mx-auto pt-12 lg:grid lg:grid-cols-[1fr_minmax(0,32rem)_1fr] lg:gap-8 lg:items-start">
-        <TableOfContents sections={sections} title="contents" />
+    <main className="min-h-screen bg-[#1a1a1a] px-6 pb-12 pt-10 text-stone-300 md:px-12 md:pt-12">
+      <div className="max-w-6xl mx-auto lg:grid lg:grid-cols-[1fr_minmax(0,32rem)_1fr] lg:gap-8 lg:items-start">
+        <TableOfContents sections={sections} title="" className="lg:mt-14" />
         <ImageLightbox>
           <article className="w-full lg:max-w-lg lg:mx-auto">
             <header className="mb-6 text-xs font-normal leading-none md:text-sm">
@@ -55,7 +55,7 @@ export default function LosslessBlog() {
               how lossless audio compression works
             </h1>
             <p className="text-stone-500 text-sm mb-6">
-              Nicholas Chen · January 15, 2026 · 10 min read
+              Nicholas Chen · January 2026
             </p>
 
             {/* Cover image */}

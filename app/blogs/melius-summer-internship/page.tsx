@@ -76,7 +76,7 @@ export default function MeliusSummerInternshipBlog() {
               my summer internship with melius
             </h1>
             <p className="text-stone-500 text-sm mb-6">
-              Nicholas Chen · August 20, 2026
+              Nicholas Chen · August 2026
             </p>
 
             <figure className="mb-6">
