@@ -45,6 +45,8 @@ export default function OntologyTextToSqlBlog() {
               >
                 writing
               </Link>
+              <span className="text-stone-500"> / </span>
+              <span className="text-stone-400">ontology-text-to-sql</span>
             </header>
 
             {/* Title */}
