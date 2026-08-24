@@ -5,22 +5,24 @@ const projects = [
   {
     href: 'https://github.com/nicholaschen09/metallic-blob',
     title: 'metallic blob',
-    description: 'a small visual experiment with a shiny interactive shape',
+    description:
+      'a small visual experiment with a shiny interactive shape that reacts to light and motion',
   },
   {
     href: 'https://tiktokviewpredictor.vercel.app/',
     title: 'tiktok view predictor',
-    description: 'a playful predictor for estimating tiktok video views',
+    description: 'a playful predictor for estimating tiktok video views from a few quick inputs',
   },
   {
     href: 'https://sql-query-parser.vercel.app/',
     title: 'sql query parser',
-    description: 'a tool for parsing and visualizing sql query structure',
+    description:
+      'a tool for parsing sql and turning query structure into something easier to inspect',
   },
   {
     href: 'https://github.com/nicholaschen09/tunl',
     title: 'tunl',
-    description: 'a small project repo from my experiments',
+    description: 'a small project repo from my experiments with simple developer tooling',
   },
 ];
 
