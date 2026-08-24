@@ -3,6 +3,11 @@ import Footer from '@/components/Footer';
 
 const writing = [
   {
+    href: '/blogs/melius-summer-internship',
+    title: 'My Summer Internship with Melius',
+    description: 'reflections on building agent context, skills, and the Playground at Melius',
+  },
+  {
     href: '/blogs/lossless-audio',
     title: 'how lossless audio compression works',
     description: 'a visual explainer on flac, mp3, prediction, and what lossless really means',

@@ -183,7 +183,11 @@ export default function Home() {
             <TextLink href="/blogs/ontology-text-to-sql">why ontology for text-to-sql?</TextLink>{' '}
             and{' '}
             <TextLink href="/blogs/lossless-audio">how lossless audio compression works</TextLink>,
-            and some cool things i&apos;ve made are{' '}
+            and{' '}
+            <TextLink href="/blogs/melius-summer-internship">
+              My Summer Internship with Melius
+            </TextLink>
+            , and some cool things i&apos;ve made are{' '}
             <TextLink href="https://github.com/nicholaschen09/metallic-blob" external>
               metallic blob
             </TextLink>
