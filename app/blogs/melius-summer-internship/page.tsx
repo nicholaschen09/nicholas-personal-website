@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Footer from '@/components/Footer';
 import ImageLightbox from '@/components/ImageLightbox';
 import TableOfContents, { TOCSection } from '@/components/TableOfContents';
@@ -53,9 +54,11 @@ export default function MeliusSummerInternshipBlog() {
             </p>
 
             <figure className="mb-6 border border-stone-800 bg-stone-950/40 px-6 py-8">
-              <img
+              <Image
                 src="/meliusai_logo.jpeg"
                 alt="Melius logo"
+                width={96}
+                height={96}
                 className="mx-auto h-24 w-24 rounded-md object-cover"
               />
               <figcaption className="text-stone-500 text-xs mt-4 text-center italic">
@@ -276,17 +279,6 @@ export default function MeliusSummerInternshipBlog() {
                   i am excited to take everything i learned at Melius with me into whatever i build
                   next. a huge thank you to Young, Joowon, Arnav, Ray, Jahow, Alex, Winson,
                   Samantha, and Max for making these past few months such a memorable experience.
-                </p>
-                <p className="mt-4">
-                  original Melius post:{' '}
-                  <a
-                    href="https://www.melius.com/blog/melius-summer-internship"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-stone-100 underline decoration-stone-600 underline-offset-4 transition-colors hover:text-white hover:decoration-stone-300"
-                  >
-                    melius.com/blog/melius-summer-internship
-                  </a>
                 </p>
               </section>
             </div>
