@@ -54,7 +54,7 @@ export default function OntologyTextToSqlBlog() {
               why ontology for text-to-sql?
             </h1>
             <p className="text-stone-500 text-sm mb-6">
-              nicholas chen · november 15, 2025 · 6 min read
+              Nicholas Chen · november 15, 2025 · 6 min read
             </p>
 
             {/* Cover image */}
