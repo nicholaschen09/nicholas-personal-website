@@ -63,7 +63,6 @@ export default function OntologyTextToSqlBlog() {
               alt="TextQL Ontology Interface"
               className="w-full mb-6"
             />
-            <hr className="border-stone-700 mb-8" />
 
             {/* Content */}
             <div
@@ -456,7 +455,7 @@ export default function OntologyTextToSqlBlog() {
                 </p>
               </section>
 
-              <section className="border-t border-stone-700 pt-6 mt-8">
+              <section className="mt-8">
                 <h3 className="text-sm md:text-base font-semibold text-stone-200 mb-3">
                   references
                 </h3>
