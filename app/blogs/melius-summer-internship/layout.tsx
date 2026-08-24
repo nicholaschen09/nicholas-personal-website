@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'My Summer Internship with Melius | Nicholas Chen',
+  title: 'my summer internship with melius | Nicholas Chen',
   description:
     'A reflection on building agent context, skills, and the Playground during my engineering internship at Melius.',
   openGraph: {
-    title: 'My Summer Internship with Melius',
+    title: 'my summer internship with melius',
     description:
       'A reflection on building agent context, skills, and the Playground during my engineering internship at Melius.',
     type: 'article',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'My Summer Internship with Melius',
+    title: 'my summer internship with melius',
     images: ['https://nicholaschen.me/blogs/melius-summer-internship/cover.png'],
   },
 };

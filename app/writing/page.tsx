@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 const writing = [
   {
     href: '/blogs/melius-summer-internship',
-    title: 'My Summer Internship with Melius',
+    title: 'my summer internship with melius',
     description: 'reflections on building agent context, skills, and the Playground at Melius',
   },
   {

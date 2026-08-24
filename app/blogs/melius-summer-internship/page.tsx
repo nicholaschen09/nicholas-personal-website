@@ -34,24 +34,24 @@ function BlogFigure({
 export default function MeliusSummerInternshipBlog() {
   const sections: TOCSection[] = useMemo(
     () => [
-      { id: 'starting', title: 'Starting My Engineering Internship' },
-      { id: 'agent-context', title: 'Agent Context and Skills' },
-      { id: 'playground', title: 'The Playground' },
-      { id: 'work-hard-play-hard', title: 'Work Hard, Play Hard' },
-      { id: 'takeaways', title: 'Key Takeaways' },
-      { id: 'wrapping-up', title: 'Wrapping Up' },
+      { id: 'starting', title: 'starting my engineering internship' },
+      { id: 'agent-context', title: 'agent context and skills' },
+      { id: 'playground', title: 'the playground' },
+      { id: 'work-hard-play-hard', title: 'work hard, play hard' },
+      { id: 'takeaways', title: 'key takeaways' },
+      { id: 'wrapping-up', title: 'wrapping up' },
     ],
     [],
   );
 
   useEffect(() => {
-    document.title = 'My Summer Internship with Melius';
+    document.title = 'my summer internship with melius';
   }, []);
 
   return (
-    <main className="min-h-screen bg-[#1a1a1a] text-stone-300 pb-12 px-4 md:px-8">
-      <div className="max-w-6xl mx-auto pt-12 lg:grid lg:grid-cols-[1fr_minmax(0,32rem)_1fr] lg:gap-8 lg:items-start">
-        <TableOfContents sections={sections} title="contents" />
+    <main className="min-h-screen bg-[#1a1a1a] px-6 pb-12 pt-10 text-stone-300 md:px-12 md:pt-12">
+      <div className="max-w-6xl mx-auto lg:grid lg:grid-cols-[1fr_minmax(0,32rem)_1fr] lg:gap-8 lg:items-start">
+        <TableOfContents sections={sections} title="" className="lg:mt-14" />
         <ImageLightbox>
           <article className="w-full lg:max-w-lg lg:mx-auto">
             <header className="mb-6 text-xs font-normal leading-none md:text-sm">
@@ -73,10 +73,10 @@ export default function MeliusSummerInternshipBlog() {
             </header>
 
             <h1 className="text-2xl md:text-3xl font-medium text-white mb-2">
-              My Summer Internship with Melius
+              my summer internship with melius
             </h1>
             <p className="text-stone-500 text-sm mb-6">
-              Nicholas Chen · August 20, 2026 · 7 min read
+              Nicholas Chen · August 20, 2026
             </p>
 
             <figure className="mb-6">
@@ -99,7 +99,7 @@ export default function MeliusSummerInternshipBlog() {
                   id="starting"
                   className="text-lg md:text-xl font-semibold text-stone-100 mb-3 scroll-mt-8"
                 >
-                  Starting My Engineering Internship
+                  starting my engineering internship
                 </h2>
                 <p>
                   My internship at Melius has been an awesome learning experience for me as an
@@ -128,7 +128,7 @@ export default function MeliusSummerInternshipBlog() {
                   id="agent-context"
                   className="text-lg md:text-xl font-semibold text-stone-100 mb-3 scroll-mt-8"
                 >
-                  Agent Context and Skills
+                  agent context and skills
                 </h2>
                 <p>
                   One of the larger projects I got to own was building out skills and context for
@@ -193,7 +193,7 @@ export default function MeliusSummerInternshipBlog() {
                   id="playground"
                   className="text-lg md:text-xl font-semibold text-stone-100 mb-3 scroll-mt-8"
                 >
-                  The Playground
+                  the playground
                 </h2>
                 <p>
                   Another fun project I got to work on was the Playground. Before this, Melius
@@ -260,7 +260,7 @@ export default function MeliusSummerInternshipBlog() {
                   id="work-hard-play-hard"
                   className="text-lg md:text-xl font-semibold text-stone-100 mb-3 scroll-mt-8"
                 >
-                  Work Hard, Play Hard
+                  work hard, play hard
                 </h2>
                 <p>
                   Of course, the internship wasn&apos;t all work. Some of my favorite memories at
@@ -313,7 +313,7 @@ export default function MeliusSummerInternshipBlog() {
                   id="takeaways"
                   className="text-lg md:text-xl font-semibold text-stone-100 mb-3 scroll-mt-8"
                 >
-                  Key Takeaways
+                  key takeaways
                 </h2>
                 <p>
                   My two biggest takeaways from being on the engineering team here at Melius were
@@ -346,7 +346,7 @@ export default function MeliusSummerInternshipBlog() {
                   id="wrapping-up"
                   className="text-lg md:text-xl font-semibold text-stone-100 mb-3 scroll-mt-8"
                 >
-                  Wrapping Up
+                  wrapping up
                 </h2>
                 <p>
                   Overall, I’m incredibly grateful for everything I got to experience. I came into
