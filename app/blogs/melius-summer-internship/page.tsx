@@ -53,16 +53,17 @@ export default function MeliusSummerInternshipBlog() {
               nicholas chen · august 20, 2026 · 7 min read
             </p>
 
-            <figure className="mb-6 border border-stone-800 bg-stone-950/40 px-6 py-8">
+            <figure className="mb-6">
               <Image
-                src="/meliusai_logo.jpeg"
-                alt="Melius logo"
-                width={96}
-                height={96}
-                className="mx-auto h-24 w-24 rounded-md object-cover"
+                src="/blogs/melius-summer-internship/cover.png"
+                alt="The Melius team in the office"
+                width={1200}
+                height={480}
+                priority
+                className="w-full object-cover"
               />
               <figcaption className="text-stone-500 text-xs mt-4 text-center italic">
-                Melius, an agents lab for creative work
+                the Melius team in the office
               </figcaption>
             </figure>
             <hr className="border-stone-700 mb-8" />
