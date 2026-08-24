@@ -173,7 +173,7 @@ export default function Home() {
           <p id="writing" className="scroll-mt-10 font-normal">
             sometimes i enjoy writing blogs like{' '}
             <TextLink href="/blogs/ontology-text-to-sql">why ontology for text-to-sql?</TextLink>,
-            and some projects i&apos;ve made include{' '}
+            and some cool things i&apos;ve made include{' '}
             <TextLink href="https://github.com/nicholaschen09/metallic-blob" external>
               metallic blob
             </TextLink>
