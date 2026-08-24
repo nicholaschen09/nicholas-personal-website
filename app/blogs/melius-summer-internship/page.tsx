@@ -288,7 +288,16 @@ export default function MeliusSummerInternshipBlog() {
                 </p>
                 <p className="mt-4">
                   After all the prep, seeing Melius finally launch was really cool! Check out the
-                  launch here.
+                  launch{' '}
+                  <Link
+                    href="https://x.com/n0w00j/status/2075594907285139867?s=20"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-stone-500 underline-offset-2 transition-colors hover:text-stone-100 hover:decoration-stone-300"
+                  >
+                    here
+                  </Link>
+                  .
                 </p>
                 <BlogFigure
                   src="/blogs/melius-summer-internship/offsite-dinner.png"
