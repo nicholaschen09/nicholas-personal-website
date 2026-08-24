@@ -31,22 +31,21 @@ export default function OntologyTextToSqlBlog() {
         <TableOfContents sections={sections} title="contents" />
         <ImageLightbox>
           <article className="w-full lg:max-w-lg lg:mx-auto">
-            {/* Back link */}
-            <Link
-              href="/"
-              className="inline-flex items-center gap-2 text-stone-500 btn-interactive mb-4 text-sm px-2 py-1 -ml-2 rounded-md"
-            >
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path
-                  d="M10 12L6 8L10 4"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              back
-            </Link>
+            <header className="mb-6 text-xs font-normal leading-none md:text-sm">
+              <Link
+                href="/"
+                className="text-xs font-normal leading-none text-stone-50 transition-colors hover:text-stone-300 md:text-sm"
+              >
+                Nicholas Chen
+              </Link>
+              <span className="text-stone-500"> / </span>
+              <Link
+                href="/writing"
+                className="text-stone-400 transition-colors hover:text-stone-200"
+              >
+                writing
+              </Link>
+            </header>
 
             {/* Title */}
             <h1 className="text-2xl md:text-3xl font-medium text-white mb-2">
