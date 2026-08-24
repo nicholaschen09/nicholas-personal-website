@@ -1,305 +1,188 @@
 'use client';
-import Link from 'next/link';
+
 import Image from 'next/image';
-import { useState, useEffect, useRef, useCallback } from 'react';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
 import Footer from '@/components/Footer';
 
-type LogoHoverLinkProps = {
+type TextLinkProps = {
   href: string;
-  label: string;
-  logoSrc?: string;
-  logoAlt: string;
-  logoClassName?: string;
+  children: React.ReactNode;
+  external?: boolean;
 };
 
-function LogoHoverLink({ href, label, logoSrc, logoAlt, logoClassName = '' }: LogoHoverLinkProps) {
+function TextLink({ href, children, external = false }: TextLinkProps) {
+  const className =
+    'underline decoration-stone-500/70 underline-offset-4 transition-colors hover:text-stone-100 hover:decoration-stone-200';
+
+  if (external) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group flex items-center gap-2 -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40"
-    >
-      <span className="min-w-0 text-stone-400 transition-colors group-hover:text-stone-200">
-        {label}
-      </span>
-      <span className="ml-auto flex h-4 w-8 shrink-0 items-center justify-end opacity-0 transition-opacity duration-150 group-hover:opacity-100">
-        {logoSrc ? (
-          <Image
-            src={logoSrc}
-            alt={logoAlt}
-            width={32}
-            height={16}
-            className={`max-h-4 max-w-8 object-contain ${logoClassName}`}
-          />
-        ) : (
-          <span className="text-xs font-medium text-stone-200">{logoAlt}</span>
-        )}
-      </span>
-    </a>
+    <Link href={href} className={className}>
+      {children}
+    </Link>
   );
 }
 
+const navItems = [
+  { href: '/writing', label: 'writing' },
+  { href: '/projects', label: 'projects' },
+];
+
+const photos = [
+  { src: '/home/photo-1.jpg', alt: 'New York buildings at dusk' },
+  { src: '/home/photo-2.jpg', alt: 'Jersey City skyline from a pier' },
+  { src: '/home/photo-3.jpg', alt: 'Waterfront at sunset' },
+];
+
 export default function Home() {
-  const [isHovering, setIsHovering] = useState(false);
-  const [typedChars, setTypedChars] = useState(0);
-  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const [activePhoto, setActivePhoto] = useState(0);
 
-  const [contextMenu, setContextMenu] = useState(false);
-  const [copied, setCopied] = useState(false);
-
-  const handleContextMenu = useCallback((e: React.MouseEvent) => {
-    e.preventDefault();
-    setCopied(false);
-    setContextMenu(true);
-  }, []);
-
-  const handleCopySvg = useCallback(async (e: React.MouseEvent) => {
-    e.stopPropagation();
-    try {
-      const res = await fetch('/ghcat.svg');
-      if (!res.ok) throw new Error('Failed to copy SVG');
-      const svgText = await res.text();
-      await navigator.clipboard.writeText(svgText);
-      setCopied(true);
-      setTimeout(() => {
-        setContextMenu(false);
-        setCopied(false);
-      }, 1500);
-    } catch {
-      // silent fail
-    }
-  }, []);
-
-  useEffect(() => {
-    if (!contextMenu || copied) return;
-    const close = () => setContextMenu(false);
-    window.addEventListener('click', close);
-    return () => window.removeEventListener('click', close);
-  }, [contextMenu, copied]);
-
-  const extraChars = 'holas';
-
-  useEffect(() => {
-    if (intervalRef.current) clearInterval(intervalRef.current);
-
-    const isComplete = isHovering ? typedChars >= extraChars.length : typedChars <= 0;
-    if (isComplete) {
-      intervalRef.current = null;
-      return;
-    }
-
-    intervalRef.current = setInterval(
-      () => {
-        setTypedChars((prev) =>
-          isHovering ? Math.min(prev + 1, extraChars.length) : Math.max(prev - 1, 0),
-        );
-      },
-      isHovering ? 80 : 60,
-    );
-
-    return () => {
-      if (intervalRef.current) clearInterval(intervalRef.current);
-    };
-  }, [extraChars.length, isHovering, typedChars]);
-
-  const getDisplayName = () => {
-    if (typedChars > 0 || isHovering) {
-      return 'hi im nic' + extraChars.slice(0, typedChars);
-    }
-    return 'hi im nic';
+  const showPreviousPhoto = () => {
+    setActivePhoto((current) => (current - 1 + photos.length) % photos.length);
   };
 
+  const showNextPhoto = () => {
+    setActivePhoto((current) => (current + 1) % photos.length);
+  };
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'ArrowLeft') {
+        setActivePhoto((current) => (current - 1 + photos.length) % photos.length);
+      }
+
+      if (event.key === 'ArrowRight') {
+        setActivePhoto((current) => (current + 1) % photos.length);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-4 md:p-12 relative z-10">
-      {/* Hero Section */}
-      <div className="max-w-lg w-full space-y-3 md:space-y-4 mx-auto">
-        <div className="flex items-start justify-between mb-0">
-          <h1 className="text-xl sm:text-2xl md:text-3xl font-normal text-white">
-            {getDisplayName()}
+    <main className="min-h-screen bg-[#1a1a1a] px-6 py-10 text-stone-300 md:px-12 md:py-12">
+      <div className="mx-auto flex min-h-[calc(100vh-6rem)] w-full max-w-lg flex-col">
+        <header className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+          <h1 className="text-xs font-normal leading-none text-stone-50 md:text-sm">
+            Nicholas Chen
           </h1>
-          <div className="relative -mt-3">
-            <div
-              className="flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-md cursor-pointer"
-              onMouseEnter={() => setIsHovering(true)}
-              onMouseLeave={() => setIsHovering(false)}
-              onContextMenu={handleContextMenu}
+
+          <nav aria-label="Primary navigation" className="flex flex-wrap gap-x-8 gap-y-3">
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-xs font-normal text-stone-400 transition-colors hover:text-stone-100 md:text-sm"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+        </header>
+
+        <div className="mt-8 md:mt-10">
+          <div className="relative h-48 w-full overflow-hidden md:h-60">
+            <button
+              type="button"
+              onClick={showNextPhoto}
+              className="relative block h-full w-full cursor-pointer"
+              aria-label="Show next photo"
             >
-              <img
-                src="/ghcat.svg"
-                alt="GitHub Cat"
-                className="w-8 h-8 md:w-10 md:h-10 opacity-80"
+              <Image
+                src={photos[activePhoto].src}
+                alt={photos[activePhoto].alt}
+                fill
+                priority
+                sizes="(min-width: 768px) 32rem, calc(100vw - 3rem)"
+                className="object-cover"
               />
-            </div>
-            {contextMenu && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 z-50">
-                <button
-                  type="button"
-                  onClick={handleCopySvg}
-                  className="flex items-center justify-center gap-2 px-3 py-2.5 text-sm text-stone-400 bg-stone-800/80 hover:bg-stone-700/40 hover:text-stone-200 rounded-md whitespace-nowrap w-[120px] transition-colors"
-                >
-                  {copied ? (
-                    <>
-                      <svg
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M20 6L9 17l-5-5" />
-                      </svg>
-                      Copied!
-                    </>
-                  ) : (
-                    <>
-                      <svg
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
-                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
-                      </svg>
-                      Copy SVG
-                    </>
-                  )}
-                </button>
+            </button>
+
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 flex items-center justify-center gap-4 bg-gradient-to-t from-black/45 to-transparent px-4 pb-3 pt-10 text-white">
+              <button
+                type="button"
+                onClick={showPreviousPhoto}
+                className="pointer-events-auto flex h-7 w-7 items-center justify-center rounded-full text-lg leading-none text-white/90 transition-colors hover:text-white"
+                aria-label="Show previous photo"
+              >
+                ←
+              </button>
+
+              <div className="flex items-center gap-2">
+                {photos.map((photo, index) => (
+                  <button
+                    key={photo.src}
+                    type="button"
+                    onClick={() => setActivePhoto(index)}
+                    className={`pointer-events-auto h-1.5 w-1.5 rounded-full transition-colors ${
+                      index === activePhoto ? 'bg-white' : 'bg-white/45 hover:bg-white/75'
+                    }`}
+                    aria-label={`Show photo ${index + 1}`}
+                  />
+                ))}
               </div>
-            )}
-          </div>
-        </div>
 
-        <div>
-          <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">currently</p>
-          <ul className="text-xs md:text-sm text-stone-400 space-y-1">
-            <li>
-              <LogoHoverLink
-                href="https://uwaterloo.ca/systems-design-engineering/"
-                label="systems design engineering at university of waterloo"
-                logoSrc="/uwaterloo_logo.jpeg"
-                logoAlt="University of Waterloo"
-              />
-            </li>
-          </ul>
-        </div>
-
-        <div className="h-auto min-h-[80px] md:min-h-[60px]">
-          <div className="mt-5 space-y-4">
-            <div>
-              <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">previously</p>
-              <ul className="text-xs md:text-sm text-stone-400 space-y-1">
-                <li>
-                  <LogoHoverLink
-                    href="https://melius.com/"
-                    label="melius"
-                    logoSrc="/meliusai_logo.jpeg"
-                    logoAlt="Melius"
-                  />
-                </li>
-                <li>
-                  <LogoHoverLink
-                    href="https://textql.com/"
-                    label="textql"
-                    logoSrc="/textql.jpg"
-                    logoAlt="TextQL"
-                  />
-                </li>
-                <li>
-                  <LogoHoverLink
-                    href="https://www.ownr.co/"
-                    label="ownr"
-                    logoSrc="/ownrco_logo.jpeg"
-                    logoAlt="Ownr"
-                  />
-                </li>
-                <li>
-                  <LogoHoverLink
-                    href="https://www.rbc.com/"
-                    label="rbc"
-                    logoSrc="/rbc.jpeg"
-                    logoAlt="RBC"
-                  />
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">projects</p>
-              <div className="-mx-2 px-2">
-                <ul className="text-xs md:text-sm text-stone-400 space-y-1">
-                  <li>
-                    <a
-                      href="https://github.com/nicholaschen09/metallic-blob"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200"
-                    >
-                      metallic blob
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://tiktokviewpredictor.vercel.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200"
-                    >
-                      tiktok view predictor
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="https://sql-query-parser.vercel.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200"
-                    >
-                      sql query parser
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/nicholaschen09/tunl"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200"
-                    >
-                      tunl
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div>
-              <p className="mb-2 text-stone-100 text-xs md:text-sm font-medium">writing</p>
-              <div className="-mx-2 px-2">
-                <ul className="text-xs md:text-sm text-stone-400 space-y-1">
-                  <li>
-                    <Link
-                      href="/blogs/ontology-text-to-sql"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200"
-                    >
-                      why ontology for text-to-sql?
-                    </Link>
-                  </li>
-                </ul>
-              </div>
+              <button
+                type="button"
+                onClick={showNextPhoto}
+                className="pointer-events-auto flex h-7 w-7 items-center justify-center rounded-full text-lg leading-none text-white/90 transition-colors hover:text-white"
+                aria-label="Show next photo"
+              >
+                →
+              </button>
             </div>
           </div>
         </div>
 
-        <Footer />
+        <section className="mt-8 space-y-8 text-xs leading-relaxed text-stone-300 md:text-sm">
+          <p className="font-normal">
+            i&apos;m a student at the{' '}
+            <TextLink href="https://uwaterloo.ca/systems-design-engineering/" external>
+              university of waterloo
+            </TextLink>
+            , currently studying systems design engineering. i&apos;ve spent time working at{' '}
+            <TextLink href="https://melius.com/" external>
+              melius
+            </TextLink>
+            ,{' '}
+            <TextLink href="https://textql.com/" external>
+              textql
+            </TextLink>
+            ,{' '}
+            <TextLink href="https://www.ownr.co/" external>
+              ownr
+            </TextLink>
+            , and{' '}
+            <TextLink href="https://www.rbc.com/" external>
+              rbc
+            </TextLink>
+            , usually somewhere between product engineering, agents, data, and creative tools.
+          </p>
+
+          <p id="writing" className="scroll-mt-10 font-normal">
+            sometimes i write things down, like{' '}
+            <TextLink href="/blogs/ontology-text-to-sql">why ontology for text-to-sql?</TextLink>,
+            and some projects i&apos;ve made include{' '}
+            <TextLink href="https://github.com/nicholaschen09/metallic-blob" external>
+              metallic blob
+            </TextLink>
+            ,{' '}
+            <TextLink href="https://tiktokviewpredictor.vercel.app/" external>
+              tiktok view predictor
+            </TextLink>
+            .
+          </p>
+        </section>
+
+        <Footer className="mt-8" />
       </div>
     </main>
   );
