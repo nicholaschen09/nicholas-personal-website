@@ -4,6 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import Footer from '@/components/Footer';
+import photoOne from '@/public/home/photo-1.jpg';
+import photoTwo from '@/public/home/photo-2.jpg';
+import photoThree from '@/public/home/photo-3.jpg';
 
 type TextLinkProps = {
   href: string;
@@ -36,9 +39,9 @@ const navItems = [
 ];
 
 const photos = [
-  { src: '/home/photo-1.jpg', alt: 'New York buildings at dusk' },
-  { src: '/home/photo-2.jpg', alt: 'Jersey City skyline from a pier' },
-  { src: '/home/photo-3.jpg', alt: 'Waterfront at sunset' },
+  { src: photoThree, alt: 'Waterfront at sunset' },
+  { src: photoOne, alt: 'New York buildings at dusk' },
+  { src: photoTwo, alt: 'Jersey City skyline from a pier' },
 ];
 
 export default function Home() {
@@ -99,14 +102,19 @@ export default function Home() {
               className="relative block h-full w-full cursor-pointer"
               aria-label="Show next photo"
             >
-              <Image
-                src={photos[activePhoto].src}
-                alt={photos[activePhoto].alt}
-                fill
-                priority
-                sizes="(min-width: 768px) 32rem, calc(100vw - 3rem)"
-                className="object-cover"
-              />
+              {photos.map((photo, index) => (
+                <Image
+                  key={photo.alt}
+                  src={photo.src}
+                  alt={index === activePhoto ? photo.alt : ''}
+                  fill
+                  priority={index === 0}
+                  sizes="(min-width: 768px) 32rem, calc(100vw - 3rem)"
+                  className={`object-cover transition-opacity duration-200 ${
+                    index === activePhoto ? 'opacity-100' : 'opacity-0'
+                  }`}
+                />
+              ))}
             </button>
 
             <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 flex items-center justify-center gap-4 bg-gradient-to-t from-black/45 to-transparent px-4 pb-3 pt-10 text-white">
