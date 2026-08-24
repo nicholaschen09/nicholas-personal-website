@@ -293,14 +293,6 @@ export default function Home() {
                       why ontology for text-to-sql?
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      href="/blogs/melius-summer-internship"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200"
-                    >
-                      my summer internship with melius
-                    </Link>
-                  </li>
                 </ul>
               </div>
             </div>
