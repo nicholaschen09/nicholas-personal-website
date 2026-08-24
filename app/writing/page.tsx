@@ -3,6 +3,11 @@ import Footer from '@/components/Footer';
 
 const writing = [
   {
+    href: '/blogs/lossless-audio',
+    title: 'how lossless audio compression works',
+    description: 'a visual explainer on flac, mp3, prediction, and what lossless really means',
+  },
+  {
     href: '/blogs/ontology-text-to-sql',
     title: 'why ontology for text-to-sql?',
     description: 'notes on ontologies, context, and making natural language work better with data',
