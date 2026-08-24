@@ -131,6 +131,18 @@ export default function MeliusSummerInternshipBlog() {
                 <h3 className="text-sm md:text-base font-semibold text-stone-200 mt-6 mb-3">
                   how agent skills and context work together
                 </h3>
+                <figure className="mt-6">
+                  <Image
+                    src="/blogs/melius-summer-internship/agent-context-skills.png"
+                    alt="Diagram showing how agent skills and team context combine with a user request"
+                    width={1200}
+                    height={712}
+                    className="w-full object-cover"
+                  />
+                  <figcaption className="text-stone-500 text-xs mt-2 italic">
+                    How agent skills and context work together
+                  </figcaption>
+                </figure>
                 <p>
                   the goal of both features is ultimately to make prompting less repetitive. you
                   tell Mel what you want to create, context gives it what it should already know,
