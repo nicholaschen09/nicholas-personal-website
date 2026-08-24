@@ -58,6 +58,7 @@ export default function Home() {
     e.stopPropagation();
     try {
       const res = await fetch('/ghcat.svg');
+      if (!res.ok) throw new Error('Failed to copy SVG');
       const svgText = await res.text();
       await navigator.clipboard.writeText(svgText);
       setCopied(true);
@@ -82,31 +83,25 @@ export default function Home() {
   useEffect(() => {
     if (intervalRef.current) clearInterval(intervalRef.current);
 
-    if (isHovering) {
-      intervalRef.current = setInterval(() => {
-        setTypedChars((prev) => {
-          if (prev >= extraChars.length) {
-            if (intervalRef.current) clearInterval(intervalRef.current);
-            return prev;
-          }
-          return prev + 1;
-        });
-      }, 80);
-    } else {
-      intervalRef.current = setInterval(() => {
-        setTypedChars((prev) => {
-          if (prev <= 0) {
-            if (intervalRef.current) clearInterval(intervalRef.current);
-            return 0;
-          }
-          return prev - 1;
-        });
-      }, 60);
+    const isComplete = isHovering ? typedChars >= extraChars.length : typedChars <= 0;
+    if (isComplete) {
+      intervalRef.current = null;
+      return;
     }
+
+    intervalRef.current = setInterval(
+      () => {
+        setTypedChars((prev) =>
+          isHovering ? Math.min(prev + 1, extraChars.length) : Math.max(prev - 1, 0),
+        );
+      },
+      isHovering ? 80 : 60,
+    );
+
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
-  }, [isHovering]);
+  }, [extraChars.length, isHovering, typedChars]);
 
   const getDisplayName = () => {
     if (typedChars > 0 || isHovering) {
@@ -300,10 +295,10 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/blogs/lossless-audio"
+                      href="/blogs/melius-summer-internship"
                       className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200"
                     >
-                      how lossless audio compression works
+                      my summer internship with melius
                     </Link>
                   </li>
                 </ul>

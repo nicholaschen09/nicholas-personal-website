@@ -141,17 +141,6 @@ body {
     color: inherit !important;
   }
 
-  /* Lossless audio slider: no hover lightening */
-  .lossless-audio-slider::-webkit-slider-thumb:hover,
-  .lossless-audio-slider::-webkit-slider-thumb:active {
-    opacity: 1;
-    filter: none;
-  }
-  .lossless-audio-slider::-moz-range-thumb:hover,
-  .lossless-audio-slider::-moz-range-thumb:active {
-    filter: none;
-  }
-
   /* Global interactive button/link style */
   .btn-interactive {
     @apply transition-colors hover:bg-stone-700/40 hover:text-stone-200;
