@@ -10,35 +10,48 @@ export interface TOCSection {
 interface TableOfContentsProps {
   sections: TOCSection[];
   title?: string;
+  className?: string;
 }
 
-export default function TableOfContents({ sections, title = 'contents' }: TableOfContentsProps) {
+export default function TableOfContents({
+  sections,
+  title = 'contents',
+  className = '',
+}: TableOfContentsProps) {
   const [activeSection, setActiveSection] = useState<string>('');
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      {
-        rootMargin: '-20% 0px -70% 0px',
-        threshold: 0,
-      },
-    );
+    const updateActiveSection = () => {
+      const activationLine = window.innerHeight * 0.3;
+      let currentSection = '';
 
-    sections.forEach((section) => {
-      const element = document.getElementById(section.id);
-      if (element) {
-        observer.observe(element);
+      for (const section of sections) {
+        const element = document.getElementById(section.id);
+        if (!element) continue;
+
+        const rect = element.getBoundingClientRect();
+        if (rect.top <= activationLine && rect.bottom > activationLine) {
+          currentSection = section.id;
+          break;
+        }
+
+        if (rect.top <= activationLine) {
+          currentSection = section.id;
+        }
       }
-    });
 
-    return () => observer.disconnect();
+      setActiveSection(currentSection);
+    };
+
+    updateActiveSection();
+    window.addEventListener('scroll', updateActiveSection, { passive: true });
+    window.addEventListener('resize', updateActiveSection);
+
+    return () => {
+      window.removeEventListener('scroll', updateActiveSection);
+      window.removeEventListener('resize', updateActiveSection);
+    };
   }, [sections]);
 
   // Auto-scroll active section into view within the TOC container
@@ -94,10 +107,12 @@ export default function TableOfContents({ sections, title = 'contents' }: TableO
   return (
     <aside
       ref={scrollContainerRef}
-      className="hidden lg:block w-48 flex-shrink-0 sticky top-12 max-h-[calc(100vh-6rem)] overflow-y-auto px-2 ml-auto"
+      className={`hidden lg:block w-48 flex-shrink-0 sticky top-12 max-h-[calc(100vh-6rem)] overflow-y-auto px-2 ml-auto ${className}`}
     >
       {/* Header */}
-      <h2 className="text-stone-500 text-base mb-4 mt-1 font-medium px-2">{title}</h2>
+      {title ? (
+        <h2 className="text-stone-500 text-base mb-4 mt-1 font-medium px-2">{title}</h2>
+      ) : null}
 
       {/* Links */}
       <ul className="space-y-1.5">

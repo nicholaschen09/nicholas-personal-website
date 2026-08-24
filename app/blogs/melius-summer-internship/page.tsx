@@ -1,11 +1,35 @@
 'use client';
 
+import type { ReactNode } from 'react';
 import { useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Footer from '@/components/Footer';
 import ImageLightbox from '@/components/ImageLightbox';
 import TableOfContents, { TOCSection } from '@/components/TableOfContents';
+
+function BlogFigure({
+  src,
+  alt,
+  width,
+  height,
+  caption,
+  className = 'mt-6',
+}: {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  caption: ReactNode;
+  className?: string;
+}) {
+  return (
+    <figure className={className}>
+      <Image src={src} alt={alt} width={width} height={height} className="w-full object-cover" />
+      <figcaption className="text-stone-500 text-xs mt-2 italic">{caption}</figcaption>
+    </figure>
+  );
+}
 
 export default function MeliusSummerInternshipBlog() {
   const sections: TOCSection[] = useMemo(
@@ -154,12 +178,14 @@ export default function MeliusSummerInternshipBlog() {
                   the agent architecture, build the underlying system, and figure out how to make it
                   feel intuitive inside a creative workflow.
                 </p>
-                <p className="mt-4 text-stone-500 text-xs italic">
-                  Here&apos;s a demo of the feature
-                </p>
-                <p className="mt-2 text-stone-500 text-xs italic">
-                  Agent skills and context in the Melius app settings
-                </p>
+                <p className="mt-4">Here&apos;s a demo of the feature.</p>
+                <BlogFigure
+                  src="/blogs/melius-summer-internship/agent-settings.png"
+                  alt="Agent skills and context in the Melius app settings"
+                  width={1974}
+                  height={906}
+                  caption="Agent skills and context in the Melius app settings"
+                />
               </section>
 
               <section>
@@ -191,9 +217,13 @@ export default function MeliusSummerInternshipBlog() {
                   Mel’s tools. That let the Playground lower the barrier to entry without cutting
                   anyone off from the depth underneath.
                 </p>
-                <p className="mt-4 text-stone-500 text-xs italic">
-                  The playground architecture under the hood
-                </p>
+                <BlogFigure
+                  src="/blogs/melius-summer-internship/playground-architecture.png"
+                  alt="Diagram of the Playground architecture under the hood"
+                  width={1199}
+                  height={247}
+                  caption="The playground architecture under the hood"
+                />
                 <p className="mt-4">
                   This was another project that made me think hard about UX. The whole point was to
                   remove friction for people who might be intimidated by a blank canvas, so a lot of
@@ -211,12 +241,18 @@ export default function MeliusSummerInternshipBlog() {
                   product and UX decisions feel worth it. Lots of learning came out of this and I
                   couldn’t have done it without Ray, who helped get it to the finish line.
                 </p>
-                <p className="mt-4 text-stone-500 text-xs italic">
-                  Showcase of the Playground in Melius
-                </p>
-                <p className="mt-2 text-stone-500 text-xs italic">
-                  An example image generated in the Playground
-                </p>
+                <BlogFigure
+                  src="/blogs/melius-summer-internship/playground-showcase.png"
+                  alt="Showcase of the Playground in Melius"
+                  width={1200}
+                  height={804}
+                  caption={
+                    <>
+                      <span className="block">Showcase of the Playground in Melius</span>
+                      <span className="block">An example image generated in the Playground</span>
+                    </>
+                  }
+                />
               </section>
 
               <section>
@@ -233,9 +269,13 @@ export default function MeliusSummerInternshipBlog() {
                   know each other beyond work. Most of our days ended with playing a few games of
                   Super Smash Bros.
                 </p>
-                <p className="mt-4 text-stone-500 text-xs italic">
-                  The Melius team doing yoga at 8am in the morning
-                </p>
+                <BlogFigure
+                  src="/blogs/melius-summer-internship/yoga.png"
+                  alt="The Melius team doing yoga in the morning"
+                  width={800}
+                  height={438}
+                  caption="The Melius team doing yoga at 8am in the morning"
+                />
                 <p className="mt-4">
                   One of the highlights was our team off-site in upstate New York leading up to
                   launch. We spent three or four days together in a huge house, basically living and
@@ -250,9 +290,13 @@ export default function MeliusSummerInternshipBlog() {
                   After all the prep, seeing Melius finally launch was really cool! Check out the
                   launch here.
                 </p>
-                <p className="mt-4 text-stone-500 text-xs italic">
-                  The team working on the app pre-launch during dinner at the offsite
-                </p>
+                <BlogFigure
+                  src="/blogs/melius-summer-internship/offsite-dinner.png"
+                  alt="The team working on the app during dinner at the offsite"
+                  width={1199}
+                  height={653}
+                  caption="The team working on the app pre-launch during dinner at the offsite"
+                />
               </section>
 
               <section>
