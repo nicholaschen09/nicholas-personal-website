@@ -53,9 +53,10 @@ export default function OntologyTextToSqlBlog() {
             <h1 className="text-2xl md:text-3xl font-medium text-white mb-2">
               why ontology for text-to-sql?
             </h1>
-            <p className="text-stone-500 text-sm mb-6">
-              Nicholas Chen · November 15, 2025 · 6 min read
-            </p>
+            <div className="text-stone-500 text-sm mb-6">
+              <p>Nicholas Chen</p>
+              <p>November 15, 2025</p>
+            </div>
 
             {/* Cover image */}
             <img
