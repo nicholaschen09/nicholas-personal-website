@@ -39,9 +39,9 @@ const navItems = [
 ];
 
 const photos = [
-  { src: photoThree, alt: 'Waterfront at sunset' },
-  { src: photoOne, alt: 'New York buildings at dusk' },
-  { src: photoTwo, alt: 'Jersey City skyline from a pier' },
+  { id: 'waterfront-sunset', src: photoThree, alt: 'Waterfront at sunset' },
+  { id: 'new-york-buildings', src: photoOne, alt: 'New York buildings at dusk' },
+  { id: 'jersey-city-skyline', src: photoTwo, alt: 'Jersey City skyline from a pier' },
 ];
 
 export default function Home() {
@@ -104,7 +104,7 @@ export default function Home() {
             >
               {photos.map((photo, index) => (
                 <Image
-                  key={photo.alt}
+                  key={photo.id}
                   src={photo.src}
                   alt={index === activePhoto ? photo.alt : ''}
                   fill
@@ -130,7 +130,7 @@ export default function Home() {
               <div className="flex items-center gap-2">
                 {photos.map((photo, index) => (
                   <button
-                    key={photo.src}
+                    key={photo.id}
                     type="button"
                     onClick={() => setActivePhoto(index)}
                     className={`pointer-events-auto h-1.5 w-1.5 rounded-full transition-colors ${
