@@ -70,12 +70,15 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#1a1a1a] px-6 py-10 text-stone-300 md:px-12 md:py-12">
       <div className="mx-auto flex min-h-[calc(100vh-6rem)] w-full max-w-lg flex-col">
-        <header className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+        <header className="flex items-center justify-between gap-4">
           <h1 className="text-xs font-normal leading-none text-stone-50 md:text-sm">
             Nicholas Chen
           </h1>
 
-          <nav aria-label="Primary navigation" className="flex flex-wrap gap-x-8 gap-y-3">
+          <nav
+            aria-label="Primary navigation"
+            className="flex flex-wrap gap-x-6 gap-y-2 md:gap-x-8"
+          >
             {navItems.map((item) => (
               <Link
                 key={item.href}
