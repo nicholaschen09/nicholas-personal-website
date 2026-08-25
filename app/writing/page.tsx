@@ -9,6 +9,18 @@ const writing = [
     description: 'Reflections on building agent context, skills, and the Playground at Melius',
   },
   {
+    href: '/blogs/startup-lessons',
+    title: '10 Lessons from Working at Startups',
+    date: 'June 2026',
+    description: 'Notes on product judgment, customers, communication, culture, and engineering',
+  },
+  {
+    href: '/blogs/neural-video-compression',
+    title: 'Learning How to Optimize Video Compression for Neural Networks',
+    date: 'April 2026',
+    description: 'A comma.ai challenge writeup on compressing video for neural network perception',
+  },
+  {
     href: '/blogs/lossless-audio',
     title: 'How Lossless Audio Compression Works',
     date: 'March 2026',
