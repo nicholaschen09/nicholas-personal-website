@@ -209,12 +209,12 @@ export default function QualitySlider() {
           {lossyParams.lossinessPct}%
         </span>
         {' · '}
-        levels:{' '}
+        Levels:{' '}
         <span className="inline-block min-w-[2.5ch] font-normal tabular-nums text-stone-400">
           {lossyParams.levels}
         </span>
         {' · '}
-        kernel:{' '}
+        Kernel:{' '}
         <span className="inline-block min-w-[2.5ch] font-normal tabular-nums text-stone-400">
           {lossyParams.kernelSize}
         </span>

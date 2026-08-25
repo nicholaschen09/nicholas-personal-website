@@ -4,29 +4,29 @@ import Link from 'next/link';
 const projects = [
   {
     href: 'https://github.com/nicholaschen09/metallic-blob',
-    title: 'metallic blob',
-    date: 'march 2026',
+    title: 'Metallic Blob',
+    date: 'March 2026',
     description:
-      'a small visual experiment with a shiny interactive shape that reacts to light and motion',
+      'A small visual experiment with a shiny interactive shape that reacts to light and motion',
   },
   {
     href: 'https://tiktokviewpredictor.vercel.app/',
-    title: 'tiktok view predictor',
-    date: 'october 2025',
-    description: 'a playful predictor for estimating tiktok video views from a few quick inputs',
+    title: 'TikTok View Predictor',
+    date: 'October 2025',
+    description: 'A playful predictor for estimating TikTok video views from a few quick inputs',
   },
   {
     href: 'https://sql-query-parser.vercel.app/',
-    title: 'sql query parser',
-    date: 'may 2025',
+    title: 'SQL Query Parser',
+    date: 'May 2025',
     description:
-      'a tool for parsing sql and turning query structure into something easier to inspect',
+      'A tool for parsing SQL and turning query structure into something easier to inspect',
   },
   {
     href: 'https://github.com/nicholaschen09/tunl',
-    title: 'tunl',
-    date: 'march 2026',
-    description: 'a small project repo from my experiments with simple developer tooling',
+    title: 'Tunl',
+    date: 'March 2026',
+    description: 'A small project repo from my experiments with simple developer tooling',
   },
 ];
 
@@ -42,7 +42,7 @@ export default function ProjectsPage() {
             Nicholas Chen
           </Link>
           <span className="text-stone-500"> / </span>
-          <span className="text-stone-400">projects</span>
+          <span className="text-stone-400">Projects</span>
         </header>
 
         <section className="mt-8 space-y-5 text-xs leading-relaxed md:mt-10 md:text-sm">

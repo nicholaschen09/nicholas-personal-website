@@ -79,7 +79,7 @@ export default function WaveformComparison() {
         />
       </svg>
       <figcaption className="mt-2 text-center text-[11px] text-stone-500">
-        Same clip: original → simulated lossy (low-pass + quantize) → what was removed
+        Same clip: Original → simulated lossy (low-pass + quantize) → what was removed
       </figcaption>
     </figure>
   );

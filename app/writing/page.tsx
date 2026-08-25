@@ -4,21 +4,21 @@ import Footer from '@/components/Footer';
 const writing = [
   {
     href: '/blogs/melius-summer-internship',
-    title: 'my summer internship with melius',
-    date: 'august 2026',
-    description: 'reflections on building agent context, skills, and the Playground at Melius',
+    title: 'My Summer Internship with Melius',
+    date: 'August 2026',
+    description: 'Reflections on building agent context, skills, and the Playground at Melius',
   },
   {
     href: '/blogs/lossless-audio',
-    title: 'how lossless audio compression works',
-    date: 'march 2026',
-    description: 'a visual explainer on flac, mp3, prediction, and what lossless really means',
+    title: 'How Lossless Audio Compression Works',
+    date: 'March 2026',
+    description: 'A visual explainer on FLAC, MP3, prediction, and what lossless really means',
   },
   {
     href: '/blogs/ontology-text-to-sql',
-    title: 'why ontology for text-to-sql?',
-    date: 'november 2025',
-    description: 'notes on ontologies, context, and making natural language work better with data',
+    title: 'Why Ontology for Text-to-SQL?',
+    date: 'November 2025',
+    description: 'Notes on ontologies, context, and making natural language work better with data',
   },
 ];
 
@@ -34,7 +34,7 @@ export default function WritingPage() {
             Nicholas Chen
           </Link>
           <span className="text-stone-500"> / </span>
-          <span className="text-stone-400">writing</span>
+          <span className="text-stone-400">Writing</span>
         </header>
 
         <section className="mt-8 space-y-5 text-xs leading-relaxed md:mt-10 md:text-sm">

@@ -12,18 +12,18 @@ import LosslessComparisonPlayer from './components/LosslessComparisonPlayer';
 export default function LosslessBlog() {
   const sections: TOCSection[] = useMemo(
     () => [
-      { id: 'what-is-lossless', title: 'what is lossless audio?' },
-      { id: 'lossless-vs-lossy', title: 'lossless vs lossy' },
-      { id: 'common-formats', title: 'common formats' },
-      { id: 'mp3-under-the-hood', title: 'mp3: under the hood' },
-      { id: 'why-it-matters', title: 'why does it matter?' },
-      { id: 'how-lossless-compressed', title: 'how is lossless audio compressed?' },
+      { id: 'what-is-lossless', title: 'What is lossless audio?' },
+      { id: 'lossless-vs-lossy', title: 'Lossless vs lossy' },
+      { id: 'common-formats', title: 'Common formats' },
+      { id: 'mp3-under-the-hood', title: 'MP3: Under the hood' },
+      { id: 'why-it-matters', title: 'Why does it matter?' },
+      { id: 'how-lossless-compressed', title: 'How is lossless audio compressed?' },
     ],
     [],
   );
 
   useEffect(() => {
-    document.title = 'how lossless audio compression works' + ' | Nicholas Chen';
+    document.title = 'How lossless audio compression works' + ' | Nicholas Chen';
   }, []);
 
   return (
@@ -44,15 +44,15 @@ export default function LosslessBlog() {
                 href="/writing"
                 className="text-stone-400 transition-colors hover:text-stone-200"
               >
-                writing
+                Writing
               </Link>
               <span className="text-stone-500"> / </span>
-              <span className="text-stone-400">lossless-audio</span>
+              <span className="text-stone-400">Lossless Audio</span>
             </header>
 
             {/* Title */}
             <h1 className="text-2xl md:text-3xl font-medium text-white mb-2">
-              how lossless audio compression works
+              How lossless audio compression works
             </h1>
             <p className="text-stone-500 text-sm mb-6">
               Nicholas Chen · January 2026
@@ -68,20 +68,20 @@ export default function LosslessBlog() {
             >
               <section>
                 <p>
-                  with the rise of high-speed internet and cheap storage, lossless audio has moved
-                  from a niche audiophile obsession to a mainstream feature on platforms like apple
-                  music and tidal. but what is it, exactly? and can you even hear the difference?
+                  With the rise of high-speed internet and cheap storage, lossless audio has moved
+                  from a niche audiophile obsession to a mainstream feature on platforms like Apple
+                  Music and Tidal. But what is it, exactly? And can you even hear the difference?
                 </p>
                 <h2
                   id="what-is-lossless"
                   className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
                 >
-                  what is lossless audio?
+                  What is lossless audio?
                 </h2>
                 <p>
-                  lossless audio refers to any audio format that preserves all of the data from the
-                  original source—usually a cd or a studio master. unlike lossy formats (like mp3 or
-                  aac), lossless compression doesn't throw away any information to save space. if
+                  Lossless audio refers to any audio format that preserves all of the data from the
+                  original source—usually a CD or a studio master. Unlike lossy formats (like MP3 or
+                  AAC), lossless compression doesn't throw away any information to save space. If
                   you take a lossless file, decompress it, and compare it bit-for-bit to the
                   original, they will be identical.
                 </p>
@@ -92,19 +92,19 @@ export default function LosslessBlog() {
                   id="lossless-vs-lossy"
                   className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
                 >
-                  lossless vs lossy
+                  Lossless vs lossy
                 </h2>
                 <p className="mb-4">
-                  lossy formats like mp3 work by using psychoacoustics to identify and remove parts
-                  of the sound that the human ear is less likely to hear. for example, if there's a
+                  Lossy formats like MP3 work by using psychoacoustics to identify and remove parts
+                  of the sound that the human ear is less likely to hear. For example, if there's a
                   very loud sound at one frequency and a much quieter sound at a nearby frequency,
-                  the mp3 encoder might just delete the quiet sound because your brain would "mask"
+                  the MP3 encoder might just delete the quiet sound because your brain would "mask"
                   it anyway.
                 </p>
                 <p className="mb-6">
-                  lossless formats, on the other hand, don't care about what you can or can't hear.
-                  they treat the audio signal as a pure mathematical sequence and use advanced
-                  algorithms (like flac's linear prediction) to pack that data more efficiently
+                  Lossless formats, on the other hand, don't care about what you can or can't hear.
+                  They treat the audio signal as a pure mathematical sequence and use advanced
+                  algorithms (like FLAC's linear prediction) to pack that data more efficiently
                   without losing a single bit.
                 </p>
 
@@ -127,39 +127,39 @@ export default function LosslessBlog() {
                   id="common-formats"
                   className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
                 >
-                  common formats
+                  Common formats
                 </h2>
                 <p className="mb-6">
-                  there are several common lossless formats you'll encounter, each with its own pros
+                  There are several common lossless formats you'll encounter, each with its own pros
                   and cons:
                 </p>
 
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-lg font-medium text-white mb-2">what is FLAC?</h3>
+                    <h3 className="text-lg font-medium text-white mb-2">What is FLAC?</h3>
                     <p>
-                      FLAC (free lossless audio codec) is the gold standard for lossless audio. it's
+                      FLAC (Free Lossless Audio Codec) is the gold standard for lossless audio. It's
                       open-source, widely supported, and offers excellent compression ratios
-                      (typically 50-60% of the original size). it also has great metadata support
+                      (typically 50-60% of the original size). It also has great metadata support
                       and is widely used for archiving music collections.
                     </p>
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-white mb-2">
-                      ALAC (apple lossless audio codec)
+                      ALAC (Apple Lossless Audio Codec)
                     </h3>
                     <p>
-                      ALAC is apple's equivalent to flac. it's used by apple music and is the native
-                      lossless format for ios and macos devices. while it's now open-source, it's
-                      still primarily used within the apple ecosystem.
+                      ALAC is Apple's equivalent to FLAC. It's used by Apple Music and is the native
+                      lossless format for iOS and macOS devices. While it's now open-source, it's
+                      still primarily used within the Apple ecosystem.
                     </p>
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-white mb-2">WAV / AIFF</h3>
                     <p>
-                      these are uncompressed formats. they are literally just the raw pulse-code
-                      modulation (pcm) data. they don't use any compression at all, so they are
-                      perfectly lossless but take up about twice as much space as a flac or alac
+                      These are uncompressed formats. They are literally just the raw pulse-code
+                      modulation (PCM) data. They don't use any compression at all, so they are
+                      perfectly lossless but take up about twice as much space as a FLAC or ALAC
                       file.
                     </p>
                   </div>
@@ -171,12 +171,12 @@ export default function LosslessBlog() {
                   id="mp3-under-the-hood"
                   className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
                 >
-                  mp3: under the hood
+                  MP3: Under the hood
                 </h2>
                 <p>
-                  mp3 compression is fascinatingly complex. it uses a combination of subband coding,
-                  huffman coding, and a mdct (modified discrete cosine transform) to break the audio
-                  into small chunks and compress them. the result is a file that's roughly 10% of
+                  MP3 compression is fascinatingly complex. It uses a combination of subband coding,
+                  Huffman coding, and an MDCT (modified discrete cosine transform) to break the audio
+                  into small chunks and compress them. The result is a file that's roughly 10% of
                   the original size but still sounds "good enough" for most people in most
                   situations.
                 </p>
@@ -187,18 +187,18 @@ export default function LosslessBlog() {
                   id="why-it-matters"
                   className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
                 >
-                  why does it matter?
+                  Why does it matter?
                 </h2>
                 <p className="mb-4">
-                  for most casual listeners on bluetooth headphones, lossless audio won't make a
-                  difference because bluetooth itself uses lossy compression to transmit sound.
-                  however, if you have a high-quality wired setup (a good dac/amp and decent
+                  For most casual listeners on Bluetooth headphones, lossless audio won't make a
+                  difference because Bluetooth itself uses lossy compression to transmit sound.
+                  However, if you have a high-quality wired setup (a good DAC/amp and decent
                   headphones), you might notice a wider "soundstage" and more clarity in complex
                   passages of music.
                 </p>
                 <p className="mb-8">
-                  let's be honest: for 99% of listening, a high-bitrate (320kbps) mp3 is
-                  indistinguishable from lossless. the real value of lossless is for archiving
+                  Let's be honest: for 99% of listening, a high-bitrate (320kbps) MP3 is
+                  indistinguishable from lossless. The real value of lossless is for archiving
                   (having a perfect copy you can always transcode later) and for the peace of mind
                   of knowing you're hearing exactly what the artist intended.
                 </p>
@@ -210,18 +210,18 @@ export default function LosslessBlog() {
                   id="how-lossless-compressed"
                   className="text-xl md:text-2xl font-semibold text-white mb-4 mt-8 scroll-mt-8"
                 >
-                  how is lossless audio compressed?
+                  How is lossless audio compressed?
                 </h2>
                 <p className="mb-6">
-                  lossless compression works by finding patterns in the data and representing them
-                  more efficiently. the most common technique used in audio is linear prediction.
+                  Lossless compression works by finding patterns in the data and representing them
+                  more efficiently. The most common technique used in audio is linear prediction.
                 </p>
 
                 <h3
                   id="linear-prediction-depth"
                   className="text-lg font-medium text-white mb-4 mt-6 scroll-mt-8"
                 >
-                  a deeper look into linear prediction
+                  A deeper look into linear prediction
                 </h3>
                 <p className="mb-6">
                   <MathText text="In digital audio, we have a sequence of samples: \(x[n], x[n-1], x[n-2], \ldots\). These are the amplitudes of the sound wave at specific points in time." />
@@ -251,12 +251,12 @@ const residual = xActual - pred;  // e[n] = 105 - 103 = 2
                 </pre>
 
                 <h3 className="text-lg font-medium text-white mb-2 mt-8">
-                  how do we find the best coefficients?
+                  How do we find the best coefficients?
                 </h3>
                 <p className="mb-4">
-                  the encoder's job is to find the coefficients \( a_k \) that minimize the average
-                  size of the residuals. this is usually done using the levinson-durbin recursion or
-                  by solving the yule-walker equations.
+                  The encoder's job is to find the coefficients \( a_k \) that minimize the average
+                  size of the residuals. This is usually done using the Levinson-Durbin recursion or
+                  by solving the Yule-Walker equations.
                 </p>
                 <p className="mb-6">
                   <MathText
@@ -265,7 +265,7 @@ const residual = xActual - pred;  // e[n] = 105 - 103 = 2
                   />
                 </p>
                 <p className="mb-6">
-                  by finding the 'best fit' line for the audio waveform in each small block of time,
+                  By finding the 'best fit' line for the audio waveform in each small block of time,
                   we can make the residuals as small as possible, which means we can represent them
                   with fewer bits.
                 </p>
@@ -277,22 +277,22 @@ const residual = xActual - pred;  // e[n] = 105 - 103 = 2
                   <MathText text="Higher orders of \( p \) allow for more accurate predictions but require more computation. FLAC typically uses orders between 1 and 32. Simple signals like silence or pure sine waves only need low orders, while complex music might benefit from higher ones." />
                 </p>
 
-                <h3 className="text-lg font-medium text-white mb-2">the key point</h3>
+                <h3 className="text-lg font-medium text-white mb-2">The key point</h3>
                 <p className="mb-8">
                   <MathText text="We aren't throwing away any data. The original sample is just \( x[n] = \hat{x}[n] + e[n] \). As long as we store the coefficients and the residuals, we can perfectly reconstruct the original signal." />
                 </p>
 
-                <h3 className="text-lg font-medium text-white mb-2">what is 'n'?</h3>
+                <h3 className="text-lg font-medium text-white mb-2">What is 'n'?</h3>
                 <p className="mb-6">
                   <MathText text="'n' is the index of the current sample. In a standard CD-quality file, there are 44,100 samples per second. So \( n \) goes from 0 up to 44,100 for each second of audio." />
                 </p>
 
-                <h3 className="text-lg font-medium text-white mb-2">residuals: the 'leftovers'</h3>
+                <h3 className="text-lg font-medium text-white mb-2">Residuals: the 'leftovers'</h3>
                 <p className="mb-4">
                   <MathText text="The residual \( e[n] \) is the difference between what we predicted and what actually happened. Because our predictions are usually quite good, most residuals are very small numbers (close to zero)." />
                 </p>
                 <p className="mb-4">
-                  storing small numbers takes fewer bits than storing large numbers. instead of
+                  Storing small numbers takes fewer bits than storing large numbers. Instead of
                   using a full 16 bits for every sample, we might only need 2 or 3 bits for the
                   residual of a well-predicted sample.
                 </p>
@@ -303,7 +303,7 @@ const residual = xActual - pred;  // e[n] = 105 - 103 = 2
                   <MathText text="This is how we get a smaller file size while still guaranteeing that every bit can be restored during playback." />
                 </p>
 
-                <h3 className="text-lg font-medium text-white mb-2">reconstructing the sound</h3>
+                <h3 className="text-lg font-medium text-white mb-2">Reconstructing the sound</h3>
                 <p className="mb-4">
                   <MathText text="During playback, your computer reads the coefficients and the sequence of residuals from the file. It then runs the same prediction formula and adds the residual back to get the exact original sample." />
                 </p>
@@ -323,8 +323,8 @@ const xReconstructed = pred + residual;  // 103 + 2 = 105 ✓`}
                   Rice Coding: Packing the Residuals
                 </h2>
                 <p className="mb-6">
-                  rice coding is a form of entropy coding that's particularly efficient for data
-                  following a laplace distribution (like audio residuals). it's a way to turn those
+                  Rice coding is a form of entropy coding that's particularly efficient for data
+                  following a Laplace distribution (like audio residuals). It's a way to turn those
                   small numbers into the shortest possible sequence of bits.
                 </p>
                 <p className="mb-6">
@@ -347,9 +347,9 @@ const xReconstructed = pred + residual;  // 103 + 2 = 105 ✓`}
                   <table className="w-full min-w-[200px] border-collapse text-left text-xs">
                     <thead>
                       <tr className="border-b border-stone-600">
-                        <th className="py-2 pr-3 font-medium text-stone-400">residual (e)</th>
+                        <th className="py-2 pr-3 font-medium text-stone-400">Residual (e)</th>
                         <th className="py-2 pr-3 font-medium text-stone-400">
-                          standard binary (4-bit)
+                          Standard binary (4-bit)
                         </th>
                         <th className="py-2 font-medium text-stone-400">Rice code (k=2)</th>
                       </tr>
@@ -385,7 +385,7 @@ const xReconstructed = pred + residual;  // 103 + 2 = 105 ✓`}
 
               <section className="mt-8">
                 <h3 className="text-sm md:text-base font-semibold text-stone-200 mb-3">
-                  references
+                  References
                 </h3>
                 <ul className="space-y-2 text-stone-400 text-xs md:text-sm">
                   <li>
@@ -415,7 +415,7 @@ const xReconstructed = pred + residual;  // 103 + 2 = 105 ✓`}
                       rel="noopener noreferrer"
                       className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200 underline"
                     >
-                      a short study on audio compression
+                      A short study on audio compression
                     </a>
                   </li>
                 </ul>

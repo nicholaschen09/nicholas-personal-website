@@ -27,10 +27,7 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL('https://nicholaschen.me'),
   icons: {
-    icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicon.ico', type: 'image/x-icon' },
-    ],
+    icon: [{ url: '/ghcat.png', type: 'image/png', sizes: '420x420' }],
   },
 };
 

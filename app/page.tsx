@@ -34,8 +34,8 @@ function TextLink({ href, children, external = false }: TextLinkProps) {
 }
 
 const navItems = [
-  { href: '/writing', label: 'writing' },
-  { href: '/projects', label: 'projects' },
+  { href: '/writing', label: 'Writing' },
+  { href: '/projects', label: 'Projects' },
 ];
 
 const photos = [
@@ -155,39 +155,39 @@ export default function Home() {
 
         <section className="mt-8 space-y-8 text-xs leading-relaxed text-stone-300 md:text-sm">
           <p className="font-normal">
-            i&apos;m a student at the{' '}
+            I&apos;m a student at the{' '}
             <TextLink href="https://uwaterloo.ca/systems-design-engineering/" external>
-              university of waterloo
+              University of Waterloo
             </TextLink>
-            , currently studying systems design engineering. i&apos;ve spent time working at{' '}
+            , currently studying systems design engineering. I&apos;ve spent time working at{' '}
             <TextLink href="https://melius.com/" external>
-              melius
+              Melius
             </TextLink>
             ,{' '}
             <TextLink href="https://textql.com/" external>
-              textql
+              TextQL
             </TextLink>
             ,{' '}
             <TextLink href="https://www.ownr.co/" external>
-              ownr
+              Ownr
             </TextLink>
             , and{' '}
             <TextLink href="https://www.rbc.com/" external>
-              rbc
+              RBC
             </TextLink>
             , usually somewhere between product engineering, agents, data, and creative tools.
           </p>
 
           <p id="writing" className="scroll-mt-10 font-normal">
-            sometimes i enjoy writing blogs like{' '}
-            <TextLink href="/blogs/ontology-text-to-sql">why ontology for text-to-sql?</TextLink>{' '}
+            Sometimes I enjoy writing blogs like{' '}
+            <TextLink href="/blogs/ontology-text-to-sql">Why Ontology for Text-to-SQL?</TextLink>{' '}
             and building cool things like{' '}
             <TextLink href="https://github.com/nicholaschen09/metallic-blob" external>
-              metallic blob
+              Metallic Blob
             </TextLink>
             ,{' '}
             <TextLink href="https://tiktokviewpredictor.vercel.app/" external>
-              tiktok view predictor
+              TikTok View Predictor
             </TextLink>
             .
           </p>
