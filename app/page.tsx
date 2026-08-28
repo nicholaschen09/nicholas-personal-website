@@ -159,7 +159,7 @@ export default function Home() {
             <TextLink href="https://uwaterloo.ca/systems-design-engineering/" external>
               University of Waterloo
             </TextLink>
-            , currently studying systems design engineering. I&apos;ve spent time working at{' '}
+            , currently studying systems design engineering. I&apos;ve previously spent time working at{' '}
             <TextLink href="https://melius.com/" external>
               Melius
             </TextLink>
