@@ -16,11 +16,29 @@ const projects = [
     description: 'A playful predictor for estimating TikTok video views from a few quick inputs',
   },
   {
+    href: 'https://facial-recognition-neural-network.vercel.app/',
+    title: 'Facial Recognition Neural Network',
+    date: 'August 2026',
+    description: 'A neural network project for experimenting with facial recognition in the browser',
+  },
+  {
     href: 'https://sql-query-parser.vercel.app/',
     title: 'SQL Query Parser',
     date: 'May 2025',
     description:
       'A tool for parsing SQL and turning query structure into something easier to inspect',
+  },
+  {
+    href: 'https://github.com/nicholaschen09/summary-discord-bot',
+    title: 'Summary Discord Bot',
+    date: 'May 2025',
+    description: 'A Discord bot that summarizes unread channel messages when you log on',
+  },
+  {
+    href: 'https://diff-digest-appp.vercel.app/',
+    title: 'Diff Digest',
+    date: 'May 2025',
+    description: 'A web app that turns GitHub pull request diffs into dual-tone release notes',
   },
   {
     href: 'https://github.com/nicholaschen09/tunl',
