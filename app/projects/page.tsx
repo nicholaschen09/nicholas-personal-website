@@ -10,16 +10,22 @@ const projects = [
       'A small visual experiment with a shiny interactive shape that reacts to light and motion',
   },
   {
-    href: 'https://tiktokviewpredictor.vercel.app/',
-    title: 'TikTok View Predictor',
-    date: 'October 2025',
-    description: 'A playful predictor for estimating TikTok video views from a few quick inputs',
+    href: 'https://github.com/nicholaschen09/tunl',
+    title: 'Tunl',
+    date: 'March 2026',
+    description: 'A small project repo from my experiments with simple developer tooling',
   },
   {
     href: 'https://facial-recognition-neural-network.vercel.app/',
     title: 'Facial Recognition Neural Network',
-    date: 'August 2026',
+    date: 'February 2026',
     description: 'A neural network project for experimenting with facial recognition in the browser',
+  },
+  {
+    href: 'https://tiktokviewpredictor.vercel.app/',
+    title: 'TikTok View Predictor',
+    date: 'October 2025',
+    description: 'A playful predictor for estimating TikTok video views from a few quick inputs',
   },
   {
     href: 'https://sql-query-parser.vercel.app/',
@@ -39,12 +45,6 @@ const projects = [
     title: 'Diff Digest',
     date: 'May 2025',
     description: 'A web app that turns GitHub pull request diffs into dual-tone release notes',
-  },
-  {
-    href: 'https://github.com/nicholaschen09/tunl',
-    title: 'Tunl',
-    date: 'March 2026',
-    description: 'A small project repo from my experiments with simple developer tooling',
   },
 ];
 
