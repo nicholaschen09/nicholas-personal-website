@@ -155,11 +155,11 @@ export default function Home() {
 
         <section className="mt-8 space-y-8 text-xs leading-relaxed text-stone-300 md:text-sm">
           <p className="font-normal">
-            I&apos;m a student at the{' '}
+            I study Systems Design Engineering at{' '}
             <TextLink href="https://uwaterloo.ca/systems-design-engineering/" external>
               University of Waterloo
             </TextLink>
-            , currently studying systems design engineering. I&apos;ve previously spent time working at{' '}
+            . I&apos;ve previously spent time working at{' '}
             <TextLink href="https://melius.com/" external>
               Melius
             </TextLink>
@@ -175,7 +175,7 @@ export default function Home() {
             <TextLink href="https://www.rbc.com/" external>
               RBC
             </TextLink>
-            , usually somewhere between product engineering, agents, data, and creative tools.
+            .
           </p>
 
           <p id="writing" className="scroll-mt-10 font-normal">
