@@ -159,23 +159,23 @@ export default function Home() {
             <TextLink href="https://uwaterloo.ca/systems-design-engineering/" external>
               University of Waterloo
             </TextLink>
-            . I&apos;ve previously spent time working at{' '}
+            . I&apos;ve previously spent time doing product engineering at early-stage startups like{' '}
             <TextLink href="https://melius.com/" external>
               Melius
             </TextLink>
-            ,{' '}
+            {' '}and{' '}
             <TextLink href="https://textql.com/" external>
               TextQL
             </TextLink>
-            ,{' '}
+            , backend work at{' '}
             <TextLink href="https://www.ownr.co/" external>
               Ownr
             </TextLink>
-            , and{' '}
+            , and ML at{' '}
             <TextLink href="https://www.rbc.com/" external>
               RBC
             </TextLink>
-            , mostly doing product engineering.
+            .
           </p>
 
           <p className="font-normal">
