@@ -82,9 +82,9 @@ export default function MeliusSummerInternshipBlog() {
             <figure className="mb-6">
               <Image
                 src="/blogs/melius-summer-internship/cover.png"
-                alt="The Melius team in the office"
-                width={1200}
-                height={480}
+                alt="A Melius canvas project with connected creative agent generations"
+                width={3112}
+                height={2088}
                 priority
                 className="w-full object-cover"
               />
