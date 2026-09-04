@@ -175,13 +175,13 @@ export default function Home() {
             <TextLink href="https://www.rbc.com/" external>
               RBC
             </TextLink>
-            .
+            , mostly doing product engineering.
           </p>
 
-          <p id="writing" className="scroll-mt-10 font-normal">
-            Sometimes I enjoy writing blogs like{' '}
+          <p className="font-normal">
+            In my free time, I enjoy writing blogs like{' '}
             <TextLink href="/blogs/ontology-text-to-sql">Why Ontology for Text-to-SQL?</TextLink>{' '}
-            and building cool things like{' '}
+            and building cool things such as{' '}
             <TextLink href="https://github.com/nicholaschen09/metallic-blob" external>
               Metallic Blob
             </TextLink>
