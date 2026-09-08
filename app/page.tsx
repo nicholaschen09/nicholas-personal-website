@@ -1,11 +1,6 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
 import Footer from '@/components/Footer';
-import photoOne from '@/public/home/photo-1.jpg';
-import photoTwo from '@/public/home/photo-2.jpg';
 import photoThree from '@/public/home/photo-3.jpg';
 
 type TextLinkProps = {
@@ -38,38 +33,7 @@ const navItems = [
   { href: '/projects', label: 'Projects' },
 ];
 
-const photos = [
-  { id: 'waterfront-sunset', src: photoThree, alt: 'Waterfront at sunset' },
-  { id: 'new-york-buildings', src: photoOne, alt: 'New York buildings at dusk' },
-  { id: 'jersey-city-skyline', src: photoTwo, alt: 'Jersey City skyline from a pier' },
-];
-
 export default function Home() {
-  const [activePhoto, setActivePhoto] = useState(0);
-
-  const showPreviousPhoto = () => {
-    setActivePhoto((current) => (current - 1 + photos.length) % photos.length);
-  };
-
-  const showNextPhoto = () => {
-    setActivePhoto((current) => (current + 1) % photos.length);
-  };
-
-  useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'ArrowLeft') {
-        setActivePhoto((current) => (current - 1 + photos.length) % photos.length);
-      }
-
-      if (event.key === 'ArrowRight') {
-        setActivePhoto((current) => (current + 1) % photos.length);
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
-
   return (
     <main className="min-h-screen bg-[#1a1a1a] px-6 py-10 text-stone-300 md:px-12 md:py-12">
       <div className="mx-auto flex min-h-[calc(100vh-6rem)] w-full max-w-lg flex-col">
@@ -96,60 +60,14 @@ export default function Home() {
 
         <div className="mt-8 md:mt-10">
           <div className="relative h-48 w-full overflow-hidden md:h-60">
-            <button
-              type="button"
-              onClick={showNextPhoto}
-              className="relative block h-full w-full cursor-pointer"
-              aria-label="Show next photo"
-            >
-              {photos.map((photo, index) => (
-                <Image
-                  key={photo.id}
-                  src={photo.src}
-                  alt={index === activePhoto ? photo.alt : ''}
-                  fill
-                  priority={index === 0}
-                  sizes="(min-width: 768px) 32rem, calc(100vw - 3rem)"
-                  className={`object-cover transition-opacity duration-200 ${
-                    index === activePhoto ? 'opacity-100' : 'opacity-0'
-                  }`}
-                />
-              ))}
-            </button>
-
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 flex items-center justify-center gap-4 bg-gradient-to-t from-black/45 to-transparent px-4 pb-3 pt-10 text-white">
-              <button
-                type="button"
-                onClick={showPreviousPhoto}
-                className="pointer-events-auto flex h-7 w-7 items-center justify-center rounded-full text-lg leading-none text-white/90 transition-colors hover:text-white"
-                aria-label="Show previous photo"
-              >
-                ←
-              </button>
-
-              <div className="flex items-center gap-2">
-                {photos.map((photo, index) => (
-                  <button
-                    key={photo.id}
-                    type="button"
-                    onClick={() => setActivePhoto(index)}
-                    className={`pointer-events-auto h-1.5 w-1.5 rounded-full transition-colors ${
-                      index === activePhoto ? 'bg-white' : 'bg-white/45 hover:bg-white/75'
-                    }`}
-                    aria-label={`Show photo ${index + 1}`}
-                  />
-                ))}
-              </div>
-
-              <button
-                type="button"
-                onClick={showNextPhoto}
-                className="pointer-events-auto flex h-7 w-7 items-center justify-center rounded-full text-lg leading-none text-white/90 transition-colors hover:text-white"
-                aria-label="Show next photo"
-              >
-                →
-              </button>
-            </div>
+            <Image
+              src={photoThree}
+              alt="Waterfront at sunset"
+              fill
+              priority
+              sizes="(min-width: 768px) 32rem, calc(100vw - 3rem)"
+              className="object-cover"
+            />
           </div>
         </div>
 
