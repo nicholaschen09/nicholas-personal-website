@@ -150,3 +150,9 @@ body {
     @apply bg-stone-500/30 text-stone-100;
   }
 }
+
+/* Keep link hover and keyboard focus styling consistent across the site. */
+a[href]:hover,
+a[href]:focus-visible {
+  color: #f9a8d4;
+}

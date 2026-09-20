@@ -71,7 +71,7 @@ export default function ProjectsPage() {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline decoration-stone-500/70 underline-offset-4 transition-colors hover:text-stone-100 hover:decoration-stone-200"
+                  className="transition-colors"
                 >
                   {item.title}
                 </a>

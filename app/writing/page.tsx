@@ -55,7 +55,7 @@ export default function WritingPage() {
               <div className="flex items-baseline justify-between gap-4">
                 <Link
                   href={item.href}
-                  className="underline decoration-stone-500/70 underline-offset-4 transition-colors hover:text-stone-100 hover:decoration-stone-200"
+                  className="transition-colors"
                 >
                   {item.title}
                 </Link>
