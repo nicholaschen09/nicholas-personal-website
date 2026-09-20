@@ -94,6 +94,9 @@ export default function Home() {
             </TextLink>
             .
           </p>
+          <p className="font-normal">
+            Before I decided to go into engineering, I made lots of <TextLink href="/art">art</TextLink>.
+          </p>
         </section>
 
         <Footer className="mt-8" />
