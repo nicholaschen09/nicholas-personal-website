@@ -6,16 +6,17 @@
 
 :root {
   --foreground-rgb: 255, 255, 255;
-  /* Optionally update or remove these if not used */
-  --background-start-rgb: 220, 220, 220;
-  --background-end-rgb: 220, 220, 220;
+  --page-background: #1a1a1a;
+}
+
+html,
+body,
+body main {
+  background: var(--page-background);
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  /* Remove this rule to avoid conflicts:
-  background: rgb(var(--background-start-rgb));
-  */
 }
 
 @layer utilities {
