@@ -90,7 +90,7 @@ export default function Home() {
             <TextLink href="https://www.rbc.com/" external>
               RBC
             </TextLink>
-            .
+            {' '}and enjoy product engineering.
           </p>
 
           <p className="font-normal">
