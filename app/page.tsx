@@ -58,7 +58,7 @@ export default function Home() {
         </header>
 
         <Image
-          src="/home/ascii-portrait.svg"
+          src="/home/ascii-portrait-clean.svg"
           alt="ASCII portrait of Nicholas"
           width={1120}
           height={848}
