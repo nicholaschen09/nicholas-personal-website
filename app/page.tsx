@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Footer from '@/components/Footer';
-import HomePhotoCarousel from '@/components/HomePhotoCarousel';
 
 type TextLinkProps = {
   href: string;
@@ -56,10 +55,6 @@ export default function Home() {
             ))}
           </nav>
         </header>
-
-        <div className="mt-8 md:mt-10">
-          <HomePhotoCarousel />
-        </div>
 
         <section className="mt-8 space-y-8 text-xs leading-relaxed text-stone-300 md:text-sm">
           <p className="font-normal">
