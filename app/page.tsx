@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Footer from '@/components/Footer';
 
 type TextLinkProps = {
@@ -34,7 +35,7 @@ const navItems = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#1a1a1a] px-6 py-10 text-stone-300 md:px-12 md:py-12">
-      <div className="mx-auto flex min-h-[calc(100vh-6rem)] w-full max-w-lg flex-col">
+      <div className="mx-auto flex min-h-[calc(100vh-6rem)] w-full max-w-[30rem] flex-col">
         <header className="flex items-center justify-between gap-4 text-xs font-normal leading-none md:text-sm">
           <h1 className="text-xs font-normal leading-none text-stone-50 md:text-sm">
             Nicholas Chen
@@ -55,6 +56,17 @@ export default function Home() {
             ))}
           </nav>
         </header>
+
+        <Image
+          src="/home/ascii-portrait.svg"
+          alt="ASCII portrait of Nicholas"
+          width={1120}
+          height={1488}
+          priority
+          unoptimized
+          style={{ display: 'block', width: '100%', maxWidth: 'none', height: 'auto' }}
+          className="mt-8 h-auto w-full md:mt-10"
+        />
 
         <section className="mt-8 space-y-8 text-xs leading-relaxed text-stone-300 md:text-sm">
           <p className="font-normal">

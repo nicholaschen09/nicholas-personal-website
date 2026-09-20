@@ -28,10 +28,10 @@ export default function LosslessBlog() {
 
   return (
     <main className="min-h-screen bg-[#1a1a1a] px-6 pb-12 pt-10 text-stone-300 md:px-12 md:pt-12">
-      <div className="max-w-6xl mx-auto lg:grid lg:grid-cols-[1fr_minmax(0,32rem)_1fr] lg:gap-8 lg:items-start">
+      <div className="max-w-6xl mx-auto lg:grid lg:grid-cols-[1fr_minmax(0,30rem)_1fr] lg:gap-8 lg:items-start">
         <TableOfContents sections={sections} title="" className="lg:mt-14" />
         <ImageLightbox>
-          <article className="w-full lg:max-w-lg lg:mx-auto">
+          <article className="w-full max-w-[30rem] mx-auto">
             <header className="mb-6 text-xs font-normal leading-none md:text-sm">
               <Link
                 href="/"
