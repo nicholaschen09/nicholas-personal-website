@@ -1,7 +1,6 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
-import photoThree from '@/public/home/photo-3.jpg';
+import HomePhotoCarousel from '@/components/HomePhotoCarousel';
 
 type TextLinkProps = {
   href: string;
@@ -59,16 +58,7 @@ export default function Home() {
         </header>
 
         <div className="mt-8 md:mt-10">
-          <div className="relative h-48 w-full overflow-hidden md:h-60">
-            <Image
-              src={photoThree}
-              alt="Waterfront at sunset"
-              fill
-              priority
-              sizes="(min-width: 768px) 32rem, calc(100vw - 3rem)"
-              className="object-cover"
-            />
-          </div>
+          <HomePhotoCarousel />
         </div>
 
         <section className="mt-8 space-y-8 text-xs leading-relaxed text-stone-300 md:text-sm">
