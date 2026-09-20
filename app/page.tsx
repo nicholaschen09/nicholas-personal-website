@@ -70,23 +70,23 @@ export default function Home() {
 
         <section className="mt-8 space-y-8 text-xs leading-relaxed text-stone-300 md:text-sm">
           <p className="font-normal">
-            I study Systems Design Engineering at{' '}
+            I currently study Systems Design Engineering at{' '}
             <TextLink href="https://uwaterloo.ca/systems-design-engineering/" external>
               University of Waterloo
             </TextLink>
-            . I&apos;ve previously spent time doing product engineering at early-stage startups like{' '}
+            . I&apos;ve previously worked on software at{' '}
             <TextLink href="https://melius.com/" external>
               Melius
             </TextLink>
-            {' '}and{' '}
+            ,{' '}
             <TextLink href="https://textql.com/" external>
               TextQL
             </TextLink>
-            , backend work at{' '}
+            ,{' '}
             <TextLink href="https://www.ownr.co/" external>
               Ownr
             </TextLink>
-            , and ML at{' '}
+            , and{' '}
             <TextLink href="https://www.rbc.com/" external>
               RBC
             </TextLink>
