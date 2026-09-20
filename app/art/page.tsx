@@ -4,7 +4,6 @@ import Footer from '@/components/Footer';
 import ArtGallery from './ArtGallery';
 
 export const metadata: Metadata = {
-  title: 'Art | Nicholas Chen',
   description: 'A gallery of drawings, paintings, and sculpture by Nicholas Chen.',
 };
 
