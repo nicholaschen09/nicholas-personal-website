@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import Footer from '@/components/Footer';
 
 type TextLinkProps = {
@@ -56,17 +55,6 @@ export default function Home() {
             ))}
           </nav>
         </header>
-
-        <Image
-          src="/home/ascii-portrait-clean.svg"
-          alt="ASCII portrait of Nicholas"
-          width={1120}
-          height={848}
-          priority
-          unoptimized
-          style={{ display: 'block', width: '100%', maxWidth: 'none', height: 'auto' }}
-          className="mt-8 h-auto w-full md:mt-10"
-        />
 
         <section className="mt-8 space-y-8 text-xs leading-relaxed text-stone-300 md:text-sm">
           <p className="font-normal">
