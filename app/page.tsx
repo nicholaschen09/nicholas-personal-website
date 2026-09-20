@@ -61,7 +61,7 @@ export default function Home() {
           src="/home/ascii-portrait.svg"
           alt="ASCII portrait of Nicholas"
           width={1120}
-          height={1488}
+          height={848}
           priority
           unoptimized
           style={{ display: 'block', width: '100%', maxWidth: 'none', height: 'auto' }}
