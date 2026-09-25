@@ -398,6 +398,7 @@ export default function MeliusSummerInternshipBlog() {
                   <TeamLink href="https://www.linkedin.com/in/jahowyu">Jahow</TeamLink>,{' '}
                   <TeamLink href="https://www.linkedin.com/in/alexch7">Alex</TeamLink>,{' '}
                   <TeamLink href="https://www.linkedin.com/in/winson-d">Winson</TeamLink>,{' '}
+                  <TeamLink href="https://www.linkedin.com/in/mayaagnihotri">Maya</TeamLink>,{' '}
                   <TeamLink href="https://www.linkedin.com/in/samanthakuang/">Samantha</TeamLink>{' '}
                   and{' '}
                   <TeamLink href="https://www.linkedin.com/in/hello-world-max-allen">Max</TeamLink>{' '}
