@@ -97,7 +97,11 @@ export default function Home() {
             .
           </p>
           <p className="font-normal">
-            Before I decided to go into engineering, I made lots of <TextLink href="/art">art</TextLink>.
+            Before I decided to go into engineering, I made lots of <TextLink href="/art">art</TextLink>,
+            and in 2025, I listened to 172,706 minutes of{' '}
+            <TextLink href="https://open.spotify.com/user/nicholastakao" external>
+              music
+            </TextLink>.
           </p>
         </section>
 
