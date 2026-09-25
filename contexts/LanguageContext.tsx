@@ -524,10 +524,8 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.ontology.futureP3':
       "as data landscapes grow more complex - more sources, more tables, more tools, more users - the need for ontologies increases exponentially. without an ontology, complexity scales badly. every new data source requires everyone to learn new table structures. every new analyst needs to be trained on all the business logic. every new tool needs custom integration. with an ontology, complexity scales linearly. new data sources get mapped to existing entities. new analysts learn the ontology once. new tools integrate with the ontology layer. the future of data isn't less complex - it's more complex but better organized. ontologies are how we manage that complexity without drowning in it.",
     'blog.ontology.referencesTitle': 'references',
-    'blog.ontology.references.builtin': 'builtin.com/data-science/ontology',
     'blog.ontology.references.palantir': 'blog.palantir.com - ontology finding meaning in data',
     'blog.ontology.references.palantirDocs': 'palantir.com/docs/foundry/ontology/overview',
-    'blog.ontology.references.textql': 'docs.textql.com - ontology overview',
     'blog.ontology.note': 'note: all images in the original article were generated or taken from',
 
     // Sample prompts
@@ -1218,10 +1216,8 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.ontology.futureP3':
       '随着数据景观变得更加复杂——更多来源、更多表、更多工具、更多用户——对本体的需求呈指数级增长。没有本体，复杂性扩展得很糟糕。每个新数据源都需要每个人学习新的表结构。每个新分析师都需要接受所有业务逻辑的培训。每个新工具都需要自定义集成。有了本体，复杂性线性扩展。新数据源映射到现有实体。新分析师学习本体一次。新工具与本体层集成。数据的未来不是更不复杂——它更复杂但组织得更好。本体是我们管理这种复杂性而不被淹没的方式。',
     'blog.ontology.referencesTitle': '参考文献',
-    'blog.ontology.references.builtin': 'builtin.com/data-science/ontology',
     'blog.ontology.references.palantir': 'blog.palantir.com - 本体在数据中寻找意义',
     'blog.ontology.references.palantirDocs': 'palantir.com/docs/foundry/ontology/overview',
-    'blog.ontology.references.textql': 'docs.textql.com - 本体概述',
     'blog.ontology.note': '注：原始文章中的所有图像都是从',
 
     // Sample prompts

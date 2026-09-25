@@ -462,20 +462,10 @@ export default function OntologyTextToSqlBlog() {
                 <ul className="space-y-2 text-stone-400 text-xs md:text-sm">
                   <li>
                     <a
-                      href="https://builtin.com/data-science/ontology"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200 underline"
-                    >
-                      builtin.com/data-science/ontology
-                    </a>
-                  </li>
-                  <li>
-                    <a
                       href="http://blog.palantir.com/ontology-finding-meaning-in-data-palantir-rfx-blog-series-1-399bd1a5971b"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200 underline"
+                      className="block transition-colors hover:text-stone-200 underline"
                     >
                       blog.palantir.com - Ontology finding meaning in data
                     </a>
@@ -485,19 +475,9 @@ export default function OntologyTextToSqlBlog() {
                       href="https://www.palantir.com/docs/foundry/ontology/overview"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200 underline"
+                      className="block transition-colors hover:text-stone-200 underline"
                     >
                       palantir.com/docs/foundry/ontology/overview
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://docs.textql.com/core/how-it-works/ontology/overview"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200 underline"
-                    >
-                      docs.textql.com - Ontology overview
                     </a>
                   </li>
                   <li>
@@ -505,19 +485,9 @@ export default function OntologyTextToSqlBlog() {
                       href="https://app.textql.com/ontology"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200 underline"
+                      className="block transition-colors hover:text-stone-200 underline"
                     >
                       app.textql.com/ontology
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://textql.com/blog/sql-process"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200 underline"
-                    >
-                      textql.com/blog/sql-process
                     </a>
                   </li>
                   <li>
@@ -525,19 +495,9 @@ export default function OntologyTextToSqlBlog() {
                       href="https://textql.com/blog/why-ontology"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200 underline"
+                      className="block transition-colors hover:text-stone-200 underline"
                     >
                       textql.com/blog/why-ontology
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://textql.com/blog/haskell-in-production"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block -mx-2 px-2 py-1 rounded-md transition-colors hover:bg-stone-700/40 hover:text-stone-200 underline"
-                    >
-                      textql.com/blog/haskell-in-production
                     </a>
                   </li>
                 </ul>
