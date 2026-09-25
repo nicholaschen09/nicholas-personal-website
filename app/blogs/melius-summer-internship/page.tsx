@@ -31,6 +31,19 @@ function BlogFigure({
   );
 }
 
+function TeamLink({ href, children }: { href: string; children: ReactNode }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="transition-colors hover:text-pink-300 focus-visible:text-pink-300"
+    >
+      {children}
+    </a>
+  );
+}
+
 export default function MeliusSummerInternshipBlog() {
   const sections: TOCSection[] = useMemo(
     () => [
@@ -377,8 +390,18 @@ export default function MeliusSummerInternshipBlog() {
                 </p>
                 <p className="mt-4">
                   I’m excited to take everything I learned at Melius with me into whatever I build
-                  next! A huge thank you to Young, Joowon, Arnav, Ray, Jahow, Alex, Winson, Samantha
-                  and Max for making these past few months such a memorable experience.
+                  next! A huge thank you to{' '}
+                  <TeamLink href="https://www.linkedin.com/in/young-k">Young</TeamLink>,{' '}
+                  <TeamLink href="https://www.linkedin.com/in/jookimmy">Joowon</TeamLink>,{' '}
+                  <TeamLink href="https://www.linkedin.com/in/arnav-ramu">Arnav</TeamLink>,{' '}
+                  <TeamLink href="https://www.linkedin.com/in/yoobinraymond">Ray</TeamLink>,{' '}
+                  <TeamLink href="https://www.linkedin.com/in/jahowyu">Jahow</TeamLink>,{' '}
+                  <TeamLink href="https://www.linkedin.com/in/alexch7">Alex</TeamLink>,{' '}
+                  <TeamLink href="https://www.linkedin.com/in/winson-d">Winson</TeamLink>,{' '}
+                  <TeamLink href="https://www.linkedin.com/in/samanthakuang/">Samantha</TeamLink>{' '}
+                  and{' '}
+                  <TeamLink href="https://www.linkedin.com/in/hello-world-max-allen">Max</TeamLink>{' '}
+                  for making these past few months such a memorable experience.
                 </p>
               </section>
             </div>
