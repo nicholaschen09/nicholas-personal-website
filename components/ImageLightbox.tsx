@@ -5,18 +5,23 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 export default function ImageLightbox({ children }: { children: React.ReactNode }) {
   const [src, setSrc] = useState<string | null>(null);
   const [alt, setAlt] = useState('');
+  const [caption, setCaption] = useState('');
   const [visible, setVisible] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const open = useCallback((imgSrc: string, imgAlt: string) => {
+  const open = useCallback((imgSrc: string, imgAlt: string, imgCaption: string) => {
     setSrc(imgSrc);
     setAlt(imgAlt);
+    setCaption(imgCaption);
     requestAnimationFrame(() => setVisible(true));
   }, []);
 
   const close = useCallback(() => {
     setVisible(false);
-    setTimeout(() => setSrc(null), 200);
+    setTimeout(() => {
+      setSrc(null);
+      setCaption('');
+    }, 200);
   }, []);
 
   useEffect(() => {
@@ -44,7 +49,9 @@ export default function ImageLightbox({ children }: { children: React.ReactNode 
       const target = e.target as HTMLElement;
       if (target.tagName === 'IMG') {
         const img = target as HTMLImageElement;
-        open(img.src, img.alt);
+        const captionText =
+          img.closest('figure')?.querySelector('figcaption')?.textContent?.trim() ?? '';
+        open(img.src, img.alt, captionText);
       }
     },
     [open],
@@ -65,12 +72,21 @@ export default function ImageLightbox({ children }: { children: React.ReactNode 
           className={`fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm cursor-zoom-out transition-opacity duration-200 ${visible ? 'opacity-100' : 'opacity-0'}`}
           onClick={close}
         >
-          <img
-            src={src}
-            alt={alt}
-            className={`max-w-[92vw] max-h-[92vh] object-contain rounded-lg shadow-2xl transition-transform duration-200 ${visible ? 'scale-100' : 'scale-95'}`}
+          <figure
+            className={`max-w-[92vw] transition-transform duration-200 ${visible ? 'scale-100' : 'scale-95'}`}
             onClick={(e) => e.stopPropagation()}
-          />
+          >
+            <img
+              src={src}
+              alt={alt}
+              className="max-h-[86vh] max-w-full object-contain rounded-lg shadow-2xl"
+            />
+            {caption && (
+              <figcaption className="mx-auto mt-3 max-w-3xl text-center text-xs italic text-stone-300 md:text-sm">
+                {caption}
+              </figcaption>
+            )}
+          </figure>
           <button
             onClick={close}
             className="absolute top-4 right-4 text-white/70 hover:bg-stone-700/40 hover:text-stone-200 transition-colors p-2 rounded-md"

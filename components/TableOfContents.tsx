@@ -107,7 +107,7 @@ export default function TableOfContents({
   return (
     <aside
       ref={scrollContainerRef}
-      className={`hidden lg:block w-48 flex-shrink-0 sticky top-12 max-h-[calc(100vh-6rem)] overflow-y-auto px-2 ml-auto ${className}`}
+      className={`hidden lg:block w-48 flex-shrink-0 sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto px-2 ml-auto ${className}`}
     >
       {/* Header */}
       {title ? (
@@ -123,7 +123,7 @@ export default function TableOfContents({
               onClick={(e) => handleClick(e, section.id)}
               className={`
                 block text-sm transition-colors duration-200
-                px-2 py-0.5 rounded-md hover:bg-stone-700/40 hover:text-stone-200
+                px-2 py-0.5 rounded-md hover:text-stone-200
                 ${activeSection === section.id ? 'text-stone-100' : 'text-stone-500'}
               `}
             >
