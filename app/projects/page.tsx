@@ -46,6 +46,13 @@ const projects = [
     date: 'May 2025',
     description: 'A web app that turns GitHub pull request diffs into dual-tone release notes',
   },
+  {
+    href: 'https://github.com/InsForge/InsForge',
+    title: 'InsForge',
+    date: 'January 2026',
+    description:
+      'Open-source contributions to InsForge, including SQL safety fixes and minimap navigation',
+  },
 ];
 
 export default function ProjectsPage() {
