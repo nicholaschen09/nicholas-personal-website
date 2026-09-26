@@ -25,7 +25,7 @@ const projects = [
     href: 'https://github.com/InsForge/InsForge/pull/671',
     title: 'InsForge',
     date: 'January 2026',
-    description: 'Open source contributions, including SQL safety fixes.',
+    description: 'Open source contributions focused on SQL safety checks',
   },
   {
     href: 'https://tiktokviewpredictor.vercel.app/',
