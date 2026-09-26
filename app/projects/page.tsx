@@ -22,11 +22,10 @@ const projects = [
     description: 'A neural network project for experimenting with facial recognition in the browser',
   },
   {
-    href: 'https://github.com/InsForge/InsForge',
+    href: 'https://github.com/InsForge/InsForge/pull/671',
     title: 'InsForge',
     date: 'January 2026',
-    description:
-      'Open source contributions, including SQL safety fixes and minimap navigation.',
+    description: 'Open source contributions, including SQL safety fixes.',
   },
   {
     href: 'https://tiktokviewpredictor.vercel.app/',
