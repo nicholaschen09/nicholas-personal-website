@@ -26,7 +26,7 @@ const projects = [
     title: 'InsForge',
     date: 'January 2026',
     description:
-      'Open-source contributions to InsForge, including SQL safety fixes and minimap navigation',
+      'Open source contributions, including SQL safety fixes and minimap navigation.',
   },
   {
     href: 'https://tiktokviewpredictor.vercel.app/',
