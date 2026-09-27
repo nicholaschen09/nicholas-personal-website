@@ -465,7 +465,7 @@ export default function OntologyTextToSqlBlog() {
                       href="http://blog.palantir.com/ontology-finding-meaning-in-data-palantir-rfx-blog-series-1-399bd1a5971b"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block transition-colors hover:text-stone-200 underline"
+                      className="block no-underline text-stone-400 transition-colors hover:text-pink-300 focus-visible:text-pink-300"
                     >
                       blog.palantir.com - Ontology finding meaning in data
                     </a>
@@ -475,7 +475,7 @@ export default function OntologyTextToSqlBlog() {
                       href="https://www.palantir.com/docs/foundry/ontology/overview"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block transition-colors hover:text-stone-200 underline"
+                      className="block no-underline text-stone-400 transition-colors hover:text-pink-300 focus-visible:text-pink-300"
                     >
                       palantir.com/docs/foundry/ontology/overview
                     </a>
@@ -485,7 +485,7 @@ export default function OntologyTextToSqlBlog() {
                       href="https://app.textql.com/ontology"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block transition-colors hover:text-stone-200 underline"
+                      className="block no-underline text-stone-400 transition-colors hover:text-pink-300 focus-visible:text-pink-300"
                     >
                       app.textql.com/ontology
                     </a>
@@ -495,7 +495,7 @@ export default function OntologyTextToSqlBlog() {
                       href="https://textql.com/blog/why-ontology"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block transition-colors hover:text-stone-200 underline"
+                      className="block no-underline text-stone-400 transition-colors hover:text-pink-300 focus-visible:text-pink-300"
                     >
                       textql.com/blog/why-ontology
                     </a>

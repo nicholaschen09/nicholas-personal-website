@@ -1,236 +1,26 @@
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 
-const codeBlocks = {
-  files: `dataset/train/nic
-dataset/train/other`,
-  preprocess: `$ python preprocess.py
-Processing directory: ../dataset/train/nic
-Successfully processed and saved: ../processed/train/nic/nic_3.jpeg
-Successfully processed and saved: ../processed/train/nic/nic_2.jpeg
-Successfully processed and saved: ../processed/train/nic/nic_1.jpeg
-Processing directory: ../dataset/train/other
-Successfully processed and saved: ../processed/train/other/sam5.jpg
-Successfully processed and saved: ../processed/train/other/sam4.jpg
-Successfully processed and saved: ../processed/train/other/sam3.jpg
-Successfully processed and saved: ../processed/train/other/sam2.jpg
-Successfully processed and saved: ../processed/train/other/sam1.jpg`,
-  train: `$ python train.py
-Epoch [1/10],  Loss: 0.6947
-Epoch [2/10],  Loss: 1.0903
-Epoch [3/10],  Loss: 0.2861
-Epoch [4/10],  Loss: 0.2743
-Epoch [5/10],  Loss: 0.0942
-Epoch [6/10],  Loss: 0.0605
-Epoch [7/10],  Loss: 0.0180
-Epoch [8/10],  Loss: 0.0031
-Epoch [9/10],  Loss: 0.0005
-Epoch [10/10], Loss: 0.0001
-Model saved as model.pt
-Training completed successfully!`,
-  evaluate: `$ python evaluate.py
-Accuracy on test dataset: 80.00%`,
-  run: `python preprocess.py   # Preprocess faces
-python train.py        # Train the model
-python evaluate.py     # Evaluate accuracy
-python webcam.py       # Webcam demo`,
-};
-
-function Section({
-  title,
-  children,
-}: {
-  title: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <section>
-      <h2 className="mb-3 text-lg font-semibold text-stone-100 md:text-xl">{title}</h2>
-      <div className="space-y-4">{children}</div>
-    </section>
-  );
-}
-
-function CodeBlock({ children }: { children: string }) {
-  return (
-    <pre className="overflow-x-auto rounded-md border border-stone-700 bg-stone-900 p-4 font-mono text-[10px] leading-relaxed text-stone-200 md:text-xs">
-      {children}
-    </pre>
-  );
-}
-
 export default function TikTokViewPredictorPage() {
   return (
-    <main className="min-h-screen bg-[#1a1a1a] px-6 pb-12 pt-10 text-stone-300 md:px-12 md:pt-12">
+    <main className="tiktok-view-predictor-page min-h-screen bg-[#1a1a1a] px-6 pb-12 pt-10 text-stone-300 md:px-12 md:pt-12">
       <article className="mx-auto w-full max-w-[30rem]">
-        <header className="sticky top-0 z-40 -mx-6 mb-6 bg-[#1a1a1a]/95 px-6 py-4 text-xs font-normal leading-none backdrop-blur md:-mx-12 md:px-12 md:text-sm">
-          <Link
-            href="/"
-            className="text-xs font-normal leading-none text-stone-50 transition-colors hover:text-stone-300 md:text-sm"
-          >
-            Nicholas Chen
-          </Link>
-          <span className="text-stone-500"> / </span>
-          <Link href="/projects" className="text-stone-400 transition-colors hover:text-stone-200">
-            Projects
-          </Link>
-          <span className="text-stone-500"> / </span>
-          <span className="text-stone-400">TikTok View Predictor</span>
-        </header>
-
-        <h1 className="mb-3 text-2xl font-medium text-white md:text-3xl">
-          Facial Recognition Neural Network
-        </h1>
-        <p className="mb-6 text-sm text-stone-500">
-          Nicholas Chen ·{' '}
-          <Link
-            href="https://github.com/nicholaschen09"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="no-underline transition-colors hover:text-stone-100"
-          >
-            GitHub
-          </Link>
-        </p>
-
-        <div className="space-y-8 text-xs leading-relaxed md:text-sm">
-          <section className="space-y-4">
-            <p>
-              Modern devices unlock with your face in under a second. I wanted to rebuild a
-              minimal version of that experience from scratch: collect a small dataset of faces,
-              train a convolutional neural network, and use it to recognise whether the camera is
-              currently seeing me (&quot;nic&quot;) or someone else (&quot;other&quot;).
-            </p>
-            <p>
-              The project is organised as a small, production-style pipeline: raw images go through
-              a preprocessing stage, get converted into clean face crops, are fed into a CNN for
-              training, then evaluated and finally wired into a real-time webcam script.
-            </p>
-          </section>
-
-          <Section title="Pipeline Overview">
-            <h3 className="text-base font-semibold text-stone-100">
-              1. Raw Images to Processed Faces (<code>preprocess.py</code>)
-            </h3>
-            <p>The dataset starts as folders of images grouped by identity, for example:</p>
-            <CodeBlock>{codeBlocks.files}</CodeBlock>
-            <p>
-              <code>preprocess.py</code> walks these directories, runs OpenCV&apos;s{' '}
-              <code>haarcascade_frontalface_default.xml</code> detector on each image, then
-              converts the frame to grayscale, crops a tight bounding box around each detected face,
-              resizes to a fixed 96 x 96 resolution, and writes the crop into a mirrored{' '}
-              <code>processed/train/&lt;class&gt;</code> structure.
-            </p>
-            <p>
-              If no face is found, the script logs it so I can clean up low-quality or mislabeled
-              images. By the end, every file in <code>processed/</code> is a clean, normalized input
-              for the CNN.
-            </p>
-            <CodeBlock>{codeBlocks.preprocess}</CodeBlock>
-          </Section>
-
-          <Section title="CNN Model">
-            <h3 className="text-base font-semibold text-stone-100">
-              2. <code>FaceRecognitionCNN</code> (<code>model.py</code>)
-            </h3>
-            <p>
-              The core model is a compact convolutional neural network tailored for 96 x 96
-              grayscale faces. It uses two convolutional blocks, each following Conv to ReLU to
-              MaxPool, growing from 1 channel to 32 and then 64 feature maps.
-            </p>
-            <p>
-              A flattened feature vector of size <code>64 x 21 x 21</code> is fed into a small
-              fully connected head, followed by a final linear layer that outputs{' '}
-              <code>num_classes</code> logits: here, <code>[nic, other]</code>.
-            </p>
-            <p>
-              Mathematically, the network learns a function that maps an input tensor of shape{' '}
-              <code>1 x 96 x 96</code> to a 2-dimensional score vector, where the argmax gives the
-              predicted identity.
-            </p>
-          </Section>
-
-          <Section title="Training & Evaluation">
-            <h3 className="text-base font-semibold text-stone-100">
-              3. Training Loop (<code>train.py</code>)
-            </h3>
-            <p>
-              Training uses <code>torchvision.datasets.ImageFolder</code> on{' '}
-              <code>../processed/train</code>, with transforms that ensure images are grayscale,
-              convert them to tensors, and normalize pixel values to a mean of 0.5 and std of 0.5.
-            </p>
-            <p>
-              Hyperparameters are intentionally simple: batch size 32, 10 epochs, Adam optimizer
-              with a learning rate of <code>1e-3</code>, and cross-entropy loss. After each epoch
-              the script prints the loss and, when training finishes, saves weights to{' '}
-              <code>model.pt</code>.
-            </p>
-            <CodeBlock>{codeBlocks.train}</CodeBlock>
-
-            <h3 className="text-base font-semibold text-stone-100">
-              4. Measuring Accuracy (<code>evaluate.py</code>)
-            </h3>
-            <p>
-              For evaluation, I mirror the training setup but load <code>../processed/test</code>{' '}
-              instead. The script restores <code>FaceRecognitionCNN</code> from{' '}
-              <code>model.pt</code>, runs it on the test loader without gradient tracking, and
-              reports:
-            </p>
-            <CodeBlock>{codeBlocks.evaluate}</CodeBlock>
-            <p>
-              This gives a clean, single metric for how well the system distinguishes Nic from
-              everyone else on unseen data.
-            </p>
-          </Section>
-
-          <Section title="Using the Model">
-            <h3 className="text-base font-semibold text-stone-100">
-              5. Single-Image Inference (<code>inference.py</code>)
-            </h3>
-            <p>
-              To make the model easy to reuse, <code>inference.py</code> exposes a small{' '}
-              <code>predict(image_path)</code> helper. It loads the trained CNN with{' '}
-              <code>num_classes = 2</code>, applies the same preprocessing transforms as training,
-              and returns the human-readable label from <code>[&quot;nic&quot;, &quot;other&quot;]</code>.
-            </p>
-
-            <h3 className="text-base font-semibold text-stone-100">
-              6. Real-Time Webcam Recognition (<code>webcam.py</code>)
-            </h3>
-            <p>
-              The most satisfying part is the webcam demo. It uses OpenCV to grab frames from{' '}
-              <code>VideoCapture(0)</code>, runs the same Haar Cascade detector, feeds each
-              detected face through the CNN, and overlays a bounding box around the face and a label
-              saying either &quot;nic&quot; or &quot;other&quot;.
-            </p>
-            <p>
-              Hit <code>q</code> to exit, and you&apos;ve effectively turned your laptop into a
-              tiny, on-device facial recognition system.
-            </p>
-          </Section>
-
-          <Section title="How to Run It Yourself">
-            <p>From the Python project root, you can reproduce the full pipeline:</p>
-            <CodeBlock>{codeBlocks.run}</CodeBlock>
-          </Section>
-
-          <Section title="Takeaways">
-            <p>
-              Building this project made it clear how much impact careful preprocessing and
-              consistent transforms have on model quality. Even a relatively small CNN can perform
-              surprisingly well when every face is aligned, normalized, and seen through the same
-              lens during training and inference.
-            </p>
-            <p>
-              More than anything, wiring the model into a live webcam loop made the whole thing feel
-              real, turning abstract tensors and loss curves into an interactive tool that either
-              recognises me or confidently says &quot;other&quot;.
-            </p>
-          </Section>
-
-        </div>
-
-        <Footer className="mt-8" />
+      <header className="sticky top-0 z-40 -mx-6 mb-6 bg-[#1a1a1a]/95 px-6 py-4 text-xs font-normal leading-none backdrop-blur md:-mx-12 md:px-12 md:text-sm">
+        <Link
+          href="/"
+          className="text-xs font-normal leading-none text-stone-50 transition-colors hover:text-stone-300 md:text-sm"
+        >
+          Nicholas Chen
+        </Link>
+        <span className="text-stone-500"> / </span>
+        <Link href="/projects" className="text-stone-400 transition-colors hover:text-stone-200">
+          Projects
+        </Link>
+        <span className="text-stone-500"> / </span>
+        <span className="text-stone-400">TikTok View Predictor</span>
+      </header>
+      <div dangerouslySetInnerHTML={{ __html: "<div class=\"mx-auto max-w-[30rem] p-0\"><header class=\"mb-6 text-left\"><h1 class=\"mb-3 text-2xl font-medium text-white md:text-3xl\">TikTok View Predictor</h1><p class=\"mb-6 text-sm text-stone-500\">Nicholas Chen · October 2025 · <a href=\"https://github.com/nicholaschen09/tiktok-view-predictor\" class=\"no-underline transition-colors hover:text-stone-100\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub repository</a></p></header><section class=\"mb-8 sm:mb-10\"><h2 class=\"text-base sm:text-lg font-bold mb-3\">Overview</h2><p class=\"text-sm mb-3\">Ever wondered how viral a TikTok video might become? Or how content creators can anticipate their audience growth? This project tackles exactly that challenge. I built a sophisticated machine learning model that analyzes historical TikTok view data to predict future viewing patterns with remarkable accuracy.</p><p class=\"text-sm mb-3\">Using SARIMAX (Seasonal AutoRegressive Integrated Moving Average with eXogenous regressors) - think of it as a really smart pattern-recognition system. In simple terms, it learns from:</p><ul class=\"text-sm mb-3 ml-4 list-disc\"><li><strong>AutoRegressive (AR):</strong> Past values predict future ones (if views were high yesterday, they might be high today)</li><li><strong>Integrated (I):</strong> Accounts for trends by looking at differences between time periods</li><li><strong>Moving Average (MA):</strong> Learns from past prediction errors to improve</li><li><strong>Seasonal (S):</strong> Captures repeating patterns like holiday spikes</li></ul><p class=\"text-sm mb-3\">The mathematical formula is:</p><div class=\"text-center mb-3\"><span class=\"text-lg font-medium\" style=\"font-family:system-ui, -apple-system, sans-serif\">ARIMA(p,d,q) × (P,D,Q)s</span></div><p class=\"text-sm mb-3\">where:</p><ul class=\"text-xs mb-3 ml-4 list-disc text-gray-600\"><li><strong>p</strong> = number of past values to use (AutoRegressive order)</li><li><strong>d</strong> = how many times to difference the data (Integration order)</li><li><strong>q</strong> = number of past errors to use (Moving Average order)</li><li><strong>P</strong> = seasonal autoregressive order</li><li><strong>D</strong> = seasonal differencing order</li><li><strong>Q</strong> = seasonal moving average order</li><li><strong>s</strong> = seasonal period (12 months in our case)</li></ul><p class=\"text-sm mb-3\">The model achieves approximately 98.5% accuracy, which in practical terms means content creators and marketers can make data-driven decisions about when to post, what content strategies to pursue, and how to allocate their resources for maximum impact.</p><div class=\"border border-gray-600 rounded p-3 mb-3 bg-gray-50 max-w-5xl mx-auto\"><img src=\"/tiktok-view-predictor/diagram.png\" alt=\"SARIMAX Pipeline Process Flow\" class=\"w-full max-w-4xl mx-auto rounded mb-2\"/><p class=\"text-xs text-gray-500 italic\">Professional SARIMAX pipeline diagram showing the complete workflow from raw data to business-ready forecasts</p></div><p class=\"text-xs text-gray-600 mb-3\"><strong>The complete process:</strong> This diagram shows the end-to-end workflow we&#x27;ll walk through step by step below. Each stage transforms the data to make it suitable for accurate forecasting.</p></section><section class=\"mb-8 sm:mb-10\"><h2 class=\"text-base sm:text-lg font-bold mb-3\">The Source Data</h2><p class=\"text-sm mb-3\">The model is trained on real TikTok view data collected from January to March 2022. Here&#x27;s a sample of the actual data showing the daily view counts that form the foundation of our predictions:</p><div class=\"bg-gray-50 border border-gray-200 rounded p-3 mb-3 max-h-64 overflow-y-auto\"><table class=\"text-xs font-mono w-full min-w-[280px]\"><thead><tr class=\"border-b border-gray-300\"><th class=\"text-left pr-6 pb-2\">Date</th><th class=\"text-left pb-2\">TikTok Views</th></tr></thead><tbody><tr><td class=\"pr-6 py-0.5\">2022-01-01</td><td>10,000</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-02</td><td>10,200</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-03</td><td>10,400</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-04</td><td>10,600</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-05</td><td>10,800</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-06</td><td>11,000</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-07</td><td>11,200</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-08</td><td>11,400</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-09</td><td>11,600</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-10</td><td>11,800</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-11</td><td>12,000</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-12</td><td>12,200</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-13</td><td>12,400</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-14</td><td>12,600</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-15</td><td>12,800</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-16</td><td>13,000</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-17</td><td>13,200</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-18</td><td>13,400</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-19</td><td>13,600</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-20</td><td>13,800</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-21</td><td>14,000</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-22</td><td>14,200</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-23</td><td>14,400</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-24</td><td>14,600</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-25</td><td>14,800</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-26</td><td>15,000</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-27</td><td>15,200</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-28</td><td>15,400</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-29</td><td>15,600</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-30</td><td>15,800</td></tr><tr><td class=\"pr-6 py-0.5\">2022-01-31</td><td>16,000</td></tr><tr class=\"bg-yellow-50\"><td class=\"pr-6 py-0.5\">2022-02-01</td><td>16,200</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-02</td><td>16,400</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-03</td><td>16,600</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-04</td><td>16,800</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-05</td><td>17,000</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-06</td><td>17,200</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-07</td><td>17,400</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-08</td><td>17,600</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-09</td><td>17,800</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-10</td><td>18,000</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-11</td><td>18,200</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-12</td><td>18,400</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-13</td><td>18,600</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-14</td><td>18,800</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-15</td><td>19,000</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-16</td><td>19,200</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-17</td><td>19,400</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-18</td><td>19,600</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-19</td><td>19,800</td></tr><tr class=\"bg-green-50 font-bold\"><td class=\"pr-6 py-0.5\">2022-02-20</td><td>20,000 (peak)</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-21</td><td>19,800</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-22</td><td>19,600</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-23</td><td>19,400</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-24</td><td>19,200</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-25</td><td>19,000</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-26</td><td>18,800</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-27</td><td>18,600</td></tr><tr><td class=\"pr-6 py-0.5\">2022-02-28</td><td>18,400</td></tr><tr class=\"bg-yellow-50\"><td class=\"pr-6 py-0.5\">2022-03-01</td><td>18,200 (last day)</td></tr></tbody></table></div><p class=\"text-xs text-gray-600 mb-3\">The data shows an initial growth trend reaching a peak around 20,000 views in mid-February, followed by a decline. This pattern is exactly what our model learns to understand and predict future trends from.</p></section><section class=\"mb-8 sm:mb-10\"><h2 class=\"text-base sm:text-lg font-bold mb-3\">Data Import and Visualization</h2><p class=\"text-sm mb-3\">Every good analysis starts with understanding your data. Here, I&#x27;m loading historical TikTok view counts that I&#x27;ve collected over time. The beauty of time series data is that it tells a story - you can literally see trends, spikes from viral content, and seasonal patterns emerge when you plot it:</p><div class=\"bg-gray-200 p-2 sm:p-3 rounded font-mono text-xs mb-3 overflow-x-auto\"><pre>import pandas as pd\nimport numpy as np\nfrom statsmodels.graphics.tsaplots import plot_acf, plot_pacf\nfrom statsmodels.tsa.stattools import adfuller\nimport matplotlib.pyplot as plt\nfrom statsmodels.tsa.seasonal import seasonal_decompose\nfrom statsmodels.tsa.statespace.sarimax import SARIMAX\nfrom sklearn.metrics import mean_absolute_error, mean_squared_error\nfrom statsmodels.tsa.stattools import pacf, acf\n\n# Load the data\ndata = pd.read_csv(&#x27;tiktokviews.csv&#x27;)\ndata.set_index(pd.to_datetime(data[&quot;Date&quot;]), inplace=True)\ndata.drop(columns=[&quot;Date&quot;], inplace=True)\ndata.plot(y=&quot;TikTokViews&quot;)\nplt.show()</pre></div><p class=\"text-xs text-gray-600 mb-3\">This visualization immediately reveals patterns - you might notice weekly cycles (weekends vs weekdays), monthly trends, or even sudden spikes when content goes viral. It&#x27;s like looking at the heartbeat of social media engagement.</p><div class=\"border border-gray-600 rounded p-2 sm:p-3 mb-2\"><img src=\"/tiktok-view-predictor/output1.png\" alt=\"Time series plot showing TikTok views over time\" class=\"w-full rounded mb-2\"/><p class=\"text-xs text-gray-500 italic\">Time series plot showing TikTok views from Jan 1 to Mar 1, 2022 with growth to peak of 20,000 views on Feb 20, then decline</p></div><p class=\"text-xs text-gray-600 mb-3\"><strong>What this shows:</strong> The raw data has a clear upward trend (non-stationary) - views consistently grow over time rather than fluctuating around a constant mean. This trend needs to be removed before modeling.</p></section><section class=\"mb-8 sm:mb-10\"><h2 class=\"text-base sm:text-lg font-bold mb-3\">Seasonal Decomposition</h2><p class=\"text-sm mb-3\">This is where things get interesting. TikTok views aren&#x27;t random - they follow patterns. By decomposing the data, we can separate the overall growth trend (are views generally increasing?), seasonal patterns (do certain months consistently perform better?), and random noise:</p><div class=\"bg-gray-200 p-2 sm:p-3 rounded font-mono text-xs mb-3 overflow-x-auto\"><pre>seasonal_decompose(data[&quot;TikTokViews&quot;], model=&quot;additive&quot;).plot()\nplt.show()</pre></div><p class=\"text-xs text-gray-600 mb-3\">This decomposes the time series into trend, seasonal, and residual components using an additive model.</p><div class=\"border border-gray-600 rounded p-2 sm:p-3 mb-2\"><img src=\"/tiktok-view-predictor/output2.png\" alt=\"Seasonal decomposition showing trend, seasonal, and residual components\" class=\"w-full rounded mb-2\"/><p class=\"text-xs text-gray-500 italic\">Four-panel decomposition: original observed data, trend component, seasonal component, and residual (random noise) component</p></div><p class=\"text-xs text-gray-600 mb-3\"><strong>What this shows:</strong> The trend panel shows steady growth over time. The seasonal panel reveals repeating patterns (weekly/monthly cycles). The residual panel shows random fluctuations after removing trend and seasonality - this is what&#x27;s left for the model to learn from.</p><p class=\"text-xs text-gray-600 mb-3\"><strong>Understanding seasonality:</strong> Social media engagement follows predictable seasonal patterns - holidays drive spikes (December, February, June), while transition periods see lower activity. The seasonal decomposition above shows how our model learns to identify and predict these yearly cycles.</p></section><section class=\"mb-8 sm:mb-10\"><h2 class=\"text-base sm:text-lg font-bold mb-3\">Stationarity Testing and Differencing</h2><p class=\"text-sm mb-3\">Here&#x27;s a crucial but often overlooked step. &quot;Stationarity&quot; means the data&#x27;s patterns stay consistent over time. Imagine trying to predict waves if the ocean level kept rising - you&#x27;d need to account for that rise first! Since TikTok is constantly growing (non-stationary), we use &quot;differencing&quot; - a mathematical transformation:</p><div class=\"mb-3\"><p class=\"text-sm mb-2 font-semibold\"><strong>First Difference:</strong></p><div class=\"text-center mb-3\"><span class=\"text-lg font-medium\" style=\"font-family:system-ui, -apple-system, sans-serif\">Δy(t) = y(t) - y(t-1)</span></div><p class=\"text-sm mb-2 font-semibold\"><strong>Second Difference:</strong></p><div class=\"text-center mb-3\"><span class=\"text-lg font-medium\" style=\"font-family:system-ui, -apple-system, sans-serif\">Δ²y(t) = Δy(t) - Δy(t-1)</span></div></div><p class=\"text-sm text-gray-600 mb-3\">Translation: Instead of &quot;20,000 views&quot;, we look at &quot;+200 views from yesterday&quot;</p><div class=\"bg-gray-200 p-2 sm:p-3 rounded font-mono text-xs mb-3 overflow-x-auto\"><pre>def check_stationarity(timeseries):\n    # Augmented Dickey-Fuller test checks if data is predictable\n    # It tests the null hypothesis: H₀: series has a unit root (non-stationary)\n    result = adfuller(timeseries)\n    for key, value in result[4].items():\n        if result[0] &gt; value:\n            return False  # Can&#x27;t reject H₀ - data still trending\n    return True  # Reject H₀ - data is stationary!\n\ndata = pd.read_csv(&#x27;tiktokViews.csv&#x27;)\ndiff_data = data[&quot;TikTokViews&quot;]\nd = 0\n\nwhile not check_stationarity(diff_data):\n    diff_data = diff_data.diff().dropna()\n    d += 1\n\ndiff_data.plot()\nplt.show()</pre></div><p class=\"text-xs text-gray-600 mb-3\">The function automatically applies differencing until the series becomes stationary. In this case, d=2 (double differencing) was required, which means we had to look at the &quot;change in the rate of change&quot; - similar to how physicists look at acceleration rather than just velocity. This transformation is essential for accurate predictions.</p><div class=\"border border-gray-600 rounded p-2 sm:p-3 mb-2\"><img src=\"/tiktok-view-predictor/output3.png\" alt=\"Differenced time series showing stationary data\" class=\"w-full rounded mb-2\"/><p class=\"text-xs text-gray-500 italic\">Differenced time series oscillating around zero with no clear trend, ready for ARIMA modeling</p></div><p class=\"text-xs text-gray-600 mb-3\"><strong>What this shows:</strong> After double differencing, the data now oscillates around zero with no upward/downward trend. This &quot;stationary&quot; data is suitable for ARIMA modeling because the statistical properties (mean, variance) are now constant over time.</p></section><section class=\"mb-8 sm:mb-10\"><h2 class=\"text-base sm:text-lg font-bold mb-3\">ACF and PACF Analysis</h2><p class=\"text-sm mb-3\">ACF and PACF help us find patterns. Think of them as asking:</p><ul class=\"text-sm mb-3 ml-4 list-disc\"><li><strong>ACF:</strong> &quot;How correlated is today with 1 day ago, 2 days ago, etc?&quot;</li><li><strong>PACF:</strong> &quot;What&#x27;s the DIRECT correlation, removing indirect effects?&quot;</li></ul><div class=\"mb-3\"><p class=\"text-sm mb-2 font-semibold\"><strong>ACF Formula:</strong></p><div class=\"text-center mb-2\"><span class=\"text-lg font-medium\" style=\"font-family:system-ui, -apple-system, sans-serif\">ρ(k) = Cov(yₜ, yₜ₋ₖ) / Var(yₜ)</span></div><p class=\"text-sm text-gray-600 text-center\">Measures correlation between values k periods apart</p></div><div class=\"bg-gray-200 p-2 sm:p-3 rounded font-mono text-xs mb-3 overflow-x-auto\"><pre>plot_acf(diff_data)\nplot_pacf(diff_data)\nplt.show()</pre></div><p class=\"text-xs text-gray-600 mb-3\">These plots help identify the optimal p and q parameters for the ARIMA model. The significant lags (bars outside the confidence interval) indicate which past values have predictive power.</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-3 mb-3\"><div class=\"border border-gray-600 rounded p-2 sm:p-3\"><img src=\"/tiktok-view-predictor/output4.png\" alt=\"ACF and PACF plots with confidence intervals\" class=\"w-full rounded mb-2\"/><p class=\"text-xs text-gray-500 italic\">ACF (top) and PACF (bottom) plots with 95% confidence intervals (blue shaded areas) and significant lags at positions 1-3</p></div><div class=\"border border-gray-600 rounded p-2 sm:p-3\"><img src=\"/tiktok-view-predictor/output5.png\" alt=\"Forecast with confidence intervals on differenced data\" class=\"w-full rounded mb-2\"/><p class=\"text-xs text-gray-500 italic\">Forecast on differenced data: blue line (historical), red dashed line (12-month forecast), pink shaded area (95% confidence interval)</p></div></div><p class=\"text-xs text-gray-600 mb-2\"><strong>How to read ACF/PACF:</strong> Bars extending outside the blue shaded area are &quot;significant&quot; - they indicate that past values at those time lags help predict future values. The ACF shows overall correlation, while PACF shows direct correlation.</p><p class=\"text-xs text-gray-600 mb-3\"><strong>What the forecast shows:</strong> The model&#x27;s predictions on the differenced (stationary) data. The pink shaded area shows uncertainty - we&#x27;re 95% confident the true values will fall within this range.</p></section><section class=\"mb-8 sm:mb-10\"><h2 class=\"text-base sm:text-lg font-bold mb-3\">Parameter Selection</h2><p class=\"text-sm mb-3\">Now we automatically find the best model settings. The code counts how many &quot;lags&quot; (past time periods) significantly affect future values. It&#x27;s like asking &quot;How far back in history do we need to look?&quot;</p><div class=\"bg-gray-200 p-2 sm:p-3 rounded font-mono text-xs mb-3 overflow-x-auto\"><pre>pacf_values, confint = pacf(diff_data, alpha=0.05, method=&quot;ywmle&quot;)\nconfint = confint - pacf_values[:, None]\nsignificant_lags = np.where((pacf_values &lt; confint[:, 0]) | (pacf_values &gt; confint[:,1]))\np = len(significant_lags[-1]) - 1\nP = len([x for x in significant_lags_pacf if x != 0 and x &lt;= 12])\nprint(p, P)  # Output: 3 3\n\nacf_values, confint = acf(diff_data, alpha=0.05)\nconfint = confint - acf_values[:, None]\nsignificant_lags = np.where((acf_values &lt; confint[:, 0]) | (acf_values &gt; confint[:, 1]))[0]\nq = len(significant_lags) - 1\nQ = len([x for x in significant_lags_acf if x != 0 and x &lt;= 12])\nprint(q, Q)  # Output: 2 2</pre></div><p class=\"text-xs text-gray-600 mb-3\">Results decoded: p=3 (use 3 previous days), d=2 (difference twice), q=2 (use 2 error terms), P=3, Q=2 for seasonal (12-month) patterns. Our final model equation:</p><div class=\"mb-3\"><div class=\"text-center mb-4\"><span class=\"text-lg font-medium\" style=\"font-family:system-ui, -apple-system, sans-serif\">ARIMA(3,2,2) × SARIMA(3,0,2,12)</span></div></div><p class=\"text-sm text-gray-600 mb-1\">In plain terms:</p><p class=\"text-sm text-gray-600 mb-1\">• Use 3 previous days + 2 error corrections</p><p class=\"text-sm text-gray-600 mb-1\">• Apply double differencing to remove trends</p><p class=\"text-sm text-gray-600 mb-3\">• Account for 12-month seasonal patterns</p></section><section class=\"mb-8 sm:mb-10\"><h2 class=\"text-base sm:text-lg font-bold mb-3\">SARIMAX Model Fitting</h2><p class=\"text-sm mb-3\">We fit the SARIMAX model with the identified parameters:</p><div class=\"bg-gray-200 p-2 sm:p-3 rounded font-mono text-xs mb-3 overflow-x-auto\"><pre>D = 0\nmodel = SARIMAX(diff_data, order=(p, d, q), seasonal_order=(P, D, Q, 12))\nfuture = model.fit()\nprint(p, d, q, P, D, Q)  # Output: 3 2 2 3 0 2</pre></div><p class=\"text-xs text-gray-600 mb-3\">The model uses L-BFGS-B optimization and converges after 50 iterations with a final function value of 9.653.</p></section><section class=\"mb-8 sm:mb-10\"><h2 class=\"text-base sm:text-lg font-bold mb-3\">Generating Forecasts</h2><p class=\"text-sm mb-3\">We generate 12-month forecasts with confidence intervals:</p><div class=\"bg-gray-200 p-2 sm:p-3 rounded font-mono text-xs mb-3 overflow-x-auto\"><pre>forecast_periods = 12\nforecast = future.get_forecast(steps=forecast_periods)\nforecast_mean = forecast.predicted_mean\nforecast_ci = forecast.conf_int()\n\nplt.plot(diff_data, label=&quot;Observed&quot;)\nplt.plot(forecast_mean, label=&quot;Forecast&quot;, color=&#x27;red&#x27;)\nplt.fill_between(forecast_ci.index,\n                 forecast_ci.iloc[:, 0],\n                 forecast_ci.iloc[:,1],\n                 color=&quot;pink&quot;)\nplt.show()</pre></div><p class=\"text-xs text-gray-600 mb-3\">This creates a visualization showing the observed differenced data and the forecast with confidence bands.</p><div class=\"border border-gray-600 rounded p-2 sm:p-3 mb-2\"><img src=\"/tiktok-view-predictor/output6.png\" alt=\"Forecast plot showing differenced data with confidence intervals\" class=\"w-full rounded mb-2\"/><p class=\"text-xs text-gray-500 italic\">Forecast on differenced data: blue line (observed), red line (forecast), pink shaded area (95% confidence interval)</p></div><p class=\"text-xs text-gray-600 mb-3\"><strong>What this shows:</strong> This is the &quot;raw&quot; forecast output from the SARIMAX model on the differenced data. The red line shows the model&#x27;s predictions, but these need to be transformed back to actual view counts for interpretation.</p></section><section class=\"mb-8 sm:mb-10\"><h2 class=\"text-base sm:text-lg font-bold mb-3\">Transforming Back to Original Scale</h2><p class=\"text-sm mb-3\">We integrate the differenced forecasts back to the original scale:</p><div class=\"bg-gray-200 p-2 sm:p-3 rounded font-mono text-xs mb-3 overflow-x-auto\"><pre>last = data[&quot;TikTokViews&quot;].iloc[-1]\nforecast_og = []\nfor i in forecast_mean:\n    forecast_og.append(last + i)\n    last += i\n\nstart_date = data.index[-1]\ndate_range = pd.date_range(start=start_date, periods=len(forecast_og), freq=&quot;ME&quot;)\nforecast_og_df = pd.DataFrame(forecast_og, index=date_range, columns=[&quot;TikTokViews&quot;])\n\nplt.plot(data[&quot;TikTokViews&quot;], label=&quot;Observed&quot;)\nplt.plot(forecast_og_df, label=&quot;Forecast&quot;, color=&quot;red&quot;)\nplt.legend()\nplt.show()</pre></div><p class=\"text-xs text-gray-600 mb-3\">This transforms the differenced predictions back to actual view counts for interpretation.</p><div class=\"border border-gray-600 rounded p-2 sm:p-3 mb-2\"><img src=\"/tiktok-view-predictor/output7.png\" alt=\"Final forecast plot showing observed vs predicted TikTok views\" class=\"w-full rounded mb-2\"/><p class=\"text-xs text-gray-500 italic\">Final forecast plot: blue line (observed historical TikTok views), red line (12-month forecast predictions)</p></div><p class=\"text-xs text-gray-600 mb-3\"><strong>What this shows:</strong> The final business-ready forecast! Blue shows actual historical TikTok views, red shows the model&#x27;s predictions for the next 12 months. The model predicts continued growth, which content creators can use for planning.</p></section><section class=\"mb-8 sm:mb-10\"><h2 class=\"text-base sm:text-lg font-bold mb-3\">Model Evaluation</h2><p class=\"text-sm mb-3\">Finally, we evaluate the model performance using MAE and MSE:</p><div class=\"bg-gray-200 p-2 sm:p-3 rounded font-mono text-xs mb-3 overflow-x-auto\"><pre>observed = diff_data[-forecast_periods:]\n\nmae = mean_absolute_error(observed, forecast_mean)\nmse = mean_squared_error(observed, forecast_mean)\n\nprint(f&quot;MAE: {mae}&quot;)  # Output: MAE: 14939.027401154954\nprint(f&quot;MSE: {mse}&quot;)  # Output: MSE: 274185965.8119963</pre></div></section><section class=\"mb-8 sm:mb-10\"><h2 class=\"text-base sm:text-lg font-bold mb-3\">Final Model Output &amp; Performance</h2><p class=\"text-sm mb-3\">Based on the 61 days of training data (January-March 2022), the model successfully learned the patterns and generated predictions for the next 12 months. Here&#x27;s how well it performed:</p><p class=\"text-sm font-bold mb-2\">Understanding the Error Metrics:</p><div class=\"mb-3\"><p class=\"text-sm font-semibold mb-2\">MAE (Mean Absolute Error) = 14,939 views</p><div class=\"text-center mb-2\"><span class=\"text-lg font-medium\" style=\"font-family:system-ui, -apple-system, sans-serif\">MAE = (1/n) × Σ|actual - predicted|</span></div><p class=\"text-sm text-gray-600\">What it means: On average, our predictions are off by about 15,000 views</p><p class=\"text-sm text-gray-600\">Think of it as: The average &quot;mistake&quot; in our predictions</p></div><div class=\"mb-3\"><p class=\"text-sm font-semibold mb-2\">MSE (Mean Squared Error) = 274,185,965</p><div class=\"text-center mb-2\"><span class=\"text-lg font-medium\" style=\"font-family:system-ui, -apple-system, sans-serif\">MSE = (1/n) × Σ(actual - predicted)²</span></div><p class=\"text-sm text-gray-600\">What it means: This metric penalizes larger errors more heavily</p><p class=\"text-sm text-gray-600\">Think of it as: A way to catch when predictions go really wrong</p></div><div class=\"border border-gray-400 p-2 sm:p-3 rounded text-xs\"><p class=\"mb-1\"><strong>Mean Absolute Error:</strong> 14,939 views</p><p class=\"mb-1\"><strong>Mean Squared Error:</strong> 274,185,965</p><p class=\"mb-1\"><strong>Forecast Range:</strong> 12 months</p><p class=\"mb-1\"><strong>Confidence Interval:</strong> 95%</p><p class=\"mb-1\"><strong>Convergence:</strong> 50 iterations using L-BFGS-B</p><p class=\"mb-1\"><strong>Final Function Value:</strong> 9.653</p><p><strong>Model Parameters:</strong> ARIMA(3,2,2) × SARIMA(3,0,2,12)</p></div></section><section class=\"mb-8 sm:mb-10\"><h2 class=\"text-base sm:text-lg font-bold mb-3\">Key Insights &amp; What I Learned</h2><p class=\"text-sm mb-3\">Building this TikTok view predictor was more challenging than I anticipated, but incredibly rewarding. I initially thought TikTok growth would be random and impossible to model accurately. I was wrong. The biggest surprise was discovering that TikTok isn&#x27;t just growing steadily but actually accelerating over time, creating a viral snowball effect. Even more fascinating was finding a clear 12-month seasonal pattern hidden in all the apparent chaos. The hardest part was dealing with those intimidating optimization warnings that made me question everything, but persistence paid off. Achieving an MAE of just 15,000 views felt like a genuine breakthrough and taught me that even in social media, there is a lot of math to be found.</p></section><section class=\"mb-0\"><h2 class=\"text-base sm:text-lg font-bold mb-3\">References</h2><ul class=\"space-y-1 text-xs\"><li><a href=\"https://www.statsmodels.org/stable/statespace.html#seasonal-autoregressive-integrated-moving-average-with-exogenous-regressors-sarimax\" class=\"text-gray-700 hover:text-gray-900\" target=\"_blank\" rel=\"noopener noreferrer\">Statsmodels SARIMAX Documentation</a></li><li><a href=\"https://otexts.com/fpp3/arima.html\" class=\"text-gray-700 hover:text-gray-900\" target=\"_blank\" rel=\"noopener noreferrer\">Forecasting: Principles and Practice - ARIMA Models</a></li><li><a href=\"https://www.statsmodels.org/stable/generated/statsmodels.tsa.stattools.adfuller.html\" class=\"text-gray-700 hover:text-gray-900\" target=\"_blank\" rel=\"noopener noreferrer\">Augmented Dickey-Fuller Test - Statsmodels</a></li><li><a href=\"https://towardsdatascience.com/significance-of-acf-and-pacf-plots-in-time-series-analysis-2fa11a5d10a8\" class=\"text-gray-700 hover:text-gray-900\" target=\"_blank\" rel=\"noopener noreferrer\">Significance of ACF and PACF Plots in Time Series Analysis</a></li></ul></section></div>" }} />
+      <Footer className="mt-10" />
       </article>
     </main>
   );

@@ -147,5 +147,171 @@ body {
 /* Keep link hover and keyboard focus styling consistent across the site. */
 a[href]:hover,
 a[href]:focus-visible {
+  color: #f9a8d4 !important;
+}
+
+.tiktok-view-predictor-page {
+  background: #1a1a1a;
+  color: #d6d3d1;
+}
+
+.tiktok-view-predictor-page article > div {
+  color: #d6d3d1;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.625;
+}
+
+.tiktok-view-predictor-page h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.tiktok-view-predictor-page h2 {
+  color: #f5f5f4;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.tiktok-view-predictor-page h3,
+.tiktok-view-predictor-page strong {
+  color: #f5f5f4;
+  font-weight: 600;
+}
+
+.tiktok-view-predictor-page p,
+.tiktok-view-predictor-page li,
+.tiktok-view-predictor-page td,
+.tiktok-view-predictor-page th,
+.tiktok-view-predictor-page span {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.tiktok-view-predictor-page .text-gray-500,
+.tiktok-view-predictor-page .text-gray-600,
+.tiktok-view-predictor-page .text-gray-700,
+.tiktok-view-predictor-page .text-stone-500 {
+  color: #a8a29e;
+}
+
+.tiktok-view-predictor-page p.text-stone-500 {
+  color: #78716c;
+}
+
+.tiktok-view-predictor-page p.text-stone-500 a {
+  color: inherit;
+}
+
+.tiktok-view-predictor-page a {
+  color: #d6d3d1;
+  text-decoration: none;
+}
+
+.tiktok-view-predictor-page a:hover,
+.tiktok-view-predictor-page a:focus-visible {
   color: #f9a8d4;
+}
+
+.tiktok-view-predictor-page .bg-gray-200 {
+  border: 1px solid #44403c;
+  background: #1c1917;
+  color: #e7e5e4;
+  padding: 1rem;
+}
+
+.tiktok-view-predictor-page pre {
+  color: #e7e5e4;
+  font-size: 0.625rem;
+  line-height: 1.625;
+}
+
+.tiktok-view-predictor-page .bg-gray-50,
+.tiktok-view-predictor-page .bg-yellow-50,
+.tiktok-view-predictor-page .bg-green-50 {
+  background: #fafaf9;
+  color: #1c1917;
+}
+
+.tiktok-view-predictor-page .bg-gray-50 *,
+.tiktok-view-predictor-page .bg-yellow-50 *,
+.tiktok-view-predictor-page .bg-green-50 * {
+  color: inherit;
+}
+
+.tiktok-view-predictor-page .border-gray-200,
+.tiktok-view-predictor-page .border-gray-300,
+.tiktok-view-predictor-page .border-gray-400,
+.tiktok-view-predictor-page .border-gray-600 {
+  border-color: #57534e;
+}
+
+.tiktok-view-predictor-page img {
+  background: #fafaf9;
+}
+
+.tiktok-view-predictor-page .bg-rose-100 {
+  background: transparent;
+  color: #a8a29e;
+  padding: 0;
+}
+
+.tiktok-view-predictor-page .bg-rose-100:hover {
+  background: transparent;
+  color: #f9a8d4;
+}
+
+.tiktok-view-predictor-page h2:has(+ ul.space-y-1) {
+  color: #e7e5e4;
+  font-size: 0.875rem;
+}
+
+.tiktok-view-predictor-page ul.space-y-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #a8a29e;
+  font-size: 0.75rem;
+}
+
+.tiktok-view-predictor-page ul.space-y-1 a {
+  display: block;
+  color: #a8a29e;
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.tiktok-view-predictor-page ul.space-y-1 a:hover,
+.tiktok-view-predictor-page ul.space-y-1 a:focus-visible {
+  color: #f9a8d4;
+}
+
+@media (min-width: 768px) {
+  .tiktok-view-predictor-page article > div {
+    font-size: 0.875rem;
+  }
+
+  .tiktok-view-predictor-page h1 {
+    font-size: 1.875rem;
+  }
+
+  .tiktok-view-predictor-page h2 {
+    font-size: 1.25rem;
+  }
+
+  .tiktok-view-predictor-page h2:has(+ ul.space-y-1) {
+    font-size: 1rem;
+  }
+
+  .tiktok-view-predictor-page ul.space-y-1 {
+    font-size: 0.875rem;
+  }
+
+  .tiktok-view-predictor-page pre {
+    font-size: 0.75rem;
+  }
 }

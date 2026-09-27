@@ -35,8 +35,16 @@ export default function InsForgePage() {
           <div>
             <h1 className="mb-2 text-2xl font-medium text-white md:text-3xl">InsForge</h1>
             <p className="text-stone-500">
-              Open source contributions to InsForge, focused on making backend tooling safer and
-              easier to use.
+              Open source contributions to{' '}
+              <a
+                href="https://insforge.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="no-underline transition-colors"
+              >
+                InsForge
+              </a>
+              , focused on making backend tooling safer and easier to use.
             </p>
           </div>
 
