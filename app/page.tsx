@@ -86,7 +86,7 @@ export default function Home() {
               Metallic Blob
             </TextLink>
             ,{' '}
-            <TextLink href="https://tiktokviewpredictor.vercel.app/" external>
+            <TextLink href="/projects/tiktok-view-predictor">
               TikTok View Predictor
             </TextLink>
             .

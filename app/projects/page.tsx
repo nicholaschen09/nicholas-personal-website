@@ -16,19 +16,19 @@ const projects = [
     description: 'A small project repo from my experiments with simple developer tooling',
   },
   {
-    href: 'https://facial-recognition-neural-network.vercel.app/',
+    href: '/facial-recognition-neural-network',
     title: 'Facial Recognition Neural Network',
     date: 'February 2026',
     description: 'A neural network project for experimenting with facial recognition in the browser',
   },
   {
-    href: 'https://github.com/InsForge/InsForge/pull/671',
+    href: '/insforge',
     title: 'InsForge',
     date: 'January 2026',
     description: 'Open source contributions focused on SQL safety checks',
   },
   {
-    href: 'https://tiktokviewpredictor.vercel.app/',
+    href: '/projects/tiktok-view-predictor',
     title: 'TikTok View Predictor',
     date: 'October 2025',
     description: 'A playful predictor for estimating TikTok video views from a few quick inputs',
@@ -55,6 +55,8 @@ const projects = [
 ];
 
 export default function ProjectsPage() {
+  const isExternalHref = (href: string) => href.startsWith('http');
+
   return (
     <main className="min-h-screen bg-[#1a1a1a] px-6 py-10 text-stone-300 md:px-12 md:py-12">
       <div className="mx-auto flex min-h-[calc(100vh-6rem)] w-full max-w-[30rem] flex-col">
@@ -73,14 +75,20 @@ export default function ProjectsPage() {
           {projects.map((item) => (
             <article key={item.href}>
               <div className="flex items-baseline justify-between gap-4">
-                <a
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-colors"
-                >
-                  {item.title}
-                </a>
+                {isExternalHref(item.href) ? (
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-colors"
+                  >
+                    {item.title}
+                  </a>
+                ) : (
+                  <Link href={item.href} className="transition-colors">
+                    {item.title}
+                  </Link>
+                )}
                 <span className="shrink-0 text-right">{item.date}</span>
               </div>
               <p className="mt-1 text-stone-500">{item.description}</p>

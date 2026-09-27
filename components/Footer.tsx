@@ -13,7 +13,7 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
         <a
           href="mailto:nicholas.chen243@gmail.com"
-          className="text-stone-300 transition-colors hover:text-stone-200"
+          className="text-stone-300 no-underline transition-colors hover:text-stone-200"
           aria-label="Email"
           title="Email"
         >
@@ -23,7 +23,7 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           href="https://www.linkedin.com/in/nicholas-chen-85886726a/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-stone-300 transition-colors hover:text-stone-200"
+          className="text-stone-300 no-underline transition-colors hover:text-stone-200"
           aria-label="LinkedIn"
           title="LinkedIn"
         >
@@ -33,7 +33,7 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           href="https://github.com/nicholaschen09"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-stone-300 transition-colors hover:text-stone-200"
+          className="text-stone-300 no-underline transition-colors hover:text-stone-200"
           aria-label="GitHub"
           title="GitHub"
         >
@@ -43,7 +43,7 @@ export default function Footer({ className = 'mt-20' }: FooterProps) {
           href="https://x.com/nicholaschen__"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-stone-300 transition-colors hover:text-stone-200"
+          className="text-stone-300 no-underline transition-colors hover:text-stone-200"
           aria-label="X (Twitter)"
           title="X (Twitter)"
         >
