@@ -1,5 +1,9 @@
 # Repository Notes
 
+## Site Layout
+
+- Every page should include the shared footer.
+
 ## Local Next.js Development
 
 - Do not delete `.next` while `npm run dev` is running. The dev server reads compiled route, JavaScript, and CSS artifacts from `.next`; removing it mid-session can make local pages temporarily lose styling.
