@@ -79,7 +79,7 @@ export default function Home() {
           <p className="font-normal">
             In my free time, I enjoy writing blogs like{' '}
             <TextLink href="/blogs/ontology-text-to-sql">Why Ontology for Text-to-SQL?</TextLink>
-            ,{' '}
+            {' '}and{' '}
             <TextLink href="/blogs/melius-summer-internship">My Summer Internship with Melius</TextLink>{' '}
             and building cool things such as{' '}
             <TextLink href="https://github.com/nicholaschen09/metallic-blob" external>
@@ -88,6 +88,10 @@ export default function Home() {
             ,{' '}
             <TextLink href="/projects/tiktok-view-predictor">
               TikTok View Predictor
+            </TextLink>
+            , and{' '}
+            <TextLink href="https://sql-query-parser.vercel.app/" external>
+              SQL Query Parser
             </TextLink>
             .
           </p>
