@@ -4,6 +4,7 @@ import { useEffect, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
+import BlogViewCount from '@/components/BlogViewCount';
 import TableOfContents, { TOCSection } from '@/components/TableOfContents';
 
 export default function StartupLessonsBlog() {
@@ -50,7 +51,10 @@ export default function StartupLessonsBlog() {
           <h1 className="text-2xl md:text-3xl font-medium text-white mb-2">
             10 Lessons from Working at Startups
           </h1>
-          <p className="text-stone-500 text-sm mb-6">Nicholas Chen · June 2026</p>
+          <p className="flex items-baseline justify-between gap-4 text-stone-500 text-sm mb-6">
+              <span>Nicholas Chen · June 2026</span>
+              <BlogViewCount path="/blogs/startup-lessons" increment />
+            </p>
 
           <figure className="mb-6">
             <Image

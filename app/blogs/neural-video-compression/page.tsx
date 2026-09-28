@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useMemo } from 'react';
 import Footer from '@/components/Footer';
+import BlogViewCount from '@/components/BlogViewCount';
 import ImageLightbox from '@/components/ImageLightbox';
 import TableOfContents, { TOCSection } from '@/components/TableOfContents';
 
@@ -51,7 +52,10 @@ export default function NeuralVideoCompressionBlog() {
             <h1 className="text-2xl md:text-3xl font-medium text-white mb-2">
               Learning How to Optimize Video Compression for Neural Networks
             </h1>
-            <p className="text-stone-500 text-sm mb-6">Nicholas Chen · April 2026</p>
+            <p className="flex items-baseline justify-between gap-4 text-stone-500 text-sm mb-6">
+              <span>Nicholas Chen · April 2026</span>
+              <BlogViewCount path="/blogs/neural-video-compression" increment />
+            </p>
 
             <figure className="mb-6">
               <Image

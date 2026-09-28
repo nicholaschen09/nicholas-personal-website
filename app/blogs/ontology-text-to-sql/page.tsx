@@ -3,6 +3,7 @@
 import { useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
+import BlogViewCount from '@/components/BlogViewCount';
 import ImageLightbox from '@/components/ImageLightbox';
 import TableOfContents, { TOCSection } from '@/components/TableOfContents';
 
@@ -54,7 +55,10 @@ export default function OntologyTextToSqlBlog() {
               Why ontology for text-to-SQL?
             </h1>
             <div className="text-stone-500 text-sm mb-6">
-              <p>Nicholas Chen · November 2025</p>
+              <p className="flex items-baseline justify-between gap-4">
+              <span>Nicholas Chen · November 2025</span>
+              <BlogViewCount path="/blogs/ontology-text-to-sql" increment />
+            </p>
             </div>
 
             {/* Cover image */}

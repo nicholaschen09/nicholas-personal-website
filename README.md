@@ -29,3 +29,9 @@ The app will start on `http://localhost:3000`.
 
 - All copy lives in `contexts/LanguageContext.tsx` under the `en` and `zh` objects.
 - Blog pages live under `app/blogs/*` and consume strings through `useLanguage()` and `t(key)`.
+
+### Blog view counts
+
+Blog views are saved in localStorage for each browser. Opening or refreshing an article
+adds one view; the Writing page displays the saved counts without incrementing them.
+These are local counts, not site-wide analytics. Clearing browser storage resets them.

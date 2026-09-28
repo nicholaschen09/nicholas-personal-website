@@ -3,6 +3,7 @@
 import { useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
+import BlogViewCount from '@/components/BlogViewCount';
 import ImageLightbox from '@/components/ImageLightbox';
 import MathText from '@/components/MathText';
 import TableOfContents, { TOCSection } from '@/components/TableOfContents';
@@ -54,8 +55,9 @@ export default function LosslessBlog() {
             <h1 className="text-2xl md:text-3xl font-medium text-white mb-2">
               How lossless audio compression works
             </h1>
-            <p className="text-stone-500 text-sm mb-6">
-              Nicholas Chen · January 2026
+            <p className="flex items-baseline justify-between gap-4 text-stone-500 text-sm mb-6">
+              <span>Nicholas Chen · January 2026</span>
+              <BlogViewCount path="/blogs/lossless-audio" increment />
             </p>
 
             {/* Cover image */}
