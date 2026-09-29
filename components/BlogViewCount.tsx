@@ -3,9 +3,20 @@
 import { useEffect, useRef, useState } from 'react';
 
 const viewFormatter = new Intl.NumberFormat('en-US', {
-  notation: 'compact',
   maximumFractionDigits: 1,
 });
+
+function formatViewCount(views: number) {
+  // Promote counts that round to 1,000k to 1M as well.
+  const thousands = Math.round(views / 100) / 10;
+  if (views >= 1_000_000 || thousands >= 1_000) {
+    return `${viewFormatter.format(views / 1_000_000)}M`;
+  }
+  if (views >= 1_000) {
+    return `${viewFormatter.format(thousands)}k`;
+  }
+  return viewFormatter.format(views);
+}
 
 export default function BlogViewCount({
   path,
@@ -73,7 +84,7 @@ export default function BlogViewCount({
       className="whitespace-nowrap text-stone-500"
       title={`${views.toLocaleString('en-US')} ${views === 1 ? 'view' : 'views'} across all devices`}
     >
-      {viewFormatter.format(views).replace('K', 'k')} {views === 1 ? 'view' : 'views'}
+      {formatViewCount(views)} {views === 1 ? 'view' : 'views'}
     </span>
   );
 }
