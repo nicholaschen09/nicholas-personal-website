@@ -4,11 +4,11 @@ import Link from 'next/link';
 const contributions = [
   {
     href: 'https://github.com/InsForge/InsForge/pull/671',
-    title: 'fix/execute raw sql bug',
+    number: 671,
   },
   {
     href: 'https://github.com/InsForge/InsForge/pull/690',
-    title: 'feat/allow user to navigate visualizer through the minimap ui',
+    number: 690,
   },
 ];
 
@@ -44,7 +44,8 @@ export default function InsForgePage() {
               >
                 InsForge
               </a>
-              , focused on making backend tooling safer and easier to use.
+              , a cloud infrastructure platform that gives AI coding agents the tools to build and
+              deploy full-stack applications
             </p>
           </div>
 
@@ -57,7 +58,7 @@ export default function InsForgePage() {
                   rel="noopener noreferrer"
                   className="font-medium text-stone-200 transition-colors hover:text-stone-100"
                 >
-                  {contribution.title}
+                  #{contribution.number}
                 </a>
               </li>
             ))}
