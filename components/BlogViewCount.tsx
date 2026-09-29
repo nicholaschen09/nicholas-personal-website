@@ -2,6 +2,11 @@
 
 import { useEffect, useRef, useState } from 'react';
 
+const viewFormatter = new Intl.NumberFormat('en-US', {
+  notation: 'compact',
+  maximumFractionDigits: 1,
+});
+
 export default function BlogViewCount({
   path,
   increment = false,
@@ -64,8 +69,11 @@ export default function BlogViewCount({
   if (views === null) return null;
 
   return (
-    <span className="whitespace-nowrap text-stone-500" title="Total views across all devices">
-      {views.toLocaleString('en-US')} {views === 1 ? 'view' : 'views'}
+    <span
+      className="whitespace-nowrap text-stone-500"
+      title={`${views.toLocaleString('en-US')} ${views === 1 ? 'view' : 'views'} across all devices`}
+    >
+      {viewFormatter.format(views).replace('K', 'k')} {views === 1 ? 'view' : 'views'}
     </span>
   );
 }
