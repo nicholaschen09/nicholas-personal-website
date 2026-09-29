@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Footer from '@/components/Footer';
-import BlogViewCount from '@/components/BlogViewCount';
 
 const writing = [
   {
@@ -59,10 +58,7 @@ export default function WritingPage() {
                 </Link>
                 <span className="shrink-0 text-right">{item.date}</span>
               </div>
-              <p className="mt-1 flex items-baseline justify-between gap-4 text-stone-500">
-                <span>{item.description}</span>
-                <BlogViewCount path={item.href} />
-              </p>
+              <p className="mt-1 text-stone-500">{item.description}</p>
             </article>
           ))}
         </section>

@@ -12,6 +12,7 @@
     "docker": "docker-compose up --build"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
     "katex": "^0.16.38",
     "next": "15.3.6",
     "react": "^19.1.1",
