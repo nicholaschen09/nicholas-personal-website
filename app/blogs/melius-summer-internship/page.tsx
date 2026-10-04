@@ -117,7 +117,8 @@ export default function MeliusSummerInternshipBlog() {
                   Starting my engineering internship
                 </h2>
                 <p>
-                  My internship at Melius has been an awesome learning experience for me as an
+                  My internship at <TeamLink href="https://melius.com">Melius</TeamLink> has been
+                  an awesome learning experience for me as an
                   engineer and a creative. Over the past few months, I had the opportunity to work
                   on small and large projects that directly impacted our customers and also got to
                   see the product scale and the team grow alongside it. I’m now wrapping up my last
