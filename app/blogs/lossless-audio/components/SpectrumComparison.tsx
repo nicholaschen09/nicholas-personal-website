@@ -56,7 +56,7 @@ export default function SpectrumComparison() {
         style={{ height: totalH }}
         aria-label="Frequency spectrum: original vs lossy"
       >
-        <text x={8} y={14} className="fill-stone-500 text-[10px] font-normal">
+        <text x={8} y={14} className="fill-stone-500 text-[10.625px] font-normal">
           Original spectrum
         </text>
         <g transform={`translate(0, 24)`}>
@@ -72,7 +72,7 @@ export default function SpectrumComparison() {
             />
           ))}
         </g>
-        <text x={8} y={24 + CHART_HEIGHT + 14} className="fill-stone-500 text-[10px] font-normal">
+        <text x={8} y={24 + CHART_HEIGHT + 14} className="fill-stone-500 text-[10.625px] font-normal">
           Lossy spectrum (high frequencies reduced)
         </text>
         <g transform={`translate(0, 24 + CHART_HEIGHT + 24)`}>
@@ -92,12 +92,12 @@ export default function SpectrumComparison() {
           x={CHART_WIDTH - 4}
           y={totalH - 4}
           textAnchor="end"
-          className="fill-stone-600 text-[9px]"
+          className="fill-stone-600 text-[9.5625px]"
         >
           ～0 – {Math.round(cutoffHz / 100) / 10} kHz
         </text>
       </svg>
-      <figcaption className="mt-2 text-center text-[11px] text-stone-500">
+      <figcaption className="mt-2 text-center text-[11.6875px] text-stone-500">
         FFT magnitude: Lossy simulation cuts and smears high frequencies (like MP3’s psychoacoustic
         cutoff)
       </figcaption>

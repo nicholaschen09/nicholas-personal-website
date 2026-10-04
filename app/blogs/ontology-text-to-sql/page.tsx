@@ -332,7 +332,7 @@ export default function OntologyTextToSqlBlog() {
                   This allows teams to manage their data definitions just like they manage their
                   software code.
                 </p>
-                <pre className="mt-6 p-4 bg-stone-900 border border-stone-700 rounded-md overflow-x-auto text-[11px] md:text-xs text-stone-300 font-mono">
+                <pre className="mt-6 p-4 bg-stone-900 border border-stone-700 rounded-md overflow-x-auto text-[11.6875px] md:text-xs text-stone-300 font-mono">
                   {`{
   "entities": [
     {

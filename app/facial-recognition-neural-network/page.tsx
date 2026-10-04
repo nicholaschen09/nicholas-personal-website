@@ -53,7 +53,7 @@ function Section({
 
 function CodeBlock({ children }: { children: string }) {
   return (
-    <pre className="overflow-x-auto rounded-md border border-stone-700 bg-stone-900 p-4 font-mono text-[10px] leading-relaxed text-stone-200 md:text-xs">
+    <pre className="overflow-x-auto rounded-md border border-stone-700 bg-stone-900 p-4 font-mono text-[10.625px] leading-relaxed text-stone-200 md:text-xs">
       {children}
     </pre>
   );

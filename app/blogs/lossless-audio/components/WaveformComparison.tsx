@@ -44,7 +44,7 @@ export default function WaveformComparison() {
         style={{ height: totalH }}
         aria-label="Waveform comparison: original, lossy, difference"
       >
-        <text x={8} y={16} className="fill-stone-500 text-[10px] font-normal">
+        <text x={8} y={16} className="fill-stone-500 text-[10.625px] font-normal">
           Original
         </text>
         <path
@@ -55,7 +55,7 @@ export default function WaveformComparison() {
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-        <text x={8} y={16 + rowH} className="fill-stone-500 text-[10px] font-normal">
+        <text x={8} y={16 + rowH} className="fill-stone-500 text-[10.625px] font-normal">
           Lossy (simulated)
         </text>
         <path
@@ -66,7 +66,7 @@ export default function WaveformComparison() {
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-        <text x={8} y={16 + rowH * 2} className="fill-stone-500 text-[10px] font-normal">
+        <text x={8} y={16 + rowH * 2} className="fill-stone-500 text-[10.625px] font-normal">
           Difference (thrown away)
         </text>
         <path
@@ -78,7 +78,7 @@ export default function WaveformComparison() {
           strokeLinejoin="round"
         />
       </svg>
-      <figcaption className="mt-2 text-center text-[11px] text-stone-500">
+      <figcaption className="mt-2 text-center text-[11.6875px] text-stone-500">
         Same clip: Original → simulated lossy (low-pass + quantize) → what was removed
       </figcaption>
     </figure>

@@ -255,7 +255,7 @@ export default function LosslessComparisonPlayer() {
             FLAC
           </button>
           {activeFormat && (
-            <span className="text-[10px] text-stone-500">
+            <span className="text-[10.625px] text-stone-500">
               Visualizer: {activeFormat.toUpperCase()}
             </span>
           )}
@@ -293,7 +293,7 @@ export default function LosslessComparisonPlayer() {
             className="lossless-audio-slider h-1 flex-1 accent-lime-500"
             aria-label="Seek"
           />
-          <span className="w-16 shrink-0 text-right text-[10px] tabular-nums text-stone-500">
+          <span className="w-16 shrink-0 text-right text-[10.625px] tabular-nums text-stone-500">
             {formatTime(currentTime)} / {formatTime(duration)}
           </span>
         </div>
@@ -306,7 +306,7 @@ export default function LosslessComparisonPlayer() {
           style={{ height: VIS_HEIGHT }}
         />
 
-        <div className="mt-2 flex items-center gap-4 pl-0 text-[10px] text-stone-500">
+        <div className="mt-2 flex items-center gap-4 pl-0 text-[10.625px] text-stone-500">
           <span className="flex items-center gap-1.5">
             <span className="inline-block h-2 w-2 rounded-sm bg-amber-500/90" />
             MP3

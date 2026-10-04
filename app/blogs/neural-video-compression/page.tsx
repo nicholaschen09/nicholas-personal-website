@@ -189,7 +189,7 @@ export default function NeuralVideoCompressionBlog() {
                   the blindness of the models, I dropped my overall score from the baseline of 4.43
                   down to 3.08.
                 </p>
-                <pre className="mt-4 rounded-md border border-stone-700 bg-stone-900 p-4 overflow-x-auto text-[10px] text-stone-200 md:text-xs font-mono">
+                <pre className="mt-4 rounded-md border border-stone-700 bg-stone-900 p-4 overflow-x-auto text-[10.625px] text-stone-200 md:text-xs font-mono">
                   {`=== Evaluation config ===
   batch_size: 16
   device: mps
@@ -230,7 +230,7 @@ export default function NeuralVideoCompressionBlog() {
                   Final recipe
                 </h2>
                 <p>Here is the code that got me this overall score:</p>
-                <pre className="mt-4 rounded-md border border-stone-700 bg-stone-900 p-4 overflow-x-auto text-[10px] text-stone-200 md:text-xs font-mono">
+                <pre className="mt-4 rounded-md border border-stone-700 bg-stone-900 p-4 overflow-x-auto text-[10.625px] text-stone-200 md:text-xs font-mono">
                   {`# final recipe
 ffmpeg -i "$in" \
   -vf "scale=trunc(iw*0.35/2)*2:trunc(ih*0.35/2)*2:flags=lanczos, unsharp=3:3:0.8" \

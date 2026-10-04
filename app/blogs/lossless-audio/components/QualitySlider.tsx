@@ -169,7 +169,7 @@ export default function QualitySlider() {
             </svg>
           )}
         </button>
-        <span className="text-[10px] shrink-0 text-stone-500">Less lossy</span>
+        <span className="text-[10.625px] shrink-0 text-stone-500">Less lossy</span>
         <input
           type="range"
           min={0}
@@ -201,9 +201,9 @@ export default function QualitySlider() {
           className="lossless-audio-slider h-1 min-w-0 flex-1 max-w-[260px] accent-lime-500"
           aria-label="Lossy strength"
         />
-        <span className="text-[10px] shrink-0 text-stone-500">More lossy</span>
+        <span className="text-[10.625px] shrink-0 text-stone-500">More lossy</span>
       </div>
-      <p className="mb-0.5 text-[11px] text-stone-500">
+      <p className="mb-0.5 text-[11.6875px] text-stone-500">
         Lossiness:{' '}
         <span className="inline-block min-w-[3ch] font-normal tabular-nums text-stone-400">
           {lossyParams.lossinessPct}%
@@ -256,7 +256,7 @@ export default function QualitySlider() {
           ))}
         </g>
       </svg>
-      <div className="mt-2 flex items-center gap-4 text-[10px] text-stone-500">
+      <div className="mt-2 flex items-center gap-4 text-[10.625px] text-stone-500">
         <span className="flex items-center gap-1.5">
           <span
             className="inline-block h-2 w-6 rounded-sm opacity-85"

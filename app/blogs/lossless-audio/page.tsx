@@ -120,7 +120,7 @@ export default function LosslessBlog() {
                     alt="Spectral representation of compressed sound"
                     className="w-full rounded-md border border-stone-700"
                   />
-                  <figcaption className="mt-2 text-[11px] md:text-xs text-stone-400">
+                  <figcaption className="mt-2 text-[11.6875px] md:text-xs text-stone-400">
                     Spectral representation of compressed sound.
                   </figcaption>
                 </figure>
@@ -238,7 +238,7 @@ export default function LosslessBlog() {
                     where \( a_k \) are the predictor coefficients and \( p \) is the 'order' of the predictor (how many previous samples we look at)."
                   />
                 </p>
-                <pre className="mb-6 rounded-md border border-stone-700 bg-stone-800/50 p-4 overflow-x-auto text-[10px] text-stone-200 md:text-xs font-mono">
+                <pre className="mb-6 rounded-md border border-stone-700 bg-stone-800/50 p-4 overflow-x-auto text-[10.625px] text-stone-200 md:text-xs font-mono">
                   {`// Same example: p=3, coefficients a1=1.5, a2=-0.7, a3=0.2
 const a = [1.5, -0.7, 0.2];
 const prev = [100, 90, 80];  // x[n-1], x[n-2], x[n-3]
@@ -309,7 +309,7 @@ const residual = xActual - pred;  // e[n] = 105 - 103 = 2
                 <p className="mb-4">
                   <MathText text="During playback, your computer reads the coefficients and the sequence of residuals from the file. It then runs the same prediction formula and adds the residual back to get the exact original sample." />
                 </p>
-                <pre className="mb-0 rounded-md border border-stone-700 bg-stone-800/50 p-4 overflow-x-auto text-[10px] text-stone-200 md:text-xs font-mono">
+                <pre className="mb-0 rounded-md border border-stone-700 bg-stone-800/50 p-4 overflow-x-auto text-[10.625px] text-stone-200 md:text-xs font-mono">
                   {`// Decoder: prediction + residual → original sample
 const pred = 103;   // from same coefficients + previous samples
 const residual = 2; // stored in the bitstream
