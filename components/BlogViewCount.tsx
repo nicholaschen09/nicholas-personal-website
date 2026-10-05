@@ -6,6 +6,26 @@ const viewFormatter = new Intl.NumberFormat('en-US', {
   maximumFractionDigits: 1,
 });
 
+function cachedViews(path: string): number | null {
+  try {
+    const value = window.localStorage.getItem(`blog-views:${path}`);
+    if (value === null) return null;
+
+    const views = Number(value);
+    return Number.isSafeInteger(views) && views >= 0 ? views : null;
+  } catch {
+    return null;
+  }
+}
+
+function cacheViews(path: string, views: number) {
+  try {
+    window.localStorage.setItem(`blog-views:${path}`, String(views));
+  } catch {
+    // Keep the live count usable when browser storage is unavailable.
+  }
+}
+
 function formatViewCount(views: number) {
   // Promote counts that round to 1,000k to 1M as well.
   const thousands = Math.round(views / 100) / 10;
@@ -32,7 +52,7 @@ export default function BlogViewCount({
     let active = true;
     let inFlight = false;
     let recorded = !increment;
-    setViews(null);
+    setViews(cachedViews(path));
     if (!visit.current || visit.current.path !== path) {
       visit.current = { path, id: crypto.randomUUID() };
     }
@@ -56,10 +76,10 @@ export default function BlogViewCount({
         const data = await response.json();
         if (!Number.isSafeInteger(data.views) || data.views < 0) throw new Error('Invalid count');
         recorded = true;
+        cacheViews(path, data.views);
         if (active) setViews(data.views);
       } catch {
-        // Never substitute a browser-only total for an unavailable shared count.
-        if (active) setViews(null);
+        // Keep the last known shared count visible while the database is unavailable.
       } finally {
         inFlight = false;
       }
