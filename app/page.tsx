@@ -77,10 +77,10 @@ export default function Home() {
             </TextLink>, and I&apos;m interested in product engineering.
           </p>
           <Image
-            src="/home/IMG_6871.JPG"
+            src="/home/IMG_6871.webp"
             alt="Sunset over a waterfront marina"
-            width={4641}
-            height={2466}
+            width={1200}
+            height={638}
             className="h-auto w-full"
           />
           <p className="font-normal">
