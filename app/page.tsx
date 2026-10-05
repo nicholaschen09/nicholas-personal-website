@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Footer from '@/components/Footer';
 
 type TextLinkProps = {
@@ -73,9 +74,19 @@ export default function Home() {
             </TextLink>, and{' '}
             <TextLink href="https://www.rbc.com/" external>
               RBC
-            </TextLink>, and I enjoy product engineering.
+            </TextLink>, and I&apos;m interested in product engineering.
           </p>
-
+          <Image
+            src="/home/IMG_6871.JPG"
+            alt="Sunset over a waterfront marina"
+            width={4641}
+            height={2466}
+            className="h-auto w-full"
+          />
+          <p className="font-normal">
+            I&apos;m always looking to learn or try new things, so if you have a recommendation, an idea, or a story to share,{' '}
+            <TextLink href="mailto:nicholas.chen243@gmail.com">reach out!</TextLink>
+          </p>
         </section>
 
         <Footer className="mt-8" />
