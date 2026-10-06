@@ -11,8 +11,11 @@ export default function ArtPage() {
   return (
     <main className="min-h-screen px-6 py-10 text-stone-300 md:px-12 md:py-12">
       <div className="mx-auto w-full max-w-[30rem]">
-        <header className="text-xs font-normal leading-none md:text-sm">
-          <Link href="/" className="text-stone-50 transition-colors hover:text-stone-300">
+        <header className="flex items-center gap-1 text-xs font-normal leading-none md:text-sm">
+          <Link
+            href="/"
+            className="text-xs font-normal leading-none text-stone-50 transition-colors hover:text-stone-300 md:text-sm"
+          >
             Nicholas Chen
           </Link>
           <span className="text-stone-500"> / </span>

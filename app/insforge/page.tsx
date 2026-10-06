@@ -16,7 +16,7 @@ export default function InsForgePage() {
   return (
     <main className="min-h-screen bg-[#1a1a1a] px-6 py-10 text-stone-300 md:px-12 md:py-12">
       <div className="mx-auto flex min-h-[calc(100vh-6rem)] w-full max-w-[30rem] flex-col">
-        <header className="text-xs font-normal leading-none md:text-sm">
+        <header className="flex items-center gap-1 text-xs font-normal leading-none md:text-sm">
           <Link
             href="/"
             className="text-xs font-normal leading-none text-stone-50 transition-colors hover:text-stone-300 md:text-sm"

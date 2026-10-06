@@ -37,7 +37,7 @@ export default function Home() {
     <main className="homepage min-h-screen bg-[#1a1a1a] px-6 py-10 text-stone-300 md:px-12 md:py-12">
       <div className="mx-auto flex min-h-[calc(100vh-6rem)] w-full max-w-[30rem] flex-col">
         <header className="flex items-center justify-between gap-4 text-xs font-normal leading-none md:text-sm">
-          <h1 className="text-xs font-normal leading-none text-stone-50 md:text-sm">
+          <h1 className="text-xs font-normal leading-none tracking-normal text-stone-50 md:text-sm">
             Nicholas Chen
           </h1>
 

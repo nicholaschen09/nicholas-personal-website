@@ -33,7 +33,7 @@ export default function LosslessBlog() {
         <TableOfContents sections={sections} title="" className="lg:mt-20" />
         <ImageLightbox>
           <article className="w-full max-w-[30rem] mx-auto">
-            <header className="sticky top-0 z-40 -mx-6 mb-6 bg-[#1a1a1a]/95 px-6 py-4 text-xs font-normal leading-none backdrop-blur md:-mx-12 md:px-12 md:text-sm lg:-mx-0 lg:px-0">
+            <header className="sticky top-0 z-40 -mt-4 -mx-6 mb-10 flex items-center gap-1 bg-[#1a1a1a]/95 px-6 py-4 text-xs font-normal leading-none backdrop-blur md:-mx-12 md:px-12 md:text-sm lg:-mx-0 lg:px-0">
               <Link
                 href="/"
                 className="text-xs font-normal leading-none text-stone-50 transition-colors hover:text-stone-300 md:text-sm"
