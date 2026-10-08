@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import Footer from '@/components/Footer';
 
 type TextLinkProps = {
@@ -35,7 +34,7 @@ const navItems = [
 export default function Home() {
   return (
     <main className="homepage min-h-screen bg-[#1a1a1a] px-6 py-10 text-stone-300 md:px-12 md:py-12">
-      <div className="mx-auto flex min-h-[calc(100vh-6rem)] w-full max-w-[30rem] flex-col">
+      <div className="flex min-h-[calc(100vh-6rem)] w-full max-w-[30rem] flex-col">
         <header className="flex items-center justify-between gap-4 text-xs font-normal leading-none md:text-sm">
           <h1 className="text-xs font-normal leading-none tracking-normal text-stone-50 md:text-sm">
             Nicholas Chen
@@ -76,13 +75,6 @@ export default function Home() {
               RBC
             </TextLink>, and I&apos;m interested in product engineering.
           </p>
-          <Image
-            src="/home/IMG_6871.webp"
-            alt="Sunset over a waterfront marina"
-            width={1200}
-            height={638}
-            className="h-auto w-full"
-          />
           <p className="font-normal">
             I&apos;m always looking to learn or try new things, so if you have a recommendation, an idea, or a story to share,{' '}
             <TextLink href="mailto:nicholas.chen243@gmail.com">reach out!</TextLink>
