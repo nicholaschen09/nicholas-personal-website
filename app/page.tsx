@@ -75,10 +75,6 @@ export default function Home() {
               RBC
             </TextLink>, and I&apos;m interested in product engineering.
           </p>
-          <p className="font-normal">
-            I&apos;m always looking to learn or try new things, so if you have a recommendation, an idea, or a story to share,{' '}
-            <TextLink href="mailto:nicholas.chen243@gmail.com">reach out!</TextLink>
-          </p>
         </section>
 
         <Footer className="mt-8" />
