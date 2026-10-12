@@ -9,7 +9,7 @@ type TextLinkProps = {
 
 function TextLink({ href, children, external = false }: TextLinkProps) {
   const className =
-    'font-medium transition-colors hover:text-stone-100';
+    'box-decoration-clone rounded-[1px] bg-stone-500/30 px-0.5 font-medium text-stone-100 transition-colors hover:bg-stone-500/50';
 
   if (external) {
     return (
