@@ -207,6 +207,11 @@ a[href]:focus-visible {
   color: #78716c;
 }
 
+.tiktok-view-predictor-page p.mb-6.text-sm.text-stone-500 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .tiktok-view-predictor-page p.text-stone-500 a {
   color: inherit;
 }
@@ -214,6 +219,11 @@ a[href]:focus-visible {
 .tiktok-view-predictor-page a {
   color: #d6d3d1;
   text-decoration: none;
+}
+
+.tiktok-view-predictor-page article > header > a[href="/projects"],
+.tiktok-view-predictor-page article > header > span:last-child {
+  color: #78716c;
 }
 
 .tiktok-view-predictor-page a:hover,

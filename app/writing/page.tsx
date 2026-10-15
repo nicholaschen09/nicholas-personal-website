@@ -53,7 +53,7 @@ export default function WritingPage() {
           {writing.map((item) => (
             <article key={item.href}>
               <div className="flex items-baseline justify-between gap-4">
-                <Link href={item.href} className="transition-colors">
+                <Link href={item.href} className="text-[11px] transition-colors md:text-[13px]">
                   {item.title}
                 </Link>
                 <span className="shrink-0 text-right">{item.date}</span>

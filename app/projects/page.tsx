@@ -3,17 +3,17 @@ import Link from 'next/link';
 
 const projects = [
   {
-    href: 'https://github.com/nicholaschen09/metallic-blob',
+    href: '/metallic-blob',
     title: 'Metallic Blob',
     date: 'March 2026',
     description:
       'A small visual experiment with a shiny interactive shape that reacts to light and motion',
   },
   {
-    href: 'https://github.com/nicholaschen09/tunl',
+    href: '/tunl',
     title: 'Tunl',
     date: 'March 2026',
-    description: 'A small project repo from my experiments with simple developer tooling',
+    description: 'A lightweight CLI for sharing terminal sessions over WebSockets',
   },
   {
     href: '/facial-recognition-neural-network',
@@ -41,10 +41,10 @@ const projects = [
       'A tool for parsing SQL and turning query structure into something easier to inspect',
   },
   {
-    href: 'https://github.com/nicholaschen09/summary-discord-bot',
+    href: '/summary-discord-bot',
     title: 'Summary Discord Bot',
     date: 'May 2025',
-    description: 'A Discord bot that summarizes unread channel messages when you log on',
+    description: 'A Discord bot that summarizes unread channel messages using Groq',
   },
   {
     href: 'https://diff-digest-appp.vercel.app/',
@@ -80,12 +80,12 @@ export default function ProjectsPage() {
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="transition-colors"
+                    className="text-[11px] transition-colors md:text-[13px]"
                   >
                     {item.title}
                   </a>
                 ) : (
-                  <Link href={item.href} className="transition-colors">
+                  <Link href={item.href} className="text-[11px] transition-colors md:text-[13px]">
                     {item.title}
                   </Link>
                 )}
