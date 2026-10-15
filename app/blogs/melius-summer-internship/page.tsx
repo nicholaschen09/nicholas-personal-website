@@ -59,7 +59,7 @@ export default function MeliusSummerInternshipBlog() {
   );
 
   useEffect(() => {
-    document.title = 'My summer internship with Melius';
+    document.title = 'My Summer Internship with Melius';
   }, []);
 
   return (
@@ -87,7 +87,7 @@ export default function MeliusSummerInternshipBlog() {
             </header>
 
             <h1 className="text-2xl md:text-3xl font-medium text-white mb-2">
-              My summer internship with Melius
+              My Summer Internship with Melius
             </h1>
             <p className="flex items-baseline justify-between gap-4 text-stone-500 text-sm mb-6">
               <span>Nicholas Chen · August 2026</span>

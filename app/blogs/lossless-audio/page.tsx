@@ -24,7 +24,7 @@ export default function LosslessBlog() {
   );
 
   useEffect(() => {
-    document.title = 'How lossless audio compression works' + ' | Nicholas Chen';
+    document.title = 'How Lossless Audio Compression Works' + ' | Nicholas Chen';
   }, []);
 
   return (
@@ -53,7 +53,7 @@ export default function LosslessBlog() {
 
             {/* Title */}
             <h1 className="text-2xl md:text-3xl font-medium text-white mb-2">
-              How lossless audio compression works
+              How Lossless Audio Compression Works
             </h1>
             <p className="flex items-baseline justify-between gap-4 text-stone-500 text-sm mb-6">
               <span>Nicholas Chen · January 2026</span>

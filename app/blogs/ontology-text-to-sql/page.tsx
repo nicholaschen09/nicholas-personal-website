@@ -23,7 +23,7 @@ export default function OntologyTextToSqlBlog() {
   );
 
   useEffect(() => {
-    document.title = 'Why ontology for text-to-SQL?';
+    document.title = 'Why Ontology for Text-to-SQL?';
   }, []);
 
   return (
@@ -52,7 +52,7 @@ export default function OntologyTextToSqlBlog() {
 
             {/* Title */}
             <h1 className="text-2xl md:text-3xl font-medium text-white mb-2">
-              Why ontology for text-to-SQL?
+              Why Ontology for Text-to-SQL?
             </h1>
             <div className="text-stone-500 text-sm mb-6">
               <p className="flex items-baseline justify-between gap-4">
