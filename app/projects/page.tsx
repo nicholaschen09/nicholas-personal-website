@@ -80,12 +80,12 @@ export default function ProjectsPage() {
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[11px] transition-colors md:text-[13px]"
+                    className="transition-colors"
                   >
                     {item.title}
                   </a>
                 ) : (
-                  <Link href={item.href} className="text-[11px] transition-colors md:text-[13px]">
+                  <Link href={item.href} className="transition-colors">
                     {item.title}
                   </Link>
                 )}
