@@ -33,7 +33,7 @@ export default function InsForgePage() {
 
         <section className="mt-8 space-y-8 text-xs leading-relaxed text-stone-300 md:text-sm">
           <div>
-            <h1 className="mb-2 text-2xl font-medium text-white md:text-3xl">InsForge</h1>
+            <h1 className="mb-2 text-xl font-medium text-white md:text-2xl">InsForge</h1>
             <p className="mb-4 text-sm text-stone-500">Nicholas Chen · January 2026</p>
             <p className="text-stone-500">
               Open source contributions to{' '}

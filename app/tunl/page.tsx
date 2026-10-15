@@ -28,7 +28,7 @@ export default function TunlPage() {
 
         <section className="mt-8">
           <div className="mb-5">
-            <h1 className="text-2xl font-medium text-white md:text-3xl">Tunl</h1>
+            <h1 className="text-xl font-medium text-white md:text-2xl">Tunl</h1>
             <p className="mt-1 text-sm text-stone-500">
               Nicholas Chen · March 2026 ·{' '}
               <a

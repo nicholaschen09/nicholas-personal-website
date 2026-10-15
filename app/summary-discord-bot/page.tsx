@@ -28,7 +28,7 @@ export default function SummaryDiscordBotPage() {
 
         <section className="mt-8">
           <div className="mb-5">
-            <h1 className="text-2xl font-medium text-white md:text-3xl">Summary Discord Bot</h1>
+            <h1 className="text-xl font-medium text-white md:text-2xl">Summary Discord Bot</h1>
             <p className="mt-1 text-sm text-stone-500">
               Nicholas Chen · May 2025 ·{' '}
               <a

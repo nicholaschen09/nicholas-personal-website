@@ -34,7 +34,7 @@ const projects = [
     description: 'A playful predictor for estimating TikTok video views from a few quick inputs',
   },
   {
-    href: 'https://sql-query-parser.vercel.app/',
+    href: '/sql-query-parser',
     title: 'SQL Query Parser',
     date: 'May 2025',
     description:
@@ -47,7 +47,7 @@ const projects = [
     description: 'A Discord bot that summarizes unread channel messages using Groq',
   },
   {
-    href: 'https://diff-digest-appp.vercel.app/',
+    href: '/diff-digest',
     title: 'Diff Digest',
     date: 'May 2025',
     description: 'A web app that turns GitHub pull request diffs into dual-tone release notes',
