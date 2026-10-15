@@ -221,9 +221,13 @@ a[href]:focus-visible {
   text-decoration: none;
 }
 
+.tiktok-view-predictor-page article > header > a[href="/"] {
+  color: #fafaf9;
+}
+
 .tiktok-view-predictor-page article > header > a[href="/projects"],
 .tiktok-view-predictor-page article > header > span:last-child {
-  color: #78716c;
+  color: #a8a29e;
 }
 
 .tiktok-view-predictor-page a:hover,
