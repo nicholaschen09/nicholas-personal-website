@@ -75,11 +75,11 @@ export default function FacialRecognitionNeuralNetworkPage() {
             Projects
           </Link>
           <span className="text-stone-500"> / </span>
-          <span className="text-stone-400">Facial Recognition Neural Network</span>
+          <span className="text-stone-400">Facial Recognition NN</span>
         </header>
 
         <h1 className="mb-3 text-[22px] font-medium text-white md:text-[28px]">
-          Facial Recognition Neural Network
+          Facial Recognition NN
         </h1>
         <p className="mb-6 text-sm text-stone-500">
           Nicholas Chen · February 2026 ·{' '}

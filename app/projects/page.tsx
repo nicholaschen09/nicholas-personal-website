@@ -17,7 +17,7 @@ const projects = [
   },
   {
     href: '/facial-recognition-neural-network',
-    title: 'Facial Recognition Neural Network',
+    title: 'Facial Recognition NN',
     date: 'February 2026',
     description: 'A neural network project for experimenting with facial recognition in the browser',
   },
