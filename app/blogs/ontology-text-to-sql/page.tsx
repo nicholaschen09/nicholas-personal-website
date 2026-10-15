@@ -51,7 +51,7 @@ export default function OntologyTextToSqlBlog() {
             </header>
 
             {/* Title */}
-            <h1 className="text-xl md:text-2xl font-medium text-white mb-2">
+            <h1 className="text-[22px] md:text-[28px] font-medium text-white mb-2">
               Why Ontology for Text-to-SQL?
             </h1>
             <div className="text-stone-500 text-sm mb-6">

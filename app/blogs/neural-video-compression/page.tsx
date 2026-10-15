@@ -49,7 +49,7 @@ export default function NeuralVideoCompressionBlog() {
               <span className="text-stone-400">Neural Video Compression</span>
             </header>
 
-            <h1 className="text-xl md:text-2xl font-medium text-white mb-2">
+            <h1 className="text-[22px] md:text-[28px] font-medium text-white mb-2">
               Learning How to Optimize Video Compression for Neural Networks
             </h1>
             <p className="flex items-baseline justify-between gap-4 text-stone-500 text-sm mb-6">

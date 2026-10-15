@@ -78,7 +78,7 @@ export default function FacialRecognitionNeuralNetworkPage() {
           <span className="text-stone-400">Facial Recognition Neural Network</span>
         </header>
 
-        <h1 className="mb-3 text-xl font-medium text-white md:text-2xl">
+        <h1 className="mb-3 text-[22px] font-medium text-white md:text-[28px]">
           Facial Recognition Neural Network
         </h1>
         <p className="mb-6 text-sm text-stone-500">

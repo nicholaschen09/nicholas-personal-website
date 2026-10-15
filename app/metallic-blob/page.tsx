@@ -28,7 +28,7 @@ export default function MetallicBlobPage() {
 
         <section className="mt-8">
           <div className="mb-5">
-            <h1 className="text-xl font-medium text-white md:text-2xl">Metallic Blob</h1>
+            <h1 className="text-[22px] font-medium text-white md:text-[28px]">Metallic Blob</h1>
             <p className="mt-1 text-sm text-stone-500">
               Nicholas Chen · March 2026 ·{' '}
               <a
