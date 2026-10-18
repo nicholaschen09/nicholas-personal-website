@@ -1,4 +1,5 @@
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
@@ -66,15 +67,14 @@ export default function ReactGrabPage() {
             component context.
           </p>
 
-          <video
-            controls
-            playsInline
-            preload="metadata"
+          <Image
+            src="/react-grab-demo.gif"
+            alt="Animated demonstration of the React Grab DevTools panel action"
+            width={640}
+            height={360}
+            unoptimized
             className="mt-5 w-full rounded-md border border-stone-800 bg-black"
-          >
-            <source src="/react-grab-demo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          />
         </section>
 
         <Footer className="mt-8" />

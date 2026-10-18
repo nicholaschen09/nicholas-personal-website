@@ -1,4 +1,5 @@
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
@@ -50,6 +51,15 @@ export default function MiniDataPlatformPage() {
             dbt into a DuckDB warehouse, and presents Evidence dashboards. A CLI agent answers
             ad-hoc questions about sales, customers, products, and anomalies.
           </p>
+
+          <Image
+            src="/mini-data-platform-demo.gif"
+            alt="Animated walkthrough of the Mini Data Platform"
+            width={640}
+            height={352}
+            unoptimized
+            className="mt-5 w-full rounded-md border border-stone-800 bg-black"
+          />
         </section>
 
         <Footer className="mt-8" />
