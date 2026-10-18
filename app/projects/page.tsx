@@ -53,17 +53,17 @@ const projects = [
     description: 'A web app that turns GitHub pull request diffs into dual-tone release notes',
   },
   {
-    href: '/basketbin',
-    title: 'BasketBin',
-    date: 'August 2024',
-    description: 'A Hack the 6ix 2024 recycling game that rewards correct waste sorting',
-  },
-  {
     href: '/posture-checker-robot',
     title: 'Posture Checker Robot',
     date: 'February 2025',
     description:
       'A real-time posture checker that won 2nd place overall at UTRA Hacks',
+  },
+  {
+    href: '/basketbin',
+    title: 'BasketBin',
+    date: 'August 2024',
+    description: 'A Hack the 6ix 2024 recycling game that rewards correct waste sorting',
   },
   {
     href: '/voluntrack',
