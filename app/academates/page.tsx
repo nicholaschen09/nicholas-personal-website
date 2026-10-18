@@ -1,0 +1,66 @@
+import Footer from '@/components/Footer';
+import Link from 'next/link';
+import Image from 'next/image';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Academates',
+  description: 'A platform connecting high school students for academic support and motivation.',
+};
+
+export default function AcadematesPage() {
+  return (
+    <main className="min-h-screen bg-[#1a1a1a] px-6 py-10 text-stone-300 md:px-12 md:py-12">
+      <div className="mx-auto flex min-h-[calc(100vh-6rem)] w-full max-w-[30rem] flex-col">
+        <header className="flex items-center gap-1 text-xs font-normal leading-none md:text-sm">
+          <Link
+            href="/"
+            className="text-xs font-normal leading-none text-stone-50 transition-colors hover:text-stone-300 md:text-sm"
+          >
+            Nicholas Chen
+          </Link>
+          <span className="text-stone-500"> / </span>
+          <Link href="/projects" className="text-stone-400 transition-colors hover:text-stone-200">
+            Projects
+          </Link>
+          <span className="text-stone-500"> / </span>
+          <span className="text-stone-400">Academates</span>
+        </header>
+
+        <section className="mt-8">
+          <div className="mb-5">
+            <h1 className="text-[22px] font-medium text-white md:text-[28px]">Academates</h1>
+            <p className="mt-1 text-sm text-stone-500">
+              Nicholas Chen · June 2023 ·{' '}
+              <a
+                href="https://github.com/ArshM-15/academates"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-stone-100"
+              >
+                GitHub repository
+              </a>
+            </p>
+          </div>
+
+          <p className="text-sm leading-relaxed text-stone-400">
+            Built for JAMHacks 7, Academates connects high school students with local peers for
+            academic support, collaborative study groups, and motivation.
+          </p>
+
+          <figure className="mt-5 overflow-hidden rounded-md border border-stone-800">
+            <Image
+              src="/academates.png"
+              alt="Academates welcome screen on a laptop, with student community information and Google sign-up"
+              width={1743}
+              height={1097}
+              className="h-auto w-full"
+            />
+          </figure>
+        </section>
+
+        <Footer className="mt-8" />
+      </div>
+    </main>
+  );
+}

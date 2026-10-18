@@ -52,6 +52,37 @@ const projects = [
     date: 'May 2025',
     description: 'A web app that turns GitHub pull request diffs into dual-tone release notes',
   },
+  {
+    href: '/basketbin',
+    title: 'BasketBin',
+    date: 'August 2024',
+    description: 'A Hack the 6ix 2024 recycling game that rewards correct waste sorting',
+  },
+  {
+    href: '/posture-checker-robot',
+    title: 'Posture Checker Robot',
+    date: 'February 2025',
+    description:
+      'A real-time posture checker that won 2nd place overall at UTRA Hacks',
+  },
+  {
+    href: '/voluntrack',
+    title: 'Voluntrack',
+    date: 'August 2023',
+    description: 'A platform connecting volunteers with nonprofits and meaningful opportunities',
+  },
+  {
+    href: '/academates',
+    title: 'Academates',
+    date: 'June 2023',
+    description: 'A JAMHacks 7 project connecting high school students for academic support',
+  },
+  {
+    href: '/psychai',
+    title: 'PsychAI',
+    date: 'March 2023',
+    description: 'A MagicHacks project offering mental health support through an AI chatbot',
+  },
 ];
 
 export default function ProjectsPage() {
