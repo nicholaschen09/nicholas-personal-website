@@ -1,6 +1,7 @@
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import Image from 'next/image';
+import ImageLightbox from '@/components/ImageLightbox';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -57,30 +58,26 @@ export default function VoluntrackPage() {
             that match their interests.
           </p>
 
-          <a
-            href="https://www.figma.com/design/QJo5Z9dRj7V7SwE5h43jrW/VolunTrack-App-Design?t=1szHesRVLNycxLXL-1"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-5 block overflow-hidden rounded-md border border-stone-800"
-          >
-            <Image
-              src="/voluntrack-app-design.png"
-              alt="VolunTrack mobile app designs showing bookmarked opportunities, mail, search, volunteering, and about screens"
-              width={1908}
-              height={623}
-              className="h-auto w-full"
-            />
-          </a>
-
-          <figure className="mt-5 overflow-hidden rounded-md border border-stone-800">
-            <Image
-              src="/voluntrack-website.png"
-              alt="Voluntrack website homepage with volunteer opportunity categories and a location and interests search"
-              width={1783}
-              height={1359}
-              className="h-auto w-full"
-            />
-          </figure>
+          <ImageLightbox>
+            <div className="mt-5 overflow-hidden rounded-md border border-stone-800">
+              <Image
+                src="/voluntrack-app-design.png"
+                alt="VolunTrack mobile app designs showing bookmarked opportunities, mail, search, volunteering, and about screens"
+                width={1908}
+                height={623}
+                className="h-auto w-full"
+              />
+            </div>
+            <div className="mt-5 overflow-hidden rounded-md border border-stone-800">
+              <Image
+                src="/voluntrack-website.png"
+                alt="Voluntrack website homepage with volunteer opportunity categories and a location and interests search"
+                width={1783}
+                height={1359}
+                className="h-auto w-full"
+              />
+            </div>
+          </ImageLightbox>
         </section>
 
         <Footer className="mt-8" />
