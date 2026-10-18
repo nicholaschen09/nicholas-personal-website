@@ -1,4 +1,5 @@
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
@@ -48,17 +49,14 @@ export default function BasketBinPage() {
             recycling habits.
           </p>
 
-          <div className="mt-5 aspect-video overflow-hidden rounded-md border border-stone-800 bg-black">
-            <iframe
-              src="https://www.youtube-nocookie.com/embed/6YRTP7_Oet8"
-              title="BasketBin demo video"
-              className="h-full w-full border-0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-              loading="lazy"
-            />
-          </div>
+          <Image
+            src="/basketbin/basketbin-demo.gif"
+            alt="BasketBin recycling game demo"
+            width={480}
+            height={270}
+            unoptimized
+            className="mt-5 h-auto w-full rounded-md border border-stone-800 bg-black"
+          />
         </section>
 
         <Footer className="mt-8" />

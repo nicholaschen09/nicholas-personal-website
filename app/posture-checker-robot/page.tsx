@@ -1,4 +1,5 @@
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
@@ -50,17 +51,14 @@ export default function PostureCheckerRobotPage() {
             overall.
           </p>
 
-          <div className="mt-5 aspect-video overflow-hidden rounded-md border border-stone-800 bg-black">
-            <iframe
-              src="https://www.youtube-nocookie.com/embed/EBsmGGOubCk"
-              title="Fernando posture checker robot demo"
-              className="h-full w-full border-0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-              loading="lazy"
-            />
-          </div>
+          <Image
+            src="/posture-checker-robot/posture-checker-demo.gif"
+            alt="Posture Checker Robot demo"
+            width={480}
+            height={270}
+            unoptimized
+            className="mt-5 h-auto w-full rounded-md border border-stone-800 bg-black"
+          />
         </section>
 
         <Footer className="mt-8" />
