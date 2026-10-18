@@ -3,6 +3,13 @@ import Link from 'next/link';
 
 const projects = [
   {
+    href: '/astra-risk',
+    title: 'Astra Risk',
+    date: 'September 2026',
+    description:
+      'A Hack the North 2026 human-reviewed commercial property underwriting demo',
+  },
+  {
     href: '/metallic-blob',
     title: 'Metallic Blob',
     date: 'March 2026',
@@ -16,16 +23,40 @@ const projects = [
     description: 'A lightweight CLI for sharing terminal sessions over WebSockets',
   },
   {
+    href: '/schema-diff',
+    title: 'Schema Diff',
+    date: 'March 2026',
+    description: 'A visualizer that compares database schemas and highlights migration changes',
+  },
+  {
     href: '/facial-recognition-neural-network',
     title: 'Facial Recognition NN',
     date: 'February 2026',
     description: 'A neural network project for experimenting with facial recognition in the browser',
   },
   {
+    href: '/react-grab',
+    title: 'React Grab',
+    date: 'February 2026',
+    description: 'A React Grab plugin that copies detailed DevTools information for selected elements',
+  },
+  {
     href: '/insforge',
     title: 'InsForge',
     date: 'January 2026',
     description: 'Open source contributions focused on SQL safety checks',
+  },
+  {
+    href: '/llm-benchmarking',
+    title: 'LLM Benchmarking',
+    date: 'December 2025',
+    description: 'A benchmark comparing search APIs on realistic multi-step tasks for LLM agents',
+  },
+  {
+    href: '/mini-data-platform',
+    title: 'Mini Data Platform',
+    date: 'November 2025',
+    description: 'A synthetic data warehouse and analytics platform with an AI-powered CLI agent',
   },
   {
     href: '/projects/tiktok-view-predictor',
@@ -41,6 +72,25 @@ const projects = [
       'A tool for parsing SQL and turning query structure into something easier to inspect',
   },
   {
+    href: '/whiteboard',
+    title: 'Whiteboard',
+    date: 'May 2025',
+    description: 'My best attempt at recreating a Figma clone in TypeScript',
+  },
+  {
+    href: '/chrome-productivity-reminder',
+    title: 'Chrome Productivity Reminder',
+    date: 'May 2025',
+    description:
+      'A Chrome extension that tracks time on distracting sites and prompts users to refocus',
+  },
+  {
+    href: '/url-shortener',
+    title: 'URL Shortener',
+    date: 'May 2025',
+    description: 'A mobile-friendly Go app for creating and sharing short links',
+  },
+  {
     href: '/summary-discord-bot',
     title: 'Summary Discord Bot',
     date: 'May 2025',
@@ -51,6 +101,12 @@ const projects = [
     title: 'Diff Digest',
     date: 'May 2025',
     description: 'A web app that turns GitHub pull request diffs into dual-tone release notes',
+  },
+  {
+    href: '/customer-feedback-etl-pipeline',
+    title: 'Customer Feedback ETL Pipeline',
+    date: 'April 2025',
+    description: 'A Python ETL pipeline that processes customer feedback data to generate insights',
   },
   {
     href: '/posture-checker-robot',
@@ -76,6 +132,18 @@ const projects = [
     title: 'Academates',
     date: 'June 2023',
     description: 'A JAMHacks 7 project connecting high school students for academic support',
+  },
+  {
+    href: '/online-calculator',
+    title: 'Online Calculator',
+    date: 'April 2023',
+    description: 'A C++ calculator for trigonometric functions and basic area calculations',
+  },
+  {
+    href: '/hangman-game',
+    title: 'Hangman Game',
+    date: 'April 2023',
+    description: 'A console-based Java version of the classic Hangman word game',
   },
   {
     href: '/psychai',
