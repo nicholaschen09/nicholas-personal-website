@@ -47,10 +47,11 @@ const projects = [
     description: 'Open source contributions focused on SQL safety checks',
   },
   {
-    href: '/phoebe',
-    title: 'Phoebe',
+    href: '/caregiver-shift-coordinator',
+    title: 'Caregiver Shift Coordinator',
     date: 'January 2026',
-    description: 'A Python service that fills open caregiver shifts through SMS and phone outreach',
+    description:
+      'A Python microservice that fills open caregiver shifts through SMS and phone outreach',
   },
   {
     href: '/llm-benchmarking',
