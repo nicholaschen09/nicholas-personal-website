@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Metallic Blob',
-  description: 'A small visual experiment with a shiny interactive shape that reacts to light and motion.',
+  description: 'A visual experiment with a shiny shape that reacts to light and motion.',
 };
 
 export default function MetallicBlobPage() {

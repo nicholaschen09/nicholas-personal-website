@@ -14,7 +14,7 @@ const projects = [
     title: 'Metallic Blob',
     date: 'March 2026',
     description:
-      'A small visual experiment with a shiny interactive shape that reacts to light and motion',
+      'A visual experiment with a shiny shape that reacts to light and motion',
   },
   {
     href: '/tunl',
@@ -51,7 +51,7 @@ const projects = [
     title: 'Caregiver Shift Coordinator',
     date: 'January 2026',
     description:
-      'A Python microservice that fills open caregiver shifts through SMS and phone outreach',
+      'A Python service that fills open caregiver shifts through SMS and phone outreach',
   },
   {
     href: '/llm-benchmarking',
