@@ -16,7 +16,7 @@ const writing = [
   },
   {
     href: '/blogs/neural-video-compression',
-    title: 'Learning How to Optimize Video Compression for Neural Networks',
+    title: 'Optimizing Video Compression for Neural Networks',
     date: 'April 2026',
     description: 'A comma.ai challenge writeup on compressing video for neural network perception',
   },

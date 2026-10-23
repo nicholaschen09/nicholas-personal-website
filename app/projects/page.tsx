@@ -89,7 +89,7 @@ const projects = [
     title: 'Chrome Productivity Reminder',
     date: 'May 2025',
     description:
-      'A Chrome extension that tracks time on distracting sites and prompts users to refocus',
+      'A Chrome extension tracking time on distracting sites and prompting users to refocus',
   },
   {
     href: '/url-shortener',

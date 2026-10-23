@@ -22,7 +22,7 @@ export default function NeuralVideoCompressionBlog() {
   );
 
   useEffect(() => {
-    document.title = 'Learning How to Optimize Video Compression for Neural Networks';
+    document.title = 'Optimizing Video Compression for Neural Networks';
   }, []);
 
   return (
@@ -50,7 +50,7 @@ export default function NeuralVideoCompressionBlog() {
             </header>
 
             <h1 className="text-[22px] md:text-[28px] font-medium text-white mb-2">
-              Learning How to Optimize Video Compression for Neural Networks
+              Optimizing Video Compression for Neural Networks
             </h1>
             <p className="flex items-baseline justify-between gap-4 text-stone-500 text-sm mb-6">
               <span>Nicholas Chen · April 2026</span>
