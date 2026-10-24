@@ -24,7 +24,7 @@ export default function LLMBenchmarkingPage() {
   return (
     <main className="min-h-screen bg-[#1a1a1a] px-6 pb-12 pt-10 text-stone-300 md:px-12 md:pt-12">
       <article className="mx-auto w-full max-w-[30rem]">
-        <header className="sticky top-0 z-40 -mt-4 -mx-6 mb-4 flex items-center gap-1 bg-[#1a1a1a]/95 px-6 py-4 text-xs font-normal leading-none backdrop-blur md:-mx-12 md:px-12 md:text-sm lg:-mx-0 lg:px-0">
+        <header className="sticky top-0 z-40 -mt-4 -mx-6 page-header-content-gap flex items-center gap-1 bg-[#1a1a1a]/95 px-6 pt-4 text-xs font-normal leading-none backdrop-blur md:-mx-12 md:px-12 md:text-sm lg:-mx-0 lg:px-0">
           <Link
             href="/"
             className="text-xs font-normal leading-none text-stone-50 transition-colors hover:text-stone-300 md:text-sm"

@@ -31,7 +31,7 @@ export default function InsForgePage() {
           <span className="text-stone-400">InsForge</span>
         </header>
 
-        <section className="mt-8 space-y-8 text-xs leading-relaxed text-stone-300 md:text-sm">
+        <section className="page-content-after-header space-y-8 text-xs leading-relaxed text-stone-300 md:text-sm">
           <div>
             <h1 className="mb-2 text-[22px] font-medium text-white md:text-[28px]">InsForge</h1>
             <p className="mb-4 text-sm text-stone-500">Nicholas Chen · January 2026</p>

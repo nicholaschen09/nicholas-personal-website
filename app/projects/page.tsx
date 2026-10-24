@@ -177,7 +177,7 @@ export default function ProjectsPage() {
           <span className="text-stone-400">Projects</span>
         </header>
 
-        <section className="mt-8 space-y-5 text-xs leading-relaxed md:text-sm">
+        <section className="page-content-after-header space-y-5 text-xs leading-relaxed md:text-sm">
           {projects.map((item) => (
             <article key={item.href}>
               <div className="flex items-baseline justify-between gap-4">

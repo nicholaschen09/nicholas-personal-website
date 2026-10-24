@@ -27,7 +27,7 @@ export default function ChromeProductivityReminderPage() {
           <span className="text-stone-400">Chrome Productivity Reminder</span>
         </header>
 
-        <section className="mt-8">
+        <section className="page-content-after-header">
           <div className="mb-5">
             <h1 className="text-[22px] font-medium text-white md:text-[28px]">
               Chrome Productivity Reminder

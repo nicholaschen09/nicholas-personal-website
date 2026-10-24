@@ -27,7 +27,7 @@ export default function CaregiverShiftCoordinatorPage() {
           <span className="text-stone-400">Caregiver Shift Coordinator</span>
         </header>
 
-        <section className="mt-8">
+        <section className="page-content-after-header">
           <div className="mb-5">
             <h1 className="text-[22px] font-medium text-white md:text-[28px]">
               Caregiver Shift Coordinator

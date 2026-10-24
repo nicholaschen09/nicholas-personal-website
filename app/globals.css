@@ -5,6 +5,7 @@
 :root {
   --foreground-rgb: 255, 255, 255;
   --page-background: #1a1a1a;
+  --page-content-gap: 2rem;
 }
 
 html,
@@ -152,6 +153,15 @@ body {
 a[href]:hover,
 a[href]:focus-visible {
   color: #f9a8d4 !important;
+}
+
+.page-content-after-header {
+  margin-top: var(--page-content-gap);
+}
+
+.page-header-content-gap {
+  padding-bottom: calc(var(--page-content-gap) / 2);
+  margin-bottom: calc(var(--page-content-gap) / 2);
 }
 
 @media (max-width: 767px) {

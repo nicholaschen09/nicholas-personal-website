@@ -28,7 +28,7 @@ export default function MiniDataPlatformPage() {
           <span className="text-stone-400">Mini Data Platform</span>
         </header>
 
-        <section className="mt-8">
+        <section className="page-content-after-header">
           <div className="mb-5">
             <h1 className="text-[22px] font-medium text-white md:text-[28px]">
               Mini Data Platform

@@ -27,7 +27,7 @@ export default function DiffDigestPage() {
           <span className="text-stone-400">Diff Digest</span>
         </header>
 
-        <section className="mt-8">
+        <section className="page-content-after-header">
           <div className="mb-5">
             <h1 className="text-[22px] font-medium text-white md:text-[28px]">Diff Digest</h1>
             <p className="mt-1 text-sm text-stone-500">

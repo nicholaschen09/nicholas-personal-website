@@ -49,7 +49,7 @@ export default function WritingPage() {
           <span className="text-stone-400">Writing</span>
         </header>
 
-        <section className="mt-8 space-y-5 text-xs leading-relaxed md:text-sm">
+        <section className="page-content-after-header space-y-5 text-xs leading-relaxed md:text-sm">
           {writing.map((item) => (
             <article key={item.href}>
               <div className="flex items-baseline justify-between gap-4">
