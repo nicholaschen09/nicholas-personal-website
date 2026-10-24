@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Footer from '@/components/Footer';
+import ListingItemTitle from '@/components/ListingItemTitle';
 
 const writing = [
   {
@@ -53,9 +54,7 @@ export default function WritingPage() {
           {writing.map((item) => (
             <article key={item.href}>
               <div className="flex items-baseline justify-between gap-4">
-                <Link href={item.href} className="transition-colors">
-                  {item.title}
-                </Link>
+                <ListingItemTitle href={item.href} title={item.title} />
                 <span className="shrink-0 text-right">{item.date}</span>
               </div>
               <p className="mt-1 text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
