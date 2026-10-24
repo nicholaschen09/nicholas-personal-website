@@ -5,7 +5,7 @@
 :root {
   --foreground-rgb: 255, 255, 255;
   --page-background: #1a1a1a;
-  --page-content-gap: 2rem;
+  --page-content-gap: 1.5rem;
 }
 
 html,
