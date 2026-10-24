@@ -33,7 +33,7 @@ export default function StartupLessonsBlog() {
       <div className="max-w-6xl mx-auto lg:grid lg:grid-cols-[1fr_minmax(0,30rem)_1fr] lg:gap-8 lg:items-start">
         <TableOfContents sections={sections} title="" className="lg:mt-20" />
         <article className="w-full max-w-[30rem] mx-auto">
-          <header className="sticky top-0 z-40 -mt-4 -mx-6 page-header-content-gap flex items-center gap-1 bg-[#1a1a1a]/95 px-6 pt-4 text-xs font-normal leading-none backdrop-blur md:-mx-12 md:px-12 md:text-sm lg:-mx-0 lg:px-0">
+          <header className="sticky top-0 z-40 -mt-4 -mx-6 flex items-center gap-1 bg-[#1a1a1a]/95 px-6 pt-4 text-xs font-normal leading-none backdrop-blur md:-mx-12 md:px-12 md:text-sm lg:-mx-0 lg:px-0">
             <Link
               href="/"
               className="text-xs font-normal leading-none text-stone-50 transition-colors hover:text-stone-300 md:text-sm"
@@ -48,7 +48,7 @@ export default function StartupLessonsBlog() {
             <span className="text-stone-400">Startup Lessons</span>
           </header>
 
-          <h1 className="text-[22px] md:text-[28px] font-medium text-white mb-2">
+          <h1 className="page-content-after-header text-[22px] md:text-[28px] font-medium text-white mb-2">
             10 Lessons from Working at Startups
           </h1>
           <p className="flex items-baseline justify-between gap-4 text-stone-500 text-sm mb-6">

@@ -159,11 +159,6 @@ a[href]:focus-visible {
   margin-top: var(--page-content-gap);
 }
 
-.page-header-content-gap {
-  padding-bottom: calc(var(--page-content-gap) / 2);
-  margin-bottom: calc(var(--page-content-gap) / 2);
-}
-
 @media (max-width: 767px) {
   .text-xs {
     font-size: 0.875rem;
