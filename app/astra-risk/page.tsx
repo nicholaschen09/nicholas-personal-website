@@ -54,7 +54,7 @@ export default function AstraRiskPage() {
             </p>
           </div>
 
-          <p className="text-sm leading-relaxed text-stone-400">
+          <p className="text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
             Built for Hack the North 2026, Astra is a human-reviewed commercial property
             underwriting demo. It reviews broker submissions against sample appetite guidelines,
             surfaces missing information, and explains its findings for an underwriter to review.

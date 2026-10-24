@@ -43,7 +43,7 @@ export default function TunlPage() {
             </p>
           </div>
 
-          <p className="mb-5 text-sm leading-relaxed text-stone-400">
+          <p className="mb-5 text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
             A lightweight terminal CLI for sharing live sessions over WebSockets. Start a relay,
             host a terminal, and let others join.
           </p>

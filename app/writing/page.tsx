@@ -58,7 +58,7 @@ export default function WritingPage() {
                 </Link>
                 <span className="shrink-0 text-right">{item.date}</span>
               </div>
-              <p className="mt-1 text-[11px] leading-relaxed text-stone-400 md:text-xs">
+              <p className="mt-1 text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
                 {item.description}
               </p>
             </article>

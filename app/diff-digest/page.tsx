@@ -52,7 +52,7 @@ export default function DiffDigestPage() {
             </p>
           </div>
 
-          <p className="mb-5 text-sm leading-relaxed text-stone-400">
+          <p className="mb-5 text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
             A web app that turns GitHub pull request diffs into dual-tone release notes, with
             technical details for developers and clear summaries for everyone else.
           </p>

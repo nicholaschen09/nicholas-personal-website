@@ -35,7 +35,7 @@ export default function InsForgePage() {
           <div>
             <h1 className="mb-2 text-[22px] font-medium text-white md:text-[28px]">InsForge</h1>
             <p className="mb-4 text-sm text-stone-500">Nicholas Chen · January 2026</p>
-            <p className="text-stone-500">
+            <p className="font-normal text-stone-500">
               Open source contributions to{' '}
               <a
                 href="https://insforge.dev/"

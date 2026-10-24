@@ -43,7 +43,7 @@ export default function SummaryDiscordBotPage() {
             </p>
           </div>
 
-          <p className="mb-5 text-sm leading-relaxed text-stone-400">
+          <p className="mb-5 text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
             A Discord bot that tracks unread channel messages and uses Groq to summarize the last
             24 hours. It can also clear a channel’s unread message buffer.
           </p>

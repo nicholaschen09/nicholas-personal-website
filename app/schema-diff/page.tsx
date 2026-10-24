@@ -53,7 +53,7 @@ export default function SchemaDiffPage() {
             </p>
           </div>
 
-          <p className="text-sm leading-relaxed text-stone-400">
+          <p className="text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
             Compare database schemas and see added, removed, or changed tables and columns in a
             clear migration view.
           </p>

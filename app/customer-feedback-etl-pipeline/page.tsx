@@ -45,7 +45,7 @@ export default function CustomerFeedbackEtlPipelinePage() {
             </p>
           </div>
 
-          <p className="text-sm leading-relaxed text-stone-400">
+          <p className="text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
             A Python ETL pipeline for aggregating customer feedback, cleaning and transforming the
             data, and generating insights to help improve customer satisfaction.
           </p>

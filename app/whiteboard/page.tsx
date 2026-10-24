@@ -53,7 +53,7 @@ export default function WhiteboardPage() {
             </p>
           </div>
 
-          <p className="text-sm leading-relaxed text-stone-400">
+          <p className="text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
             My best attempt at recreating a Figma clone in TypeScript.
           </p>
 

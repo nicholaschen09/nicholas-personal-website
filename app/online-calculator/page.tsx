@@ -42,7 +42,7 @@ export default function OnlineCalculatorPage() {
             </p>
           </div>
 
-          <p className="text-sm leading-relaxed text-stone-400">
+          <p className="text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
             A C++ calculator that lets users choose a function, enter values, and calculate
             trigonometric functions or basic areas.
           </p>
