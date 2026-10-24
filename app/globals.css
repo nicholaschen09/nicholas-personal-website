@@ -154,6 +154,16 @@ a[href]:focus-visible {
   color: #f9a8d4 !important;
 }
 
+@media (max-width: 767px) {
+  .text-xs {
+    font-size: 0.875rem;
+  }
+
+  .text-sm {
+    font-size: 1rem;
+  }
+}
+
 .tiktok-view-predictor-page {
   background: #1a1a1a;
   color: #d6d3d1;
