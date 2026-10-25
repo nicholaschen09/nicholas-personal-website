@@ -48,7 +48,7 @@ export default function MiniDataPlatformPage() {
             </p>
           </div>
 
-          <p className="text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
+          <p className="text-xs font-normal leading-relaxed text-stone-300 md:text-sm">
             A synthetic data platform that runs data ingestion with Airflow, transforms data with
             dbt into a DuckDB warehouse, and presents Evidence dashboards. A CLI agent answers
             ad-hoc questions about sales, customers, products, and anomalies.

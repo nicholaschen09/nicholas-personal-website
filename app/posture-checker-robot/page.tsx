@@ -47,7 +47,7 @@ export default function PostureCheckerRobotPage() {
             </p>
           </div>
 
-          <p className="text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
+          <p className="text-xs font-normal leading-relaxed text-stone-300 md:text-sm">
             A computer vision robot that detects poor posture in real time and gives immediate
             feedback to help people sit more comfortably while working or gaming. We won 2nd place
             overall.

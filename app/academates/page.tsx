@@ -45,7 +45,7 @@ export default function AcadematesPage() {
             </p>
           </div>
 
-          <p className="text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
+          <p className="text-xs font-normal leading-relaxed text-stone-300 md:text-sm">
             Built for JAMHacks 7, Academates connects high school students with local peers for
             academic support, collaborative study groups, and motivation.
           </p>

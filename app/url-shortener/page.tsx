@@ -54,7 +54,7 @@ export default function URLShortenerPage() {
             </p>
           </div>
 
-          <p className="text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
+          <p className="text-xs font-normal leading-relaxed text-stone-300 md:text-sm">
             A modern, mobile-friendly URL shortener built with Go and Tailwind CSS. Create concise
             links and copy them with one click.
           </p>

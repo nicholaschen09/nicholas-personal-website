@@ -47,7 +47,7 @@ export default function InsForgePage() {
                 </a>
               </span>
             </p>
-            <p className="font-normal text-stone-400">
+            <p className="font-normal text-stone-300">
               Open source contributions to InsForge, a cloud infrastructure platform that gives AI
               coding agents the tools to build and deploy full-stack applications
             </p>

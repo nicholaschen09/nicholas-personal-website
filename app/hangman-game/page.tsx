@@ -44,7 +44,7 @@ export default function HangmanGamePage() {
             </p>
           </div>
 
-          <p className="text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
+          <p className="text-xs font-normal leading-relaxed text-stone-300 md:text-sm">
             A console-based Java game where players guess letters to reveal a hidden word before
             they run out of chances.
           </p>

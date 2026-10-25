@@ -47,7 +47,7 @@ export default function CaregiverShiftCoordinatorPage() {
             </p>
           </div>
 
-          <p className="text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
+          <p className="text-xs font-normal leading-relaxed text-stone-300 md:text-sm">
             A Python microservice that fills open caregiver shifts by notifying qualified caregivers
             via SMS, then escalating to phone calls if a shift remains unfilled. It assigns the
             first caregiver to accept and protects against duplicate notifications and competing

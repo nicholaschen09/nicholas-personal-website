@@ -55,7 +55,7 @@ export default function VoluntrackPage() {
             </p>
           </div>
 
-          <p className="text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
+          <p className="text-xs font-normal leading-relaxed text-stone-300 md:text-sm">
             A platform that connects volunteers with nonprofits and helps people find opportunities
             that match their interests.
           </p>

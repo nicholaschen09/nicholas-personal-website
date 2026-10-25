@@ -47,7 +47,7 @@ export default function ChromeProductivityReminderPage() {
             </p>
           </div>
 
-          <p className="text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
+          <p className="text-xs font-normal leading-relaxed text-stone-300 md:text-sm">
             A Chrome extension that reminds you to refocus when you visit distracting sites like
             YouTube, TikTok, or Instagram. It tracks time spent on those sites and lets you continue
             or head back to a productivity site.

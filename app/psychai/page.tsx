@@ -45,7 +45,7 @@ export default function PsychAIPage() {
             </p>
           </div>
 
-          <p className="text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
+          <p className="text-xs font-normal leading-relaxed text-stone-300 md:text-sm">
             Built for the MagicHacks hackathon, PsychAI is an AI chatbot designed to offer mental
             health support and resources.
           </p>

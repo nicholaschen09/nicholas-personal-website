@@ -45,7 +45,7 @@ export default function BasketBinPage() {
             </p>
           </div>
 
-          <p className="text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
+          <p className="text-xs font-normal leading-relaxed text-stone-300 md:text-sm">
             Built at Hack the 6ix 2024, BasketBin is a smart recycling game that uses a camera and
             sensors to sort waste, award points for correct disposal, and encourage better recycling
             habits.

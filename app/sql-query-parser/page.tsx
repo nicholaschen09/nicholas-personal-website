@@ -55,7 +55,7 @@ export default function SqlQueryParserPage() {
             </p>
           </div>
 
-          <p className="mb-5 text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
+          <p className="mb-5 text-xs font-normal leading-relaxed text-stone-300 md:text-sm">
             A tool for parsing SQL and turning query structure into something easier to inspect.
           </p>
 

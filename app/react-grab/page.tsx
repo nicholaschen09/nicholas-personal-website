@@ -55,7 +55,7 @@ export default function ReactGrabPage() {
             </p>
           </div>
 
-          <p className="text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
+          <p className="text-xs font-normal leading-relaxed text-stone-300 md:text-sm">
             Built on top of{' '}
             <a
               href="https://github.com/aidenybai/react-grab"
