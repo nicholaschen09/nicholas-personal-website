@@ -29,3 +29,7 @@ next-env.d.ts
 # history
 history.md
 .history
+
+# Playwright
+/playwright-report/
+/test-results/
