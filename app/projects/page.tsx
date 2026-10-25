@@ -183,7 +183,7 @@ export default function ProjectsPage() {
                 <ListingItemTitle href={item.href} title={item.title} />
                 <span className="shrink-0 text-right">{item.date}</span>
               </div>
-              <p className="mt-1 text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
+              <p className="listing-item-description mt-1 text-stone-400">
                 {item.description}
               </p>
             </article>

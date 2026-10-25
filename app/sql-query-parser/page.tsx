@@ -5,7 +5,8 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'SQL Query Parser',
-  description: 'A tool for parsing SQL and turning query structure into something easier to inspect.',
+  description:
+    'A tool for parsing SQL and turning query structure into something easier to inspect.',
 };
 
 export default function SqlQueryParserPage() {
@@ -31,24 +32,26 @@ export default function SqlQueryParserPage() {
           <div className="mb-5">
             <h1 className="text-[22px] font-medium text-white md:text-[28px]">SQL Query Parser</h1>
             <p className="mt-1 text-sm text-stone-500">
-              Nicholas Chen · May 2025 ·{' '}
-              <a
-                href="https://sql-query-parser.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-stone-100"
-              >
-                Website
-              </a>{' '}
-              ·{' '}
-              <a
-                href="https://github.com/nicholaschen09/sql-query-parser"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-stone-100"
-              >
-                GitHub repository
-              </a>
+              <span className="block">Nicholas Chen · May 2025</span>
+              <span className="project-meta-links">
+                <a
+                  href="https://sql-query-parser.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-stone-100"
+                >
+                  Website
+                </a>{' '}
+                ·{' '}
+                <a
+                  href="https://github.com/nicholaschen09/sql-query-parser"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-stone-100"
+                >
+                  GitHub
+                </a>
+              </span>
             </p>
           </div>
 

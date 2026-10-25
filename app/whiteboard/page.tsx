@@ -32,24 +32,26 @@ export default function WhiteboardPage() {
           <div className="mb-5">
             <h1 className="text-[22px] font-medium text-white md:text-[28px]">Whiteboard</h1>
             <p className="mt-1 text-sm text-stone-500">
-              Nicholas Chen · May 2025 ·{' '}
-              <a
-                href="https://whiteboard-three-puce.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-stone-100"
-              >
-                Website
-              </a>
-              {' · '}
-              <a
-                href="https://github.com/nicholaschen09/whiteboard"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-stone-100"
-              >
-                GitHub repository
-              </a>
+              <span className="block">Nicholas Chen · May 2025</span>
+              <span className="project-meta-links">
+                <a
+                  href="https://whiteboard-three-puce.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-stone-100"
+                >
+                  Website
+                </a>
+                {' · '}
+                <a
+                  href="https://github.com/nicholaschen09/whiteboard"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-stone-100"
+                >
+                  GitHub
+                </a>
+              </span>
             </p>
           </div>
 

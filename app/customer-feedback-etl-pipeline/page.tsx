@@ -4,8 +4,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Customer Feedback ETL Pipeline',
-  description:
-    'A Python ETL pipeline for collecting, processing, and analyzing customer feedback.',
+  description: 'A Python ETL pipeline for collecting, processing, and analyzing customer feedback.',
 };
 
 export default function CustomerFeedbackEtlPipelinePage() {
@@ -33,15 +32,17 @@ export default function CustomerFeedbackEtlPipelinePage() {
               Customer Feedback ETL Pipeline
             </h1>
             <p className="mt-1 text-sm text-stone-500">
-              Nicholas Chen · April 2025 ·{' '}
-              <a
-                href="https://github.com/nicholaschen09/customer-feedback-etl-pipeline"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-stone-100"
-              >
-                GitHub repository
-              </a>
+              <span className="block">Nicholas Chen · April 2025</span>
+              <span className="project-meta-links">
+                <a
+                  href="https://github.com/nicholaschen09/customer-feedback-etl-pipeline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-stone-100"
+                >
+                  GitHub
+                </a>
+              </span>
             </p>
           </div>
 

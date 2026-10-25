@@ -33,15 +33,17 @@ export default function CaregiverShiftCoordinatorPage() {
               Caregiver Shift Coordinator
             </h1>
             <p className="mt-1 text-sm text-stone-500">
-              Nicholas Chen · January 2026 ·{' '}
-              <a
-                href="https://github.com/nicholaschen09/python-microservice"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-stone-100"
-              >
-                GitHub repository
-              </a>
+              <span className="block">Nicholas Chen · January 2026</span>
+              <span className="project-meta-links">
+                <a
+                  href="https://github.com/nicholaschen09/python-microservice"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-stone-100"
+                >
+                  GitHub
+                </a>
+              </span>
             </p>
           </div>
 

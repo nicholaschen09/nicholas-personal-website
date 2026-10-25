@@ -31,15 +31,17 @@ export default function AcadematesPage() {
           <div className="mb-5">
             <h1 className="text-[22px] font-medium text-white md:text-[28px]">Academates</h1>
             <p className="mt-1 text-sm text-stone-500">
-              Nicholas Chen · June 2023 ·{' '}
-              <a
-                href="https://github.com/ArshM-15/academates"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-stone-100"
-              >
-                GitHub repository
-              </a>
+              <span className="block">Nicholas Chen · June 2023</span>
+              <span className="project-meta-links">
+                <a
+                  href="https://github.com/ArshM-15/academates"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-stone-100"
+                >
+                  GitHub
+                </a>
+              </span>
             </p>
           </div>
 

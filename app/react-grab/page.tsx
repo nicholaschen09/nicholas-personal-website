@@ -5,7 +5,8 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'React Grab',
-  description: 'A React Grab contribution that adds a copyable DevTools panel for selected elements.',
+  description:
+    'A React Grab contribution that adds a copyable DevTools panel for selected elements.',
 };
 
 export default function ReactGrabPage() {
@@ -31,24 +32,26 @@ export default function ReactGrabPage() {
           <div className="mb-5">
             <h1 className="text-[22px] font-medium text-white md:text-[28px]">React Grab</h1>
             <p className="mt-1 text-sm text-stone-500">
-              Nicholas Chen · February 2026 ·{' '}
-              <a
-                href="https://github.com/nicholaschen09/react-grab/commit/227e1c1e9020ff12191234c1710cacb45bf6a9cc"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-stone-100"
-              >
-                GitHub commit
-              </a>
-              {' · '}
-              <a
-                href="https://github.com/nicholaschen09/react-grab"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-stone-100"
-              >
-                GitHub repository
-              </a>
+              <span className="block">Nicholas Chen · February 2026</span>
+              <span className="project-meta-links">
+                <a
+                  href="https://github.com/nicholaschen09/react-grab/commit/227e1c1e9020ff12191234c1710cacb45bf6a9cc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-stone-100"
+                >
+                  GitHub commit
+                </a>
+                {' · '}
+                <a
+                  href="https://github.com/nicholaschen09/react-grab"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-stone-100"
+                >
+                  GitHub
+                </a>
+              </span>
             </p>
           </div>
 

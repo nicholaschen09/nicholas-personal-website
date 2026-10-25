@@ -32,24 +32,26 @@ export default function SchemaDiffPage() {
           <div className="mb-5">
             <h1 className="text-[22px] font-medium text-white md:text-[28px]">Schema Diff</h1>
             <p className="mt-1 text-sm text-stone-500">
-              Nicholas Chen · March 2026 ·{' '}
-              <a
-                href="https://schema-diff-gray.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-stone-100"
-              >
-                Website
-              </a>
-              {' · '}
-              <a
-                href="https://github.com/nicholaschen09/schema-diff"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-stone-100"
-              >
-                GitHub repository
-              </a>
+              <span className="block">Nicholas Chen · March 2026</span>
+              <span className="project-meta-links">
+                <a
+                  href="https://schema-diff-gray.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-stone-100"
+                >
+                  Website
+                </a>
+                {' · '}
+                <a
+                  href="https://github.com/nicholaschen09/schema-diff"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-stone-100"
+                >
+                  GitHub
+                </a>
+              </span>
             </p>
           </div>
 

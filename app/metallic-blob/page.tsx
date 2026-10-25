@@ -30,15 +30,17 @@ export default function MetallicBlobPage() {
           <div className="mb-5">
             <h1 className="text-[22px] font-medium text-white md:text-[28px]">Metallic Blob</h1>
             <p className="mt-1 text-sm text-stone-500">
-              Nicholas Chen · March 2026 ·{' '}
-              <a
-                href="https://github.com/nicholaschen09/metallic-blob"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-stone-100"
-              >
-                GitHub repository
-              </a>
+              <span className="block">Nicholas Chen · March 2026</span>
+              <span className="project-meta-links">
+                <a
+                  href="https://github.com/nicholaschen09/metallic-blob"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-stone-100"
+                >
+                  GitHub
+                </a>
+              </span>
             </p>
           </div>
 

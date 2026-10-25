@@ -31,22 +31,24 @@ export default function BasketBinPage() {
           <div className="mb-5">
             <h1 className="text-[22px] font-medium text-white md:text-[28px]">BasketBin</h1>
             <p className="mt-1 text-sm text-stone-500">
-              Nicholas Chen · August 2024 ·{' '}
-              <a
-                href="https://github.com/DerrickHa/ht6"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-stone-100"
-              >
-                GitHub repository
-              </a>
+              <span className="block">Nicholas Chen · August 2024</span>
+              <span className="project-meta-links">
+                <a
+                  href="https://github.com/DerrickHa/ht6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-stone-100"
+                >
+                  GitHub
+                </a>
+              </span>
             </p>
           </div>
 
           <p className="text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
             Built at Hack the 6ix 2024, BasketBin is a smart recycling game that uses a camera and
-            sensors to sort waste, award points for correct disposal, and encourage better
-            recycling habits.
+            sensors to sort waste, award points for correct disposal, and encourage better recycling
+            habits.
           </p>
 
           <Image

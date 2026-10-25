@@ -33,15 +33,17 @@ export default function ChromeProductivityReminderPage() {
               Chrome Productivity Reminder
             </h1>
             <p className="mt-1 text-sm text-stone-500">
-              Nicholas Chen · May 2025 ·{' '}
-              <a
-                href="https://github.com/nicholaschen09/chrome-productivity-reminder-pop-up"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-stone-100"
-              >
-                GitHub repository
-              </a>
+              <span className="block">Nicholas Chen · May 2025</span>
+              <span className="project-meta-links">
+                <a
+                  href="https://github.com/nicholaschen09/chrome-productivity-reminder-pop-up"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-stone-100"
+                >
+                  GitHub
+                </a>
+              </span>
             </p>
           </div>
 

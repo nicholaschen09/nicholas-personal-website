@@ -33,24 +33,26 @@ export default function AstraRiskPage() {
           <div className="mb-5">
             <h1 className="text-[22px] font-medium text-white md:text-[28px]">Astra Risk</h1>
             <p className="mt-1 text-sm text-stone-500">
-              Nicholas Chen · September 2026 ·{' '}
-              <a
-                href="https://astra-risk.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-stone-100"
-              >
-                Website
-              </a>
-              {' · '}
-              <a
-                href="https://github.com/JustinScitech/astrarisk"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-stone-100"
-              >
-                GitHub repository
-              </a>
+              <span className="block">Nicholas Chen · September 2026</span>
+              <span className="project-meta-links">
+                <a
+                  href="https://astra-risk.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-stone-100"
+                >
+                  Website
+                </a>
+                {' · '}
+                <a
+                  href="https://github.com/JustinScitech/astrarisk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-stone-100"
+                >
+                  GitHub
+                </a>
+              </span>
             </p>
           </div>
 

@@ -29,23 +29,27 @@ export default function SummaryDiscordBotPage() {
 
         <section className="page-content-after-header">
           <div className="mb-5">
-            <h1 className="text-[22px] font-medium text-white md:text-[28px]">Summary Discord Bot</h1>
+            <h1 className="text-[22px] font-medium text-white md:text-[28px]">
+              Summary Discord Bot
+            </h1>
             <p className="mt-1 text-sm text-stone-500">
-              Nicholas Chen · May 2025 ·{' '}
-              <a
-                href="https://github.com/nicholaschen09/summary-discord-bot"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-stone-100"
-              >
-                GitHub repository
-              </a>
+              <span className="block">Nicholas Chen · May 2025</span>
+              <span className="project-meta-links">
+                <a
+                  href="https://github.com/nicholaschen09/summary-discord-bot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-stone-100"
+                >
+                  GitHub
+                </a>
+              </span>
             </p>
           </div>
 
           <p className="mb-5 text-xs font-normal leading-relaxed text-stone-400 md:text-sm">
-            A Discord bot that tracks unread channel messages and uses Groq to summarize the last
-            24 hours. It can also clear a channel’s unread message buffer.
+            A Discord bot that tracks unread channel messages and uses Groq to summarize the last 24
+            hours. It can also clear a channel’s unread message buffer.
           </p>
 
           <Image

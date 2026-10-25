@@ -32,24 +32,26 @@ export default function VoluntrackPage() {
           <div className="mb-5">
             <h1 className="text-[22px] font-medium text-white md:text-[28px]">Voluntrack</h1>
             <p className="mt-1 text-sm text-stone-500">
-              Nicholas Chen · August 2023 ·{' '}
-              <a
-                href="https://voluntracks.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-stone-100"
-              >
-                Website
-              </a>
-              {' · '}
-              <a
-                href="https://www.figma.com/design/QJo5Z9dRj7V7SwE5h43jrW/VolunTrack-App-Design?t=1szHesRVLNycxLXL-1"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-stone-100"
-              >
-                Figma design
-              </a>
+              <span className="block">Nicholas Chen · August 2023</span>
+              <span className="project-meta-links">
+                <a
+                  href="https://voluntracks.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-stone-100"
+                >
+                  Website
+                </a>
+                {' · '}
+                <a
+                  href="https://www.figma.com/design/QJo5Z9dRj7V7SwE5h43jrW/VolunTrack-App-Design?t=1szHesRVLNycxLXL-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-stone-100"
+                >
+                  Figma design
+                </a>
+              </span>
             </p>
           </div>
 

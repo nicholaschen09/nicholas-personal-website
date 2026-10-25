@@ -167,9 +167,35 @@ a[href]:focus-visible {
   transition: color 150ms ease;
 }
 
+.listing-item-description {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.625;
+}
+
+.project-meta-links {
+  display: block;
+  margin-top: 1.25rem;
+  color: #a8a29e;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+}
+
+.project-meta-links a {
+  color: inherit;
+}
+
 @media (min-width: 768px) {
   .listing-item-title {
     font-size: 0.9296875rem;
+  }
+
+  .listing-item-description {
+    font-size: 0.796875rem;
+  }
+
+  .project-meta-links {
+    font-size: 0.875rem;
   }
 }
 
@@ -250,11 +276,11 @@ a[href]:focus-visible {
   text-decoration: none;
 }
 
-.tiktok-view-predictor-page article > header > a[href="/"] {
+.tiktok-view-predictor-page article > header > a[href='/'] {
   color: #fafaf9;
 }
 
-.tiktok-view-predictor-page article > header > a[href="/projects"],
+.tiktok-view-predictor-page article > header > a[href='/projects'],
 .tiktok-view-predictor-page article > header > span:last-child {
   color: #a8a29e;
 }

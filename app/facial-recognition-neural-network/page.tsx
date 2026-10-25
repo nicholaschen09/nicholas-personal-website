@@ -36,13 +36,7 @@ python evaluate.py     # Evaluate accuracy
 python webcam.py       # Webcam demo`,
 };
 
-function Section({
-  title,
-  children,
-}: {
-  title: string;
-  children: React.ReactNode;
-}) {
+function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section>
       <h2 className="mb-3 text-lg font-semibold text-stone-100 md:text-xl">{title}</h2>
@@ -82,24 +76,26 @@ export default function FacialRecognitionNeuralNetworkPage() {
           Facial Recognition NN
         </h1>
         <p className="mb-6 text-sm text-stone-500">
-          Nicholas Chen · February 2026 ·{' '}
-          <Link
-            href="https://github.com/nicholaschen09/facial-recognition-neural-network"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="no-underline transition-colors hover:text-stone-100"
-          >
-            GitHub repository
-          </Link>
+          <span className="block">Nicholas Chen · February 2026</span>
+          <span className="project-meta-links">
+            <Link
+              href="https://github.com/nicholaschen09/facial-recognition-neural-network"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="no-underline transition-colors hover:text-stone-100"
+            >
+              GitHub
+            </Link>
+          </span>
         </p>
 
         <div className="space-y-8 text-xs leading-relaxed md:text-sm">
           <section className="space-y-4">
             <p>
-              Modern devices unlock with your face in under a second. I wanted to rebuild a
-              minimal version of that experience from scratch: collect a small dataset of faces,
-              train a convolutional neural network, and use it to recognise whether the camera is
-              currently seeing me (&quot;nic&quot;) or someone else (&quot;other&quot;).
+              Modern devices unlock with your face in under a second. I wanted to rebuild a minimal
+              version of that experience from scratch: collect a small dataset of faces, train a
+              convolutional neural network, and use it to recognise whether the camera is currently
+              seeing me (&quot;nic&quot;) or someone else (&quot;other&quot;).
             </p>
             <p>
               The project is organised as a small, production-style pipeline: raw images go through
@@ -116,9 +112,9 @@ export default function FacialRecognitionNeuralNetworkPage() {
             <CodeBlock>{codeBlocks.files}</CodeBlock>
             <p>
               <code>preprocess.py</code> walks these directories, runs OpenCV&apos;s{' '}
-              <code>haarcascade_frontalface_default.xml</code> detector on each image, then
-              converts the frame to grayscale, crops a tight bounding box around each detected face,
-              resizes to a fixed 96 x 96 resolution, and writes the crop into a mirrored{' '}
+              <code>haarcascade_frontalface_default.xml</code> detector on each image, then converts
+              the frame to grayscale, crops a tight bounding box around each detected face, resizes
+              to a fixed 96 x 96 resolution, and writes the crop into a mirrored{' '}
               <code>processed/train/&lt;class&gt;</code> structure.
             </p>
             <p>
@@ -139,9 +135,9 @@ export default function FacialRecognitionNeuralNetworkPage() {
               MaxPool, growing from 1 channel to 32 and then 64 feature maps.
             </p>
             <p>
-              A flattened feature vector of size <code>64 x 21 x 21</code> is fed into a small
-              fully connected head, followed by a final linear layer that outputs{' '}
-              <code>num_classes</code> logits: here, <code>[nic, other]</code>.
+              A flattened feature vector of size <code>64 x 21 x 21</code> is fed into a small fully
+              connected head, followed by a final linear layer that outputs <code>num_classes</code>{' '}
+              logits: here, <code>[nic, other]</code>.
             </p>
             <p>
               Mathematically, the network learns a function that maps an input tensor of shape{' '}
@@ -191,7 +187,8 @@ export default function FacialRecognitionNeuralNetworkPage() {
               To make the model easy to reuse, <code>inference.py</code> exposes a small{' '}
               <code>predict(image_path)</code> helper. It loads the trained CNN with{' '}
               <code>num_classes = 2</code>, applies the same preprocessing transforms as training,
-              and returns the human-readable label from <code>[&quot;nic&quot;, &quot;other&quot;]</code>.
+              and returns the human-readable label from{' '}
+              <code>[&quot;nic&quot;, &quot;other&quot;]</code>.
             </p>
 
             <h3 className="text-base font-semibold text-stone-100">
@@ -199,9 +196,9 @@ export default function FacialRecognitionNeuralNetworkPage() {
             </h3>
             <p>
               The most satisfying part is the webcam demo. It uses OpenCV to grab frames from{' '}
-              <code>VideoCapture(0)</code>, runs the same Haar Cascade detector, feeds each
-              detected face through the CNN, and overlays a bounding box around the face and a label
-              saying either &quot;nic&quot; or &quot;other&quot;.
+              <code>VideoCapture(0)</code>, runs the same Haar Cascade detector, feeds each detected
+              face through the CNN, and overlays a bounding box around the face and a label saying
+              either &quot;nic&quot; or &quot;other&quot;.
             </p>
             <p>
               Hit <code>q</code> to exit, and you&apos;ve effectively turned your laptop into a
@@ -227,7 +224,6 @@ export default function FacialRecognitionNeuralNetworkPage() {
               recognises me or confidently says &quot;other&quot;.
             </p>
           </Section>
-
         </div>
 
         <Footer className="mt-8" />

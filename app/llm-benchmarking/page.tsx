@@ -43,24 +43,26 @@ export default function LLMBenchmarkingPage() {
           LLM Benchmarking
         </h1>
         <p className="mb-6 text-sm text-stone-500">
-          Nicholas Chen · December 2025 ·{' '}
-          <Link
-            href="https://llm-benchmarking-kappa.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="no-underline transition-colors hover:text-stone-100"
-          >
-            Website
-          </Link>
-          {' · '}
-          <Link
-            href="https://github.com/nicholaschen09/llm-benchmarking"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="no-underline transition-colors hover:text-stone-100"
-          >
-            GitHub repository
-          </Link>
+          <span className="block">Nicholas Chen · December 2025</span>
+          <span className="project-meta-links">
+            <Link
+              href="https://llm-benchmarking-kappa.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="no-underline transition-colors hover:text-stone-100"
+            >
+              Website
+            </Link>
+            {' · '}
+            <Link
+              href="https://github.com/nicholaschen09/llm-benchmarking"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="no-underline transition-colors hover:text-stone-100"
+            >
+              GitHub
+            </Link>
+          </span>
         </p>
 
         <div className="space-y-8 text-xs leading-relaxed md:text-sm">
@@ -95,7 +97,6 @@ export default function LLMBenchmarkingPage() {
           <MappingOutcomesSection />
           <ImprovementStrategiesSection />
           <ReferencesSection />
-
         </div>
 
         <Footer className="mt-8" />

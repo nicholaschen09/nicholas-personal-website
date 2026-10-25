@@ -33,15 +33,17 @@ export default function PostureCheckerRobotPage() {
               Posture Checker Robot
             </h1>
             <p className="mt-1 text-sm text-stone-500">
-              Nicholas Chen · February 2025 ·{' '}
-              <a
-                href="https://github.com/enxilium/posture-checker-robot"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-stone-100"
-              >
-                GitHub repository
-              </a>
+              <span className="block">Nicholas Chen · February 2025</span>
+              <span className="project-meta-links">
+                <a
+                  href="https://github.com/enxilium/posture-checker-robot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-stone-100"
+                >
+                  GitHub
+                </a>
+              </span>
             </p>
           </div>
 

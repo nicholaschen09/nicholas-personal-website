@@ -34,19 +34,22 @@ export default function InsForgePage() {
         <section className="page-content-after-header space-y-8 text-xs leading-relaxed text-stone-300 md:text-sm">
           <div>
             <h1 className="mb-2 text-[22px] font-medium text-white md:text-[28px]">InsForge</h1>
-            <p className="mb-4 text-sm text-stone-500">Nicholas Chen · January 2026</p>
-            <p className="font-normal text-stone-500">
-              Open source contributions to{' '}
-              <a
-                href="https://insforge.dev/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="no-underline transition-colors"
-              >
-                InsForge
-              </a>
-              , a cloud infrastructure platform that gives AI coding agents the tools to build and
-              deploy full-stack applications
+            <p className="mb-4 text-sm text-stone-500">
+              <span className="block">Nicholas Chen · January 2026</span>
+              <span className="project-meta-links">
+                <a
+                  href="https://insforge.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="no-underline transition-colors"
+                >
+                  Website
+                </a>
+              </span>
+            </p>
+            <p className="font-normal text-stone-400">
+              Open source contributions to InsForge, a cloud infrastructure platform that gives AI
+              coding agents the tools to build and deploy full-stack applications
             </p>
           </div>
 
