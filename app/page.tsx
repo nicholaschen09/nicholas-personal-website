@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import Footer from '@/components/Footer';
 
 type TextLinkProps = {
@@ -76,13 +75,6 @@ export default function Home() {
               RBC
             </TextLink>, and I&apos;m interested in product engineering.
           </p>
-          <Image
-            src="/home/img-2400.jpg"
-            alt="Close-up of a textured gray surface with red and green markings"
-            width={2468}
-            height={1486}
-            className="h-auto w-full brightness-75"
-          />
         </section>
 
         <Footer className="mt-8" />
