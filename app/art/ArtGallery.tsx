@@ -57,6 +57,19 @@ export default function ArtGallery() {
                 Your browser does not support the video tag.
               </video>
             )}
+            {artwork.src === '/art/art-31.webp' && (
+              <video
+                controls
+                playsInline
+                preload="metadata"
+                poster="/art/alienated-animation-poster.jpg"
+                aria-label="Alienated 3D animation"
+                className="w-full"
+              >
+                <source src="/art/alienated-animation.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            )}
           </Fragment>
         ))}
       </section>
