@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useEffect, useRef, useState } from 'react';
+import { Fragment, useEffect, useRef, useState } from 'react';
 import artworks from './artworks.json';
 
 export default function ArtGallery() {
@@ -27,23 +27,37 @@ export default function ArtGallery() {
         className="page-content-after-header space-y-3"
       >
         {artworks.map((artwork, index) => (
-          <button
-            key={artwork.src}
-            type="button"
-            onClick={() => setSelected(artwork)}
-            aria-label={`View ${artwork.alt}`}
-            className="block w-full cursor-zoom-in focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pink-300"
-          >
-            <Image
-              src={artwork.src}
-              alt={artwork.alt}
-              width={artwork.width}
-              height={artwork.height}
-              sizes="(min-width: 768px) 152px, (min-width: 528px) 234px, calc((100vw - 60px) / 2)"
-              priority={index < 2}
-              className="h-auto w-full transition-opacity hover:opacity-90"
-            />
-          </button>
+          <Fragment key={artwork.src}>
+            <button
+              type="button"
+              onClick={() => setSelected(artwork)}
+              aria-label={`View ${artwork.alt}`}
+              className="block w-full cursor-zoom-in focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pink-300"
+            >
+              <Image
+                src={artwork.src}
+                alt={artwork.alt}
+                width={artwork.width}
+                height={artwork.height}
+                sizes="(min-width: 768px) 152px, (min-width: 528px) 234px, calc((100vw - 60px) / 2)"
+                priority={index < 2}
+                className="h-auto w-full transition-opacity hover:opacity-90"
+              />
+            </button>
+            {artwork.src === '/art/art-32.webp' && (
+              <video
+                controls
+                playsInline
+                preload="metadata"
+                poster="/art/animation-process-poster.jpg"
+                aria-label="Animation process video"
+                className="w-full"
+              >
+                <source src="/art/animation-process.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            )}
+          </Fragment>
         ))}
       </section>
 
