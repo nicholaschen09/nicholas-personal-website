@@ -22,7 +22,10 @@ export default function ArtGallery() {
 
   return (
     <>
-      <section aria-label="Artwork gallery" className="mt-8 space-y-3 md:mt-10">
+      <section
+        aria-label="Artwork gallery"
+        className="page-content-after-header space-y-3"
+      >
         {artworks.map((artwork, index) => (
           <button
             key={artwork.src}
