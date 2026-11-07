@@ -22,14 +22,14 @@ export default function ArtGallery() {
 
   return (
     <>
-      <section aria-label="Artwork gallery" className="mt-8 columns-2 gap-3 md:mt-10 md:columns-3">
+      <section aria-label="Artwork gallery" className="mt-8 space-y-3 md:mt-10">
         {artworks.map((artwork, index) => (
           <button
             key={artwork.src}
             type="button"
             onClick={() => setSelected(artwork)}
             aria-label={`View ${artwork.alt}`}
-            className="mb-3 block w-full cursor-zoom-in break-inside-avoid focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pink-300"
+            className="block w-full cursor-zoom-in focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pink-300"
           >
             <Image
               src={artwork.src}

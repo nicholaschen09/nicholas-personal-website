@@ -27,6 +27,7 @@ function TextLink({ href, children, external = false }: TextLinkProps) {
 }
 
 const navItems = [
+  { href: '/art', label: 'Art' },
   { href: '/writing', label: 'Writing' },
   { href: '/projects', label: 'Projects' },
 ];
