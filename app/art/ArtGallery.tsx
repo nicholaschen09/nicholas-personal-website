@@ -45,30 +45,26 @@ export default function ArtGallery() {
               />
             </button>
             {artwork.src === '/art/art-32.webp' && (
-              <video
-                controls
-                playsInline
-                preload="metadata"
-                poster="/art/animation-process-poster.jpg"
-                aria-label="Animation process video"
+              <Image
+                src="/art/animation-process.gif"
+                alt="Animation process"
+                width={768}
+                height={432}
+                unoptimized
                 className="w-full"
               >
-                <source src="/art/animation-process.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              </Image>
             )}
             {artwork.src === '/art/art-31.webp' && (
-              <video
-                controls
-                playsInline
-                preload="metadata"
-                poster="/art/alienated-animation-poster.jpg"
-                aria-label="Alienated 3D animation"
+              <Image
+                src="/art/alienated-animation.gif"
+                alt="Alienated 3D animation"
+                width={1280}
+                height={720}
+                unoptimized
                 className="w-full"
               >
-                <source src="/art/alienated-animation.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              </Image>
             )}
           </Fragment>
         ))}
