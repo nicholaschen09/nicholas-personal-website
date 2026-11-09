@@ -39,7 +39,7 @@ export default function WritingPage() {
   return (
     <main className="listing-page min-h-screen bg-[#1a1a1a] px-6 py-10 text-stone-300 md:px-12 md:py-12">
       <div className="mx-auto flex min-h-[calc(100vh-6rem)] w-full max-w-[30rem] flex-col">
-        <header className="flex items-center gap-1 text-xs font-normal leading-none md:text-sm">
+        <header className="sticky top-0 z-40 -mx-6 -mt-4 flex items-center gap-1 bg-[#1a1a1a] px-6 pb-4 pt-4 text-xs font-normal leading-none backdrop-blur md:-mx-12 md:px-12 md:text-sm">
           <Link
             href="/"
             className="text-xs font-normal leading-none text-stone-50 transition-colors hover:text-stone-300 md:text-sm"

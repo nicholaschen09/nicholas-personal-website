@@ -40,7 +40,7 @@ export default function ArtPage() {
       <div className="mx-auto max-w-6xl lg:grid lg:grid-cols-[1fr_minmax(0,30rem)_1fr] lg:items-start lg:gap-8">
         <TableOfContents sections={sections} title="" className="lg:mt-20" />
         <article className="w-full max-w-[30rem] mx-auto">
-          <header className="flex items-center gap-1 text-xs font-normal leading-none md:text-sm">
+          <header className="sticky top-0 z-40 -mx-6 -mt-4 flex items-center gap-1 bg-[#1a1a1a] px-6 pb-4 pt-4 text-xs font-normal leading-none backdrop-blur md:-mx-12 md:px-12 md:text-sm lg:-mx-0 lg:px-0">
             <Link
               href="/"
               className="text-xs font-normal leading-none text-stone-50 transition-colors hover:text-stone-300 md:text-sm"
