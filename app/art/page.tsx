@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function ArtPage() {
   return (
-    <main className="min-h-screen px-6 py-10 text-stone-300 md:px-12 md:py-12">
+    <main className="art-page listing-page min-h-screen px-6 py-10 text-stone-300 md:px-12 md:py-12">
       <div className="mx-auto w-full max-w-[30rem]">
         <header className="flex items-center gap-1 text-xs font-normal leading-none md:text-sm">
           <Link
