@@ -21,14 +21,14 @@ export default function ArtPage() {
     if (artwork.src === '/art/art-32.webp') {
       sections.push({
         id: 'frustration-animation',
-        title: 'Frustration animation process · Blender',
+        title: 'Frustration animation process',
       });
     }
 
     if (artwork.src === '/art/art-31.webp') {
       sections.push({
         id: 'feeling-alienated-animation',
-        title: 'Feeling alienated animation · Blender',
+        title: 'Feeling alienated animation',
       });
     }
 
