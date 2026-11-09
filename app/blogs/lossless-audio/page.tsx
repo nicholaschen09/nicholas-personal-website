@@ -52,7 +52,7 @@ export default function LosslessBlog() {
             </header>
 
             {/* Title */}
-            <h1 className="page-content-after-header text-[22px] md:text-[28px] font-medium text-white mb-2">
+            <h1 className="mt-2 text-[22px] md:text-[28px] font-medium text-white mb-2">
               How Lossless Audio Compression Works
             </h1>
             <p className="flex items-baseline justify-between gap-4 text-stone-500 text-sm mb-6">
