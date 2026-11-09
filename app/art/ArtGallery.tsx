@@ -68,6 +68,7 @@ export default function ArtGallery() {
                 <h2 id="frustration-animation" className="!mt-2 text-sm text-stone-400">
                   Frustration animation process
                 </h2>
+                <p className="text-xs text-stone-500">Blender</p>
               </div>
             )}
             {artwork.src === '/art/art-31.webp' && (
@@ -83,6 +84,7 @@ export default function ArtGallery() {
                 <h2 id="feeling-alienated-animation" className="!mt-2 text-sm text-stone-400">
                   Feeling alienated animation
                 </h2>
+                <p className="text-xs text-stone-500">Blender</p>
               </div>
             )}
           </Fragment>
