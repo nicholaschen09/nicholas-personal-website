@@ -1,6 +1,9 @@
 [
   {
     "src": "/art/art-01.webp",
+    "title": "Tomatoes",
+    "medium": "Watercolour",
+    "size": "9\" x 9\"",
     "alt": "Mixed-media study of sliced tomatoes",
     "width": 1024,
     "height": 1021,
@@ -9,6 +12,9 @@
   },
   {
     "src": "/art/art-41.webp",
+    "title": "Chips and Bytes",
+    "medium": "Pen on paper, receipt roll and cardboard",
+    "size": "50\" x 17\"",
     "alt": "Chips and Bytes exhibition of drawings and cardboard pieces",
     "width": 1193,
     "height": 1600,
@@ -17,6 +23,9 @@
   },
   {
     "src": "/art/art-10.webp",
+    "title": "Day in the Life of a Computer",
+    "medium": "Pen and marker on paper",
+    "size": "45\" x 20\"",
     "alt": "Black-and-white architectural collage",
     "width": 1600,
     "height": 1265,
@@ -25,6 +34,9 @@
   },
   {
     "src": "/art/art-32.webp",
+    "title": "Frustration",
+    "medium": "Spray paint on table and cardboard",
+    "size": "85\" x 35\"",
     "alt": "Exhibition of suspended sculpture and a red chair",
     "width": 1025,
     "height": 1600,
@@ -33,6 +45,9 @@
   },
   {
     "src": "/art/art-06.webp",
+    "title": "Connections",
+    "medium": "Cardboard",
+    "size": "Not listed",
     "alt": "Hanging geometric wooden sculpture",
     "width": 928,
     "height": 1600,
@@ -41,6 +56,9 @@
   },
   {
     "src": "/art/art-09.webp",
+    "title": "GEOMETRICA III",
+    "medium": "Cardboard",
+    "size": "60\" x 30\" x 20\"",
     "alt": "Handcrafted wooden chair",
     "width": 970,
     "height": 1600,
@@ -49,6 +67,9 @@
   },
   {
     "src": "/art/art-31.webp",
+    "title": "Feeling alienated",
+    "medium": "Pen on paper, receipt roll and cardboard",
+    "size": "50\" x 17\"",
     "alt": "Green illustrated objects arranged on a wall",
     "width": 1600,
     "height": 1073,
@@ -57,6 +78,9 @@
   },
   {
     "src": "/art/art-29.webp",
+    "title": "Glass Drawing",
+    "medium": "Coloured pencils",
+    "size": "15\" x 22\"",
     "alt": "Painting of a glass containing a red drink",
     "width": 1200,
     "height": 1600,
@@ -65,6 +89,9 @@
   },
   {
     "src": "/art/art-28.webp",
+    "title": "LEGO Figures",
+    "medium": "Watercolour",
+    "size": "12\" x 11\"",
     "alt": "Still life of a camera and a LEGO figure",
     "width": 1483,
     "height": 1600,
@@ -73,6 +100,9 @@
   },
   {
     "src": "/art/art-26.webp",
+    "title": "Origami Tonal Drawing",
+    "medium": "Graphite on paper",
+    "size": "22\" x 7.5\"",
     "alt": "Pencil still life of folded paper",
     "width": 1600,
     "height": 538,
@@ -81,6 +111,9 @@
   },
   {
     "src": "/art/art-02.webp",
+    "title": "Bayview Village Shopping Centre",
+    "medium": "Chalk pastel",
+    "size": "18\" x 12\"",
     "alt": "Painting of a sunlit interior and patterned wallpaper",
     "width": 1196,
     "height": 1600,
@@ -89,6 +122,9 @@
   },
   {
     "src": "/art/art-03.webp",
+    "title": "Pecans",
+    "medium": "Acrylic painting",
+    "size": "25\" x 19\"",
     "alt": "Study of scattered coffee beans",
     "width": 758,
     "height": 1023,
@@ -97,6 +133,9 @@
   },
   {
     "src": "/art/art-05.webp",
+    "title": "Pinecone",
+    "medium": "Pencil on paper",
+    "size": "11.5\" x 14.5\"",
     "alt": "Pencil studies of a pine cone and seed pods",
     "width": 1600,
     "height": 887,
@@ -105,6 +144,9 @@
   },
   {
     "src": "/art/art-08.webp",
+    "title": "Muscle anatomy",
+    "medium": "Pen on receipt roll",
+    "size": "Approximately 3 m x 8 cm",
     "alt": "Suspended paper and photographic installation",
     "width": 569,
     "height": 1600,
@@ -113,6 +155,9 @@
   },
   {
     "src": "/art/art-11.webp",
+    "title": "Sketchbook work",
+    "medium": "Pen on paper",
+    "size": "Not listed",
     "alt": "Sketchbook of architectural prints",
     "width": 1600,
     "height": 1002,
@@ -121,6 +166,9 @@
   },
   {
     "src": "/art/art-38.webp",
+    "title": "Self portrait study",
+    "medium": "Colored pencil on paper",
+    "size": "Not listed",
     "alt": "Blue portrait study in a sketchbook",
     "width": 1600,
     "height": 1423,

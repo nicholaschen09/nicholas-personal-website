@@ -16,7 +16,9 @@ for (const [route, pageName] of routes) {
     await page.goto(route);
 
     const breadcrumb = page.locator(
-      route.startsWith('/blogs') || route === '/facial-recognition-neural-network'
+      route.startsWith('/blogs') ||
+        route === '/facial-recognition-neural-network' ||
+        route === '/art'
         ? 'article > header'
         : 'main > div > header',
     );

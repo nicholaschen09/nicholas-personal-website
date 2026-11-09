@@ -29,6 +29,7 @@ export default function ArtGallery() {
         {artworks.map((artwork, index) => (
           <Fragment key={artwork.src}>
             <button
+              id={artwork.src.slice(5, -5)}
               type="button"
               onClick={() => setSelected(artwork)}
               aria-label={`View ${artwork.alt}`}
@@ -44,27 +45,47 @@ export default function ArtGallery() {
                 className="h-auto w-full transition-opacity hover:opacity-90"
               />
             </button>
+            <div className="mt-2 space-y-0.5">
+              <h2 className="text-sm text-stone-400">{artwork.title}</h2>
+              {(artwork.medium !== 'Not listed' || artwork.size !== 'Not listed') && (
+                <p className="text-xs text-stone-500">
+                  {[artwork.medium, artwork.size]
+                    .filter((value) => value !== 'Not listed')
+                    .join(' · ')}
+                </p>
+              )}
+            </div>
             {artwork.src === '/art/art-32.webp' && (
-              <Image
-                src="/art/animation-process.gif"
-                alt="Animation process"
-                width={768}
-                height={432}
-                unoptimized
-                className="w-full"
-              >
-              </Image>
+              <div className="space-y-0.5">
+                <Image
+                  src="/art/animation-process.gif"
+                  alt="Animation process"
+                  width={768}
+                  height={432}
+                  unoptimized
+                  className="w-full"
+                />
+                <h2 id="frustration-animation" className="!mt-2 text-sm text-stone-400">
+                  Frustration animation process
+                </h2>
+                <p className="text-xs text-stone-500">Blender</p>
+              </div>
             )}
             {artwork.src === '/art/art-31.webp' && (
-              <Image
-                src="/art/alienated-animation.gif"
-                alt="Alienated 3D animation"
-                width={1280}
-                height={720}
-                unoptimized
-                className="w-full"
-              >
-              </Image>
+              <div className="!mt-2 space-y-0.5">
+                <Image
+                  src="/art/alienated-animation.gif"
+                  alt="Alienated 3D animation"
+                  width={1280}
+                  height={720}
+                  unoptimized
+                  className="w-full"
+                />
+                <h2 id="feeling-alienated-animation" className="!mt-2 text-sm text-stone-400">
+                  Feeling alienated animation
+                </h2>
+                <p className="text-xs text-stone-500">Blender</p>
+              </div>
             )}
           </Fragment>
         ))}
