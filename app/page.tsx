@@ -59,22 +59,27 @@ export default function Home() {
 
         <section className="page-content-after-header space-y-8 text-xs leading-relaxed text-stone-300 md:text-sm">
           <p className="font-normal">
-            I currently study Systems Design Engineering at the{' '}
+            I study Systems Design Engineering at the{' '}
             <TextLink href="https://uwaterloo.ca/systems-design-engineering/" external>
               University of Waterloo
-            </TextLink>. I&apos;ve previously worked on software at{' '}
+            </TextLink>, and I&apos;m interested in product engineering. Previously, I took the
+            Playground feature from 0 to 1 at{' '}
             <TextLink href="https://melius.com/" external>
               Melius
-            </TextLink>,{' '}
+            </TextLink>
+            , worked on data analysis agents and the ontology at{' '}
             <TextLink href="https://textql.com/" external>
               TextQL
-            </TextLink>,{' '}
+            </TextLink>
+            , built internal tools at{' '}
             <TextLink href="https://www.ownr.co/" external>
               Ownr
-            </TextLink>, and{' '}
+            </TextLink>
+            , and implemented ML models at{' '}
             <TextLink href="https://www.rbc.com/" external>
               RBC
-            </TextLink>, and I&apos;m interested in product engineering.
+            </TextLink>
+            .
           </p>
         </section>
 
