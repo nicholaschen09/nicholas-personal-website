@@ -42,6 +42,12 @@ const projects = [
     description: 'A React Grab plugin that copies detailed DevTools information for selected elements',
   },
   {
+    href: '/waterloo-atlas',
+    title: 'UW Atlas',
+    date: 'January 2026',
+    description: 'An interactive University of Waterloo campus map',
+  },
+  {
     href: '/insforge',
     title: 'InsForge',
     date: 'January 2026',
