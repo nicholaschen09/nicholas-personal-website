@@ -57,7 +57,7 @@ export default function Home() {
           </nav>
         </header>
 
-        <section className="page-content-after-header space-y-8 text-xs leading-relaxed text-stone-300 md:text-sm">
+        <section className="page-content-after-header space-y-5 text-xs leading-relaxed text-stone-300 md:text-sm">
           <p className="font-normal">
             I study Systems Design Engineering at the{' '}
             <TextLink href="https://uwaterloo.ca/systems-design-engineering/" external>
