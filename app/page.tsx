@@ -62,8 +62,10 @@ export default function Home() {
             I study Systems Design Engineering at the{' '}
             <TextLink href="https://uwaterloo.ca/systems-design-engineering/" external>
               University of Waterloo
-            </TextLink>, and I&apos;m interested in product engineering. Previously, I took the
-            Playground feature from 0 to 1 at{' '}
+            </TextLink>, and I&apos;m interested in product engineering.
+          </p>
+          <p className="font-normal">
+            Previously, I took the Playground feature from 0 to 1 at{' '}
             <TextLink href="https://melius.com/" external>
               Melius
             </TextLink>
