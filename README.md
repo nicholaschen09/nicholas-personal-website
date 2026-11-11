@@ -22,7 +22,6 @@ The app will start on `http://localhost:3000`.
 
 ### Notable blog posts
 
-- **Lossless audio & FLAC** – `/blogs/lossless-audio`
 - **Ontology & text-to-SQL** – `/blogs/ontology-text-to-sql`
 
 ### Content & i18n

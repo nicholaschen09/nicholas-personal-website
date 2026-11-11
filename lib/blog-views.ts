@@ -4,7 +4,6 @@ export const blogPaths = new Set([
   '/blogs/melius-summer-internship',
   '/blogs/startup-lessons',
   '/blogs/neural-video-compression',
-  '/blogs/lossless-audio',
   '/blogs/ontology-text-to-sql',
 ]);
 

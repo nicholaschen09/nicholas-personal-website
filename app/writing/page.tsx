@@ -22,12 +22,6 @@ const writing = [
     description: 'A comma.ai challenge writeup on compressing video for neural network perception',
   },
   {
-    href: '/blogs/lossless-audio',
-    title: 'How Lossless Audio Compression Works',
-    date: 'March 2026',
-    description: 'A visual explainer on FLAC, MP3, prediction, and what lossless really means',
-  },
-  {
     href: '/blogs/ontology-text-to-sql',
     title: 'Why Ontology for Text-to-SQL?',
     date: 'November 2025',
