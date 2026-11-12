@@ -77,7 +77,7 @@ export default function Home() {
             <TextLink href="https://www.ownr.co/" external>
               Ownr
             </TextLink>
-            , and implemented ML models at{' '}
+            , and implemented forecasting ML models at{' '}
             <TextLink href="https://www.rbc.com/" external>
               RBC
             </TextLink>
