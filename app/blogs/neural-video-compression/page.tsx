@@ -268,7 +268,7 @@ ffmpeg -i "$in" \
                 </p>
                 <p className="mt-4">
                   I didn&apos;t get anywhere near the top score, but I definitely learned a lot and
-                  had a lot of fun doing this challenge.
+                  had a lot of fun doing this challenge!
                 </p>
               </section>
             </div>
