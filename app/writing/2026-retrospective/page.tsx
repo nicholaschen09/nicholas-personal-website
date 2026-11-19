@@ -124,6 +124,30 @@ export default function RetrospectivePage() {
                 bought a pair of Hokas, too. In my last week there, I spent time with my brother and
                 friends before heading back to Waterloo.
               </p>
+              <figure className="mt-6">
+                <Image
+                  src="/writing/2026-retrospective/nyc-bowling.jpg"
+                  alt="Friends at a bowling alley in New York"
+                  width={5712}
+                  height={4284}
+                  className="w-full object-cover"
+                />
+                <figcaption className="mt-2 text-xs italic text-stone-500">
+                  Bowling with friends in New York
+                </figcaption>
+              </figure>
+              <figure className="mt-6">
+                <Image
+                  src="/writing/2026-retrospective/nyc-citi-bike.jpg"
+                  alt="Riding Citi Bikes through New York City"
+                  width={3024}
+                  height={4032}
+                  className="w-full object-cover"
+                />
+                <figcaption className="mt-2 text-xs italic text-stone-500">
+                  Riding Citi Bikes around NYC
+                </figcaption>
+              </figure>
             </section>
 
             <section>
