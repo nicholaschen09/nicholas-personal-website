@@ -1,5 +1,5 @@
 import Footer from '@/components/Footer';
-import Image from 'next/image';
+import LazyLoopVideo from '@/components/LazyLoopVideo';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
@@ -50,12 +50,12 @@ export default function PsychAIPage() {
             health support and resources.
           </p>
 
-          <Image
-            src="/psychai/psychai-demo.gif"
-            alt="PsychAI chatbot demo"
+          <LazyLoopVideo
+            src="/psychai/psychai-demo.mp4"
+            poster="/psychai/psychai-demo.jpg"
+            label="PsychAI chatbot demo"
             width={480}
-            height={270}
-            unoptimized
+            height={251}
             className="mt-5 h-auto w-full rounded-md border border-stone-800 bg-black"
           />
         </section>

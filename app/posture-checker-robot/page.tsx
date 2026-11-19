@@ -1,5 +1,5 @@
 import Footer from '@/components/Footer';
-import Image from 'next/image';
+import LazyLoopVideo from '@/components/LazyLoopVideo';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
@@ -53,12 +53,12 @@ export default function PostureCheckerRobotPage() {
             overall.
           </p>
 
-          <Image
-            src="/posture-checker-robot/posture-checker-demo.gif"
-            alt="Posture Checker Robot demo"
+          <LazyLoopVideo
+            src="/posture-checker-robot/posture-checker-demo.mp4"
+            poster="/posture-checker-robot/posture-checker-demo.jpg"
+            label="Posture Checker Robot demo"
             width={480}
             height={270}
-            unoptimized
             className="mt-5 h-auto w-full rounded-md border border-stone-800 bg-black"
           />
         </section>

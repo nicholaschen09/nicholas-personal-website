@@ -1,5 +1,5 @@
 import Footer from '@/components/Footer';
-import Image from 'next/image';
+import LazyLoopVideo from '@/components/LazyLoopVideo';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
@@ -50,12 +50,12 @@ export default function TunlPage() {
             host a terminal, and let others join.
           </p>
 
-          <Image
-            src="/tunl/tunl-demo.gif"
-            alt="Animated demonstration of sharing a live terminal session with Tunl"
+          <LazyLoopVideo
+            src="/tunl/tunl-demo.mp4"
+            poster="/tunl/tunl-demo.jpg"
+            label="Animated demonstration of sharing a live terminal session with Tunl"
             width={640}
             height={416}
-            unoptimized
             className="w-full rounded-md border border-stone-800 bg-black"
           />
         </section>

@@ -52,9 +52,9 @@ export default function StartupLessonsBlog() {
             10 Lessons from Working at Startups
           </h1>
           <p className="flex items-baseline justify-between gap-4 text-stone-500 text-sm mb-6">
-              <span>Nicholas Chen · June 2026</span>
-              <BlogViewCount path="/blogs/startup-lessons" increment />
-            </p>
+            <span>Nicholas Chen · June 2026</span>
+            <BlogViewCount path="/blogs/startup-lessons" increment />
+          </p>
 
           <figure className="mb-6">
             <Image
@@ -62,6 +62,7 @@ export default function StartupLessonsBlog() {
               alt="Hand-drawn circles labeled PM, engineering, docs, UX, and marketing"
               width={1200}
               height={480}
+              sizes="(max-width: 768px) calc(100vw - 48px), 480px"
               priority
               className="w-full object-cover"
             />

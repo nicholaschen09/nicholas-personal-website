@@ -63,6 +63,7 @@ export default function NeuralVideoCompressionBlog() {
                 alt="PoseNet and SegNet error charts from the video compression challenge"
                 width={822}
                 height={329}
+                sizes="(max-width: 768px) calc(100vw - 48px), 480px"
                 priority
                 className="w-full object-cover"
               />
@@ -90,8 +91,8 @@ export default function NeuralVideoCompressionBlog() {
                 <p className="mt-4">
                   The goal was to shrink a 37MB dashcam clip as much as possible while ensuring two
                   specific neural networks, PoseNet and SegNet, could still accurately perceive
-                  motion and objects. I hadn&apos;t ever done anything like this before, so I knew it
-                  would be a steep learning curve, but I wanted to see how much I could challenge
+                  motion and objects. I hadn&apos;t ever done anything like this before, so I knew
+                  it would be a steep learning curve, but I wanted to see how much I could challenge
                   myself.
                 </p>
               </section>
@@ -125,9 +126,9 @@ export default function NeuralVideoCompressionBlog() {
                 <p className="mt-4">
                   <span className="font-semibold text-stone-200">PoseNet:</span> a real-time deep
                   learning model for pose estimation. It takes two consecutive frames from the video
-                  and predicts six values that represent 3D movement: three translation values
-                  (x, y, z) and three rotational values (pitch, yaw, roll). PoseNet distortion is
-                  the difference between the motion predicted on the original frames and the motion
+                  and predicts six values that represent 3D movement: three translation values (x,
+                  y, z) and three rotational values (pitch, yaw, roll). PoseNet distortion is the
+                  difference between the motion predicted on the original frames and the motion
                   predicted on compressed frames.
                 </p>
                 <p className="mt-4">
@@ -165,10 +166,10 @@ export default function NeuralVideoCompressionBlog() {
                   enough for the models to distinguish.
                 </p>
                 <p className="mt-4">
-                  I also used an unsharp mask to pop vehicle edges and film grain synthesis
-                  (<code className="text-stone-200">film-grain=8</code>) to strip space-heavy
-                  natural noise, then fake texture back in during playback so the models
-                  wouldn&apos;t get confused by flat, compressed surfaces.
+                  I also used an unsharp mask to pop vehicle edges and film grain synthesis (
+                  <code className="text-stone-200">film-grain=8</code>) to strip space-heavy natural
+                  noise, then fake texture back in during playback so the models wouldn&apos;t get
+                  confused by flat, compressed surfaces.
                 </p>
                 <p className="mt-4">
                   Finally, I set <code className="text-stone-200">keyint=180</code> to save a full
@@ -214,6 +215,7 @@ export default function NeuralVideoCompressionBlog() {
                     alt="Leaderboard table from the comma.ai video compression challenge"
                     width={637}
                     height={1200}
+                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
                     className="w-full object-cover"
                   />
                   <figcaption className="text-stone-500 text-xs mt-2 italic">

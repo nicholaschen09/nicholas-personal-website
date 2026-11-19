@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { Fragment, useEffect, useRef, useState } from 'react';
+import LazyLoopVideo from '@/components/LazyLoopVideo';
 import artworks from './artworks.json';
 
 export default function ArtGallery() {
@@ -22,10 +23,7 @@ export default function ArtGallery() {
 
   return (
     <>
-      <section
-        aria-label="Artwork gallery"
-        className="page-content-after-header space-y-3"
-      >
+      <section aria-label="Artwork gallery" className="page-content-after-header space-y-3">
         {artworks.map((artwork, index) => (
           <Fragment key={artwork.src}>
             <button
@@ -57,12 +55,12 @@ export default function ArtGallery() {
             </div>
             {artwork.src === '/art/art-32.webp' && (
               <div className="space-y-0.5">
-                <Image
-                  src="/art/animation-process.gif"
-                  alt="Animation process"
+                <LazyLoopVideo
+                  src="/art/animation-process.mp4"
+                  poster="/art/animation-process.jpg"
+                  label="Animation process"
                   width={768}
                   height={432}
-                  unoptimized
                   className="w-full"
                 />
                 <h2 id="frustration-animation" className="!mt-2 text-sm text-stone-400">
@@ -73,12 +71,12 @@ export default function ArtGallery() {
             )}
             {artwork.src === '/art/art-31.webp' && (
               <div className="!mt-2 space-y-0.5">
-                <Image
-                  src="/art/alienated-animation.gif"
-                  alt="Alienated 3D animation"
+                <LazyLoopVideo
+                  src="/art/alienated-animation.mp4"
+                  poster="/art/alienated-animation.jpg"
+                  label="Alienated 3D animation"
                   width={1280}
                   height={720}
-                  unoptimized
                   className="w-full"
                 />
                 <h2 id="feeling-alienated-animation" className="!mt-2 text-sm text-stone-400">

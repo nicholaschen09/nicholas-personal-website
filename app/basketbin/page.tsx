@@ -1,5 +1,5 @@
 import Footer from '@/components/Footer';
-import Image from 'next/image';
+import LazyLoopVideo from '@/components/LazyLoopVideo';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
@@ -51,12 +51,12 @@ export default function BasketBinPage() {
             habits.
           </p>
 
-          <Image
-            src="/basketbin/basketbin-demo.gif"
-            alt="BasketBin recycling game demo"
+          <LazyLoopVideo
+            src="/basketbin/basketbin-demo.mp4"
+            poster="/basketbin/basketbin-demo.jpg"
+            label="BasketBin recycling game demo"
             width={480}
             height={270}
-            unoptimized
             className="mt-5 h-auto w-full rounded-md border border-stone-800 bg-black"
           />
         </section>

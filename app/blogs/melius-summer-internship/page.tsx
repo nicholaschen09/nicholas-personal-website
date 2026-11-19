@@ -26,7 +26,14 @@ function BlogFigure({
 }) {
   return (
     <figure className={className}>
-      <Image src={src} alt={alt} width={width} height={height} className="w-full object-cover" />
+      <Image
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+        sizes="(max-width: 768px) calc(100vw - 48px), 480px"
+        className="w-full object-cover"
+      />
       <figcaption className="text-stone-500 text-xs mt-2 italic">{caption}</figcaption>
     </figure>
   );
@@ -100,6 +107,7 @@ export default function MeliusSummerInternshipBlog() {
                 alt="A Melius canvas project with connected creative agent generations"
                 width={3112}
                 height={2088}
+                sizes="(max-width: 768px) calc(100vw - 48px), 480px"
                 priority
                 className="w-full object-cover"
               />
@@ -117,13 +125,12 @@ export default function MeliusSummerInternshipBlog() {
                   Starting my engineering internship
                 </h2>
                 <p>
-                  My internship at <TeamLink href="https://melius.com">Melius</TeamLink> has been
-                  an awesome learning experience for me as an
-                  engineer and a creative. Over the past few months, I had the opportunity to work
-                  on small and large projects that directly impacted our customers and also got to
-                  see the product scale and the team grow alongside it. I’m now wrapping up my last
-                  week and wanted to summarize everything I worked on, learned and enjoyed about
-                  Melius.
+                  My internship at <TeamLink href="https://melius.com">Melius</TeamLink> has been an
+                  awesome learning experience for me as an engineer and a creative. Over the past
+                  few months, I had the opportunity to work on small and large projects that
+                  directly impacted our customers and also got to see the product scale and the team
+                  grow alongside it. I’m now wrapping up my last week and wanted to summarize
+                  everything I worked on, learned and enjoyed about Melius.
                 </p>
                 <p className="mt-4">
                   For context, Melius is an agents lab for creatives, marketing teams, and
@@ -172,6 +179,7 @@ export default function MeliusSummerInternshipBlog() {
                     alt="Diagram showing how agent skills and team context work together"
                     width={1200}
                     height={712}
+                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
                     className="w-full object-cover"
                   />
                   <figcaption className="text-stone-500 text-xs mt-2 italic">

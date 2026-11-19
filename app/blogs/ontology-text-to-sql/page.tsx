@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Footer from '@/components/Footer';
 import BlogViewCount from '@/components/BlogViewCount';
 import ImageLightbox from '@/components/ImageLightbox';
@@ -56,15 +57,19 @@ export default function OntologyTextToSqlBlog() {
             </h1>
             <div className="text-stone-500 text-sm mb-6">
               <p className="flex items-baseline justify-between gap-4">
-              <span>Nicholas Chen · November 2025</span>
-              <BlogViewCount path="/blogs/ontology-text-to-sql" increment />
-            </p>
+                <span>Nicholas Chen · November 2025</span>
+                <BlogViewCount path="/blogs/ontology-text-to-sql" increment />
+              </p>
             </div>
 
             {/* Cover image */}
-            <img
+            <Image
               src="/blogs/ontology/ontology.png"
               alt="TextQL Ontology Interface"
+              width={3600}
+              height={2077}
+              sizes="(max-width: 768px) calc(100vw - 48px), 480px"
+              priority
               className="w-full mb-6"
             />
 
@@ -93,9 +98,12 @@ export default function OntologyTextToSqlBlog() {
                   understanding of that data.
                 </p>
                 <figure className="mt-6">
-                  <img
+                  <Image
                     src="/blogs/ontology/map.jpeg"
                     alt="Map of data concepts and their connections"
+                    width={1200}
+                    height={515}
+                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
                     className="w-full"
                   />
                   <figcaption className="text-stone-500 text-xs mt-2 italic">
@@ -152,9 +160,12 @@ export default function OntologyTextToSqlBlog() {
                   </li>
                 </ul>
                 <figure className="mt-6">
-                  <img
+                  <Image
                     src="/blogs/ontology/graphs.jpeg"
                     alt="Visualization of complex data relationships"
+                    width={1200}
+                    height={852}
+                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
                     className="w-full"
                   />
                   <figcaption className="text-stone-500 text-xs mt-2 italic">
@@ -188,9 +199,12 @@ export default function OntologyTextToSqlBlog() {
                   objects, their attributes, and how they relate to one another.
                 </p>
                 <figure className="mt-6">
-                  <img
+                  <Image
                     src="/blogs/ontology/adding-objects.jpeg"
                     alt="Interface for defining new entities in the ontology"
+                    width={1768}
+                    height={960}
+                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
                     className="w-full"
                   />
                   <figcaption className="text-stone-500 text-xs mt-2 italic">
@@ -224,9 +238,12 @@ export default function OntologyTextToSqlBlog() {
                   refined. We provide tools that make this ongoing maintenance easy and efficient.
                 </p>
                 <figure className="mt-6">
-                  <img
+                  <Image
                     src="/blogs/ontology/attrs.jpeg"
                     alt="Mapping ontology attributes to physical database columns"
+                    width={1618}
+                    height={1302}
+                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
                     className="w-full"
                   />
                   <figcaption className="text-stone-500 text-xs mt-2 italic">
@@ -293,9 +310,12 @@ export default function OntologyTextToSqlBlog() {
                   calculations, and domain-specific logic with ease.
                 </p>
                 <figure className="mt-6">
-                  <img
+                  <Image
                     src="/blogs/ontology/chat.png"
                     alt="The ontology providing context for an AI chat interaction"
+                    width={1200}
+                    height={772}
+                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
                     className="w-full"
                   />
                   <figcaption className="text-stone-500 text-xs mt-2 italic">
@@ -422,9 +442,12 @@ export default function OntologyTextToSqlBlog() {
                   whereas ontologies are a semantic one.
                 </p>
                 <figure className="mt-6">
-                  <img
+                  <Image
                     src="/blogs/ontology/sources.png"
                     alt="Comparing different data modeling approaches"
+                    width={1199}
+                    height={631}
+                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
                     className="w-full"
                   />
                   <figcaption className="text-stone-500 text-xs mt-2 italic">

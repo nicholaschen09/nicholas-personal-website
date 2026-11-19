@@ -1,5 +1,5 @@
 import Footer from '@/components/Footer';
-import Image from 'next/image';
+import LazyLoopVideo from '@/components/LazyLoopVideo';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
@@ -52,12 +52,12 @@ export default function SummaryDiscordBotPage() {
             hours. It can also clear a channel’s unread message buffer.
           </p>
 
-          <Image
-            src="/summary-discord-bot/summary-discord-bot-demo.gif"
-            alt="Animated demonstration of the Summary Discord Bot summarizing unread messages"
+          <LazyLoopVideo
+            src="/summary-discord-bot/summary-discord-bot-demo.mp4"
+            poster="/summary-discord-bot/summary-discord-bot-demo.jpg"
+            label="Animated demonstration of the Summary Discord Bot summarizing unread messages"
             width={640}
             height={427}
-            unoptimized
             className="w-full rounded-md border border-stone-800 bg-black"
           />
         </section>
