@@ -51,7 +51,7 @@ export default function RetrospectivePage() {
                 I’ve never really done a formal year in review. I generally have a good idea of the
                 goals I have accomplished and the next steps I need to take in order to improve and
                 do better the following year. This usually happens in the last day or two of
-                December, when I spend a bit of time thinking back. This year, I wanted to change
+                December, where I spend a bit of time thinking back. This year, I wanted to change
                 that by writing everything down so I could look back on these goals in the future.
               </p>
             </section>
