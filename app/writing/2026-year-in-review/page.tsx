@@ -33,11 +33,11 @@ export default function YearInReviewPage() {
               Writing
             </Link>
             <span className="text-stone-500"> / </span>
-            <span className="text-stone-400">2026 Year in Review</span>
+            <span className="text-stone-400">2026 Retrospective</span>
           </header>
 
           <h1 className="mt-2 text-[22px] md:text-[28px] font-medium text-white mb-2">
-            2026 Year in Review
+            A Retrospective on My Year in 2026
           </h1>
           <p className="flex items-baseline justify-between gap-4 text-stone-500 text-sm mb-6">
             <span>Nicholas Chen · Draft</span>
