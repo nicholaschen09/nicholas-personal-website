@@ -60,11 +60,10 @@ export default function RetrospectivePage() {
           <div className="space-y-8 text-xs md:text-sm leading-relaxed" style={{ fontWeight: 400 }}>
             <section>
               <p>
-                I’ve never really done a formal year in review. I generally have a good idea of the
-                goals I have accomplished and the next steps I need to take in order to improve and
-                do better the following year. This usually happens in the last day or two of
-                December, where I spend a bit of time thinking back. This year, I wanted to change
-                that by writing everything down so I could look back on these goals in the future.
+                I’ve never really done a formal year in review. I usually have a good idea of the
+                goals I’ve accomplished and what I want to do differently the following year. In the
+                last day or two of December, I spend some time thinking back. This year, I wanted to
+                write it all down so I could look back on this time in my life in the future.
               </p>
             </section>
 
@@ -112,8 +111,12 @@ export default function RetrospectivePage() {
                 </figcaption>
               </figure>
               <p className="mt-4">
-                The comma.ai video challenge was my first real experience learning about machine
-                learning. Somewhere in the middle of all this, a post I made took off on X:
+                The{' '}
+                <Link href="/blogs/neural-video-compression" className={linkClass}>
+                  comma.ai video challenge
+                </Link>{' '}
+                was my first real experience learning about machine learning. Somewhere in the
+                middle of all this, a post I made took off on X:
               </p>
               <EmbeddedTweet url="https://x.com/nicholaschen__/status/2000752780152119501" />
             </section>
