@@ -62,7 +62,7 @@ export default function ImageLightbox({ children }: { children: React.ReactNode 
       <div
         ref={containerRef}
         onClick={handleClick}
-        className="w-full cursor-zoom-in [&_img]:cursor-zoom-in"
+        className="w-full [&_img]:cursor-zoom-in"
       >
         {children}
       </div>
