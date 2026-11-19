@@ -107,7 +107,7 @@ export default function TableOfContents({
   return (
     <aside
       ref={scrollContainerRef}
-      className={`hidden lg:block w-48 flex-shrink-0 sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto px-2 ml-auto ${className}`}
+      className={`hidden lg:block w-64 xl:w-72 flex-shrink-0 sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto px-2 justify-self-end text-right ${className}`}
     >
       {/* Header */}
       {title ? (
