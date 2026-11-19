@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import Footer from '@/components/Footer';
+import BlogViewCount from '@/components/BlogViewCount';
 import EmbeddedTweet from '@/components/EmbeddedTweet';
 import TableOfContents, { type TOCSection } from '@/components/TableOfContents';
 
 const sections: TOCSection[] = [
-  { id: 'recruiting', title: 'Tech Recruiting for Summer 2026' },
+  { id: 'recruiting', title: 'School and Tech Recruiting for Summer 2026' },
   { id: 'summer-in-new-york', title: 'Spending a Summer in New York City' },
   { id: 'second-year', title: 'The End of Second Year (2B)' },
   { id: 'reflection', title: 'A Reflection on My Journey in Tech' },
@@ -15,7 +16,7 @@ const linkClass =
   'underline decoration-stone-500 underline-offset-2 transition-colors hover:text-pink-300 hover:decoration-pink-300';
 const headingClass = 'text-lg md:text-xl font-semibold text-stone-100 mb-3 scroll-mt-8';
 
-export default function YearInReviewPage() {
+export default function RetrospectivePage() {
   return (
     <main className="min-h-screen bg-[#1a1a1a] px-6 pb-12 pt-10 text-stone-300 md:px-12 md:pt-12">
       <div className="max-w-6xl mx-auto lg:grid lg:grid-cols-[minmax(13rem,1fr)_minmax(0,30rem)_minmax(0,1fr)] lg:gap-8 lg:items-start">
@@ -40,7 +41,8 @@ export default function YearInReviewPage() {
             A Retrospective on My Year in 2026
           </h1>
           <p className="flex items-baseline justify-between gap-4 text-stone-500 text-sm mb-6">
-            <span>Nicholas Chen · Draft</span>
+            <span>Nicholas Chen · December 2026</span>
+            <BlogViewCount path="/writing/2026-retrospective" increment />
           </p>
 
           <div className="space-y-8 text-xs md:text-sm leading-relaxed" style={{ fontWeight: 400 }}>
@@ -56,7 +58,7 @@ export default function YearInReviewPage() {
 
             <section>
               <h2 id="recruiting" className={headingClass}>
-                Tech Recruiting for Summer 2026
+                School and Tech Recruiting for Summer 2026
               </h2>
               <p>
                 Living in New York for a semester made it awful to come back to Waterloo for the

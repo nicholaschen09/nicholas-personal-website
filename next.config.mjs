@@ -34,6 +34,15 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/writing/2026-year-in-review',
+        destination: '/writing/2026-retrospective',
+        permanent: true,
+      },
+    ];
+  },
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,

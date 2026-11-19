@@ -1,6 +1,7 @@
 import { neon } from '@neondatabase/serverless';
 
 export const blogPaths = new Set([
+  '/writing/2026-retrospective',
   '/blogs/melius-summer-internship',
   '/blogs/startup-lessons',
   '/blogs/neural-video-compression',
