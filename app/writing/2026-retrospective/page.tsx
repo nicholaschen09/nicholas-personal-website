@@ -97,6 +97,18 @@ export default function RetrospectivePage() {
                 execution. I also went to San Francisco for an onsite interview and New York for a
                 work trial. Both taught me a lot, even though neither went the way I hoped.
               </p>
+              <figure className="mt-6">
+                <Image
+                  src="/writing/2026-retrospective/san-francisco-bay-bridge.jpg"
+                  alt="The Bay Bridge across San Francisco Bay, viewed from the waterfront"
+                  width={5712}
+                  height={4284}
+                  className="w-full object-cover"
+                />
+                <figcaption className="mt-2 text-xs italic text-stone-500">
+                  The Bay Bridge during my San Francisco on-site interview trip
+                </figcaption>
+              </figure>
               <p className="mt-4">
                 The comma.ai video challenge was my first real experience learning about machine
                 learning. Somewhere in the middle of all this, a post I made took off on X:
