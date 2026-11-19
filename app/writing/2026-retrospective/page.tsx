@@ -119,6 +119,30 @@ export default function RetrospectivePage() {
                 middle of all this, a post I made took off on X:
               </p>
               <EmbeddedTweet url="https://x.com/nicholaschen__/status/2000752780152119501" />
+              <p className="mt-4">
+                Looking back, Young Kim’s{' '}
+                <a href="https://www.youngkim.co/writing/early-career-advice" className={linkClass}>
+                  early career advice
+                </a>{' '}
+                captures why Melius appealed to me. Young later became one of my managers there. He
+                writes that people often pass over demanding jobs, even when those jobs offer a
+                chance to make an impact and build resilience. Melius was pre-Series A when I was
+                recruiting, and I knew it would be a grind. I thought I would learn more by taking
+                on harder problems and real responsibility. I recommend his post to a lot of people,
+                especially anyone deciding where to work early in their career.
+              </p>
+              <figure className="mt-6">
+                <Image
+                  src="/writing/2026-retrospective/young-kim-early-career-advice.png"
+                  alt="Excerpt from Young Kim’s early career advice about seeking challenging opportunities"
+                  width={821}
+                  height={528}
+                  className="w-full"
+                />
+                <figcaption className="mt-2 text-xs italic text-stone-500">
+                  An excerpt from Young Kim’s early career advice
+                </figcaption>
+              </figure>
             </section>
 
             <section>
@@ -244,6 +268,28 @@ export default function RetrospectivePage() {
                 enjoy, and how my years making art influence the way I approach engineering. I’ve
                 been redesigning this website as one way to bring those parts of my life together.
               </p>
+              <p className="mt-4">
+                Young Kim puts into words something I already tell myself in his{' '}
+                <a href="https://www.youngkim.co/writing/early-career-advice" className={linkClass}>
+                  early career advice
+                </a>
+                : find the smallest company you have real confidence in. A smaller company brings
+                more uncertainty, but also more opportunity to learn, take responsibility, and shape
+                what it becomes. I believe in that tradeoff, and I want to keep following this
+                principle throughout my career in tech.
+              </p>
+              <figure className="mt-6">
+                <Image
+                  src="/writing/2026-retrospective/young-kim-where-to-work.png"
+                  alt="Excerpt from Young Kim’s advice comparing large and small companies and where to work"
+                  width={827}
+                  height={261}
+                  className="w-full"
+                />
+                <figcaption className="mt-2 text-xs italic text-stone-500">
+                  Another excerpt from Young Kim’s early career advice
+                </figcaption>
+              </figure>
             </section>
 
             <section>
