@@ -98,13 +98,15 @@ export default function RetrospectivePage() {
                 work trial. Both taught me a lot, even though neither went the way I hoped.
               </p>
               <figure className="mt-6">
-                <Image
-                  src="/writing/2026-retrospective/san-francisco-bay-bridge.jpg"
-                  alt="The Bay Bridge across San Francisco Bay, viewed from the waterfront"
-                  width={5712}
-                  height={4284}
-                  className="w-full object-cover"
-                />
+                <div className="relative aspect-[2/1] w-full overflow-hidden">
+                  <Image
+                    src="/writing/2026-retrospective/san-francisco-bay-bridge.jpg"
+                    alt="The Bay Bridge across San Francisco Bay, viewed from the waterfront"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 480px"
+                    className="object-cover"
+                  />
+                </div>
                 <figcaption className="mt-2 text-xs italic text-stone-500">
                   The Bay Bridge during my San Francisco on-site interview trip
                 </figcaption>
@@ -174,14 +176,14 @@ export default function RetrospectivePage() {
               </figure>
               <figure className="mt-6">
                 <Image
-                  src="/writing/2026-retrospective/nyc-citi-bike.jpg"
-                  alt="Riding Citi Bikes through New York City"
-                  width={3024}
-                  height={4032}
+                  src="/writing/2026-retrospective/nyc-little-island-sunset.jpg"
+                  alt="Sunset over Little Island and the Hudson River in New York City"
+                  width={4284}
+                  height={5712}
                   className="w-full object-cover"
                 />
                 <figcaption className="mt-2 text-xs italic text-stone-500">
-                  Riding Citi Bikes around NYC
+                  Sunset at Little Island
                 </figcaption>
               </figure>
             </section>
@@ -225,18 +227,6 @@ export default function RetrospectivePage() {
                 />
                 <figcaption className="mt-2 text-xs italic text-stone-500">
                   Using Tomo to track my calories
-                </figcaption>
-              </figure>
-              <figure className="mt-6">
-                <Image
-                  src="/writing/2026-retrospective/gym.jpg"
-                  alt="Two people at a gym bench press"
-                  width={4284}
-                  height={5712}
-                  className="w-full object-cover"
-                />
-                <figcaption className="mt-2 text-xs italic text-stone-500">
-                  Bench pressing with a friend at the gym
                 </figcaption>
               </figure>
             </section>
