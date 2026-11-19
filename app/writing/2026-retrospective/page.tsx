@@ -118,12 +118,36 @@ export default function RetrospectivePage() {
                 </Link>
                 .
               </p>
+              <figure className="mt-6">
+                <Image
+                  src="/writing/2026-retrospective/melius-nasdaq.png"
+                  alt="The Melius team beneath a Nasdaq billboard celebrating its fundraise"
+                  width={1206}
+                  height={2622}
+                  className="w-full object-cover"
+                />
+                <figcaption className="mt-2 text-xs italic text-stone-500">
+                  Melius on the Nasdaq billboard in Times Square
+                </figcaption>
+              </figure>
               <p className="mt-4">
                 Outside work, I lived in Chinatown, spent part of the summer sleeping on a couch,
                 ordered a lot of Uber Eats, went to the gym, and got out for more runs and walks. I
                 bought a pair of Hokas, too. In my last week there, I spent time with my brother and
                 friends before heading back to Waterloo.
               </p>
+              <figure className="mt-6">
+                <Image
+                  src="/writing/2026-retrospective/uber-one.png"
+                  alt="Uber One summary showing 191 orders and 12 rides"
+                  width={1174}
+                  height={554}
+                  className="w-full object-cover"
+                />
+                <figcaption className="mt-2 text-xs italic text-stone-500">
+                  My Uber One stats
+                </figcaption>
+              </figure>
               <figure className="mt-6">
                 <Image
                   src="/writing/2026-retrospective/nyc-bowling.jpg"
@@ -179,6 +203,30 @@ export default function RetrospectivePage() {
                 startup that I declined. I accepted a role that will take me back to New York for
                 the winter.
               </p>
+              <figure className="mt-6">
+                <Image
+                  src="/writing/2026-retrospective/meal-tracking.png"
+                  alt="A photo of chicken and vegetables alongside a logged meal summary"
+                  width={1206}
+                  height={2622}
+                  className="w-full object-cover"
+                />
+                <figcaption className="mt-2 text-xs italic text-stone-500">
+                  Using Tomo to track my calories
+                </figcaption>
+              </figure>
+              <figure className="mt-6">
+                <Image
+                  src="/writing/2026-retrospective/gym.jpg"
+                  alt="Two people at a gym bench press"
+                  width={4284}
+                  height={5712}
+                  className="w-full object-cover"
+                />
+                <figcaption className="mt-2 text-xs italic text-stone-500">
+                  Bench pressing with a friend at the gym
+                </figcaption>
+              </figure>
             </section>
 
             <section>
