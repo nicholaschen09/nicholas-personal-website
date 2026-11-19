@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Footer from '@/components/Footer';
 import BlogViewCount from '@/components/BlogViewCount';
 import EmbeddedTweet from '@/components/EmbeddedTweet';
@@ -44,6 +45,17 @@ export default function RetrospectivePage() {
             <span>Nicholas Chen · December 2026</span>
             <BlogViewCount path="/writing/2026-retrospective" increment />
           </p>
+
+          <figure className="mb-6">
+            <Image
+              src="/writing/2026-retrospective/cover.png"
+              alt="Nighttime city street with 2026 drawn across the scene in red"
+              width={650}
+              height={412}
+              priority
+              className="w-full object-cover"
+            />
+          </figure>
 
           <div className="space-y-8 text-xs md:text-sm leading-relaxed" style={{ fontWeight: 400 }}>
             <section>
