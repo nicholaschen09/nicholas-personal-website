@@ -135,6 +135,18 @@ export default function RetrospectivePage() {
                 alongside recruiting. I lived in Society and Icon, worked through classes and labs,
                 and went to Hack the North. School did not go as well as I wanted it to.
               </p>
+              <figure className="mt-6">
+                <Image
+                  src="/writing/2026-retrospective/hack-the-north.jpg"
+                  alt="Purple Hack the North hardware badge held in a hand"
+                  width={3024}
+                  height={4032}
+                  className="w-full object-cover"
+                />
+                <figcaption className="mt-2 text-xs italic text-stone-500">
+                  My Hack the North 2026 badge
+                </figcaption>
+              </figure>
               <p className="mt-4">
                 I started learning to cook food I actually enjoyed, including chicken with help from
                 my roommate Jordan. In October, I started dieting with a goal of eating around 1,800
