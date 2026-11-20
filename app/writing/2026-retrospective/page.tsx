@@ -88,11 +88,37 @@ export default function RetrospectivePage() {
                   again for summer 2026 internships.
                 </p>
                 <p className="mt-4">
-                  I had set a goal of trying for a bigger company this time, since everyone around
-                  me said it would help with future job searches. The previous summer, I had applied
-                  to so many jobs and heard back from only a few. I failed those interviews, and
-                  that stung. I still remember not being able to finish the LeetCode question in my
-                  Palantir interview.
+                  Going into recruiting, I had set a goal of joining a startup similar in size to
+                  TextQL. Many people around me thought I should aim for a bigger company, but I
+                  believed another startup was best for my career. When I feel like the odd one out,
+                  I seek advice from more experienced engineers. I had heard similar advice before,
+                  and, funny enough, my future manager Young Kim wrote about it in his{' '}
+                  <a
+                    href="https://www.youngkim.co/writing/early-career-advice"
+                    className={linkClass}
+                  >
+                    early career advice
+                  </a>
+                  {'. '}He argues for seeking demanding opportunities that others overlook.
+                </p>
+                <figure className="mt-6">
+                  <Image
+                    src="/writing/2026-retrospective/young-kim-early-career-advice.png"
+                    alt="Excerpt from Young Kim’s early career advice about seeking challenging opportunities"
+                    width={821}
+                    height={528}
+                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
+                    className="w-full"
+                  />
+                  <figcaption className="mt-2 text-xs italic text-stone-500">
+                    An excerpt from Young Kim’s early career advice
+                  </figcaption>
+                </figure>
+                <p className="mt-4">
+                  I was set on another startup, but the previous summer I had also applied to many
+                  larger companies with more recognizable names. Most rejected or ghosted me. I
+                  still remember not being able to finish the LeetCode question in my Palantir
+                  interview, and that stuck with me for a while.
                 </p>
                 <p className="mt-4">
                   This round meant around 200 applications, external reach-outs, and inbound
@@ -129,33 +155,11 @@ export default function RetrospectivePage() {
                 </p>
                 <EmbeddedTweet url="https://x.com/nicholaschen__/status/2000752780152119501" />
                 <p className="mt-4">
-                  Looking back, Young Kim’s{' '}
-                  <a
-                    href="https://www.youngkim.co/writing/early-career-advice"
-                    className={linkClass}
-                  >
-                    early career advice
-                  </a>{' '}
-                  captures why Melius appealed to me. Young later became one of my managers there.
-                  He writes that people often pass over demanding jobs, even when those jobs offer a
-                  chance to make an impact and build resilience. Melius was pre-Series A when I was
-                  recruiting, and I knew it would be a grind. I thought I would learn more by taking
-                  on harder problems and real responsibility. I recommend his post to a lot of
-                  people, especially anyone deciding where to work early in their career.
+                  Young’s advice also captures why Melius appealed to me. It was pre-Series A when I
+                  was recruiting, and I knew it would be a grind. I thought I would learn more by
+                  taking on harder problems and real responsibility. I recommend his post to a lot
+                  of people, especially anyone deciding where to work early in their career.
                 </p>
-                <figure className="mt-6">
-                  <Image
-                    src="/writing/2026-retrospective/young-kim-early-career-advice.png"
-                    alt="Excerpt from Young Kim’s early career advice about seeking challenging opportunities"
-                    width={821}
-                    height={528}
-                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
-                    className="w-full"
-                  />
-                  <figcaption className="mt-2 text-xs italic text-stone-500">
-                    An excerpt from Young Kim’s early career advice
-                  </figcaption>
-                </figure>
               </section>
 
               <section>
