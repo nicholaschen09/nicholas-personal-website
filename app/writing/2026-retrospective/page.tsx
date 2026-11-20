@@ -99,7 +99,8 @@ export default function RetrospectivePage() {
                   TextQL. Many people around me thought I should aim for a bigger company, but I
                   believed another startup was best for my career. When I feel like the odd one out,
                   I seek advice from more experienced engineers. I had heard similar advice before,
-                  and, funny enough, my future manager Young Kim actually writes about this in his{' '}
+                  and, funny enough, my future manager at Melius, Young Kim, actually writes about
+                  this in his{' '}
                   <a
                     href="https://www.youngkim.co/writing/early-career-advice"
                     className={linkClass}
@@ -122,15 +123,14 @@ export default function RetrospectivePage() {
                   </figcaption>
                 </figure>
                 <p className="mt-4">
-                  He argues for seeking demanding opportunities that others overlook. In his
-                  example, Facebook’s Ads team had longer hours, but offered more room to make an
-                  impact and grow because fewer people wanted to join it.
+                  He argues that demanding opportunities others overlook, like Facebook’s Ads team
+                  with its longer hours, can offer more room to make an impact and grow.
                 </p>
                 <p className="mt-4">
-                  I was set on another startup, but the previous summer I had also applied to many
-                  larger companies with more recognizable names. Most rejected or ghosted me. I
-                  still remember not being able to finish the LeetCode question in my Palantir
-                  interview, and that stuck with me for a while.
+                  Either way, I was set on joining another startup, but the previous summer I had
+                  also applied to many larger companies with more recognizable names. Most rejected
+                  or ghosted me. I still remember not being able to finish the LeetCode question in
+                  my Palantir interview, and that stuck with me for a while.
                 </p>
                 <p className="mt-4">
                   This round meant around 200 applications, external reach-outs, and inbound
