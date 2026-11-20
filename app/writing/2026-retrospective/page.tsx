@@ -129,8 +129,8 @@ export default function RetrospectivePage() {
                 <p className="mt-4">
                   Either way, I was set on joining another startup, but the previous summer I had
                   also applied to many larger companies with more recognizable names. Most rejected
-                  or ghosted me. I still remember not being able to finish the LeetCode question in
-                  my Palantir interview, and that stuck with me for a while.
+                  or ghosted me. I still remember failing the technical during my Palantir
+                  interview, and that stuck with me for a while.
                 </p>
                 <p className="mt-4">
                   This round meant around 200 applications, external reach-outs, and inbound
