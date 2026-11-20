@@ -253,7 +253,7 @@ export default function RetrospectivePage() {
                     className="w-full object-cover"
                   />
                   <figcaption className="mt-2 text-xs italic text-stone-500">
-                    Melius on the Nasdaq billboard in Times Square
+                    Joowon’s Instagram story of Melius on the Nasdaq billboard in Times Square
                   </figcaption>
                 </figure>
                 <p className="mt-4">
