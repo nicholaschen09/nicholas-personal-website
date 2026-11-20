@@ -135,22 +135,26 @@ export default function RetrospectivePage() {
                   He argues that demanding opportunities others overlook, like Facebook’s Ads team
                   with its longer hours, can offer more room to make an impact and grow.
                 </p>
+                <p className="mt-4">Either way, I was set on joining another startup.</p>
                 <p className="mt-4">
-                  Either way, I was set on joining another startup, but the previous summer I had
-                  also applied to many larger companies with more recognizable names. Most rejected
-                  or ghosted me. I still remember failing the technical during my Palantir
-                  interview, and that stuck with me for a while.
-                </p>
-                <p className="mt-4">
-                  This round meant around 200 applications, external reach-outs, and inbound
-                  messages, leading to roughly 40 interviews. My{' '}
+                  This recruiting cycle had technically already begun in the summer of 2025 (if
+                  you’re familiar with tech recruiting schedules), which meant around 350
+                  applications, external reach-outs, and inbound messages. I also applied to many
+                  larger companies with more recognizable names this time, despite not being too
+                  interested in them. Most rejected or ghosted me, and I failed the interviews with
+                  the few that took a chance on me. I had also written a{' '}
                   <Link href="/blogs/ontology-text-to-sql" className={linkClass}>
                     blog post about ontologies and text-to-SQL
                   </Link>{' '}
-                  brought in some of those conversations. I contributed to open source for the first
-                  time through InsForge, including work on MiniMap pan and zoom and a fix for raw
-                  SQL execution. I also went to San Francisco for an onsite interview and New York
-                  for a work trial. Both taught me a lot, even though neither went the way I hoped.
+                  during my time at TextQL, which luckily brought in some of those opportunities. I
+                  had also contributed to open source for the first time through InsForge, including
+                  work on MiniMap pan and zoom and a fix for raw SQL execution. You can{' '}
+                  <Link href="/insforge" className={linkClass}>
+                    see that work here
+                  </Link>
+                  . I even got the chance to fly to San Francisco for an onsite interview and New
+                  York for a work trial. Both taught me a lot, even though neither went the way I
+                  hoped.
                 </p>
                 <figure className="mt-6">
                   <div className="relative aspect-[2/1] w-full overflow-hidden">
