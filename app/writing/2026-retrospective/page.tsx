@@ -190,8 +190,8 @@ export default function RetrospectivePage() {
                   </figcaption>
                 </figure>
                 <p className="mt-4">
-                  I was getting bored during the term and wanted to try something new. I came across
-                  the{' '}
+                  While recruiting kept me busy, I was getting bored with the routine of the term
+                  and wanted to try something new. I came across the{' '}
                   <Link href="/blogs/neural-video-compression" className={linkClass}>
                     comma.ai video challenge
                   </Link>{' '}
