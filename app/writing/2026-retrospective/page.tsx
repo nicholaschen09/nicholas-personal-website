@@ -146,9 +146,12 @@ export default function RetrospectivePage() {
                   <Link href="/blogs/ontology-text-to-sql" className={linkClass}>
                     blog post about ontologies and text-to-SQL
                   </Link>{' '}
-                  during my time at TextQL, which luckily brought in some of those opportunities. I
-                  had also contributed to open source for the first time through InsForge, including
-                  work on MiniMap pan and zoom and a fix for raw SQL execution. You can{' '}
+                  during my time at TextQL, which luckily brought in some of those opportunities.
+                </p>
+                <EmbeddedTweet url="https://x.com/nicholaschen__/status/2000752780152119501" />
+                <p className="mt-4">
+                  I had also contributed to open source for the first time through InsForge,
+                  including work on MiniMap pan and zoom and a fix for raw SQL execution. You can{' '}
                   <Link href="/insforge" className={linkClass}>
                     see that work here
                   </Link>
@@ -175,10 +178,8 @@ export default function RetrospectivePage() {
                   <Link href="/blogs/neural-video-compression" className={linkClass}>
                     comma.ai video challenge
                   </Link>{' '}
-                  was my first real experience learning about machine learning. Somewhere in the
-                  middle of all this, a post I made took off on X:
+                  was my first real experience learning about machine learning.
                 </p>
-                <EmbeddedTweet url="https://x.com/nicholaschen__/status/2000752780152119501" />
                 <p className="mt-4">
                   Young’s advice also captures why Melius appealed to me. It was pre-Series A when I
                   was recruiting, and I knew it would be a grind. I thought I would learn more by
