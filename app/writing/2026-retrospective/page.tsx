@@ -190,11 +190,13 @@ export default function RetrospectivePage() {
                   </figcaption>
                 </figure>
                 <p className="mt-4">
-                  The{' '}
+                  I was getting bored during the term and wanted to try something new. I came across
+                  the{' '}
                   <Link href="/blogs/neural-video-compression" className={linkClass}>
                     comma.ai video challenge
                   </Link>{' '}
-                  was my first real experience learning about machine learning.
+                  on Twitter and decided to give it a shot. It was my first real experience learning
+                  about machine learning, and I wrote a blog post about my experience and solution.
                 </p>
               </section>
 
