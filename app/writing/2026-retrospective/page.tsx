@@ -257,11 +257,12 @@ export default function RetrospectivePage() {
                   </figcaption>
                 </figure>
                 <p className="mt-4">
-                  Outside work, I lived in Manhattan’s Chinatown and spent the summer sleeping on a
-                  couch. It was a makeshift setup, but the location made it easy to walk around the
-                  city and find places to eat nearby.
+                  Outside of work, I lived in Chinatown, Manhattan, and spent the summer sleeping on
+                  a couch. The building had no elevator, everything looked like it might fall apart,
+                  and it smelled awful. The good part about this location was that it made it easy
+                  to walk around the city and find places to eat nearby.
                 </p>
-                <p className="mt-4">I ordered way too much Uber Eats.</p>
+                <p className="mt-4">I also ordered way too much Uber Eats.</p>
                 <figure className="mt-6">
                   <Image
                     src="/writing/2026-retrospective/uber-one.png"
@@ -277,7 +278,9 @@ export default function RetrospectivePage() {
                 </figure>
                 <p className="mt-4">
                   I kept going back to Yunnan Noodles, a restaurant similar to Yunshang in Waterloo,
-                  because I lived so close.
+                  because I lived so close. I usually ordered the noodle dish in the photo below. It
+                  was open until 3 a.m., which made late-night meals easy, and a bowl cost only
+                  around $14.
                 </p>
                 <figure className="mt-6">
                   <Image
