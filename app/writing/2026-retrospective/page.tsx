@@ -257,9 +257,11 @@ export default function RetrospectivePage() {
                   </figcaption>
                 </figure>
                 <p className="mt-4">
-                  Outside work, I lived in Chinatown and spent the summer sleeping on a couch. I
-                  ordered way too much Uber Eats.
+                  Outside work, I lived in Manhattan’s Chinatown and spent the summer sleeping on a
+                  couch. It was a makeshift setup, but the location made it easy to walk around the
+                  city and find places to eat nearby.
                 </p>
+                <p className="mt-4">I ordered way too much Uber Eats.</p>
                 <figure className="mt-6">
                   <Image
                     src="/writing/2026-retrospective/uber-one.png"
@@ -292,7 +294,7 @@ export default function RetrospectivePage() {
                 </figure>
                 <p className="mt-4">
                   I also tried to get outside more: I bought a pair of Hokas, went to the gym, ran,
-                  and took lots of walks, especially around Battery Park.
+                  and took lots of walks, especially around Battery Park and Little Island.
                 </p>
                 <figure className="mt-6">
                   <Image
