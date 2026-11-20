@@ -191,12 +191,13 @@ export default function RetrospectivePage() {
                 </figure>
                 <p className="mt-4">
                   While recruiting kept me busy, I was getting bored with the routine of the term
-                  and wanted to try something new. I came across the{' '}
+                  and wanted to try something new. I came across the comma.ai video challenge on
+                  Twitter and decided to give it a shot. It was my first real experience learning
+                  about machine learning, and I wrote{' '}
                   <Link href="/blogs/neural-video-compression" className={linkClass}>
-                    comma.ai video challenge
-                  </Link>{' '}
-                  on Twitter and decided to give it a shot. It was my first real experience learning
-                  about machine learning, and I wrote a blog post about my experience and solution.
+                    a blog post about my experience and solution
+                  </Link>
+                  .
                 </p>
               </section>
 
