@@ -208,10 +208,17 @@ export default function RetrospectivePage() {
                   Spending a Summer in New York City
                 </h2>
                 <p>
-                  I ended up at Melius, just a few blocks from where I had done that work trial.
-                  Working at a startup meant taking a product from zero to one, learning to love the
-                  work, and getting to make decisions across engineering, design, and product. I
-                  wrote more about the projects and people in{' '}
+                  After a brutal three-month job search, I got an offer to join{' '}
+                  <a
+                    href="https://melius.com"
+                    className="transition-colors hover:text-pink-300 focus-visible:text-pink-300"
+                  >
+                    Melius
+                  </a>
+                  , an early-stage startup, for summer 2026. Working at a startup meant taking a
+                  product from zero to one, learning to love the work, and getting to make decisions
+                  across engineering, design, and product. I wrote more about the projects and
+                  people in{' '}
                   <Link href="/blogs/melius-summer-internship" className={linkClass}>
                     my Melius internship post
                   </Link>
