@@ -195,12 +195,6 @@ export default function RetrospectivePage() {
                   </Link>{' '}
                   was my first real experience learning about machine learning.
                 </p>
-                <p className="mt-4">
-                  Young’s advice also captures why Melius appealed to me. It was pre-Series A when I
-                  was recruiting, and I knew it would be a grind. I thought I would learn more by
-                  taking on harder problems and real responsibility. I recommend his post to a lot
-                  of people, especially anyone deciding where to work early in their career.
-                </p>
               </section>
 
               <section>
