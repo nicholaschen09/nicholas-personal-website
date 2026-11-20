@@ -394,9 +394,15 @@ export default function RetrospectivePage() {
                   What’s Next and My Goals for 2027
                 </h2>
                 <p>
-                  I’m going back to New York for an internship next winter. I want to run more when
-                  the weather warms up again, find something in tech I really enjoy and go deep on
-                  it, and make more time to have fun.
+                  I’m going back to New York next winter for an internship where I’ll be doing more
+                  product engineering. My goals for 2027 aren’t completely clear yet, but I want to
+                  run more when the weather warms up, find an area of tech I really enjoy, go deep
+                  on it, and build serious technical expertise. Outside of work, I want to keep
+                  working on my diet and losing weight, with a goal of losing 30 pounds before the
+                  start of summer 2027. I also want to make more time to have fun. The past few
+                  years have felt like a constant grind, and I haven’t given myself much time to
+                  enjoy the moment. Before I graduate, I want to make more friends and try new
+                  things.
                 </p>
               </section>
             </div>
