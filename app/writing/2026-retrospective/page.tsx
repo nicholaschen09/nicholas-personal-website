@@ -161,7 +161,8 @@ export default function RetrospectivePage() {
                   <Link href="/blogs/ontology-text-to-sql" className={linkClass}>
                     blog post about ontologies and text-to-SQL
                   </Link>{' '}
-                  during my time at TextQL, which luckily brought in some of those opportunities.
+                  during my time at TextQL, which went semi-viral and luckily brought in some of
+                  those opportunities.
                 </p>
                 <EmbeddedTweet url="https://x.com/nicholaschen__/status/2000752780152119501" />
                 <p className="mt-4">
