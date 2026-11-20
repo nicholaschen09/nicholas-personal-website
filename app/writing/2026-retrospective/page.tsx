@@ -257,11 +257,11 @@ export default function RetrospectivePage() {
                   </figcaption>
                 </figure>
                 <p className="mt-4">
-                  Outside work, I lived in Chinatown, spent part of the summer sleeping on a couch,
-                  ordered a lot of Uber Eats, and kept going back to Yunnan Noodles because it was
-                  so close to where I lived. I went to the gym and got out for more runs and walks.
-                  I bought a pair of Hokas, too. In my last week there, I spent time with my brother
-                  and friends before heading back to Waterloo.
+                  Outside work, I lived in Chinatown and spent part of the summer sleeping on a
+                  couch. I ordered way too much Uber Eats and kept going back to Yunnan Noodles
+                  because I lived so close. I also tried to get outside more: I bought a pair of
+                  Hokas, went to the gym, ran, and took lots of walks, especially around Battery
+                  Park.
                 </p>
                 <figure className="mt-6">
                   <Image
@@ -289,6 +289,13 @@ export default function RetrospectivePage() {
                     One of many visits to Yunnan Noodles near my place in Chinatown
                   </figcaption>
                 </figure>
+                <p className="mt-4">
+                  A lot of my friends were also interning in New York or came to visit that summer,
+                  so we hung out often. Toward the end of my internship, I invited my brother, one
+                  of my friends, and his younger brother to visit. We went bowling, rode bikes, ate
+                  lots of good food, and shopped at places like Kith and Stüssy. For once, I gave
+                  myself time to enjoy life and just have fun.
+                </p>
                 <figure className="mt-6">
                   <Image
                     src="/writing/2026-retrospective/nyc-bowling.webp"
@@ -424,10 +431,11 @@ export default function RetrospectivePage() {
                   run more when the weather warms up, find an area of tech I really enjoy, go deep
                   on it, and build serious technical expertise. Outside of work, I want to keep
                   working on my diet and losing weight, with a goal of losing 30 pounds before the
-                  start of summer 2027. I also want to make more time to have fun. The past few
-                  years have felt like a constant grind, and I haven’t given myself much time to
-                  enjoy the moment. Before I graduate, I want to make more friends and try new
-                  things.
+                  start of summer 2027. A smaller goal is to stop relying on food delivery, buy
+                  groceries, cook more of my own meals, and eat more healthily. I also want to make
+                  more time to have fun. The past few years have felt like a constant grind, and I
+                  haven’t given myself much time to enjoy the moment. Before I graduate, I want to
+                  make more friends and try new things.
                 </p>
               </section>
             </div>
