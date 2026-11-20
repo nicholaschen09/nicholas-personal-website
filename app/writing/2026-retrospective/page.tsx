@@ -84,7 +84,7 @@ export default function RetrospectivePage() {
                   Living in New York for a semester made it awful to come back to Waterloo for the
                   winter term, but it was the start of 2A, my first semester as a second year here.
                   I had lots of fun during co-op and learned a lot of new technical skills and
-                  startup lessons at{' '}
+                  startup lessons from{' '}
                   <a
                     href="https://textql.com"
                     className="transition-colors hover:text-pink-300 focus-visible:text-pink-300"
