@@ -277,10 +277,10 @@ export default function RetrospectivePage() {
                   </figcaption>
                 </figure>
                 <p className="mt-4">
-                  I kept going back to Yunnan Noodles, a restaurant similar to Yunshang in Waterloo,
-                  because I lived so close. I usually ordered the noodle dish in the photo below. It
-                  was open until 3 a.m., which made late-night meals easy, and a bowl cost only
-                  around $14.
+                  On the weekends, I kept going back to Yunnan Noodles, a restaurant similar to
+                  Yunshang in Waterloo, because I lived so close. I usually ordered the noodle dish
+                  in the photo below. This place would stay open until 3 a.m., which made late-night
+                  meals easy, and a bowl cost only around $14.
                 </p>
                 <figure className="mt-6">
                   <Image
