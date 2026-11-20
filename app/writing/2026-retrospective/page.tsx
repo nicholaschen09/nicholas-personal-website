@@ -95,6 +95,15 @@ export default function RetrospectivePage() {
                   internships.
                 </p>
                 <p className="mt-4">
+                  This term, I was living in Society, one of the buildings near campus that many
+                  students sublet or lease during study terms. The winter was brutal: lots of snow,
+                  wet slush, and crazy wind. In my opinion, Waterloo winters are worse than Toronto
+                  winters. School was getting harder this term. I had courses like Calculus 3,
+                  Materials Chemistry, and Dynamics, all of which I was not a huge fan of. We also
+                  had a circuits lab this term which, looking back, was easier than the one I had in
+                  2B, but still challenging and time-consuming.
+                </p>
+                <p className="mt-4">
                   Going into recruiting, I had set a goal of joining a startup similar in size to
                   TextQL. Many people around me thought I should aim for a bigger company, but I
                   believed another startup was best for my career. When I feel like the odd one out,
