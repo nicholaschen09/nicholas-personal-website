@@ -233,8 +233,15 @@ export default function RetrospectivePage() {
                     $25 million
                   </a>
                   . I’ve never been more bullish on the team, and I’m excited to see what they
-                  accomplish next. Also, shoutout to Alex, one of the funniest coworkers I’ve ever
-                  had, who taught me a lot both on and off the job.
+                  accomplish next. Also, shoutout to{' '}
+                  <a
+                    href="https://x.com/alexch3n"
+                    className="transition-colors hover:text-pink-300 focus-visible:text-pink-300"
+                  >
+                    Alex
+                  </a>
+                  , one of the funniest coworkers I’ve ever had, who taught me a lot both on and off
+                  the job.
                 </p>
                 <figure className="mt-6">
                   <Image
