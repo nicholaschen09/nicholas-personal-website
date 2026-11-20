@@ -317,7 +317,8 @@ export default function RetrospectivePage() {
                   so we hung out often. Toward the end of my internship, I invited my brother, one
                   of my friends, and his younger brother to visit. We went bowling, rode bikes, ate
                   lots of good food, and shopped at places like Kith and Stüssy. For once, I gave
-                  myself time to enjoy life and just have fun.
+                  myself time to enjoy life and just have fun. Having fun in New York wasn’t cheap,
+                  though. I spent around $2,000 in that short stretch.
                 </p>
                 <figure className="mt-6">
                   <Image
