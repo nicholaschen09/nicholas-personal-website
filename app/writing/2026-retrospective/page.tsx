@@ -106,7 +106,7 @@ export default function RetrospectivePage() {
                   >
                     early career advice
                   </a>
-                  {'.'}
+                  {' for ambitious engineers.'}
                 </p>
                 <figure className="mt-6">
                   <Image
