@@ -70,10 +70,9 @@ export default function RetrospectivePage() {
               <section>
                 <p>
                   I’ve never really done a formal year in review. I usually have a good idea of the
-                  goals I’ve accomplished and what I want to do differently the following year. In
-                  the last day or two of December, I spend some time thinking back. This year, I
-                  wanted to write it all down so I could look back on this time in my life in the
-                  future.
+                  goals I’ve accomplished and what I want to do differently the following year. This
+                  year, I wanted to write it all down so I could look back on this time in my life
+                  in the future.
                 </p>
               </section>
 
