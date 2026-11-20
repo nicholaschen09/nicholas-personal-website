@@ -84,8 +84,15 @@ export default function RetrospectivePage() {
                   Living in New York for a semester made it awful to come back to Waterloo for the
                   winter term, but it was the start of 2A, my first semester as a second year here.
                   I had lots of fun during co-op and learned a lot of new technical skills and
-                  startup lessons at TextQL. This eventually helped out a lot when I was recruiting
-                  again for summer 2026 internships.
+                  startup lessons at{' '}
+                  <a
+                    href="https://textql.com"
+                    className="transition-colors hover:text-pink-300 focus-visible:text-pink-300"
+                  >
+                    TextQL
+                  </a>
+                  {'. '}This eventually helped out a lot when I was recruiting again for summer 2026
+                  internships.
                 </p>
                 <p className="mt-4">
                   Going into recruiting, I had set a goal of joining a startup similar in size to
