@@ -139,10 +139,25 @@ export default function RetrospectivePage() {
                 <p className="mt-4">
                   This recruiting cycle had technically already begun in the summer of 2025 (if
                   you’re familiar with tech recruiting schedules), which meant around 350
-                  applications, external reach-outs, and inbound messages. I also applied to many
-                  larger companies with more recognizable names this time, despite not being too
-                  interested in them. Most rejected or ghosted me, and I failed the interviews with
-                  the few that took a chance on me. I had also written a{' '}
+                  applications, external reach-outs, and inbound messages.
+                </p>
+                <figure className="mt-6">
+                  <Image
+                    src="/writing/2026-retrospective/recruiting-sankey.png"
+                    alt="Recruiting flow from 350 applications to 40 interviews and 2 offers"
+                    width={999}
+                    height={582}
+                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
+                    className="w-full"
+                  />
+                  <figcaption className="mt-2 text-xs italic text-stone-500">
+                    My recruiting funnel: 350 applications, 40 interviews, and 2 offers
+                  </figcaption>
+                </figure>
+                <p className="mt-4">
+                  I also applied to many larger companies with more recognizable names this time,
+                  despite not being too interested in them. Most rejected or ghosted me, and I
+                  failed the interviews with the few that took a chance on me. I had also written a{' '}
                   <Link href="/blogs/ontology-text-to-sql" className={linkClass}>
                     blog post about ontologies and text-to-SQL
                   </Link>{' '}
