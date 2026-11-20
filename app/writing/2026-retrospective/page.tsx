@@ -139,7 +139,9 @@ export default function RetrospectivePage() {
                 <p className="mt-4">
                   This recruiting cycle had technically already begun in the summer of 2025 (if
                   you’re familiar with tech recruiting schedules), which meant around 350
-                  applications, external reach-outs, and inbound messages.
+                  applications, external reach-outs, and inbound messages. For what it’s worth, I
+                  found summer internship recruiting the toughest, with especially intense
+                  competition among engineering and computer science students.
                 </p>
                 <figure className="mt-6">
                   <Image
@@ -219,8 +221,8 @@ export default function RetrospectivePage() {
                   <Image
                     src="/writing/2026-retrospective/melius-nasdaq.webp"
                     alt="The Melius team beneath a Nasdaq billboard celebrating its fundraise"
-                    width={920}
-                    height={2000}
+                    width={1202}
+                    height={2342}
                     sizes="(max-width: 768px) calc(100vw - 48px), 480px"
                     className="w-full object-cover"
                   />
