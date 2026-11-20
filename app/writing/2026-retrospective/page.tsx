@@ -225,12 +225,12 @@ export default function RetrospectivePage() {
                   .
                 </p>
                 <p className="mt-4">
-                  Just before I left, Melius raised a{' '}
+                  Just before I left, Melius raised{' '}
                   <a
                     href="https://x.com/n0w00j/status/2107480018473357779?s=12"
                     className={linkClass}
                   >
-                    $25 million Series A
+                    $25 million
                   </a>
                   . I’ve never been more bullish on the team, and I’m excited to see what they
                   accomplish next.
