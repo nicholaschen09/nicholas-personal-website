@@ -258,9 +258,7 @@ export default function RetrospectivePage() {
                 </figure>
                 <p className="mt-4">
                   Outside work, I lived in Chinatown and spent the summer sleeping on a couch. I
-                  ordered way too much Uber Eats and kept going back to Yunnan Noodles because I
-                  lived so close. I also tried to get outside more: I bought a pair of Hokas, went
-                  to the gym, ran, and took lots of walks, especially around Battery Park.
+                  ordered way too much Uber Eats.
                 </p>
                 <figure className="mt-6">
                   <Image
@@ -275,6 +273,10 @@ export default function RetrospectivePage() {
                     My Uber One stats
                   </figcaption>
                 </figure>
+                <p className="mt-4">
+                  I kept going back to Yunnan Noodles, a restaurant similar to Yunshang in Waterloo,
+                  because I lived so close.
+                </p>
                 <figure className="mt-6">
                   <Image
                     src="/writing/2026-retrospective/yunnan-noodles.webp"
@@ -286,6 +288,23 @@ export default function RetrospectivePage() {
                   />
                   <figcaption className="mt-2 text-xs italic text-stone-500">
                     One of many visits to Yunnan Noodles near my place in Chinatown
+                  </figcaption>
+                </figure>
+                <p className="mt-4">
+                  I also tried to get outside more: I bought a pair of Hokas, went to the gym, ran,
+                  and took lots of walks, especially around Battery Park.
+                </p>
+                <figure className="mt-6">
+                  <Image
+                    src="/writing/2026-retrospective/nyc-little-island-sunset.webp"
+                    alt="Sunset over Little Island and the Hudson River in New York City"
+                    width={1500}
+                    height={2000}
+                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
+                    className="w-full object-cover"
+                  />
+                  <figcaption className="mt-2 text-xs italic text-stone-500">
+                    Sunset at Little Island
                   </figcaption>
                 </figure>
                 <p className="mt-4">
@@ -306,19 +325,6 @@ export default function RetrospectivePage() {
                   />
                   <figcaption className="mt-2 text-xs italic text-stone-500">
                     Bowling with friends in New York
-                  </figcaption>
-                </figure>
-                <figure className="mt-6">
-                  <Image
-                    src="/writing/2026-retrospective/nyc-little-island-sunset.webp"
-                    alt="Sunset over Little Island and the Hudson River in New York City"
-                    width={1500}
-                    height={2000}
-                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
-                    className="w-full object-cover"
-                  />
-                  <figcaption className="mt-2 text-xs italic text-stone-500">
-                    Sunset at Little Island
                   </figcaption>
                 </figure>
               </section>
