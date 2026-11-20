@@ -51,7 +51,7 @@ export default function ImageLightbox({ children }: { children: React.ReactNode 
         const img = target as HTMLImageElement;
         const captionText =
           img.closest('figure')?.querySelector('figcaption')?.textContent?.trim() ?? '';
-        open(img.src, img.alt, captionText);
+        open(img.currentSrc || img.src, img.alt, captionText);
       }
     },
     [open],
@@ -59,11 +59,7 @@ export default function ImageLightbox({ children }: { children: React.ReactNode 
 
   return (
     <>
-      <div
-        ref={containerRef}
-        onClick={handleClick}
-        className="w-full [&_img]:cursor-zoom-in"
-      >
+      <div ref={containerRef} onClick={handleClick} className="w-full [&_img]:cursor-zoom-in">
         {children}
       </div>
 
