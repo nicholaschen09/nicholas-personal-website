@@ -217,8 +217,8 @@ export default function RetrospectivePage() {
                   </a>
                   , an early-stage startup, for summer 2026. Working at a startup meant taking a
                   product from zero to one, learning to love the work, and getting to make decisions
-                  across engineering, design, and product. I wrote more about the projects and
-                  people in{' '}
+                  across engineering, design, and product. If you’re curious about my experience,
+                  the product, and the people, I wrote a blog post about my time interning there:{' '}
                   <Link href="/blogs/melius-summer-internship" className={linkClass}>
                     my Melius internship post
                   </Link>
