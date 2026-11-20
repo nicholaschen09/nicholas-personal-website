@@ -257,11 +257,10 @@ export default function RetrospectivePage() {
                   </figcaption>
                 </figure>
                 <p className="mt-4">
-                  Outside work, I lived in Chinatown and spent part of the summer sleeping on a
-                  couch. I ordered way too much Uber Eats and kept going back to Yunnan Noodles
-                  because I lived so close. I also tried to get outside more: I bought a pair of
-                  Hokas, went to the gym, ran, and took lots of walks, especially around Battery
-                  Park.
+                  Outside work, I lived in Chinatown and spent the summer sleeping on a couch. I
+                  ordered way too much Uber Eats and kept going back to Yunnan Noodles because I
+                  lived so close. I also tried to get outside more: I bought a pair of Hokas, went
+                  to the gym, ran, and took lots of walks, especially around Battery Park.
                 </p>
                 <figure className="mt-6">
                   <Image
