@@ -224,6 +224,10 @@ export default function RetrospectivePage() {
                   </Link>
                   .
                 </p>
+                <p className="mt-4">
+                  Just before I left, Melius raised a $25 million Series A. I’ve never been more
+                  bullish on the team, and I’m excited to see what they accomplish next.
+                </p>
                 <figure className="mt-6">
                   <Image
                     src="/writing/2026-retrospective/melius-nasdaq.webp"
