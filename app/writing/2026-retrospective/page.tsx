@@ -254,15 +254,6 @@ export default function RetrospectivePage() {
                   , an early-stage startup, for summer 2026.
                 </p>
                 <p className="mt-4">
-                  The way I got the job was pretty unconventional. I sent Joowon, Melius’s founder,
-                  a DM on X. He had around 23,000 followers at the time, so I didn’t expect him to
-                  reply. I also had no idea he knew Ethan, my previous CEO at TextQL, but that
-                  connection led to a conversation. I then spoke with the CTO, Young Kim, and was
-                  eventually invited to a work trial in New York. On my way there, my flight was
-                  canceled, which meant the work trial was canceled too. The team decided to take a
-                  chance on me anyway, and I’m still extremely grateful they did.
-                </p>
-                <p className="mt-4">
                   Working at a startup meant taking a product from zero to one, learning to love the
                   work, and getting to make decisions across engineering, design, and product. If
                   you’re curious about my experience, the product, and the people, I wrote a blog
