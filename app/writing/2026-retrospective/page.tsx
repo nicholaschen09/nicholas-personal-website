@@ -419,8 +419,9 @@ export default function RetrospectivePage() {
                   winter 2027.
                 </p>
                 <p className="mt-4">
-                  I also went to Hack the North. We got some cool merch, I talked to a lot of
-                  people, and I especially liked the badge they designed for us.
+                  I finally got into Hack the North after being rejected in previous years. We got
+                  some cool merch, I talked to a lot of people, and I especially liked the badge
+                  they designed for us.
                 </p>
                 <figure className="mt-6">
                   <Image
