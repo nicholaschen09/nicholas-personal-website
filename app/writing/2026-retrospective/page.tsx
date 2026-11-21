@@ -495,14 +495,24 @@ export default function RetrospectivePage() {
                 <h2 id="next" className={headingClass}>
                   What’s Next and My Goals for 2027
                 </h2>
-                <p>
-                  I’m going back to New York next winter for another internship. In 2027, I want to
-                  run more when the weather warms up, find an area of tech I really enjoy, go deep
-                  on it, and build serious technical expertise. Outside of work, I want to lose 30
-                  pounds before summer 2027. I also want to make more time to have fun. The past few
-                  years have felt like a constant grind, and I haven’t given myself much time to
-                  enjoy the moment. Before I graduate, I want to make more friends and try new
-                  things.
+                <p>I’m going back to New York next winter for another internship.</p>
+                <figure className="mt-6">
+                  <Image
+                    src="/writing/2026-retrospective/new-york-offer-letter.png"
+                    alt="Redacted offer letter addressed to Nicholas for a position in New York"
+                    width={1813}
+                    height={328}
+                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
+                    className="w-full"
+                  />
+                </figure>
+                <p className="mt-4">
+                  In 2027, I want to run more when the weather warms up, find an area of tech I
+                  really enjoy, go deep on it, and build serious technical expertise. Outside of
+                  work, I want to lose 30 pounds before summer 2027. I also want to make more time
+                  to have fun. The past few years have felt like a constant grind, and I haven’t
+                  given myself much time to enjoy the moment. Before I graduate, I want to make more
+                  friends and try new things.
                 </p>
               </section>
             </div>
