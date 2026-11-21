@@ -533,6 +533,12 @@ export default function RetrospectivePage() {
                     Trying HEYTEA near Waterloo campus
                   </figcaption>
                 </figure>
+                <p className="mt-4">
+                  School itself felt much harder this term. More of my courses required me to study
+                  seriously and, funny as it sounds, actually use my brain. Circuits and the
+                  circuits lab were two examples. Honestly, I couldn’t wait for the term to end.
+                  I’ve never been a big fan of school, and I was excited to go back to New York.
+                </p>
               </section>
 
               <section>
