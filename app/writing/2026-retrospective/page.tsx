@@ -530,7 +530,7 @@ export default function RetrospectivePage() {
                     className="w-full object-cover"
                   />
                   <figcaption className="mt-2 text-xs italic text-stone-500">
-                    Trying HEYTEA near campus
+                    Trying HEYTEA near Waterloo campus
                   </figcaption>
                 </figure>
               </section>
