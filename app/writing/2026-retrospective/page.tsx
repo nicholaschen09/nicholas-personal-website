@@ -251,9 +251,9 @@ export default function RetrospectivePage() {
                   >
                     Melius
                   </a>
-                  , an early-stage startup, for summer 2026. Melius was building an AI platform that
-                  helped businesses create marketing content, designs, and campaign assets. I was
-                  excited to join the team.
+                  , an early-stage startup, for summer 2026. Melius was building a new AI platform
+                  that helped businesses create marketing content, designs, and campaign assets. I
+                  was excited to join the team.
                 </p>
                 <p className="mt-4">
                   Working at a startup meant taking a product from zero to one, learning to love the
