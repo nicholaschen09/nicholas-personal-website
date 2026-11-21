@@ -419,9 +419,25 @@ export default function RetrospectivePage() {
                   winter 2027.
                 </p>
                 <p className="mt-4">
-                  I went to Hack the North and tried to get to the ICON gym more often to make
-                  working out a regular part of my routine. School did not go as well as I wanted it
-                  to.
+                  I also went to Hack the North. We got some cool merch, I talked to a lot of
+                  people, and I especially liked the badge they designed for us.
+                </p>
+                <figure className="mt-6">
+                  <Image
+                    src="/writing/2026-retrospective/hack-the-north.webp"
+                    alt="Purple Hack the North hardware badge held in a hand"
+                    width={1500}
+                    height={2000}
+                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
+                    className="w-full object-cover"
+                  />
+                  <figcaption className="mt-2 text-xs italic text-stone-500">
+                    My Hack the North 2026 badge
+                  </figcaption>
+                </figure>
+                <p className="mt-4">
+                  I tried to get to the ICON gym more often to make working out a regular part of my
+                  routine. School did not go as well as I wanted it to.
                 </p>
                 <figure className="mt-6">
                   <div className="relative aspect-[4/3] w-full overflow-hidden">
@@ -435,19 +451,6 @@ export default function RetrospectivePage() {
                   </div>
                   <figcaption className="mt-2 text-xs italic text-stone-500">
                     The ICON gym in Waterloo, where I was trying to work out more often
-                  </figcaption>
-                </figure>
-                <figure className="mt-6">
-                  <Image
-                    src="/writing/2026-retrospective/hack-the-north.webp"
-                    alt="Purple Hack the North hardware badge held in a hand"
-                    width={1500}
-                    height={2000}
-                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
-                    className="w-full object-cover"
-                  />
-                  <figcaption className="mt-2 text-xs italic text-stone-500">
-                    My Hack the North 2026 badge
                   </figcaption>
                 </figure>
                 <p className="mt-4">
