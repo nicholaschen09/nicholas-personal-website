@@ -439,6 +439,23 @@ export default function RetrospectivePage() {
                   </figcaption>
                 </figure>
                 <p className="mt-4">
+                  HEYTEA opened near campus this term, and of course I had to try it, like every
+                  other Asian student at Waterloo.
+                </p>
+                <figure className="mt-6">
+                  <Image
+                    src="/writing/2026-retrospective/heytea-waterloo.webp"
+                    alt="A hand holding a HEYTEA drink near campus in Waterloo"
+                    width={1200}
+                    height={1600}
+                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
+                    className="w-full object-cover"
+                  />
+                  <figcaption className="mt-2 text-xs italic text-stone-500">
+                    Trying HEYTEA near campus
+                  </figcaption>
+                </figure>
+                <p className="mt-4">
                   I started learning to cook food I actually enjoyed, including chicken with help
                   from my roommate Jordan. In October, I started dieting with a goal of eating
                   around 1,800 to 2,200 calories a day. The winter job search led to around a dozen
