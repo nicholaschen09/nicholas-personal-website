@@ -476,8 +476,7 @@ export default function RetrospectivePage() {
                 <p className="mt-4">
                   I started learning to cook food I actually enjoyed, including chicken with help
                   from my roommate Jordan. In October, I started dieting with a goal of eating
-                  around 1,800 to 2,200 calories a day. I accepted a role that will take me back to
-                  New York for the winter.
+                  around 1,800 to 2,200 calories a day.
                 </p>
                 <figure className="mt-6">
                   <Image
