@@ -575,10 +575,11 @@ export default function RetrospectivePage() {
                   again.
                 </p>
                 <p className="mt-4">
-                  I’m still figuring out what I truly want to do in tech. This year gave me more to
-                  think about when it comes to startups versus bigger companies, the kind of work I
-                  enjoy, and how my years making art influence the way I approach engineering. I’ve
-                  been redesigning this website as one way to bring those parts of my life together.
+                  As for my goals, I’m still figuring out what I truly want to do in tech. This year
+                  gave me more to think about when it comes to startups versus bigger companies, the
+                  kind of work I enjoy, and how my years making art influence the way I approach
+                  engineering. I’ve been redesigning this website as one way to bring those parts of
+                  my life together.
                 </p>
                 <p className="mt-4">
                   Young puts into words something I already tell myself in his{' '}
@@ -607,12 +608,12 @@ export default function RetrospectivePage() {
                   </figcaption>
                 </figure>
                 <p className="mt-4">
-                  As for my goals, in 2027, I want to run more when the weather warms up, find an
-                  area of tech I really enjoy, go deep on it, and build serious technical expertise.
-                  Outside of work, I want to lose 30 pounds before summer 2027. I also want to make
-                  more time to have fun. The past few years have felt like a constant grind, and I
-                  haven’t given myself much time to enjoy the moment. Before I graduate, I want to
-                  make more friends and try new things!
+                  In 2027, I want to run more when the weather warms up, find an area of tech I
+                  really enjoy, go deep on it, and build serious technical expertise. Outside of
+                  work, I want to lose 30 pounds before summer 2027. I also want to make more time
+                  to have fun. The past few years have felt like a constant grind, and I haven’t
+                  given myself much time to enjoy the moment. Before I graduate, I want to make more
+                  friends and try new things!
                 </p>
               </section>
             </div>
