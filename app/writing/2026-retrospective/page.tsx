@@ -137,11 +137,21 @@ export default function RetrospectivePage() {
                 </p>
                 <p className="mt-4">Either way, I was set on joining another startup.</p>
                 <p className="mt-4">
-                  This recruiting cycle had technically already begun in the summer of 2025 (if
-                  you’re familiar with tech recruiting schedules), which meant around 350
-                  applications, external reach-outs, and inbound messages. For what it’s worth, I
-                  found summer internship recruiting the toughest, with especially intense
-                  competition among engineering and computer science students.
+                  This recruiting cycle had technically begun in the summer of 2025 (if you’re
+                  familiar with tech recruiting schedules). I set up alerts and automations for new
+                  job postings, checked{' '}
+                  <a
+                    href="https://github.com/SimplifyJobs/Summer2027-Internships"
+                    className={linkClass}
+                  >
+                    this GitHub internship list
+                  </a>{' '}
+                  (iykyk), and kept an eye on zero2sudo’s Instagram stories. At Waterloo, co-op
+                  terms generally alternate with school terms, so you’re often searching for your
+                  next job while you’re still studying or interning. For me, that meant applying to
+                  around 100 jobs online, messaging as many founders and founding engineers as I
+                  could on X and LinkedIn, and getting a few lucky inbound messages. Altogether, I
+                  tracked roughly 350 applications and outreach attempts.
                 </p>
                 <figure className="mt-6">
                   <Image
@@ -158,24 +168,30 @@ export default function RetrospectivePage() {
                 </figure>
                 <p className="mt-4">
                   I also applied to many larger companies with more recognizable names this time,
-                  despite not being too interested in them. Most rejected or ghosted me, and I
-                  failed the interviews with the few that took a chance on me. I had also written a{' '}
+                  despite being more interested in startups. Most of my startup interviews were far
+                  from conventional. They ranged from two to five rounds: some focused on behavioral
+                  questions, others went deep into debugging or system design, and a few included
+                  on-site work trials. LeetCode practice did little to prepare me because most of
+                  the startup teams I spoke with disliked that kind of evaluation. I often went in
+                  with little preparation, and the preparation I did rarely matched what came up.
+                  Around that time, I had also written a{' '}
                   <Link href="/blogs/ontology-text-to-sql" className={linkClass}>
                     blog post about ontologies and text-to-SQL
                   </Link>{' '}
-                  during my time at TextQL, which went semi-viral and luckily brought in some of
-                  those opportunities.
+                  during my time at TextQL. It went semi-viral and luckily brought in more
+                  opportunities.
                 </p>
                 <EmbeddedTweet url="https://x.com/nicholaschen__/status/2000752780152119501" />
                 <p className="mt-4">
-                  I had also contributed to open source for the first time through InsForge,
-                  including work on MiniMap pan and zoom and a fix for raw SQL execution. You can{' '}
+                  Contributing to open source for the first time also helped me get more interviews.
+                  Through InsForge, I worked on MiniMap pan and zoom and fixed raw SQL execution.
+                  You can{' '}
                   <Link href="/insforge" className={linkClass}>
                     see that work here
                   </Link>
-                  . That work also helped me during recruiting and led to more interviews. I even
-                  got the chance to fly to San Francisco for an onsite interview and New York for a
-                  work trial. Both taught me a lot, even though neither went the way I hoped.
+                  . I even got the chance to fly to San Francisco for an onsite interview and New
+                  York for a work trial. Both taught me a lot, even though neither went the way I
+                  hoped.
                 </p>
                 <figure className="mt-6">
                   <div className="relative aspect-[2/1] w-full overflow-hidden">
@@ -191,6 +207,12 @@ export default function RetrospectivePage() {
                     The Bay Bridge during my San Francisco on-site interview trip
                   </figcaption>
                 </figure>
+                <p className="mt-4">
+                  In general, I found summer internship recruiting the toughest. The competition
+                  felt especially intense among engineering and computer science students because it
+                  wasn’t just Waterloo students looking for work. Students across North America were
+                  searching at the same time.
+                </p>
                 <p className="mt-4">
                   While recruiting kept me busy, I was getting bored with the routine of the term
                   and wanted to try something new. I came across the comma.ai video challenge on
