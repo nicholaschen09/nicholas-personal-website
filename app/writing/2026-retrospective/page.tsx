@@ -464,8 +464,9 @@ export default function RetrospectivePage() {
                   </figcaption>
                 </figure>
                 <p className="mt-4">
-                  I tried to get to the ICON gym more often to make working out a regular part of my
-                  routine. School did not go as well as I wanted it to.
+                  I started taking the gym seriously again at ICON and made cardio a bigger part of
+                  my routine. I tried to run every day or every other day and tracked my runs so I
+                  could see my progress.
                 </p>
                 <figure className="mt-6">
                   <div className="relative aspect-[4/3] w-full overflow-hidden">
@@ -478,7 +479,29 @@ export default function RetrospectivePage() {
                     />
                   </div>
                   <figcaption className="mt-2 text-xs italic text-stone-500">
-                    The ICON gym in Waterloo, where I was trying to work out more often
+                    The ICON gym in Waterloo, where I got back into working out regularly
+                  </figcaption>
+                </figure>
+                <p className="mt-4">
+                  I also decided to take my diet and weight loss seriously, with a calorie goal I
+                  could stick to. Starting in October, I aimed for around 1,800 to 2,200 calories a
+                  day and used Tomo.ai to track my meals every day for most of the term. I ate out
+                  less and cooked most of my meals at home. With help from my roommate Jordan, I
+                  learned to cook chicken thighs and breasts, and I made plenty of eggs too. I ate a
+                  lot of salmon, tomatoes, cucumbers, and fruit so I could eat well while losing
+                  weight.
+                </p>
+                <figure className="mt-6">
+                  <Image
+                    src="/writing/2026-retrospective/meal-tracking.webp"
+                    alt="A photo of chicken and vegetables alongside a logged meal summary"
+                    width={920}
+                    height={2000}
+                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
+                    className="w-full object-cover"
+                  />
+                  <figcaption className="mt-2 text-xs italic text-stone-500">
+                    Using Tomo to track my calories
                   </figcaption>
                 </figure>
                 <p className="mt-4">
@@ -496,24 +519,6 @@ export default function RetrospectivePage() {
                   />
                   <figcaption className="mt-2 text-xs italic text-stone-500">
                     Trying HEYTEA near campus
-                  </figcaption>
-                </figure>
-                <p className="mt-4">
-                  I started learning to cook food I actually enjoyed, including chicken with help
-                  from my roommate Jordan. In October, I started dieting with a goal of eating
-                  around 1,800 to 2,200 calories a day.
-                </p>
-                <figure className="mt-6">
-                  <Image
-                    src="/writing/2026-retrospective/meal-tracking.webp"
-                    alt="A photo of chicken and vegetables alongside a logged meal summary"
-                    width={920}
-                    height={2000}
-                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
-                    className="w-full object-cover"
-                  />
-                  <figcaption className="mt-2 text-xs italic text-stone-500">
-                    Using Tomo to track my calories
                   </figcaption>
                 </figure>
               </section>
