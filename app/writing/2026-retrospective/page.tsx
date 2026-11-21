@@ -333,7 +333,7 @@ export default function RetrospectivePage() {
                     className="w-full object-cover"
                   />
                   <figcaption className="mt-2 text-xs italic text-stone-500">
-                    One of many visits to Yunnan Noodles near my place in Chinatown
+                    One of many visits to Yunnan Noodles in Chinatown
                   </figcaption>
                 </figure>
                 <p className="mt-4">
