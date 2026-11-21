@@ -258,9 +258,9 @@ export default function RetrospectivePage() {
                   a DM on X. He had around 23,000 followers at the time, so I didn’t expect him to
                   reply. I also had no idea he knew Ethan, my previous CEO at TextQL, but that
                   connection led to a conversation. I then spoke with the CTO, Young Kim, and was
-                  eventually invited to a work trial in New York. The trial was canceled while I was
-                  on the flight there, but the team decided to take a chance on me anyway. I’m
-                  grateful they did.
+                  eventually invited to a work trial in New York. On my way there, my flight was
+                  canceled, which meant the work trial was canceled too. The team decided to take a
+                  chance on me anyway, and I’m grateful they did.
                 </p>
                 <p className="mt-4">
                   Working at a startup meant taking a product from zero to one, learning to love the
