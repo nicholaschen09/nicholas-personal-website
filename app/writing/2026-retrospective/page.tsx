@@ -485,11 +485,17 @@ export default function RetrospectivePage() {
                 <p className="mt-4">
                   I also decided to take my diet and weight loss seriously, with a calorie goal I
                   could stick to. Starting in October, I aimed for around 1,800 to 2,200 calories a
-                  day and used Tomo.ai to track my meals every day for most of the term. I ate out
-                  less and cooked most of my meals at home. With help from my roommate Jordan, I
-                  learned to cook chicken thighs and breasts, and I made plenty of eggs too. I ate a
-                  lot of salmon, tomatoes, cucumbers, and fruit so I could eat well while losing
-                  weight.
+                  day and used{' '}
+                  <a
+                    href="https://www.tomo.ai/"
+                    className="transition-colors hover:text-pink-300 focus-visible:text-pink-300"
+                  >
+                    Tomo
+                  </a>{' '}
+                  to track my meals every day for most of the term. I ate out less and cooked most
+                  of my meals at home. With help from my roommate Jordan, I learned to cook chicken
+                  thighs and breasts, and I made plenty of eggs too. I ate a lot of salmon,
+                  tomatoes, cucumbers, and fruit so I could eat healthy while losing weight.
                 </p>
                 <figure className="mt-6">
                   <Image
@@ -505,8 +511,8 @@ export default function RetrospectivePage() {
                   </figcaption>
                 </figure>
                 <p className="mt-4">
-                  HEYTEA opened near campus this term, and of course I had to try it, like every
-                  other Asian student at Waterloo.
+                  Another super random, fun side quest was trying HEYTEA when it opened near campus.
+                  Of course I had to go, like every other Asian student at Waterloo.
                 </p>
                 <figure className="mt-6">
                   <Image
