@@ -613,8 +613,11 @@ export default function RetrospectivePage() {
                   interests me. Outside of work, I want to lose 30 pounds before next summer and go
                   on more runs outside. I also want to make more time to have fun. The past few
                   years have felt like a constant grind, and I haven’t given myself much time to
-                  enjoy the moment. Before I graduate, I want to make more friends and try new
-                  things!
+                  enjoy the moment.
+                </p>
+                <p className="mt-4">
+                  I’m extremely grateful for everyone who helped me out, made memories with me, and
+                  was part of my 2026. I hope to make more friends and try new things next year!
                 </p>
               </section>
             </div>
