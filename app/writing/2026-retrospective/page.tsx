@@ -405,14 +405,15 @@ export default function RetrospectivePage() {
                   wanted it to.
                 </p>
                 <figure className="mt-6">
-                  <Image
-                    src="/writing/2026-retrospective/icon-gym.webp"
-                    alt="The sunlit gym at ICON in Waterloo"
-                    width={1500}
-                    height={2000}
-                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
-                    className="w-full object-cover"
-                  />
+                  <div className="relative aspect-[4/3] w-full overflow-hidden">
+                    <Image
+                      src="/writing/2026-retrospective/icon-gym.webp"
+                      alt="The sunlit gym at ICON in Waterloo"
+                      fill
+                      sizes="(max-width: 768px) calc(100vw - 48px), 480px"
+                      className="object-cover object-top"
+                    />
+                  </div>
                   <figcaption className="mt-2 text-xs italic text-stone-500">
                     The ICON gym in Waterloo, where I was trying to work out more often
                   </figcaption>
