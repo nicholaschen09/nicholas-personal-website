@@ -343,6 +343,11 @@ export default function RetrospectivePage() {
                     Bowling with friends in New York
                   </figcaption>
                 </figure>
+                <p className="mt-4">
+                  By the time I headed back to Waterloo, I felt like I had packed a lot into one
+                  summer. I learned a lot at Melius and made memories exploring New York with my
+                  brother and friends. It made me want to come back.
+                </p>
               </section>
 
               <section>
