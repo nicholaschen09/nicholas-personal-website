@@ -201,6 +201,12 @@ export default function RetrospectivePage() {
                   </Link>
                   .
                 </p>
+                <p className="mt-4">
+                  Overall, I spent much of that school term indoors because of the cold, hanging out
+                  with friends and eating out a lot. A lot of my friends were dropping out of school
+                  to work full time, so it was the last term I got to see many of them regularly
+                  before they left to do their own thing.
+                </p>
               </section>
 
               <section>
