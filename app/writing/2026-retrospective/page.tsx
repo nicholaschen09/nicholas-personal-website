@@ -500,11 +500,10 @@ export default function RetrospectivePage() {
                   run more when the weather warms up, find an area of tech I really enjoy, go deep
                   on it, and build serious technical expertise. Outside of work, I want to keep
                   working on my diet and losing weight, with a goal of losing 30 pounds before the
-                  start of summer 2027. A smaller goal is to stop relying on food delivery, buy
-                  groceries, cook more of my own meals, and eat more healthily. I also want to make
-                  more time to have fun. The past few years have felt like a constant grind, and I
-                  haven’t given myself much time to enjoy the moment. Before I graduate, I want to
-                  make more friends and try new things.
+                  start of summer 2027. I also want to make more time to have fun. The past few
+                  years have felt like a constant grind, and I haven’t given myself much time to
+                  enjoy the moment. Before I graduate, I want to make more friends and try new
+                  things.
                 </p>
               </section>
             </div>
