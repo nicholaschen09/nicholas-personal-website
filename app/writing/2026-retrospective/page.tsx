@@ -10,7 +10,6 @@ const sections: TOCSection[] = [
   { id: 'recruiting', title: 'School and Tech Recruiting for Summer 2026' },
   { id: 'summer-in-new-york', title: 'Spending a Summer in New York City' },
   { id: 'second-year', title: 'The End of Second Year' },
-  { id: 'reflection', title: 'A Reflection on My Journey in Tech' },
   { id: 'next', title: 'What’s Next and My Goals for 2027' },
 ];
 
@@ -547,8 +546,8 @@ export default function RetrospectivePage() {
               </section>
 
               <section>
-                <h2 id="reflection" className={headingClass}>
-                  A Reflection on My Journey in Tech
+                <h2 id="next" className={headingClass}>
+                  What’s Next and My Goals for 2027
                 </h2>
                 <p>
                   I’m still figuring out what I truly want to do in tech. This year gave me more to
@@ -582,13 +581,7 @@ export default function RetrospectivePage() {
                     Another excerpt from Young Kim’s early career advice
                   </figcaption>
                 </figure>
-              </section>
-
-              <section>
-                <h2 id="next" className={headingClass}>
-                  What’s Next and My Goals for 2027
-                </h2>
-                <p>
+                <p className="mt-4">
                   Well, I’m going back to New York next winter for another internship, and I’m
                   excited to see{' '}
                   <a
