@@ -367,7 +367,7 @@ export default function RetrospectivePage() {
                   </a>
                   . I don’t really watch basketball, so it felt like a lucky coincidence. The
                   streets were pretty wild that night as people came out to celebrate. I’d never
-                  seen so many New Yorkers so happy at once.
+                  seen so many New Yorkers this happy at once.
                 </p>
                 <figure className="mt-6">
                   <Image
