@@ -496,50 +496,29 @@ export default function RetrospectivePage() {
                   What’s Next and My Goals for 2027
                 </h2>
                 <p>
-                  Well, I’m going back to New York next winter for another internship. I’m excited
-                  to see{' '}
+                  Well, I’m going back to New York next winter for another internship, and I’m
+                  excited to see{' '}
                   <a
                     href="https://x.com/992rodney"
                     className="transition-colors hover:text-pink-300 focus-visible:text-pink-300"
                   >
                     Rodney
-                  </a>{' '}
-                  (
-                  <a
-                    href="https://textql.com"
-                    className="transition-colors hover:text-pink-300 focus-visible:text-pink-300"
-                  >
-                    TextQL
                   </a>
-                  ),{' '}
+                  ,{' '}
                   <a
                     href="https://x.com/aaronbiscotti"
                     className="transition-colors hover:text-pink-300 focus-visible:text-pink-300"
                   >
                     Aaron
-                  </a>{' '}
-                  (
-                  <a
-                    href="https://hyphenate.ai"
-                    className="transition-colors hover:text-pink-300 focus-visible:text-pink-300"
-                  >
-                    Hyphenate
                   </a>
-                  ), and{' '}
+                  , and{' '}
                   <a
                     href="https://x.com/alexch3n"
                     className="transition-colors hover:text-pink-300 focus-visible:text-pink-300"
                   >
                     Alex
                   </a>{' '}
-                  (
-                  <a
-                    href="https://melius.com"
-                    className="transition-colors hover:text-pink-300 focus-visible:text-pink-300"
-                  >
-                    Melius
-                  </a>
-                  ) again.
+                  again.
                 </p>
                 <p className="mt-4">
                   As for my goals, in 2027, I want to run more when the weather warms up, find an
