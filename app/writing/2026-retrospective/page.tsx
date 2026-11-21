@@ -260,7 +260,7 @@ export default function RetrospectivePage() {
                   connection led to a conversation. I then spoke with the CTO, Young Kim, and was
                   eventually invited to a work trial in New York. On my way there, my flight was
                   canceled, which meant the work trial was canceled too. The team decided to take a
-                  chance on me anyway, and I’m grateful they did.
+                  chance on me anyway, and I’m still extremely grateful they did.
                 </p>
                 <p className="mt-4">
                   Working at a startup meant taking a product from zero to one, learning to love the
