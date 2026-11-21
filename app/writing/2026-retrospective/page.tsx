@@ -403,8 +403,8 @@ export default function RetrospectivePage() {
                   following winter. I lived in ICON this term, the building beside Society. The
                   three-bedroom, two-bathroom apartment had more space and a larger kitchen, and I
                   liked it much more than where I lived the previous term. I came into 2B feeling
-                  good about finding my next role. With two startup experiences on my résumé, I felt
-                  more confident in my work and technical skills.
+                  good about recruiting. Now with two startup experiences, I felt more confident in
+                  my work and technical skills.
                 </p>
                 <p className="mt-4">
                   I went to Hack the North and tried to get to the ICON gym more often to make
