@@ -9,7 +9,7 @@ import TableOfContents, { type TOCSection } from '@/components/TableOfContents';
 const sections: TOCSection[] = [
   { id: 'recruiting', title: 'School and Tech Recruiting for Summer 2026' },
   { id: 'summer-in-new-york', title: 'Spending a Summer in New York City' },
-  { id: 'second-year', title: '2B: The End of Second Year' },
+  { id: 'second-year', title: 'The End of Second Year' },
   { id: 'reflection', title: 'A Reflection on My Journey in Tech' },
   { id: 'next', title: 'What’s Next and My Goals for 2027' },
 ];
@@ -352,7 +352,7 @@ export default function RetrospectivePage() {
 
               <section>
                 <h2 id="second-year" className={headingClass}>
-                  2B: The End of Second Year
+                  The End of Second Year
                 </h2>
                 <p>
                   Back at Waterloo, the 2B course load was harder, and I was trying to manage school
