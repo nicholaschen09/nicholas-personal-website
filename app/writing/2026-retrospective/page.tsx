@@ -550,7 +550,7 @@ export default function RetrospectivePage() {
                   What’s Next and My Goals for 2027
                 </h2>
                 <p>
-                  Well, I’m going back to New York next winter for another internship, and I’m
+                  Well, I’m going back to New York next winter for another internship, so I’m
                   excited to see{' '}
                   <a
                     href="https://x.com/992rodney"
