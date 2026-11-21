@@ -173,9 +173,9 @@ export default function RetrospectivePage() {
                   <Link href="/insforge" className={linkClass}>
                     see that work here
                   </Link>
-                  . I even got the chance to fly to San Francisco for an onsite interview and New
-                  York for a work trial. Both taught me a lot, even though neither went the way I
-                  hoped.
+                  . That work also helped me during recruiting and led to more interviews. I even
+                  got the chance to fly to San Francisco for an onsite interview and New York for a
+                  work trial. Both taught me a lot, even though neither went the way I hoped.
                 </p>
                 <figure className="mt-6">
                   <div className="relative aspect-[2/1] w-full overflow-hidden">
