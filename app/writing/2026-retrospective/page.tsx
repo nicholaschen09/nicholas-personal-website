@@ -536,12 +536,13 @@ export default function RetrospectivePage() {
                 <p className="mt-4">
                   I think I mentioned this earlier, but school itself was definitely much harder
                   this term. More of my courses required me to study seriously and, funny as it
-                  sounds, actually use my brain. Circuits and the circuits lab were two examples. My
-                  grades were probably the lowest they had been in any term. A lot of my friends had
-                  wanted to go on exchange, though I had never planned to myself. Looking back, it
-                  was kind of funny how that hope faded for them by early to mid 2B as our grades
-                  started slipping through 2A and 2B. Honestly, I couldn’t wait for the term to end.
-                  I’ve never been a big fan of school, and I was excited to go back to New York.
+                  sounds, actually use my brain. Our circuits course and the circuits lab were
+                  brutal. My grades were probably the lowest they had been in any term. A lot of my
+                  friends had wanted to go on exchange coming into university, though I had never
+                  planned to myself. Looking back, it was kind of funny how that hope faded by early
+                  to mid 2B as our grades started slipping through 2A and 2B. Honestly, I couldn’t
+                  wait for the term to end. I’ve never been a big fan of school, and I was excited
+                  to go back to New York.
                 </p>
               </section>
 
