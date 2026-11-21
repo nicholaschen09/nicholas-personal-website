@@ -203,7 +203,7 @@ export default function RetrospectivePage() {
                 </p>
                 <p className="mt-4">
                   Overall, I spent much of that school term indoors because of the cold, hanging out
-                  with friends and eating out a lot. A lot of my friends were dropping out of school
+                  with friends and eating out a lot. Many of my friends were dropping out of school
                   to work full time, so it was the last term I got to see many of them regularly
                   before they left to do their own thing.
                 </p>
@@ -323,7 +323,7 @@ export default function RetrospectivePage() {
                   </figcaption>
                 </figure>
                 <p className="mt-4">
-                  A lot of my friends were also interning in New York or came to visit that summer,
+                  Many of my friends were also interning in New York or came to visit that summer,
                   so we hung out often. Toward the end of my internship, I invited my brother, one
                   of my friends, and his younger brother to visit. We went bowling, rode bikes, ate
                   lots of good food, and shopped at places like Kith and Stüssy. For once, I gave
