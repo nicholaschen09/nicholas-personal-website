@@ -412,10 +412,11 @@ export default function RetrospectivePage() {
                   hiring for the start of the year. Some encouraged me to reach out again closer to
                   summer. My external search involved around 50 applications, outreach messages, and
                   inbound conversations. That led to 10 interviews, only one of which resulted in an
-                  offer. Once school began, I bet on myself and focused on WaterlooWorks for my
-                  fourth co-op. I got three interviews there, including two for opportunities in New
-                  York that I was especially excited about. An offer from one of those companies in
-                  the first WaterlooWorks recruiting cycle ended my search for winter 2027.
+                  offer, which I eventually declined. Once school began, I bet on myself and focused
+                  on WaterlooWorks for my fourth co-op. I got three interviews there, including two
+                  for opportunities in New York that I was especially excited about. An offer from
+                  one of those companies in the first WaterlooWorks recruiting cycle ended my search
+                  for winter 2027.
                 </p>
                 <p className="mt-4">
                   I went to Hack the North and tried to get to the ICON gym more often to make
@@ -469,9 +470,8 @@ export default function RetrospectivePage() {
                 <p className="mt-4">
                   I started learning to cook food I actually enjoyed, including chicken with help
                   from my roommate Jordan. In October, I started dieting with a goal of eating
-                  around 1,800 to 2,200 calories a day. I declined an offer from an early-stage New
-                  York startup and accepted a role that will take me back to New York for the
-                  winter.
+                  around 1,800 to 2,200 calories a day. I accepted a role that will take me back to
+                  New York for the winter.
                 </p>
                 <figure className="mt-6">
                   <Image
