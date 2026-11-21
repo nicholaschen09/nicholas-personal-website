@@ -550,6 +550,31 @@ export default function RetrospectivePage() {
                   What’s Next and My Goals for 2027
                 </h2>
                 <p>
+                  Well, I’m going back to New York next winter for another internship, and I’m
+                  excited to see{' '}
+                  <a
+                    href="https://x.com/992rodney"
+                    className="transition-colors hover:text-pink-300 focus-visible:text-pink-300"
+                  >
+                    Rodney
+                  </a>
+                  ,{' '}
+                  <a
+                    href="https://x.com/aaronbiscotti"
+                    className="transition-colors hover:text-pink-300 focus-visible:text-pink-300"
+                  >
+                    Aaron
+                  </a>
+                  , and{' '}
+                  <a
+                    href="https://x.com/alexch3n"
+                    className="transition-colors hover:text-pink-300 focus-visible:text-pink-300"
+                  >
+                    Alex
+                  </a>{' '}
+                  again.
+                </p>
+                <p className="mt-4">
                   I’m still figuring out what I truly want to do in tech. This year gave me more to
                   think about when it comes to startups versus bigger companies, the kind of work I
                   enjoy, and how my years making art influence the way I approach engineering. I’ve
@@ -581,31 +606,6 @@ export default function RetrospectivePage() {
                     Another excerpt from Young Kim’s early career advice
                   </figcaption>
                 </figure>
-                <p className="mt-4">
-                  Well, I’m going back to New York next winter for another internship, and I’m
-                  excited to see{' '}
-                  <a
-                    href="https://x.com/992rodney"
-                    className="transition-colors hover:text-pink-300 focus-visible:text-pink-300"
-                  >
-                    Rodney
-                  </a>
-                  ,{' '}
-                  <a
-                    href="https://x.com/aaronbiscotti"
-                    className="transition-colors hover:text-pink-300 focus-visible:text-pink-300"
-                  >
-                    Aaron
-                  </a>
-                  , and{' '}
-                  <a
-                    href="https://x.com/alexch3n"
-                    className="transition-colors hover:text-pink-300 focus-visible:text-pink-300"
-                  >
-                    Alex
-                  </a>{' '}
-                  again.
-                </p>
                 <p className="mt-4">
                   As for my goals, in 2027, I want to run more when the weather warms up, find an
                   area of tech I really enjoy, go deep on it, and build serious technical expertise.
