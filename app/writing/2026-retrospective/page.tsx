@@ -471,7 +471,7 @@ export default function RetrospectivePage() {
                   been redesigning this website as one way to bring those parts of my life together.
                 </p>
                 <p className="mt-4">
-                  Young Kim puts into words something I already tell myself in his{' '}
+                  Young puts into words something I already tell myself in his{' '}
                   <a
                     href="https://www.youngkim.co/writing/early-career-advice"
                     className={linkClass}
