@@ -190,20 +190,18 @@ export default function RetrospectivePage() {
                   <Link href="/blogs/ontology-text-to-sql" className={linkClass}>
                     blog post about ontologies and text-to-SQL
                   </Link>{' '}
-                  during my time at TextQL. It went semi-viral and luckily brought in more
-                  opportunities.
+                  during my time at TextQL. It went semi-viral and, luckily, brought in more
+                  opportunities, giving me some much-needed hope for the rest of recruiting.
                 </p>
                 <EmbeddedTweet url="https://x.com/nicholaschen__/status/2000752780152119501" />
                 <p className="mt-4">
-                  Contributing to open source for the first time also helped me get more interviews.
-                  Through InsForge, I worked on MiniMap pan and zoom and fixed raw SQL execution.
-                  You can{' '}
+                  My first open source contributions to{' '}
                   <Link href="/insforge" className={linkClass}>
-                    see that work here
-                  </Link>
-                  . I even got the chance to fly to San Francisco for an onsite interview and New
-                  York for a work trial. Both taught me a lot, even though neither went the way I
-                  hoped.
+                    InsForge
+                  </Link>{' '}
+                  also helped me get more interviews. I even got the chance to fly to San Francisco
+                  for an onsite interview and New York for a work trial. Both taught me a lot, even
+                  though neither went the way I hoped.
                 </p>
                 <figure className="mt-6">
                   <div className="relative aspect-[2/1] w-full overflow-hidden">
