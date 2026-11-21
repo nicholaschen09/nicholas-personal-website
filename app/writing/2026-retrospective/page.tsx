@@ -539,10 +539,10 @@ export default function RetrospectivePage() {
                   sounds, actually use my brain. Our circuits course and the circuits lab were
                   brutal. My grades were probably the lowest they had been in any term. A lot of my
                   friends had wanted to go on exchange coming into university, though I had never
-                  planned to myself. Looking back, it was kind of funny how that hope faded by early
-                  to mid 2B as our grades started slipping through 2A and 2B. Honestly, I couldn’t
-                  wait for the term to end. I’ve never been a big fan of school, and I was excited
-                  to go back to New York.
+                  planned to myself. Looking back, it was kind of funny how that hope faded by the
+                  start of the term as our grades started slipping throughout second year. Honestly,
+                  I couldn’t wait for the term to end. I’ve never been a big fan of school, and I
+                  was excited to go back to New York.
                 </p>
               </section>
 
