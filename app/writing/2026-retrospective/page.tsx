@@ -526,7 +526,7 @@ export default function RetrospectivePage() {
                   Outside of work, I want to lose 30 pounds before summer 2027. I also want to make
                   more time to have fun. The past few years have felt like a constant grind, and I
                   haven’t given myself much time to enjoy the moment. Before I graduate, I want to
-                  make more friends and try new things.
+                  make more friends and try new things!
                 </p>
               </section>
             </div>
