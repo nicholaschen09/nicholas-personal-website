@@ -609,12 +609,12 @@ export default function RetrospectivePage() {
                   </figcaption>
                 </figure>
                 <p className="mt-4">
-                  In 2027, I want to run more when the weather warms up, find an area of tech I
-                  really enjoy, go deep on it, and build serious technical expertise. Outside of
-                  work, I want to lose 30 pounds before summer 2027. I also want to make more time
-                  to have fun. The past few years have felt like a constant grind, and I haven’t
-                  given myself much time to enjoy the moment. Before I graduate, I want to make more
-                  friends and try new things!
+                  In 2027, I want to become extremely technical and go deep on something that
+                  interests me. Outside of work, I want to lose 30 pounds before next summer and go
+                  on more runs outside. I also want to make more time to have fun. The past few
+                  years have felt like a constant grind, and I haven’t given myself much time to
+                  enjoy the moment. Before I graduate, I want to make more friends and try new
+                  things!
                 </p>
               </section>
             </div>
