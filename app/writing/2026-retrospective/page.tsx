@@ -358,6 +358,29 @@ export default function RetrospectivePage() {
                   </figcaption>
                 </figure>
                 <p className="mt-4">
+                  I was also in New York on June 13 when the Knicks won their{' '}
+                  <a
+                    href="https://www.nba.com/news/live-updates-2026-nba-finals-game-5-knicks-seek-first-title-since-1973"
+                    className={linkClass}
+                  >
+                    first NBA championship in 53 years
+                  </a>
+                  . The streets were pretty wild that night as people came out to celebrate.
+                </p>
+                <figure className="mt-6">
+                  <Image
+                    src="/writing/2026-retrospective/knicks-championship-night.webp"
+                    alt="A New York street at night after the Knicks won the 2026 NBA championship"
+                    width={1206}
+                    height={976}
+                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
+                    className="w-full object-cover"
+                  />
+                  <figcaption className="mt-2 text-xs italic text-stone-500">
+                    New York on the night the Knicks won the championship
+                  </figcaption>
+                </figure>
+                <p className="mt-4">
                   Many of my friends were also interning in New York or came to visit that summer,
                   so we hung out often. It isn’t every day that you get to see your friends so
                   regularly while being in another country. I found that during my co-op terms, I
