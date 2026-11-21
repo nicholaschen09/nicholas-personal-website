@@ -514,6 +514,12 @@ export default function RetrospectivePage() {
                   Another super random, fun side quest was trying HEYTEA when it opened near campus.
                   Of course I had to go, like every other Asian student at Waterloo.
                 </p>
+                <p className="mt-4">
+                  I’d give it around a 6/10. I think I got an oolong tea, though I can’t remember
+                  exactly which one. I didn’t add much sugar, so it mostly tasted like regular tea
+                  with ice. I waited at least 20 minutes in line and paid around $10 for that small
+                  cup. I’m not sure it was worth the wait.
+                </p>
                 <figure className="mt-6">
                   <Image
                     src="/writing/2026-retrospective/heytea-waterloo.webp"
