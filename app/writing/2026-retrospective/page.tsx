@@ -398,11 +398,18 @@ export default function RetrospectivePage() {
                   The End of Second Year
                 </h2>
                 <p>
-                  Back at Waterloo, the 2B course load was harder, and I was trying to manage school
-                  alongside recruiting. I lived in Society and ICON, worked through classes and
-                  labs, and went to Hack the North. I also tried to get to the ICON gym more often
-                  and make working out a regular part of my routine. School did not go as well as I
-                  wanted it to.
+                  This was the last term of my second year, 2B, and the course load was much harder
+                  than in 2A. Alongside school, I was recruiting again for an internship the
+                  following winter. I lived in ICON this term, the building beside Society. The
+                  three-bedroom, two-bathroom apartment had more space and a larger kitchen, and I
+                  liked it much more than where I lived the previous term. I came into 2B feeling
+                  good about finding my next role. With two startup experiences on my résumé, I felt
+                  more confident in my work and technical skills.
+                </p>
+                <p className="mt-4">
+                  I went to Hack the North and tried to get to the ICON gym more often to make
+                  working out a regular part of my routine. School did not go as well as I wanted it
+                  to.
                 </p>
                 <figure className="mt-6">
                   <div className="relative aspect-[4/3] w-full overflow-hidden">
@@ -434,10 +441,9 @@ export default function RetrospectivePage() {
                 <p className="mt-4">
                   I started learning to cook food I actually enjoyed, including chicken with help
                   from my roommate Jordan. In October, I started dieting with a goal of eating
-                  around 1,800 to 2,200 calories a day. I was also interviewing again for winter
-                  roles. I got around a dozen interviews and two offers, including one from an
-                  early-stage New York startup that I declined. I accepted a role that will take me
-                  back to New York for the winter.
+                  around 1,800 to 2,200 calories a day. The winter job search led to around a dozen
+                  interviews and two offers, including one from an early-stage New York startup that
+                  I declined. I accepted a role that will take me back to New York for the winter.
                 </p>
                 <figure className="mt-6">
                   <Image
