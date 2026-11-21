@@ -251,8 +251,9 @@ export default function RetrospectivePage() {
                   >
                     Melius
                   </a>
-                  , an early-stage startup, for summer 2026. Melius is an AI workspace for creatives
-                  to make images and videos, and I was excited to join the team building it.
+                  , an early-stage startup, for summer 2026. Melius was building a platform that
+                  helped businesses create images and videos with AI, and I was excited to join the
+                  team.
                 </p>
                 <p className="mt-4">
                   Working at a startup meant taking a product from zero to one, learning to love the
