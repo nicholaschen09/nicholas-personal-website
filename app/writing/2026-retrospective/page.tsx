@@ -359,11 +359,19 @@ export default function RetrospectivePage() {
                 </figure>
                 <p className="mt-4">
                   Many of my friends were also interning in New York or came to visit that summer,
-                  so we hung out often. Toward the end of my internship, I invited my brother, one
-                  of my friends, and his younger brother to visit. We went bowling, rode bikes, ate
-                  lots of good food, and shopped at places like Kith and Stüssy. For once, I gave
-                  myself time to enjoy life and just have fun. Having fun in New York wasn’t cheap,
-                  though. I spent around $2,000 in that short stretch.
+                  so we hung out often. It isn’t every day that you get to see your friends so
+                  regularly while interning in another country. During other co-op terms, I talked
+                  less often with friends back home or from school because everyone had their own
+                  schedules, often working nine to five or later. Working was fun, but I realized
+                  that staying social during an internship took more effort than it did when we were
+                  all studying together.
+                </p>
+                <p className="mt-4">
+                  Toward the end of my internship, I invited my brother, one of my friends, and his
+                  younger brother to visit. We went bowling, rode bikes, ate lots of good food, and
+                  shopped at places like Kith and Stüssy. For once, I gave myself time to enjoy life
+                  and just have fun. Having fun in New York wasn’t cheap, though. I spent around
+                  $2,000 in that short stretch.
                 </p>
                 <figure className="mt-6">
                   <Image
