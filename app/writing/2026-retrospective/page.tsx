@@ -180,13 +180,13 @@ export default function RetrospectivePage() {
                 </p>
                 <p className="mt-4">
                   My previous startup experience seemed to give me a better chance of getting
-                  interviews with other startups. Those interviews were far from conventional. They
-                  ranged from two to five rounds: some focused on behavioral questions, others went
-                  deep into debugging or system design, and a few included on-site work trials.
-                  LeetCode practice did little to prepare me because most of the startup teams I
-                  spoke with disliked that kind of evaluation. I often went in with little
-                  preparation, and the preparation I did rarely matched what came up. Around that
-                  time, I had also written a{' '}
+                  interviews with other startups. Still, those interviews were far from
+                  conventional. They ranged from two to five rounds: some focused on behavioral
+                  questions, others went deep into debugging or system design, and a few included
+                  on-site work trials. LeetCode practice did little to prepare me because most of
+                  the startup teams I spoke with disliked that kind of evaluation. I often went in
+                  with little preparation, and the preparation I did rarely matched what came up.
+                  Around that time, I had also written a{' '}
                   <Link href="/blogs/ontology-text-to-sql" className={linkClass}>
                     blog post about ontologies and text-to-SQL
                   </Link>{' '}
