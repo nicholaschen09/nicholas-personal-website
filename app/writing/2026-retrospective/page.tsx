@@ -138,20 +138,28 @@ export default function RetrospectivePage() {
                 <p className="mt-4">Either way, I was set on joining another startup.</p>
                 <p className="mt-4">
                   This recruiting cycle had technically begun in the summer of 2025 (if you’re
-                  familiar with tech recruiting schedules). I set up alerts and automations for new
-                  job postings, checked{' '}
+                  familiar with tech recruiting schedules). I set up alerts and automations for when
+                  applications opened, checked{' '}
                   <a
                     href="https://github.com/SimplifyJobs/Summer2027-Internships"
                     className={linkClass}
                   >
                     this GitHub internship list
                   </a>{' '}
-                  (iykyk), and kept an eye on zero2sudo’s Instagram stories. At Waterloo, co-op
-                  terms generally alternate with school terms, so you’re often searching for your
-                  next job while you’re still studying or interning. For me, that meant applying to
-                  around 100 jobs online, messaging as many founders and founding engineers as I
-                  could on X and LinkedIn, and getting a few lucky inbound messages. Altogether, I
-                  tracked roughly 350 applications and outreach attempts.
+                  and kept an eye on{' '}
+                  <a
+                    href="https://www.instagram.com/zero2sudo/"
+                    className="transition-colors hover:text-pink-300 focus-visible:text-pink-300"
+                  >
+                    zero2sudo
+                  </a>
+                  ’s Instagram stories. At Waterloo, co-op terms generally alternate with school
+                  terms, so you’re often looking for your next job while studying or interning. For
+                  me, that meant applying to around 100 external jobs online, messaging as many
+                  founders and founding engineers as I could on X and LinkedIn, and getting a few
+                  lucky inbound messages. When the winter term came around, I applied to at least
+                  100 more jobs through WaterlooWorks, the school’s internal co-op job board.
+                  Altogether, I tracked roughly 350 applications and outreach attempts.
                 </p>
                 <figure className="mt-6">
                   <Image
