@@ -414,9 +414,9 @@ export default function RetrospectivePage() {
                   inbound conversations. That led to 10 interviews, only one of which resulted in an
                   offer, which I eventually declined. Once school began, I bet on myself and focused
                   on WaterlooWorks for my fourth co-op. I got three interviews there, including two
-                  for opportunities in New York that I was especially excited about. An offer from
-                  one of those companies in the first WaterlooWorks recruiting cycle ended my search
-                  for winter 2027.
+                  opportunities in New York that I was especially excited about. An offer from one
+                  of those companies in the first WaterlooWorks recruiting cycle ended my search for
+                  winter 2027.
                 </p>
                 <p className="mt-4">
                   I went to Hack the North and tried to get to the ICON gym more often to make
