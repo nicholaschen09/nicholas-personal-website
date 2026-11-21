@@ -542,7 +542,7 @@ export default function RetrospectivePage() {
                   planned to myself. Looking back, it was kind of funny how that hope faded by the
                   start of the term as our grades started slipping throughout second year. Honestly,
                   I couldn’t wait for the term to end. I’ve never been a big fan of school, and I
-                  was excited to go back to New York.
+                  was excited to work again.
                 </p>
               </section>
 
