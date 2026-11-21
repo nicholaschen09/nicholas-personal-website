@@ -296,9 +296,9 @@ export default function RetrospectivePage() {
                   </figcaption>
                 </figure>
                 <p className="mt-4">
-                  I also tried to get outside more: I bought a pair of Hokas, went to the gym, ran,
+                  I also tried to get outside more. I bought a pair of Hokas, went to the gym, ran,
                   and took lots of walks, especially around Battery Park and Little Island. That’s
-                  one reason I prefer New York to San Francisco: every walk gives you something
+                  one reason I prefer New York to San Francisco. Every walk gives you something
                   different to take in. Little Island, the waterfront, and the neighborhoods each
                   have their own feel, and there’s always more to see and do.
                 </p>
