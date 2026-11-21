@@ -421,8 +421,9 @@ export default function RetrospectivePage() {
                 <p className="mt-4">
                   This was my first fall term back at school, and outside of classes, I decided to
                   apply to Hack the North again despite being rejected so many times before. This
-                  time, I got in. We got some cool merch, I talked to a lot of people, and I
-                  especially liked the badge they designed for us.
+                  time, I got in. There was so much cool merch, and I met a lot of new people. One
+                  thing I really liked was the badge they designed for us and gave to each hacker at
+                  check-in on the first day.
                 </p>
                 <figure className="mt-6">
                   <Image
