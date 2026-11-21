@@ -297,10 +297,11 @@ export default function RetrospectivePage() {
                 </figure>
                 <p className="mt-4">
                   I also tried to get outside more. I bought a pair of Hokas, went to the gym, ran,
-                  and took lots of walks, especially around Battery Park and Little Island. That’s
-                  just one of the reasons I prefer New York over other cities. Every walk gives you
-                  something different to take in. Little Island, the waterfront, and the
-                  neighborhoods each have their own feel, and there’s always more to see and do.
+                  and took lots of walks, especially around Battery Park and Little Island. I
+                  averaged around 20,000 steps a day while I was there. That’s just one of the
+                  reasons I prefer New York over other cities. Every walk gives you something
+                  different to take in. Little Island, the waterfront, and the neighborhoods each
+                  have their own feel, and there’s always more to see and do.
                 </p>
                 <figure className="mt-6">
                   <Image
