@@ -495,7 +495,10 @@ export default function RetrospectivePage() {
                 <h2 id="next" className={headingClass}>
                   What’s Next and My Goals for 2027
                 </h2>
-                <p>Well, I’m going back to New York next winter for another internship.</p>
+                <p>
+                  Well, I’m going back to New York next winter for another internship. I’m excited
+                  to see Rodney, Aaron, and Alex again.
+                </p>
                 <p className="mt-4">
                   As for my goals, in 2027, I want to run more when the weather warms up, find an
                   area of tech I really enjoy, go deep on it, and build serious technical expertise.
