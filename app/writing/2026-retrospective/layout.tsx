@@ -18,5 +18,10 @@ export const metadata: Metadata = {
 };
 
 export default function RetrospectiveLayout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <>
+      <link rel="preconnect" href="https://platform.twitter.com" />
+      {children}
+    </>
+  );
 }

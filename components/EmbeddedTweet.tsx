@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 const widgetsUrl = 'https://platform.twitter.com/widgets.js';
 
@@ -14,34 +14,8 @@ declare global {
 
 export default function EmbeddedTweet({ url }: { url: string }) {
   const container = useRef<HTMLDivElement>(null);
-  const [shouldLoad, setShouldLoad] = useState(false);
 
   useEffect(() => {
-    const element = container.current;
-    if (!element) return;
-
-    if (!('IntersectionObserver' in window)) {
-      setShouldLoad(true);
-      return;
-    }
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setShouldLoad(true);
-          observer.disconnect();
-        }
-      },
-      { rootMargin: '400px 0px' },
-    );
-
-    observer.observe(element);
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
-    if (!shouldLoad) return;
-
     const loadTweet = () => {
       if (container.current) window.twttr?.widgets?.load(container.current);
     };
@@ -59,7 +33,7 @@ export default function EmbeddedTweet({ url }: { url: string }) {
     script.addEventListener('load', loadTweet, { once: true });
     document.body.appendChild(script);
     return () => script.removeEventListener('load', loadTweet);
-  }, [shouldLoad]);
+  }, []);
 
   return (
     <div ref={container} className="my-6 flex justify-center">
