@@ -495,7 +495,7 @@ export default function RetrospectivePage() {
                 <h2 id="next" className={headingClass}>
                   What’s Next and My Goals for 2027
                 </h2>
-                <p>I’m going back to New York next winter for another internship.</p>
+                <p>Well, I’m going back to New York next winter for another internship.</p>
                 <figure className="mt-6">
                   <Image
                     src="/writing/2026-retrospective/new-york-offer-letter.png"
