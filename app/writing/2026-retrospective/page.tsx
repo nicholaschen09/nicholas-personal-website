@@ -227,7 +227,7 @@ export default function RetrospectivePage() {
                   Outside recruiting, I tried the comma.ai video challenge after seeing it on
                   Twitter. It was my first experience with machine learning, and I wrote about{' '}
                   <Link href="/blogs/neural-video-compression" className={linkClass}>
-                    how I solved it
+                    how I approached the problem
                   </Link>
                   .
                 </p>
