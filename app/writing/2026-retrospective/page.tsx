@@ -358,7 +358,8 @@ export default function RetrospectivePage() {
                   </figcaption>
                 </figure>
                 <p className="mt-4">
-                  I was also in New York on June 13 when the Knicks won their{' '}
+                  I don’t really watch basketball, so it felt like a crazy coincidence to be in New
+                  York on June 13 when the Knicks won their{' '}
                   <a
                     href="https://www.nba.com/news/live-updates-2026-nba-finals-game-5-knicks-seek-first-title-since-1973"
                     className={linkClass}
