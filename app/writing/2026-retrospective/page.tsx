@@ -8,9 +8,9 @@ import TableOfContents, { type TOCSection } from '@/components/TableOfContents';
 
 const sections: TOCSection[] = [
   { id: 'recruiting', title: 'School and Tech Recruiting for Summer 2026' },
-  { id: 'summer-in-new-york', title: 'Spending a Summer in New York City' },
+  { id: 'summer-in-new-york', title: 'Summer in New York City' },
   { id: 'second-year', title: 'The End of Second Year' },
-  { id: 'next', title: 'What’s Next and My Goals for 2027' },
+  { id: 'next', title: 'What’s Next and Goals for 2027' },
 ];
 
 const linkClass =
@@ -240,7 +240,7 @@ export default function RetrospectivePage() {
 
               <section>
                 <h2 id="summer-in-new-york" className={headingClass}>
-                  Spending a Summer in New York City
+                  Summer in New York City
                 </h2>
                 <p>
                   After a brutal three-month job search, I got an offer to join{' '}
@@ -547,7 +547,7 @@ export default function RetrospectivePage() {
 
               <section>
                 <h2 id="next" className={headingClass}>
-                  What’s Next and My Goals for 2027
+                  What’s Next and Goals for 2027
                 </h2>
                 <p>
                   Well, I’m going back to New York next winter for another internship, so I’m
