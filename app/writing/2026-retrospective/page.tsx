@@ -583,7 +583,7 @@ export default function RetrospectivePage() {
                   energy.
                 </p>
                 <p className="mt-4">
-                  Young puts into words something I already tell myself in his{' '}
+                  Regarding my career, Young puts into words something I already tell myself in his{' '}
                   <a
                     href="https://www.youngkim.co/writing/early-career-advice"
                     className={linkClass}
