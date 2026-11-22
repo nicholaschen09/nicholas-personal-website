@@ -7,7 +7,7 @@ import ImageLightbox from '@/components/ImageLightbox';
 import TableOfContents, { type TOCSection } from '@/components/TableOfContents';
 
 const sections: TOCSection[] = [
-  { id: 'recruiting', title: 'School and Tech Recruiting for Summer 2026' },
+  { id: 'recruiting', title: 'School and Recruiting for Summer 2026' },
   { id: 'summer-in-new-york', title: 'Summer in New York City' },
   { id: 'second-year', title: 'The End of Second Year' },
   { id: 'next', title: 'What’s Next and Goals for 2027' },
@@ -77,7 +77,7 @@ export default function RetrospectivePage() {
 
               <section>
                 <h2 id="recruiting" className={headingClass}>
-                  School and Tech Recruiting for Summer 2026
+                  School and Recruiting for Summer 2026
                 </h2>
                 <p>
                   Living in New York for a semester made it awful to come back to Waterloo for the
