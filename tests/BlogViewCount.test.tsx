@@ -1,10 +1,31 @@
 import { StrictMode } from 'react';
 import { cleanup, render, screen, waitFor, act } from '@testing-library/react';
-import { afterEach, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, expect, it, vi } from 'vitest';
 import BlogViewCount from '@/components/BlogViewCount';
+
+beforeEach(() => {
+  const values = new Map<string, string>();
+  vi.stubGlobal('localStorage', {
+    getItem: (key: string) => values.get(key) ?? null,
+    setItem: (key: string, value: string) => values.set(key, value),
+  });
+});
+
 afterEach(() => {
   cleanup();
   vi.unstubAllGlobals();
+});
+it('replaces a cached count with the latest shared count', async () => {
+  window.localStorage.setItem('blog-views:/blogs/startup-lessons', '182');
+  vi.stubGlobal(
+    'fetch',
+    vi.fn().mockResolvedValue({ ok: true, json: async () => ({ views: 19000 }) }),
+  );
+
+  render(<BlogViewCount path="/blogs/startup-lessons" increment />);
+
+  await screen.findByText('19k views');
+  expect(window.localStorage.getItem('blog-views:/blogs/startup-lessons')).toBe('19000');
 });
 it('uses the same visit identity during Strict Mode and refreshes without adding views', async () => {
   const fetcher = vi.fn().mockImplementation(async (_url, options) => ({

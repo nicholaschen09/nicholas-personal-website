@@ -53,7 +53,6 @@ export default function BlogViewCount({
     let inFlight = false;
     let recorded = !increment;
     const initialViews = cachedViews(path);
-    let hasDisplayedCount = initialViews !== null;
     setViews(initialViews);
     if (!visit.current || visit.current.path !== path) {
       visit.current = { path, id: crypto.randomUUID() };
@@ -79,10 +78,7 @@ export default function BlogViewCount({
         if (!Number.isSafeInteger(data.views) || data.views < 0) throw new Error('Invalid count');
         recorded = true;
         cacheViews(path, data.views);
-        if (active && !hasDisplayedCount) {
-          hasDisplayedCount = true;
-          setViews(data.views);
-        }
+        if (active) setViews(data.views);
       } catch {
         // Keep the last known shared count visible while the database is unavailable.
       } finally {
