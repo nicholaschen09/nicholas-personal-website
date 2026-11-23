@@ -592,8 +592,8 @@ export default function RetrospectivePage() {
                   </a>
                   : find the smallest company you have real confidence in. A smaller company brings
                   more uncertainty, but also more opportunity to learn, take responsibility, and
-                  shape what it becomes. I believe in that tradeoff, and I want to keep following
-                  this principle throughout my career in tech.
+                  shape what it becomes. I want to keep following this principle throughout my
+                  career in tech.
                 </p>
                 <figure className="mt-6">
                   <Image
