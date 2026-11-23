@@ -609,6 +609,10 @@ export default function RetrospectivePage() {
                   </figcaption>
                 </figure>
                 <p className="mt-4">
+                  I also think this is good advice for ambitious people early in their careers.
+                </p>
+                <EmbeddedTweet url="https://x.com/yashanktwt/status/2124138573104582807" />
+                <p className="mt-4">
                   In 2027, I want to become extremely technical and go deep on something that
                   interests me. Outside of work, I want to lose 30 pounds before next summer and go
                   on more runs outside. I also want to make more time to have fun. The past few
