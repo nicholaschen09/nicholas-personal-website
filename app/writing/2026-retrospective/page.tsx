@@ -608,21 +608,6 @@ export default function RetrospectivePage() {
                     Another excerpt from Young Kim’s early career advice
                   </figcaption>
                 </figure>
-                <blockquote className="mt-6 border-l-2 border-stone-600 pl-4 italic">
-                  <p>
-                    btw the fastest way to become who you really want is to bite off more than you
-                    can chew and then figure out how to chew it
-                  </p>
-                  <footer className="mt-2 text-sm not-italic text-stone-500">
-                    —{' '}
-                    <a
-                      href="https://x.com/yashanktwt/status/2124138573104582807"
-                      className="transition-colors hover:text-pink-300 focus-visible:text-pink-300"
-                    >
-                      Yashank
-                    </a>
-                  </footer>
-                </blockquote>
                 <p className="mt-4">
                   In 2027, I want to become extremely technical and go deep on something that
                   interests me. Outside of work, I want to lose 30 pounds before next summer and go
