@@ -4,25 +4,25 @@ import ListingItemTitle from '@/components/ListingItemTitle';
 
 const writing = [
   {
-    href: '/blogs/melius-summer-internship',
+    href: '/writing/melius-summer-internship',
     title: 'My Summer Internship with Melius',
     date: 'August 2026',
     description: 'Reflections on building agent context, skills, and the Playground at Melius',
   },
   {
-    href: '/blogs/startup-lessons',
+    href: '/writing/startup-lessons',
     title: '10 Lessons from Working at Startups',
     date: 'June 2026',
     description: 'Notes on product judgment, customers, communication, culture, and engineering',
   },
   {
-    href: '/blogs/neural-video-compression',
+    href: '/writing/neural-video-compression',
     title: 'Optimizing Video Compression for Neural Networks',
     date: 'April 2026',
     description: 'A comma.ai challenge writeup on compressing video for neural network perception',
   },
   {
-    href: '/blogs/ontology-text-to-sql',
+    href: '/writing/ontology-text-to-sql',
     title: 'Why Ontology for Text-to-SQL?',
     date: 'November 2025',
     description: 'Notes on ontologies, context, and making natural language work better with data',
@@ -51,9 +51,7 @@ export default function WritingPage() {
                 <ListingItemTitle href={item.href} title={item.title} />
                 <span className="shrink-0 text-right">{item.date}</span>
               </div>
-              <p className="listing-item-description mt-1 text-stone-400">
-                {item.description}
-              </p>
+              <p className="listing-item-description mt-1 text-stone-400">{item.description}</p>
             </article>
           ))}
         </section>

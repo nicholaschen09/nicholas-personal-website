@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test';
 
 const routes = [
   ['/facial-recognition-neural-network', 'Facial Recognition'],
-  ['/blogs/startup-lessons', 'Startup Lessons'],
+  ['/writing/startup-lessons', 'Startup Lessons'],
   ['/art', 'Art'],
   ['/projects', 'Projects'],
   ['/writing', 'Writing'],
@@ -16,7 +16,7 @@ for (const [route, pageName] of routes) {
     await page.goto(route);
 
     const breadcrumb = page.locator(
-      route.startsWith('/blogs') ||
+      route.startsWith('/writing/') ||
         route === '/facial-recognition-neural-network' ||
         route === '/art'
         ? 'article > header'

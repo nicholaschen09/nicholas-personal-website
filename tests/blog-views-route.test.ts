@@ -1,12 +1,12 @@
 // @vitest-environment node
 import { beforeEach, expect, it, vi } from 'vitest';
 vi.mock('@/lib/blog-views', () => ({
-  blogPaths: new Set(['/blogs/startup-lessons']),
+  blogPaths: new Set(['/writing/startup-lessons']),
   blogViews: vi.fn(),
 }));
 import { blogViews } from '@/lib/blog-views';
 import { GET, POST } from '@/app/api/blog-views/route';
-const path = '/blogs/startup-lessons';
+const path = '/writing/startup-lessons';
 const visitId = '73fa3919-371e-4a51-8b67-4e19886a532a';
 const post = (body: unknown) =>
   new Request('https://example.com/api/blog-views', {

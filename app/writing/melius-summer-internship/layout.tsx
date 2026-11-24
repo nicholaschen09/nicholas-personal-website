@@ -9,12 +9,12 @@ export const metadata: Metadata = {
     description:
       'A reflection on building agent context, skills, and the Playground during my engineering internship at Melius.',
     type: 'article',
-    images: ['https://nicholaschen.me/blogs/melius-summer-internship/cover.png'],
+    images: ['https://nicholaschen.me/writing/melius-summer-internship/cover.png'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'My Summer Internship with Melius',
-    images: ['https://nicholaschen.me/blogs/melius-summer-internship/cover.png'],
+    images: ['https://nicholaschen.me/writing/melius-summer-internship/cover.png'],
   },
 };
 

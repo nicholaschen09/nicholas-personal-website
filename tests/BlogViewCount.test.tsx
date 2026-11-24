@@ -16,16 +16,16 @@ afterEach(() => {
   vi.unstubAllGlobals();
 });
 it('replaces a cached count with the latest shared count', async () => {
-  window.localStorage.setItem('blog-views:/blogs/startup-lessons', '182');
+  window.localStorage.setItem('blog-views:/writing/startup-lessons', '182');
   vi.stubGlobal(
     'fetch',
     vi.fn().mockResolvedValue({ ok: true, json: async () => ({ views: 19000 }) }),
   );
 
-  render(<BlogViewCount path="/blogs/startup-lessons" increment />);
+  render(<BlogViewCount path="/writing/startup-lessons" increment />);
 
   await screen.findByText('19k views');
-  expect(window.localStorage.getItem('blog-views:/blogs/startup-lessons')).toBe('19000');
+  expect(window.localStorage.getItem('blog-views:/writing/startup-lessons')).toBe('19000');
 });
 it('uses the same visit identity during Strict Mode and refreshes without adding views', async () => {
   const fetcher = vi.fn().mockImplementation(async (_url, options) => ({
@@ -35,7 +35,7 @@ it('uses the same visit identity during Strict Mode and refreshes without adding
   vi.stubGlobal('fetch', fetcher);
   render(
     <StrictMode>
-      <BlogViewCount path="/blogs/startup-lessons" increment />
+      <BlogViewCount path="/writing/startup-lessons" increment />
     </StrictMode>,
   );
   await screen.findByText('42 views');
@@ -51,8 +51,8 @@ it('new device/page mounts each submit their own visit ID', async () => {
   vi.stubGlobal('fetch', fetcher);
   render(
     <>
-      <BlogViewCount path="/blogs/startup-lessons" increment />
-      <BlogViewCount path="/blogs/startup-lessons" increment />
+      <BlogViewCount path="/writing/startup-lessons" increment />
+      <BlogViewCount path="/writing/startup-lessons" increment />
     </>,
   );
   await waitFor(() => expect(screen.getAllByText('2 views')).toHaveLength(2));
@@ -62,7 +62,7 @@ it('new device/page mounts each submit their own visit ID', async () => {
 });
 it('hides unavailable shared counts', async () => {
   vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: false }));
-  const { container } = render(<BlogViewCount path="/blogs/startup-lessons" increment />);
+  const { container } = render(<BlogViewCount path="/writing/startup-lessons" increment />);
   await act(async () => {});
   expect(container).toBeEmptyDOMElement();
 });

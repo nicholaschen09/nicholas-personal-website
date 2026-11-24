@@ -9,19 +9,15 @@ export const metadata: Metadata = {
     description:
       'A writeup on optimizing a dashcam video compression pipeline for comma.ai neural network evaluation.',
     type: 'article',
-    images: ['https://nicholaschen.me/blogs/neural-video-compression/cover.png'],
+    images: ['https://nicholaschen.me/writing/neural-video-compression/cover.png'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Optimizing Video Compression for Neural Networks',
-    images: ['https://nicholaschen.me/blogs/neural-video-compression/cover.png'],
+    images: ['https://nicholaschen.me/writing/neural-video-compression/cover.png'],
   },
 };
 
-export default function NeuralVideoCompressionLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function NeuralVideoCompressionLayout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;
 }

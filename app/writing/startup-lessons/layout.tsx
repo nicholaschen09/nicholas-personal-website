@@ -9,12 +9,12 @@ export const metadata: Metadata = {
     description:
       'Notes on product judgment, customers, communication, culture, and engineering lessons from working at startups.',
     type: 'article',
-    images: ['https://nicholaschen.me/blogs/startup-lessons/cover.png'],
+    images: ['https://nicholaschen.me/writing/startup-lessons/cover.png'],
   },
   twitter: {
     card: 'summary_large_image',
     title: '10 Lessons from Working at Startups',
-    images: ['https://nicholaschen.me/blogs/startup-lessons/cover.png'],
+    images: ['https://nicholaschen.me/writing/startup-lessons/cover.png'],
   },
 };
 

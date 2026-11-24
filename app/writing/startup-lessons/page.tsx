@@ -53,12 +53,12 @@ export default function StartupLessonsBlog() {
           </h1>
           <p className="flex items-baseline justify-between gap-4 text-stone-500 text-sm mb-6">
             <span>Nicholas Chen · June 2026</span>
-            <BlogViewCount path="/blogs/startup-lessons" increment />
+            <BlogViewCount path="/writing/startup-lessons" increment />
           </p>
 
           <figure className="mb-6">
             <Image
-              src="/blogs/startup-lessons/cover.png"
+              src="/writing/startup-lessons/cover.png"
               alt="Hand-drawn circles labeled PM, engineering, docs, UX, and marketing"
               width={1200}
               height={480}

@@ -98,12 +98,12 @@ export default function MeliusSummerInternshipBlog() {
             </h1>
             <p className="flex items-baseline justify-between gap-4 text-stone-500 text-sm mb-6">
               <span>Nicholas Chen · August 2026</span>
-              <BlogViewCount path="/blogs/melius-summer-internship" increment />
+              <BlogViewCount path="/writing/melius-summer-internship" increment />
             </p>
 
             <figure className="mb-6">
               <Image
-                src="/blogs/melius-summer-internship/cover.png"
+                src="/writing/melius-summer-internship/cover.png"
                 alt="A Melius canvas project with connected creative agent generations"
                 width={3112}
                 height={2088}
@@ -175,7 +175,7 @@ export default function MeliusSummerInternshipBlog() {
                 </p>
                 <figure className="mt-6">
                   <Image
-                    src="/blogs/melius-summer-internship/agent-context-skills.png"
+                    src="/writing/melius-summer-internship/agent-context-skills.png"
                     alt="Diagram showing how agent skills and team context work together"
                     width={1200}
                     height={712}
@@ -212,7 +212,7 @@ export default function MeliusSummerInternshipBlog() {
                   .
                 </p>
                 <BlogFigure
-                  src="/blogs/melius-summer-internship/agent-settings.png"
+                  src="/writing/melius-summer-internship/agent-settings.png"
                   alt="Agent skills and context in the Melius app settings"
                   width={1974}
                   height={906}
@@ -250,7 +250,7 @@ export default function MeliusSummerInternshipBlog() {
                   anyone off from the depth underneath.
                 </p>
                 <BlogFigure
-                  src="/blogs/melius-summer-internship/playground-architecture.png"
+                  src="/writing/melius-summer-internship/playground-architecture.png"
                   alt="Diagram of the Playground architecture under the hood"
                   width={1199}
                   height={247}
@@ -284,7 +284,7 @@ export default function MeliusSummerInternshipBlog() {
                   </Link>
                 </p>
                 <BlogFigure
-                  src="/blogs/melius-summer-internship/playground-showcase.png"
+                  src="/writing/melius-summer-internship/playground-showcase.png"
                   alt="Showcase of the Playground in Melius"
                   width={1200}
                   height={804}
@@ -307,7 +307,7 @@ export default function MeliusSummerInternshipBlog() {
                   Super Smash Bros.
                 </p>
                 <BlogFigure
-                  src="/blogs/melius-summer-internship/yoga.png"
+                  src="/writing/melius-summer-internship/yoga.png"
                   alt="The Melius team doing yoga in the morning"
                   width={800}
                   height={438}
@@ -337,7 +337,7 @@ export default function MeliusSummerInternshipBlog() {
                   .
                 </p>
                 <BlogFigure
-                  src="/blogs/melius-summer-internship/offsite-dinner.png"
+                  src="/writing/melius-summer-internship/offsite-dinner.png"
                   alt="The team working on the app during dinner at the offsite"
                   width={1199}
                   height={653}

@@ -54,12 +54,12 @@ export default function NeuralVideoCompressionBlog() {
             </h1>
             <p className="flex items-baseline justify-between gap-4 text-stone-500 text-sm mb-6">
               <span>Nicholas Chen · April 2026</span>
-              <BlogViewCount path="/blogs/neural-video-compression" increment />
+              <BlogViewCount path="/writing/neural-video-compression" increment />
             </p>
 
             <figure className="mb-6">
               <Image
-                src="/blogs/neural-video-compression/cover.png"
+                src="/writing/neural-video-compression/cover.png"
                 alt="PoseNet and SegNet error charts from the video compression challenge"
                 width={822}
                 height={329}
@@ -211,7 +211,7 @@ export default function NeuralVideoCompressionBlog() {
                 </pre>
                 <figure className="mt-6">
                   <Image
-                    src="/blogs/neural-video-compression/leaderboard.png"
+                    src="/writing/neural-video-compression/leaderboard.png"
                     alt="Leaderboard table from the comma.ai video compression challenge"
                     width={637}
                     height={1200}

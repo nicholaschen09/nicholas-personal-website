@@ -38,6 +38,16 @@ const nextConfig = {
         destination: '/writing/2026-retrospective',
         permanent: true,
       },
+      {
+        source: '/blogs',
+        destination: '/writing',
+        permanent: true,
+      },
+      {
+        source: '/blogs/:path*',
+        destination: '/writing/:path*',
+        permanent: true,
+      },
     ];
   },
   experimental: {

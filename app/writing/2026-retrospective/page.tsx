@@ -179,7 +179,7 @@ export default function RetrospectivePage() {
                   the startup teams I spoke with disliked that kind of evaluation. I often went in
                   with little preparation, and the preparation I did rarely matched what came up.
                   Around that time, I had also written a{' '}
-                  <Link href="/blogs/ontology-text-to-sql" className={linkClass}>
+                  <Link href="/writing/ontology-text-to-sql" className={linkClass}>
                     blog post about ontologies and text-to-SQL
                   </Link>{' '}
                   during my time at TextQL. It went semi-viral and, luckily, brought in more
@@ -218,7 +218,7 @@ export default function RetrospectivePage() {
                 <p className="mt-4">
                   Outside recruiting, I tried the comma.ai video challenge after seeing it on
                   Twitter. It was my first experience with machine learning, and I wrote about{' '}
-                  <Link href="/blogs/neural-video-compression" className={linkClass}>
+                  <Link href="/writing/neural-video-compression" className={linkClass}>
                     how I approached the problem
                   </Link>
                   .
@@ -252,7 +252,7 @@ export default function RetrospectivePage() {
                   work, and getting to make decisions across engineering, design, and product. If
                   you’re curious about my experience, the product, and the people, I wrote a blog
                   post about my time interning there:{' '}
-                  <Link href="/blogs/melius-summer-internship" className={linkClass}>
+                  <Link href="/writing/melius-summer-internship" className={linkClass}>
                     my Melius internship post
                   </Link>
                   .

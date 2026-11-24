@@ -58,13 +58,13 @@ export default function OntologyTextToSqlBlog() {
             <div className="text-stone-500 text-sm mb-6">
               <p className="flex items-baseline justify-between gap-4">
                 <span>Nicholas Chen · November 2025</span>
-                <BlogViewCount path="/blogs/ontology-text-to-sql" increment />
+                <BlogViewCount path="/writing/ontology-text-to-sql" increment />
               </p>
             </div>
 
             {/* Cover image */}
             <Image
-              src="/blogs/ontology/ontology.png"
+              src="/writing/ontology/ontology.png"
               alt="TextQL Ontology Interface"
               width={3600}
               height={2077}
@@ -99,7 +99,7 @@ export default function OntologyTextToSqlBlog() {
                 </p>
                 <figure className="mt-6">
                   <Image
-                    src="/blogs/ontology/map.jpeg"
+                    src="/writing/ontology/map.jpeg"
                     alt="Map of data concepts and their connections"
                     width={1200}
                     height={515}
@@ -161,7 +161,7 @@ export default function OntologyTextToSqlBlog() {
                 </ul>
                 <figure className="mt-6">
                   <Image
-                    src="/blogs/ontology/graphs.jpeg"
+                    src="/writing/ontology/graphs.jpeg"
                     alt="Visualization of complex data relationships"
                     width={1200}
                     height={852}
@@ -200,7 +200,7 @@ export default function OntologyTextToSqlBlog() {
                 </p>
                 <figure className="mt-6">
                   <Image
-                    src="/blogs/ontology/adding-objects.jpeg"
+                    src="/writing/ontology/adding-objects.jpeg"
                     alt="Interface for defining new entities in the ontology"
                     width={1768}
                     height={960}
@@ -239,7 +239,7 @@ export default function OntologyTextToSqlBlog() {
                 </p>
                 <figure className="mt-6">
                   <Image
-                    src="/blogs/ontology/attrs.jpeg"
+                    src="/writing/ontology/attrs.jpeg"
                     alt="Mapping ontology attributes to physical database columns"
                     width={1618}
                     height={1302}
@@ -311,7 +311,7 @@ export default function OntologyTextToSqlBlog() {
                 </p>
                 <figure className="mt-6">
                   <Image
-                    src="/blogs/ontology/chat.png"
+                    src="/writing/ontology/chat.png"
                     alt="The ontology providing context for an AI chat interaction"
                     width={1200}
                     height={772}
@@ -443,7 +443,7 @@ export default function OntologyTextToSqlBlog() {
                 </p>
                 <figure className="mt-6">
                   <Image
-                    src="/blogs/ontology/sources.png"
+                    src="/writing/ontology/sources.png"
                     alt="Comparing different data modeling approaches"
                     width={1199}
                     height={631}

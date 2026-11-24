@@ -2,7 +2,7 @@
 
 ### Overview
 
-Personal site and long-form blog, built with **Next.js**, **TypeScript**, and a small design system. 
+Personal site and long-form blog, built with **Next.js**, **TypeScript**, and a small design system.
 
 ### Tech stack
 
@@ -22,12 +22,12 @@ The app will start on `http://localhost:3000`.
 
 ### Notable blog posts
 
-- **Ontology & text-to-SQL** – `/blogs/ontology-text-to-sql`
+- **Ontology & text-to-SQL** – `/writing/ontology-text-to-sql`
 
 ### Content & i18n
 
 - All copy lives in `contexts/LanguageContext.tsx` under the `en` and `zh` objects.
-- Blog pages live under `app/blogs/*` and consume strings through `useLanguage()` and `t(key)`.
+- Blog pages live under `app/writing/*` and consume strings through `useLanguage()` and `t(key)`.
 
 ### Blog view counts
 
