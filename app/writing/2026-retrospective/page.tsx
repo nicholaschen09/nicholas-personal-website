@@ -290,6 +290,10 @@ export default function RetrospectivePage() {
                   </figcaption>
                 </figure>
                 <p className="mt-4">
+                  If you’re wondering why I’m not in the photo, it was taken a month or two after my
+                  internship ended.
+                </p>
+                <p className="mt-4">
                   Outside of work, I lived in Chinatown, Manhattan, and spent the summer sleeping on
                   a couch. The building had no elevator, everything looked like it might fall apart,
                   and it smelled awful. The good part about this location was that it made it easy
