@@ -95,12 +95,28 @@ export default function RetrospectivePage() {
                 </p>
                 <p className="mt-4">
                   This term, I was living in Society, one of the buildings near campus that many
-                  students sublet or lease during study terms. The winter was brutal: lots of snow,
-                  wet slush, and crazy wind. In my opinion, Waterloo winters are worse than Toronto
-                  winters. School was getting harder this term. I had courses like Calculus 3,
-                  Materials Chemistry, and Dynamics, all of which I was not a huge fan of. We also
-                  had a circuits lab this term which, looking back, was easier than the one I had in
-                  2B, but still challenging and time-consuming.
+                  students sublet or lease during study terms.
+                </p>
+                <figure className="mt-6">
+                  <Image
+                    src="/writing/2026-retrospective/society-apartment.webp"
+                    alt="Kitchen and living area of my apartment at Society in Waterloo"
+                    width={1200}
+                    height={1258}
+                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
+                    className="w-full"
+                  />
+                  <figcaption className="mt-2 text-xs italic text-stone-500">
+                    My apartment at Society
+                  </figcaption>
+                </figure>
+                <p className="mt-4">
+                  The winter was brutal: lots of snow, wet slush, and crazy wind. In my opinion,
+                  Waterloo winters are worse than Toronto winters. School was getting harder this
+                  term. I had courses like Calculus 3, Materials Chemistry, and Dynamics, all of
+                  which I was not a huge fan of. We also had a circuits lab this term which, looking
+                  back, was easier than the one I had in 2B, but still challenging and
+                  time-consuming.
                 </p>
                 <p className="mt-4">
                   Going into recruiting, I had set a goal of joining a startup similar in size to
