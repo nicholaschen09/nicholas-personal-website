@@ -631,7 +631,8 @@ export default function RetrospectivePage() {
                     className="w-full"
                   />
                   <figcaption className="mt-2 text-xs italic text-stone-500">
-                    A candid moment from 2026
+                    A moment from 2026, taken by my roommate on a DJI Osmo Action when we first
+                    moved in for the fall study term
                   </figcaption>
                 </figure>
                 <p className="mt-4">
