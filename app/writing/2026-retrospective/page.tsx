@@ -536,6 +536,19 @@ export default function RetrospectivePage() {
                   year. Honestly, I couldn’t wait for the term to end. I’ve never been a big fan of
                   school, and I was excited to work again.
                 </p>
+                <p className="mt-4">
+                  I also spent time trying different AI tools this year. These were some of my
+                  favorites:
+                </p>
+                <ul className="mt-2 list-disc space-y-1 pl-5">
+                  <li>Muse</li>
+                  <li>Grok</li>
+                  <li>Tomo</li>
+                  <li>Codex</li>
+                  <li>Claude</li>
+                  <li>Gemini</li>
+                  <li>Wispr Flow</li>
+                </ul>
               </section>
 
               <section>
