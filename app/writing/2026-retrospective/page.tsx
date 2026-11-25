@@ -311,9 +311,10 @@ export default function RetrospectivePage() {
                 </p>
                 <p className="mt-4">
                   Outside of work, I lived in Chinatown, Manhattan, and spent the summer sleeping on
-                  a couch. The building had no elevator, everything looked like it might fall apart,
-                  and it smelled awful. The good part about this location was that it made it easy
-                  to walk around the city and find places to eat nearby.
+                  a couch (don’t worry, I was paid generously but hadn’t spent enough time looking
+                  for housing). The building had no elevator, everything looked like it might fall
+                  apart, and it smelled awful. The good part about this location was that it made it
+                  easy to walk around the city and find places to eat nearby.
                 </p>
                 <p className="mt-4">I also ordered way too much Uber Eats.</p>
                 <figure className="mt-6">
