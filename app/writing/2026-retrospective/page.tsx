@@ -306,8 +306,8 @@ export default function RetrospectivePage() {
                   </figcaption>
                 </figure>
                 <p className="mt-4">
-                  If you’re wondering why I’m not in the photo, it was taken a month or two after my
-                  internship ended.
+                  Note: If you’re wondering why I’m not in the photo, it was taken a month or two
+                  after my internship ended.
                 </p>
                 <p className="mt-4">
                   Outside of work, I lived in Chinatown, Manhattan, and spent the summer sleeping on
