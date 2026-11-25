@@ -572,6 +572,7 @@ export default function RetrospectivePage() {
                   <li>Wispr Flow</li>
                   <li>Conductor</li>
                 </ul>
+                <p className="mt-4">And, obviously, Melius and TextQL.</p>
               </section>
 
               <section>
