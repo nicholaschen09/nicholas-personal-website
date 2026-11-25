@@ -570,6 +570,7 @@ export default function RetrospectivePage() {
                   <li>Claude</li>
                   <li>Gemini</li>
                   <li>Wispr Flow</li>
+                  <li>Conductor</li>
                 </ul>
               </section>
 
