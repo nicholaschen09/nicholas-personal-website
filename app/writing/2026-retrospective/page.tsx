@@ -203,6 +203,14 @@ export default function RetrospectivePage() {
                 </p>
                 <EmbeddedTweet url="https://x.com/nicholaschen__/status/2000752780152119501" />
                 <p className="mt-4">
+                  It’s kind of funny because after this, I started seeing more discussion online
+                  especially on X about ontologies and adjacent things.
+                </p>
+                <p className="mt-4">
+                  Honestly, I couldn’t wait for the term to end. I’ve never been a big fan of
+                  school, and I am excited to work again.
+                </p>
+                <p className="mt-4">
                   My first open source contributions to{' '}
                   <Link href="/insforge" className={linkClass}>
                     InsForge
