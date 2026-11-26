@@ -4,6 +4,12 @@ import Link from 'next/link';
 
 const projects = [
   {
+    href: '/window-balls',
+    title: 'Window Balls',
+    date: 'November 2026',
+    description: 'A browser game where glowing balls bounce across multiple windows',
+  },
+  {
     href: '/astra-risk',
     title: 'Astra Risk',
     date: 'September 2026',
