@@ -559,7 +559,7 @@ export default function RetrospectivePage() {
                   lot of my friends had wanted to go on exchange coming into university, though I
                   had never planned to myself. Looking back, it was kind of funny how that hope
                   faded by the start of the term as our grades started slipping throughout second
-                  year. Honestly, I couldn’t wait for the term to end. I am excited to work again.
+                  year. Honestly, I couldn’t wait for the term to end. I wanted to be working again.
                 </p>
                 <p className="mt-4">
                   I also spent time trying different AI tools this year. These were some of my
