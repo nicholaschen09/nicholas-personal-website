@@ -5,9 +5,16 @@ import { Fragment, useEffect, useRef, useState } from 'react';
 import LazyLoopVideo from '@/components/LazyLoopVideo';
 import artworks from './artworks.json';
 
+function artworkDetails(artwork: (typeof artworks)[number]) {
+  return [artwork.medium, artwork.size]
+    .filter((value) => value !== 'Not listed')
+    .join(' · ');
+}
+
 export default function ArtGallery() {
   const [selected, setSelected] = useState<(typeof artworks)[number] | null>(null);
   const dialogRef = useRef<HTMLDialogElement>(null);
+  const selectedDetails = selected ? artworkDetails(selected) : '';
 
   useEffect(() => {
     if (!selected) return;
@@ -38,7 +45,8 @@ export default function ArtGallery() {
                 alt={artwork.alt}
                 width={artwork.width}
                 height={artwork.height}
-                sizes="(min-width: 768px) 152px, (min-width: 528px) 234px, calc((100vw - 60px) / 2)"
+                sizes="(min-width: 528px) 480px, calc(100vw - 48px)"
+                quality={85}
                 priority={index < 2}
                 className="h-auto w-full transition-opacity hover:opacity-90"
               />
@@ -46,18 +54,14 @@ export default function ArtGallery() {
             <div className="mt-2 space-y-0.5">
               <h2 className="text-sm text-stone-400">{artwork.title}</h2>
               {(artwork.medium !== 'Not listed' || artwork.size !== 'Not listed') && (
-                <p className="text-xs text-stone-500">
-                  {[artwork.medium, artwork.size]
-                    .filter((value) => value !== 'Not listed')
-                    .join(' · ')}
-                </p>
+                <p className="text-xs text-stone-500">{artworkDetails(artwork)}</p>
               )}
             </div>
             {artwork.src === '/art/art-32.webp' && (
               <div className="space-y-0.5">
                 <LazyLoopVideo
                   src="/art/animation-process.mp4"
-                  poster="/art/animation-process.jpg"
+                  poster="/art/animation-process-poster.jpg"
                   label="Animation process"
                   width={768}
                   height={432}
@@ -91,7 +95,8 @@ export default function ArtGallery() {
 
       <dialog
         ref={dialogRef}
-        aria-label={selected?.alt ?? 'Artwork viewer'}
+        aria-label={selected ? undefined : 'Artwork viewer'}
+        aria-labelledby={selected ? 'artwork-dialog-title' : undefined}
         onClose={() => setSelected(null)}
         className="fixed inset-0 m-0 h-[100dvh] max-h-none w-screen max-w-none items-center justify-center overflow-hidden bg-transparent p-6 text-white backdrop:bg-black/90 open:flex md:p-12"
       >
@@ -103,21 +108,31 @@ export default function ArtGallery() {
           className="absolute inset-0 cursor-zoom-out"
         />
         {selected && (
-          <button
-            type="button"
-            aria-label="Close enlarged artwork"
-            onClick={() => dialogRef.current?.close()}
-            className="relative flex max-w-full cursor-zoom-out items-center justify-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-pink-300"
-          >
-            <Image
-              src={selected.src}
-              alt={selected.alt}
-              width={selected.width}
-              height={selected.height}
-              unoptimized
-              className="h-auto max-h-[85dvh] w-auto max-w-full object-contain"
-            />
-          </button>
+          <figure className="relative flex max-h-full max-w-full flex-col items-center gap-3">
+            <button
+              type="button"
+              aria-label="Close enlarged artwork"
+              onClick={() => dialogRef.current?.close()}
+              className="flex min-h-0 max-w-full cursor-zoom-out items-center justify-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-pink-300"
+            >
+              <Image
+                src={selected.src}
+                alt={selected.alt}
+                width={selected.width}
+                height={selected.height}
+                unoptimized
+                className="h-auto max-h-[calc(100dvh-10rem)] w-auto max-w-full object-contain"
+              />
+            </button>
+            <figcaption className="max-w-full text-center">
+              <span id="artwork-dialog-title" className="block text-sm text-stone-100">
+                {selected.title}
+              </span>
+              {selectedDetails && (
+                <span className="mt-1 block text-xs text-stone-400">{selectedDetails}</span>
+              )}
+            </figcaption>
+          </figure>
         )}
         <button
           type="button"
