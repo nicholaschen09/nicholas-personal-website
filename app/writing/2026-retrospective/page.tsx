@@ -203,8 +203,8 @@ export default function RetrospectivePage() {
                 </p>
                 <EmbeddedTweet url="https://x.com/nicholaschen__/status/2000752780152119501" />
                 <p className="mt-4">
-                  It’s kind of funny because after this, I started seeing more discussion online
-                  especially on X about ontologies and adjacent things.
+                  Funny enough, after sharing the post, I started noticing more conversations about
+                  ontologies and related ideas online, especially on X.
                 </p>
                 <p className="mt-4">
                   My first open source contributions to{' '}
