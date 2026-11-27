@@ -648,19 +648,6 @@ export default function RetrospectivePage() {
                   have fun. The past few years have felt like a constant grind, and I haven’t given
                   myself much time to enjoy the moment.
                 </p>
-                <figure className="mt-6">
-                  <Image
-                    src="/writing/2026-retrospective/2026-friend.webp"
-                    alt="A candid photo of someone smiling in a room"
-                    width={1600}
-                    height={902}
-                    sizes="(max-width: 768px) calc(100vw - 48px), 480px"
-                    className="w-full"
-                  />
-                  <figcaption className="mt-2 text-xs italic text-stone-500">
-                    Moving in for fall 2026, shot by my roommate on a DJI Osmo Action
-                  </figcaption>
-                </figure>
                 <p className="mt-4">
                   I’m extremely grateful for everyone who helped me out, made memories with me, and
                   was part of my 2026. I hope to make more friends and try new things next year!
