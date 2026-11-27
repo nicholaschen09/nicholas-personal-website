@@ -511,7 +511,7 @@ export default function RetrospectivePage() {
                     Tomo
                   </a>{' '}
                   to track my meals every day for most of the term. I ate out less and cooked most
-                  of my meals at home. With help from my roommate Jordan, I learned to cook chicken
+                  of my meals at home. With help from my roommate, I learned to cook chicken
                   thighs and breasts, and I made plenty of eggs too. I ate a lot of salmon,
                   tomatoes, cucumbers, and fruit so I could eat healthy while losing weight.
                 </p>
